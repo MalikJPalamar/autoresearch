@@ -1,0 +1,463 @@
+# 🧬 The Autoresearch Method
+
+> A universal methodology for recursive, self-improving research — extracted from [karpathy/autoresearch](https://github.com/karpathy/autoresearch) and generalized for any domain.
+
+-----
+
+## What This Is
+
+A discipline for making any research system measurably better over time through autonomous experimentation. The core idea: instead of guessing what works, you run controlled experiments against a single metric, keep what improves it, discard what doesn’t, and never stop.
+
+Think of it as **evolution applied to methodology** — mutation (try something), selection (measure), survival (keep or discard), repeat.
+
+-----
+
+## The Mental Model
+
+```
+Traditional research:      Human thinks → Human tries → Human judges → Human decides
+Autoresearch:              System proposes → System runs → Metric judges → System evolves
+```
+
+The human’s role shifts from doing research to **programming the research system itself** — you write the rules, the constraints, and the metric. The system does the rest.
+
+Karpathy’s metaphor: *“You’re not touching any of the Python files like you normally would as a researcher. Instead, you are programming the `program.md` Markdown files that provide context to the AI agents and set up your autonomous research org.”*
+
+-----
+
+## The Three Files
+
+Every autoresearch project has exactly three conceptual components. The names don’t matter — the separation of concerns does.
+
+### 1. The Infrastructure (Fixed)
+
+**Karpathy’s `prepare.py`** — The parts that DON’T change.
+
+This is your evaluation harness, your data pipeline, your ground truth. It defines:
+
+- What you’re measuring (the metric)
+- How you measure it (the evaluation function)
+- The constraints (time budget, resource limits)
+- The data (what’s being analyzed)
+
+**Rule:** The agent cannot modify this. If the agent could change the evaluation, it would game the metric instead of improving the research.
+
+**In your projects, this is:** The portfolio of tickers. The Composite Score formula. The data sources. The signal classification rules. Whatever defines “what good looks like.”
+
+### 2. The Experiment Surface (Agent-Modified)
+
+**Karpathy’s `train.py`** — The ONE thing the agent modifies.
+
+This is the methodology itself — the template, the analytical approach, the report structure, the depth of coverage. Everything the agent is allowed to experiment with.
+
+**Rule:** Only ONE file/document/configuration gets modified per experiment. This keeps diffs reviewable and changes attributable.
+
+**In your projects, this is:** The `methodology.md` — how the analysis is done, what’s included, how signals are classified, what data sources are queried.
+
+### 3. The Program (Human-Modified)
+
+**Karpathy’s `program.md`** — The rules of the game.
+
+This is the meta-document — it tells the agent how to behave, what it can and can’t change, how to run experiments, and when to stop. The human iterates on THIS to improve the research system itself.
+
+**Rule:** Only the human modifies this. It’s the constitution.
+
+**In your projects, this is:** The governing document that defines the experiment loop, the scoring system, the keep/discard criteria, and the boundary between auto-evolve and human-approval changes.
+
+-----
+
+## The Core Loop
+
+```
+LOOP FOREVER:
+
+  1. READ current state
+     - What methodology version am I on?
+     - What's the current metric score?
+     - What experiments have been tried?
+
+  2. HYPOTHESIZE
+     - Based on recent scores, what ONE change might improve the metric?
+     - Write the hypothesis down BEFORE running the experiment.
+
+  3. MODIFY
+     - Make exactly ONE change to the experiment surface.
+     - Commit (or snapshot) the change so it's reversible.
+
+  4. RUN
+     - Execute the research with the modified methodology.
+     - Capture the output.
+
+  5. MEASURE
+     - Score the output against the single metric.
+     - Log the result: commit hash, metric value, status, description.
+
+  6. DECIDE
+     - IF metric improved → KEEP. Advance the branch.
+     - IF metric unchanged → KEEP only if the change is SIMPLER.
+     - IF metric decreased → DISCARD. Revert to previous state.
+
+  7. LOG
+     - Record everything in the results log.
+     - Update the changelog with rationale.
+
+  8. REPEAT (never stop, never ask permission)
+```
+
+-----
+
+## The Five Principles
+
+### 1. Single Metric Optimization
+
+> “The goal is simple: get the lowest val_bpb.”
+
+Every autoresearch project needs ONE number that captures “how good is this?” If you can’t reduce your research quality to a single score, you can’t run the loop. The metric can be composite (weighted sub-scores), but it must collapse to one comparable number.
+
+**How to design your metric:**
+
+- It must be **calculable** after every run (no subjective judgment unless formalized)
+- It must be **comparable** across runs (same scale, same conditions)
+- It must **capture what you actually care about** (not a proxy that can be gamed)
+- Higher or lower must unambiguously mean “better”
+
+**Template:**
+
+```
+Metric = w₁ × Dimension₁ + w₂ × Dimension₂ + w₃ × Dimension₃
+where w₁ + w₂ + w₃ = 1.0
+```
+
+### 2. One Change at a Time
+
+> “Don’t change three things and measure.”
+
+If you modify the data source AND the analysis template AND the signal logic in one experiment, you can’t attribute the result. You’ll never know what worked. This is basic experimental design — isolate variables.
+
+**Corollary:** If you’re tempted to make multiple changes, it means you have multiple hypotheses. Queue them. Run them sequentially.
+
+### 3. The Simplicity Criterion
+
+> “A small improvement that adds ugly complexity is not worth it. A 0.001 improvement from deleting code? Definitely keep.”
+
+Complexity is a cost. Every additional data source, every extra analytical layer, every new column in the report has a maintenance burden. The simplicity criterion means:
+
+- **Same score + simpler = KEEP** (that’s a win — you removed deadweight)
+- **Tiny improvement + much more complex = DISCARD** (not worth the complexity tax)
+- **Big improvement + more complex = KEEP** (the improvement justifies the complexity)
+
+This prevents methodology bloat over time. Without it, the system accumulates cruft until it collapses under its own weight.
+
+### 4. Never Stop
+
+> “Do NOT pause to ask the human if you should continue. The human might be asleep.”
+
+The power of autoresearch comes from volume. Karpathy’s system runs ~12 experiments per hour, ~100 overnight. Each experiment is cheap. Most fail. But the ones that succeed compound.
+
+**In practice:** When the agent runs out of obvious ideas, it should:
+
+- Re-read the source files for new angles
+- Try combining two previous near-misses
+- Try more radical changes (architecture-level, not parameter-level)
+- Try REMOVING things (simplification experiments)
+- Look at what’s NOT being measured and ask if it should be
+
+### 5. Log Everything
+
+> “When an experiment is done, log it to results.tsv.”
+
+The experiment log is the institutional memory. Without it, you repeat failed experiments and can’t trace what caused improvements. Every run gets a row:
+
+```
+commit | metric | status | description
+```
+
+The changelog captures WHY — the hypothesis, the expected impact, the actual result, and the decision.
+
+-----
+
+## The Keep/Discard Boundary
+
+Not everything should be auto-evolved. Some changes are too consequential for unsupervised mutation. Define a clear boundary:
+
+### Auto-Evolve (Agent decides)
+
+Changes that affect HOW the research is presented or gathered, but not WHAT is being researched:
+
+- Formatting, layout, ordering
+- Which data sources to query
+- Depth of coverage
+- Presentation style
+- Source prioritization
+
+### Human Approval Required (Framework changes)
+
+Changes that affect the fundamental WHAT or WHY:
+
+- Adding or removing what’s being studied
+- Changing the metric formula or weights
+- Changing the classification logic
+- Modifying the core thesis or hypothesis
+- Altering the evaluation methodology
+
+**The test:** “If this change turns out to be wrong, can the agent easily undo it?” If yes → auto-evolve. If no → human approval.
+
+-----
+
+## Setting Up a New Autoresearch Project
+
+### Step 1: Define Your Domain
+
+What are you researching? What’s the output? What does “better” mean?
+
+```
+Domain:     [e.g., stock analysis, market research, competitive intel, content strategy]
+Output:     [e.g., daily report, weekly briefing, dashboard, recommendation list]
+"Better":   [e.g., more accurate predictions, more actionable insights, better coverage]
+```
+
+### Step 2: Design Your Metric
+
+Decompose “better” into measurable dimensions. Assign weights.
+
+```
+Metric = w₁ × ______ + w₂ × ______ + w₃ × ______
+
+Dimension 1: ______ (weight: ___) — How to measure: ______
+Dimension 2: ______ (weight: ___) — How to measure: ______
+Dimension 3: ______ (weight: ___) — How to measure: ______
+```
+
+**Common dimensions:**
+
+- **Accuracy** — Were predictions/assessments correct? (requires lookback scoring)
+- **Actionability** — Could someone act on this? (checklist-based)
+- **Coverage** — How comprehensive is the analysis? (layer counting)
+- **Timeliness** — How current is the data? (freshness scoring)
+- **Clarity** — How easy is it to understand? (readability metrics or human rating)
+
+### Step 3: Create Your Three Files
+
+**`program.md`** (you write this):
+
+- What’s being researched
+- The metric definition
+- The keep/discard rules
+- The auto-evolve vs. approval boundary
+- The experiment loop
+- The data sources
+- The constraints
+
+**`methodology.md`** (the agent evolves this):
+
+- The current report template
+- The active analytical framework
+- The classification system
+- The data gathering procedure
+- Version number
+
+**`results.tsv`** (the agent logs here):
+
+```
+date | version | metric | sub_scores | experiment_id | status | description
+```
+
+**`changelog.md`** (the agent documents here):
+
+- Every methodology change
+- Hypothesis + expected impact
+- Actual result
+- Keep/discard decision + rationale
+
+### Step 4: Establish Baseline
+
+Run the methodology once, as-is, without changes. Score it. Log it. This is experiment zero — everything is measured relative to this.
+
+### Step 5: Start the Loop
+
+The agent proposes experiment #1, runs it, measures, keeps or discards, proposes #2, and so on forever.
+
+-----
+
+## The Experiment Lifecycle (Detailed)
+
+```
+┌──────────────────────────────────────────────┐
+│  PROPOSED                                     │
+│  Agent writes hypothesis in changelog.md      │
+│  Agent creates entry in experiments log       │
+│  Status: "proposed"                           │
+└──────────────────┬───────────────────────────┘
+                   │
+                   ▼ (auto-evolve? → apply immediately)
+                   ▼ (framework change? → wait for human approval)
+                   │
+┌──────────────────┴───────────────────────────┐
+│  ACTIVE                                       │
+│  Change applied to methodology.md             │
+│  Status: "active"                             │
+│  Running for N iterations (default: 3)        │
+└──────────────────┬───────────────────────────┘
+                   │
+                   ▼ (after N iterations, calculate metric delta)
+                   │
+          ┌────────┴────────┐
+          │                 │
+          ▼                 ▼
+   ┌──────────┐      ┌──────────┐
+   │  KEEP    │      │ DISCARD  │
+   │          │      │          │
+   │ Update   │      │ Revert   │
+   │ method.  │      │ method.  │
+   │ to v+1   │      │ to v     │
+   └──────────┘      └──────────┘
+```
+
+-----
+
+## Data Accumulation and Compounding
+
+The real power of autoresearch isn’t any single experiment — it’s the **data that accumulates**. Each run produces data. That data enables deeper analysis. Deeper analysis enables better experiments. This is the recursive part.
+
+```
+Week 1:    Basic data → Basic analysis → Baseline metric
+Week 4:    4 weeks of data → Trend analysis → Better signals
+Week 12:   3 months of data → Correlation analysis → Pattern detection
+Week 26:   6 months of data → Predictive models → Confidence scoring
+Week 52:   1 year of data → Backtesting → Validated methodology
+```
+
+**Design your data store for compounding.** Every observation should be queryable later. Don’t throw away intermediate data. Store it structured (database), not just as prose (markdown reports).
+
+-----
+
+## Anti-Patterns to Avoid
+
+### 1. Metric Gaming
+
+If the agent can improve the score without improving the actual quality, your metric is broken. Example: an “accuracy” score that only counts easy predictions.
+
+**Fix:** Include adversarial dimensions. Make the metric multidimensional so gaming one dimension hurts another.
+
+### 2. Complexity Creep
+
+Without the simplicity criterion, the methodology grows endlessly. More layers, more sources, more analysis, more noise.
+
+**Fix:** Regularly run “simplification experiments” — try REMOVING something and see if the metric holds.
+
+### 3. Recency Bias
+
+Only optimizing for the last few data points instead of the full history.
+
+**Fix:** Score against a trailing window (e.g., 20 runs), not just the last one.
+
+### 4. Experiment Paralysis
+
+Spending more time designing experiments than running them.
+
+**Fix:** The first experiment should be trivially simple. “Add X to the report.” Run it, measure, move on. Speed > perfection.
+
+### 5. Human in the Loop Too Often
+
+If the human has to approve every experiment, the loop stalls whenever the human is busy.
+
+**Fix:** Make the auto-evolve boundary generous. Most formatting and sourcing changes are safe to auto-evolve. Reserve human approval for structural changes only.
+
+-----
+
+## Applying to Specific Domains
+
+### Research / Intelligence Gathering
+
+- **Metric:** Coverage × Accuracy × Timeliness
+- **Experiment surface:** Sources, depth, synthesis approach
+- **Infrastructure:** Topic universe, evaluation rubric
+
+### Content Strategy
+
+- **Metric:** Engagement × Reach × Conversion
+- **Experiment surface:** Format, tone, length, channel mix
+- **Infrastructure:** Audience definition, brand guidelines, analytics pipeline
+
+### Competitive Intelligence
+
+- **Metric:** Signal accuracy × Actionability × Lead time
+- **Experiment surface:** Monitoring sources, analysis framework, alert thresholds
+- **Infrastructure:** Competitor universe, market definition, scoring rubric
+
+### Product Development
+
+- **Metric:** User satisfaction × Feature coverage × Ship speed
+- **Experiment surface:** Prioritization framework, spec template, review process
+- **Infrastructure:** User research pipeline, metrics dashboard, release process
+
+### Personal Learning
+
+- **Metric:** Retention × Application × Depth
+- **Experiment surface:** Study method, note format, practice approach
+- **Infrastructure:** Topic syllabus, spaced repetition schedule, testing rubric
+
+-----
+
+## Quick-Start Template
+
+Copy this into a `program.md` for any new project:
+
+```markdown
+# [Project Name] — Autoresearch Program
+
+## Domain
+[What you're researching]
+
+## Output
+[What each iteration produces]
+
+## Metric
+[Your composite score formula]
+
+Metric = ___ × ______ + ___ × ______ + ___ × ______
+
+## Infrastructure (Fixed — Do Not Modify)
+- [What's being studied — the universe]
+- [The evaluation function]
+- [The constraints]
+
+## Experiment Surface (Agent Modifies)
+- [The methodology document the agent evolves]
+
+## Keep/Discard Rules
+- Auto-evolve: [list what the agent can change freely]
+- Requires approval: [list what needs human sign-off]
+
+## Experiment Loop
+LOOP:
+1. Read current state (methodology version, recent scores)
+2. Propose ONE change (write hypothesis first)
+3. Apply the change
+4. Run the iteration
+5. Measure against metric
+6. Keep (if improved or simpler) / Discard (if worse)
+7. Log to results + changelog
+8. Repeat
+
+## Baseline
+[First run score — everything is measured against this]
+
+## Never Stop
+Once started, run indefinitely until manually stopped.
+```
+
+-----
+
+## Origin
+
+This methodology is extracted from [karpathy/autoresearch](https://github.com/karpathy/autoresearch) (March 2026), where Andrej Karpathy applied it to autonomous neural network training research. The core insight — give an AI agent a fixed evaluation harness and let it experiment autonomously — generalizes far beyond ML training.
+
+Karpathy’s words: *“The idea: give an AI agent a small but real setup and let it experiment autonomously overnight. It modifies the code, trains for 5 minutes, checks if the result improved, keeps or discards, and repeats. You wake up in the morning to a log of experiments and (hopefully) a better model.”*
+
+Replace “code” with “methodology,” “trains” with “analyzes,” and “model” with “research output” — and you have a universal self-improving research system.
+
+-----
+
+*“One day, frontier research used to be done by meat computers in between eating, sleeping, having other fun. That era is long gone.”  
+— Andrej Karpathy, March 2026*
