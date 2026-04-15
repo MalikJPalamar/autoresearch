@@ -9,8 +9,6 @@ wheels/
 # Virtual environments
 .venv
 worktrees/
-results/
-queue/
 
 # Agent prompt files (generated per-session by launchers)
 AGENTS.md
@@ -18,8 +16,8 @@ AGENTS.md
 # Experimental code/artifacts
 dev/
 
-# Results file
-results.tsv
-
 # Cron logs
 cron/logs/
+
+# Run logs
+run.log

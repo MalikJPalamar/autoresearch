@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Loop 2 - Auto-Research (11pm CET, weekdays)
-# Launches a Claude Code session to run the full experiment loop overnight.
-# Claude will iterate autonomously until the session times out.
+# Loop 2 - Auto-Research (after daily report or on-demand)
+# Launches a Claude Code session to evaluate experiment performance,
+# keep/discard based on Composite Score, and propose next experiment.
 
 set -euo pipefail
 
@@ -15,7 +15,7 @@ mkdir -p "$LOG_DIR"
 cd "$REPO_DIR"
 git pull origin master 2>/dev/null || true
 
-/opt/node22/bin/claude -p \
-  "Read CLAUDE.md and program.md. Run the FULL experiment loop continuously: modify train.py with an idea, commit, run 'uv run train.py > run.log 2>&1', extract metrics, keep or discard based on val_bpb, log to results.tsv, push kept improvements, then repeat with a new idea. Never stop to ask. Keep going until you run out of context or the session ends." \
-  --allowedTools "Bash(run train.py:*),Bash(git:*),Bash(grep:*),Bash(uv:*),Read,Edit,Write" \
+claude -p \
+  "Read CLAUDE.md and program.md. Execute Loop 2 (Auto-Research): read past reports from auto-research/, calculate accuracy scores from 5-day lookback, compute Composite Score, evaluate current experiment (keep/discard if 3+ reports), propose next experiment, update results.tsv and changelog.md, commit and push. Then loop: run Loop 1 again with a new report, then Loop 2 again. Never stop. Keep going until the session ends." \
+  --allowedTools "Bash(git:*),Read,Edit,Write,WebSearch,WebFetch" \
   > "$LOG_DIR/research_${TIMESTAMP}.log" 2>&1
