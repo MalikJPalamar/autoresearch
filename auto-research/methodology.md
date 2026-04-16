@@ -1,4 +1,4 @@
-# SA Portfolio Methodology v1.1
+# SA Portfolio Methodology v1.2
 
 ## Report Template
 
@@ -25,6 +25,7 @@ For each ticker:
 - **Support/Resistance**: Key levels
 - **Signal**: LONG / ACCUMULATE / CONTRARIAN / WATCH / SPECULATIVE / AVOID
 - **Timeframe**: Short-term (1-2w) / Medium-term (1-3mo) / Long-term (3-12mo)
+- **News Sentiment**: Score from -2.0 (very bearish) to +2.0 (very bullish), with 1-line rationale
 - **Risk Factor**: Primary risk for this position
 - **Catalyst**: Next expected catalyst or event
 
