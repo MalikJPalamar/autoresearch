@@ -1,1 +1,8 @@
 commit	val_bpb	memory_gb	status	description
+a9ad75d	N/A	N/A	BLOCKED	5% LR warmup (no GPU available)
+1462a07	N/A	N/A	BLOCKED	depth 8→10 (no GPU available)
+b6b8e35	N/A	N/A	BLOCKED	SwiGLU MLP activation (no GPU available)
+434e049	N/A	N/A	BLOCKED	batch size 524K→262K (no GPU available)
+b989e64	N/A	N/A	BLOCKED	softcap 15→30 (no GPU available)
+57504f8	N/A	N/A	BLOCKED	matrix LR 0.04→0.06 (no GPU available)
+4acfc45	N/A	N/A	BLOCKED	short window seq/2→seq/4 (no GPU available)
