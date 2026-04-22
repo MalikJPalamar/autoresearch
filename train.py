@@ -512,7 +512,7 @@ WINDOW_PATTERN = "SSSL" # sliding window pattern: L=full, S=half context
 
 # Optimization
 TOTAL_BATCH_SIZE = 2**19 # ~524K tokens per optimizer step
-EMBEDDING_LR = 0.8      # learning rate for token embeddings (Adam)
+EMBEDDING_LR = 0.6      # learning rate for token embeddings (Adam)
 UNEMBEDDING_LR = 0.004  # learning rate for lm_head (Adam)
 MATRIX_LR = 0.08        # learning rate for matrix parameters (Muon)
 SCALAR_LR = 0.5         # learning rate for per-layer scalars (Adam)
@@ -528,8 +528,8 @@ DEVICE_BATCH_SIZE = 128  # per-device batch size (reduce if OOM)
 
 if not USE_CUDA:
     DEPTH = 2
-    DEVICE_BATCH_SIZE = 4
-    TOTAL_BATCH_SIZE = 4 * 2048
+    DEVICE_BATCH_SIZE = 6
+    TOTAL_BATCH_SIZE = 6 * 2048
     TIME_BUDGET = 60
 
 # ---------------------------------------------------------------------------
