@@ -528,8 +528,8 @@ DEVICE_BATCH_SIZE = 128  # per-device batch size (reduce if OOM)
 
 if not USE_CUDA:
     DEPTH = 2
-    DEVICE_BATCH_SIZE = 4
-    TOTAL_BATCH_SIZE = 4 * 2048
+    DEVICE_BATCH_SIZE = 8
+    TOTAL_BATCH_SIZE = 8 * 2048
     TIME_BUDGET = 60
 
 # ---------------------------------------------------------------------------
