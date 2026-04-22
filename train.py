@@ -237,7 +237,7 @@ class GPT(nn.Module):
             torch.nn.init.zeros_(block.mlp.c_proj.weight)
         # Per-layer scalars
         self.resid_lambdas.fill_(1.0)
-        self.x0_lambdas.fill_(0.1)
+        self.x0_lambdas.fill_(0.2)
         # Value embeddings
         for ve in self.value_embeds.values():
             torch.nn.init.uniform_(ve.weight, -s, s)
@@ -512,7 +512,7 @@ WINDOW_PATTERN = "SSSL" # sliding window pattern: L=full, S=half context
 
 # Optimization
 TOTAL_BATCH_SIZE = 2**19 # ~524K tokens per optimizer step
-EMBEDDING_LR = 0.4      # learning rate for token embeddings (Adam)
+EMBEDDING_LR = 0.6      # learning rate for token embeddings (Adam)
 UNEMBEDDING_LR = 0.008  # learning rate for lm_head (Adam)
 MATRIX_LR = 0.08        # learning rate for matrix parameters (Muon)
 SCALAR_LR = 0.5         # learning rate for per-layer scalars (Adam)
