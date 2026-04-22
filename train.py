@@ -527,7 +527,7 @@ DEPTH = 8               # number of transformer layers
 DEVICE_BATCH_SIZE = 128  # per-device batch size (reduce if OOM)
 
 if not USE_CUDA:
-    DEPTH = 3
+    DEPTH = 2
     DEVICE_BATCH_SIZE = 2
     TOTAL_BATCH_SIZE = 2 * 2048
     TIME_BUDGET = 60
