@@ -54,6 +54,14 @@ BOS_TOKEN = "<|reserved_0|>"
 # Data download
 # ---------------------------------------------------------------------------
 
+def _get_hf_headers():
+    """Build auth headers for HuggingFace if HF_TOKEN is set."""
+    token = os.environ.get("HF_TOKEN")
+    if token:
+        return {"Authorization": f"Bearer {token}"}
+    return {}
+
+
 def download_single_shard(index):
     """Download one parquet shard with retries. Returns True on success."""
     filename = f"shard_{index:05d}.parquet"
@@ -62,10 +70,11 @@ def download_single_shard(index):
         return True
 
     url = f"{BASE_URL}/{filename}"
+    headers = _get_hf_headers()
     max_attempts = 5
     for attempt in range(1, max_attempts + 1):
         try:
-            response = requests.get(url, stream=True, timeout=30)
+            response = requests.get(url, headers=headers, stream=True, timeout=30)
             response.raise_for_status()
             temp_path = filepath + ".tmp"
             with open(temp_path, "wb") as f:
