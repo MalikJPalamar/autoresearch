@@ -17,13 +17,75 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from kernels import get_kernel
-cap = torch.cuda.get_device_capability()
-# varunneal's FA3 is Hopper only, use kernels-community on non-Hopper GPUs
-repo = "varunneal/flash-attention-3" if cap == (9, 0) else "kernels-community/flash-attn3"
-fa3 = get_kernel(repo).flash_attn_interface
+HAS_CUDA = torch.cuda.is_available()
+if HAS_CUDA:
+    from kernels import get_kernel
+    cap = torch.cuda.get_device_capability()
+    repo = "varunneal/flash-attention-3" if cap == (9, 0) else "kernels-community/flash-attn3"
+    fa3 = get_kernel(repo).flash_attn_interface
+else:
+    fa3 = None
 
-from prepare import MAX_SEQ_LEN, TIME_BUDGET, Tokenizer, make_dataloader, evaluate_bpb
+if HAS_CUDA:
+    from prepare import MAX_SEQ_LEN, TIME_BUDGET, Tokenizer, make_dataloader, evaluate_bpb
+else:
+    from prepare import MAX_SEQ_LEN, TIME_BUDGET, Tokenizer, evaluate_bpb as _evaluate_bpb_orig
+    from prepare import _document_batches, get_token_bytes as _get_token_bytes, EVAL_TOKENS
+
+    def make_dataloader(tokenizer, B, T, split, buffer_size=1000):
+        row_capacity = T + 1
+        batches = _document_batches(split)
+        bos_token = tokenizer.get_bos_token_id()
+        doc_buffer = []
+        epoch = 1
+        def refill_buffer():
+            nonlocal epoch
+            doc_batch, epoch = next(batches)
+            token_lists = tokenizer.encode(doc_batch, prepend=bos_token)
+            doc_buffer.extend(token_lists)
+        row_buffer = torch.empty((B, row_capacity), dtype=torch.long)
+        out_inputs = torch.empty((B, T), dtype=torch.long)
+        out_targets = torch.empty((B, T), dtype=torch.long)
+        while True:
+            for row_idx in range(B):
+                pos = 0
+                while pos < row_capacity:
+                    while len(doc_buffer) < buffer_size:
+                        refill_buffer()
+                    remaining = row_capacity - pos
+                    best_idx, best_len = -1, 0
+                    for i, doc in enumerate(doc_buffer):
+                        doc_len = len(doc)
+                        if doc_len <= remaining and doc_len > best_len:
+                            best_idx, best_len = i, doc_len
+                    if best_idx >= 0:
+                        doc = doc_buffer.pop(best_idx)
+                        row_buffer[row_idx, pos:pos + len(doc)] = torch.tensor(doc, dtype=torch.long)
+                        pos += len(doc)
+                    else:
+                        shortest_idx = min(range(len(doc_buffer)), key=lambda i: len(doc_buffer[i]))
+                        doc = doc_buffer.pop(shortest_idx)
+                        row_buffer[row_idx, pos:pos + remaining] = torch.tensor(doc[:remaining], dtype=torch.long)
+                        pos += remaining
+            out_inputs.copy_(row_buffer[:, :-1])
+            out_targets.copy_(row_buffer[:, 1:])
+            yield out_inputs, out_targets, epoch
+
+    @torch.no_grad()
+    def evaluate_bpb(model, tokenizer, batch_size):
+        token_bytes = _get_token_bytes(device="cpu")
+        val_loader = make_dataloader(tokenizer, batch_size, MAX_SEQ_LEN, "val")
+        steps = min(EVAL_TOKENS // (batch_size * MAX_SEQ_LEN), 20)
+        total_nats, total_bytes = 0.0, 0
+        for _ in range(steps):
+            x, y, _ = next(val_loader)
+            loss_flat = model(x, y, reduction='none').view(-1)
+            y_flat = y.view(-1)
+            nbytes = token_bytes[y_flat]
+            mask = nbytes > 0
+            total_nats += (loss_flat * mask).sum().item()
+            total_bytes += nbytes.sum().item()
+        return total_nats / (math.log(2) * total_bytes)
 
 # ---------------------------------------------------------------------------
 # GPT Model
@@ -90,7 +152,14 @@ class CausalSelfAttention(nn.Module):
         q, k = apply_rotary_emb(q, cos, sin), apply_rotary_emb(k, cos, sin)
         q, k = norm(q), norm(k)
 
-        y = fa3.flash_attn_func(q, k, v, causal=True, window_size=window_size)
+        if fa3 is not None:
+            y = fa3.flash_attn_func(q, k, v, causal=True, window_size=window_size)
+        else:
+            q = q.transpose(1, 2)
+            k = k.transpose(1, 2)
+            v = v.transpose(1, 2)
+            y = F.scaled_dot_product_attention(q, k, v, is_causal=True)
+            y = y.transpose(1, 2)
         y = y.contiguous().view(B, T, -1)
         y = self.c_proj(y)
         return y
@@ -302,8 +371,7 @@ polar_express_coeffs = [
     (2.3465413258596377, -1.7097828382687081, 0.42323551169305323),
 ]
 
-@torch.compile(dynamic=False, fullgraph=True)
-def adamw_step_fused(p, grad, exp_avg, exp_avg_sq, step_t, lr_t, beta1_t, beta2_t, eps_t, wd_t):
+def _adamw_step_impl(p, grad, exp_avg, exp_avg_sq, step_t, lr_t, beta1_t, beta2_t, eps_t, wd_t):
     p.mul_(1 - lr_t * wd_t)
     exp_avg.lerp_(grad, 1 - beta1_t)
     exp_avg_sq.lerp_(grad.square(), 1 - beta2_t)
@@ -313,8 +381,7 @@ def adamw_step_fused(p, grad, exp_avg, exp_avg_sq, step_t, lr_t, beta1_t, beta2_
     step_size = lr_t / bias1
     p.add_(exp_avg / denom, alpha=-step_size)
 
-@torch.compile(dynamic=False, fullgraph=True)
-def muon_step_fused(stacked_grads, stacked_params, momentum_buffer, second_momentum_buffer,
+def _muon_step_impl(stacked_grads, stacked_params, momentum_buffer, second_momentum_buffer,
                     momentum_t, lr_t, wd_t, beta2_t, ns_steps, red_dim):
     # Nesterov momentum
     momentum = momentum_t.to(stacked_grads.dtype)
@@ -351,6 +418,14 @@ def muon_step_fused(stacked_grads, stacked_params, momentum_buffer, second_momen
     wd = wd_t.to(g.dtype)
     mask = (g * stacked_params) >= 0
     stacked_params.sub_(lr * g + lr * wd * stacked_params * mask)
+
+
+if HAS_CUDA:
+    adamw_step_fused = torch.compile(dynamic=False, fullgraph=True)(_adamw_step_impl)
+    muon_step_fused = torch.compile(dynamic=False, fullgraph=True)(_muon_step_impl)
+else:
+    adamw_step_fused = _adamw_step_impl
+    muon_step_fused = _muon_step_impl
 
 
 class MuonAdamW(torch.optim.Optimizer):
@@ -430,12 +505,12 @@ class MuonAdamW(torch.optim.Optimizer):
 # ---------------------------------------------------------------------------
 
 # Model architecture
-ASPECT_RATIO = 64       # model_dim = depth * ASPECT_RATIO
-HEAD_DIM = 128          # target head dimension for attention
+ASPECT_RATIO = 64 if HAS_CUDA else 32       # model_dim = depth * ASPECT_RATIO
+HEAD_DIM = 128 if HAS_CUDA else 64          # target head dimension for attention
 WINDOW_PATTERN = "SSSL" # sliding window pattern: L=full, S=half context
 
 # Optimization
-TOTAL_BATCH_SIZE = 2**19 # ~524K tokens per optimizer step
+TOTAL_BATCH_SIZE = 2**19 if HAS_CUDA else 2**13 # tokens per optimizer step
 EMBEDDING_LR = 0.6      # learning rate for token embeddings (Adam)
 UNEMBEDDING_LR = 0.004  # learning rate for lm_head (Adam)
 MATRIX_LR = 0.04        # learning rate for matrix parameters (Muon)
@@ -447,8 +522,8 @@ WARMDOWN_RATIO = 0.5    # fraction of time budget for LR warmdown
 FINAL_LR_FRAC = 0.0     # final LR as fraction of initial
 
 # Model size
-DEPTH = 8               # number of transformer layers
-DEVICE_BATCH_SIZE = 128  # per-device batch size (reduce if OOM)
+DEPTH = 8 if HAS_CUDA else 4               # number of transformer layers
+DEVICE_BATCH_SIZE = 128 if HAS_CUDA else 4  # per-device batch size
 
 # ---------------------------------------------------------------------------
 # Setup: tokenizer, model, optimizer, dataloader
@@ -456,10 +531,14 @@ DEVICE_BATCH_SIZE = 128  # per-device batch size (reduce if OOM)
 
 t_start = time.time()
 torch.manual_seed(42)
-torch.cuda.manual_seed(42)
+if HAS_CUDA:
+    torch.cuda.manual_seed(42)
 torch.set_float32_matmul_precision("high")
-device = torch.device("cuda")
-autocast_ctx = torch.amp.autocast(device_type="cuda", dtype=torch.bfloat16)
+device = torch.device("cuda" if HAS_CUDA else "cpu")
+if HAS_CUDA:
+    autocast_ctx = torch.amp.autocast(device_type="cuda", dtype=torch.bfloat16)
+else:
+    autocast_ctx = torch.amp.autocast(device_type="cpu", dtype=torch.bfloat16)
 H100_BF16_PEAK_FLOPS = 989.5e12
 
 tokenizer = Tokenizer.from_directory()
@@ -505,7 +584,8 @@ optimizer = model.setup_optimizer(
     weight_decay=WEIGHT_DECAY,
 )
 
-model = torch.compile(model, dynamic=False)
+if HAS_CUDA:
+    model = torch.compile(model, dynamic=False)
 
 train_loader = make_dataloader(tokenizer, DEVICE_BATCH_SIZE, MAX_SEQ_LEN, "train")
 x, y, epoch = next(train_loader)  # prefetch first batch
@@ -541,7 +621,8 @@ total_training_time = 0
 step = 0
 
 while True:
-    torch.cuda.synchronize()
+    if HAS_CUDA:
+        torch.cuda.synchronize()
     t0 = time.time()
     for micro_step in range(grad_accum_steps):
         with autocast_ctx:
@@ -571,7 +652,8 @@ while True:
         print("FAIL")
         exit(1)
 
-    torch.cuda.synchronize()
+    if HAS_CUDA:
+        torch.cuda.synchronize()
     t1 = time.time()
     dt = t1 - t0
 
@@ -616,7 +698,7 @@ with autocast_ctx:
 t_end = time.time()
 startup_time = t_start_training - t_start
 steady_state_mfu = 100 * num_flops_per_token * TOTAL_BATCH_SIZE * (step - 10) / total_training_time / H100_BF16_PEAK_FLOPS if total_training_time > 0 else 0
-peak_vram_mb = torch.cuda.max_memory_allocated() / 1024 / 1024
+peak_vram_mb = torch.cuda.max_memory_allocated() / 1024 / 1024 if HAS_CUDA else 0
 
 print("---")
 print(f"val_bpb:          {val_bpb:.6f}")
