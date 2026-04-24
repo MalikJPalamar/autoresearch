@@ -1,1 +1,3 @@
 commit	val_bpb	memory_gb	status	description
+2774684	1.617516	0.0	baseline	baseline: DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.06
+243cc6f	1.611448	0.0	keep	experiment 6: increase CPU depth from 4 to 6 layers (-0.006 bpb)
