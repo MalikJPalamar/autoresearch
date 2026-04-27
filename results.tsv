@@ -2,3 +2,4 @@ commit	val_bpb	memory_gb	status	description
 2774684	1.617516	0.0	baseline	baseline: DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.06
 243cc6f	1.611448	0.0	keep	experiment 6: increase CPU depth from 4 to 6 layers (-0.006 bpb)
 c1e179e	1.213347	0.0	baseline	baseline: DEPTH=8, MATRIX_LR=0.02, EMBEDDING_LR=0.3, SCALAR_LR=0.25, WD=0.4, WARMUP=0.1
+63b627b	0.0	0.0	discard	experiment 20: add grad clipping max_norm=1.0 (FAIL step 87)
