@@ -1,3 +1,8 @@
 commit	val_bpb	memory_gb	status	description
 2774684	1.617516	0.0	baseline	baseline: DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.06
 243cc6f	1.611448	0.0	keep	experiment 6: increase CPU depth from 4 to 6 layers (-0.006 bpb)
+484f853	2.573159	0.0	baseline	baseline (new data): DEPTH=6, ASPECT_RATIO=32, HEAD_DIM=64, tinyshakespeare
+f3cf71f	2.578201	0.0	discard	experiment 7: reduce WARMDOWN_RATIO 0.5->0.3 (+0.005 bpb, worse)
+5cbd5b5	2.613236	0.0	discard	experiment 8: SwiGLU MLP replacing ReluSquared (+0.040 bpb, worse)
+88bbac8	2.578849	0.0	discard	experiment 9: increase depth 6->8 (+0.006 bpb, fewer steps in budget)
+a5dbeb7	2.540868	0.0	keep	experiment 10: reduce EMBEDDING_LR 0.6->0.3 (-0.032 bpb, best so far)
