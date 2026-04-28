@@ -16,3 +16,4 @@ ac7c402	2.622887	0.0	keep	experiment 42: reduce DEPTH 8->6 (-0.030 bpb, 81 steps
 50c9336	2.603759	0.0	keep	experiment 46: increase EMBEDDING_LR 0.3->0.5 (-0.001 bpb)
 972cb5b	2.598429	0.0	keep	experiment 47: reduce softcap 15->10 (-0.005 bpb)
 2890fdf	2.592320	0.0	keep	experiment 48: reduce softcap 10->7 (-0.006 bpb)
+f1549fc	2.510313	0.0	keep	experiment 50: DEVICE_BATCH_SIZE 4->8, TOTAL_BATCH 2^13->2^14 (-0.082 bpb)
