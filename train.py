@@ -509,7 +509,7 @@ HEAD_DIM = 128 if HAS_CUDA else 64          # target head dimension for attentio
 WINDOW_PATTERN = "SSSL" # sliding window pattern: L=full, S=half context
 
 # Optimization
-TOTAL_BATCH_SIZE = 2**19 if HAS_CUDA else 2**13 # tokens per optimizer step
+TOTAL_BATCH_SIZE = 2**19 if HAS_CUDA else 2**14 # tokens per optimizer step
 EMBEDDING_LR = 0.5      # learning rate for token embeddings (Adam)
 UNEMBEDDING_LR = 0.004  # learning rate for lm_head (Adam)
 MATRIX_LR = 0.02        # learning rate for matrix parameters (Muon)
@@ -522,7 +522,7 @@ FINAL_LR_FRAC = 0.0     # final LR as fraction of initial
 
 # Model size
 DEPTH = 8 if HAS_CUDA else 4               # number of transformer layers
-DEVICE_BATCH_SIZE = 128 if HAS_CUDA else 4  # per-device batch size
+DEVICE_BATCH_SIZE = 128 if HAS_CUDA else 8  # per-device batch size
 
 # ---------------------------------------------------------------------------
 # Setup: tokenizer, model, optimizer, dataloader
