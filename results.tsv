@@ -4,3 +4,4 @@ commit	val_bpb	memory_gb	status	description
 c1e179e	1.213347	0.0	baseline	baseline: DEPTH=8, MATRIX_LR=0.02, EMBEDDING_LR=0.3, SCALAR_LR=0.25, WD=0.4, WARMUP=0.1
 ba06245	1.213499	0.0	discard	experiment 22: SiLU activation (+0.000 bpb, no improvement)
 766628b	1.212222	0.0	keep	experiment 23: reduce weight_decay 0.4->0.1 (-0.001 bpb)
+04e2926	0.0	0.0	discard	experiment 28: final_lr_frac 0.0->0.1 (FAIL step 97)
