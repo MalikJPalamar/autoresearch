@@ -7,3 +7,4 @@ ba06245	1.213499	0.0	discard	experiment 22: SiLU activation (+0.000 bpb, no impr
 fb8858a	1.213534	0.0	discard	experiment 32: adam_beta1 0.8->0.9 (+0.001 bpb)
 8b62669	1.866029	0.0	baseline	baseline (tinyshakespeare): DEPTH=8, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.02, WD=0.1
 ed359a7	1.866974	0.0	discard	experiment 33: increase logit softcap 15->30 (+0.001 bpb)
+cba26b6	1.863412	0.0	keep	experiment 34: GeLU activation replacing ReluSquared (-0.003 bpb)
