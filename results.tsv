@@ -21,3 +21,4 @@ f1549fc	2.510313	0.0	keep	experiment 50: DEVICE_BATCH_SIZE 4->8, TOTAL_BATCH 2^1
 cd0802a	2.442166	0.0	keep	experiment 53: reduce MLP ratio 4x->3x (-0.002 bpb, 44 steps)
 e228fae	2.440654	0.0	keep	experiment 54: remove weight decay 0.1->0.0 (-0.002 bpb)
 6da0005	2.436641	0.0	keep	experiment 57: FINAL_LR_FRAC 0.0->0.05 (-0.004 bpb)
+2f06761	2.432918	0.0	keep	experiment 58: FINAL_LR_FRAC 0.05->0.1 (-0.004 bpb)
