@@ -21,3 +21,4 @@ cron/logs/
 
 # Run logs
 run.log
+run_*.log
