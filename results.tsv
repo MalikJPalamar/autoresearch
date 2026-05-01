@@ -23,3 +23,10 @@ e228fae	2.440654	0.0	keep	experiment 54: remove weight decay 0.1->0.0 (-0.002 bp
 6da0005	2.436641	0.0	keep	experiment 57: FINAL_LR_FRAC 0.0->0.05 (-0.004 bpb)
 2f06761	2.432918	0.0	keep	experiment 58: FINAL_LR_FRAC 0.05->0.1 (-0.004 bpb)
 4cfdff0	2.424009	0.0	keep	experiment 59: FINAL_LR_FRAC 0.1->0.2 (-0.009 bpb)
+eea7eb5	2.401276	0.0	baseline	baseline (tinyshakespeare, CPU re-prep): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.02, EMBEDDING_LR=0.5, WD=0.0, WARMUP=0.1, WARMDOWN=0.9, FINAL_LR=0.2
+ce94bbb	2.403913	0.0	discard	experiment 60a: FINAL_LR_FRAC 0.2->0.3 (+0.003 bpb, within noise)
+3d2b54f	2.421247	0.0	discard	experiment 60b: HEAD_DIM 64->32 (4 heads) (+0.020 bpb)
+9969822	2.404550	0.0	discard	experiment 60c: SCALAR_LR 0.25->0.5 (+0.003 bpb, within noise)
+1cf139e	2.425239	0.0	discard	experiment 60d: DEPTH 4->3 (+0.024 bpb, lost capacity > gained steps)
+3b93aa4	2.855666	0.0	discard	experiment 60e: softcap 7->5 (+0.454 bpb, too restrictive)
+b35fe6c	2.474540	0.0	discard	experiment 60f: UNEMBEDDING_LR 0.004->0.008 (+0.073 bpb)
