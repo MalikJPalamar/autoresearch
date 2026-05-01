@@ -167,12 +167,12 @@ class CausalSelfAttention(nn.Module):
 class MLP(nn.Module):
     def __init__(self, config):
         super().__init__()
-        self.c_fc = nn.Linear(config.n_embd, 4 * config.n_embd, bias=False)
-        self.c_proj = nn.Linear(4 * config.n_embd, config.n_embd, bias=False)
+        self.c_fc = nn.Linear(config.n_embd, 3 * config.n_embd, bias=False)
+        self.c_proj = nn.Linear(3 * config.n_embd, config.n_embd, bias=False)
 
     def forward(self, x):
         x = self.c_fc(x)
-        x = F.relu(x).square()
+        x = F.gelu(x)
         x = self.c_proj(x)
         return x
 
@@ -347,7 +347,7 @@ class GPT(nn.Module):
             x = block(x, ve, cos_sin, self.window_sizes[i])
         x = norm(x)
 
-        softcap = 15
+        softcap = 7
         logits = self.lm_head(x)
         logits = logits.float()
         logits = softcap * torch.tanh(logits / softcap)
@@ -509,20 +509,20 @@ HEAD_DIM = 128 if HAS_CUDA else 64          # target head dimension for attentio
 WINDOW_PATTERN = "SSSL" # sliding window pattern: L=full, S=half context
 
 # Optimization
-TOTAL_BATCH_SIZE = 2**19 if HAS_CUDA else 2**13 # tokens per optimizer step
-EMBEDDING_LR = 0.6      # learning rate for token embeddings (Adam)
+TOTAL_BATCH_SIZE = 2**19 if HAS_CUDA else 2**15 # tokens per optimizer step
+EMBEDDING_LR = 0.5      # learning rate for token embeddings (Adam)
 UNEMBEDDING_LR = 0.004  # learning rate for lm_head (Adam)
-MATRIX_LR = 0.06        # learning rate for matrix parameters (Muon)
-SCALAR_LR = 0.5         # learning rate for per-layer scalars (Adam)
-WEIGHT_DECAY = 0.2      # cautious weight decay for Muon
+MATRIX_LR = 0.02        # learning rate for matrix parameters (Muon)
+SCALAR_LR = 0.25        # learning rate for per-layer scalars (Adam)
+WEIGHT_DECAY = 0.0      # cautious weight decay for Muon
 ADAM_BETAS = (0.8, 0.95) # Adam beta1, beta2
-WARMUP_RATIO = 0.0      # fraction of time budget for LR warmup
-WARMDOWN_RATIO = 0.5    # fraction of time budget for LR warmdown
-FINAL_LR_FRAC = 0.0     # final LR as fraction of initial
+WARMUP_RATIO = 0.1      # fraction of time budget for LR warmup
+WARMDOWN_RATIO = 0.9    # fraction of time budget for LR warmdown
+FINAL_LR_FRAC = 0.2     # final LR as fraction of initial
 
 # Model size
-DEPTH = 8 if HAS_CUDA else 6               # number of transformer layers
-DEVICE_BATCH_SIZE = 128 if HAS_CUDA else 4  # per-device batch size
+DEPTH = 8 if HAS_CUDA else 4               # number of transformer layers
+DEVICE_BATCH_SIZE = 128 if HAS_CUDA else 16  # per-device batch size
 
 # ---------------------------------------------------------------------------
 # Setup: tokenizer, model, optimizer, dataloader

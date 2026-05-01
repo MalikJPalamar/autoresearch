@@ -1,3 +1,32 @@
 commit	val_bpb	memory_gb	status	description
 2774684	1.617516	0.0	baseline	baseline: DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.06
 243cc6f	1.611448	0.0	keep	experiment 6: increase CPU depth from 4 to 6 layers (-0.006 bpb)
+c1e179e	1.213347	0.0	baseline	baseline: DEPTH=8, MATRIX_LR=0.02, EMBEDDING_LR=0.3, SCALAR_LR=0.25, WD=0.4, WARMUP=0.1
+ba06245	1.213499	0.0	discard	experiment 22: SiLU activation (+0.000 bpb, no improvement)
+766628b	1.212222	0.0	keep	experiment 23: reduce weight_decay 0.4->0.1 (-0.001 bpb)
+fb8858a	1.213534	0.0	discard	experiment 32: adam_beta1 0.8->0.9 (+0.001 bpb)
+8b62669	1.866029	0.0	baseline	baseline (tinyshakespeare): DEPTH=8, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.02, WD=0.1
+ed359a7	1.866974	0.0	discard	experiment 33: increase logit softcap 15->30 (+0.001 bpb)
+cba26b6	1.863412	0.0	keep	experiment 34: GeLU activation replacing ReluSquared (-0.003 bpb)
+95f145a	2.659322	0.0	keep	experiment 37: increase WARMDOWN_RATIO 0.5->0.7 (-0.008 bpb)
+99b12c8	2.655447	0.0	keep	experiment 38: increase WARMDOWN_RATIO 0.7->0.85 (-0.004 bpb)
+3b71645	2.652300	0.0	keep	experiment 39: increase WARMDOWN_RATIO 0.85->0.9 (-0.003 bpb)
+ac7c402	2.622887	0.0	keep	experiment 42: reduce DEPTH 8->6 (-0.030 bpb, 81 steps vs 53)
+4408eb7	2.605127	0.0	keep	experiment 43: reduce DEPTH 6->4 (-0.018 bpb, 134 steps)
+50c9336	2.603759	0.0	keep	experiment 46: increase EMBEDDING_LR 0.3->0.5 (-0.001 bpb)
+972cb5b	2.598429	0.0	keep	experiment 47: reduce softcap 15->10 (-0.005 bpb)
+2890fdf	2.592320	0.0	keep	experiment 48: reduce softcap 10->7 (-0.006 bpb)
+f1549fc	2.510313	0.0	keep	experiment 50: DEVICE_BATCH_SIZE 4->8, TOTAL_BATCH 2^13->2^14 (-0.082 bpb)
+585d637	2.444136	0.0	keep	experiment 51: DEVICE_BATCH_SIZE 8->16, TOTAL_BATCH 2^14->2^15 (-0.066 bpb)
+cd0802a	2.442166	0.0	keep	experiment 53: reduce MLP ratio 4x->3x (-0.002 bpb, 44 steps)
+e228fae	2.440654	0.0	keep	experiment 54: remove weight decay 0.1->0.0 (-0.002 bpb)
+6da0005	2.436641	0.0	keep	experiment 57: FINAL_LR_FRAC 0.0->0.05 (-0.004 bpb)
+2f06761	2.432918	0.0	keep	experiment 58: FINAL_LR_FRAC 0.05->0.1 (-0.004 bpb)
+4cfdff0	2.424009	0.0	keep	experiment 59: FINAL_LR_FRAC 0.1->0.2 (-0.009 bpb)
+eea7eb5	2.401276	0.0	baseline	baseline (tinyshakespeare, CPU re-prep): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.02, EMBEDDING_LR=0.5, WD=0.0, WARMUP=0.1, WARMDOWN=0.9, FINAL_LR=0.2
+ce94bbb	2.403913	0.0	discard	experiment 60a: FINAL_LR_FRAC 0.2->0.3 (+0.003 bpb, within noise)
+3d2b54f	2.421247	0.0	discard	experiment 60b: HEAD_DIM 64->32 (4 heads) (+0.020 bpb)
+9969822	2.404550	0.0	discard	experiment 60c: SCALAR_LR 0.25->0.5 (+0.003 bpb, within noise)
+1cf139e	2.425239	0.0	discard	experiment 60d: DEPTH 4->3 (+0.024 bpb, lost capacity > gained steps)
+3b93aa4	2.855666	0.0	discard	experiment 60e: softcap 7->5 (+0.454 bpb, too restrictive)
+b35fe6c	2.474540	0.0	discard	experiment 60f: UNEMBEDDING_LR 0.004->0.008 (+0.073 bpb)
