@@ -30,3 +30,4 @@ ce94bbb	2.403913	0.0	discard	experiment 60a: FINAL_LR_FRAC 0.2->0.3 (+0.003 bpb,
 1cf139e	2.425239	0.0	discard	experiment 60d: DEPTH 4->3 (+0.024 bpb, lost capacity > gained steps)
 3b93aa4	2.855666	0.0	discard	experiment 60e: softcap 7->5 (+0.454 bpb, too restrictive)
 b35fe6c	2.474540	0.0	discard	experiment 60f: UNEMBEDDING_LR 0.004->0.008 (+0.073 bpb)
+0abd00f	2.435759	0.0	baseline	baseline (tinyshakespeare, fresh data re-prep): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.02, EMBEDDING_LR=0.5, WD=0.0, WARMUP=0.1, WARMDOWN=0.9, FINAL_LR=0.2
