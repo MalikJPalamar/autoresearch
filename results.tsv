@@ -32,3 +32,5 @@ ce94bbb	2.403913	0.0	discard	experiment 60a: FINAL_LR_FRAC 0.2->0.3 (+0.003 bpb,
 b35fe6c	2.474540	0.0	discard	experiment 60f: UNEMBEDDING_LR 0.004->0.008 (+0.073 bpb)
 0abd00f	2.435759	0.0	baseline	baseline (tinyshakespeare, fresh data re-prep): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.02, EMBEDDING_LR=0.5, WD=0.0, WARMUP=0.1, WARMDOWN=0.9, FINAL_LR=0.2
 1f40393	2.433657	0.0	keep	experiment 61: reduce WARMUP_RATIO 0.1->0.05 (-0.002 bpb)
+3040ea4	2.690190	0.0	baseline	baseline (tinyshakespeare, fresh session): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.02, EMBEDDING_LR=0.5, WD=0.0, WARMUP=0.05, WARMDOWN=0.9, FINAL_LR=0.2
+913676b	2.295885	0.0	keep	experiment 62: WINDOW_PATTERN SSSL->L, full attention all layers (-0.394 bpb)
