@@ -506,7 +506,7 @@ class MuonAdamW(torch.optim.Optimizer):
 # Model architecture
 ASPECT_RATIO = 64 if HAS_CUDA else 32       # model_dim = depth * ASPECT_RATIO
 HEAD_DIM = 128 if HAS_CUDA else 64          # target head dimension for attention
-WINDOW_PATTERN = "SSSL" # sliding window pattern: L=full, S=half context
+WINDOW_PATTERN = "L" # sliding window pattern: L=full, S=half context
 
 # Optimization
 TOTAL_BATCH_SIZE = 2**19 if HAS_CUDA else 2**15 # tokens per optimizer step
