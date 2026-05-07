@@ -36,3 +36,10 @@ b35fe6c	2.474540	0.0	discard	experiment 60f: UNEMBEDDING_LR 0.004->0.008 (+0.073
 913676b	2.295885	0.0	keep	experiment 62: WINDOW_PATTERN SSSL->L, full attention all layers (-0.394 bpb)
 047916e	3.407681	0.0	baseline	baseline (tinyshakespeare, fresh session): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.02, EMBEDDING_LR=0.5, WD=0.0, WARMUP=0.05, WARMDOWN=0.9, FINAL_LR=0.2, WINDOW=L
 047916e	2.927780	0.0	keep	experiment 63: SwiGLU activation replacing GeLU MLP (-0.480 bpb, same params/steps)
+8532037	2.410271	0.0	keep	experiment 78: Adam beta1 0.8->0.7 (-0.002 bpb)
+6c0cabe	2.408276	0.0	keep	experiment 79: Adam beta1 0.7->0.6 (-0.002 bpb)
+1bc2d98	2.407510	0.0	keep	experiment 80: Adam beta1 0.6->0.5 (-0.001 bpb)
+4c1defa	2.405856	0.0	keep	experiment 81: Adam beta1 0.5->0.4 (-0.002 bpb)
+54e7e31	2.404435	0.0	keep	experiment 82: Adam beta1 0.4->0.3 (-0.001 bpb)
+3783025	2.403638	0.0	keep	experiment 83: Adam beta1 0.3->0.2 (-0.001 bpb)
+9c6c76d	2.403149	0.0	keep	experiment 84: Adam beta1 0.2->0.1 (-0.000 bpb)
