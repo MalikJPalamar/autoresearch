@@ -48,3 +48,9 @@ b35fe6c	2.474540	0.0	discard	experiment 60f: UNEMBEDDING_LR 0.004->0.008 (+0.073
 b6baa63	3.078358	0.0	baseline	baseline (tinyshakespeare, fresh data+tokenizer): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.04, EMBEDDING_LR=1.0, WD=0.0, WARMUP=0.0, WARMDOWN=0.9, FINAL_LR=0.3, WINDOW=L, ns_steps=3
 c8dc09e	FAIL	0.0	discard	experiment 112: increase FINAL_LR_FRAC 0.3->0.4 (training diverged at step 94)
 baf0614	3.045689	0.0	keep	experiment 113: increase Adam beta2 0.95->0.99 (-0.033 bpb)
+d9d2009	2.413808	0.0	baseline	baseline (tinyshakespeare, fresh session): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.04, EMBEDDING_LR=1.0, WD=0.0, WARMUP=0.0, WARMDOWN=0.9, FINAL_LR=0.3, WINDOW=L, ADAM_BETAS=(0.1,0.99)
+40f771d	2.479621	0.0	discard	experiment 114: increase MATRIX_LR 0.04->0.05 (+0.066 bpb)
+1087daa	2.414464	0.0	discard	experiment 115: increase WARMDOWN_RATIO 0.9->0.95 (+0.001 bpb, within noise)
+aecf16f	FAIL	0.0	discard	experiment 116: reduce FINAL_LR_FRAC 0.3->0.2 (training diverged)
+182e266	3.656904	0.0	discard	experiment 117: weight tying wte/lm_head (+1.243 bpb, conflicting init)
+c468cba	2.348145	0.0	keep	experiment 118: cosine warmdown schedule instead of linear (-0.066 bpb)
