@@ -16,15 +16,17 @@ seed.sql    — inserts 18 tickers + backfills data from existing reports
 
 ## 3. Get your credentials
 
-From Project Settings > API, copy:
-- `SUPABASE_URL` — your project URL
-- `SUPABASE_ANON_KEY` — the `anon` public key
+From Project Settings > API Keys, copy:
+- `SUPABASE_URL` — your project URL (from General settings)
+- `SUPABASE_PUBLISHABLE_KEY` — the publishable key (starts with `sb_publishable_`)
+- `SUPABASE_SECRET_KEY` — the secret key (starts with `sb_secret_`, only if RLS blocks writes)
 
-Add these as environment variables on your VPS:
+On your VPS, copy `.env.example` to `.env` and fill in the values:
 
 ```bash
-export SUPABASE_URL="https://your-project.supabase.co"
-export SUPABASE_ANON_KEY="your-anon-key"
+cd /root/autoresearch
+cp .env.example .env
+# Edit .env with your credentials
 ```
 
 ## Tables

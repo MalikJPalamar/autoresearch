@@ -27,8 +27,10 @@ cd "$REPO_DIR"
 git pull origin master 2>/dev/null || true
 
 SUPABASE_INSTRUCTION=""
-if [ -n "${SUPABASE_URL:-}" ] && [ -n "${SUPABASE_ANON_KEY:-}" ]; then
-  SUPABASE_INSTRUCTION="Supabase is configured (SUPABASE_URL and SUPABASE_ANON_KEY are set as env vars). Read signal history from Supabase (GET \$SUPABASE_URL/rest/v1/signals?select=*,tickers(symbol)&date=eq.<5-days-ago>) to score accuracy. After experiment evaluation, update the experiments table via the REST API. Use headers: apikey: \$SUPABASE_ANON_KEY, Authorization: Bearer \$SUPABASE_ANON_KEY, Content-Type: application/json, Prefer: resolution=merge-duplicates."
+SUPA_KEY="${SUPABASE_SECRET_KEY:-${SUPABASE_PUBLISHABLE_KEY:-${SUPABASE_ANON_KEY:-}}}"
+if [ -n "${SUPABASE_URL:-}" ] && [ -n "$SUPA_KEY" ]; then
+  SUPABASE_INSTRUCTION="Supabase is configured. Read signal history from Supabase (GET \$SUPABASE_URL/rest/v1/signals?select=*,tickers(symbol)&date=eq.<5-days-ago>) to score accuracy. After experiment evaluation, update the experiments table via the REST API. Use curl headers: apikey: \$SUPA_KEY, Authorization: Bearer \$SUPA_KEY, Content-Type: application/json, Prefer: resolution=merge-duplicates. The env vars SUPABASE_URL and SUPA_KEY are available."
+  export SUPA_KEY
 fi
 
 claude -p \
