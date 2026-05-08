@@ -304,7 +304,7 @@ class GPT(nn.Module):
         lm_head_params = list(self.lm_head.parameters())
         assert len(list(self.parameters())) == (len(matrix_params) + len(embedding_params) +
             len(lm_head_params) + len(value_embeds_params))
-        # Scale LR ∝ 1/√dmodel (tuned at 768 dim)
+        # Scale LR ∡ 1/√dmodel (tuned at 768 dim)
         dmodel_lr_scale = (model_dim / 768) ** -0.5
         print(f"Scaling AdamW LRs by 1/sqrt({model_dim}/768) = {dmodel_lr_scale:.6f}")
         param_groups = [
@@ -500,7 +500,7 @@ EMBEDDING_LR = 1.0      # learning rate for token embeddings (Adam)
 UNEMBEDDING_LR = 0.004  # learning rate for lm_head (Adam)
 MATRIX_LR = 0.04        # learning rate for matrix parameters (Muon)
 WEIGHT_DECAY = 0.0      # cautious weight decay for Muon
-ADAM_BETAS = (0.1, 0.95) # Adam beta1, beta2
+ADAM_BETAS = (0.1, 0.99) # Adam beta1, beta2
 WARMUP_RATIO = 0.0      # fraction of time budget for LR warmup
 WARMDOWN_RATIO = 0.9    # fraction of time budget for LR warmdown
 FINAL_LR_FRAC = 0.3     # final LR as fraction of initial
