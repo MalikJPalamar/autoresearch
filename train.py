@@ -506,7 +506,7 @@ WARMDOWN_RATIO = 0.9    # fraction of time budget for LR warmdown
 FINAL_LR_FRAC = 0.3     # final LR as fraction of initial
 
 # Model size
-DEPTH = 8 if HAS_CUDA else 3               # number of transformer layers
+DEPTH = 8 if HAS_CUDA else 4               # number of transformer layers
 DEVICE_BATCH_SIZE = 128 if HAS_CUDA else 8   # per-device batch size
 
 # ---------------------------------------------------------------------------
