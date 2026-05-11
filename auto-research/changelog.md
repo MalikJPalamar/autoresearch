@@ -1,5 +1,14 @@
 # Methodology Changelog
 
+## v1.3 — 2026-05-11
+- **Experiment:** format-003 (report 1/3)
+- **Change:** Added sector relative strength ranking tables within each sector. After each sector's ticker analysis, a 3-column table ranks tickers by 25-day return, RSI, and RS signal (★ rating). This helps readers immediately identify leaders vs laggards within a sector.
+- **Hypothesis:** Relative strength ranking improves Actionability (AC) by helping readers prioritize positions within a sector, and adds Coverage (CV) depth. Expected CS improvement from ~51.5 baseline.
+- **cs_before:** 51.5 (average of Apr 15: 51.7 + Apr 16: 51.3)
+- **Status:** PENDING — need 2 more reports to evaluate
+- **Resume Note:** 25-day pause since last run (Apr 16 → May 11). Scored 18 unscored Apr 15 signals against Apr 22 closes. AS = 77.8 (14/18 correct). CS jumped to 87.1 from 51.3 — primarily driven by AS finally being non-zero.
+
+
 ## v1.2 — 2026-04-15
 - **Experiment:** format-002
 - **Change:** Added per-ticker news sentiment scoring (-2.0 to +2.0) with 1-line rationale. Also improving technical indicator coverage (RSI, MACD, MAs for all tickers) and adding support/resistance levels.
