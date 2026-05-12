@@ -1,5 +1,11 @@
 # Methodology Changelog
 
+## v1.3 — 2026-05-12
+- **Experiment:** format-003 (report 2/3)
+- **Status:** PENDING — need 1 more report to evaluate (expected May 13)
+- **Today:** CS = 87.1 (AS=77.8, AC=100.0, CV=86.7). WTI $101.87 on Iran/Hormuz risk. Nasdaq -2% on CPI 3.8% (3yr high). AMD RSI 83.7 (overbought). NVDA earnings May 20. AMAT earnings May 14. LMT RSI 30 (oversold). PLTR RSI 31 (near oversold).
+- **Running avg (2 reports):** CS avg = (87.1 + 87.1) / 2 = 87.1 vs cs_before 51.5 → strong improvement so far
+
 ## v1.3 — 2026-05-11
 - **Experiment:** format-003 (report 1/3)
 - **Change:** Added sector relative strength ranking tables within each sector. After each sector's ticker analysis, a 3-column table ranks tickers by 25-day return, RSI, and RS signal (★ rating). This helps readers immediately identify leaders vs laggards within a sector.
