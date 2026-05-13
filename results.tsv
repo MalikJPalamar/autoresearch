@@ -54,3 +54,4 @@ fb5f72e	3.631264	0.0	baseline	baseline (tinyshakespeare, fresh data re-prep): DE
 d5a3064	3.024133	0.0	keep	experiment 90: add dropout=0.1 for regularization (-0.607 bpb)
 046a2f3	2.474633	0.0	baseline	baseline (tinyshakespeare, fresh session): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.05, EMBEDDING_LR=1.0, WD=0.0, WARMUP=0.05, WARMDOWN=0.9, FINAL_LR=0.2, WINDOW=L, DROPOUT=0.15, softcap=off, x0_lambdas=0.3
 2646fc8	2.474398	0.0	discard	experiment 104: increase WARMDOWN_RATIO 0.9->0.95 (-0.000 bpb, within noise)
+b949934	2.471900	0.0	keep	experiment 105: reduce FINAL_LR_FRAC 0.2->0.1 (-0.003 bpb)
