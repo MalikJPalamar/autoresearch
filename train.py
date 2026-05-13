@@ -100,6 +100,7 @@ class GPTConfig:
     n_kv_head: int = 6
     n_embd: int = 768
     window_pattern: str = "SSSL"
+    dropout: float = 0.0
 
 
 def norm(x):
@@ -184,10 +185,11 @@ class Block(nn.Module):
         super().__init__()
         self.attn = CausalSelfAttention(config, layer_idx)
         self.mlp = MLP(config)
+        self.dropout = config.dropout
 
     def forward(self, x, ve, cos_sin, window_size):
-        x = x + self.attn(norm(x), ve, cos_sin, window_size)
-        x = x + self.mlp(norm(x))
+        x = x + F.dropout(self.attn(norm(x), ve, cos_sin, window_size), p=self.dropout, training=self.training)
+        x = x + F.dropout(self.mlp(norm(x)), p=self.dropout, training=self.training)
         return x
 
 
@@ -525,6 +527,7 @@ FINAL_LR_FRAC = 0.2     # final LR as fraction of initial
 # Model size
 DEPTH = 8 if HAS_CUDA else 4               # number of transformer layers
 DEVICE_BATCH_SIZE = 128 if HAS_CUDA else 16  # per-device batch size
+DROPOUT = 0.1                               # dropout rate for regularization
 
 # ---------------------------------------------------------------------------
 # Setup: tokenizer, model, optimizer, dataloader
@@ -554,6 +557,7 @@ def build_model_config(depth):
         sequence_len=MAX_SEQ_LEN, vocab_size=vocab_size,
         n_layer=depth, n_head=num_heads, n_kv_head=num_heads, n_embd=model_dim,
         window_pattern=WINDOW_PATTERN,
+        dropout=DROPOUT,
     )
 
 config = build_model_config(DEPTH)

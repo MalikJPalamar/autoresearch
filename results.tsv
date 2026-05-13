@@ -50,3 +50,5 @@ b91dd1f	2.331202	0.0	discard	experiment 86: increase MATRIX_LR 0.05->0.06 (+0.00
 70e66b8	2.337552	0.0	discard	experiment 87: increase EMBEDDING_LR 1.0->1.5 (+0.008 bpb)
 69ce741	2.333176	0.0	discard	experiment 88: reduce softcap 15->10 (+0.003 bpb)
 db79e50	2.327867	0.0	keep	experiment 89: increase x0_lambdas init 0.1->0.2 (-0.002 bpb)
+fb5f72e	3.631264	0.0	baseline	baseline (tinyshakespeare, fresh data re-prep): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.05, EMBEDDING_LR=1.0, WD=0.0, WARMUP=0.05, WARMDOWN=0.9, FINAL_LR=0.2, WINDOW=L
+d5a3064	3.024133	0.0	keep	experiment 90: add dropout=0.1 for regularization (-0.607 bpb)
