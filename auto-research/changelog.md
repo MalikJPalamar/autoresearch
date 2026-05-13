@@ -1,5 +1,11 @@
 # Methodology Changelog
 
+## v1.3 — 2026-05-13 (format-003 RESOLVED + format-004 START)
+- **Experiment:** format-003 — RESOLVED: **KEPT** ✓
+- **Resolution:** 3-report avg CS = 87.1 vs cs_before 51.5 → delta **+35.6 points**. Sector relative strength ranking tables retained as permanent feature of v1.3 methodology.
+- **format-004 STARTED:** Add explicit stop-loss, price target, and R/R ratio per ticker. cs_before = 87.1.
+- **Today:** CS = 87.1 (AS=77.8, AC=100.0, CV=86.7). S&P 500 + Nasdaq ATH; NVDA new ATH $225.57 pre-May-20 earnings; GOOGL ATH $403.70 (+3.49%); ASML ATH +4.64%; LMT RSI 12.9 (deeply oversold — CONTRARIAN signal); PLTR -4.31% on NHS controversy + valuation + AI competition; AMAT earnings tomorrow (May 14). WTI $102.25, Brent $107.05.
+
 ## v1.3 — 2026-05-12
 - **Experiment:** format-003 (report 2/3)
 - **Status:** PENDING — need 1 more report to evaluate (expected May 13)
@@ -35,5 +41,6 @@
 - **Notes:** Accuracy scoring begins after 5 trading days of history
 
 ## Queued Experiments
-- **format-003:** Relative strength ranking within sectors — auto-evolve
-- **format-004:** Add entry/exit price zones to improve AC — auto-evolve
+- **format-003:** Relative strength ranking within sectors — **KEPT (resolved 2026-05-13, CS delta +35.6)**
+- **format-004:** Add stop-loss level, price target, and R/R ratio per ticker — auto-evolve — **ACTIVE (started 2026-05-13)**
+- **format-005:** Options flow / unusual activity (requires Malik approval — Phase 3)

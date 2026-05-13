@@ -40,9 +40,15 @@ For each ticker:
 - **Support/Resistance**: Key levels
 - **Signal**: LONG / ACCUMULATE / CONTRARIAN / WATCH / SPECULATIVE / AVOID
 - **Timeframe**: Short-term (1-2w) / Medium-term (1-3mo) / Long-term (3-12mo)
+- **Entry Zone**: specific price range for entry
+- **Exit / Trim**: specific price target for exit or trim
+- **Stop-Loss**: specific level + % drawdown from entry (format-004, v1.4+)
+- **Risk/Reward Ratio**: target gain % / stop loss % (format-004, v1.4+)
 - **News Sentiment**: Score from -2.0 (very bearish) to +2.0 (very bullish), with 1-line rationale
 - **Risk Factor**: Primary risk for this position
 - **Catalyst**: Next expected catalyst or event
+
+> **format-004 experiment (started 2026-05-13):** Stop-loss + R/R ratio fields added to improve AC precision. cs_before = 87.1. Evaluate after 3 reports.
 
 ### Sector Correlation Table
 - Cross-sector movement analysis
