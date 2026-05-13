@@ -32,7 +32,7 @@ Query returned **0 unscored signals** for May 6 — system was on a 25-day pause
 ## Sector 1: AI Compute
 
 ### NVDA — Nvidia Corporation
-- **Price:** $225.57 | **Daily Change:** +6.4% | **52w Range:** $90.69 – $225.57 (**NEW ATH today**)
+- **Price:** $225.57 | **Daily Change:** +6.4% | **Daily Change:** +6.4% | **52w Range:** $90.69 – $225.57 (**NEW ATH today**)
 - **RSI(14):** 71.37 — **OVERBOUGHT** ⚠️ (just crossed threshold)
 - **MACD:** +4.08 (above signal line) — Bullish; turned positive May 8
 - **MAs:** Above SMA20/50/200, EMA9/20 — Strong Buy alignment
