@@ -114,3 +114,4 @@ ff3e6d3	2.465114	0.0	discard	experiment 159: cosine LR warmdown (+0.001 bpb, lin
 a78a3f7	2.471808	0.0	discard	experiment 162: increase SCALAR_LR 0.25->0.50 (+0.008 bpb, too high)
 a4f8c9c	2.463571	0.0	keep	experiment 163: increase MLP hidden 2*n_embd -> 3*n_embd (-0.001 bpb!)
 953ea17	2.469033	0.0	discard	experiment 164: MLP hidden 4*n_embd (+0.006 bpb, too slow per step)
+5925c45	2.480119	0.0	discard	experiment 165: increase ASPECT_RATIO 32->48 (+0.017 bpb, too slow per step)
