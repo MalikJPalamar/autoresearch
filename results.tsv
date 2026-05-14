@@ -147,3 +147,4 @@ b2918cb	2.462884	0.0	discard	experiment 188: DROPOUT 0.05 with 3x MLP (+0.000 bp
 e4748f4	2.464344	0.0	discard	experiment 195: window pattern SL (+0.002 bpb)
 e4748f4	2.463810	0.0	discard	experiment 196: RoPE base 7500 (+0.001 bpb)
 617c961	2.465229	0.0	discard	experiment 197: remove QK norm (+0.002 bpb)
+6121966	2.465561	0.0	discard	experiment 198: c_v init 2x larger (+0.003 bpb)
