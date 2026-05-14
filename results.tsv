@@ -70,3 +70,4 @@ da794d5	2.471195	0.0	discard	experiment 109: reduce DROPOUT 0.15->0.1 (+0.000 bp
 077051c	2.473249	0.0	discard	experiment 118: reduce Adam beta2 0.95->0.9 (+0.002 bpb)
 898d884	2.473590	0.0	discard	experiment 119: increase Adam beta2 0.95->0.99 (+0.002 bpb)
 cf1c95c	2.472859	0.0	discard	experiment 120: cosine warmdown schedule (+0.001 bpb, linear is better)
+b3efa3c	2.472807	0.0	discard	experiment 121: fixed Muon momentum 0.95 (+0.001 bpb, warmup helps)
