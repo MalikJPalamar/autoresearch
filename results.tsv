@@ -64,3 +64,4 @@ da794d5	2.471195	0.0	discard	experiment 109: reduce DROPOUT 0.15->0.1 (+0.000 bp
 8e5345b	2.474724	0.0	discard	experiment 112: reduce WARMUP_RATIO 0.05->0.02 (+0.003 bpb, too short warmup)
 8c5f282	2.472341	0.0	discard	experiment 113: add WEIGHT_DECAY 0.0->0.01 (+0.001 bpb)
 60eb076	2.472500	0.0	discard	experiment 114: increase EMBEDDING_LR 1.0->1.5 (+0.001 bpb)
+263bc93	2.472272	0.0	discard	experiment 115: increase SCALAR_LR 0.25->0.5 (+0.001 bpb)
