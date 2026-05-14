@@ -66,3 +66,4 @@ da794d5	2.471195	0.0	discard	experiment 109: reduce DROPOUT 0.15->0.1 (+0.000 bp
 60eb076	2.472500	0.0	discard	experiment 114: increase EMBEDDING_LR 1.0->1.5 (+0.001 bpb)
 263bc93	2.472272	0.0	discard	experiment 115: increase SCALAR_LR 0.25->0.5 (+0.001 bpb)
 727947b	2.492044	0.0	discard	experiment 116: reduce UNEMBEDDING_LR 0.004->0.002 (+0.020 bpb, too slow)
+3afed95	2.485009	0.0	discard	experiment 117: increase UNEMBEDDING_LR 0.004->0.006 (+0.013 bpb, too fast)
