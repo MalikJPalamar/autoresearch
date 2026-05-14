@@ -227,18 +227,18 @@ class GPT(nn.Module):
         n_embd = self.config.n_embd
         s = 0.5 * n_embd**-0.5
         for block in self.transformer.h:
-            torch.nn.init.uniform_(block.attn.c_q.weight, -s, s)
-            torch.nn.init.uniform_(block.attn.c_k.weight, -s, s)
-            torch.nn.init.uniform_(block.attn.c_v.weight, -s, s)
+            torch.nn.init.normal_(block.attn.c_q.weight, mean=0.0, std=s)
+            torch.nn.init.normal_(block.attn.c_k.weight, mean=0.0, std=s)
+            torch.nn.init.normal_(block.attn.c_v.weight, mean=0.0, std=s)
             torch.nn.init.zeros_(block.attn.c_proj.weight)
-            torch.nn.init.uniform_(block.mlp.c_fc.weight, -s, s)
+            torch.nn.init.normal_(block.mlp.c_fc.weight, mean=0.0, std=s)
             torch.nn.init.zeros_(block.mlp.c_proj.weight)
         # Per-layer scalars
         self.resid_lambdas.fill_(1.0)
         self.x0_lambdas.fill_(0.3)
         # Value embeddings
         for ve in self.value_embeds.values():
-            torch.nn.init.uniform_(ve.weight, -s, s)
+            torch.nn.init.normal_(ve.weight, mean=0.0, std=s)
         # Gate weights init to zero (sigmoid(0)=0.5, scaled by 2 -> 1.0 = neutral)
         for block in self.transformer.h:
             if block.attn.ve_gate is not None:
