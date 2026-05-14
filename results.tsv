@@ -85,3 +85,4 @@ af7f2ef	2.476473	0.0	discard	experiment 129: reduce embedding init std 0.1->0.01
 cb37f5e	2.473789	0.0	discard	experiment 133: increase lm_head init std 0.001->0.01 (+0.004 bpb)
 21da6e9	2.468009	0.0	keep	experiment 134: reduce lm_head init std 0.001->0.0001 (-0.002 bpb!)
 1b1f53d	2.468331	0.0	discard	experiment 135: reduce lm_head init std 0.0001->0.00001 (+0.000 bpb, 0.0001 optimal)
+1a97268	2.475270	0.0	discard	experiment 136: zero init for lm_head (+0.007 bpb, needs some noise)
