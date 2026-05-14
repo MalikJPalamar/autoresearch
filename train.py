@@ -175,7 +175,7 @@ class MLP(nn.Module):
     def forward(self, x):
         x = self.c_fc(x)
         gate, up = x.chunk(2, dim=-1)
-        x = F.gelu(gate) * up
+        x = F.silu(gate) * up
         x = self.c_proj(x)
         return x
 
