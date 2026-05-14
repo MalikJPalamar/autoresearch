@@ -77,3 +77,4 @@ bf10680	2.471407	0.0	keep	experiment 124: remove dropout from attention output (
 cd159e1	2.471249	0.0	keep	experiment 125: reduce MATRIX_LR 0.05->0.04 (-0.000 bpb)
 b04298f	2.471170	0.0	discard	experiment 126: reduce MATRIX_LR 0.04->0.03 (+0.000 bpb, within noise)
 c1b4db6	2.473270	0.0	discard	experiment 127: reduce EMBEDDING_LR 1.0->0.5 (+0.002 bpb)
+0dd7df1	2.470789	0.0	keep	experiment 128: reduce embedding init std 1.0->0.1 (-0.000 bpb)
