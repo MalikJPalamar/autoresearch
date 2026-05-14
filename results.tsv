@@ -106,3 +106,4 @@ a3ea871	2.468096	0.0	discard	experiment 150: reduce MATRIX_LR 0.04->0.03 (+0.002
 740027e	2.464345	0.0	keep	experiment 154: reduce WARMDOWN_RATIO 0.9->0.8 (-0.000 bpb)
 364c592	2.464599	0.0	discard	experiment 155: reduce WARMDOWN_RATIO 0.8->0.7 (+0.000 bpb)
 35a73d6	2.464822	0.0	discard	experiment 156: reduce FINAL_LR_FRAC 0.05->0.01 (+0.001 bpb)
+8ac373c	2.464117	0.0	keep	experiment 157: increase FINAL_LR_FRAC 0.05->0.10 (-0.000 bpb)
