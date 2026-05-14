@@ -117,3 +117,4 @@ a4f8c9c	2.463571	0.0	keep	experiment 163: increase MLP hidden 2*n_embd -> 3*n_em
 5925c45	2.480119	0.0	discard	experiment 165: increase ASPECT_RATIO 32->48 (+0.017 bpb, too slow per step)
 38549c1	2.463420	0.0	discard	experiment 166: dropout on attn output too (+0.000 bpb, high variance)
 5538ded	2.463369	0.0	discard	experiment 167: GELU instead of SiLU (+0.001 bpb avg over 2 runs)
+4695c6c	2.463560	0.0	discard	experiment 168: increase EMBEDDING_LR 1.0->1.5 (+0.000 bpb)
