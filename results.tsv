@@ -157,3 +157,4 @@ fc82735	2.461719	0.0	keep	experiment 204: reduce SCALAR_LR 0.10->0.05 (-0.000 bp
 be34b5a	2.367913	0.0	baseline	baseline (tinyshakespeare, fresh data re-prep): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.04, EMBEDDING_LR=1.0, WD=0.0, WARMUP=0.1, WARMDOWN=0.8, FINAL_LR=0.10, WINDOW=L, DROPOUT=0.10, SCALAR_LR=0.05
 f0e1928	2.367678	0.0	keep	experiment 205: parallel attention + MLP (PaLM-style) (-0.000 bpb avg over 3 runs)
 8c8f8c0	2.461145	0.0	keep	experiment 206: increase WARMUP_RATIO 0.10->0.12 (-0.001 bpb avg over 3 runs)
+46c0b2b	2.461436	0.0	discard	experiment 207: EMBEDDING_LR 0.8 (+0.000 bpb)
