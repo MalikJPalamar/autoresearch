@@ -142,3 +142,4 @@ b2918cb	2.462884	0.0	discard	experiment 188: DROPOUT 0.05 with 3x MLP (+0.000 bp
 3dd5039	2.463450	0.0	discard	experiment 190: MATRIX_LR 0.05 (+0.001 bpb)
 5120768	2.463636	0.0	discard	experiment 191: resid_lambdas init 0.9 (+0.001 bpb)
 9e20b01	2.464876	0.0	discard	experiment 192: MLP hidden 2.5x (+0.002 bpb, 3x optimal)
+2b5fdf3	2.464716	0.0	discard	experiment 193: resid_lambdas LR 5x (+0.002 bpb)
