@@ -135,3 +135,4 @@ bf360c4	2.464231	0.0	discard	experiment 182: RoPE base 2500 (+0.001 bpb, 5000 op
 e24d2c9	2.467211	0.0	discard	experiment 183: WEIGHT_DECAY 0.01 (+0.004 bpb)
 62f48ed	2.492488	0.0	discard	experiment 184: multi-query attention n_kv_head=1 (+0.030 bpb)
 c69d9eb	2.468948	0.0	discard	experiment 185: HEAD_DIM 32 (4 heads) (+0.006 bpb)
+9a7e25d	2.464766	0.0	discard	experiment 186: Muon beta2 0.99 (+0.002 bpb)
