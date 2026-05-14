@@ -89,3 +89,4 @@ cb37f5e	2.473789	0.0	discard	experiment 133: increase lm_head init std 0.001->0.
 ffbc7ef	2.467596	0.0	keep	experiment 137: reduce block init scale sqrt(3)/sqrt(n) -> 1/sqrt(n) (-0.000 bpb)
 6dda132	2.466947	0.0	keep	experiment 138: reduce init scale to 0.5/sqrt(n) (-0.001 bpb)
 bf17a8b	2.468191	0.0	discard	experiment 139: reduce init scale to 0.25/sqrt(n) (+0.001 bpb, too small)
+be18f05	2.467909	0.0	discard	experiment 140: normal init instead of uniform (+0.001 bpb, uniform better)
