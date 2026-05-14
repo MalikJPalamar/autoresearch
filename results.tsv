@@ -95,3 +95,4 @@ c32e988	2.468678	0.0	discard	experiment 141: non-zero c_proj init (+0.002 bpb, z
 a16c994	2.466938	0.0	keep	experiment 143: increase Muon ns_steps 5->7 (-0.000 bpb, better preconditioning)
 7eb344c	2.466565	0.0	discard	experiment 144: increase Muon ns_steps 7->10 (+0.000 bpb, within noise)
 518b9b8	2.465813	0.0	discard	experiment 145: gradient clipping max_norm=1.0 (+0.000 bpb, high variance, within noise)
+25aafd7	2.465602	0.0	keep	experiment 146: reduce DROPOUT 0.15->0.10 (-0.001 bpb)
