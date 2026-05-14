@@ -103,3 +103,4 @@ a3ea871	2.468096	0.0	discard	experiment 150: reduce MATRIX_LR 0.04->0.03 (+0.002
 7bdf00c	2.469246	0.0	discard	experiment 151: reduce WARMUP_RATIO 0.05->0.02 (+0.003 bpb)
 4cb7f85	2.464999	0.0	keep	experiment 152: increase WARMUP_RATIO 0.05->0.10 (-0.001 bpb)
 05e7cc7	2.464816	0.0	discard	experiment 153: increase WARMUP_RATIO 0.10->0.15 (+0.000 bpb, 0.10 optimal)
+740027e	2.464345	0.0	keep	experiment 154: reduce WARMDOWN_RATIO 0.9->0.8 (-0.000 bpb)
