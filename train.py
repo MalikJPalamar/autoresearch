@@ -150,7 +150,8 @@ class CausalSelfAttention(nn.Module):
 
         cos, sin = cos_sin
         q, k = apply_rotary_emb(q, cos, sin), apply_rotary_emb(k, cos, sin)
-        q, k = norm(q), norm(k)
+        scale = self.head_dim ** -0.5
+        q, k = q * scale, k
 
         if fa3 is not None:
             y = fa3.flash_attn_func(q, k, v, causal=True, window_size=window_size)
