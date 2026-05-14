@@ -122,3 +122,4 @@ ae5c471	2.464480	0.0	discard	experiment 169: reduce EMBEDDING_LR 1.0->0.5 (+0.00
 88e7ea1	2.497143	0.0	discard	experiment 170: increase UNEMBEDDING_LR 0.004->0.008 (+0.034 bpb, way too high)
 eac60c6	2.479644	0.0	discard	experiment 171: ADAM_BETAS (0.8,0.95) (+0.016 bpb, low beta1 crucial)
 1f6af93	2.463518	0.0	discard	experiment 172: Muon initial momentum 0.90 (+0.000 bpb)
+df31fc7	2.496521	0.0	discard	experiment 173: DEPTH 6 (+0.033 bpb, too few steps)
