@@ -5,3 +5,6 @@ date	version	experiment	cs	as	ac	cv	status	description
 2026-04-15	v1.2	format-002	51.7	0.0	85.6	86.7	keep	added news sentiment scoring + improved technicals coverage
 2026-04-16	v1.2	format-002	51.3	0.0	87.8	83.3	keep	report 2/3 - TSM earnings day oil surge +3.65%
 2026-05-11	v1.3	format-003	87.1	77.8	100.0	86.7	pending	resume run; format-003 start; AS=77.8 (14/18 correct)
+2026-05-12	v1.3	format-003	87.1	77.8	100.0	86.7	pending	Iran/oil shock; NVDA earnings May 20; AS 77.8 rolling 30d; format-003 report 2/3
+2026-05-13	v1.3	format-003	87.1	77.8	100.0	86.7	keep	S&P+Nasdaq ATH; NVDA new ATH $225.57; GOOGL ATH; LMT RSI 12.9 oversold; format-003 KEPT (+35.6 CS delta); format-004 started
+2026-05-14	v1.3	format-004	87.1	77.8	100.0	86.7	pending	NVDA ATH $235.69 (+4.5%); GOOGL ATH; AMAT blowout earnings (+29% EPS); LRCX ATH $302; S&P >7500 record; OKLO -6% post-earnings+$1B offering; CEG->WATCH Crane delay; format-004 report 2/3
