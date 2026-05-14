@@ -68,3 +68,4 @@ da794d5	2.471195	0.0	discard	experiment 109: reduce DROPOUT 0.15->0.1 (+0.000 bp
 727947b	2.492044	0.0	discard	experiment 116: reduce UNEMBEDDING_LR 0.004->0.002 (+0.020 bpb, too slow)
 3afed95	2.485009	0.0	discard	experiment 117: increase UNEMBEDDING_LR 0.004->0.006 (+0.013 bpb, too fast)
 077051c	2.473249	0.0	discard	experiment 118: reduce Adam beta2 0.95->0.9 (+0.002 bpb)
+898d884	2.473590	0.0	discard	experiment 119: increase Adam beta2 0.95->0.99 (+0.002 bpb)
