@@ -128,3 +128,4 @@ f542239	2.476856	0.0	discard	experiment 175: TOTAL_BATCH_SIZE 2^16 (+0.014 bpb, 
 e137918	0.0	0.0	discard	experiment 176: TOTAL_BATCH_SIZE 2^14 (assertion error, batch too small)
 46918d9	2.485131	0.0	discard	experiment 177: remove embedding norm (+0.022 bpb)
 a2b66ff	2.464002	0.0	discard	experiment 178: embedding init std 0.1 (+0.001 bpb)
+b998074	2.467765	0.0	discard	experiment 179: lm_head init std 0.001 (+0.005 bpb)
