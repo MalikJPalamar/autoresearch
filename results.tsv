@@ -59,3 +59,4 @@ b949934	2.471900	0.0	keep	experiment 105: reduce FINAL_LR_FRAC 0.2->0.1 (-0.003 
 ab79a01	2.472528	0.0	discard	experiment 107: reduce FINAL_LR_FRAC 0.05->0.0 (+0.001 bpb, too aggressive)
 2938404	2.471757	0.0	discard	experiment 108: increase MATRIX_LR 0.05->0.06 (+0.000 bpb, no improvement)
 da794d5	2.471195	0.0	discard	experiment 109: reduce DROPOUT 0.15->0.1 (+0.000 bpb, within noise across 3 runs)
+69c9d50	2.471647	0.0	discard	experiment 110: reduce RoPE base 10000->5000 (+0.000 bpb, no effect)
