@@ -193,7 +193,7 @@ class Block(nn.Module):
         return x
 
 
-ROPE_BASE = 5000
+ROPE_BASE = 10000
 
 class GPT(nn.Module):
     def __init__(self, config):
