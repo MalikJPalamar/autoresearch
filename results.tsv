@@ -93,3 +93,4 @@ be18f05	2.467909	0.0	discard	experiment 140: normal init instead of uniform (+0.
 c32e988	2.468678	0.0	discard	experiment 141: non-zero c_proj init (+0.002 bpb, zero init better)
 3ffc1c5	2.467833	0.0	discard	experiment 142: reduce Muon ns_steps 5->3 (+0.001 bpb, less accurate preconditioning)
 a16c994	2.466938	0.0	keep	experiment 143: increase Muon ns_steps 5->7 (-0.000 bpb, better preconditioning)
+7eb344c	2.466565	0.0	discard	experiment 144: increase Muon ns_steps 7->10 (+0.000 bpb, within noise)
