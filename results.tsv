@@ -72,3 +72,4 @@ da794d5	2.471195	0.0	discard	experiment 109: reduce DROPOUT 0.15->0.1 (+0.000 bp
 cf1c95c	2.472859	0.0	discard	experiment 120: cosine warmdown schedule (+0.001 bpb, linear is better)
 b3efa3c	2.472807	0.0	discard	experiment 121: fixed Muon momentum 0.95 (+0.001 bpb, warmup helps)
 e8c0a88	2.472248	0.0	discard	experiment 122: faster Muon momentum warmup 300->50 steps (+0.001 bpb)
+43ce0f6	2.488132	0.0	discard	experiment 123: increase DEPTH 4->5 (+0.017 bpb, 35 steps too few)
