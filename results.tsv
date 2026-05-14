@@ -80,3 +80,4 @@ c1b4db6	2.473270	0.0	discard	experiment 127: reduce EMBEDDING_LR 1.0->0.5 (+0.00
 0dd7df1	2.470789	0.0	keep	experiment 128: reduce embedding init std 1.0->0.1 (-0.000 bpb)
 af7f2ef	2.476473	0.0	discard	experiment 129: reduce embedding init std 0.1->0.01 (+0.006 bpb, too small)
 64a69a9	2.471426	0.0	discard	experiment 130: reduce embedding init std 0.1->0.05 (+0.001 bpb, 0.1 is better)
+36e502a	2.470453	0.0	keep	experiment 131: increase embedding init std 0.1->0.2 (-0.001 bpb)
