@@ -154,3 +154,5 @@ b72abe4	2.462814	0.0	discard	experiment 200: Muon ns_steps 6 (high variance, run
 b0a65ed	2.462541	0.0	keep	experiment 202: reduce SCALAR_LR 0.25->0.15 (-0.000 bpb avg over 3 runs)
 41439a6	2.461889	0.0	keep	experiment 203: reduce SCALAR_LR 0.15->0.10 (-0.000 bpb avg over 3 runs)
 fc82735	2.461719	0.0	keep	experiment 204: reduce SCALAR_LR 0.10->0.05 (-0.000 bpb avg over 3 runs)
+be34b5a	2.367913	0.0	baseline	baseline (tinyshakespeare, fresh data re-prep): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.04, EMBEDDING_LR=1.0, WD=0.0, WARMUP=0.1, WARMDOWN=0.8, FINAL_LR=0.10, WINDOW=L, DROPOUT=0.10, SCALAR_LR=0.05
+f0e1928	2.367678	0.0	keep	experiment 205: parallel attention + MLP (PaLM-style) (-0.000 bpb avg over 3 runs)
