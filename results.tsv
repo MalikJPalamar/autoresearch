@@ -125,3 +125,4 @@ eac60c6	2.479644	0.0	discard	experiment 171: ADAM_BETAS (0.8,0.95) (+0.016 bpb, 
 df31fc7	2.496521	0.0	discard	experiment 173: DEPTH 6 (+0.033 bpb, too few steps)
 68036da	0.0	0.0	discard	experiment 174: DEVICE_BATCH_SIZE 32 (assertion error, batch>total_batch)
 f542239	2.476856	0.0	discard	experiment 175: TOTAL_BATCH_SIZE 2^16 (+0.014 bpb, too few steps)
+e137918	0.0	0.0	discard	experiment 176: TOTAL_BATCH_SIZE 2^14 (assertion error, batch too small)
