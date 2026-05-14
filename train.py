@@ -188,8 +188,8 @@ class Block(nn.Module):
         self.dropout = config.dropout
 
     def forward(self, x, ve, cos_sin, window_size):
-        x = x + self.attn(norm(x), ve, cos_sin, window_size)
-        x = x + F.dropout(self.mlp(norm(x)), p=self.dropout, training=self.training)
+        h = norm(x)
+        x = x + self.attn(h, ve, cos_sin, window_size) + F.dropout(self.mlp(h), p=self.dropout, training=self.training)
         return x
 
 
