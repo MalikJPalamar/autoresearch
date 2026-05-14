@@ -109,3 +109,4 @@ a3ea871	2.468096	0.0	discard	experiment 150: reduce MATRIX_LR 0.04->0.03 (+0.002
 8ac373c	2.464117	0.0	keep	experiment 157: increase FINAL_LR_FRAC 0.05->0.10 (-0.000 bpb)
 8f8d2b0	2.466960	0.0	discard	experiment 158: increase FINAL_LR_FRAC 0.10->0.20 (+0.003 bpb)
 ff3e6d3	2.465114	0.0	discard	experiment 159: cosine LR warmdown (+0.001 bpb, linear better)
+1ab945e	2.465142	0.0	discard	experiment 160: reduce x0_lambdas init 0.3->0.2 (+0.001 bpb)
