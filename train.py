@@ -168,7 +168,7 @@ class CausalSelfAttention(nn.Module):
 class MLP(nn.Module):
     def __init__(self, config):
         super().__init__()
-        hidden = int(2.5 * config.n_embd)
+        hidden = 3 * config.n_embd
         self.c_fc = nn.Linear(config.n_embd, 2 * hidden, bias=False)
         self.c_proj = nn.Linear(hidden, config.n_embd, bias=False)
 
