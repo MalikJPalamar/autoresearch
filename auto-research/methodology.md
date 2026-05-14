@@ -1,4 +1,4 @@
-# SA Portfolio Methodology v1.2
+# SA Portfolio Methodology v1.3
 
 ## Report Template
 
@@ -12,6 +12,21 @@
 - US 10Y Yield: level
 - Oil (WTI/Brent): level
 - Macro summary: 1-2 sentence regime assessment
+
+### Sector Relative Strength Ranking (format-003, v1.3+)
+
+After each sector's per-ticker analysis, include a ranking table:
+
+| Rank | Ticker | N-Day Return | RSI | RS Signal (★) |
+|------|--------|-------------|-----|----------------|
+
+- **N-Day Return:** Return since last report (or 25-day for resume runs)
+- **RSI:** Current RSI(14) value
+- **RS Signal:** 1–5 stars indicating relative momentum (5★ = sector leader)
+- Sort by: composite of return + RSI momentum
+- Label overbought (RSI >70) and oversold (RSI <30) conditions explicitly
+
+---
 
 ### Per-Ticker Analysis (18 tickers)
 

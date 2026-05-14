@@ -21,3 +21,6 @@ cron/logs/
 
 # Run logs
 run.log
+
+# Environment variables (contains secrets)
+.env
