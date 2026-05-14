@@ -86,3 +86,4 @@ cb37f5e	2.473789	0.0	discard	experiment 133: increase lm_head init std 0.001->0.
 21da6e9	2.468009	0.0	keep	experiment 134: reduce lm_head init std 0.001->0.0001 (-0.002 bpb!)
 1b1f53d	2.468331	0.0	discard	experiment 135: reduce lm_head init std 0.0001->0.00001 (+0.000 bpb, 0.0001 optimal)
 1a97268	2.475270	0.0	discard	experiment 136: zero init for lm_head (+0.007 bpb, needs some noise)
+ffbc7ef	2.467596	0.0	keep	experiment 137: reduce block init scale sqrt(3)/sqrt(n) -> 1/sqrt(n) (-0.000 bpb)
