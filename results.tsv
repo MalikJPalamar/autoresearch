@@ -90,3 +90,4 @@ ffbc7ef	2.467596	0.0	keep	experiment 137: reduce block init scale sqrt(3)/sqrt(n
 6dda132	2.466947	0.0	keep	experiment 138: reduce init scale to 0.5/sqrt(n) (-0.001 bpb)
 bf17a8b	2.468191	0.0	discard	experiment 139: reduce init scale to 0.25/sqrt(n) (+0.001 bpb, too small)
 be18f05	2.467909	0.0	discard	experiment 140: normal init instead of uniform (+0.001 bpb, uniform better)
+c32e988	2.468678	0.0	discard	experiment 141: non-zero c_proj init (+0.002 bpb, zero init better)
