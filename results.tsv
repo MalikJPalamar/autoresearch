@@ -144,3 +144,4 @@ b2918cb	2.462884	0.0	discard	experiment 188: DROPOUT 0.05 with 3x MLP (+0.000 bp
 9e20b01	2.464876	0.0	discard	experiment 192: MLP hidden 2.5x (+0.002 bpb, 3x optimal)
 2b5fdf3	2.464716	0.0	discard	experiment 193: resid_lambdas LR 5x (+0.002 bpb)
 1409e14	2.464063	0.0	discard	experiment 194: x0_lambdas beta2 0.99 (+0.001 bpb)
+e4748f4	2.464344	0.0	discard	experiment 195: window pattern SL (+0.002 bpb)
