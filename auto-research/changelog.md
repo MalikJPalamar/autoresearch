@@ -1,5 +1,14 @@
 # Methodology Changelog
 
+## v1.3 — 2026-05-15 (format-004 DISCARDED ✗)
+- **Experiment:** format-004 — RESOLVED: **DISCARDED** ✗
+- **Resolution:** 3-report avg CS = 87.1 vs cs_before 87.1 → delta **0.0**. Per program.md: CS unchanged + not simpler = DISCARD. format-004 (stop-loss %, price target %, R/R ratio per ticker) not retained in methodology template.
+- **Metric limitation noted:** AC at ceiling 100.0 cannot detect quality improvement above that level. Format-004 added genuine reader value but the scoring framework couldn't measure it. Suggested future improvement: Precision sub-score within AC layer — requires Malik approval.
+- **Today:** CS = 87.1 (AS=77.8, AC=100.0, CV=86.7). Post-ATH profit-taking day: S&P 7,408.50 (–1.24%), NVDA –4.4% to $226 ("H200 no actual orders" trigger), AMD –5.9% to $423 (RSI reset 77→65), ASML –4.82% (MATCH Act + TSMC High-NA delay to 2029 + analyst downgrades → WATCH). CEG +10.2% to $303.63 (Calpine divestiture refocus + ex-dividend record day; Crane/PJM unresolved → WATCH maintained). BAH –6.1% to $73.38 (RSI ~28 oversold, earnings May 22 — CONTRARIAN setup post-print). SMR +5.5% (SMA200 reclaim). PLTR flat (RSI 35 → approaching 30 trigger). 10Y yield 4.55% (+9bps, 1yr high); 30Y >5.1%; Fed rate-hike probability 45%.
+- **ASML signal change:** LONG → WATCH (MATCH Act binary May 19 + TSMC High-NA delay + analyst downgrades + investor exit)
+- **Next experiment:** format-005 (Options flow / unusual activity) — **REQUIRES MALIK APPROVAL** before starting (Phase 3 per program.md). No auto-evolve experiment currently queued.
+- **Key events next week:** MATCH Act vote May 19, Google I/O May 19–20, NVDA earnings May 20, BAH earnings May 22, RTX ex-dividend May 22
+
 ## v1.3 — 2026-05-14 (format-004 report 2/3)
 - **Experiment:** format-004 — Stop-Loss + R/R Ratio per ticker (report 2/3)
 - **Status:** PENDING — need 1 more report to evaluate (expected May 15)

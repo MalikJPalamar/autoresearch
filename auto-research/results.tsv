@@ -8,3 +8,4 @@ date	version	experiment	cs	as	ac	cv	status	description
 2026-05-12	v1.3	format-003	87.1	77.8	100.0	86.7	pending	Iran/oil shock; NVDA earnings May 20; AS 77.8 rolling 30d; format-003 report 2/3
 2026-05-13	v1.3	format-003	87.1	77.8	100.0	86.7	keep	S&P+Nasdaq ATH; NVDA new ATH $225.57; GOOGL ATH; LMT RSI 12.9 oversold; format-003 KEPT (+35.6 CS delta); format-004 started
 2026-05-14	v1.3	format-004	87.1	77.8	100.0	86.7	pending	NVDA ATH $235.69 (+4.5%); GOOGL ATH; AMAT blowout earnings (+29% EPS); LRCX ATH $302; S&P >7500 record; OKLO -6% post-earnings+$1B offering; CEG->WATCH Crane delay; format-004 report 2/3
+2026-05-15	v1.3	format-004	87.1	77.8	100.0	86.7	discard	Post-ATH selloff; NVDA -4.4%, AMD -5.9%, ASML -4.82% MATCH Act; CEG +10.2% bounce; BAH -6.1% oversold; SMR SMA200 reclaim; 10Y yield 4.55% 1yr high; format-004 DISCARDED (delta=0, not simpler); no new experiment; format-005 requires approval
