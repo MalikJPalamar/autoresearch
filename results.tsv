@@ -45,3 +45,5 @@ b35fe6c	2.474540	0.0	discard	experiment 60f: UNEMBEDDING_LR 0.004->0.008 (+0.073
 9c6c76d	2.403149	0.0	keep	experiment 84: Adam beta1 0.2->0.1 (-0.000 bpb)
 043ceb4	2.401834	0.0	baseline	baseline (tinyshakespeare, fresh session): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.04, EMBEDDING_LR=1.0, WD=0.0, WARMUP=0.05, WARMDOWN=0.9, FINAL_LR=0.2, WINDOW=L
 664e801	2.393460	0.0	keep	experiment 85: increase MATRIX_LR 0.04->0.05 (-0.008 bpb)
+ca902a3	2.431388	0.0	baseline	baseline (tinyshakespeare, fresh session): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.05, EMBEDDING_LR=1.0, WD=0.0, WARMUP=0.05, WARMDOWN=0.9, FINAL_LR=0.2, WINDOW=L
+4dfa44f	2.430301	0.0	keep	experiment 86: increase MATRIX_LR 0.05->0.06 (-0.001 bpb)
