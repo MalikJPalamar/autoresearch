@@ -1,5 +1,13 @@
 # Methodology Changelog
 
+## v1.3 — 2026-05-18 (no active experiment)
+- **Experiment:** None active. format-005 (Options flow / unusual activity) requires Malik approval (Phase 3 per program.md). No auto-evolve experiments queued.
+- **Today:** CS = 67.1 (AS=27.8, AC=100.0, CV=86.7). AS drop from 77.8→27.8: May 11 signals (generated at market peak) hit by post-ATH correction. 5/18 correct: NVDA +2.5%, META +1.7%, AMAT +0.27% (WATCH+<1%), VST +8.3% (nuclear policy), LMT +21.9% (CONTRARIAN vindicated). Notable data correction: CEG May 15 actual close was $267.20, not $303.63 (prior reports may have used intraday high). LMT V-recovery from RSI 12.9 to $617.64 (+21.9%).
+- **Signal changes:** VST ACCUMULATE→LONG (nuclear policy acceleration +6.92%); OKLO SPECULATIVE→WATCH (Q1 $33M loss + $1B dilution, -19.7% from May 11); SMR SPECULATIVE→AVOID (class action lawsuit filed, -17.5%); PLTR ACCUMULATE→WATCH (broken below SMA50/200, MACD -2.43)
+- **Binary events this week:** MATCH Act vote May 19 (ASML), Google I/O May 19-20 (GOOGL ATH), NVDA Q1 FY27 earnings May 20, BAH earnings May 22, RTX ex-dividend May 22
+- **Macro:** S&P 7,403 (-0.07%), Nasdaq 26,091 (-0.51%), VIX 19.0, DXY 99.1, US10Y 4.63% (1-yr high), WTI $106.22, Brent $110.08. Iran war driving oil and bond selloff.
+- **Next:** format-005 requires Malik approval before starting. No auto-evolve option available.
+
 ## v1.3 — 2026-05-15 (format-004 DISCARDED ✗)
 - **Experiment:** format-004 — RESOLVED: **DISCARDED** ✗
 - **Resolution:** 3-report avg CS = 87.1 vs cs_before 87.1 → delta **0.0**. Per program.md: CS unchanged + not simpler = DISCARD. format-004 (stop-loss %, price target %, R/R ratio per ticker) not retained in methodology template.
