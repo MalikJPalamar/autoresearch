@@ -47,3 +47,5 @@ b35fe6c	2.474540	0.0	discard	experiment 60f: UNEMBEDDING_LR 0.004->0.008 (+0.073
 664e801	2.393460	0.0	keep	experiment 85: increase MATRIX_LR 0.04->0.05 (-0.008 bpb)
 ca902a3	2.431388	0.0	baseline	baseline (tinyshakespeare, fresh session): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.05, EMBEDDING_LR=1.0, WD=0.0, WARMUP=0.05, WARMDOWN=0.9, FINAL_LR=0.2, WINDOW=L
 4dfa44f	2.430301	0.0	keep	experiment 86: increase MATRIX_LR 0.05->0.06 (-0.001 bpb)
+7f14a01	2.917597	0.0	baseline	baseline (tinyshakespeare, fresh session): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.06, EMBEDDING_LR=1.0, WD=0.0, WARMUP=0.05, WARMDOWN=0.9, FINAL_LR=0.2, WINDOW=L
+425b564	2.410254	0.0	keep	experiment 87: reduce Muon ns_steps 5->3 (-0.508 bpb, stabilized late training)
