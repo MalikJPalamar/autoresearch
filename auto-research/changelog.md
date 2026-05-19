@@ -1,5 +1,14 @@
 # Methodology Changelog
 
+## v1.3 — 2026-05-19 (no active experiment)
+- **Experiment:** None active. format-005 (Options flow / unusual activity) requires Malik approval (Phase 3 per program.md). No auto-evolve experiments queued.
+- **Today:** CS = 69.3 (AS=33.3, AC=100.0, CV=86.7). AS improved from 27.8→33.3: May 12 signals scored 7/18 correct (NVDA +6.6%, MSFT +1.8%, VST +1.2%, CEG +12.5%, BAH +1.7%, LMT +5.2%, RTX +1.0%). Rolling window: 12/36 = 33.3%.
+- **Key events today:** Google I/O launched Gemini 3.5 Flash + AI glasses (GOOGL +0% intraday, sell-the-news); OKLO +24.5% on NRC Aurora PDC approval (transformational de-risking); LMT continued selloff on Iran ceasefire news (RSI ~16, deeply oversold); VST −7.7% ERCOT power price softness (LONG→WATCH); NRG broke below 52W low.
+- **Signal changes:** VST LONG→WATCH (technical breakdown, −7.7%); OKLO WATCH→SPECULATIVE (NRC approval catalyst); NRG WATCH→CONTRARIAN (52W low, AI power demand thesis); AMD WATCH→ACCUMULATE (hyperscaler commits, post-ATH consolidation); BAH WATCH→CONTRARIAN (pre-earnings low-bar setup, Anduril).
+- **Macro:** S&P 7,353.61 (−0.67%), Nasdaq 28,850 (−0.90%), VIX 17.82, DXY 99.27, US10Y 4.69% (multi-month high), WTI $104.36, Brent $111.22. Iran strike suspended, yields surging.
+- **Binary tomorrow:** NVDA Q1 FY27 earnings May 20 — dominant portfolio event risk (97% beat probability, $1.56B hedge-fund put block).
+- **Next:** format-005 requires Malik approval before starting. No auto-evolve option available.
+
 ## v1.3 — 2026-05-18 (no active experiment)
 - **Experiment:** None active. format-005 (Options flow / unusual activity) requires Malik approval (Phase 3 per program.md). No auto-evolve experiments queued.
 - **Today:** CS = 67.1 (AS=27.8, AC=100.0, CV=86.7). AS drop from 77.8→27.8: May 11 signals (generated at market peak) hit by post-ATH correction. 5/18 correct: NVDA +2.5%, META +1.7%, AMAT +0.27% (WATCH+<1%), VST +8.3% (nuclear policy), LMT +21.9% (CONTRARIAN vindicated). Notable data correction: CEG May 15 actual close was $267.20, not $303.63 (prior reports may have used intraday high). LMT V-recovery from RSI 12.9 to $617.64 (+21.9%).
