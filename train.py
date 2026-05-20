@@ -349,7 +349,7 @@ class GPT(nn.Module):
             x = block(x, ve, cos_sin, self.window_sizes[i])
         x = norm(x)
 
-        softcap = 10
+        softcap = 8
         logits = self.lm_head(x)
         logits = logits.float()
         logits = softcap * torch.tanh(logits / softcap)
@@ -512,7 +512,7 @@ WINDOW_PATTERN = "L" # sliding window pattern: L=full, S=half context
 
 # Optimization
 TOTAL_BATCH_SIZE = 2**19 if HAS_CUDA else 2**15 # tokens per optimizer step
-EMBEDDING_LR = 1.5      # learning rate for token embeddings (Adam)
+EMBEDDING_LR = 1.0      # learning rate for token embeddings (Adam)
 UNEMBEDDING_LR = 0.004  # learning rate for lm_head (Adam)
 MATRIX_LR = 0.06        # learning rate for matrix parameters (Muon)
 SCALAR_LR = 0.25        # learning rate for per-layer scalars (Adam)
