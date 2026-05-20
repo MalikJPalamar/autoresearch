@@ -1,5 +1,14 @@
 # Methodology Changelog
 
+## v1.3 — 2026-05-20 (no active experiment)
+- **Experiment:** None active. format-005 (Options flow / unusual activity) requires Malik approval (Phase 3 per program.md). No auto-evolve experiments queued.
+- **Today:** CS = 66.4 (AS=25.9, AC=100.0, CV=86.7). AS declined from 33.3→25.9: May 13 signals scored 2/18 correct (MSFT +3.0%, BAH +12.2%). May 13 was S&P+Nasdaq ATH day — aggressive bullish positioning hit by post-ATH correction. Rolling window: 14/54 = 25.9%.
+- **Key events today:** NVDA Q1 FY27 earnings after close — record beat: EPS $1.87 (+6.3% vs $1.76), revenue $81.62B (+85% YoY), Q2 guide $91B, $80B buyback, dividend raised 25× to $0.25/share. AH initial sell-the-news −2.1%. ASML +6.19% on UBS +43% PT hike. CEG +7.33% on PJM data center co-location announcement + Q1 beat. BAH +3.1% on defense prototype contract. LRCX +3.16% on Morgan Stanley Overweight upgrade.
+- **Signal changes:** ASML WATCH→ACCUMULATE (UBS PT hike, technical recovery); CEG LONG→ACCUMULATE (PJM positive but MACD still negative, below SMA50/200); VST WATCH→CONTRARIAN (broke below 52W low $138.53); RTX ACCUMULATE→WATCH (below SMA50 $181.42 and SMA200 $193.35, bearish MACD).
+- **Macro:** S&P 7,423 (+0.94%), Nasdaq 29,295 (+1.54%), VIX 17.81, DXY 98.90, US10Y 4.65% (easing from 4.69% peak), WTI $103.49 (2nd session lower), Brent $110.59. US-Iran diplomatic progress; dollar weakening.
+- **DB note:** Supabase signals INSERT and reports INSERT failed (session timeout after technicals batch). May 20 signals not stored in DB — to be backfilled on next run. daily_prices, technicals, macro for May 20 successfully inserted. May 13 signals scored (14 incorrect, 2 correct: ids 58 and 70).
+- **Next:** format-005 requires Malik approval before starting. No auto-evolve option available.
+
 ## v1.3 — 2026-05-19 (no active experiment)
 - **Experiment:** None active. format-005 (Options flow / unusual activity) requires Malik approval (Phase 3 per program.md). No auto-evolve experiments queued.
 - **Today:** CS = 69.3 (AS=33.3, AC=100.0, CV=86.7). AS improved from 27.8→33.3: May 12 signals scored 7/18 correct (NVDA +6.6%, MSFT +1.8%, VST +1.2%, CEG +12.5%, BAH +1.7%, LMT +5.2%, RTX +1.0%). Rolling window: 12/36 = 33.3%.
