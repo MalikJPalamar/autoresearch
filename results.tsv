@@ -54,3 +54,4 @@ ca902a3	2.431388	0.0	baseline	baseline (tinyshakespeare, fresh session): DEPTH=4
 b9e37e8	2.430556	0.0	baseline	baseline (tinyshakespeare, fresh session): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.06, EMBEDDING_LR=1.0, WD=0.0, WARMUP=0.05, WARMDOWN=0.9, FINAL_LR=0.2, WINDOW=L
 2f4be7e	2.431389	0.0	discard	experiment 89: increase EMBEDDING_LR 1.0->1.5 (+0.001 bpb, no improvement)
 0762109	2.419947	0.0	keep	experiment 90: reduce softcap 10->8 (-0.011 bpb)
+c758c6a	2.369874	0.0	keep	experiment 104: cosine LR schedule replacing linear warmdown (-0.000 bpb)
