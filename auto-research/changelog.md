@@ -1,5 +1,14 @@
 # Methodology Changelog
 
+## v1.3 — 2026-05-21 (no active experiment)
+- **Experiment:** None active. format-005 (Options flow / unusual activity) requires Malik approval (Phase 3 per program.md). No auto-evolve experiments queued.
+- **Today:** CS = 64.9 (AS=22.2, AC=100.0, CV=86.7). AS declined 25.9→22.2%: May 14 signals scored 2/18 correct (MSFT +2.0%, VST +1.6%). May 14 was peak-ATH day (NVDA $235.69, AMAT $440) — all bullish signals set at prices too high for 5-day scoring window. Rolling window: 16/72 = 22.2%.
+- **Key events today:** NVDA post-earnings sell-the-news: stock at $219.45 (−6.9% from May 14 ATH close $235.69) despite record Q1 FY27 beat. AMD +8.1% NVDA read-through surge → RSI 75.7 overbought. META RSI improved 41.6→53.2, MACD bullish crossover. S&P 7,432.97 (+1.08%), Nasdaq +1.54% — NVDA earnings driving broad tech rally. WTI $96.82 (−6.5%) on Iran de-escalation — structural positive for nuclear economics. BAH earnings tomorrow May 22 before open.
+- **Signal changes:** AMD ACCUMULATE→WATCH (RSI 75.7 overbought after +8.1% surge); META WATCH→ACCUMULATE (RSI 41.6→53.2, MACD bullish crossover confirmed).
+- **Macro:** S&P 7,432.97 (+1.08%), Nasdaq 26,270 (+1.54%), VIX 17.44 (−3.43%), DXY 99.39, US10Y 4.60% (easing), WTI $96.82 (Iran de-escalation). Oil down sharply, yields easing, VIX down.
+- **DB backfill:** May 20 report (v12) and 18 signals inserted this run (session timeout recovery from prior run). May 21: daily_prices, macro, signals (18), report all inserted successfully.
+- **Next:** BAH earnings May 22 before open = next portfolio catalyst. RTX ex-div May 22. LMT ex-div June 1. May 15–20 signals scored May 22–27 (NVDA post-earnings recovery batches). format-005 requires Malik approval.
+
 ## v1.3 — 2026-05-20 (no active experiment)
 - **Experiment:** None active. format-005 (Options flow / unusual activity) requires Malik approval (Phase 3 per program.md). No auto-evolve experiments queued.
 - **Today:** CS = 66.4 (AS=25.9, AC=100.0, CV=86.7). AS declined from 33.3→25.9: May 13 signals scored 2/18 correct (MSFT +3.0%, BAH +12.2%). May 13 was S&P+Nasdaq ATH day — aggressive bullish positioning hit by post-ATH correction. Rolling window: 14/54 = 25.9%.
