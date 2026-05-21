@@ -90,3 +90,7 @@ f328671	2.397437	0.0	discard	experiment 122: z-loss regularization 1e-4 (+0.028 
 f328671	2.386256	0.0	discard	experiment 123: increase MATRIX_LR 0.12->0.14 (+0.016 bpb)
 f328671	2.401263	0.0	discard	experiment 124: remove x0 residual connection (+0.031 bpb)
 f328671	2.377082	0.0	discard	experiment 125: change random seed 42->137 (+0.007 bpb)
+54f47f9	2.327917	0.0	keep	experiment 129: double batch DEVICE_BS 16->32, TOTAL_BS 2^15->2^16 (-0.042 bpb)
+99aab7c	2.387260	0.0	discard	experiment 126: swap block order MLP-first (+0.017 bpb)
+99aab7c	2.390249	0.0	discard	experiment 127: increase MLP hidden ratio 2x->3x (+0.020 bpb)
+99aab7c	2.385147	0.0	discard	experiment 128: faster Muon momentum warmup 300->50 steps (+0.015 bpb)
