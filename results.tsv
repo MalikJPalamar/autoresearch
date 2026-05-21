@@ -94,3 +94,5 @@ f328671	2.377082	0.0	discard	experiment 125: change random seed 42->137 (+0.007 
 99aab7c	2.387260	0.0	discard	experiment 126: swap block order MLP-first (+0.017 bpb)
 99aab7c	2.390249	0.0	discard	experiment 127: increase MLP hidden ratio 2x->3x (+0.020 bpb)
 99aab7c	2.385147	0.0	discard	experiment 128: faster Muon momentum warmup 300->50 steps (+0.015 bpb)
+080b6e8	2.369746	0.0	discard	experiment 130: increase TOTAL_BS 2^16->2^17 via grad_accum=2 (+0.042 bpb, only 27 steps)
+b444afb	2.327412	0.0	keep	experiment 131: add gradient clipping max_norm=1.0 (-0.001 bpb)
