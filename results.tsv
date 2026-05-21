@@ -102,3 +102,4 @@ f65b075	2.326081	0.0	keep	experiment 133: tighten gradient clipping max_norm 1.0
 3304f8e	2.325136	0.0	keep	experiment 135: faster Muon momentum warmup 300->100 steps (-0.001 bpb)
 64138f4	2.328605	0.0	discard	experiment 139: reduce x0_lambdas init 0.1->0.05 (+0.003 bpb)
 11aac95	2.322774	0.0	keep	experiment 140: increase softcap 8->9 (-0.002 bpb)
+1f0a162	2.321514	0.0	keep	experiment 141: increase softcap 9->10 (-0.001 bpb)
