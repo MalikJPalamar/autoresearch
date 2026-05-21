@@ -104,3 +104,5 @@ f65b075	2.326081	0.0	keep	experiment 133: tighten gradient clipping max_norm 1.0
 11aac95	2.322774	0.0	keep	experiment 140: increase softcap 8->9 (-0.002 bpb)
 1f0a162	2.321514	0.0	keep	experiment 141: increase softcap 9->10 (-0.001 bpb)
 4622b74	2.320787	0.0	keep	experiment 142: increase softcap 10->12 (-0.001 bpb)
+5d01132	2.321413	0.0	discard	experiment 143: increase softcap 12->15 (+0.001 bpb)
+6e9b3af	2.320682	0.0	keep	experiment 144: reduce RoPE base 10000->5000 (-0.000 bpb, marginal)
