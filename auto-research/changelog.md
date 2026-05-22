@@ -1,5 +1,14 @@
 # Methodology Changelog
 
+## v1.3 — 2026-05-22 (no active experiment)
+- **Experiment:** None active. format-005 (Options flow / unusual activity) requires Malik approval (Phase 3 per program.md). No auto-evolve experiments queued.
+- **Today:** CS = 66.3 (AS=25.6, AC=100.0, CV=86.7). AS slightly improved 22.2→25.6%: May 15 signals scored 7/18 correct (AMD +6.24%, MSFT +3.01%, META -0.61% neutral, LRCX +4.20%, VST +5.06%, OKLO +5.10%, LMT +3.39%). Rolling window: 23/90 = 25.6%.
+- **Key events today:** BAH Q4 FY26 EARNINGS BEAT before open: EPS $1.78 vs $1.33 (+33.8%), $38B backlog book-to-bill 1.1x, FY27 guidance EPS $6.00-6.35 → BAH→ACCUMULATE at $82.39. AMD surged to $449.59 (+4.4%) on Venice CPU ramp announcement + $10B Taiwan AI supply chain investment — RSI 75.7 overbought (WATCH maintained). LRCX set new ATH $308.42 with RSI only 50.2 (bullish divergence → LONG). NVDA post-earnings sell-the-news day 2 at $218.13 (RSI 51.7 healthy → ACCUMULATE). VST Q1 record EBITDA $1.5B + PJM capacity market acceleration → LONG at $149.08. New data center community backlash risk: 48 projects worth $156B blocked or slowed in 2025.
+- **Signal changes:** BAH WATCH→ACCUMULATE (earnings vindicated); SMR SPECULATIVE→AVOID (failed SMA200 reclaim -9.72%, class action lawsuit); VST ACCUMULATE→LONG (record earnings + PJM acceleration).
+- **Macro:** S&P 7,445.72 (+0.17%), Nasdaq 26,293 (+0.09%), VIX 16.76 (-3.90% normal), DXY 99.227, US10Y 4.573% (easing), WTI $98.22. Iran de-escalation priced in; yields easing slightly from peak; VIX returning to normal regime.
+- **DB operations:** All 18 May-15 signals scored; daily_prices, technicals, macro, 18 new signals, report all inserted successfully. AMD signal corrected from INCORRECT to CORRECT ($449.59 vs $423.20 May 15, +6.24%).
+- **Next:** May 16-22 signals score May 23-29. PLTR RSI ~38 approaching CONTRARIAN trigger (≤30). OKLO July 4 nuclear criticality approaching (43 days). format-005 requires Malik approval before starting.
+
 ## v1.3 — 2026-05-21 (no active experiment)
 - **Experiment:** None active. format-005 (Options flow / unusual activity) requires Malik approval (Phase 3 per program.md). No auto-evolve experiments queued.
 - **Today:** CS = 64.9 (AS=22.2, AC=100.0, CV=86.7). AS declined 25.9→22.2%: May 14 signals scored 2/18 correct (MSFT +2.0%, VST +1.6%). May 14 was peak-ATH day (NVDA $235.69, AMAT $440) — all bullish signals set at prices too high for 5-day scoring window. Rolling window: 16/72 = 22.2%.
