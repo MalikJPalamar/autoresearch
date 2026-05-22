@@ -519,6 +519,7 @@ SCALAR_LR = 0.25        # learning rate for per-layer scalars (Adam)
 WEIGHT_DECAY = 0.0      # cautious weight decay for Muon
 ADAM_BETAS = (0.1, 0.95) # Adam beta1, beta2
 WARMUP_RATIO = 0.05     # fraction of time budget for LR warmup
+STABLE_RATIO = 0.20     # fraction of time budget at peak LR (WSD schedule)
 WARMDOWN_RATIO = 0.9    # fraction of time budget for LR warmdown
 FINAL_LR_FRAC = 0.2     # final LR as fraction of initial
 
@@ -599,8 +600,10 @@ print(f"Gradient accumulation steps: {grad_accum_steps}")
 def get_lr_multiplier(progress):
     if progress < WARMUP_RATIO:
         return progress / WARMUP_RATIO if WARMUP_RATIO > 0 else 1.0
+    elif progress < WARMUP_RATIO + STABLE_RATIO:
+        return 1.0
     else:
-        decay_progress = (progress - WARMUP_RATIO) / (1.0 - WARMUP_RATIO)
+        decay_progress = (progress - WARMUP_RATIO - STABLE_RATIO) / (1.0 - WARMUP_RATIO - STABLE_RATIO)
         return FINAL_LR_FRAC + 0.5 * (1.0 - FINAL_LR_FRAC) * (1 + math.cos(math.pi * decay_progress))
 
 def get_muon_momentum(step):
