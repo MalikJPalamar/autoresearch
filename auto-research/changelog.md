@@ -1,5 +1,15 @@
 # Methodology Changelog
 
+## v1.3 — 2026-05-25 (no active experiment) — HOLIDAY EDITION
+- **Experiment:** None active. format-005 (Options flow / unusual activity) requires Malik approval (Phase 3 per program.md).
+- **Today:** CS = 66.4 (AS=25.9, AC=100.0, CV=86.7). Holiday Edition — US markets closed Memorial Day. Prices reflect May 22, 2026 closes. AS improved 25.6→25.9%: May 18 signals scored 5/18 correct (BAH CONTRARIAN +5.5%, LRCX ACCUMULATE +7.3%, PLTR WATCH ~0%, RTX ACCUMULATE +1.2%, VST LONG +15.3%). Rolling window: 28/108 = 25.9%.
+- **Key signal failures (May 18 batch):** LMT CONTRARIAN -13.7% (Iran ceasefire collapsed defense stocks May 19); ASML WATCH +8.8% (neutral signal missed large move — reached new ATH); CEG WATCH +12.8% (same pattern — neutral missed nuclear rally); SMR AVOID +9.7% (bearish signal, stock reversed — class action discount priced in faster than expected); NRG WATCH +7.2% (52W low bounce).
+- **Signal changes:** VST LONG→ACCUMULATE (downgrade — at SMA200 $156.94 resistance, MACD bearish; Meta 2.1GW deal intact but technical confirmation needed). LMT maintained CONTRARIAN (RSI 34 approaching oversold, F-35/AUKUS contracts intact despite Iran noise). NRG WATCH→CONTRARIAN (recovering from 52W low $121, analyst upgrades, T.H. Wharton 415MW online). RTX WATCH→ACCUMULATE (approaching SMA200 $179 from below, $536M Mitsubishi contract).
+- **Notable:** ASML new ADR ATH $1,653.53 on May 22 (LONG signal); LRCX new 52W high $309.98 (LONG signal); AMD RSI 78 deeply overbought (WATCH maintained); MSFT triple MA convergence at $416 (rare compression — ACCUMULATE); OKLO 14GW pipeline + NVIDIA partnership (SPECULATIVE); VST-Meta 2.1GW nuclear deal (key Aschenbrenner thesis validation event).
+- **Macro (May 22 close):** S&P 7,473.47 (+0.37%), QQQ $717.66 (+0.42%), VIX 16.76 (normal), DXY 99.32, US10Y 4.57% (easing from 4.62% peak), WTI $96.60 (Iran deal softening oil), Brent $100.50. PCE Deflator due May 28 — key risk event for the week.
+- **DB operations:** All 18 May-18 signals scored; daily_prices, technicals, macro (May 22 data), 18 new signals, report all inserted successfully.
+- **Next:** May 19–22 signals score May 26–June 1. OKLO July 4 nuclear criticality (40 days). ASML/TSM Q2 earnings July 15–16. format-005 requires Malik approval.
+
 ## v1.3 — 2026-05-22 (no active experiment)
 - **Experiment:** None active. format-005 (Options flow / unusual activity) requires Malik approval (Phase 3 per program.md). No auto-evolve experiments queued.
 - **Today:** CS = 66.3 (AS=25.6, AC=100.0, CV=86.7). AS slightly improved 22.2→25.6%: May 15 signals scored 7/18 correct (AMD +6.24%, MSFT +3.01%, META -0.61% neutral, LRCX +4.20%, VST +5.06%, OKLO +5.10%, LMT +3.39%). Rolling window: 23/90 = 25.6%.
