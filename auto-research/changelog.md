@@ -1,5 +1,16 @@
 # Methodology Changelog
 
+## v1.3 — 2026-05-26 (no active experiment)
+- **Experiment:** None active. format-005 (Options flow / unusual activity) requires Malik approval (Phase 3 per program.md).
+- **Today:** CS = 67.5 (AS=28.6, AC=100.0, CV=86.7). AS improved 25.9→28.6%: May 19 signals scored 8/18 correct. Correct: AMD ACCUMULATE +13.7%, LRCX ACCUMULATE +10.6%, NRG CONTRARIAN +6.3%, BAH CONTRARIAN +4.1%, LMT CONTRARIAN +1.4%, TSM ACCUMULATE +2.9%, META WATCH ~0%, PLTR WATCH +0.3%. Rolling window: 36/126 = 28.6%.
+- **Key signal failures (May 19 batch):** NVDA LONG -3.6% (sell-the-news continued day 3+); ASML WATCH +11.1% (neutral signal missed large move recovery from MATCH Act); SMR AVOID +22.7% (OKLO sector spillover dead-cat bounce); OKLO SPECULATIVE -4.1% (pre-catalyst dip before today's DOE news). Pattern: WATCH signals on large-move stocks continue as primary accuracy drag.
+- **Signal changes:** TSM ACCUMULATE→WATCH (RSI 71.3, first overbought reading this quarter); AMAT ACCUMULATE→WATCH (MACD turned negative May 19 = early warning); META WATCH→ACCUMULATE (RSI 53.2 improving, MACD bullish crossover confirmed).
+- **Notable:** OKLO +5.5% on DOE selecting for advanced negotiations under Surplus Plutonium Utilization Program (20MT Cold War plutonium → reactor fuel, partnership with newcleo). AMD +6% semis sector leadership continues (RSI 75.7 OB). 10Y yield -8.6bps to 4.484% = sharpest single-day drop in 2 weeks (Iran talks progress). WTI $92.80 near 5-week low. S&P +0.61%, Nasdaq +1.19% (SMH semis +3%+).
+- **Macro shift:** Oil decline ($92.80 WTI) is structurally positive for nuclear economics — removes gas competition narrative. Yield relief is key for growth portfolio multiples.
+- **DB operations:** All 18 May-19 signals scored; daily_prices, technicals, macro (May 26 data), 18 new signals, report all inserted successfully.
+- **Next:** May 20–26 signals score May 27–June 4. OKLO July 4 nuclear criticality (38 days). ASML/TSM Q2 earnings July 15–16. PCE Deflator May 28 — key risk event. format-005 requires Malik approval.
+
+
 ## v1.3 — 2026-05-25 (no active experiment) — HOLIDAY EDITION
 - **Experiment:** None active. format-005 (Options flow / unusual activity) requires Malik approval (Phase 3 per program.md).
 - **Today:** CS = 66.4 (AS=25.9, AC=100.0, CV=86.7). Holiday Edition — US markets closed Memorial Day. Prices reflect May 22, 2026 closes. AS improved 25.6→25.9%: May 18 signals scored 5/18 correct (BAH CONTRARIAN +5.5%, LRCX ACCUMULATE +7.3%, PLTR WATCH ~0%, RTX ACCUMULATE +1.2%, VST LONG +15.3%). Rolling window: 28/108 = 25.9%.
