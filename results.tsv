@@ -119,3 +119,6 @@ f955259	2.353413	0.0	keep	experiment 157: reduce CPU warmup guard step>10 to ste
 18bc9b0	2.380623	0.0	discard	experiment 160: reduce RoPE base 3000->2000 (+0.001 bpb)
 9fa0c2a	2.374589	0.0	keep	experiment 161: reduce EMBEDDING_LR 0.8->0.6 (-0.005 bpb)
 9d97391	2.305487	0.0	discard	experiment 174: reduce FINAL_LR_FRAC 0.2->0.1 (+0.001 bpb)
+e8de350	2.328587	0.0	baseline	baseline (tinyshakespeare, fresh session): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.12, EMBEDDING_LR=0.4, WD=0.0, WARMUP=0.0, STABLE=0.80, WARMDOWN=0.9, FINAL_LR=0.2, WINDOW=L, softcap=12, RoPE=3000
+e8de350	2.328996	0.0	discard	experiment 175: increase STABLE_RATIO 0.80->0.85 (+0.000 bpb)
+1c794fb	2.327979	0.0	keep	experiment 176: reduce EMBEDDING_LR 0.4->0.3 (-0.001 bpb)
