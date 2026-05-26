@@ -128,3 +128,5 @@ e1a9ca6	2.305634	0.0	discard	experiment 181: GeGLU activation GELU gate (+0.002 
 90015a9	2.302782	0.0	keep	experiment 184: increase softcap 16->20 (-0.000 bpb)
 d2f257d	2.308985	0.0	discard	experiment 191: add warmup 0.0->0.02 (+0.006 bpb)
 76787a4	2.302542	0.0	keep	experiment 192: reduce STABLE_RATIO 0.80->0.75 (-0.000 bpb)
+799d9cd	2.303002	0.0	discard	experiment 193: reduce STABLE_RATIO 0.75->0.70 (+0.000 bpb)
+15c86f9	2.301368	0.0	keep	experiment 194: reduce init scale 3^0.5->2^0.5 (-0.001 bpb)
