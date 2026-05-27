@@ -1,5 +1,16 @@
 # Methodology Changelog
 
+## v1.3 — 2026-05-27 (no active experiment)
+- **Experiment:** None active. format-005 (Options flow / unusual activity) requires Malik approval (Phase 3 per program.md).
+- **Today:** CS = 69.3 (AS=33.3, AC=100.0, CV=86.7). AS improved 28.6→33.3%: May 20 signals scored **12/18 correct — best batch accuracy recorded** (66.7%). Correct: AMD ACCUMULATE +21.7%, AMAT LONG +9.4%, LRCX ACCUMULATE +16.0%, TSM ACCUMULATE +7.2%, ASML ACCUMULATE +3.7%, CEG ACCUMULATE +8.5%, NRG CONTRARIAN +8.6%, OKLO SPECULATIVE +17.1%, VST CONTRARIAN +9.7%, BAH CONTRARIAN +2.2%, LMT CONTRARIAN +1.9%, PLTR WATCH -0.7%. Rolling window: 48/144 = 33.3%.
+- **Key batch insight:** Energy AI CONTRARIAN/ACCUMULATE plays dominated (8/8 correct). Semiconductor equipment uniformly correct (4/4). Failure modes: META WATCH missed +5.5% large move; NVDA LONG continued post-earnings correction (-3.9%); SMR AVOID reversed +24.8%; GOOGL/MSFT stalled below +1% threshold.
+- **Signal changes today:** AMAT WATCH→LONG (new 52W ATH $466.89, +9.3%, MACD recovered); VST ACCUMULATE→WATCH (SMA200 $157 failed, -5.5% on Iran oil drop).
+- **Notable:** WTI crude -6% to $88.39 (lowest since April) on Iran committing to restore Hormuz strait shipping. AMD set new 52W high intraday $506.96 (+21.7% in 5 days). AMAT new ATH $466.89 (+9.3%). OKLO national lab AI-enabled reactor partnership announced today. PCE Deflator + GDP 2nd estimate BOTH due tomorrow May 28 — twin macro risk events.
+- **Macro:** S&P 7,520.36 (+0.02%), NDX 26,674.73 (+0.07%), VIX 17.01, DXY 99.045, US10Y ~4.48%, WTI $88.39 (-6%), Brent ~$94.
+- **DB operations:** All 18 May-20 signals scored; daily_prices (18), technicals (18), macro (May 27), 18 new signals, report inserted.
+- **Next:** May 21-27 signals score May 28-June 5. OKLO July 4 nuclear criticality (37 days). PCE May 28 key risk. ASML/TSM Q2 earnings July 15-16. format-005 requires Malik approval.
+
+
 ## v1.3 — 2026-05-26 (no active experiment)
 - **Experiment:** None active. format-005 (Options flow / unusual activity) requires Malik approval (Phase 3 per program.md).
 - **Today:** CS = 67.5 (AS=28.6, AC=100.0, CV=86.7). AS improved 25.9→28.6%: May 19 signals scored 8/18 correct. Correct: AMD ACCUMULATE +13.7%, LRCX ACCUMULATE +10.6%, NRG CONTRARIAN +6.3%, BAH CONTRARIAN +4.1%, LMT CONTRARIAN +1.4%, TSM ACCUMULATE +2.9%, META WATCH ~0%, PLTR WATCH +0.3%. Rolling window: 36/126 = 28.6%.
