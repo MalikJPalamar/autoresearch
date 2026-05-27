@@ -132,3 +132,6 @@ d2f257d	2.308985	0.0	discard	experiment 191: add warmup 0.0->0.02 (+0.006 bpb)
 15c86f9	2.301368	0.0	keep	experiment 194: reduce init scale 3^0.5->2^0.5 (-0.001 bpb)
 156b2c4	2.305105	0.0	discard	experiment 200: increase MATRIX_LR 0.12->0.16 (+0.004 bpb)
 6bdc095	2.301150	0.0	keep	experiment 201: normal init instead of uniform (-0.000 bpb)
+363a090	2.420364	0.0	baseline	baseline (tinyshakespeare, fresh session): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.12, EMBEDDING_LR=0.3, WD=0.0, WARMUP=0.0, STABLE=0.75, WARMDOWN=0.9, FINAL_LR=0.2, WINDOW=L, softcap=20, RoPE=3000
+dd29a5e	2.420444	0.0	discard	experiment 202: reduce EMBEDDING_LR 0.3->0.2 (+0.000 bpb, no improvement)
+976037f	2.420132	0.0	keep	experiment 203: increase softcap 20->25 (-0.000 bpb)
