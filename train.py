@@ -521,7 +521,7 @@ ADAM_BETAS = (0.05, 0.95) # Adam beta1, beta2
 WARMUP_RATIO = 0.0      # fraction of time budget for LR warmup
 STABLE_RATIO = 0.50     # fraction of time budget at peak LR (WSD schedule)
 WARMDOWN_RATIO = 0.9    # fraction of time budget for LR warmdown
-FINAL_LR_FRAC = 0.2     # final LR as fraction of initial
+FINAL_LR_FRAC = 0.3     # final LR as fraction of initial
 
 # Model size
 DEPTH = 8 if HAS_CUDA else 4               # number of transformer layers
