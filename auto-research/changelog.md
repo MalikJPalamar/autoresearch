@@ -1,5 +1,17 @@
 # Methodology Changelog
 
+## v1.3 — 2026-05-28 (no active experiment)
+- **Experiment:** None active. format-005 (Options flow / unusual activity) requires Malik approval (Phase 3 per program.md).
+- **Today:** CS = 70.6 (AS=36.4, AC=100.0, CV=86.7) — **NEW RECORD CS**. May 21 signals scored **11/18 correct (61.1%)**. Correct: META ACCUM +5.3%, TSM ACCUM +5.7%, AMAT LONG +4.9%, LRCX ACCUM +10.5%, VST CONTRARIAN +2.6%, CEG ACCUM +6.5%, OKLO SPECULATIVE +3.2%, NRG CONTRARIAN +8.9%, SMR AVOID -22.5%, BAH CONTRARIAN +5.0%, RTX WATCH 0.0%. Rolling window: 59/162 = 36.4% (new high).
+- **Key failures (May 21 batch):** ASML ACCUMULATE -8.4% (MATCH Act accelerated beyond expectations); AMD WATCH +12.1% (parabolic extension exceeded neutral boundary); NVDA LONG -3.1% (post-earnings decompression extended); LMT CONTRARIAN +0.9% (just under 1% threshold — Iran ceasefire ceiling); GOOGL/MSFT <0.4% (no catalyst in 5-day window).
+- **Major events today:** Trump nuclear executive orders → VST +10.3% (SMA200 $157 reclaimed); ASML -8.7% on MATCH Act advancing Congress (China DUV + service restrictions, BofA: 15% revenue at risk); PLTR +3.65% on Maven DoD program of record + 206 Q1 government deals; PCE Apr +3.8% YoY headline (Hormuz shock, in-line), core +3.3% (+0.2% MoM slightly cooler than expected) — markets absorbed benignly (S&P +0.60%).
+- **Signal changes today:** ASML ACCUMULATE→WATCH (MATCH Act binary risk); VST WATCH→ACCUMULATE (SMA200 reclaimed, Trump nuclear EOs); PLTR WATCH→ACCUMULATE (Maven DoD program of record + 206 Q1 deals + RSI recovery); TSM ACCUMULATE→WATCH (RSI 71.3 overbought, new 52W high → wait for reset).
+- **New 52W/ATH highs:** AMD new 52W HIGH $510.21 intraday (RSI ~80 OB); LRCX new ATH $322.68 (RSI ~65 healthy); TSM new 52W HIGH $424.34 (RSI 71.3 OB).
+- **Macro:** S&P 7,565.42 (+0.60%), Nasdaq 26,920.79 (+0.92%), VIX 15.61 (near-low), DXY 98.95 (-0.20%), US10Y 4.47% (retreating from 4.70% peak), WTI $89.53 (+0.96% bounce from Iran-driven -6%), Brent $96.57 (+2.41%). Nuclear sector rally on Trump EOs.
+- **DB operations:** All 18 May-21 signals scored; daily_prices (18), technicals (18), macro (May 28), 18 new signals, report (v18) all inserted successfully.
+- **Next:** May 22-28 signals score June 2-6 (Memorial Day May 25 counted). OKLO July 4 reactor criticality (37 days). LMT ex-dividend June 1 ($3.45/share). ASML/TSM Q2 earnings July 15-16. format-005 requires Malik approval.
+
+
 ## v1.3 — 2026-05-27 (no active experiment)
 - **Experiment:** None active. format-005 (Options flow / unusual activity) requires Malik approval (Phase 3 per program.md).
 - **Today:** CS = 69.3 (AS=33.3, AC=100.0, CV=86.7). AS improved 28.6→33.3%: May 20 signals scored **12/18 correct — best batch accuracy recorded** (66.7%). Correct: AMD ACCUMULATE +21.7%, AMAT LONG +9.4%, LRCX ACCUMULATE +16.0%, TSM ACCUMULATE +7.2%, ASML ACCUMULATE +3.7%, CEG ACCUMULATE +8.5%, NRG CONTRARIAN +8.6%, OKLO SPECULATIVE +17.1%, VST CONTRARIAN +9.7%, BAH CONTRARIAN +2.2%, LMT CONTRARIAN +1.9%, PLTR WATCH -0.7%. Rolling window: 48/144 = 33.3%.
