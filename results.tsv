@@ -139,3 +139,5 @@ dd29a5e	2.420444	0.0	discard	experiment 202: reduce EMBEDDING_LR 0.3->0.2 (+0.00
 64b1a91	2.368874	0.0	keep	experiment 230: increase softcap 25->30 (-0.000 bpb)
 a6b000c	2.474827	0.0	baseline	baseline (tinyshakespeare, fresh session): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.12, EMBEDDING_LR=0.3, WD=0.0, WARMUP=0.0, STABLE=0.50, WARMDOWN=0.9, FINAL_LR=0.3, WINDOW=L, softcap=30, RoPE=3000
 70c5d6f	2.468400	0.0	keep	experiment 231: reduce STABLE_RATIO 0.50->0.40 (-0.006 bpb)
+57de441	2.311968	0.0	discard	experiment 232: reduce STABLE_RATIO 0.40->0.30 (+0.003 bpb)
+b96c0d1	2.306001	0.0	keep	experiment 233: increase STABLE_RATIO 0.40->0.50 (-0.003 bpb)
