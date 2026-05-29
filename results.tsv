@@ -141,3 +141,4 @@ a6b000c	2.474827	0.0	baseline	baseline (tinyshakespeare, fresh session): DEPTH=4
 70c5d6f	2.468400	0.0	keep	experiment 231: reduce STABLE_RATIO 0.50->0.40 (-0.006 bpb)
 57de441	2.311968	0.0	discard	experiment 232: reduce STABLE_RATIO 0.40->0.30 (+0.003 bpb)
 b96c0d1	2.306001	0.0	keep	experiment 233: increase STABLE_RATIO 0.40->0.50 (-0.003 bpb)
+7bc87e1	2.312538	0.0	discard	experiment 243: increase MATRIX_LR 0.15->0.18 (+0.015 bpb)
