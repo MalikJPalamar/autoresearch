@@ -1,5 +1,17 @@
 # Methodology Changelog
 
+## v1.3 — 2026-05-29 (no active experiment)
+- **Experiment:** None active. format-005 (Options flow / unusual activity) requires Malik approval (Phase 3 per program.md).
+- **Today:** CS = 70.5 (AS=36.1, AC=100.0, CV=86.7) — essentially flat vs May 28 record. May 22 signals scored **6/18 correct (33.3%)**. Correct: MSFT ACCUMULATE +1.63%, META ACCUMULATE +2.75%, LRCX LONG +3.11%, VST LONG +6.44%, OKLO SPECULATIVE +3.19%, RTX ACCUMULATE +1.34%. Rolling window: 65/180 = 36.1%.
+- **Key failures (May 22 batch):** AMD WATCH +14.17% (neutral signal missed parabolic move); PLTR WATCH +9.28% (Dell catalyst not anticipated; upgraded to LONG today); CEG WATCH +8.37% / NRG WATCH +5.38% (neutral signals missed nuclear/energy sector recovery); ASML ACCUMULATE -2.59% (MATCH Act shock continued); BAH ACCUMULATE -1.69% (post-earnings fade); NVDA ACCUMULATE -0.87% / GOOGL ACCUMULATE +0.79% (both under 1% threshold). Pattern: WATCH signals on high-momentum tickers continue as primary accuracy drag.
+- **Major events today:** PLTR +8.75% on Dell Q1 FY27 beat (+88% revenue, $24.4B AI orders) validating Foundry/AIP integration + PLTR raised FY2026 guidance to 71% growth ($7.65B) + US commercial +120% YoY — PLTR upgraded from ACCUMULATE to LONG. AMD new 52W HIGH intraday $525.40 (RSI ~77 OB, WATCH maintained). VST RSI 36.74 approaching oversold post-Trump EO surge (SMA200 $157 new floor). LMT -18% in 30 days, RSI ~32 approaching oversold. US-Iran ceasefire extended 60 days + Hormuz unrestricted → WTI -17% in May (lowest 6 weeks). VIX 15.39 (near-low regime). S&P 7,583.87 (+0.27%), Nasdaq 26,975.07 (+0.21%).
+- **Signal changes today:** PLTR ACCUMULATE→LONG (Dell earnings validation + guidance raise to 71% growth). VST signal held ACCUMULATE (RSI 36.74 dip = buy zone). AMAT LONG maintained (+1.34% today, approaching ATH). LRCX LONG maintained (new ATH territory, $5B buyback). AMD WATCH maintained (RSI 77 extended). LMT CONTRARIAN deepened (-18% in 30d, ex-div June 1 approaching).
+- **Macro:** S&P 7,583.87 (+0.27%), Nasdaq 26,975.07 (+0.21%), VIX 15.39 (LOW regime), DXY 98.757 (-0.21%), US10Y 4.44% (retreating from 4.70%), WTI $87.30 (-1.57%, -17% in May), Brent ~$94.
+- **Alerts:** LMT ex-dividend June 1 ($3.45/share) = 3 days. AMD RSI ~77 (overbought). PLTR RSI ~72 (overbought post-surge). VST RSI 36.74 (approaching oversold — watch ≤30). LMT RSI ~32 (approaching oversold).
+- **DB operations:** All 18 May-22 signals scored; daily_prices (18), technicals (18), macro (May 29), 18 new signals, report (v19) all inserted successfully.
+- **Next:** May 23-29 signals score June 4-6 (skip June 2 Mon-holiday? No — Memorial Day was May 25, no June holiday). OKLO July 4 reactor criticality (36 days). ASML/TSM Q2 earnings July 15-16. format-005 requires Malik approval. PLTR Dell ramp validation = watch June close for Q2 pipeline signals.
+
+
 ## v1.3 — 2026-05-28 (no active experiment)
 - **Experiment:** None active. format-005 (Options flow / unusual activity) requires Malik approval (Phase 3 per program.md).
 - **Today:** CS = 70.6 (AS=36.4, AC=100.0, CV=86.7) — **NEW RECORD CS**. May 21 signals scored **11/18 correct (61.1%)**. Correct: META ACCUM +5.3%, TSM ACCUM +5.7%, AMAT LONG +4.9%, LRCX ACCUM +10.5%, VST CONTRARIAN +2.6%, CEG ACCUM +6.5%, OKLO SPECULATIVE +3.2%, NRG CONTRARIAN +8.9%, SMR AVOID -22.5%, BAH CONTRARIAN +5.0%, RTX WATCH 0.0%. Rolling window: 59/162 = 36.4% (new high).
