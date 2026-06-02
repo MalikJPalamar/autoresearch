@@ -170,3 +170,4 @@ a4249aa	2.368152	0.0	discard	experiment 267: reduce MATRIX_LR 0.15->0.13 (+0.002
 68fd332	2.367919	0.0	discard	experiment 268: x0_lambdas Adam beta1 0.5->0.01 (+0.002 bpb)
 77e1304	2.422133	0.0	baseline	baseline (tinyshakespeare, fresh session): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.15, EMBEDDING_LR=0.4, WD=0.0, WARMUP=0.0, STABLE=0.70, WARMDOWN=0.9, FINAL_LR=0.2, WINDOW=L, softcap=25, RoPE=3000
 77e1304	2.418621	0.0	keep	experiment 269: faster Muon momentum warmup 20->10 steps (-0.004 bpb)
+bc88561	2.443654	0.0	discard	experiment 283: increase dropout 0.3->0.4 (+0.000 bpb)
