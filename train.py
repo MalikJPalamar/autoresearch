@@ -32,7 +32,7 @@ else:
     from prepare import MAX_SEQ_LEN, TIME_BUDGET, Tokenizer, evaluate_bpb as _evaluate_bpb_orig
     from prepare import _document_batches, get_token_bytes as _get_token_bytes, EVAL_TOKENS
 
-    def make_dataloader(tokenizer, B, T, split, buffer_size=50):
+    def make_dataloader(tokenizer, B, T, split, buffer_size=20):
         row_capacity = T + 1
         batches = _document_batches(split)
         bos_token = tokenizer.get_bos_token_id()
