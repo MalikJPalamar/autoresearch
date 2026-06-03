@@ -519,7 +519,7 @@ WINDOW_PATTERN = "L" # sliding window pattern: L=full, S=half context
 TOTAL_BATCH_SIZE = 2**19 if HAS_CUDA else 2**16 # tokens per optimizer step
 EMBEDDING_LR = 0.4      # learning rate for token embeddings (Adam)
 UNEMBEDDING_LR = 0.004  # learning rate for lm_head (Adam)
-MATRIX_LR = 0.15        # learning rate for matrix parameters (Muon)
+MATRIX_LR = 0.12        # learning rate for matrix parameters (Muon)
 SCALAR_LR = 0.25        # learning rate for per-layer scalars (Adam)
 WEIGHT_DECAY = 0.0      # cautious weight decay for Muon
 ADAM_BETAS = (0.01, 0.95) # Adam beta1, beta2
@@ -559,7 +559,7 @@ def build_model_config(depth):
     return GPTConfig(
         sequence_len=MAX_SEQ_LEN, vocab_size=vocab_size,
         n_layer=depth, n_head=num_heads, n_kv_head=num_heads, n_embd=model_dim,
-        window_pattern=WINDOW_PATTERN, dropout=0.2,
+        window_pattern=WINDOW_PATTERN, dropout=0.3,
     )
 
 config = build_model_config(DEPTH)
