@@ -180,3 +180,5 @@ a004640	2.416588	0.0	keep	experiment 295: reduce FINAL_LR_FRAC 0.3->0.2 (-0.000 
 662d226	2.258575	0.0	keep	experiment 304: reduce buffer_size 50->20 (-0.010 bpb)
 7744163	2.254294	0.0	keep	experiment 305: reduce buffer_size 20->5 (-0.004 bpb)
 7249cf8	2.252309	0.0	keep	experiment 306: reduce buffer_size 5->1 (-0.002 bpb)
+8858323	2.236277	0.0	baseline	baseline (tinyshakespeare, fresh session): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.12, EMBEDDING_LR=0.8, WD=0.0, WARMUP=0.0, STABLE=0.70, WARMDOWN=0.9, FINAL_LR=0.2, WINDOW=L, RoPE=3000
+3028c32	2.233511	0.0	keep	experiment 307: reduce EMBEDDING_LR 0.8->0.5 (-0.003 bpb)
