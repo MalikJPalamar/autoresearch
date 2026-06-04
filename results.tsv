@@ -175,3 +175,8 @@ e3eb0e6	2.328120	0.0	baseline	baseline (tinyshakespeare, fresh session): DEPTH=4
 a278b14	2.332024	0.0	discard	experiment 284: reduce dropout 0.3->0.2 (+0.004 bpb)
 6a3d885	2.326043	0.0	keep	experiment 285: reduce MATRIX_LR 0.15->0.12 (-0.002 bpb)
 a004640	2.416588	0.0	keep	experiment 295: reduce FINAL_LR_FRAC 0.3->0.2 (-0.000 bpb)
+981a28e	2.273375	0.0	keep	experiment 302: reduce CPU dataloader buffer_size 1000->100 (-0.127 bpb)
+6e4de8c	2.268338	0.0	keep	experiment 303: reduce buffer_size 100->50 (-0.005 bpb)
+662d226	2.258575	0.0	keep	experiment 304: reduce buffer_size 50->20 (-0.010 bpb)
+7744163	2.254294	0.0	keep	experiment 305: reduce buffer_size 20->5 (-0.004 bpb)
+7249cf8	2.252309	0.0	keep	experiment 306: reduce buffer_size 5->1 (-0.002 bpb)
