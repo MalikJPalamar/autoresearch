@@ -183,3 +183,4 @@ a004640	2.416588	0.0	keep	experiment 295: reduce FINAL_LR_FRAC 0.3->0.2 (-0.000 
 8858323	2.236277	0.0	baseline	baseline (tinyshakespeare, fresh session): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.12, EMBEDDING_LR=0.8, WD=0.0, WARMUP=0.0, STABLE=0.70, WARMDOWN=0.9, FINAL_LR=0.2, WINDOW=L, RoPE=3000
 3028c32	2.233511	0.0	keep	experiment 307: reduce EMBEDDING_LR 0.8->0.5 (-0.003 bpb)
 9a15ae5	2.246863	0.0	discard	experiment 320: increase dropout 0.2->0.3 (+0.006 bpb)
+95e13a8	2.240833	0.0	discard	experiment 329: increase embedding dropout 0.2->0.3 (+0.007 bpb)
