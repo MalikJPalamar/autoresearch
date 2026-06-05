@@ -361,7 +361,7 @@ class GPT(nn.Module):
         logits = logits.float()
 
         if targets is not None:
-            smoothing = 0.05 if self.training else 0.0
+            smoothing = 0.06 if self.training else 0.0
             loss = F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1),
                                    ignore_index=-1, reduction=reduction, label_smoothing=smoothing)
             return loss
