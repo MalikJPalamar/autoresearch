@@ -20,7 +20,7 @@ dev/
 cron/logs/
 
 # Run logs
-run.log
+run*.log
 
 # Environment variables (contains secrets)
 .env
