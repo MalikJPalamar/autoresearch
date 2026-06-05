@@ -184,3 +184,4 @@ a004640	2.416588	0.0	keep	experiment 295: reduce FINAL_LR_FRAC 0.3->0.2 (-0.000 
 3028c32	2.233511	0.0	keep	experiment 307: reduce EMBEDDING_LR 0.8->0.5 (-0.003 bpb)
 9a15ae5	2.246863	0.0	discard	experiment 320: increase dropout 0.2->0.3 (+0.006 bpb)
 95e13a8	2.240833	0.0	discard	experiment 329: increase embedding dropout 0.2->0.3 (+0.007 bpb)
+4f402aa	2.228554	0.0	discard	experiment 337: reduce Muon beta2 0.90->0.85 (+0.001 bpb)
