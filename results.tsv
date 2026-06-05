@@ -303,3 +303,7 @@ ca7069f	2.235440	0.0	discard	experiment 438: add dropout before attn projection 
 ca7069f	2.222823	0.0	discard	experiment 439: reduce Muon beta2 0.90->0.85 (+0.003 bpb)
 ca7069f	2.224953	0.0	discard	experiment 440: reduce FINAL_LR_FRAC 0.2->0.15 (+0.005 bpb)
 ca7069f	2.226485	0.0	discard	experiment 441: increase FINAL_LR_FRAC 0.2->0.25 (noise)
+ca7069f	2.224781	0.0	discard	experiment 452: reduce SCALAR_LR 0.25->0.15 (+0.005 bpb)
+ca7069f	2.223974	0.0	discard	experiment 453: reduce SCALAR_LR 0.25->0.20 (+0.005 bpb)
+ca7069f	2.230819	0.0	discard	experiment 454: asymmetric dropout attn=0.25 mlp=0.15 (+0.011 bpb)
+a31b6a5	2.216232	0.0	keep	experiment 455: asymmetric dropout attn=0.15 mlp=0.25 (-0.006 bpb avg)
