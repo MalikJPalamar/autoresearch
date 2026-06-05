@@ -101,6 +101,8 @@ class GPTConfig:
     n_embd: int = 768
     window_pattern: str = "SSSL"
     dropout: float = 0.0
+    attn_dropout: float = 0.0
+    mlp_dropout: float = 0.0
 
 
 def norm(x):
@@ -133,7 +135,7 @@ class CausalSelfAttention(nn.Module):
         self.c_k = nn.Linear(self.n_embd, self.n_kv_head * self.head_dim, bias=False)
         self.c_v = nn.Linear(self.n_embd, self.n_kv_head * self.head_dim, bias=False)
         self.c_proj = nn.Linear(self.n_embd, self.n_embd, bias=False)
-        self.resid_dropout = nn.Dropout(config.dropout)
+        self.resid_dropout = nn.Dropout(config.attn_dropout if config.attn_dropout > 0 else config.dropout)
         self.ve_gate_channels = 32
         self.ve_gate = nn.Linear(self.ve_gate_channels, self.n_kv_head, bias=False) if has_ve(layer_idx, config.n_layer) else None
 
@@ -173,7 +175,7 @@ class MLP(nn.Module):
         hidden = 2 * config.n_embd
         self.c_fc = nn.Linear(config.n_embd, 2 * hidden, bias=False)
         self.c_proj = nn.Linear(hidden, config.n_embd, bias=False)
-        self.resid_dropout = nn.Dropout(config.dropout)
+        self.resid_dropout = nn.Dropout(config.mlp_dropout if config.mlp_dropout > 0 else config.dropout)
 
     def forward(self, x):
         x = self.c_fc(x)
@@ -559,7 +561,7 @@ def build_model_config(depth):
     return GPTConfig(
         sequence_len=MAX_SEQ_LEN, vocab_size=vocab_size,
         n_layer=depth, n_head=num_heads, n_kv_head=num_heads, n_embd=model_dim,
-        window_pattern=WINDOW_PATTERN, dropout=0.2,
+        window_pattern=WINDOW_PATTERN, dropout=0.2, attn_dropout=0.15, mlp_dropout=0.25,
     )
 
 config = build_model_config(DEPTH)
