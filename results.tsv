@@ -445,3 +445,4 @@ ebf1a3d	2.275234	0.0	discard	experiment 895: n_kv_head=1 multi-query attention (
 ebf1a3d	2.269817	0.0	discard	experiment 896: reduce embedding dropout 0.08->0.06 (+0.007 bpb)
 ebf1a3d	2.262944	0.0	discard	experiment 897: reduce attn_dropout 0.08->0.05 (noise, +0.000 bpb)
 ebf1a3d	2.262780	0.0	discard	experiment 898: reduce mlp_dropout 0.25->0.22 (noise, -0.000 bpb)
+8e04683	2.250165	0.0	discard	experiment 914: WEIGHT_DECAY 0.03->0.10 (+0.007 bpb)
