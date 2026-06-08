@@ -440,3 +440,8 @@ c430e3f	2.245479	0.0	discard	experiment 594: WEIGHT_DECAY 0.03->0.05 (noise)
 c430e3f	2.251648	0.0	discard	experiment 595: shared Q-K projection (+0.006 bpb)
 c430e3f	2.250423	0.0	discard	experiment 596: count step 0 in time budget (+0.005 bpb)
 c430e3f	2.245915	0.0	discard	experiment 597: constant momentum 0.90 (noise)
+ebf1a3d	2.262856	0.0	baseline	baseline (tinyshakespeare, fresh session): DEPTH=4, ASPECT_RATIO=32, HEAD_DIM=64, MATRIX_LR=0.20, EMBEDDING_LR=0.7, WD=0.03, WARMUP=0.0, STABLE=0.65, WARMDOWN=0.9, FINAL_LR=0.03, WINDOW=L, RoPE=3000
+ebf1a3d	2.275234	0.0	discard	experiment 895: n_kv_head=1 multi-query attention (+0.012 bpb, also slower 12 vs 17 steps)
+ebf1a3d	2.269817	0.0	discard	experiment 896: reduce embedding dropout 0.08->0.06 (+0.007 bpb)
+ebf1a3d	2.262944	0.0	discard	experiment 897: reduce attn_dropout 0.08->0.05 (noise, +0.000 bpb)
+ebf1a3d	2.262780	0.0	discard	experiment 898: reduce mlp_dropout 0.25->0.22 (noise, -0.000 bpb)
