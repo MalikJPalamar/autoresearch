@@ -487,3 +487,5 @@ fccc19e	2.237073	0.0	discard	experiment 957: STABLE_RATIO 0.35->0.40 (+0.001 bpb
 fcd3c37	2.236876	0.0	discard	experiment 964: MLP hidden 1.5x->1.333x (+0.001 bpb)
 500acd4	2.237058	0.0	discard	experiment 965: attn_dropout 0.08->0.04 + embedding dropout 0.08->0.04 (+0.001 bpb)
 0597d40	2.235718	0.0	keep	experiment 966: remove QK-norm (-0.000 bpb)
+cde05f3	2.238646	0.0	discard	experiment 967: x0_lambda init 0.05->0.10 (+0.003 bpb)
+8f047a0	2.235661	0.0	keep	experiment 968: x0_lambda init 0.05->0.0 (remove input bypass, -0.000 bpb)
