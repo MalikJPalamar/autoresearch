@@ -538,3 +538,4 @@ b536319	2.255057	0.0	discard	experiment 1014: UNEMBEDDING_LR 0.006->0.004 (+0.02
 e1855d2	2.235415	0.0	discard	experiment 1015: remove cautious WD mask (+0.002 bpb)
 8738f76	2.235304	0.0	discard	experiment 1016: EMBEDDING_LR 0.7->1.0 (+0.002 bpb)
 7768c13	2.234582	0.0	discard	experiment 1017: MATRIX_LR 0.12->0.13 (+0.001 bpb)
+d792407	2.235475	0.0	discard	experiment 1018: SiLU->GELU activation (+0.002 bpb)
