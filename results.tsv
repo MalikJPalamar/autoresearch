@@ -456,3 +456,5 @@ ab2fa58	2.239431	0.0	keep	experiment 930: STABLE_RATIO 0.50->0.45 (-0.000 bpb, e
 5a96bf8	2.240776	0.0	discard	experiment 932: STABLE_RATIO 0.35->0.25 (+0.002 bpb, too much decay)
 0a9f730	2.277613	0.0	discard	experiment 933: TOTAL_BATCH_SIZE 2^18->2^19 (+0.039 bpb, too few steps)
 8c30d61	2.238993	0.0	keep	experiment 934: RoPE base 3000->5000 (-0.000 bpb)
+634b22f	2.241166	0.0	discard	experiment 935: MATRIX_LR 0.20->0.25 (+0.002 bpb)
+f5ef3f5	2.237105	0.0	keep	experiment 936: MATRIX_LR 0.20->0.15 (-0.002 bpb)
