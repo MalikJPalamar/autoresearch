@@ -534,3 +534,4 @@ cf70566	2.239184	0.0	discard	experiment 1001: lm_head init std 0.001->0.01 (+0.0
 ee8a020	2.258320	0.0	discard	experiment 1011: UNEMBEDDING_LR 0.006->0.01 (+0.025 bpb)
 86832c4	2.233884	0.0	discard	experiment 1012: grad clip 0.3->0.25 (+0.001 bpb)
 2aa7705	2.236766	0.0	discard	experiment 1013: MLP hidden 1.5x->2x (+0.004 bpb)
+b536319	2.255057	0.0	discard	experiment 1014: UNEMBEDDING_LR 0.006->0.004 (+0.022 bpb)
