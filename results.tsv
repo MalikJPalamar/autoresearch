@@ -539,3 +539,4 @@ e1855d2	2.235415	0.0	discard	experiment 1015: remove cautious WD mask (+0.002 bp
 8738f76	2.235304	0.0	discard	experiment 1016: EMBEDDING_LR 0.7->1.0 (+0.002 bpb)
 7768c13	2.234582	0.0	discard	experiment 1017: MATRIX_LR 0.12->0.13 (+0.001 bpb)
 d792407	2.235475	0.0	discard	experiment 1018: SiLU->GELU activation (+0.002 bpb)
+43c6feb	2.235567	0.0	discard	experiment 1019: Muon momentum warmup 8->4 steps (+0.002 bpb)
