@@ -489,3 +489,7 @@ fcd3c37	2.236876	0.0	discard	experiment 964: MLP hidden 1.5x->1.333x (+0.001 bpb
 0597d40	2.235718	0.0	keep	experiment 966: remove QK-norm (-0.000 bpb)
 cde05f3	2.238646	0.0	discard	experiment 967: x0_lambda init 0.05->0.10 (+0.003 bpb)
 8f047a0	2.235661	0.0	keep	experiment 968: x0_lambda init 0.05->0.0 (remove input bypass, -0.000 bpb)
+cead69b	2.236197	0.0	discard	experiment 969: SCALAR_LR 0.50->0.25 (+0.001 bpb)
+89b12d4	2.281372	0.0	discard	experiment 970: ADAM_BETAS (0.01,0.99)->(0.9,0.999) (+0.046 bpb)
+8f9e674	2.236206	0.0	discard	experiment 971: EMBEDDING_LR 0.7->1.0 (+0.001 bpb)
+ebc2bf1	2.234604	0.0	keep	experiment 972: grad clip 0.4->0.3 (-0.001 bpb)
