@@ -420,10 +420,11 @@ def _muon_step_impl(stacked_grads, stacked_params, momentum_buffer, second_momen
     v_norm_new = scaled_sq_sum.sum(dim=(-2, -1), keepdim=True).sqrt()
     final_scale = step_size * (v_norm / v_norm_new.clamp_min(1e-10))
     g = g * final_scale.to(g.dtype)
-    # Weight decay + parameter update
+    # Cautious weight decay + parameter update
     lr = lr_t.to(g.dtype)
     wd = wd_t.to(g.dtype)
-    stacked_params.sub_(lr * g + lr * wd * stacked_params)
+    mask = (g * stacked_params) >= 0
+    stacked_params.sub_(lr * g + lr * wd * stacked_params * mask)
 
 
 if HAS_CUDA:
