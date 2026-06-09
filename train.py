@@ -518,7 +518,7 @@ HEAD_DIM = 128 if HAS_CUDA else 64          # target head dimension for attentio
 WINDOW_PATTERN = "L" # sliding window pattern: L=full, S=half context
 
 # Optimization
-TOTAL_BATCH_SIZE = 2**19 if HAS_CUDA else 2**18 # tokens per optimizer step
+TOTAL_BATCH_SIZE = 2**19 if HAS_CUDA else 2**17 # tokens per optimizer step
 EMBEDDING_LR = 0.7      # learning rate for token embeddings (Adam)
 UNEMBEDDING_LR = 0.006  # learning rate for lm_head (Adam)
 MATRIX_LR = 0.10        # learning rate for matrix parameters (Muon)
