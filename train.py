@@ -229,7 +229,7 @@ class GPT(nn.Module):
         torch.nn.init.normal_(self.lm_head.weight, mean=0.0, std=0.001)
         # Transformer blocks
         n_embd = self.config.n_embd
-        std = (2 / (5 * n_embd))**0.5
+        std = (2 / (3 * n_embd))**0.5
         for block in self.transformer.h:
             torch.nn.init.normal_(block.attn.c_q.weight, std=std)
             torch.nn.init.normal_(block.attn.c_k.weight, std=std)
