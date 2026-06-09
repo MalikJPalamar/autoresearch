@@ -451,3 +451,4 @@ e4eb1c5	2.240519	0.0	keep	experiment 926: STABLE_RATIO 0.65->0.50 (-0.002 bpb, m
 d14371c	2.240736	0.0	discard	experiment 927: STABLE_RATIO 0.50->0.40 (noise, +0.000 bpb)
 803b19f	2.239893	0.0	keep	experiment 928: WARMDOWN_RATIO 0.9->0.95 (-0.001 bpb, longer warmdown)
 8bd9de1	2.239615	0.0	keep	experiment 929: WARMDOWN_RATIO 0.95->1.0 (-0.000 bpb, full warmdown)
+ab2fa58	2.239431	0.0	keep	experiment 930: STABLE_RATIO 0.50->0.45 (-0.000 bpb, earlier decay)
