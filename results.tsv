@@ -448,3 +448,5 @@ ebf1a3d	2.262780	0.0	discard	experiment 898: reduce mlp_dropout 0.25->0.22 (nois
 8e04683	2.250165	0.0	discard	experiment 914: WEIGHT_DECAY 0.03->0.10 (+0.007 bpb)
 9f40e28	2.244213	0.0	discard	experiment 925: mlp_dropout 0.25->0.30 (noise, +0.001 bpb)
 e4eb1c5	2.240519	0.0	keep	experiment 926: STABLE_RATIO 0.65->0.50 (-0.002 bpb, more cooldown)
+d14371c	2.240736	0.0	discard	experiment 927: STABLE_RATIO 0.50->0.40 (noise, +0.000 bpb)
+803b19f	2.239893	0.0	keep	experiment 928: WARMDOWN_RATIO 0.9->0.95 (-0.001 bpb, longer warmdown)
