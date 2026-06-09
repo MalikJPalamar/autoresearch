@@ -349,7 +349,7 @@ class GPT(nn.Module):
 
         x = self.transformer.wte(idx)
         x = norm(x)
-        x = F.dropout(x, p=0.08, training=self.training)
+        x = F.dropout(x, p=0.04, training=self.training)
         x0 = x
         for i, block in enumerate(self.transformer.h):
             x = self.resid_lambdas[i] * x + self.x0_lambdas[i] * x0
@@ -561,7 +561,7 @@ def build_model_config(depth):
     return GPTConfig(
         sequence_len=MAX_SEQ_LEN, vocab_size=vocab_size,
         n_layer=depth, n_head=num_heads, n_kv_head=num_heads, n_embd=model_dim,
-        window_pattern=WINDOW_PATTERN, dropout=0.15, attn_dropout=0.08, mlp_dropout=0.25,
+        window_pattern=WINDOW_PATTERN, dropout=0.15, attn_dropout=0.04, mlp_dropout=0.25,
     )
 
 config = build_model_config(DEPTH)
