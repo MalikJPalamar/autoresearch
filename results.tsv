@@ -485,3 +485,5 @@ fccc19e	2.237073	0.0	discard	experiment 957: STABLE_RATIO 0.35->0.40 (+0.001 bpb
 8345c74	2.236455	0.0	discard	experiment 962: RoPE base 5000->4000 (+0.000 bpb)
 1eaa9f8	2.238074	0.0	discard	experiment 963: MLP hidden 1.5x->1.667x (+0.002 bpb)
 fcd3c37	2.236876	0.0	discard	experiment 964: MLP hidden 1.5x->1.333x (+0.001 bpb)
+500acd4	2.237058	0.0	discard	experiment 965: attn_dropout 0.08->0.04 + embedding dropout 0.08->0.04 (+0.001 bpb)
+0597d40	2.235718	0.0	keep	experiment 966: remove QK-norm (-0.000 bpb)
