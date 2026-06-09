@@ -458,3 +458,4 @@ ab2fa58	2.239431	0.0	keep	experiment 930: STABLE_RATIO 0.50->0.45 (-0.000 bpb, e
 8c30d61	2.238993	0.0	keep	experiment 934: RoPE base 3000->5000 (-0.000 bpb)
 634b22f	2.241166	0.0	discard	experiment 935: MATRIX_LR 0.20->0.25 (+0.002 bpb)
 f5ef3f5	2.237105	0.0	keep	experiment 936: MATRIX_LR 0.20->0.15 (-0.002 bpb)
+0a2f8e7	2.236922	0.0	keep	experiment 937: MATRIX_LR 0.15->0.10 (-0.000 bpb)
