@@ -528,3 +528,4 @@ cf70566	2.239184	0.0	discard	experiment 1001: lm_head init std 0.001->0.01 (+0.0
 4a9a4e4	2.234507	0.0	discard	experiment 1005: Muon momentum 0.95->0.90 (+0.001 bpb)
 5ca881e	2.233760	0.0	discard	experiment 1006: ADAM_BETAS beta1 0.01->0.02 (+0.001 bpb)
 0338926	2.234008	0.0	discard	experiment 1007: embedding init std 1.0->0.5 (+0.001 bpb)
+94644e3	2.243597	0.0	discard	experiment 1008: remove resid_lambdas from forward (+0.010 bpb)
