@@ -348,7 +348,7 @@ class GPT(nn.Module):
 
         x = self.transformer.wte(idx)
         x = norm(x)
-        x = F.dropout(x, p=0.0, training=self.training)
+        x = F.dropout(x, p=0.08, training=self.training)
         x0 = x
         for i, block in enumerate(self.transformer.h):
             x = self.resid_lambdas[i] * x + self.x0_lambdas[i] * x0
