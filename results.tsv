@@ -543,3 +543,5 @@ d792407	2.235475	0.0	discard	experiment 1018: SiLU->GELU activation (+0.002 bpb)
 97fb0e2	2.235478	0.0	discard	experiment 1020: ADAM_BETAS beta2 0.99->0.95 (+0.002 bpb)
 21a5d76	2.239695	0.0	discard	experiment 1021: DEPTH 5 ASPECT_RATIO 38 (+0.007 bpb)
 367ad14	2.381443	0.0	discard	experiment 1022: linear weight decay schedule WD*1->0.5 (+0.006 bpb)
+7316134	0.502375	0.0	baseline	baseline (synthetic data): DEPTH=4, ASPECT_RATIO=48, HEAD_DIM=64, FINAL_LR_FRAC=0.05
+125ff91	0.342002	0.0	keep	experiment 1023: increase FINAL_LR_FRAC 0.05->0.25 (-0.160 bpb)
