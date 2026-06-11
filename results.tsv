@@ -564,3 +564,4 @@ bec1b9c	2.299965	0.0	discard	experiment 1165: grad clip 0.05->0.03 (+0.005 bpb, 
 9d4e99d	2.286948	0.0	keep	experiment 1166: WARMUP_RATIO 0.0->0.10 (-0.008 bpb, LR warmup stabilizes early training)
 00fd8d2	2.299067	0.0	discard	experiment 1167: WARMUP_RATIO 0.10->0.20 (+0.012 bpb, too much warmup)
 68ab313	2.293085	0.0	discard	experiment 1168: WEIGHT_DECAY 0.01->0.03 (+0.006 bpb, too much regularization)
+636c509	2.298263	0.0	discard	experiment 1169: EMBEDDING_LR 0.7->0.4 (+0.011 bpb, lower LR hurt)
