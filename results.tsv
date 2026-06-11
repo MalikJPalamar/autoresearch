@@ -557,3 +557,4 @@ eced243	2.323911	0.0	keep	experiment 1158: reduce TOTAL_BATCH_SIZE 2^18->2^17 (-
 c32677c	2.304855	0.0	keep	experiment 1159: reduce TOTAL_BATCH_SIZE 2^17->2^16 (-0.019 bpb, 14 steps vs 11)
 6ad13b7	2.295374	0.0	keep	experiment 1160: reduce TOTAL_BATCH_SIZE 2^16->2^15 (-0.010 bpb, 26 steps vs 14)
 3fee203	2.322007	0.0	discard	experiment 1161: TOTAL_BATCH_SIZE 2^15->2^14, DEVICE_BATCH_SIZE 16->8 (+0.027 bpb, too noisy)
+489d9e0	2.304509	0.0	discard	experiment 1162: STABLE_RATIO 0.25->0.50 (+0.009 bpb, longer peak LR hurt)
