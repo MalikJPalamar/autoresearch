@@ -559,3 +559,4 @@ c32677c	2.304855	0.0	keep	experiment 1159: reduce TOTAL_BATCH_SIZE 2^17->2^16 (-
 3fee203	2.322007	0.0	discard	experiment 1161: TOTAL_BATCH_SIZE 2^15->2^14, DEVICE_BATCH_SIZE 16->8 (+0.027 bpb, too noisy)
 489d9e0	2.304509	0.0	discard	experiment 1162: STABLE_RATIO 0.25->0.50 (+0.009 bpb, longer peak LR hurt)
 7ebff11	2.302868	0.0	discard	experiment 1163: MATRIX_LR 0.12->0.18 (+0.007 bpb, higher LR didn't help)
+21b4176	2.299793	0.0	discard	experiment 1164: mlp_dropout 0.25->0.15 (+0.004 bpb, less regularization hurt)
