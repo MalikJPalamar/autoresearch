@@ -525,7 +525,7 @@ SCALAR_LR = 0.45        # learning rate for per-layer scalars (Adam)
 WEIGHT_DECAY = 0.01     # cautious weight decay for Muon
 ADAM_BETAS = (0.01, 0.99) # Adam beta1, beta2
 WARMUP_RATIO = 0.0      # fraction of time budget for LR warmup
-STABLE_RATIO = 0.25     # fraction of time budget at peak LR (WSD schedule)
+STABLE_RATIO = 0.50     # fraction of time budget at peak LR (WSD schedule)
 WARMDOWN_RATIO = 1.0    # fraction of time budget for LR warmdown
 FINAL_LR_FRAC = 0.05    # final LR as fraction of initial
 
