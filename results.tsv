@@ -562,3 +562,4 @@ c32677c	2.304855	0.0	keep	experiment 1159: reduce TOTAL_BATCH_SIZE 2^17->2^16 (-
 21b4176	2.299793	0.0	discard	experiment 1164: mlp_dropout 0.25->0.15 (+0.004 bpb, less regularization hurt)
 bec1b9c	2.299965	0.0	discard	experiment 1165: grad clip 0.05->0.03 (+0.005 bpb, too tight)
 9d4e99d	2.286948	0.0	keep	experiment 1166: WARMUP_RATIO 0.0->0.10 (-0.008 bpb, LR warmup stabilizes early training)
+00fd8d2	2.299067	0.0	discard	experiment 1167: WARMUP_RATIO 0.10->0.20 (+0.012 bpb, too much warmup)
