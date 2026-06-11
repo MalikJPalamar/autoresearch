@@ -558,3 +558,4 @@ c1d8270	2.345932	0.0	keep	experiment 1159: embedding dropout 0.10->0.12 (-0.008 
 bb5ae3e	2.356809	0.0	discard	experiment 1161: mlp_dropout 0.25->0.20 (+0.011 bpb)
 66429b3	2.356681	0.0	discard	experiment 1162: mlp_dropout 0.25->0.30 (+0.011 bpb)
 f3dcfaf	2.359681	0.0	discard	experiment 1163: WEIGHT_DECAY 0.01->0.02 (+0.014 bpb)
+b609207	2.273314	0.0	keep	experiment 1164: TOTAL_BATCH_SIZE 2^18->2^17 (-0.073 bpb)
