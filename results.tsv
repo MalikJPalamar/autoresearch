@@ -555,3 +555,4 @@ bea499e	2.238514	0.0	keep	experiment 1157: RoPE base 5000->10000 (-0.004 bpb)
 c338b82	2.400158	0.0	baseline	baseline (tinyshakespeare, fresh session): DEPTH=3, ASPECT_RATIO=48, HEAD_DIM=64, MATRIX_LR=0.12, EMBEDDING_LR=0.7, WD=0.01, WARMUP=0.0, STABLE=0.25, WARMDOWN=1.0, FINAL_LR=0.05, WINDOW=L, RoPE=10000
 eced243	2.323911	0.0	keep	experiment 1158: reduce TOTAL_BATCH_SIZE 2^18->2^17 (-0.076 bpb, more training steps)
 c32677c	2.304855	0.0	keep	experiment 1159: reduce TOTAL_BATCH_SIZE 2^17->2^16 (-0.019 bpb, 14 steps vs 11)
+6ad13b7	2.295374	0.0	keep	experiment 1160: reduce TOTAL_BATCH_SIZE 2^16->2^15 (-0.010 bpb, 26 steps vs 14)
