@@ -126,9 +126,9 @@ Run after Loop 1 or on-demand:
 - Sector correlation table
 - Aschenbrenner thesis alignment
 
-**Phase 2 — Next experiments (auto-evolve):**
-- Per-ticker news sentiment scoring (-2 to +2) ← NEXT
-- Relative strength ranking within sectors
+**Phase 2 — Enrichment (DONE):**
+- Per-ticker news sentiment scoring (-2 to +2) — format-002, KEPT Apr 16
+- Relative strength ranking within sectors — format-003, KEPT May 13
 
 **Phase 3 — Requires approval:**
 - Options flow / unusual activity signals
