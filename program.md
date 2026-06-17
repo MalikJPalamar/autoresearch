@@ -130,8 +130,8 @@ Run after Loop 1 or on-demand:
 - Per-ticker news sentiment scoring (-2 to +2) — format-002, KEPT Apr 16
 - Relative strength ranking within sectors — format-003, KEPT May 13
 
-**Phase 3 — Requires approval:**
-- Options flow / unusual activity signals
+**Phase 3 — Enrichment II (IN PROGRESS):**
+- Options flow / unusual activity signals — format-005, ACTIVE Jun 17 (approved by Malik)
 - Cross-sector rotation signals
 - Correlation breakdown alerts
 

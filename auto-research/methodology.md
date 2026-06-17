@@ -1,4 +1,4 @@
-# SA Portfolio Methodology v1.3
+# SA Portfolio Methodology v1.4
 
 ## Report Template
 
@@ -51,6 +51,23 @@ For each ticker:
 ### Aschenbrenner Thesis Alignment
 - Per-sector alignment with AI scaling race thesis
 - Thesis-level commentary
+
+### Options Flow / Unusual Activity (format-005, v1.4+)
+
+After alerts, include an options flow section per ticker (where data is available):
+
+| Ticker | Notable Flow | Put/Call Ratio | Unusual Volume | Interpretation |
+|--------|-------------|----------------|----------------|----------------|
+
+- **Notable Flow:** Largest or most unusual options trades (strike, expiry, premium)
+- **Put/Call Ratio:** Current ratio with directional bias (>1.0 = bearish, <0.7 = bullish)
+- **Unusual Volume:** Flag if options volume exceeds 2x 20-day average
+- **Interpretation:** 1-line read: institutional hedge, speculative bet, earnings play, etc.
+- Source priority: Barchart unusual options activity, Yahoo Finance options, TipRanks
+- Only include tickers with actionable options data — skip if no unusual activity found
+- This layer completes CV to 15/15 (100%)
+
+---
 
 ### Alerts
 - Overbought/oversold conditions

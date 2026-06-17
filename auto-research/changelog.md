@@ -1,14 +1,16 @@
 # Methodology Changelog
 
-## v1.3 — 2026-06-17 (no active experiment)
-- **Experiment:** None active. format-005 (Options flow / unusual activity) requires Malik approval (Phase 3 per program.md).
+## v1.4 — 2026-06-17 (format-005 ACTIVE — report 0/3)
+- **Experiment:** format-005 ACTIVATED. Malik approved Options flow / unusual activity layer. This adds the final 2 CV points (13/15 → 15/15 = 100%). Baseline CS = 71.2. Experiment needs 3 reports to evaluate.
+- **What changes:** Each report now includes an Options Flow table after the Alerts section. Per ticker: notable flow (strike/expiry/premium), put/call ratio, unusual volume flag, 1-line interpretation. Sources: Barchart unusual options, Yahoo Finance options, TipRanks. Only tickers with actionable data included.
+- **Expected impact:** CV 86.7% → 100.0% (+13.3 pp). If AS and AC hold, CS would jump from 71.2 to 75.2 (+4.0). The options flow data may also indirectly improve AS by surfacing institutional positioning signals.
 - **Today:** CS = **71.2** (AS=37.87, AC=100.0, CV=86.7) — unchanged from June 16; no new signals scored today (June 11 signals score June 18).
 - **No signals scored today.** June 11 signals score June 18 (tomorrow). Rolling window: 103/272 = 37.87%.
 - **Major events today (June 17):** **FOMC HAWKISH HOLD** — Kevin Warsh's first meeting as Fed Chair. Rate held at 3.50%-3.75% (12-0 vote) BUT hawkish dot plot: 9/18 officials project at least one rate hike in 2026, 6 project two 25bp hikes. Median year-end rate raised to 3.8% from 3.4% (March). **S&P -1.21% to 7,420.10; Nasdaq -1.34% to 26,021.66; VIX +12% to ~18.5 ELEVATED.** 2Y yield +16 bps to 4.216% (sharpest front-end repricing since March). **AMD -7.6%** momentum reversal from 52W high on FOMC + high-beta compression (ACCUMULATE → WATCH). **ASML -4.7%** European ADR hit by FOMC + DXY strengthening (LONG → ACCUMULATE). **MSFT RSI ~29** deepening CONTRARIAN. **AMAT +1.6%** bucked selloff — equipment supercycle thesis. **RTX +2.6%** strongest portfolio name — defense backlogs rate-insensitive. **OKLO +3.9%** oversold bounce; July 4 criticality 17 days. **GM-LMT defense partnership** announced. **AMD-Rackspace 30MW AI compute deal** finalized.
 - **Signal changes today:** AMD ACCUMULATE → **WATCH** (momentum broken from 52W high; FOMC headwind). ASML LONG → **ACCUMULATE** (-4.7% FOMC selloff; RSI reset from 70). BAH ACCUMULATE → **WATCH** (gave back gains; below all MAs; government consulting discretionary).
 - **Macro:** S&P 7,420.10 (-1.21%), Nasdaq 26,021.66 (-1.34%), Dow 51,492.55 (-0.98%), VIX ~18.5 (ELEVATED +12%), DXY 99.36, US10Y 4.497% (+6.9 bps), US2Y 4.216% (+16 bps), WTI $76.26.
 - **Alerts:** AMAT RSI ~74 OVERBOUGHT. LRCX RSI ~75 OVERBOUGHT (cooling from 80). MSFT RSI ~29 CONTRARIAN deepening below 30 threshold. OKLO RSI ~32 recovering from oversold. VIX ELEVATED regime (~18.5). FOMC hawkish dot plot = structural headwind for growth multiples. RTX $3.77 from 52W high $194.23. VST ex-div June 22 (5 days). ASML Q2 July 15 (28 days). TSM Q2 July 16 (29 days).
-- **Next:** June 11 signals score June 18 (tomorrow). June 15 signals score June 22. June 16 signals score June 23. OKLO July 4 criticality 17 days. VST ex-div June 22 (5 days). FOMC aftermath: watch for hawkish repricing continuation or stabilization. format-005 requires Malik approval.
+- **Next:** June 11 signals score June 18 (tomorrow). June 15 signals score June 22. June 16 signals score June 23. OKLO July 4 criticality 17 days. VST ex-div June 22 (5 days). FOMC aftermath: watch for hawkish repricing continuation or stabilization. format-005 starts next report (June 18).
 
 ## v1.3 — 2026-06-16 (no active experiment)
 - **Experiment:** None active. format-005 (Options flow / unusual activity) requires Malik approval (Phase 3 per program.md).
