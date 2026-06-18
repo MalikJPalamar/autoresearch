@@ -1,5 +1,18 @@
 # Methodology Changelog
 
+## v1.4 — 2026-06-18 (format-005 ACTIVE — report 1/3)
+- **Experiment:** format-005 — Report 1/3. Options flow / unusual activity section included for the first time. CV achieved 100.0% (15/15 layers complete). Baseline CS = 71.2. Current CS = **75.83** — **NEW ALL-TIME HIGH** (+4.63 from baseline).
+- **June 11 signals scored 12/16 decisive correct (75.0%) — NEW ALL-TIME RECORD BATCH.** Previous best: 72.7% (Jun 9). Correct: NVDA ACCUM +2.87%, AMD ACCUM +9.71%, TSM ACCUM +5.73%, ASML LONG +2.67%, AMAT ACCUM +10.23%, LRCX LONG +8.00%, VST ACCUM +10.99%, CEG CONTRA +10.04%, OKLO SPEC +11.62%, NRG CONTRA +12.53%, LMT LONG +1.38%, RTX ACCUM +7.66%. NULL: META ACCUM +0.63%, PLTR WATCH +1.97%.
+- **Key failures (Jun 11 batch):** MSFT ACCUMULATE -4.06% (FOMC + Build sell-event double hit; now RSI ~27 deepest oversold); BAH ACCUMULATE -9.31% (DOGE budget cuts hitting govt consulting — recurring failure); GOOGL WATCH +5.97% (neutral >3% — recurring miss pattern); SMR AVOID +12.39% (nuclear sympathy lift; class action thesis intact).
+- **AS update:** 37.87% → **39.57%** (new all-time high). Rolling ~110/278.
+- **CV update:** 86.7% → **100.0%** — format-005 options flow section completes all 15 coverage layers for the first time.
+- **CS update:** 71.2 → **75.83** (+4.63). Driven by: CV +13.3pp (+4.0 CS points) + AS improvement (+0.68 CS points).
+- **Major events today (June 18):** **Post-FOMC recovery: S&P +1.15%, Nasdaq +1.5%.** VIX crashed -11.7% from ~18.5 → ~16.34 (ELEVATED → NORMAL regime). **Trump announces Apple-Intel US chip manufacturing partnership** — Intel +10.5%, SOXX +5%. **AMD +4.13%** on Rackspace 30MW deal + BofA/Citi/Bernstein PT $600. **MSFT -2.7% to $382.30** — RSI ~27 deepest oversold in portfolio. **VST +3.5% to $160.40** — SMA200 $157 reclaimed (first since late May correction). **NRG +5.0% to $138.54** — CONTRARIAN thesis vindicated (+12.5% from Jun 11). US-Iran interim peace agreement digitally signed. WTI $75 near March lows.
+- **Options flow (format-005 data):** NVDA Vol P/C 0.66 (slightly bullish), IV 36.52%, IV rank 21% (low). ASML Vol P/C 0.64 / OI P/C 1.18 (split signal — active call buying vs institutional puts). LRCX OI P/C 1.22 (institutional hedging at ATH). Only 3/18 tickers had actionable options data — data source improvement needed.
+- **Signal changes today:** No signal changes from Jun 17. AMD WATCH maintained (bounce insufficient to upgrade). VST ACCUMULATE maintained with SMA200 reclaim noted. BAH WATCH maintained (RSI 35 approaching oversold).
+- **Macro:** S&P ~7,505 (+1.15%), Nasdaq ~26,412 (+1.50%), VIX ~16.34 (NORMAL), DXY ~99.31, US10Y 4.456% (-4.1 bps), WTI ~$75.
+- **Next:** Jun 15 signals score Jun 22. Jun 16 signals score Jun 23. VST ex-div Jun 22 (4 days). OKLO July 4 criticality 16 days. ASML Q2 Jul 15. TSM Q2 Jul 16. format-005 needs 2 more reports (2/3 and 3/3).
+
 ## v1.4 — 2026-06-17 (format-005 ACTIVE — report 0/3)
 - **Experiment:** format-005 ACTIVATED. Malik approved Options flow / unusual activity layer. This adds the final 2 CV points (13/15 → 15/15 = 100%). Baseline CS = 71.2. Experiment needs 3 reports to evaluate.
 - **What changes:** Each report now includes an Options Flow table after the Alerts section. Per ticker: notable flow (strike/expiry/premium), put/call ratio, unusual volume flag, 1-line interpretation. Sources: Barchart unusual options, Yahoo Finance options, TipRanks. Only tickers with actionable data included.
