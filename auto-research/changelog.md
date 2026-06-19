@@ -1,5 +1,20 @@
 # Methodology Changelog
 
+## v1.4 — 2026-06-19 (format-005 ACTIVE — report 2/3) — HOLIDAY EDITION
+- **Experiment:** format-005 — Report 2/3. Juneteenth holiday edition using actual Jun 18 closing data. CS unchanged at **75.83** (no new signals scored). Running avg 75.83 vs baseline 71.2 = **+4.63 delta**, tracking strongly positive.
+- **No signals scored today.** Next scoring: Jun 15 signals score Jun 22. Jun 16 → Jun 23. Jun 17 → Jun 24.
+- **Price corrections applied:** Jun 18 report used early-session estimates. Actual Jun 18 closes significantly different for: TSM $462.12 (+6.94% vs est. $432.15), AMAT $617.11 (+4.08% vs est. $592.92), LRCX $389.04 (+3.97% vs est. $374.18), ASML $1,929.68 (+3.61% vs est. ~$1,869), LMT $510.95 (-4.01% vs est. $532.32), RTX $185.60 (-3.62% vs est. ~$191).
+- **Signal changes (3):**
+  1. **TSM ACCUMULATE → WATCH** — RSI ~76 overbought at new 52W HIGH $462.12. +6.94% single-day surge. Apple-Intel long-term competitive risk.
+  2. **ASML ACCUMULATE → LONG** — $1,929.68 closed above $1,903 (52W high threshold per Jun 18 report). RSI ~67 healthy. DXY 100.72 is main risk.
+  3. **LMT ACCUMULATE → WATCH** — $510.95 broke below SMA200 $524 (per Jun 18 report: "break below = WATCH downgrade"). Iran peace deal continuation -4.01%.
+- **Critical macro:** **DXY spiked to 100.72** (highest since May 2025, up from 99.31 est. in Jun 18 report). Post-FOMC dollar strength = headwind for international earners (ASML) and growth multiples.
+- **Semiconductor supercycle:** TSM +6.94%, AMAT +4.08% (NEW ATH $617.11), LRCX +3.97% (NEW ATH $389.04), ASML +3.61% (NEW 52W HIGH). SOXX +5%. Equipment names agnostic to Intel-Apple supply chain shift.
+- **Defense rotation:** LMT -4.01%, RTX -3.62%. Sharpest sector rotation of 2026: SOXX +5% vs defense -3.5% = ~8.5% relative spread.
+- **Options flow (format-005 data):** TSM 12,000 puts at $395 strike (100x normal volume) — institutional hedging at 52W high. LRCX OI P/C 1.22 (protective puts at ATH). NVDA Vol P/C 0.66 (bullish, IV rank 21% low). ASML Vol P/C 0.64 / OI P/C 1.18 (split signal). Coverage improved to 4/18 tickers (up from 3/18 in report 1/3).
+- **Key:** SMR +10.39% on Paragon HIPS safety contract (AVOID maintained). MSFT RSI ~26 deepest oversold in portfolio (CONTRARIAN). VST SMA200 $157 confirmed (2nd consecutive close above). OKLO July 4 criticality 15 days. VST ex-div June 22 (next trading day).
+- **Next:** Jun 15 signals score Jun 22. format-005 report 3/3 expected Jun 22 (Monday). If CS maintains above 71.2 baseline over 3 reports → KEEP format-005.
+
 ## v1.4 — 2026-06-18 (format-005 ACTIVE — report 1/3)
 - **Experiment:** format-005 — Report 1/3. Options flow / unusual activity section included for the first time. CV achieved 100.0% (15/15 layers complete). Baseline CS = 71.2. Current CS = **75.83** — **NEW ALL-TIME HIGH** (+4.63 from baseline).
 - **June 11 signals scored 12/16 decisive correct (75.0%) — NEW ALL-TIME RECORD BATCH.** Previous best: 72.7% (Jun 9). Correct: NVDA ACCUM +2.87%, AMD ACCUM +9.71%, TSM ACCUM +5.73%, ASML LONG +2.67%, AMAT ACCUM +10.23%, LRCX LONG +8.00%, VST ACCUM +10.99%, CEG CONTRA +10.04%, OKLO SPEC +11.62%, NRG CONTRA +12.53%, LMT LONG +1.38%, RTX ACCUM +7.66%. NULL: META ACCUM +0.63%, PLTR WATCH +1.97%.
