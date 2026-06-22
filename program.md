@@ -131,7 +131,8 @@ Run after Loop 1 or on-demand:
 - Relative strength ranking within sectors — format-003, KEPT May 13
 
 **Phase 3 — Enrichment II (IN PROGRESS):**
-- Options flow / unusual activity signals — format-005, ACTIVE Jun 17 (approved by Malik)
+- Options flow / unusual activity signals — format-005, KEPT Jun 22 (CS +5.33, CV 100%)
+- Executive Signal Dashboard — format-006, ACTIVE Jun 22 (auto-evolve)
 - Cross-sector rotation signals
 - Correlation breakdown alerts
 

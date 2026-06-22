@@ -1,5 +1,21 @@
 # Methodology Changelog
 
+## v1.4 — 2026-06-22 (format-005 KEPT ✅ — format-006 proposed)
+- **Experiment:** format-005 — Report 3/3. **EXPERIMENT COMPLETE: KEPT.** 3-report average CS = 76.53 vs baseline 71.2 = **+5.33 delta**. Options flow / unusual activity is now a permanent v1.4 feature. CV permanently at 100.0% (15/15 layers).
+- **Jun 15 signals scored 9/17 decisive correct (52.9%):** Correct: AMD ACCUM +6.5%, AMAT ACCUM +4.3%, ASML LONG +2.9%, LRCX LONG +5.7%, TSM ACCUM +5.4%, VST ACCUM +10.8%, CEG CONTRA +9.0%, NRG CONTRA +5.1%, RTX ACCUM +1.6%. NULL: NVDA ACCUM +0.2%. Key failures: LMT LONG -9.9% (Iran peace), BAH ACCUM -10.1% (Treasury contracts cancelled), META ACCUM -6.6% (AI capex anxiety), GOOGL WATCH -4.5% (AI talent exodus >3%), OKLO SPEC -3.9%, SMR AVOID +17.2% (nuclear sympathy).
+- **AS update:** 39.57% → **44.81%** (NEW ALL-TIME HIGH). Rolling ~108/241. Driven by low-accuracy early batches (May 19-21) aging out of 30-day window + solid Jun 15 batch (52.9%).
+- **CS update:** 75.83 → **77.92** (NEW ALL-TIME HIGH, +2.09). format-005 3-report avg 76.53 vs baseline 71.2 = +5.33.
+- **format-005 final assessment:** CV 86.7% → 100.0% (+13.3pp permanent). AS improvement partially attributable to options data improving risk assessment. Net CS +5.33 = largest positive delta since format-003. **KEEP decision confirmed.**
+- **Signal changes (3):**
+  1. **AMD WATCH → ACCUMULATE** — +2.0% today, sustained recovery from FOMC selloff. RSI ~54 healthy. BofA/Citi/Bernstein PT $600.
+  2. **META ACCUMULATE → WATCH** — -4.0% on AI capex concerns. Broke $566 support. CTO "atrocious" AI reorg. KOSA regulation.
+  3. **BAH WATCH → CONTRARIAN** — RSI ~28 oversold trigger. -6.7% on Treasury contract cancellation. $720M Ultra Mission acquisition = defense tech pivot. 52W low $62 = stop loss.
+- **Key market events:** GOOGL -3.8% on AI talent departures to OpenAI/Anthropic (Gemini/DeepMind engineers). BAH -6.7% on Treasury contract cancellation (ALL contracts). PLTR -4.3% on France intelligence dropping Palantir tools + UK NHS at risk. Semi equipment stocks rallied (Micron +9%, Intel +8.5% on Alphabet chip manufacturing deal). Nasdaq-100 and S&P 500 quarterly rebalance effective today. Iran peace roadmap — 60-day deal framework.
+- **Macro:** S&P ~7,478 (-0.3%), Nasdaq ~26,226 (-1.1%), VIX 16.78 (NORMAL +2.3%), DXY 100.61, US10Y 4.49%, WTI $75.74.
+- **Oversold alerts:** MSFT RSI ~26 (deepest, 5th session), BAH RSI ~28 (Treasury), OKLO RSI ~28 (July 4 criticality 12 days), PLTR RSI ~33 (approaching).
+- **Next experiment proposed:** format-006 "Executive Signal Dashboard" — compact 18-row summary table at top of report. Auto-evolve (formatting). cs_before = 76.53. Starts Jun 23.
+- **Next:** Jun 16 signals score Jun 23. Jun 17 signals score Jun 24. OKLO July 4 criticality 12 days. ASML Q2 Jul 15. TSM Q2 Jul 16. format-006 report 1/3 expected Jun 23.
+
 ## v1.4 — 2026-06-19 (format-005 ACTIVE — report 2/3) — HOLIDAY EDITION
 - **Experiment:** format-005 — Report 2/3. Juneteenth holiday edition using actual Jun 18 closing data. CS unchanged at **75.83** (no new signals scored). Running avg 75.83 vs baseline 71.2 = **+4.63 delta**, tracking strongly positive.
 - **No signals scored today.** Next scoring: Jun 15 signals score Jun 22. Jun 16 → Jun 23. Jun 17 → Jun 24.
@@ -307,5 +323,6 @@
 
 ## Queued Experiments
 - **format-003:** Relative strength ranking within sectors — **KEPT (resolved 2026-05-13, CS delta +35.6)**
-- **format-004:** Add stop-loss level, price target, and R/R ratio per ticker — auto-evolve — **ACTIVE (started 2026-05-13)**
-- **format-005:** Options flow / unusual activity (requires Malik approval — Phase 3)
+- **format-004:** Add stop-loss level, price target, and R/R ratio per ticker — auto-evolve — **DISCARDED (resolved 2026-05-15, CS delta +0, not simpler)**
+- **format-005:** Options flow / unusual activity (Malik approved) — **KEPT (resolved 2026-06-22, CS delta +5.33)**
+- **format-006:** Executive Signal Dashboard — compact 18-row summary table — auto-evolve — **ACTIVE (started 2026-06-22, cs_before=76.53)**
