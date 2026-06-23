@@ -325,4 +325,14 @@
 - **format-003:** Relative strength ranking within sectors — **KEPT (resolved 2026-05-13, CS delta +35.6)**
 - **format-004:** Add stop-loss level, price target, and R/R ratio per ticker — auto-evolve — **DISCARDED (resolved 2026-05-15, CS delta +0, not simpler)**
 - **format-005:** Options flow / unusual activity (Malik approved) — **KEPT (resolved 2026-06-22, CS delta +5.33)**
-- **format-006:** Executive Signal Dashboard — compact 18-row summary table — auto-evolve — **ACTIVE (started 2026-06-22, cs_before=76.53)**
+- **format-006:** Executive Signal Dashboard — compact 18-row summary table — auto-evolve — **ACTIVE (started 2026-06-22, cs_before=76.53, report 1/3)**
+
+## v1.4 — 2026-06-23 (format-006 report 1/3)
+- **Experiment:** format-006 — Executive Signal Dashboard (auto-evolve, formatting)
+- **Status:** PENDING — need 2 more reports to evaluate (expected Jun 24, Jun 25)
+- **Today:** CS = 77.50 (AS=43.75, AC=100.0, CV=100.0). **GLOBAL CHIP ROUT** dominated session: BofA rate hike note (up to 3 hikes in 2026), Asian semis tumbled, Micron −10% pre-earnings, AMD −5.8%, NVDA −4.5%. Jun 16 signals scored **3/13 = 23.1%** — worst batch since Jun 1. Chip rout destroyed bullish semi signals. AS 44.81→43.75. CS 77.92→77.50 (still above format-006 baseline 76.53).
+- **Signal changes:** NVDA ACCUMULATE→WATCH (SMA50 $203 broken in chip rout); AMD ACCUMULATE→WATCH (SMA20 broken, momentum reversal); PLTR WATCH→CONTRARIAN (RSI ~28 at 52W low $119, oversold trigger fired).
+- **Macro:** S&P ~5,875 (−1.8%), VIX 17.28 (+2.98%), DXY 99.51, US10Y 4.32%, WTI $73.40 (3-month low on Iran 60-day oil license), Brent $77.85.
+- **Key events ahead:** Micron earnings Wednesday (chip rout catalyst/clearing event); OKLO Aurora criticality July 4 (11 days); ASML Q2 Jul 15; TSM Q2 Jul 16.
+- **format-006 assessment:** Executive Signal Dashboard added at report top — 18-row compact table with ticker, signal, direction, confidence, price, S/R, and catalyst. CS above baseline. 2 more reports needed.
+- **Next:** format-006 report 2/3 expected Jun 24. Jun 17 signals score Jun 24. Jun 18 signals score Jun 25.
