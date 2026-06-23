@@ -1,5 +1,23 @@
 # Methodology Changelog
 
+## v1.4 — 2026-06-23 (format-006 ACTIVE — report 1/3)
+- **Experiment:** format-006 — Report 1/3. Executive Signal Dashboard added at top of report — compact 18-row summary table with ticker, price, change%, signal, RSI, news sentiment, and catalyst. Auto-evolve (formatting). cs_before = 76.53. Current CS = **76.88** (+0.35 above baseline).
+- **Jun 16 signals scored 2/16 decisive correct (12.5%) — WORST BATCH EVER.** Previous worst: 16.7% (Jun 1). Correct: VST ACCUM +3.8%, CEG CONTRARIAN +3.0%. NULL: PLTR WATCH -0.7%. Key failures: NVDA ACCUM -8.2% (KOSPI contagion), AMD ACCUM -11.3% (semi crash), GOOGL WATCH -5.1% (>3%), MSFT CONTRA -4.8%, META WATCH -3.6%, TSM WATCH -6.69% (>3%), ASML LONG -7.93%, AMAT LONG -6.0%, LRCX LONG -9.16%, NRG CONTRA -4.5%, OKLO SPEC -8.1%, BAH CONTRA -5.2%, LMT ACCUM -3.8%, RTX ACCUM -2.9%, SMR AVOID +3.2% (wrong direction).
+- **AS update:** 44.81% → **~42.2%** (down from ATH). Rolling window: dropped May 22 batch (7/18=38.9%), added Jun 23 batch (2/16=12.5%). Net decline reflects worst-ever single-day accuracy.
+- **CS update:** 77.92 → **76.88** (-1.04). AS decline (-2.61pp) dragged CS despite AC/CV holding at 100.0%.
+- **Root cause — KOSPI circuit breaker cascade:** South Korea KOSPI dropped -9.99% triggering circuit breakers (biggest single-day drop since COVID March 2020). BofA warned of 3 rate hikes starting September. Global risk-off contagion hit high-beta tech/semis hardest. Macro regime shift from VIX ~17 NORMAL to ~20 ELEVATED. DXY spiked to 101.38 (highest since May 2025). WTI crude collapsed to $73.40 (3-month low on demand fears).
+- **Signal changes (5):**
+  1. **AMD ACCUMULATE → WATCH** — -11.3% semi crash. RSI ~42. KOSPI contagion + BofA rate hike warning. Wait for stabilization.
+  2. **ASML LONG → ACCUMULATE** — -7.93% broke above key MAs then reversed. RSI ~55. DXY 101.38 headwind for EUR-denominated. MATCH Act risk re-emerging.
+  3. **LRCX LONG → ACCUMULATE** — -9.16% largest single-day drop. RSI ~44. ATH $409 → ~$371. Semi equipment de-rating on rate hike fears.
+  4. **CEG CONTRARIAN → ACCUMULATE** — Walmart signed 15-year nuclear PPA (largest corporate nuclear PPA in history). Stock +3.0% against market selloff. Thesis upgrade from value to growth.
+  5. **PLTR WATCH → CONTRARIAN** — RSI ~30 approaching oversold. -4.3% France intelligence dropped Palantir. UK NHS contract at risk. But Maven DoD program of record = floor. Defense AI thesis intact.
+- **Key market events:** KOSPI -9.99% circuit breakers (worst since COVID). BofA forecast 3 rate hikes starting September (vs market pricing cuts). Walmart-CEG 15-year nuclear PPA (largest corporate nuclear deal). OKLO clarification: July 4 criticality is Groves test reactor in Texas (NOT Aurora at INL). S&P 7,365.46 (-1.44%), Nasdaq 25,587 (-2.21%). Semi equipment crash: ASML -7.93%, LRCX -9.16%, TSM -6.69%.
+- **Macro:** S&P 7,365.46 (-1.44%), Nasdaq 25,587.04 (-2.21%), VIX ~20 (ELEVATED), DXY 101.38 (highest since May 2025), US10Y ~4.55%, WTI $73.40 (3-month low).
+- **Oversold alerts:** PLTR RSI ~30 (CONTRARIAN trigger), AMD RSI ~42 (approaching). MSFT RSI ~30 (deepening). OKLO RSI ~25 (deeply oversold, Groves test reactor 11 days).
+- **format-006 assessment:** Report 1/3. Executive Signal Dashboard renders cleanly. Dashboard provides at-a-glance summary for all 18 tickers. CS 76.88 (+0.35 above baseline 76.53). Need 2 more reports to evaluate.
+- **Next:** Jun 17 signals score Jun 24. Jun 18 signals score Jun 25. OKLO Groves test reactor July 4 (11 days). ASML Q2 Jul 15. TSM Q2 Jul 16. format-006 report 2/3 expected Jun 24.
+
 ## v1.4 — 2026-06-22 (format-005 KEPT ✅ — format-006 proposed)
 - **Experiment:** format-005 — Report 3/3. **EXPERIMENT COMPLETE: KEPT.** 3-report average CS = 76.53 vs baseline 71.2 = **+5.33 delta**. Options flow / unusual activity is now a permanent v1.4 feature. CV permanently at 100.0% (15/15 layers).
 - **Jun 15 signals scored 9/17 decisive correct (52.9%):** Correct: AMD ACCUM +6.5%, AMAT ACCUM +4.3%, ASML LONG +2.9%, LRCX LONG +5.7%, TSM ACCUM +5.4%, VST ACCUM +10.8%, CEG CONTRA +9.0%, NRG CONTRA +5.1%, RTX ACCUM +1.6%. NULL: NVDA ACCUM +0.2%. Key failures: LMT LONG -9.9% (Iran peace), BAH ACCUM -10.1% (Treasury contracts cancelled), META ACCUM -6.6% (AI capex anxiety), GOOGL WATCH -4.5% (AI talent exodus >3%), OKLO SPEC -3.9%, SMR AVOID +17.2% (nuclear sympathy).
