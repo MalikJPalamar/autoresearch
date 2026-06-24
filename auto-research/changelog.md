@@ -1,5 +1,22 @@
 # Methodology Changelog
 
+## v1.4 — 2026-06-24 (format-006 report 2/3 — NEW WORST BATCH 12.5%)
+
+- **Experiment:** format-006 — Executive Signal Dashboard — Report **2 of 3**. cs_before = 76.53. cs_today = 74.15. Running avg (2 reports) = 74.47. Delta = **−2.07**.
+- **Jun 17 signals scored 2/16 decisive correct (12.5% — NEW WORST BATCH IN RUN HISTORY):** CORRECT: TSM ACCUM +1.2%, VST ACCUM +4.8%. NULL: AMD WATCH +1.9% (1–3%), CEG CONTRA −0.6% (<1%). INCORRECT: NVDA ACCUM −3.6%, GOOGL WATCH −5.1% (large move), MSFT CONTRA −5.1%, META ACCUM −3.9%, ASML ACCUM −1.3%, AMAT ACCUM −1.5%, LRCX LONG −3.0%, OKLO SPEC −6.5%, NRG CONTRA −4.9%, SMR AVOID +11.2%, PLTR WATCH −11.9% (large move), BAH WATCH −13.1% (large move), LMT ACCUM −11.0%, RTX ACCUM −2.5%.
+- **Root causes:** BofA 3-hike rate forecast cascade (Jun 23); Korea HBM4 demand revision contagion; FOMC hawkish hold (Jun 17 itself) set bearish tone; Iran peace deal continuation crushed defense (LMT −11%, BAH −13.1%); France/UK dropping Palantir (PLTR −11.9%); WTI crashed to $70.31 (first below $72 since March).
+- **AS update:** 36.96% → **35.37%** (87/246 decisive). Two consecutive worst batches (Jun 16 at 20%, Jun 17 at 12.5%) dragging AS down sharply.
+- **CS update:** 74.78 → **74.15**. format-006 running avg = 74.47 vs baseline 76.53 = **−2.07 delta**.
+- **Signal changes (2):**
+  1. **NRG ACCUMULATE → CONTRARIAN** — WTI crash below $72 to $70.31 compresses gas-fired generation margins. Stock −8.4% from recent highs. SMA200 $118 = floor.
+  2. **LMT ACCUMULATE → CONTRARIAN** — −11% from Jun 17 ($536 → $477). Iran peace deal sustained. RSI ~30 at oversold threshold. Below all MAs. $180B backlog intact.
+- **Oversold alerts (5 tickers):** BAH RSI ~22 (extreme), MSFT RSI ~25 (bear market −21% from peak), PLTR RSI ~29 (new 52W low $116.18), LMT RSI ~30 (CONTRARIAN trigger), OKLO RSI ~31 (July 4 criticality 10 days).
+- **Key events:** Micron earnings after bell (expected $20.39 EPS); NVDA shareholder meeting; GOOGL Dow inclusion June 29; Walmart-CEG 176MW nuclear PPA; Chevron-MSFT 20yr power deal; UBS AMD PT raised to $670.
+- **format-006 experiment status:** Report 2/3. Tracking negative (−2.07 delta) but AS regression is driven by two catastrophic macro-event batches, not the dashboard format. 1 more report needed to evaluate.
+- **Next:** Jun 18 signals score Jun 25. Jun 22 → Jun 29. OKLO July 4 criticality 10 days. format-006 report 3/3 expected Jun 25.
+
+---
+
 ## v1.4 — 2026-06-23 (format-006 report 1/3 — AS corrected to DB-authoritative)
 
 - **Experiment:** format-006 — Executive Signal Dashboard — Report **1 of 3**. cs_before = 76.53. cs_today = 74.78.
