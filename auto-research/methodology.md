@@ -28,24 +28,6 @@ After each sector's per-ticker analysis, include a ranking table:
 
 ---
 
-### Executive Signal Dashboard (format-006, v1.4+)
-
-Compact 18-row summary table at top of report for at-a-glance portfolio view:
-
-| Ticker | Price | Chg% | Signal | RSI | Sentiment | Catalyst |
-|--------|-------|------|--------|-----|-----------|----------|
-
-- One row per ticker, sorted by sector (AI Compute → Semis → Energy → Defense)
-- **Price:** Current close price
-- **Chg%:** Daily change percentage
-- **Signal:** LONG / ACCUMULATE / CONTRARIAN / WATCH / SPECULATIVE / AVOID
-- **RSI:** RSI(14) value with OB/OS flag
-- **Sentiment:** News sentiment score (-2.0 to +2.0)
-- **Catalyst:** Next key catalyst (abbreviated)
-- Place immediately after Macro Overlay, before per-sector analysis
-
----
-
 ### Per-Ticker Analysis (18 tickers)
 
 For each ticker:
