@@ -1,5 +1,25 @@
 # Methodology Changelog
 
+## v1.4 — 2026-06-25 (format-006 DISCARDED ✗ — methodology.md reverted)
+
+- **Experiment:** format-006 — Executive Signal Dashboard — Report **3 of 3 — EXPERIMENT COMPLETE: DISCARDED.** 3-report average CS = 74.32 vs baseline 76.53 = **−2.21 delta**. Executive Signal Dashboard section removed from methodology.md.
+- **Jun 18 signals scored 5/16 decisive correct (31.3%):** CORRECT: TSM ACCUM +4.1%, AMAT ACCUM +10.0%, VST ACCUM +2.7%, NRG CONTRA +4.7%, SMR AVOID −1.9%. NULL: AMD WATCH −1.3% (1–3%), CEG CONTRA +0.4% (<1%). INCORRECT: NVDA ACCUM −3.9%, GOOGL WATCH −6.4% (large move), MSFT CONTRA −7.0%, META ACCUM −2.9%, ASML ACCUM −5.7%, LRCX LONG +0.2% (<1%), OKLO SPEC −12.3%, PLTR WATCH −18.6% (large move), BAH WATCH −8.6% (large move), LMT CONTRA −3.5%, RTX ACCUM −2.2%.
+- **Root causes:** Continued macro selloff pressure from BofA 3-hike forecast cascade; AI compute names still correcting; MSFT CONTRARIAN signal −7.0% (bear market deepening −21% from peak); PLTR −18.6% new 52W low on France/UK dropping Palantir; BAH −8.6% Treasury contract cancellation aftershock; LRCX LONG technically correct (+0.2%) but below 1% threshold → scored INCORRECT.
+- **Bright spots:** AMAT +10.0% powered by Micron Q3 blowout ($24.29 EPS vs $20.39 est, record HBM revenue); TSM +4.1% TSMC fab demand; NRG CONTRARIAN +4.7% vindicated; SMR AVOID −1.9% correct.
+- **AS update:** 35.37% → **35.11%** (92/262 decisive). Third consecutive poor batch (20.0%, 12.5%, 31.3%). Macro-driven drawdown continues.
+- **CS update:** 74.15 → **74.04**. format-006 3-report avg = (74.78 + 74.15 + 74.04) / 3 = **74.32** vs baseline 76.53 = **−2.21 delta → DISCARD**.
+- **format-006 post-mortem:** The Executive Signal Dashboard was a formatting-only experiment (auto-evolve). The dashboard itself neither helped nor hurt — the CS decline was entirely driven by AS regression from three catastrophic macro-event batches coinciding with the experiment window. However, per protocol, CS decreased → DISCARD. The concept may be revisited in a future experiment window with more favorable market conditions.
+- **Methodology.md reverted:** Removed "Executive Signal Dashboard (format-006, v1.4+)" section (compact 18-row summary table). Methodology remains at v1.4 with format-005 options flow as the last kept layer.
+- **Signal changes (2):**
+  1. **AMAT ACCUMULATE → LONG** — +10.7% on Micron Q3 blowout read-through. New 52W high $652.07. RSI ~68 strong but not OB. HBM equipment demand confirmed.
+  2. **TSM WATCH → ACCUMULATE** — +4.1% recovery. RSI cooling from OB ~71 → ~60. TSMC fab expansion demand intact.
+- **NRG price correction:** Jun 24 report listed NRG at $125.47 — actual Jun 24 close was $137.66 per Google Finance. Corrected in today's report. Jun 25 open $143.87 consistent with corrected close.
+- **Key events:** Micron Q3 FY26 blowout ($24.29 EPS, record HBM revenue); GOOGL Dow inclusion Jun 29; OKLO July 4 criticality 9 days; ASML Q2 Jul 15; TSM Q2 Jul 16.
+- **Next experiment proposed:** format-007 "Macro Regime Overlay Flag" — tag each signal with current macro regime (risk-on/risk-off/transition) to add context for interpretation. Auto-evolve experiment.
+- **Next:** Jun 22 signals score Jun 29. format-007 to be activated pending next session.
+
+---
+
 ## v1.4 — 2026-06-24 (format-006 report 2/3 — NEW WORST BATCH 12.5%)
 
 - **Experiment:** format-006 — Executive Signal Dashboard — Report **2 of 3**. cs_before = 76.53. cs_today = 74.15. Running avg (2 reports) = 74.47. Delta = **−2.07**.
@@ -361,6 +381,5 @@
 
 ## Queued Experiments
 - **format-003:** Relative strength ranking within sectors — **KEPT (resolved 2026-05-13, CS delta +35.6)**
-- **format-004:** Add stop-loss level, price target, and R/R ratio per ticker — auto-evolve — **DISCARDED (resolved 2026-05-15, CS delta +0, not simpler)**
-- **format-005:** Options flow / unusual activity (Malik approved) — **KEPT (resolved 2026-06-22, CS delta +5.33)**
-- **format-006:** Executive Signal Dashboard — compact 18-row summary table — auto-evolve — **ACTIVE (started 2026-06-22, cs_before=76.53)**
+- **format-004:** Add stop-loss level, price target, and R/R ratio per ticker — auto-evolve — **ACTIVE (started 2026-05-13)**
+- **format-005:** Options flow / unusual activity (requires Malik approval — Phase 3)

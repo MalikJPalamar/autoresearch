@@ -132,7 +132,7 @@ Run after Loop 1 or on-demand:
 
 **Phase 3 — Enrichment II (IN PROGRESS):**
 - Options flow / unusual activity signals — format-005, KEPT Jun 22 (CS +5.33, CV 100%)
-- Executive Signal Dashboard — format-006, ACTIVE Jun 22 (auto-evolve)
+- Executive Signal Dashboard — format-006, DISCARDED Jun 25 (CS -2.21, 3-report avg 74.32 vs baseline 76.53)
 - Cross-sector rotation signals
 - Correlation breakdown alerts
 
