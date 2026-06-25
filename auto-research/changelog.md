@@ -15,8 +15,8 @@
   2. **TSM WATCH → ACCUMULATE** — +4.1% recovery. RSI cooling from OB ~71 → ~60. TSMC fab expansion demand intact.
 - **NRG price correction:** Jun 24 report listed NRG at $125.47 — actual Jun 24 close was $137.66 per Google Finance. Corrected in today's report. Jun 25 open $143.87 consistent with corrected close.
 - **Key events:** Micron Q3 FY26 blowout ($24.29 EPS, record HBM revenue); GOOGL Dow inclusion Jun 29; OKLO July 4 criticality 9 days; ASML Q2 Jul 15; TSM Q2 Jul 16.
-- **Next experiment proposed:** format-007 "Macro Regime Overlay Flag" — tag each signal with current macro regime (risk-on/risk-off/transition) to add context for interpretation. Auto-evolve experiment.
-- **Next:** Jun 22 signals score Jun 29. format-007 to be activated pending next session.
+- **format-007 ACTIVATED ✅** — "Macro Regime Overlay Flag": when VIX crosses a regime boundary, adds `⚠ MACRO REGIME SHIFT` banner after macro overlay and appends `[⚡REGIME]` to all directional signals. Auto-evolve (formatting only). cs_before = 76.53. Started 2026-06-25. Report 1/3 expected Jun 26.
+- **Next:** Jun 22 signals score Jun 29. Jun 25 signals score Jul 2. OKLO July 4 criticality 9 days. ASML Q2 Jul 15. TSM Q2 Jul 16. Q2 earnings wave late July.
 
 ---
 

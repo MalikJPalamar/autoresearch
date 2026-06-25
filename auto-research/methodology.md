@@ -52,6 +52,25 @@ For each ticker:
 - Per-sector alignment with AI scaling race thesis
 - Thesis-level commentary
 
+### Macro Regime Overlay Flag (format-007, v1.4+)
+
+When VIX crosses a regime boundary (NORMAL→ELEVATED or ELEVATED→HIGH), add a prominent banner immediately after the Macro Overlay table:
+
+```
+⚠ MACRO REGIME SHIFT: VIX [X.XX] crossed into [REGIME] from [PRIOR REGIME]
+All directional signals generated during regime transitions carry elevated uncertainty.
+Reduce position sizing by 30-50%, widen stops, and bias toward WATCH/CONTRARIAN signals.
+```
+
+- **Trigger conditions:** VIX crosses 25 (NORMAL→ELEVATED), crosses 35 (ELEVATED→HIGH), or reverses
+- **Flag format:** Append `[⚡REGIME]` to every directional signal (LONG/ACCUMULATE/CONTRARIAN/SPECULATIVE) in the per-ticker signal line
+- **Removal:** Flag removed when VIX returns to prior regime for ≥2 consecutive sessions
+- **Scope:** Formatting/presentation only — does not modify signal classification logic (auto-evolve)
+- **cs_before:** 76.53 (format-005 baseline, maintained as format-006 was discarded)
+- **Experiment started:** 2026-06-25, report 0/3
+
+---
+
 ### Options Flow / Unusual Activity (format-005, v1.4+)
 
 After alerts, include an options flow section per ticker (where data is available):
