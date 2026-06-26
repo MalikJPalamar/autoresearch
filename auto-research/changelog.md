@@ -1,5 +1,20 @@
 # Methodology Changelog
 
+## v1.4 — 2026-06-26 (format-007 report 1/3 — Macro Regime Overlay Flag)
+
+- **Experiment:** format-007 — Macro Regime Overlay Flag — Report **1 of 3**. cs_before = 76.53. cs_today = 73.91.
+- **Jun 19 signals scored 5/17 decisive correct (29.4%):** CORRECT: AMAT ACCUM +6.6%, LRCX ACCUM +3.3%, NRG CONTRA +4.7%, BAH CONTRA +2.2%, LMT CONTRA +3.5%. NULL: NVDA ACCUM −2.7% (1–3%), CEG ACCUM +0.7% (<1%). INCORRECT: AMD WATCH −3.4% (>3%), GOOGL WATCH −6.9% (>3%), MSFT CONTRA −6.8%, META ACCUM −6.0%, TSM WATCH −6.5% (>3%), ASML LONG −6.0%, OKLO SPEC −15.1%, VST ACCUM −3.0%, SMR WATCH +1.1% (wrong direction), PLTR CONTRA −8.9%, RTX ACCUM −2.6%.
+- **Root causes:** Fifth consecutive poor batch. BofA 3-hike cascade and macro correction continue to punish directional calls. AI compute names still correcting from May ATHs. MSFT CONTRARIAN −6.8% (bear market deepening to −25% from peak). PLTR CONTRARIAN −8.9% continued slide. OKLO SPECULATIVE −15.1% largest single-name miss.
+- **Bright spots:** AMAT +6.6% continues Micron Q3 blowout momentum. LRCX +3.3% semi equipment strength. Defense CONTRARIAN calls working: LMT +3.5%, BAH +2.2%. NRG CONTRA +4.7% energy recovery.
+- **AS update:** 35.11% → **34.77%** (97/279 decisive). Fourth consecutive batch below 35%.
+- **CS update:** 74.04 → **73.91**. format-007 report 1/3.
+- **format-007 status:** VIX 18.89 (NORMAL). No regime shift detected — flag not triggered. 2 more reports needed for evaluation.
+- **Signal changes (0):** No changes from Jun 25. OpenAI IPO delay to 2027 is narrative, not fundamental. PLTR +5.35% Burry short-cover is technical, not thesis-changing.
+- **Key events:** OpenAI IPO delay 2027; PLTR +5.35% Burry short-cover; GOOGL Dow inclusion Mon Jun 29; WTI $69.80 below $70 2nd day; BAH possible new 52W low $60.00.
+- **Next:** Jun 22 signals score Jun 29. Jun 23 signals score Jun 30. OKLO criticality 8 days. ASML Q2 Jul 15. TSM Q2 Jul 16.
+
+---
+
 ## v1.4 — 2026-06-25 (format-006 DISCARDED ✗ — methodology.md reverted)
 
 - **Experiment:** format-006 — Executive Signal Dashboard — Report **3 of 3 — EXPERIMENT COMPLETE: DISCARDED.** 3-report average CS = 74.32 vs baseline 76.53 = **−2.21 delta**. Executive Signal Dashboard section removed from methodology.md.
