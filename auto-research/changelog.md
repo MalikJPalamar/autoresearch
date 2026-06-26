@@ -3,9 +3,9 @@
 ## v1.4 — 2026-06-26 (format-007 report 1/3 — Macro Regime Overlay Flag)
 
 - **Experiment:** format-007 — Macro Regime Overlay Flag — Report **1 of 3**. cs_before = 76.53. cs_today = 73.91.
-- **Jun 19 signals scored 5/17 decisive correct (29.4%):** CORRECT: AMAT ACCUM +6.6%, LRCX ACCUM +3.3%, NRG CONTRA +4.7%, BAH CONTRA +2.2%, LMT CONTRA +3.5%. NULL: NVDA ACCUM −2.7% (1–3%), CEG ACCUM +0.7% (<1%). INCORRECT: AMD WATCH −3.4% (>3%), GOOGL WATCH −6.9% (>3%), MSFT CONTRA −6.8%, META ACCUM −6.0%, TSM WATCH −6.5% (>3%), ASML LONG −6.0%, OKLO SPEC −15.1%, VST ACCUM −3.0%, SMR WATCH +1.1% (wrong direction), PLTR CONTRA −8.9%, RTX ACCUM −2.6%.
-- **Root causes:** Fifth consecutive poor batch. BofA 3-hike cascade and macro correction continue to punish directional calls. AI compute names still correcting from May ATHs. MSFT CONTRARIAN −6.8% (bear market deepening to −25% from peak). PLTR CONTRARIAN −8.9% continued slide. OKLO SPECULATIVE −15.1% largest single-name miss.
-- **Bright spots:** AMAT +6.6% continues Micron Q3 blowout momentum. LRCX +3.3% semi equipment strength. Defense CONTRARIAN calls working: LMT +3.5%, BAH +2.2%. NRG CONTRA +4.7% energy recovery.
+- **Jun 19 signals scored 5/17 decisive correct (29.4%):** CORRECT: AMAT ACCUM +6.6%, LRCX LONG +1.8%, VST ACCUM +2.6%, SMR AVOID −5.6%, LMT WATCH −0.9% (<1%). NULL: NRG CONTRA −0.6% (<1%). INCORRECT: NVDA ACCUM −6.6%, AMD WATCH −3.4% (>3%), GOOGL WATCH −6.9% (>3%), MSFT CONTRA −6.8%, META ACCUM −6.0%, TSM WATCH −6.5% (>3%), ASML LONG −6.0%, CEG CONTRA −2.8%, OKLO SPEC −20.4%, PLTR WATCH −14.9% (>3%), BAH WATCH −15.6% (>3%), RTX ACCUM −2.3%.
+- **Root causes:** Fifth consecutive poor batch. BofA 3-hike cascade and macro correction continue to punish directional calls. AI compute names still correcting from May ATHs. MSFT CONTRARIAN −6.8% (bear market deepening to −25% from peak). PLTR WATCH −14.9% continued slide. OKLO SPECULATIVE −20.4% largest single-name miss. BAH WATCH −15.6% Treasury contract cancellations. Three WATCH signals scored INCORRECT on >3% moves (AMD, GOOGL, TSM).
+- **Bright spots:** AMAT +6.6% continues Micron Q3 blowout momentum. LRCX LONG +1.8% semi equipment strength. VST ACCUM +2.6% data center power thesis holds. SMR AVOID −5.6% correctly bearish. LMT WATCH −0.9% correctly neutral.
 - **AS update:** 35.11% → **34.77%** (97/279 decisive). Fourth consecutive batch below 35%.
 - **CS update:** 74.04 → **73.91**. format-007 report 1/3.
 - **format-007 status:** VIX 18.89 (NORMAL). No regime shift detected — flag not triggered. 2 more reports needed for evaluation.

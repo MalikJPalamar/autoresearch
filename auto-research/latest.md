@@ -420,4 +420,4 @@ PLTR led sector on Michael Burry short-cover rumor + Zeta Global 7-year AI partn
 | Jun 23 | Jun 30 | Tuesday |
 | Jun 24 | Jul 1 | Wednesday |
 | Jun 25 | Jul 2 | Thursday |
-| Jun 26 | Jul 3 | Thursday (Jul 4 holiday Fri) |
+| Jun 26 | Jul 6 | Monday (Jul 3 observed holiday — Jul 4 is Saturday) |
