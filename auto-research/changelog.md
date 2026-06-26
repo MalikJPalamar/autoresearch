@@ -1,5 +1,23 @@
 # Methodology Changelog
 
+## v1.4 — 2026-06-26 (format-007 report 1/3 — VIX NORMAL, flag not triggered)
+
+- **Experiment:** format-007 — Macro Regime Overlay Flag — Report **1 of 3**. cs_before = 76.53. cs_today = 74.05.
+- **Jun 19 signals scored 6/17 decisive correct (35.3% — 4th consecutive poor batch):** CORRECT: AMAT ACCUM +6.9%, LRCX LONG +2.3%, VST ACCUM +3.0%, NRG CONTRA +2.2%, SMR AVOID −11.5%, LMT WATCH +0.8% (neutral+small). NULL: RTX ACCUM +0.8% (<1%). INCORRECT: NVDA ACCUM −7.4%, AMD WATCH −5.3% (large), GOOGL WATCH −8.2% (large), MSFT CONTRA −6.2%, META ACCUM −6.4%, TSM WATCH −6.5% (large), ASML LONG −4.6%, CEG CONTRA −4.4%, OKLO SPEC −18.0%, PLTR WATCH −12.8% (large), BAH WATCH −16.4% (large).
+- **Root causes:** Continued macro selloff cascade — BofA 3-hike aftershock, Korea HBM4 contagion, FOMC hawkish hold residual, Mag7 valuation compression. NVDA −7.4% OpenAI IPO delay narrative. OKLO −18.0% deepest single-ticker decline (CEO insider selling overhang, pre-revenue risk). BAH −16.4% Treasury contract cancellations, broke 52W low $60.02. PLTR −12.8% France/UK dropping Palantir + "SaaSpocalypse" narrative.
+- **Bright spots:** AMAT +6.9% equipment supercycle (Micron Q3 blowout validation); LRCX +2.3% HBM4 etch demand; VST +3.0% data center power thesis holding; NRG +2.2% CONTRARIAN vindicated despite oil crash; SMR −11.5% AVOID correct.
+- **AS update:** 35.11% → **35.13%** (98/279 decisive). Marginal improvement. Four consecutive poor batches (20.0%, 12.5%, 31.3%, 35.3%) — macro-driven drawdown persists but showing signs of stabilization.
+- **CS update:** 74.04 → **74.05**. format-007 running avg (1 report) = 74.05 vs baseline 76.53 = **−2.48 delta**. However, AS regression is entirely macro-driven — the format-007 feature has not been exercised since VIX remained NORMAL.
+- **Price corrections (Jun 25 report):** NVDA $200.70 → actual $195.74 (−2.5%); META $557.67 → $542.87 (−2.6%); BAH ~$65 → $60.02 (−7.7%, broke 52W low).
+- **format-007 test status:** VIX 18.89 within NORMAL (15–25). No regime boundary crossed. The Macro Regime Overlay Flag was NOT triggered — its value proposition (flagging shifts, adding ⚡REGIME tags) remains untested. Need VIX >25 to exercise the experiment.
+- **Signal changes:** None. All signals carry forward from Jun 25.
+- **Market context:** ON Semi −21.74% on $7B all-stock Synaptics acquisition (company-specific, not sector contagion). Equipment names (AMAT, ASML, LRCX) holding Micron-driven gains. WTI $70.73 declining on US-Iran peace progress. DXY 101.27 elevated. OpenAI considering IPO delay to 2027.
+- **Oversold alerts:** MSFT RSI ~20 (extreme oversold, bear market −24% from $468 peak), BAH RSI ~22 (new 52W low $60.02), PLTR RSI ~28 (new 52W low territory), OKLO RSI ~30 (July 4 criticality 8 days).
+- **Key events:** GOOGL Dow inclusion Jun 29; OKLO July 4 criticality 8 days; ASML Q2 Jul 15; TSM Q2 Jul 16; Q2 earnings wave late July.
+- **Next:** Jun 22 signals score Jun 29. Jun 23 → Jun 30. format-007 report 2/3 expected Jun 29. OKLO July 4 criticality 8 days.
+
+---
+
 ## v1.4 — 2026-06-25 (format-006 DISCARDED ✗ — methodology.md reverted)
 
 - **Experiment:** format-006 — Executive Signal Dashboard — Report **3 of 3 — EXPERIMENT COMPLETE: DISCARDED.** 3-report average CS = 74.32 vs baseline 76.53 = **−2.21 delta**. Executive Signal Dashboard section removed from methodology.md.

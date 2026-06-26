@@ -67,7 +67,7 @@ Reduce position sizing by 30-50%, widen stops, and bias toward WATCH/CONTRARIAN 
 - **Removal:** Flag removed when VIX returns to prior regime for ≥2 consecutive sessions
 - **Scope:** Formatting/presentation only — does not modify signal classification logic (auto-evolve)
 - **cs_before:** 76.53 (format-005 baseline, maintained as format-006 was discarded)
-- **Experiment started:** 2026-06-25, report 0/3
+- **Experiment started:** 2026-06-25, report 1/3 (Jun 26: VIX 18.89 NORMAL, flag not triggered)
 
 ---
 
