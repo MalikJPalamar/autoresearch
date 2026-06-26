@@ -2,16 +2,19 @@
 
 ## v1.4 — 2026-06-26 (format-007 report 1/3 — Macro Regime Overlay Flag)
 
-- **Experiment:** format-007 — Macro Regime Overlay Flag — Report **1 of 3**. cs_before = 76.53. cs_today = 73.91.
-- **Jun 19 signals scored 5/17 decisive correct (29.4%):** CORRECT: AMAT ACCUM +6.6%, LRCX LONG +1.8%, VST ACCUM +2.6%, SMR AVOID −5.6%, LMT WATCH −0.9% (<1%). NULL: NRG CONTRA −0.6% (<1%). INCORRECT: NVDA ACCUM −6.6%, AMD WATCH −3.4% (>3%), GOOGL WATCH −6.9% (>3%), MSFT CONTRA −6.8%, META ACCUM −6.0%, TSM WATCH −6.5% (>3%), ASML LONG −6.0%, CEG CONTRA −2.8%, OKLO SPEC −20.4%, PLTR WATCH −14.9% (>3%), BAH WATCH −15.6% (>3%), RTX ACCUM −2.3%.
-- **Root causes:** Fifth consecutive poor batch. BofA 3-hike cascade and macro correction continue to punish directional calls. AI compute names still correcting from May ATHs. MSFT CONTRARIAN −6.8% (bear market deepening to −25% from peak). PLTR WATCH −14.9% continued slide. OKLO SPECULATIVE −20.4% largest single-name miss. BAH WATCH −15.6% Treasury contract cancellations. Three WATCH signals scored INCORRECT on >3% moves (AMD, GOOGL, TSM).
-- **Bright spots:** AMAT +6.6% continues Micron Q3 blowout momentum. LRCX LONG +1.8% semi equipment strength. VST ACCUM +2.6% data center power thesis holds. SMR AVOID −5.6% correctly bearish. LMT WATCH −0.9% correctly neutral.
-- **AS update:** 35.11% → **34.77%** (97/279 decisive). Fourth consecutive batch below 35%.
-- **CS update:** 74.04 → **73.91**. format-007 report 1/3.
-- **format-007 status:** VIX 18.89 (NORMAL). No regime shift detected — flag not triggered. 2 more reports needed for evaluation.
-- **Signal changes (0):** No changes from Jun 25. OpenAI IPO delay to 2027 is narrative, not fundamental. PLTR +5.35% Burry short-cover is technical, not thesis-changing.
-- **Key events:** OpenAI IPO delay 2027; PLTR +5.35% Burry short-cover; GOOGL Dow inclusion Mon Jun 29; WTI $69.80 below $70 2nd day; BAH possible new 52W low $60.00.
-- **Next:** Jun 22 signals score Jun 29. Jun 23 signals score Jun 30. OKLO criticality 8 days. ASML Q2 Jul 15. TSM Q2 Jul 16.
+- **Experiment:** format-007 — Macro Regime Overlay Flag — Report **1 of 3**. cs_before = 76.53. cs_today = 74.01. VIX 18.89 NORMAL — **no banner triggered**. 2 more reports needed.
+- **Jun 19 signals scored 5/15 decisive correct (33.3%):** CORRECT: AMAT ACCUM +4.0%, LRCX ACCUM +3.3%, VST ACCUM +3.3%, NRG CONTRA +1.9%, SMR AVOID −8.0%. NULL: AMD WATCH −2.6% (1–3%), LMT ACCUM −1.2% (borderline), RTX ACCUM +0.8% (<1%). INCORRECT: NVDA ACCUM −8.7%, GOOGL WATCH −7.2% (large move), MSFT CONTRA −6.1%, META ACCUM −5.9%, TSM ACCUM −6.5%, ASML ACCUM −4.6%, CEG CONTRA −1.4%, OKLO SPEC −18.0%, PLTR WATCH −12.5% (large move), BAH WATCH −16.8% (large move).
+- **Root causes:** Continued macro selloff — OpenAI IPO delay news (Jun 26), DXY 101.27 sustained compression of ADR values, WTI oil -3.51% today ($69.40), Iran peace deal continuation weighing on defense. Fourth consecutive poor batch (31.3%, 20.0%, 12.5%, 33.3%). BAH -16.8% on government contract cancellations (new 52W low today $59.73). PLTR -12.5% SaaSpocalypse narrative.
+- **Bright spots:** AMAT +4.0% HBM chipmaking validation. LRCX +3.3% (finally broke out today to +7.2% on the day, new 52W HIGH $401.82). VST +3.3% nuclear/data center contracts oil-insensitive.
+- **AS update:** 35.11% → **35.02%** (97/277 decisive). Slight decline — Jun 19 batch was 5/15 = 33.3%, slightly below current AS rate.
+- **CS update:** 74.04 → **74.01**. format-007 report 1/3 running avg = 74.01 vs baseline 76.53 = **−2.52 delta** (early; experiment needs 3 reports to evaluate).
+- **Signal changes (2):**
+  1. **LRCX ACCUMULATE → LONG** — New 52W high $401.82 on +7.2% day. Broke above prior ATH $389.04. HBM4 etch demand thesis finally playing out after AMAT captured the Jun 25 momentum.
+  2. **ASML ACCUMULATE → LONG** — Broke above SMA20 $1,800 to $1,841.18 (+4.4%). Q2 earnings Jul 15 (19 days) approaching as catalyst. EUR weakness providing ADR uplift.
+- **Key alerts today:** BAH new 52W low $59.73 (broke below prior floor $62.59). NVDA crossed below SMA50 $195 (first breach in weeks). OKLO July 4 criticality **8 days** away (binary). PLTR +4.6% first bounce after 7+ down sessions (RSI 27.4 extreme OS). NRG at key support $137 as WTI crashed -3.51%.
+- **format-007 status:** VIX 18.89 NORMAL (vs 18.63 Jun 25). No regime boundary crossed. Banner protocol dormant. `[⚡REGIME]` flags not applied to any signals today.
+- **Next:** Jun 26 signals score **Jul 3** (5 trading days: Jun 27, Jun 30, Jul 1, Jul 2, Jul 3 — confirm Jul 4 holiday impact). GOOGL Dow inclusion **Jun 29 (3 days)**. OKLO July 4 criticality 8 days. ASML Q2 earnings Jul 15. TSM Q2 earnings Jul 16. Q2 earnings wave late July.
+
 
 ---
 
