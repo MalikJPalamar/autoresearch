@@ -1,5 +1,23 @@
 # Methodology Changelog
 
+## v1.4 — 2026-06-29 (format-007 report 2/3 — VIX NORMAL, flag not triggered)
+
+- **Experiment:** format-007 — Macro Regime Overlay Flag — Report **2 of 3**. cs_before = 76.53. cs_today = 74.41.
+- **Jun 22 signals scored 9/18 decisive correct (50.0% — BEST BATCH IN 5 REPORTS):** CORRECT: GOOGL WATCH −0.9% (neutral+small), META WATCH +0.5% (neutral+small), AMAT ACCUM +6.0%, LRCX LONG +4.2%, VST ACCUM +2.0%, NRG CONTRA +1.5%, SMR AVOID −14.8%, LMT WATCH +0.8% (neutral+small), RTX ACCUM +3.1%. INCORRECT: NVDA ACCUM −8.6%, AMD ACCUM −4.1%, MSFT CONTRA −2.9%, TSM WATCH −3.2% (large), ASML LONG −5.5%, CEG CONTRA −7.1%, OKLO SPEC −13.9%, PLTR WATCH −4.0% (large), BAH CONTRA −9.0%.
+- **Root causes of incorrect:** Continued macro selloff tail — NVDA −8.6% AI valuation compression despite Apple partnership; AMD −4.1% pulled down with NVDA; ASML −5.5% MATCH Act overhang; CEG −7.1% analyst downgrades; OKLO −13.9% pre-revenue risk in selloff; BAH −9.0% Treasury contract cancellation aftershock; PLTR −4.0% SaaSpocalypse narrative + France/UK Palantir departures; TSM −3.2% large neutral move scored incorrect.
+- **Bright spots:** AMAT +6.0% and LRCX +4.2% equipment supercycle holding — Micron Q3 blowout validation; VST +2.0% data center power thesis intact; NRG +1.5% CONTRARIAN vindicated; SMR −14.8% AVOID correct (class action + rate concerns); RTX +3.1% defense recovery; three WATCH signals correctly called neutral moves (GOOGL, META, LMT).
+- **AS update:** 35.13% → **36.03%** (107/297 decisive). +0.90pp improvement. The 50% batch is the best since Jun 15 (52.9%) and ends the 4-report streak of poor batches (20.0%, 12.5%, 31.3%, 35.3%).
+- **CS update:** 74.05 → **74.41**. format-007 running avg (2 reports) = (74.05 + 74.41) / 2 = **74.23** vs baseline 76.53 = **−2.30 delta**. Improvement from report 1 (−2.48 delta), but still negative. One more report needed for evaluation.
+- **Price corrections (Jun 26 report):** LRCX ~$398 → actual $379.09 (−4.7% error); ASML ~$1,830 → $1,794.62 (−1.9% error); NVDA ~$195 → $192.53 (−1.3% error). Jun 26 report used early-session estimates before Friday selloff.
+- **format-007 test status:** VIX 17.60 within NORMAL (15–25), down 6.83% on the day. No regime boundary crossed. The Macro Regime Overlay Flag was NOT triggered for the 2nd consecutive report — its value proposition remains untested. Need VIX >25 to exercise the experiment.
+- **Signal changes:** GOOGL WATCH → **ACCUMULATE** (Dow inclusion Jun 29 — forced buying from DJIA rebalancing + FTSE Russell growth reclassification; +3.76% on the day).
+- **Market context:** Risk-on Monday driven by three catalysts: (1) SCOTUS rejected firing of Fed Governor Lisa Cook — removes political uncertainty around Fed independence; (2) US-Iran agreed to halt tit-for-tat attacks after weekend Hormuz supertanker strike — Doha peace talks resume Tuesday; (3) SpaceX joining Nasdaq-100 July 7 boosted tech sentiment. Semis led: LRCX +6.62%, AMAT +5.17%, GOOGL +3.76%, TSM +3.40%, AMD +3.30%, META +3.07%, PLTR +3.27%. WTI $69.70 near 4-month low on Iran truce.
+- **Oversold alerts:** MSFT RSI ~22 (extreme oversold, bear market −24% from $468 peak), BAH RSI ~24 (near 52W low), OKLO RSI ~32 (approaching oversold, July 4 criticality 5 days).
+- **Key events:** OKLO July 4 criticality 5 days (most imminent catalyst in portfolio); ASML Q2 Jul 15; TSM Q2 Jul 16; Q2 earnings wave late July; SpaceX Nasdaq-100 inclusion Jul 7.
+- **Next:** Jun 23 signals score Jun 30. Jun 26 signals score Jul 1. format-007 report 3/3 expected Jun 30 — experiment evaluation at that point. OKLO July 4 criticality 5 days.
+
+---
+
 ## v1.4 — 2026-06-26 (format-007 report 1/3 — VIX NORMAL, flag not triggered)
 
 - **Experiment:** format-007 — Macro Regime Overlay Flag — Report **1 of 3**. cs_before = 76.53. cs_today = 74.05.
