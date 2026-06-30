@@ -52,22 +52,20 @@ For each ticker:
 - Per-sector alignment with AI scaling race thesis
 - Thesis-level commentary
 
-### Macro Regime Overlay Flag (format-007, v1.4+)
+### Cross-Sector Momentum Divergence Alert (format-008, v1.4+)
 
-When VIX crosses a regime boundary (NORMAL→ELEVATED or ELEVATED→HIGH), add a prominent banner immediately after the Macro Overlay table:
+After the Sector Relative Strength Ranking table, flag any ticker that diverges significantly from its sector's average performance:
 
 ```
-⚠ MACRO REGIME SHIFT: VIX [X.XX] crossed into [REGIME] from [PRIOR REGIME]
-All directional signals generated during regime transitions carry elevated uncertainty.
-Reduce position sizing by 30-50%, widen stops, and bias toward WATCH/CONTRARIAN signals.
+⚠ SECTOR DIVERGENCE: [TICKER] ([SECTOR]) — ticker [+/-X.X%] vs sector avg [+/-Y.Y%] over 5 sessions (delta: Z.Z%)
 ```
 
-- **Trigger conditions:** VIX crosses 25 (NORMAL→ELEVATED), crosses 35 (ELEVATED→HIGH), or reverses
-- **Flag format:** Append `[⚡REGIME]` to every directional signal (LONG/ACCUMULATE/CONTRARIAN/SPECULATIVE) in the per-ticker signal line
-- **Removal:** Flag removed when VIX returns to prior regime for ≥2 consecutive sessions
+- **Trigger conditions:** Ticker's 5-session return diverges from its sector's average 5-session return by >3% (absolute)
+- **Display:** Add divergence alerts in a dedicated sub-section after the sector ranking table. List all triggered tickers sorted by divergence magnitude (largest first).
+- **Interpretation guidance:** Positive divergence = potential sector leader or breakout candidate. Negative divergence = potential laggard, risk of mean-reversion or thesis deterioration.
 - **Scope:** Formatting/presentation only — does not modify signal classification logic (auto-evolve)
-- **cs_before:** 76.53 (format-005 baseline, maintained as format-006 was discarded)
-- **Experiment started:** 2026-06-25, report 1/3 (Jun 26: VIX 18.89 NORMAL, flag not triggered)
+- **cs_before:** 76.53 (format-005 baseline, maintained as format-006 and format-007 were discarded)
+- **Experiment started:** 2026-06-30, report 1/3 expected Jul 1
 
 ---
 

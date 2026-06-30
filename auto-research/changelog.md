@@ -1,5 +1,27 @@
 # Methodology Changelog
 
+## v1.4 — 2026-06-30 (format-007 DISCARDED ✗ — methodology.md reverted; format-008 proposed)
+
+- **Experiment:** format-007 — Macro Regime Overlay Flag — Report **3 of 3 — EXPERIMENT COMPLETE: DISCARDED.** 3-report average CS = (74.05 + 74.41 + 74.62) / 3 = **74.36** vs baseline 76.53 = **−2.17 delta**. Macro Regime Overlay Flag section removed from methodology.md. VIX never crossed regime boundaries during the experiment — the feature was never triggered.
+- **Jun 23 signals scored 7/15 decisive correct (46.7%):** CORRECT: AMD ACCUM +11.80%, ASML ACCUM +6.51%, AMAT ACCUM +19.83%, LRCX ACCUM +20.62%, NRG ACCUM +8.03%, LMT ACCUM +1.12%, RTX ACCUM +3.30%. NULL: NVDA ACCUM −0.81% (<1%), GOOGL WATCH −2.10% (1–3%), VST ACCUM +0.62% (<1%). INCORRECT: MSFT CONTRA −7.85%, META ACCUM −4.60%, TSM WATCH +8.75% (large), CEG ACCUM −6.28%, OKLO SPEC −12.86%, SMR WATCH −10.04% (large), PLTR CONTRA −1.35%, BAH CONTRA −9.23%.
+- **Root causes of incorrect:** MSFT CONTRARIAN −7.85% = 7th consecutive failure (bear market deepening); META −4.60% AI capex rotation; TSM WATCH missed +8.75% parabolic move (should have been ACCUM); CEG −6.28% post-Dow-inclusion selling; OKLO −12.86% pre-revenue risk ahead of July 4 criticality; BAH −9.23% Treasury contract cancellation continuing; PLTR −1.35% marginal miss.
+- **Bright spots:** AMAT +19.83% and LRCX +20.62% — massive equipment supercycle gains; AMD +11.80% Venice CPU all-time high; ASML +6.51% MATCH Act resolved; NRG +8.03% utility strength; RTX +3.30% defense steady.
+- **AS update:** 36.03% → **36.54%** (114/312 decisive). +0.51pp improvement. Three consecutive batches above 46% — macro stabilization helping directional calls.
+- **CS update:** 74.41 → **74.62**. format-007 3-report avg = (74.05 + 74.41 + 74.62) / 3 = **74.36** vs baseline 76.53 = **−2.17 delta → DISCARD**.
+- **format-007 post-mortem:** The Macro Regime Overlay Flag was a formatting-only experiment (auto-evolve). VIX remained in the 17–19 range throughout all 3 reports (NORMAL regime). The trigger condition (VIX crossing 25 or 35) was never met, so the feature added dead weight to the methodology without providing any signal value. The CS decline was driven by AS regression from macro-event batches, not the feature itself, but the feature couldn't demonstrate value either. Concept may be revisited if VIX enters ELEVATED regime in the future.
+- **Methodology.md reverted:** Removed "Macro Regime Overlay Flag (format-007, v1.4+)" section. Added format-008 "Cross-Sector Momentum Divergence Alert" section.
+- **Price corrections (Jun 29 report):** AMD ~$526 → actual $539.49 (+2.56% error ⚠); VST ~$167 → actual $162.39 (−2.76% error ⚠); NVDA ~$193.30 → actual $194.97 (+0.87%); MSFT ~$368 → actual $370.97 (+0.81%).
+- **Signal changes (3):**
+  1. **AMD ACCUMULATE → LONG** — Venice CPU all-time high $579.73, +7.08% today. RSI ~72 near OB but momentum strong. Data center + AI inference leadership confirmed.
+  2. **LRCX ACCUMULATE → LONG** — New ATH ~$424, breakout above $410 resistance. +4.98% today. HBM4/advanced etch supercycle.
+  3. **NRG CONTRARIAN → ACCUMULATE** — ~$148, above $145 trigger. Data center power demand thesis intact. RSI ~55 healthy.
+- **Market context:** Q2 2026 final trading day. US-Iran Doha talks resuming — oil range-bound WTI ~$70. VIX ~17.5 calm. Semiconductor equipment names leading: AMAT, LRCX, ASML all at/near ATHs. AMD Venice CPU setting records. OKLO July 4 criticality 4 days away — most imminent binary catalyst. MSFT still in bear market territory (RSI ~22, −24% from peak). DXY ~101 elevated. 10Y yield ~4.50%.
+- **format-008 proposed:** Cross-Sector Momentum Divergence Alert — flags when ≥2 tickers within a single sector diverge from the sector's average trend by >3% over 5 sessions. Auto-evolve (formatting/presentation only). cs_before = 76.53. Example: if AI Compute sector averages +2% but MSFT is −5%, flags MSFT as a divergent mover requiring closer analysis. Will be added to methodology.md and tested over 3 reports.
+- **Key events ahead:** OKLO July 4 criticality (4 days); markets closed Jul 3 (Independence Day observed); SpaceX Nasdaq-100 inclusion Jul 7; ASML Q2 Jul 15; TSM Q2 Jul 16; Q2 earnings wave late July.
+- **Next:** Jun 26 signals score Jul 1. format-008 report 1/3 expected Jul 1.
+
+---
+
 ## v1.4 — 2026-06-29 (format-007 report 2/3 — VIX NORMAL, flag not triggered)
 
 - **Experiment:** format-007 — Macro Regime Overlay Flag — Report **2 of 3**. cs_before = 76.53. cs_today = 74.41.

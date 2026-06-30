@@ -133,7 +133,8 @@ Run after Loop 1 or on-demand:
 **Phase 3 — Enrichment II (IN PROGRESS):**
 - Options flow / unusual activity signals — format-005, KEPT Jun 22 (CS +5.33, CV 100%)
 - Executive Signal Dashboard — format-006, DISCARDED Jun 25 (CS -2.21, 3-report avg 74.32 vs baseline 76.53)
-- Cross-sector rotation signals
+- Macro Regime Overlay Flag — format-007, DISCARDED Jun 30 (CS -2.17, 3-report avg 74.36 vs baseline 76.53; VIX never triggered)
+- Cross-Sector Momentum Divergence Alert — format-008, STARTED Jun 30
 - Correlation breakdown alerts
 
 **Phase 4 — Future (requires data accumulation):**
