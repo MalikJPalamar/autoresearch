@@ -1,5 +1,25 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-01 (format-008 report 1/3 — 12/18 divergence alerts triggered)
+
+- **Experiment:** format-008 — Cross-Sector Momentum Divergence Alert — Report **1 of 3**. cs_before = 76.53. cs_today = 75.09. Running avg (1 report) = 75.09. Delta = **−1.44**.
+- **Jun 24 signals scored 9/14 decisive correct (64.3% — THIRD BEST BATCH IN RUN HISTORY):** CORRECT: AMD ACCUM +11.19%, META ACCUM +8.85%, ASML ACCUM +10.28%, AMAT ACCUM +19.05%, LRCX ACCUM +10.43%, NRG CONTRA +19.56%, PLTR CONTRA +6.84%, LMT CONTRA +8.81%, RTX ACCUM +2.26%. NULL: NVDA ACCUM +0.70% (<1%), GOOGL WATCH +2.41% (1–3%), MSFT CONTRA +0.75% (<1%), TSM WATCH +1.21% (1–3%). INCORRECT: VST ACCUM −2.71%, CEG ACCUM −11.21%, OKLO SPEC −8.47%, SMR WATCH −12.32% (large), BAH CONTRA −5.03%.
+- **Root causes of incorrect:** VST −2.71% SMA200 $157 testing + WTI <$70 gas margin pressure; CEG −11.21% new 52W low $240.27 — nuclear sector capitulation, analyst downgrades; OKLO −8.47% pre-July 4 criticality de-risking + CEO insider selling; SMR −12.32% class action + Citi PT $7 ongoing; BAH −5.03% 5th consecutive CONTRARIAN failure — government consulting structural decline.
+- **Bright spots:** Equipment supercycle dominant again — AMAT +19.05% (3rd consecutive double-digit batch), LRCX +10.43%, ASML +10.28%. CONTRARIAN thesis vindication: NRG +19.56% (LARGEST CONTRARIAN success in run history), LMT +8.81%, PLTR +6.84%. META +8.85% on transformative AI compute cloud announcement.
+- **AS update:** 36.54% → **37.73%** (123/326 decisive). +1.19pp improvement — largest single-batch improvement since Jun 18 (+1.70pp). Equipment + CONTRARIAN calls driving accuracy.
+- **CS update:** 74.62 → **75.09**. format-008 running avg (1 report) = 75.09 vs baseline 76.53 = **−1.44 delta**. Better than format-006 (−2.07 at report 1) and format-007 (−2.48 at report 1).
+- **Price corrections (Jun 30 report):** ASML $1,883.11 → actual $1,989.44 (+5.6% error ⚠ MAJOR), AMAT ~$680 → actual ~$739 (+8.7% error ⚠ MAJOR), LRCX ~$424 → actual $433.33 (+2.2% error ⚠). Semi equipment names rallied sharply in final hour of Q2, creating largest estimation errors in run history. Recommendation: wait for 4pm ET closes when possible.
+- **format-008 observations:** Cross-Sector Momentum Divergence Alert triggered on **12 of 18 tickers** (67%). High trigger rate suggests the 3% threshold may need calibration. Largest divergence: NRG at +22.59% from Energy for AI sector average — most extreme intra-sector divergence in portfolio history. Feature is auto-evolve (formatting only). 2 more reports needed for evaluation.
+- **Signal changes (3):**
+  1. **TSM ACCUMULATE → WATCH** — −3.51% on TSMC Apr+May combined revenue growth of 24% vs Wall Street's 35% expectation. Q2 earnings Jul 16 binary risk. Biggest intra-sector laggard (delta −9.03% vs Semiconductors avg).
+  2. **CEG ACCUMULATE → CONTRARIAN** — New 52W low $240.27, broke $255 support, −7% today. Down 42% from 52W high $412.58. Nuclear thesis intact but stock in capitulation mode.
+  3. **PLTR CONTRARIAN → ACCUMULATE** — Broke $120 resistance on Army NGC2 selection + Nvidia sovereign AI partnership. +5.7% today, +6.84% in 5 sessions. CONTRARIAN thesis vindicated.
+- **Market context:** Q3 2026 Day 1. Sharp rotation: Defense AI (+3.2% avg) leads, Semiconductors (−3.7% avg) trails — classic Q2→Q3 rebalancing. META +9.1% on Bloomberg AI compute cloud report (transformative pivot). OKLO July 4 criticality 3 calendar days / 1 full trading day (Jul 2). Markets closed Jul 3 (Independence Day observed). VIX 16.45 (−6.80%) lowest since Jun 4. WTI broke $70.24 triangle support. S&P 7,512.18 (+0.21%). DXY ~101.30. US10Y ~4.44%.
+- **Key events ahead:** OKLO July 4 criticality (3 days — MAXIMUM binary); Markets closed Jul 3; ASML Q2 Jul 15; TSM Q2 Jul 16; LRCX Q4 Jul 29; Q2 earnings wave late July. META $600 hold → potential LONG upgrade. LMT SMA200 $524 reclaim → ACCUMULATE upgrade.
+- **Next:** Jun 25 signals score Jul 2. Jun 26 → Jul 3 (closed → Jul 7). Jun 29 → Jul 7. Jun 30 → Jul 8. format-008 report 2/3 expected Jul 2.
+
+---
+
 ## v1.4 — 2026-06-30 (format-007 DISCARDED ✗ — methodology.md reverted; format-008 proposed)
 
 - **Experiment:** format-007 — Macro Regime Overlay Flag — Report **3 of 3 — EXPERIMENT COMPLETE: DISCARDED.** 3-report average CS = (74.05 + 74.41 + 74.62) / 3 = **74.36** vs baseline 76.53 = **−2.17 delta**. Macro Regime Overlay Flag section removed from methodology.md. VIX never crossed regime boundaries during the experiment — the feature was never triggered.
