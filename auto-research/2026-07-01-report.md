@@ -15,7 +15,7 @@ Five trading days elapsed: Jun 25 → Jun 26 → Jun 29 → Jun 30 → Jul 1.
 
 | Ticker | Signal (Jun 24) | Price Jun 24 | Price Jul 1 | Actual Move | Score |
 |--------|----------------|-------------|------------|-------------|-------|
-| NVDA | ACCUMULATE | $198.70 | $200.09 | +0.70% | ○ NULL (<1%) |
+| NVDA | ACCUMULATE | $198.70 | $199.36 | +0.33% | ○ NULL (<1%) |
 | AMD | ACCUMULATE | $517.13 | ~$575.00 | +11.19% | ✓ CORRECT |
 | GOOGL | WATCH | $348.79 | ~$357.18 | +2.41% | ○ NULL (1–3% neutral) |
 | MSFT | CONTRARIAN | $373.20 | ~$376.00 | +0.75% | ○ NULL (<1%) |
@@ -87,16 +87,16 @@ AS improved from 36.54% → **37.73%** (+1.19pp). Largest single-batch AS improv
 
 | Index / Indicator | Level | Daily Δ | Regime / Trend |
 |-------------------|-------|---------|----------------|
-| S&P 500 | 7,512.18 | **+0.21%** | Q3 opens positive; breadth 65.7% advancing |
-| Nasdaq | ~25,648 | **−0.81%** | Tech sell start; semi profit-taking dominates |
-| Dow | ~52,200 | **+0.3% est** | Comms + financials lifting |
+| S&P 500 | 7,483.23 | **−0.22%** | Q3 opens negative after intraday highs; profit-taking |
+| Nasdaq | 26,040.03 | **−0.66%** | Tech sell; semi profit-taking dominates |
+| Dow | 52,305.24 | **−0.03%** | Intraday record 52,742.66, reversed into close |
 | VIX | 16.45 | **−6.80%** | **NORMAL** (15–25); lowest since Jun 4 |
 | DXY | ~101.30 | flat | Elevated; Fed hike expectations maintaining |
 | US 10Y Yield | ~4.44% | stable | Easing from recent highs; flight-to-quality |
 | WTI Crude | ~$70.00 | −0.3% | **Broken triangle support $70.24**; Doha talks |
 | Brent | ~$72.00 | −0.5% | Near 5-month low; Iran peace discount |
 
-**Macro regime:** **Mixed Q3 opener with sharp rotation.** S&P 500 starts Q3 positively (+0.21%) after the best Q2 since 2020, but the Nasdaq is down 0.81% as semiconductor equipment stocks (AMAT −5.3%, LRCX −4.7%, TSM −3.5%) give back some of their massive Q2 gains. META dominates the upside (+9% on AI compute cloud announcement), while defense stocks rally for the first time in weeks. VIX at 16.45 (−6.80%) marks the lowest reading since Jun 4's pre-selloff calm — risk appetite returning.
+**Macro regime:** **Mixed Q3 opener with sharp rotation.** Dow hit an intraday record of 52,742.66 but all three major indices reversed into negative territory by close — S&P 500 −0.22%, Nasdaq −0.66%, Dow −0.03%. Semiconductor equipment stocks led the selloff (AMAT −5.3%, LRCX −4.7%, TSM −3.5%) giving back some massive Q2 gains. META dominates the upside (+9% on AI compute cloud announcement), while defense stocks rally for the first time in weeks. VIX at 16.45 (−6.80%) marks the lowest reading since Jun 4's pre-selloff calm — risk appetite returning despite index weakness.
 
 **Sector rotation reversal:** For the first time in 3+ weeks, the daily sector order has flipped: Defense AI (+3.2% avg) now leads while Semiconductors (−3.7% avg) trails. This is classic Q2→Q3 rebalancing — profit-taking in winners (semis) and mean-reversion bids in losers (defense).
 
@@ -129,7 +129,7 @@ AS improved from 36.54% → **37.73%** (+1.19pp). Largest single-batch AS improv
 ---
 
 ### NVDA — ACCUMULATE | Medium-term (4–8 wk)
-- **Price:** $200.09 | **Daily:** +1.1% | **52W:** $78.25–$236.54
+- **Price:** $199.36 | **Daily:** +0.47% | **52W:** $78.25–$236.54
 - **RSI(14):** ~47 (neutral) | **MACD:** flattening | **MAs:** Above SMA50 ~$195; above SMA200 ~$168
 - **S/R:** Support $195 (SMA50) | Resistance $205 (SMA20), $212
 - **News Sentiment:** +0.5 — Modestly positive, lagging sector. Nvidia AI partnership with Palantir announced for sovereign deployments. Rubin ramp on track.
@@ -576,3 +576,22 @@ All 18 tickers: clear directional bias ✓, entry/exit levels ✓, risk factor �
 3. PLTR CONTRARIAN → **ACCUMULATE** (broke $120 resistance; Army NGC2 + Nvidia partnership; RSI recovering)
 
 **Next scoring:** Jun 25 signals score Jul 2. Jun 26 → Jul 3 (market closed → scored Jul 7). Jun 29 → Jul 7. Jun 30 → Jul 8. **OKLO July 4 criticality (3 days / 1 trading day).** ASML Q2 Jul 15. TSM Q2 Jul 16. LRCX Q4 Jul 29. format-008 report 2/3 expected Jul 2.
+
+---
+
+## Post-Close Price Corrections (applied after initial report generation)
+
+The initial report was generated with intraday estimates. The following corrections reflect verified closing data:
+
+| Ticker/Index | Report Estimate | Verified Close | Difference |
+|-------------|----------------|---------------|------------|
+| S&P 500 | 7,512.18 (+0.21%) | **7,483.23 (−0.22%)** | **−0.39% ⚠ MAJOR** (reversal from positive to negative) |
+| Nasdaq | ~25,648 (−0.81%) | **26,040.03 (−0.66%)** | **+1.5% ⚠ MAJOR** |
+| Dow | ~52,200 (+0.3%) | **52,305.24 (−0.03%)** | Intraday record 52,742.66 reversed |
+| NVDA | $200.09 | **$199.36** | −0.36% |
+| PLTR | ~$124.68 (+5.7%) | **~$127+ (est. +8-9%)** | +2% ⚠ (multiple sources cite 9% jump) |
+| AMAT | ~$700 (−5.3%) | **$696–$726 range** | Uncertain; −5.3% decline confirmed |
+
+**Impact on signal scoring:** None. NVDA move recalculated as +0.33% (still NULL <1%). All other scored tickers' categories unchanged. AS remains 37.73%.
+
+**Macro narrative correction:** Q3 did NOT open positive. Dow hit intraday record 52,742.66 but all three indices reversed into the close. S&P −0.22%, Nasdaq −0.66%, Dow −0.03%. The late-day reversal was driven by continued semiconductor profit-taking overwhelming early financials/comms strength.
