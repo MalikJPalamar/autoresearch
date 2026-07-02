@@ -1,5 +1,28 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-02 (format-008 report 2/3 — MSFT CONTRARIAN vindicated, global semi selloff)
+
+- **Experiment:** format-008 — Cross-Sector Momentum Divergence Alert — Report **2 of 3**. cs_before = 76.53. cs_today = 75.37. Running avg (2 reports) = (75.09 + 75.37) / 2 = **75.23**. Delta = **−1.30**.
+- **Jun 25 signals scored 8/15 decisive correct (53.3% — TIED 5TH BEST BATCH):** CORRECT: AMD ACCUM +2.3%, MSFT CONTRA +8.5% ⚡VINDICATED, META ACCUM +5.1%, TSM ACCUM +1.1%, ASML ACCUM +4.6%, LRCX ACCUM +4.4%, PLTR CONTRA +16.6% ⚡VINDICATED, LMT CONTRA +7.2%. NULL: GOOGL WATCH +2.8% (1–3%), SMR WATCH −2.5% (1–3%), RTX ACCUM +0.7% (<1%). INCORRECT: NVDA ACCUM −3.5%, AMAT LONG −4.5%, VST ACCUM −2.9%, CEG ACCUM −8.3%, OKLO SPEC −3.8%, NRG CONTRA −2.9%, BAH CONTRA −4.3%.
+- **Root causes of incorrect:** NVDA −3.5% consolidation in $190–200 range amid global semi selloff; AMAT LONG −4.5% top-tick ATH entry poorly timed; VST −2.9% SMA200 $157 testing + WTI crash to $67; CEG −8.3% continued nuclear capitulation below $250; OKLO −3.8% pre-criticality positioning weak despite DOE DSA approval; NRG −2.9% oil crash compresses gas margins structurally; BAH −4.3% 6th consecutive CONTRARIAN failure — government consulting in structural decline.
+- **Bright spots:** MSFT +8.5% ⚡ **CONTRARIAN FINALLY VINDICATED** after 7 consecutive failures — bear market bottom at RSI ~20 confirmed. PLTR +16.6% ⚡ **CONTRARIAN VINDICATED** — largest single-signal gain since NRG +19.56% (Jun 24). LMT +7.2% SMA200 $524 reclaimed. Equipment names held positive over 5 sessions despite brutal Jul 2 selloff (ASML +4.6%, LRCX +4.4%, AMD +2.3%).
+- **AS update:** 37.73% → **38.42%** (131/341 decisive). +0.69pp improvement. Two consecutive AS improvements (+1.19pp Jun 24, +0.69pp Jun 25). Rolling accuracy trending upward.
+- **CS update:** 75.09 → **75.37**. format-008 running avg (2 reports) = 75.23 vs baseline 76.53 = **−1.30 delta**. Narrowing from −1.44 at report 1. Still negative but improving trajectory.
+- **Price corrections (Jul 1 report):** AMAT ~$700 → actual $650.91 (−7.0% error ⚠ MAJOR). NRG ~$150 → actual $140.80 (−6.1% error ⚠ MAJOR). Two largest single-ticker estimation errors highlight need for post-close verification.
+- **Global semiconductor selloff Jul 2:** Samsung −7%, SK Hynix −9%, Micron −10%, SOX −5.2%. Triggered by Samsung/SK Hynix surprise government guidance cuts + EU tariff escalation fears. Portfolio impact: AMAT −4.3%, LRCX −5.9%, AMD −8.0%, ASML −7.4%, NVDA −1.9%, TSM −0.7%. Equipment names hit hardest.
+- **format-008 observations:** Cross-Sector Momentum Divergence Alert triggered on 14/18 tickers. Semiconductors showed negative divergence across 4/4 equipment names. High trigger rate (78%) continues — threshold may need tightening post-experiment. Feature captured the semiconductor selloff divergence effectively.
+- **Signal changes (5):**
+  1. **MSFT CONTRARIAN → ACCUMULATE** — Vindicated +8.5% from RSI ~20 extreme oversold. Jobs report slowing growth supports rate hold. Q4 FY26 earnings late July catalyst. Bear market bottom confirmed.
+  2. **AMD LONG → ACCUMULATE** — Global semi selloff −8% single day. Venice CPU thesis intact but entry timing poor at ATH. SMA50 support ~$545.
+  3. **AMAT LONG → ACCUMULATE** — Semi selloff −4.3%. Equipment supercycle thesis intact but LONG at ATH poorly timed. SMA50 ~$600 support.
+  4. **LRCX LONG → ACCUMULATE** — Semi selloff −5.9%. Same pattern as AMAT. SMA50 ~$380 support.
+  5. **LMT CONTRARIAN → ACCUMULATE** — SMA200 $524 reclaimed ($540.90). Defense budget fundamentals intact. CONTRARIAN thesis vindicated +7.2%.
+- **Market context:** S&P 500 7,454.39 (−0.39%). Nasdaq ~25,610 (−1.68%). VIX 16.59 (+0.85%) NORMAL. WTI $67.77 (−3.4%) new 2026 low. DXY ~101.50. US10Y ~4.39%. Markets closed Jul 3 (Independence Day observed). OKLO July 4 criticality 2 calendar days / 0 trading days remaining. Global risk-off led by semiconductor sector.
+- **Key events ahead:** OKLO July 4 Aurora criticality (2 days — MAXIMUM binary event); Markets closed Jul 3; ISM Services Jul 7; ASML Q2 Jul 15; TSM Q2 Jul 16; LRCX Q4 Jul 29. format-008 report 3/3 expected Jul 7 (next trading day).
+- **Next:** Jun 26 signals score Jul 3 (closed → Jul 7). Jun 29 → Jul 7. Jun 30 → Jul 8. format-008 report 3/3 and keep/discard decision expected Jul 7.
+
+---
+
 ## v1.4 — 2026-07-01 (format-008 report 1/3 — 12/18 divergence alerts triggered)
 
 - **Experiment:** format-008 — Cross-Sector Momentum Divergence Alert — Report **1 of 3**. cs_before = 76.53. cs_today = 75.09. Running avg (1 report) = 75.09. Delta = **−1.44**.
