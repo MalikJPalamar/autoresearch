@@ -4,7 +4,7 @@
 **Market Status:** CLOSED — Independence Day observed | **Session:** Autonomous scheduled run
 **VIX Regime:** NORMAL (16.59 at Jul 2 close)
 **HOLIDAY EDITION** — Markets closed Friday Jul 3; reopen **Monday Jul 6**
-**⚡ OKLO JULY 4 CRITICALITY: TOMORROW (Saturday) — MAXIMUM BINARY EVENT**
+**⚡ DOE JULY 4 GOAL ALREADY MET — 3 REACTORS CRITICAL (NOT OKLO) — OKLO GROVES STILL IN PRE-STARTUP REVIEW**
 
 ---
 
@@ -37,38 +37,47 @@ Verified Jul 2 closing data corrects several estimates from the Jul 2 report:
 
 ---
 
-## ⚡ OKLO July 4 Criticality — TOMORROW
+## CORRECTION: DOE July 4 Goal Already Met — By Three Other Companies, Not OKLO
 
-### Status Update (as of Jul 2 close)
+### DOE Reactor Pilot Program — 3/3 Criticalities Achieved (OKLO Not Among Them)
 
-The **Groves Isotope Test Reactor** (Oklo Isotopes / Atomic Alchemy subsidiary, located on private land in Texas) is targeting criticality by July 4, 2026 — **tomorrow (Saturday)**.
+**Trump's Executive Order 14301 set a goal of at least three advanced reactor criticalities by July 4, 2026. That goal has been MET — but by Antares Nuclear, Valar Atomics, and Deployable Energy, not OKLO.**
+
+| # | Company | Reactor | Location | Criticality Date | Details |
+|---|---------|---------|----------|-----------------|---------|
+| 1 | **Antares Nuclear** | Mark-0 | Idaho National Lab | **Jun 4** | First privately-funded non-light-water reactor to achieve criticality in 4 decades |
+| 2 | **Valar Atomics** | Ward 250 | San Rafael Energy Lab, Utah | **Jun 18** | 5 MW TRISO-fueled HTGR; first DOE-authorized reactor built outside a national lab |
+| 3 | **Deployable Energy** | Unity | Idaho National Lab | **Jun 30–Jul 1** | 1 MWe water-moderated gas-cooled microreactor; ~150 days from kickoff to criticality |
+
+**Aalo Atomics** (10 MWe Aalo-X) also attempted to make the deadline — their CTO conceded on Jul 2 they weren't critical yet, but they remain close.
+
+### OKLO Groves Status — Pre-Startup Review, NOT Criticality
+
+The prior version of this report framed OKLO's Groves criticality as "TOMORROW." **This was incorrect.** While OKLO targeted July 2026 for Groves criticality, the reactor is still in pre-startup review and will NOT achieve criticality by July 4:
 
 **Regulatory milestone timeline:**
 1. ✅ Nuclear Safety Design Agreement (NSDA) — approved
 2. ✅ Preliminary Documented Safety Analysis (PDSA) — approved (step 3 of 4, Jun 12)
-3. ✅ **Final Documented Safety Analysis (DSA) — approved July 1** ← most recent
-4. ⏳ DOE readiness review — pending
+3. ✅ Final Documented Safety Analysis (DSA) — approved July 1
+4. ⏳ **DOE readiness review — PENDING** ← current step
 5. ⏳ Startup approval — pending
 6. ⏳ Fuel loading + startup testing — pending
-7. 🎯 **First criticality — targeted July 4**
+7. ⏳ First criticality — **weeks away, not days**
 
-The DSA approval on July 1 was the most significant milestone yet — making Groves the **first advanced reactor project** to have its DSA approved on privately owned land, with commercially sourced fuel and private-sector-led construction, under DOE's Reactor Pilot Program (RPP).
+The DSA approval on July 1 was a significant milestone — making Groves the first advanced reactor project to have its DSA approved on privately owned land, with commercially sourced fuel. But multiple steps remain before criticality is possible.
 
-**What "criticality" means:** A controlled, self-sustaining nuclear chain reaction — the essential validation step before commercial electricity generation. It does not mean the reactor is ready to produce power immediately, but it validates years of design, engineering, and regulatory work.
+### Revised Stock Implications for Monday Jul 6
 
-**The DOE Reactor Pilot Program target** (from Trump's executive order) is to achieve criticality of at least three test reactors by July 4, 2026. Antares Nuclear has already achieved criticality. Oklo's Groves is racing to meet the deadline.
+| Scenario | Assessment |
+|----------|-----------|
+| OKLO missed July 4 deadline (confirmed) | Potentially negative. Market expected criticality event over the weekend. The 8x options volume in straddle/strangle positioning suggests significant money was bet on a binary outcome. |
+| DOE goal met by competitors | Mixed. Validates nuclear thesis broadly (positive for CEG, nuclear sector) but highlights OKLO as a laggard vs peers in the RPP. |
+| OKLO Groves still progressing | Moderately positive. DSA approval is genuine progress. Criticality within weeks (not months) is plausible. But the hype premium around a "July 4 criticality" event has deflated. |
+| Broader nuclear sector momentum | Positive. Three reactors achieving criticality under EO 14301 is a historic milestone for US nuclear. CEG, VST, NRG, and the nuclear thesis benefit. |
 
-### Stock Implications
+OKLO closed at ~$53.13 on Jul 2 (RSI ~30, near oversold). SPECULATIVE signal maintained. **Expect Monday to open with moderate downside pressure** as the July 4 criticality event did not materialize for OKLO. The straddle/strangle options positioning (8x avg volume) may unwind. However, the stock is already near oversold and the DSA approval is genuine progress — the downside may be limited to the $48–50 range rather than the catastrophic $40–45 previously estimated for a "significant delay."
 
-| Scenario | OKLO Price Target | Probability |
-|----------|-------------------|-------------|
-| Criticality achieved Jul 4 weekend | $65–80+ | Event-dependent |
-| Criticality achieved within days (near-miss) | $58–65 | Event-dependent |
-| Significant delay or technical issue | $40–45 | Event-dependent |
-
-OKLO closed at ~$53.13 on Jul 2 (RSI ~30, near oversold). SPECULATIVE signal maintained. **The next market open (Monday Jul 6) will be the first opportunity to trade on criticality news.** Expect extreme volatility — options flow showed 8x average volume in straddle/strangle activity at $45/$60/$75 strikes.
-
-**Groves vs Aurora:** The July 4 deadline applies to the Groves Isotope Test Reactor in Texas (smaller, isotope-production focused). The Aurora Powerhouse at Idaho National Laboratory (75 MWe sodium-cooled fast reactor, the flagship commercial product) is a separate, later project. Both are OKLO subsidiaries. Criticality at Groves would validate Oklo's fast-fission technology platform.
+**Groves vs Aurora:** The July 4 deadline applied to the Groves Isotope Test Reactor in Texas (smaller, isotope-production focused). The Aurora Powerhouse at Idaho National Laboratory (75 MWe sodium-cooled fast reactor, the flagship commercial product) is a separate, later project. Both are OKLO subsidiaries. Criticality at Groves would still validate Oklo's fast-fission technology platform when it occurs.
 
 ### Additional OKLO News
 
@@ -76,6 +85,7 @@ OKLO closed at ~$53.13 on Jul 2 (RSI ~30, near oversold). SPECULATIVE signal mai
 - **14 GW customer pipeline**: Switch, Equinix, Meta, NVIDIA among committed customers.
 - **$2.54B liquidity** after $1.2B equity raise.
 - **CEO insider selling** ($13.6M pre-arranged plan) remains an overhang but has not prevented DOE progress.
+- **NRC approved Aurora Principal Design Criteria** on accelerated schedule (May 6) — the commercial reactor path is separate from Groves.
 
 ---
 
@@ -128,7 +138,7 @@ No signal changes. All 18 signals carry forward unchanged:
 | LRCX | ACCUMULATE | $380 SMA50 critical; Q4 Jul 29 |
 | VST | ACCUMULATE | SMA200 $157 on thin ice |
 | CEG | CONTRARIAN | $228 support; bouncing from 52W low |
-| OKLO | **SPECULATIVE** ⚡ | **JULY 4 CRITICALITY — TOMORROW** |
+| OKLO | **SPECULATIVE** ⚠ | **Jul 4 criticality MISSED — pre-startup review; 3 competitors achieved criticality first** |
 | NRG | ACCUMULATE | $137 support; oil headwind |
 | SMR | WATCH | $9.50 support; class action |
 | PLTR | ACCUMULATE | $120 floor; NGC2 + Nvidia |
@@ -157,10 +167,11 @@ format-008 is tracking better than both format-006 (−2.07 at report 2) and for
 ## What to Watch When Markets Reopen (Monday Jul 6)
 
 ### Immediate (Jul 6 open)
-1. **OKLO July 4 criticality result** — Success/failure news will have emerged over the weekend. Expect gap up ($65–80) or gap down ($40–45). This is the single most important catalyst.
-2. **Global semiconductor selloff continuation or stabilization** — Asian markets trade over the weekend. Monitor Samsung, SK Hynix, TSMC ADR for direction signals.
-3. **LRCX SMA50 $380 test** — Closed at ~$391 but −9.7% momentum is concerning. A break below $380 on Monday = potential WATCH downgrade.
-4. **VST SMA200 $157 test** — Intraday low $157.60 on Jul 2 was razor-thin. Oil at $67.77 compresses margins.
+1. **OKLO — July 4 criticality did NOT happen.** Groves is still in pre-startup review (DSA approved Jul 1, readiness review pending). The DOE's 3-reactor goal was met by Antares, Valar Atomics, and Deployable Energy. Expect moderate downside pressure on OKLO as the binary event premium unwinds. Watch $48–50 as downside target, with RSI ~30 providing some support.
+2. **DOE Reactor Pilot Program success — nuclear sector tailwind.** Three reactors achieving criticality is historically significant. Positive for CEG, VST, NRG, and the broader nuclear renaissance thesis. CEG CONTRARIAN entry may benefit from sector momentum.
+3. **Global semiconductor selloff continuation or stabilization** — Asian markets trade over the weekend. Monitor Samsung, SK Hynix, TSMC ADR for direction signals.
+4. **LRCX SMA50 $380 test** — Closed at ~$391 but −9.7% momentum is concerning. A break below $380 on Monday = potential WATCH downgrade.
+5. **VST SMA200 $157 test** — Intraday low $157.60 on Jul 2 was razor-thin. Oil at $67.77 compresses margins.
 
 ### Signal Scoring Queue (Jul 6+)
 - **Jun 26 signals → score Jul 6** (5 trading days: Jun 29, 30, Jul 1, 2, Jul 6)
@@ -170,7 +181,7 @@ format-008 is tracking better than both format-006 (−2.07 at report 2) and for
 - Jul 2 signals → score Jul 10
 
 ### Upcoming Catalysts
-- 📅 **OKLO July 4 criticality** — THIS WEEKEND
+- 📅 **OKLO Groves readiness review + startup approval** — timeline unclear; criticality weeks away
 - 📅 ISM Services — July 7
 - 📅 ASML Q2 earnings — July 15 (9 trading days)
 - 📅 TSM Q2 earnings — July 16 (10 trading days)

@@ -1,18 +1,24 @@
 # Methodology Changelog
 
-## v1.4 — 2026-07-03 (HOLIDAY EDITION — OKLO July 4 criticality eve)
+## v1.4 — 2026-07-03 UPDATE (DOE July 4 goal MET by 3 competitors — OKLO Groves NOT among them)
 
+- **CRITICAL CORRECTION:** Prior version of Jul 3 report framed OKLO Groves criticality as "TOMORROW (July 4)." **This was incorrect.** OKLO's Groves reactor is still in pre-startup review (DSA approved Jul 1, readiness review pending, fuel loading not started). Criticality is weeks away, not imminent.
+- **DOE Reactor Pilot Program — GOAL ACHIEVED:** Three advanced reactors achieved criticality ahead of the July 4, 2026 deadline set by Executive Order 14301:
+  1. **Antares Nuclear Mark-0** — Jun 4 at INL. First privately-funded non-light-water reactor to achieve criticality in 4 decades.
+  2. **Valar Atomics Ward 250** — Jun 18 in Utah. 5 MW TRISO-fueled HTGR. First DOE-authorized reactor built and operated outside national lab system.
+  3. **Deployable Energy Unity** — Jun 30–Jul 1 at INL. 1 MWe water-moderated gas-cooled microreactor. ~150 days from kickoff to criticality.
+- **Aalo Atomics also missed:** CTO conceded on Jul 2 they were not yet critical. 10 MWe Aalo-X at INL still progressing.
+- **OKLO implications for Monday Jul 6:** Expect moderate downside pressure as Jul 4 binary event premium unwinds. 8x options volume in straddle/strangle positioning will partially unwind. RSI ~30 near oversold provides some support — downside target $48–50 rather than catastrophic $40–45. The DOE meeting its 3-reactor goal is positive for the broader nuclear sector (CEG, VST, NRG) even though OKLO wasn't among the achievers.
+- **Nuclear sector tailwind:** Three reactor criticalities under EO 14301 is a historic US nuclear milestone. Positive for the Aschenbrenner nuclear renaissance thesis. CEG CONTRARIAN may benefit from sector momentum despite continued company-specific headwinds.
 - **Experiment:** format-008 — Cross-Sector Momentum Divergence Alert — Report **2 of 3** (unchanged — holiday, no new report produced). cs_before = 76.53. cs_today = 75.37. Running avg (2 reports) = 75.23. Delta = **−1.30**. Report 3/3 expected Jul 6 (Monday).
 - **No signals scored.** Markets closed Friday Jul 3 (Independence Day observed). All 18 signals carry forward from Jul 2 unchanged.
-- **Price corrections (Jul 2 report):** Dow reported ~52,547 → actual **52,900.07 NEW ATH** (+0.67% error); S&P reported ~7,520 → actual **7,483.24** (−0.49% error); Nasdaq reported ~26,144 → actual **25,832.67** (−1.19% error ⚠ SIGNIFICANT). Dow understatement of 353 pts masked the record close (+594.83 pts, +1.14%). Nasdaq overstatement of 311 pts masked the severity of the semi selloff impact.
-- **Date correction:** Jul 2 report stated "Markets reopen Jul 7 (Monday)" — incorrect. Markets reopen **Monday Jul 6**. Jul 4 = Saturday, Jul 5 = Sunday, Jul 6 = Monday.
-- **Scoring schedule corrected:** Jun 26 signals → Jul 6 (not Jul 7). Jun 29 → Jul 7. Jun 30 → Jul 8. Jul 1 → Jul 9. Jul 2 → Jul 10.
-- **OKLO July 4 criticality — TOMORROW.** DOE approved final Documented Safety Analysis (DSA) for Groves Isotope Test Reactor on Jul 1 — first advanced reactor project to achieve this milestone on private land with commercial fuel. Remaining: DOE readiness review → startup approval → fuel loading → criticality. Groves is part of the DOE Reactor Pilot Program targeting ≥3 reactor criticalities by Jul 4. Antares Nuclear has already achieved criticality. OKLO stock at ~$53.13, RSI ~30 near oversold. SPECULATIVE maintained. Options flow: 8x average volume in straddle/strangle positioning.
-- **Additional OKLO news:** Creative Engineers acquisition (Jun 30) — sodium/alkali-metal process engineering firm directly relevant to Aurora sodium-cooled fast reactor design. 14 GW customer pipeline (Switch, Equinix, Meta, NVIDIA). $2.54B liquidity.
-- **June jobs report:** NFP +57,000 (well below expectations). Unemployment 4.2%. Weak labor data supports Fed hold at 3.50%−3.75% — positive for growth multiples, rate-sensitive tech names.
-- **Global semi selloff context:** Jul 2 selloff triggered by Meta excess AI compute sales, BofA bubble risk note, Samsung/SK Hynix guidance cuts, smartphone demand −13% YoY. Equipment supercycle thesis intact — macro/rotation-driven, not thesis-breaking.
+- **Price corrections (Jul 2 report):** Dow reported ~52,547 → actual **52,900.07 NEW ATH** (+0.67% error); S&P reported ~7,520 → actual **7,483.24** (−0.49% error); Nasdaq reported ~26,144 → actual **25,832.67** (−1.19% error SIGNIFICANT). Dow understatement of 353 pts masked the record close (+594.83 pts, +1.14%). Nasdaq overstatement of 311 pts masked the severity of the semi selloff impact.
+- **Date correction:** Jul 2 report stated "Markets reopen Jul 7 (Monday)" — incorrect. Markets reopen **Monday Jul 6**.
+- **Scoring schedule corrected:** Jun 26 signals → Jul 6. Jun 29 → Jul 7. Jun 30 → Jul 8. Jul 1 → Jul 9. Jul 2 → Jul 10.
+- **June jobs report:** NFP +57,000 (well below expectations). Unemployment 4.2%. Weak labor data supports Fed hold at 3.50%−3.75%.
+- **Global semi selloff context:** Jul 2 selloff triggered by Meta excess AI compute sales, BofA bubble risk note, Samsung/SK Hynix guidance cuts, smartphone demand −13% YoY. Equipment supercycle thesis intact.
 - **CS:** 75.37 (unchanged). AS 38.42% (unchanged). AC 100.0. CV 100.0.
-- **Key events ahead:** OKLO Jul 4 criticality (TOMORROW); markets reopen Jul 6; ISM Services Jul 7; ASML Q2 Jul 15; TSM Q2 Jul 16; LRCX Q4 Jul 29; Q2 earnings wave late July. format-008 report 3/3 + keep/discard evaluation Jul 6.
+- **Key events ahead:** OKLO Groves readiness review (timeline unclear); markets reopen Jul 6; ISM Services Jul 7; ASML Q2 Jul 15; TSM Q2 Jul 16; LRCX Q4 Jul 29; Q2 earnings wave late July. format-008 report 3/3 + keep/discard evaluation Jul 6.
 - **Next:** Jun 26 signals score Jul 6. format-008 report 3/3 Jul 6.
 
 ---
