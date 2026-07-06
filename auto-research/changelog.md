@@ -1,5 +1,24 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-06 (format-008 DISCARDED — 3rd consecutive discard; format-009 Earnings Catalyst Countdown proposed)
+
+- **Experiment:** format-008 — Cross-Sector Momentum Divergence Alert — Report **3 of 3 DISCARDED**. 3-report avg CS 75.44 vs baseline 76.53 = **−1.09 delta**. CS improved within the experiment (75.09→75.37→75.86) but never reached baseline. methodology.md reverted (divergence alert section removed).
+- **format-008 post-mortem:** 13/18 divergence alerts triggered in final report — correctly identified sector bifurcation (TSM/ASML recovering vs AMAT/LRCX lagging; nuclear dev vs utilities). However, formatting experiments cannot move AS (the only variable metric), so CS tracks AS fluctuations regardless of experiment content. Three consecutive discards (format-006, 007, 008) confirm this structural limitation.
+- **Jun 26 signals scored 11/17 = 64.7% — 3RD BEST BATCH IN RUN HISTORY.** Ends 4-report poor-batch streak (20.0%, 12.5%, 31.3%, 35.3%). AS 38.42→39.66 (+1.24pp, largest single-batch improvement since Jun 11). Key wins: MSFT CONTRARIAN +8.4%, PLTR CONTRARIAN +18.8%, META ACCUM +8.7%, NRG CONTRA +5.1%, LMT ACCUM +5.2%, RTX ACCUM +6.4%. Key failures: AMAT LONG −7.9%, LRCX ACCUM −10.6%, VST ACCUM −8.5%, CEG ACCUM −8.8%.
+- **Jul 2 Price Corrections — LARGEST IN RUN HISTORY:** LRCX estimated ~$391.26 → actual $351.41 (−10.2% error); AMAT estimated ~$631 → actual ~$594 (−5.9% error); TSM estimated ~$454.87 → actual $434.16 (−4.6% error); ASML estimated ~$1,843 → actual $1,769.32 (−4.0% error); AMD estimated ~$531.50 → actual $517.82 (−2.6% error). Root cause: semiconductor selloff accelerated dramatically in final 90 minutes of Jul 2 trading session, after report was generated from mid-session estimates.
+- **Signal changes (3):**
+  1. TSM WATCH→ACCUMULATE: +5.3% single-session recovery from $434→$457. Above SMA50. Goldman dropped from conviction list but maintains Buy. Q2 Jul 16 binary.
+  2. LRCX ACCUMULATE→WATCH: Broke SMA50 $380 decisively, now at $356. −10.6% from Jun 26 levels. Q4 Jul 29 catalyst ahead.
+  3. VST ACCUMULATE→WATCH: Broke SMA200 $157 definitively, now at $151. Oil crash to $67.77 WTI compressing gas margins.
+- **Market:** Post-holiday risk-on. Nasdaq +1.39% (leads), S&P +0.52%, Dow briefly topped 53,000. VIX ~15.8 declining. DXY 100.84 easing on weak June NFP +57K. 10Y yield 4.46% flat. WTI $68.19 slight bounce from 2026 low.
+- **OKLO update:** Jul 4 criticality did NOT materialize for OKLO. Groves still in pre-startup review (DSA approved Jul 1, readiness review pending). 3 competitors (Antares, Valar Atomics, Deployable Energy) met DOE EO 14301 3-reactor goal. OKLO at $52.36 — modest −1.4% reaction suggests news was priced in. SPECULATIVE maintained.
+- **format-009 proposed:** Earnings Catalyst Countdown — consolidates days-to-earnings, consensus EPS/rev, implied move, historical beat rate for tickers within 30 days. Auto-evolve (formatting). cs_before=76.53. Q2 earnings wave: ASML Jul 15, TSM Jul 16, LRCX Jul 29, then all 18 tickers late July/Aug.
+- **Structural note:** With AC=100 and CV=100, CS = 0.40×AS + 60. Future CS improvement requires either: (1) sustained favorable AS batches, or (2) signal methodology changes (needs Malik approval). If format-009 also fails, recommend proposing RSI-threshold integration into signal logic to Malik.
+- **CS:** 75.86 (NEW session high). AS 39.66% (142/358). AC 100.0. CV 100.0.
+- **Next:** Jun 29 signals score Jul 7. format-009 report 1/3 Jul 7.
+
+---
+
 ## v1.4 — 2026-07-03 UPDATE (DOE July 4 goal MET by 3 competitors — OKLO Groves NOT among them)
 
 - **CRITICAL CORRECTION:** Prior version of Jul 3 report framed OKLO Groves criticality as "TOMORROW (July 4)." **This was incorrect.** OKLO's Groves reactor is still in pre-startup review (DSA approved Jul 1, readiness review pending, fuel loading not started). Criticality is weeks away, not imminent.

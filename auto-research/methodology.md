@@ -52,20 +52,20 @@ For each ticker:
 - Per-sector alignment with AI scaling race thesis
 - Thesis-level commentary
 
-### Cross-Sector Momentum Divergence Alert (format-008, v1.4+)
+### Earnings Catalyst Countdown (format-009, v1.4+)
 
-After the Sector Relative Strength Ranking table, flag any ticker that diverges significantly from its sector's average performance:
+After Alerts, include an Earnings Catalyst Countdown section:
 
-```
-⚠ SECTOR DIVERGENCE: [TICKER] ([SECTOR]) — ticker [+/-X.X%] vs sector avg [+/-Y.Y%] over 5 sessions (delta: Z.Z%)
-```
+| Ticker | Days to Earnings | Consensus EPS | Consensus Rev | Implied Move | Beat Rate (4Q) |
+|--------|-----------------|---------------|---------------|-------------|----------------|
 
-- **Trigger conditions:** Ticker's 5-session return diverges from its sector's average 5-session return by >3% (absolute)
-- **Display:** Add divergence alerts in a dedicated sub-section after the sector ranking table. List all triggered tickers sorted by divergence magnitude (largest first).
-- **Interpretation guidance:** Positive divergence = potential sector leader or breakout candidate. Negative divergence = potential laggard, risk of mean-reversion or thesis deterioration.
-- **Scope:** Formatting/presentation only — does not modify signal classification logic (auto-evolve)
-- **cs_before:** 76.53 (format-005 baseline, maintained as format-006 and format-007 were discarded)
-- **Experiment started:** 2026-06-30, report 1/3 expected Jul 1
+- **Scope:** Only tickers with earnings within 30 days
+- **Sort by:** Days to earnings (nearest first)
+- **Flag:** Any ticker where implied move > 5% (high-risk earnings event)
+- **Data sources:** Yahoo Finance, TipRanks, Barchart for consensus estimates and options-implied moves
+- **Scope:** Formatting/presentation only — consolidates data already partially in per-ticker analysis (auto-evolve)
+- **cs_before:** 76.53 (format-005 baseline, maintained as format-006, format-007, and format-008 were discarded)
+- **Experiment started:** 2026-07-06, report 1/3 expected Jul 7
 
 ---
 
