@@ -1,5 +1,29 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-07 (format-009 report 1/3; AS crosses 40%; semiconductor selloff)
+
+- **Experiment:** format-009 — Earnings Catalyst Countdown — Report **1 of 3**. CS 76.04, delta from baseline −0.49 (closest to baseline of any format experiment since format-005 KEEP). Next scoring: Jun 30 signals score Jul 8.
+- **Jun 29 signals scored 8/16 = 50.0%.** Neutral batch — AS improves on volume. Key wins: NVDA LONG +5.7%, AMD ACCUM +2.3%, MSFT ACCUM +3.5%, META ACCUM +7.7%, GOOGL ACCUM +4.1%, ASML ACCUM +5.5%. Key failures: AMAT ACCUM −6.2%, CEG ACCUM −10.1%, NRG ACCUM −6.2%, OKLO SPEC −9.1%, RTX ACCUM −3.6%.
+- **AS crosses 40% for first time:** 150/374 decisive signals = 40.11%. Sustained improvement since trough of 22.2% on May 21. CS 76.04 = 0.40×40.11 + 60 = 76.04.
+- **Jul 6 Price Correction:** AMD estimated ~$520 in Jul 6 report, actual close $552.05 (+6.2% error, largest single-ticker estimation error). Root cause: semiconductor selloff intensified in final session hours Jul 7, but AMD had already rebounded sharply Jul 6 post-holiday.
+- **SEMICONDUCTOR SELLOFF — Major market event:**
+  - Samsung Q2 2026: Record quarterly profit (KRW 14.1T operating income +397% YoY) but MISSED estimates → stock −6.9% sell-the-news. HBM demand strong but supply glut concerns.
+  - DeepSeek developing proprietary AI chip — threatens NVIDIA/AMD inference moat.
+  - Hormuz LNG attack: Houthi drone hit tanker in Strait of Hormuz, energy names pressured.
+  - SpaceX added to Nasdaq-100 (replacing Super Micro), pulling index weight.
+  - Result: AMAT −10.5%, LRCX −8.3%, AMD −7.1%, ASML −4.7%, TSM −3.5%.
+- **Signal changes (4):**
+  1. AMD ACCUMULATE→WATCH: −7.1% single session, broke SMA20 $550. Samsung supply glut + DeepSeek chip risk. Q2 Jul 29 binary.
+  2. TSM ACCUMULATE→WATCH: −3.5% pre-Q2 Jul 16. Samsung concerns weigh on foundry names. Above SMA50 but momentum fading.
+  3. AMAT ACCUMULATE→WATCH: −10.5% single-session worst in run history for AMAT. Broke SMA50 $580. Equipment spend repricing on Samsung glut fears. Q3 Aug 14.
+  4. VST WATCH→CONTRARIAN: RSI ~28 oversold. Hormuz LNG attack + oil $67.50 WTI compressing gas margins. Below SMA200 $157 for 3rd consecutive session. Risk/reward attractive for medium-term thesis.
+- **Earnings Catalyst Countdown (NEW format-009 section):** 9 tickers reporting within 30 days. First wave: ASML Jul 15, TSM Jul 16. Second wave: GOOGL Jul 22, MSFT Jul 22, META Jul 23. Implied moves >5%: TSM ~6.2%, OKLO ~12%. Densest earnings window since run inception.
+- **Macro:** VIX ~17.65 NORMAL (rising from 15.8). DXY 100.48 (−0.36%). 10Y yield 4.39% (−7bps). WTI $67.50 (−1.0%). S&P 500 ~7,555 (−0.64%). Nasdaq ~25,550 (−1.1%). Risk-off rotation from tech into defensives.
+- **CS:** 76.04. AS 40.11% (150/374). AC 100.0. CV 100.0.
+- **Next:** Jun 30 signals score Jul 8. format-009 report 2/3 Jul 8.
+
+---
+
 ## v1.4 — 2026-07-06 (format-008 DISCARDED — 3rd consecutive discard; format-009 Earnings Catalyst Countdown proposed)
 
 - **Experiment:** format-008 — Cross-Sector Momentum Divergence Alert — Report **3 of 3 DISCARDED**. 3-report avg CS 75.44 vs baseline 76.53 = **−1.09 delta**. CS improved within the experiment (75.09→75.37→75.86) but never reached baseline. methodology.md reverted (divergence alert section removed).
