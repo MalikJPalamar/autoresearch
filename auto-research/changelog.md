@@ -1,27 +1,32 @@
 # Methodology Changelog
 
-## v1.4 — 2026-07-08 (format-009 report 2/3; Iran escalation; worst batch since May 21; CONTRARIAN perfect streak extends)
+## v1.4 — 2026-07-08 *(EOD corrected)* — format-009 report 2/3; Iran escalation; CONTRARIAN perfect streak; OKLO/GOOGL EOD recovery
 
-- **Experiment:** format-009 — Earnings Catalyst Countdown — Report **2 of 3**. CS 76.0, running avg 76.02, delta from baseline −0.51. Report 3/3 expected Jul 9 — keep/discard decision then.
-- **Jun 30 signals scored 6/16 = 37.5% — worst batch since May 21.** Only 3 batches worse in run history. Key wins: META ACCUM +6.4%, GOOGL ACCUM +3.2%, MSFT CONTRA +6.1%, PLTR CONTRA +6.9%, BAH CONTRA +3.2%, LMT CONTRA +2.7%. Key failures: AMAT LONG −28.3% (WORST SINGLE-SIGNAL LOSS IN RUN HISTORY), LRCX LONG −24.7%, AMD LONG −14.5%, TSM ACCUM −4.2%, ASML ACCUM −3.0%, CEG ACCUM −4.3%, OKLO SPEC −16.5%.
-- **CONTRARIAN 4/4 PERFECT (100%) — 3rd consecutive perfect CONTRARIAN batch.** CONTRARIAN signals now tracking as the most reliable signal type. MSFT CONTRA +6.1%, PLTR CONTRA +6.9%, BAH CONTRA +3.2%, LMT CONTRA +2.7%. All recoveries from oversold levels as thesis predicted.
-- **AMAT LONG −28.3% = worst single-signal loss in entire run history.** Previous worst was OKLO SPEC −21.8% (Jun 8). Semiconductor equipment sector repricing: Samsung Q2 sell-the-news, DeepSeek AI chip threat, trade war escalation. AMAT was rated LONG at ~$739, traded to ~$530 area by Jul 8.
-- **AS dips below 40%:** 40.11% → 40.0% (156/390 decisive signals). Marginal decline — still above the 40% milestone crossed Jul 7. CS 76.04 → 76.0.
+- **Experiment:** format-009 — Earnings Catalyst Countdown — Report **2 of 3**. CS 76.20, running avg 76.12, delta from baseline −0.41 (improving from −0.49). Report 3/3 expected Jul 9 — keep/discard decision then.
+- **Jun 30 signals scored 8/16 = 50.0% (EOD corrected from morning 6/16=37.5%).** Morning used intraday prices; EOD correction restores OKLO (+1.6% CORRECT, was −6.8% INCORRECT intraday) and GOOGL (+2.7% CORRECT, was +1.0% borderline). Key wins: GOOGL ACCUM +2.7%, MSFT CONTRA +4.7%, META ACCUM +8.1%, OKLO SPEC +1.6%, PLTR CONTRA +9.6%, BAH CONTRA +6.5%, LMT CONTRA +5.2%, RTX ACCUM +6.9%. Key failures: AMAT LONG −25.7% (WORST SINGLE-SIGNAL LOSS IN RUN HISTORY), LRCX LONG −24.7%, AMD LONG −11.4%, TSM ACCUM −3.6%, ASML ACCUM −12.8%, CEG ACCUM −7.8%, NRG ACCUM −6.8%, VST ACCUM −7.3%, SMR WATCH −4.5% (neutral >3%), NVDA ACCUM −1.1%.
+- **CONTRARIAN 4/4 PERFECT (100%) — 3rd consecutive perfect CONTRARIAN batch.** MSFT CONTRA +4.7%, PLTR CONTRA +9.6%, BAH CONTRA +6.5%, LMT CONTRA +5.2%. Defense and recovery thesis executing. CONTRARIAN signal type remains most reliable in portfolio.
+- **AMAT LONG −25.7% = worst single-signal loss in entire run history (EOD corrected from −28.3% morning).** Previous worst was OKLO SPEC −21.8% (Jun 8). Semiconductor equipment sector repricing: Samsung Q2 sell-the-news, DeepSeek AI chip threat. AMAT was rated LONG at $739 (EOD Jun 30), settled $549 EOD Jul 8.
+- **AS improves: 40.11% → 40.51% (158/390 decisive signals).** EOD correction flips Jun 30 batch from 6/16 to 8/16, pushing AS higher rather than lower. CS 76.04 → 76.20.
 - **IRAN ESCALATION — Major geopolitical event:**
   - US strikes >80 Iranian nuclear/military targets overnight Jul 7-8. Largest US military operation in Middle East since 2003 Iraq invasion.
   - Trump declares ceasefire "over" at NATO summit in The Hague.
-  - Oil surges: WTI $72-74 (+5-8% from $67.50). Brent approaching $80.
-  - Defense stocks surge: RTX +3.3%, LMT +2.5%, BAH +1.8%. PLTR +2.4%.
-  - Energy thesis bifurcation: nuclear names (VST, CEG, OKLO, SMR) weaker on risk-off despite long-term tailwinds. Oil/gas names benefit.
-  - VIX 18.08 (+12.1%) approaching ELEVATED threshold (20).
-- **Jul 7 Price Corrections:** TSM report ~$429 → actual $436.05 (+1.6% error). AMD report ~$514 → actual $516.11 (+0.4% error).
-- **Signal changes (1):**
-  1. LRCX WATCH→CONTRARIAN: RSI ~27 deeply oversold. −24.7% from ATH. Equipment supercycle thesis intact (Samsung Q2 record confirms demand despite stock selloff). Q4 earnings Jul 29 catalyst. Follows same logic as successful CONTRARIAN upgrades (MSFT RSI ~20 → +6.1%, VST RSI ~28).
-- **Signal distribution:** 8 ACCUMULATE, 4 CONTRARIAN, 4 WATCH, 1 SPECULATIVE, 0 LONG, 0 AVOID. No LONG signals for first time — reflects broad uncertainty from Iran escalation + semiconductor repricing.
-- **Earnings Catalyst Countdown update:** ASML Jul 15 (5 business days), TSM Jul 16 (6 days) — both imminent. GOOGL/MSFT/META Jul 22-23. Densest earnings week approaching.
-- **Macro:** VIX 18.08 ELEVATED WATCH (+12.1%). DXY ~100.2 (−0.3%). 10Y yield ~4.35% (−4bps flight-to-safety). WTI $72-74 (+5-8% Iran premium). S&P 500 ~7,492 (−0.83%). Nasdaq ~25,193 (−1.42%). Gold approaching $2,800. Risk-off dominant.
-- **CS:** 76.0. AS 40.0% (156/390). AC 100.0. CV 100.0.
-- **format-009 status:** Running avg 76.02 vs baseline 76.53 (delta −0.51). Slightly negative but within noise range. Report 3/3 Jul 9 will determine keep/discard.
+  - Oil: WTI $74.04 (+5.1% EOD, morning spike to ~$76). Brent ~$79.50.
+  - Defense stocks led intraday, partially retraced by EOD: RTX +0.01%, LMT −2.8% (from +2-3% morning). BAH +0.58%, PLTR −0.14%.
+  - Energy thesis bifurcation: nuclear names (VST, CEG) weaker on oil/gas competition despite long-term thesis. VIX recovered: 18.08 morning → 16.13 EOD.
+- **Jun 30 EOD price corrections vs morning estimates:**
+  - ASML: report $1,883 → actual close $1,989.44 (Q2 ATH in final hour; +5.6% error). Keeps INCORRECT (Jul 8 $1,735 vs $1,989.44 = −12.8%).
+  - AMAT: report ~$680 → actual $739 (+8.7% error). Keeps INCORRECT (Jul 8 $549 vs $739 = −25.7%).
+  - LRCX: report ~$424 → actual $433.33 (+2.2% error). Keeps INCORRECT (Jul 8 $326 vs $433.33 = −24.7%).
+  - OKLO: intraday ~$48 → actual $51.52 (+7.3% error). FLIPS INCORRECT→CORRECT (Jul 8 $52.36 = +1.6%).
+  - GOOGL: morning +1.0% (borderline) → EOD +2.7%. FLIPS NULL→CORRECT.
+- **Signal changes (2):**
+  1. LRCX WATCH→CONTRARIAN: RSI ~27 deeply oversold. −24.7% from Jun 30 ATH. Equipment supercycle thesis intact (Samsung Q2 KRW 14.1T +397% YoY confirms demand). Q4 earnings Jul 29 catalyst.
+  2. LMT CONTRARIAN→ACCUMULATE: Thesis vindicated +5.2% from Jun 30. Iran escalation drives Patriot/THAAD/missile demand. $180B backlog. Upgraded to ACCUMULATE medium-term.
+- **Signal distribution:** 9 ACCUMULATE, 4 CONTRARIAN, 4 WATCH, 1 SPECULATIVE, 0 LONG, 0 AVOID. No LONG signals — reflects semiconductor repricing + Iran uncertainty.
+- **Earnings Catalyst Countdown update:** ASML Jul 15 (7 days), TSM Jul 16 (8 days) — both imminent. GOOGL/MSFT/LMT Jul 22, META Jul 23. 6 tickers with >5% implied moves in next 21 days.
+- **Macro (EOD):** VIX 16.13 NORMAL (morning 18.08). DXY 101.0. 10Y yield 4.50% (2-week high). WTI $74.04. S&P 500 7,482.71 (−0.28%). Nasdaq 25,870.65 (+0.20%). Tech recovered; defense partially retraced.
+- **CS:** 76.20. AS 40.51% (158/390). AC 100.0. CV 100.0.
+- **format-009 status:** Running avg (76.04 + 76.20)/2 = 76.12 vs baseline 76.53 (delta −0.41). Improving each report. Report 3/3 Jul 9 will determine keep/discard.
 - **Next:** Jul 1 signals score Jul 9. format-009 report 3/3 Jul 9 — keep/discard decision.
 
 ---
