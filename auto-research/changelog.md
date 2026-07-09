@@ -1,5 +1,19 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-09 — format-009 DISCARDED (4th consecutive); semi equipment rally; Iran Day 2; recommendation to Malik
+
+- **Experiment:** format-009 — Earnings Catalyst Countdown — Report **3 of 3 FINAL**. **DISCARDED.** 3-report avg CS 76.16 vs baseline 76.53 = −0.37 delta. Methodology.md reverted (Earnings Catalyst Countdown section removed).
+- **Jul 1 signals scored 6/14 = 42.9%.** CONTRARIAN 2/2 correct (CEG +3.8%, BAH +2.5%) — 4th consecutive strong CONTRARIAN batch. LONG signals continue failing: AMD −3.0%, AMAT −13.6%, LRCX −15.5%. ACCUMULATE mixed: NVDA +1.3%, VST +1.3%, PLTR +2.1%, RTX +2.8% correct; META −1.5%, ASML −7.9%, NRG −5.3% incorrect.
+- **AS 40.51% → 40.59% (164/404 decisive signals).** Marginal improvement; AS stuck in 40-41% band for 5 reports.
+- **CS 76.24.** format-009 3-report sequence: 76.04, 76.20, 76.24. Avg 76.16 vs baseline 76.53 = −0.37.
+- **4th consecutive format experiment discarded** (format-006 −2.21, format-007 −2.17, format-008 −1.09, format-009 −0.37). Structural finding: formatting/presentation experiments cannot move AS, which is the only variable CS component (AC=100, CV=100). No further auto-evolve experiments proposed.
+- **Recommendation to Malik:** RSI-Threshold Signal Override — require RSI <40 for LONG upgrades and force CONTRARIAN→ACCUMULATE when RSI >50. Requires approval (modifies signal classification logic). This is the first non-auto-evolve experiment proposed.
+- **IRAN ESCALATION DAY 2:** US strikes ~90 additional targets; Trump declares ceasefire "over" at NATO Ankara summit; Iran retaliates against Gulf targets/Hormuz vessels. WTI ~$77 (+4-5%). VIX 16.90 (+4.8%). Defense sector mixed (LMT +0.5%, RTX +2.8%).
+- **Semiconductor equipment rally:** AMAT +10% on CEO demand visibility commentary. LRCX +7%. Samsung Q2 beat drives equipment demand optimism. AMD +3%, TSM +1.3%.
+- **Signal changes (4):** AMD WATCH→ACCUMULATE (semi rally, Q2 preview), AMAT WATCH→ACCUMULATE (CEO comments, RSI recovering), LRCX CONTRARIAN→ACCUMULATE (rally from oversold, equipment cycle intact), MSFT ACCUMULATE→CONTRARIAN (RSI ~28 extreme oversold, AI spending concerns).
+- **Signal distribution:** 10 ACCUMULATE, 3 CONTRARIAN, 3 WATCH, 1 SPECULATIVE, 1 LONG (CEG only), 0 AVOID.
+- **Macro:** VIX 16.90 NORMAL. DXY ~101.1. 10Y yield ~4.52%. WTI ~$77. S&P ~7,500. Nasdaq ~25,950.
+
 ## v1.4 — 2026-07-08 *(EOD corrected)* — format-009 report 2/3; Iran escalation; CONTRARIAN perfect streak; OKLO/GOOGL EOD recovery
 
 - **Experiment:** format-009 — Earnings Catalyst Countdown — Report **2 of 3**. CS 76.20, running avg 76.12, delta from baseline −0.41 (improving from −0.49). Report 3/3 expected Jul 9 — keep/discard decision then.

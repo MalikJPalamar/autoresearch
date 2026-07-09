@@ -52,23 +52,6 @@ For each ticker:
 - Per-sector alignment with AI scaling race thesis
 - Thesis-level commentary
 
-### Earnings Catalyst Countdown (format-009, v1.4+)
-
-After Alerts, include an Earnings Catalyst Countdown section:
-
-| Ticker | Days to Earnings | Consensus EPS | Consensus Rev | Implied Move | Beat Rate (4Q) |
-|--------|-----------------|---------------|---------------|-------------|----------------|
-
-- **Scope:** Only tickers with earnings within 30 days
-- **Sort by:** Days to earnings (nearest first)
-- **Flag:** Any ticker where implied move > 5% (high-risk earnings event)
-- **Data sources:** Yahoo Finance, TipRanks, Barchart for consensus estimates and options-implied moves
-- **Scope:** Formatting/presentation only — consolidates data already partially in per-ticker analysis (auto-evolve)
-- **cs_before:** 76.53 (format-005 baseline, maintained as format-006, format-007, and format-008 were discarded)
-- **Experiment started:** 2026-07-06, report 1/3 expected Jul 7
-
----
-
 ### Options Flow / Unusual Activity (format-005, v1.4+)
 
 After alerts, include an options flow section per ticker (where data is available):
