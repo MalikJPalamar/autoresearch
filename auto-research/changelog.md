@@ -1,5 +1,19 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-10 — CS 76.40 session high (delta -0.13); META upgraded to LONG; SK Hynix IPO; no experiment
+
+- **No active experiment.** Awaiting Malik's decision on RSI-Threshold Signal Override (proposed Jul 9). 4th consecutive format experiment was discarded; no further auto-evolve experiments proposed — formatting cannot move AS (the only variable CS component with AC=100, CV=100).
+- **Jul 2 signals scored 7/13 = 53.8%.** Using corrected Jul 2 prices (per Jul 6 corrections: LRCX $351.41, AMAT ~$594, TSM $434.16, ASML $1,769.32, AMD $517.82). ACCUMULATE 5/8 correct: META +6.63%, NVDA +3.52%, PLTR +5.72%, NRG +8.85%, RTX +3.08%. CONTRARIAN 2/2 correct: CEG +3.28%, BAH +2.61%. WATCH 0/3: AMD −1.41% NULL, AMAT −4.11% INCORRECT, LRCX −3.61% INCORRECT.
+- **AS 40.59% → 41.01% (171/417 decisive signals).** +0.42pp, second consecutive improvement. 41% is new session high for AS.
+- **CS 76.40 = NEW SESSION HIGH.** Delta from baseline (76.53) = −0.13 — closest ever. Previous closest: 76.24 (Jul 9, delta −0.29). CS trajectory over last 5 reports: 76.04 → 76.20 → 76.24 → 76.40. Organically approaching baseline without any active experiment.
+- **Jul 9 price corrections:** META $603→$631.48 (+4.7% error MAJOR), MSFT $375.60→$383.34 (+2.1%), NVDA $202.02→$204.12 (+1.0%), AMAT $605→$593.50 (−1.9%).
+- **META ACCUMULATE → LONG (+6.63%):** AI cost breakthrough (training costs −10x in 18 months), Meta Compute cloud business, Iris custom chip. RSI 62.5 strong. Strongest single-signal gain since PLTR +18.8%.
+- **SK Hynix US IPO:** $26.5B at $170/share (+14% from offer). Largest foreign IPO in US history. HBM/AI memory thesis validation.
+- **US-Iran:** Trump says ceasefire "over" but agrees to continue talks. VIX 15.82 (−6.4%) lowest in month — geopolitical premium fading.
+- **Signal changes (1):** META ACCUMULATE → LONG. Distribution: 10 ACCUM, 3 CONTRA, 3 WATCH, 1 SPEC, 1 LONG (META), 0 AVOID.
+- **Earnings week ahead:** ASML Jul 15, TSM Jul 16 — critical for semiconductor thesis. GOOGL/MSFT/LMT Jul 22, META Jul 23.
+- **Macro:** VIX 15.82 NORMAL. DXY ~100.75. 10Y ~4.46%. WTI ~$74.18. S&P ~7,580. Nasdaq ~26,130.
+
 ## v1.4 — 2026-07-09 — format-009 DISCARDED (4th consecutive); semi equipment rally; Iran Day 2; recommendation to Malik
 
 - **Experiment:** format-009 — Earnings Catalyst Countdown — Report **3 of 3 FINAL**. **DISCARDED.** 3-report avg CS 76.16 vs baseline 76.53 = −0.37 delta. Methodology.md reverted (Earnings Catalyst Countdown section removed).
