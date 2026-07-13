@@ -1,5 +1,19 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-13 — CS 76.40 unchanged; Iran blockade reinstated; SMR downgraded to AVOID; ASML/TSM earnings this week
+
+- **No active experiment.** Awaiting Malik's decision on RSI-Threshold Signal Override (proposed Jul 9). No further auto-evolve experiments — formatting cannot move AS.
+- **Jul 6 signals scored 7/17 = 41.2%.** ACCUMULATE 4/10: NVDA +6.1%, AMD +2.7%, MSFT +1.6%, META +13.8% correct; GOOGL −1.9%, TSM −5.0%, ASML −5.8%, AMAT −4.4%, PLTR −4.8%, LMT −3.5%, RTX −1.5% incorrect; NRG +1.4% correct. CONTRARIAN 2/2 correct (5th consecutive): CEG +6.3%, BAH +1.3%. WATCH 0/2 incorrect: VST +7.9% (should have been bullish), SMR −7.8% (should have been bearish). SPECULATIVE 0/1: OKLO −8.1%. NULL: LRCX −1.6%.
+- **AS unchanged at 41.01% (178/434 decisive signals).** 7/17 = 41.2% — essentially flat with rolling average. AS stuck in 40-41% band for 9 reports.
+- **CS unchanged at 76.40.** Delta from baseline (76.53) = −0.13. AC 100, CV 100 unchanged.
+- **Jul 10 price corrections:** NVDA $203→$210.96 (+3.9% error — SK Hynix IPO late rally), S&P 7,543→7,575 (+0.4%), Dow 52,478→52,637 (+0.3%), Nasdaq 26,207→26,282 (+0.3%), NRG $143→$140.42 (−1.8%).
+- **IRAN BLOCKADE REINSTATED:** Trump announces naval blockade of Strait of Hormuz effective Tuesday 4pm ET. Ceasefire/MOU framework disintegrates after weekend missile tests. WTI +7.2% to $76.50, Brent +6.9% to $81.40. Energy stocks rally: NRG +4.6%, VST +7.9%, CEG +6.3%. Defense mixed: LMT −3.5% (profit-taking), RTX −1.5%, BAH +1.3%.
+- **SMR WATCH → AVOID (−7.1%):** ENTRA1 nuclear site contamination probe announced. Regulatory risk overrides thesis alignment.
+- **ASML earnings Jul 15 (2 days), TSM earnings Jul 16 (3 days):** Highest-stakes earnings of Q2 season. ASML 8.36% implied move. TSM Q2 expected +40% YoY revenue, 2025 capex guidance key.
+- **Signal changes (1):** SMR WATCH → AVOID. Distribution: 1 LONG (META), 10 ACCUMULATE, 4 CONTRARIAN (MSFT, VST, CEG, BAH), 2 WATCH (TSM, SMR→AVOID), 1 SPECULATIVE (OKLO), 1 AVOID (SMR). Updated: 1 LONG, 10 ACCUM, 4 CONTRA, 1 WATCH (TSM), 1 SPEC, 1 AVOID.
+- **CONTRARIAN signals:** 2/2 correct for 5th consecutive batch. Lifetime CONTRARIAN accuracy remains the strongest signal class.
+- **Macro:** S&P 7,552 (−0.31%). VIX 15.03 NORMAL (−5.1% — market shrugging off geopolitical risk). DXY ~100.75. 10Y ~4.46%. WTI $76.50 (+7.2%). Brent $81.40 (+6.9%).
+
 ## v1.4 — 2026-07-10 — CS 76.40 session high (delta -0.13); META upgraded to LONG; SK Hynix IPO; no experiment
 
 - **No active experiment.** Awaiting Malik's decision on RSI-Threshold Signal Override (proposed Jul 9). 4th consecutive format experiment was discarded; no further auto-evolve experiments proposed — formatting cannot move AS (the only variable CS component with AC=100, CV=100).
