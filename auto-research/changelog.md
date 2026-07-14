@@ -1,5 +1,21 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-14 — CS 76.25 (delta -0.28); CPI surprise drives semi rally; ASML earnings tomorrow; NRG scoring correction
+
+- **No active experiment.** Awaiting Malik's decision on RSI-Threshold Signal Override (proposed Jul 9). 4th consecutive format experiment was discarded; no further auto-evolve experiments — formatting cannot move AS.
+- **Jul 7 signals scored 5/14 = 35.7% (below average).** ACCUMULATE 4/9: NVDA ~+3%, GOOGL ~+2%, META ~+2%, PLTR ~+2% correct; AMD ~−1% INCORRECT, ASML ~−2% INCORRECT, AMAT ~−2% INCORRECT, LRCX ~−1% INCORRECT, NRG ~−1% INCORRECT. CONTRARIAN 1/3: VST ~+3% correct; MSFT ~−1% INCORRECT, BAH ~−3.7% INCORRECT (breaks 5-batch perfect streak). WATCH 0/2: TSM ~+3% (should have been bullish), SMR ~−6% (should have been bearish). SPECULATIVE: OKLO ~−4% INCORRECT. LMT, RTX NULL.
+- **NRG Jul 6 batch correction:** Actual Jul 13 close $139.48 (report had $147, −5.1% error MAJOR). NRG flips from CORRECT (+1.4%) to INCORRECT (−3.8%). Jul 6 batch revised 7/17 → 6/17 = 35.3%. AS impact: 178/434 → 177/434 = 40.78%.
+- **AS 41.01% → 40.63% (182/448 decisive signals).** Decline driven by NRG correction (−0.23pp) plus weak Jul 7 batch (5/14 adds +5 correct, +14 decisive). AS falls below 41% for first time since Jul 10.
+- **CS 76.40 → 76.25.** Delta from baseline (76.53) widens to −0.28 (was −0.13). AC 100, CV 100 unchanged.
+- **CPI SURPRISE:** June CPI 3.5% (below 3.8% expected), core 2.6% (below 2.9% expected). Cooler inflation ignited semiconductor rally. iShares Semi ETF +4.6%. AMD +4%, NVDA +3%.
+- **IBM −22% earnings warning:** Enterprise clients shifting from software/mainframes to AI infrastructure. Paradoxically BULLISH for SA Portfolio thesis (validates AI capex supercycle).
+- **ASML earnings Jul 15 (TOMORROW).** 8.36% implied move. Options volume 6x+ average. Most important earnings event of Q2 season. TSM Jul 16 (Thursday).
+- **Iran Hormuz blockade effective 4pm ET today.** WTI $79.56 (+4%). Energy names muted despite geopolitical escalation.
+- **CONTRARIAN streak broken:** BAH −3.7% over 5 sessions (INCORRECT). Government consulting structural decline overriding signal. CONTRARIAN lifetime accuracy still strongest class but perfect streak ends at 5 batches.
+- **Jul 13 price corrections (5 tickers):** NRG $147→$139.48 (−5.1% MAJOR), VST $163→$158.12 (−3.0%), NVDA $208→$203.53 (−2.1%), META $668→$656.73 (−1.7%), AMAT $581.50→$575.39 (−1.1%).
+- **No signal changes.** Distribution unchanged: 1 LONG (META), 10 ACCUM, 4 CONTRA (MSFT, VST, CEG, BAH), 1 WATCH (TSM), 1 SPEC (OKLO), 1 AVOID (SMR).
+- **Macro:** S&P ~7,600 (+0.8%). Nasdaq ~26,200 (+1.0%). VIX 16.48 NORMAL (+9.6%). DXY ~100.30 (−0.2%). 10Y 4.62% (+9bps). WTI $79.56 (+4.0%).
+
 ## v1.4 — 2026-07-13 — CS 76.40 unchanged; Iran blockade reinstated; SMR downgraded to AVOID; ASML/TSM earnings this week
 
 - **No active experiment.** Awaiting Malik's decision on RSI-Threshold Signal Override (proposed Jul 9). No further auto-evolve experiments — formatting cannot move AS.
