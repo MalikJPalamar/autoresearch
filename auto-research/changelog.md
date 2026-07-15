@@ -1,5 +1,20 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-15 POST-CLOSE VERIFICATION — MAJOR CORRECTIONS FOUND
+
+- **Post-close price verification identified 10 corrections, 3 major (>3% error).**
+- **ASML: Report $1,900 (+7.0%) → Actual US close ~$1,748 (-1.54%). ERROR: -8.0%.** Sell-the-news pattern: Amsterdam +5.94% but US session reversed on memory selloff (Micron -7%). BIGGEST estimation error in recent reports. ASML LONG upgrade rationale partially invalidated — earnings beat is real but US price reaction was negative.
+- **AMAT: Report $580 → Actual ~$605. ERROR: +4.4%.** Underestimated the ASML read-through rally.
+- **SMR: Report $8.00 → Actual ~$8.52. ERROR: +6.5%.** Did NOT break 52W low as implied.
+- **META: Report $676 → Actual ~$662. ERROR: -2.0%.** META actually FELL 2.8% (Jul 14 close was $681.31).
+- **MSFT: Report $397 → Actual ~$385. ERROR: -3.1%.** Vantage Markets confirms "steadies near $385".
+- **GOOGL: Report $360 → Actual ~$369. ERROR: +2.5%.** Underestimated by ~$9.
+- **VST: Report $155 (-1.9%) → Actual ~$159. ERROR: +2.5%.** Direction was wrong — VST was UP.
+- **WTI: Report $81.34 → Actual $79.06. ERROR: -2.8%.** Direction wrong — oil fell slightly.
+- **Jul 8 batch scoring impact:** ASML CORRECT→NULL, GOOGL NULL→CORRECT, MSFT CORRECT→NULL, BAH CORRECT→NULL. Corrected batch: 8/15 = 53.3% (was 10/17 = 58.8%). Corrected AS: 190/463 = 41.04%. Corrected CS: 76.42 (was 76.52, delta from baseline -0.11).
+- **See `auto-research/corrections-pending-jul15.md` for full correction details.**
+- **Action for Jul 16 report:** Apply corrections in Price Corrections section, recalculate AS/CS, evaluate ASML LONG vs ACCUMULATE reversion.
+
 ## v1.4 — 2026-07-15 — CS 76.52 (delta -0.01 NEAREST EVER); ASML Q2 earnings beat; Jul 8 batch 10/17=58.8% 2nd best; AS 41.29% new high
 
 - **No active experiment.** Awaiting Malik's decision on RSI-Threshold Signal Override (proposed Jul 9). 4th consecutive format experiment was discarded; no further auto-evolve experiments — formatting cannot move AS.
