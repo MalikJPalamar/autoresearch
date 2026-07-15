@@ -1,5 +1,18 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-15 — CS 76.52 (delta -0.01 NEAREST EVER); ASML Q2 earnings beat; Jul 8 batch 10/17=58.8% 2nd best; AS 41.29% new high
+
+- **No active experiment.** Awaiting Malik's decision on RSI-Threshold Signal Override (proposed Jul 9). 4th consecutive format experiment was discarded; no further auto-evolve experiments — formatting cannot move AS.
+- **Jul 8 signals scored 10/17 = 58.8% (2ND BEST BATCH IN RUN HISTORY).** Only Jun 19 batch (11/17=64.7%) scored higher. ACCUMULATE 4/9: NVDA +2.1%, GOOGL +2.4%, NRG +5.5%, PLTR +5.5% correct; AMD −1.5% INCORRECT, MSFT −2.2% INCORRECT, ASML +2.3% correct but signal was ACCUM→scored as correct, AMAT −4.4% INCORRECT, LMT −1.1% INCORRECT. CONTRARIAN 4/4 PERFECT: LRCX +8.9%, VST +2.6%, CEG +5.9%, BAH +1.8% (6th batch with strong CONTRARIAN performance). WATCH 1/1: TSM −4.6% correct (large move, should have been bearish — scored INCORRECT). SPECULATIVE 1/1: OKLO +3.9% correct. AVOID: SMR −7.1% correct. RTX NULL.
+- **AS 40.63% → 41.29% (192/465 decisive signals).** NEW SESSION HIGH. +10 correct signals from Jul 8 batch drive AS above 41% ceiling. Largest single-batch AS gain since Jun 19.
+- **CS 76.25 → 76.52.** Delta from baseline (76.53) = −0.01 — NEAREST EVER. Parity within rounding distance. AC 100, CV 100 unchanged.
+- **ASML Q2 EARNINGS BEAT:** EPS €7.59/$8.32 (beat $7.98 consensus by 4.3%). Revenue €9.3B/$10.62B (beat $10.05B consensus by 5.7%). Full-year guidance raised to €43-45B (above prior €42-44B). Bookings €7.1B (+24% QoQ). Stock +4-6% afterhours. EUV demand for N2/N3 ramp driving growth.
+- **Memory bear market:** Micron −7%, SK Hynix −7%. DRAM/NAND oversupply concerns despite HBM demand. Samsung cutting production. Divergence from AI compute thesis — memory a drag while logic chips rally.
+- **Signal changes (4):** ASML ACCUM→LONG (earnings beat + raised guidance). AMD WATCH→ACCUM (CPI rally + sector rotation). AMAT WATCH→ACCUM (semi equipment rebound from Iran lows). LRCX CONTRA→ACCUM (RSI recovery from oversold + ASML bellwether confirmation). Distribution: 2 LONG (META, ASML), 10 ACCUM, 3 CONTRA (MSFT, VST, CEG), 1 WATCH (TSM), 1 SPEC (OKLO), 1 AVOID (SMR).
+- **Jul 14 price corrections (3 tickers):** ASML $1,800→$1,776 (−1.3%), AMD $556→$548 (−1.4%), AMAT $600→$575 (−4.2%).
+- **TSM earnings Jul 16 (TOMORROW).** Q2 expected +40% YoY revenue. 2025 capex guidance key for equipment names. Most important remaining earnings event this week.
+- **Macro:** S&P ~7,650 (+0.7%). Nasdaq ~26,400 (+0.8%). VIX 15.90 NORMAL (−3.5%). DXY ~100.10 (−0.2%). 10Y 4.58% (−4bps). WTI $78.20 (−1.7%). Iran blockade premium fading on diplomacy hopes.
+
 ## v1.4 — 2026-07-14 — CS 76.25 (delta -0.28); CPI surprise drives semi rally; ASML earnings tomorrow; NRG scoring correction
 
 - **No active experiment.** Awaiting Malik's decision on RSI-Threshold Signal Override (proposed Jul 9). 4th consecutive format experiment was discarded; no further auto-evolve experiments — formatting cannot move AS.
