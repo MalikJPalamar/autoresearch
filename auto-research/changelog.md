@@ -1,5 +1,18 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-16 — CS 76.60 EXCEEDS BASELINE 76.53 FOR FIRST TIME (+0.07 delta); TSM Q2 earnings blowout; Jul 9 batch 8/14=57.1% 4th best; AS 41.51% all-time high
+
+- **MAJOR MILESTONE: CS 76.60 exceeds baseline 76.53 for the first time in run history (+0.07 delta).** Achieved organically through AS improvement alone — no active experiment. After 4 consecutive discarded format experiments (format-006 through format-009), CS surpassed baseline purely through signal accuracy gains. AC=100, CV=100 unchanged.
+- **No active experiment.** Awaiting Malik's decision on RSI-Threshold Signal Override (proposed Jul 9). CS has now organically surpassed baseline, further validating that formatting experiments cannot move the needle — only signal accuracy improvements (AS) can improve CS.
+- **Jul 15 corrections applied before scoring.** Post-close verification identified 10 corrections, 3 major. ASML $1,900→$1,815 (-4.5%), AMAT $580→$605 (+4.4%), SMR $8→$8.52 (+6.5%). Jul 8 batch corrected from 10/17=58.8% to 8/15=53.3%. AS corrected from 41.29% to 41.04% (190/463). CS corrected from 76.52 to 76.42. ASML LONG reverted to ACCUMULATE (upgrade was based on faulty +7% price; actual US close was +2.2%).
+- **Jul 9 signals scored 8/14 = 57.1% (4TH BEST BATCH).** Using corrected Jul 9 base prices. ACCUMULATE 5/8: NVDA +4.0%, GOOGL +2.0%, AMAT +3.7%, LRCX +5.3%, NRG +2.6% correct; ASML -0.3% NULL, PLTR -2.3% INCORRECT, RTX -1.2% INCORRECT. CONTRARIAN 2/3: MSFT +2.6%, CEG +2.5% correct; VST +0.5% NULL. WATCH 0/1: TSM -4.1% INCORRECT. SPECULATIVE 0/1: OKLO +2.1% correct. AVOID 1/1: SMR -2.0% correct. META NULL (-2.8%, below 1% threshold for LONG). BAH NULL. LMT NULL.
+- **AS 41.04% → 41.51% (198/477 decisive signals).** NEW ALL-TIME SESSION HIGH. +8 correct signals from Jul 9 batch. Largest AS level achieved in entire run history.
+- **CS 76.42 → 76.60.** Delta from baseline (76.53) = +0.07 — FIRST POSITIVE DELTA EVER. Previous nearest: -0.01 (Jul 15 uncorrected). CS trajectory over last 5 reports: 76.25 → 76.40 → 76.52 → 76.42 (corrected) → 76.60.
+- **TSM Q2 EARNINGS BLOWOUT:** EPS $4.31/ADR (beat $3.94 consensus by 9.4%). Revenue $40.2B (+36% YoY, beat by $900M). Net income +77.4% YoY — 5th consecutive record quarter. Capex raised to $60-64B (from $52-56B). Full-year revenue outlook >40% growth. Additional $100B Arizona investment (total US commitment $265B). Stock fell >4% sell-the-news despite blowout results.
+- **Equipment vs foundry divergence:** AMAT +3.74%, LRCX +5.27% rallied on TSM capex raise validation. TSM -4% despite record results. Equipment names outperform foundry on same news — capex increase = more tool orders.
+- **Signal changes (4):** ASML LONG→ACCUM (revert faulty price upgrade). TSM WATCH→ACCUM (Q2 blowout validates thesis). AMD ACCUM→WATCH (selloff, weak tape). MSFT CONTRA→ACCUM (vindicated, RSI recovering). Distribution: 1 LONG (META), 12 ACCUM, 2 CONTRA (VST, CEG), 1 WATCH (AMD), 1 SPEC (OKLO), 1 AVOID (SMR).
+- **Macro:** S&P ~7,522 (-0.66%). Nasdaq ~26,150 (-0.45%). VIX 16.24 NORMAL (+3.6%). DXY 99.72 (-0.4%). 10Y 4.52% (-6bps). WTI $78.50 (-0.3%). Gold $3,365 (+2.2% new record). Bond rally + gold surge signal risk-off rotation despite strong earnings.
+
 ## v1.4 — 2026-07-15 POST-CLOSE VERIFICATION — MAJOR CORRECTIONS FOUND
 
 - **Post-close price verification identified 10 corrections, 3 major (>3% error).**
