@@ -1,5 +1,18 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-17 — SEMICONDUCTOR SELLOFF; CS 76.49 drops below baseline again (delta -0.04); Jul 10 batch 4/13=30.8% worst since Jul 7; AS 41.22%
+
+- **CS 76.60 → 76.49.** Drops below baseline 76.53 again after just 1 day above (delta -0.04). CS trajectory: 76.42 → 76.60 → 76.49. The brief milestone crossing on Jul 16 reversed by the worst scoring batch in 10 days.
+- **Jul 16 corrections applied.** OKLO $47→$45.69, SMR $8.35→$7.66 (MAJOR -8.3%), AMD $510.48→$503, ASML $1,810→$1,785, RTX $194.23→$195.89. No impact on Jul 9 batch scores — all directional outcomes unchanged.
+- **Jul 10 signals scored 4/13 = 30.8% (WORST SINCE JUL 7's 35.7%).** Only 4 correct out of 13 decisive signals. ACCUMULATE 1/8: only GOOGL correct (+2.2%); NVDA -4.4%, AMD -5.0%, ASML -1.4%, PLTR -3.0%, NRG -2.3%, BAH -1.0% all INCORRECT; AMAT +0.8% NULL. CONTRARIAN 2/2: VST +5.1%, CEG +5.6% both correct (6TH CONSECUTIVE CONTRARIAN BATCH CORRECT). WATCH 0/1: TSM -5.7% INCORRECT. SPECULATIVE 0/1: OKLO -8.9% INCORRECT. AVOID 1/1: SMR -2.1% correct. META NULL (-1.5%), MSFT NULL (+0.8%), LMT NULL (+0.6%), RTX NULL (-0.3%).
+- **AS 41.51% → 41.22% (202/490 decisive signals).** +4 correct, +9 incorrect from Jul 10 batch. Largest single-batch AS decline since Jul 7.
+- **SEMICONDUCTOR SELLOFF DEEPENS:** SOX approaching bear market territory (-20% from highs). AMD -5.0% ($477.81), NVDA -3.0% ($201.60), AMAT -8.5% ($553.53), LRCX -10.4% ($366.81). Kimi K3 AI model release + Bloomberg report of Gemini 3.5 Pro delays stoke hyperscaler spending concerns. Equipment names hit hardest despite TSM capex raise validation just 1 day prior.
+- **Signal changes (3 downgrades):** TSM ACCUM→WATCH (earnings sell-the-news extends, -5.7% in 5 days). AMAT ACCUM→WATCH (-8.5% breaks SMA50, earnings divergence). LRCX ACCUM→WATCH (-10.4% worst daily drop, breaks SMA50/200). Distribution: 1 LONG (META), 9 ACCUM, 2 CONTRA (VST, CEG), 4 WATCH (AMD, TSM, AMAT, LRCX), 1 SPEC (OKLO), 1 AVOID (SMR).
+- **CONTRARIAN streak extends to 6 consecutive batches.** VST and CEG continue to validate the deep-value thesis for nuclear energy names. Only signal class with >50% hit rate this session.
+- **CRITICAL EARNINGS WEEK AHEAD:** GOOGL Jul 22, LMT/META/RTX Jul 23, BAH Jul 24, MSFT/LRCX Jul 29. 7 of 18 portfolio tickers report within 12 days. Binary risk events for signal accuracy.
+- **Macro:** S&P ~7,468 (-0.72%). Nasdaq ~25,750 (-1.53%). VIX 17.76 +9.4% NORMAL. DXY 99.60 (-0.1%). 10Y 4.50% (-2bps). WTI $80.10 (+2.0%). Oil above $80 on Middle East escalation. Netflix -11% disappointing Q2 earnings weighs on broader market.
+- **No active experiment.** Awaiting Malik's decision on RSI-Threshold Signal Override (proposed Jul 9). CS dropping below baseline again reinforces that signal accuracy (AS) is the only lever — ACCUMULATE signal class remains the weakest performer.
+
 ## v1.4 — 2026-07-16 — CS 76.60 EXCEEDS BASELINE 76.53 FOR FIRST TIME (+0.07 delta); TSM Q2 earnings blowout; Jul 9 batch 8/14=57.1% 4th best; AS 41.51% all-time high
 
 - **MAJOR MILESTONE: CS 76.60 exceeds baseline 76.53 for the first time in run history (+0.07 delta).** Achieved organically through AS improvement alone — no active experiment. After 4 consecutive discarded format experiments (format-006 through format-009), CS surpassed baseline purely through signal accuracy gains. AC=100, CV=100 unchanged.
