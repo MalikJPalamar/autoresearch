@@ -1,5 +1,21 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-20 — CHIP REBOUND; CS 76.48 (delta -0.05); Jul 13 batch 6/14=42.9%; CONTRARIAN streak broken; equipment sweep correct; 4 upgrades
+
+- **CS 76.46 (corrected) → 76.48.** Delta from baseline −0.05. CS trajectory: 76.60 → 76.49 → 76.46 (corrected) → 76.48. Modest improvement from corrected base.
+- **Jul 17 price corrections applied.** GOOGL $353.81→$347 (−1.9%), META $664.54→$647 (−2.6%). GOOGL correction changes Jul 10 batch score (NULL → INCORRECT). Corrected Jul 10 batch: 4/14=28.6% (was 4/13=30.8%). Corrected AS: 202/491=41.14% (was 41.22%). Corrected CS: 76.46 (was 76.49). META correction does not change score (INCORRECT → INCORRECT).
+- **Jul 13 signals scored 6/14 = 42.9%.** ACCUMULATE 4/8: ASML +3.4%, AMAT +2.7%, LRCX +6.8%, PLTR +7.1% correct; NVDA −2.0%, AMD −4.5%, NRG −9.5%, LMT −2.1% incorrect; GOOGL +0.6%, RTX −0.5% null. CONTRARIAN 1/3: BAH +2.0% correct; VST −6.7%, CEG −3.5% incorrect; MSFT +0.5% null. LONG 0/0: META −0.4% null. WATCH 0/1: TSM −6.2% incorrect. SPECULATIVE 0/1: OKLO −10.6% incorrect. AVOID 1/1: SMR −14.4% correct.
+- **AS 41.14% (corrected) → 41.19% (208/505 decisive).** +6 correct, +8 incorrect from Jul 13 batch. Batch accuracy (42.9%) slightly above rolling average.
+- **CONTRARIAN STREAK BROKEN after 6 consecutive perfect batches.** VST −6.7%, CEG −3.5% incorrect. BAH +2.0% the only CONTRARIAN correct. Energy-for-AI CONTRARIAN thesis under pressure — names selling off despite oil at multi-month highs.
+- **Equipment sweep: ASML +3.4%, AMAT +2.7%, LRCX +6.8% — ALL 3 CORRECT.** Post-TSM capex raise ($60-64B) and post-ASML Q2 beat validated equipment supercycle thesis. Equipment is the highest-conviction sub-thesis.
+- **CHIP REBOUND:** SOX bounces from bear market territory (−20% from highs). AMD +3-4% (Rosenblatt PT $665 top pick), NVDA +1%, TSM +2%. S&P +0.63%, Nasdaq +1.02%, VIX −13.6% to 15.34.
+- **Signal changes (4 upgrades, 1 downgrade):** AMD WATCH→ACCUM (Rosenblatt PT + Advancing AI Jul 22). TSM WATCH→ACCUM (post-earnings upgrade, record Q2 validated). AMAT WATCH→ACCUM (TSM capex validates equipment). LRCX WATCH→ACCUM (equipment supercycle). GOOGL ACCUM→WATCH (Q2 earnings Jul 22 binary, EU fine, Gemini delays). Distribution: 1 LONG (META), 10 ACCUM, 4 CONTRA (MSFT, VST, CEG, BAH), 1 WATCH (GOOGL), 1 SPEC (OKLO), 1 AVOID (SMR).
+- **ENERGY SECTOR COLLAPSE:** VST −6.7%, CEG −3.5%, NRG −9.5%, OKLO −10.6%, SMR −14.4% — worst sector despite oil at multi-month highs (WTI $82, Brent $88). Market pricing in Iran de-escalation. SMR hit new 52W low $7.62.
+- **META Q2 earnings CORRECTED to Jul 29** (was reported as Jul 23 in prior reports).
+- **Macro:** S&P ~7,505 (+0.63%). Nasdaq ~25,780 (+1.02%). VIX 15.34 −13.6% NORMAL. DXY 100.8 (+0.3%). 10Y 4.57% (+1bp). WTI ~$82 (+2.4%). Brent ~$88 (+7.3%). Oil pared gains on Iran peace talk hopes.
+- **Critical earnings week:** GOOGL Jul 22, LMT/RTX Jul 23, BAH Jul 24, META/MSFT/LRCX Jul 29.
+- **No active experiment.** Awaiting Malik's decision on RSI-Threshold Signal Override (proposed Jul 9). ACCUMULATE improving to 50% this batch may reduce urgency, but LONG signal class still has not produced a decisive correct.
+
 ## v1.4 — 2026-07-17 — SEMICONDUCTOR SELLOFF; CS 76.49 drops below baseline again (delta -0.04); Jul 10 batch 4/13=30.8% worst since Jul 7; AS 41.22%
 
 - **CS 76.60 → 76.49.** Drops below baseline 76.53 again after just 1 day above (delta -0.04). CS trajectory: 76.42 → 76.60 → 76.49. The brief milestone crossing on Jul 16 reversed by the worst scoring batch in 10 days.
