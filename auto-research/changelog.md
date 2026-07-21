@@ -1,5 +1,18 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-21 — MAJOR PRICE CORRECTIONS; CS 76.08 (delta -0.45 WIDENED); Jul 13 RESCORED 6/14→3/14 (21.4%); Jul 14 batch 4/15=26.7%; AS drops to 40.19%; chip rally day 2
+
+- **LARGEST PRICE CORRECTIONS IN RUN HISTORY.** Jul 20 report prices were captured ~1hr before close and diverged sharply during final-hour selloff. LRCX $374→$306.90 (-18% error — LARGEST EVER), AMAT $597→$560.81 (-6.5%), GOOGL $357→$346.77 (-2.9%), ASML $1,805→~$1,750 (-3%), VIX 15.34→18.65 (+21.6%). The Jul 20 "equipment supercycle validated" narrative (ASML +3.4%, AMAT +2.7%, LRCX +6.8%) was entirely wrong — actual: ASML flat, AMAT -3.6%, LRCX -12.4%.
+- **Jul 13 batch RESCORED after corrections: 6/14 → 3/14 = 21.4% (WORST BATCH IN RUN HISTORY).** 4 score changes: ASML CORRECT→NULL (flat, not +3.4%), AMAT CORRECT→INCORRECT (-3.6%, not +2.7%), LRCX CORRECT→INCORRECT (-12.4%, not +6.8%), GOOGL NULL→INCORRECT (-5.1%, not +0.6%). Equipment sweep flipped from "all 3 correct" to "all 3 wrong."
+- **Jul 14 signals scored 4/15 = 26.7%.** CORRECT: MSFT +3.2% (CONTRA), SMR -1.3% (AVOID), PLTR +1.1% (ACCUM), BAH +7.5% (CONTRA). INCORRECT: NVDA -2.0%, AMD -5.3%, TSM -4.1%, ASML -3.2%, AMAT -2.5%, NRG -3.6%, LMT -1.1%, RTX -1.3%. NULL: META +0.3%, GOOGL -0.3%, OKLO -0.3%. Only 2/10 ACCUMULATE correct. CONTRARIAN 2/4 correct.
+- **AS 41.19% → 40.19% (209/520 decisive).** Net: +7 correct, +15 incorrect (rescored Jul 13 + new Jul 14). Largest single-day AS decline in run history. The Jul 20 AS of 41.19% was inflated by wrong LRCX/AMAT/ASML scores.
+- **CS 76.48 → 76.08.** Delta from baseline (76.53) = −0.45, WIDEST NEGATIVE DELTA since Jun 1 (76.05, delta −0.48). CS trajectory: 76.60 → 76.49 → 76.48 → 76.08. Erases all gains since Jul 10.
+- **Signal changes (2 downgrades):** AMAT ACCUM→WATCH (price correction reveals -3.6% decline, SMA50 broken). LRCX ACCUM→WATCH (price correction reveals -12.4% decline, worst in portfolio). Distribution: 1 LONG (META), 8 ACCUM, 4 CONTRA (MSFT, VST, CEG, BAH), 3 WATCH (GOOGL, AMAT, LRCX), 1 SPEC (OKLO), 1 AVOID (SMR).
+- **CHIP RALLY DAY 2:** SOX +3.7%, Micron +12% (HBM demand validation via SK Hynix deal), NVDA +2.3%, AMD +6.2%, ASML +3.3%. Rally driven by chip-specific catalysts not macro. Semis attempting V-recovery from bear market.
+- **BINARY WALL AHEAD:** GOOGL Q2 earnings TONIGHT (Jul 22 after close), AMD Advancing AI keynote TONIGHT. LMT/RTX earnings Jul 23, BAH Jul 24, META/MSFT/LRCX Jul 29. 7 of 18 tickers report within 8 trading days.
+- **Macro:** S&P ~7,481 (+0.1%). Nasdaq ~25,680 (+0.6%). VIX 17.53 (−6.0%). DXY ~100.4. 10Y ~4.48%. WTI ~$78. Iran diplomatic progress but oil resilient.
+- **No active experiment.** Awaiting Malik's decision on RSI-Threshold Signal Override. CS delta -0.45 reinforces urgent need for signal accuracy improvement — AS is the only lever.
+
 ## v1.4 — 2026-07-20 — CHIP REBOUND; CS 76.48 (delta -0.05); Jul 13 batch 6/14=42.9%; CONTRARIAN streak broken; equipment sweep correct; 4 upgrades
 
 - **CS 76.46 (corrected) → 76.48.** Delta from baseline −0.05. CS trajectory: 76.60 → 76.49 → 76.46 (corrected) → 76.48. Modest improvement from corrected base.
