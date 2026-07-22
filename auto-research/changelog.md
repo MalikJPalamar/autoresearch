@@ -1,5 +1,24 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-22 — Jul 15 batch 3/15=20.0% NEW WORST BATCH; CS 75.90 (delta -0.63); AS 39.74% below 40%; Jul 21 corrections (VST +7.5%, CEG +5.9%); GOOGL Q2 blowout; PLTR -6.6%
+
+- **Jul 21 price corrections applied (7 total).** 2 MAJOR: VST $151.05→$162.33 (+7.5% error — 2nd largest after LRCX -18%), CEG $239→$253 (+5.9% — report said "approaching 52W low $229" which was WRONG, CEG was $24 above). 3 NOTABLE: BAH $65.21→$62.03 (-4.9%), LMT $497→$506 (+1.8%), RTX $196.68→$194 (-1.4%). 2 MINOR: ASML $1,740→$1,770, VIX 17.53→17.05. Energy sector "collapse" narrative was overstated — VST stable above $160, CEG above $250.
+- **Jul 14 batch RESCORED with corrections: 4/15 → 5/16 = 31.25%.** VST INCORRECT→CORRECT ($158→$162.33 = +2.7%, was reported as -4.4%). RTX NULL→INCORRECT ($197→$194 = -1.5%, was reported as -0.2%). Net: +1 correct, +1 decisive.
+- **Jul 15 signals scored 3/15 = 20.0% — NEW WORST BATCH IN RUN HISTORY (was 21.4% on Jul 13 corrected).** CORRECT: TSM -0.2% (WATCH, neutral+small), VST +4.5% (CONTRA), CEG +4.0% (CONTRA). INCORRECT: NVDA -1.4%, GOOGL -3.6%, MSFT -2.0%, META -4.3%, AMAT -3.3%, LRCX -9.3%, OKLO -3.0%, NRG -7.9%, SMR +7.0% (AVOID missed), PLTR -7.1% (worst signal), BAH -5.2%, LMT -1.1%. NULL: AMD -0.7%, ASML +0.1%, RTX 0%.
+- **ACCUMULATE 0/8 decisive = WORST ACCUMULATE BATCH EVER.** All 8 decisive ACCUMULATE signals were INCORRECT. Semiconductor selloff Jul 15-22 invalidated every bullish call. Only nulls (AMD, ASML, RTX) avoided INCORRECT. The methodology's mean-reversion assumption fails catastrophically in sustained selloffs.
+- **CONTRARIAN signals ONLY correct class: 2/3 (66.7%).** Energy CONTRARIAN (VST +4.5%, CEG +4.0%) resurges. Tech CONTRARIAN (MSFT -2.0%) fails. Inverse of Jul 14 batch (MSFT correct, energy failed). Energy CONTRARIAN is the most reliable signal pattern in selloffs.
+- **SMR AVOID INCORRECT (+7.0%).** First AVOID miss since Jun 30. Dead-cat bounce from 52W low invalidated bearish signal.
+- **AS 40.31% (corrected) → 39.74% (213/536 decisive).** Drops below 40% for first time since Jul 7. The 20% batch wiped gains from the 58.8% (Jul 8) and 57.1% (Jul 9) batches.
+- **CS 76.08 → 75.90.** Delta from baseline (76.53) = −0.63, wider than −0.45 (Jul 21). Three consecutive CS declines. CS trajectory: 76.60 → 76.49 → 76.08 → 75.90.
+- **Signal changes:** GOOGL WATCH→ACCUMULATE (Q2 blowout: EPS $9.11 = 3x consensus, Rev $119.8B, Cloud +82% YoY — strongest tech earnings of Q2 2026). PLTR ACCUMULATE→WATCH (−6.6% on open-source AI competition + UK NHS scrutiny, broke SMA50). Distribution: 1 LONG (META), 7 ACCUM, 3 CONTRA (MSFT, VST, CEG), 3 WATCH (AMAT, LRCX, PLTR), 1 SPEC (OKLO), 1 AVOID (SMR).
+- **GOOGL Q2 BLOWOUT after close:** EPS $9.11 (3x consensus $2.90), revenue $119.8B, Google Cloud +82% YoY. Strongest tech earnings of Q2 2026. Validates AI Cloud monetization thesis. Stock closed $347 pre-earnings — expect massive gap-up Jul 23.
+- **AMD Advancing AI event:** MI450X accelerator (targeting NVDA Blackwell), Venice CPU, Helios rack-scale system, 12GW-scale AI infrastructure. Muted stock reaction (+0.2%) = sell-the-news.
+- **PLTR −6.6%:** Worst single-day decline in portfolio. Open-source AI models (Kimi K3, Gemini open, Meta Llama) threatening proprietary AI moat. UK NHS contract scrutiny. Broke SMA50 $135. Downgraded to WATCH.
+- **Oil surge:** WTI $86.83 (+3%), Iran 11th night. Brent approaching $90. 10Y yield +8bps to 4.63%. Inflationary pressure building. Energy sector finally responding: CEG +3.6%, SMR +5.0%.
+- **Macro:** S&P 7,498.96 (-0.14%). Nasdaq 25,690.90 (-0.57%). VIX ~17.2 (NORMAL). DXY ~101.1 (+0.4%). 10Y 4.63% (+8bps). WTI $86.83 (+3%).
+- **Earnings cluster begins:** LMT/RTX Jul 23 (TOMORROW), BAH Jul 24, META/MSFT/LRCX Jul 29.
+- **No active experiment.** Awaiting Malik's decision on RSI-Threshold Signal Override. The 0/8 ACCUMULATE performance strongly reinforces the need for RSI-based signal downgrades during selloffs.
+
 ## v1.4 — 2026-07-21 — MAJOR PRICE CORRECTIONS; CS 76.08 (delta -0.45 WIDENED); Jul 13 RESCORED 6/14→3/14 (21.4%); Jul 14 batch 4/15=26.7%; AS drops to 40.19%; chip rally day 2
 
 - **LARGEST PRICE CORRECTIONS IN RUN HISTORY.** Jul 20 report prices were captured ~1hr before close and diverged sharply during final-hour selloff. LRCX $374→$306.90 (-18% error — LARGEST EVER), AMAT $597→$560.81 (-6.5%), GOOGL $357→$346.77 (-2.9%), ASML $1,805→~$1,750 (-3%), VIX 15.34→18.65 (+21.6%). The Jul 20 "equipment supercycle validated" narrative (ASML +3.4%, AMAT +2.7%, LRCX +6.8%) was entirely wrong — actual: ASML flat, AMAT -3.6%, LRCX -12.4%.
