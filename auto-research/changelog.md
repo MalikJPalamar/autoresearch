@@ -1,5 +1,26 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-22 — SELL-THE-EVENT WEEK; CS 75.92 (delta -0.61 WIDENED); Jul 15 batch 3/13=23.1% WORST SINCE JUL 14; AS drops to 39.81%; 6 signal changes; LMT/RTX earnings TOMORROW
+
+- **Jul 15 batch scored 3/13 = 23.1% (worst since Jul 14's 26.7%).** CORRECT: NVDA +1.9% (ACCUM), TSM -0.84% (WATCH neutral), RTX +3.6% (ACCUM). INCORRECT: AMD -8.1% (ACCUM), AMAT -8.3% (ACCUM), LRCX -9.3% (ACCUM), GOOGL -3.6% (ACCUM), META -3.0% (LONG), NRG -7.8% (ACCUM), PLTR -6.7% (ACCUM), BAH -5.2% (CONTRA), VST -2.2% (CONTRA), SMR +3.3% (AVOID). NULL: MSFT +0.99%, ASML -0.74%, CEG +0.2%, OKLO -0.6%, LMT -0.8%.
+- **Pattern identified:** Broad sector rotation week of Jul 15. AMD Advancing AI event and GOOGL/META Q2 earnings acted as sell-the-news / sell-the-event triggers. Defense AI (PLTR, BAH) and energy (NRG, VST) continued multi-week declines. Only NVDA and RTX showed decisive bullish follow-through. Portfolio systematically biased toward bullish signals during consolidation/rotation weeks.
+- **AS 40.19% → 39.81% (212/533 decisive).** +3 correct, +10 incorrect. Falls below 40% again. AS now 39.81% — back to territory last seen Jul 7 (pre-Jul 8 strong batch). Running 3-session decline: 40.19 → 39.81.
+- **CS 76.08 → 75.92. Delta from baseline (76.53) = −0.61, WIDEST NEGATIVE DELTA in 5 weeks.** CS trajectory: 76.60 → 76.49 → 76.48 → 76.08 → 75.92. Four consecutive declines.
+- **Signal changes (6):**
+  - AMD ACCUMULATE → **WATCH**: Sell-the-event -7.28% after +7.9% Advancing AI rally. Needs base $490–520.
+  - TSM ACCUMULATE → **WATCH**: RSI 71.3 technically overbought; $417 below both SMA50 $448 and SMA200 $431.
+  - LMT ACCUMULATE → **WATCH**: Q2 earnings TOMORROW Jul 23 (binary risk event).
+  - RTX ACCUMULATE → **WATCH**: Q2 earnings TOMORROW Jul 23 (binary risk event).
+  - MSFT CONTRARIAN → **ACCUMULATE**: MACD -0.09 near positive crossover; SMA50 $385 now support; AMD-MSFT Instinct GPU deal positive.
+  - NRG ACCUMULATE → **CONTRARIAN**: Down 12.2% from $147 highs; deeper compression warrants downgrade; thesis intact long-term.
+  - New distribution: 1 LONG (META), 4 ACCUM (NVDA, MSFT, ASML, PLTR), 4 CONTRA (VST, CEG, NRG, BAH), 7 WATCH (AMD, GOOGL, TSM, AMAT, LRCX, LMT, RTX), 1 SPEC (OKLO), 1 AVOID (SMR).
+- **GOOGL Q2 earnings (post Jul 21 close):** Stock ~flat on Jul 22 suggesting in-line results. No decisive direction signal yet. WATCH maintained.
+- **META Q2 earnings (post Jul 21 close, corrected from prior Jul 29 estimate):** Stock ~flat suggesting in-line results. LONG maintained — AI ad targeting thesis intact.
+- **AMD Advancing AI event (Jul 22 night):** -7.28% sell-the-event confirms high expectations were priced in. MI350X roadmap impressive but revenue guidance didn't exceed elevated bar.
+- **Macro (Jul 22):** S&P 7,509.20 (+0.89%). Nasdaq 25,837.21 (+1.29%). VIX 17.05 (-8.6%, NORMAL regime). DXY 100.96. 10Y 4.622%. WTI $85.14. Post-earnings relief rally. Chip rally day 3: AMAT +5.57%, LRCX +4.97%, TSM +3.77%, ASML +3.59%.
+- **CRITICAL: LMT and RTX earnings TOMORROW Jul 23.** Both downgraded to WATCH. Pre-earnings rally: LMT +4.0%, RTX +2.66%. Results will set defense sector tone.
+- **Experiment management:** No active experiment. format-008 (Cross-Sector Momentum Divergence Alert) PENDING Malik approval (adds research layer). RSI-Threshold Signal Override PENDING Malik approval (modifies signal classification). Proposed: format-010 (Signal Conviction Tracker — adds conviction score 1–3 to signals table; auto-evolve, no approval needed). **AS declining trend is the primary problem — AS 39.81% is dragging CS. No auto-evolve experiment can fix signal accuracy; requires methodology or classification changes (Malik approval).**
+
 ## v1.4 — 2026-07-21 — MAJOR PRICE CORRECTIONS; CS 76.08 (delta -0.45 WIDENED); Jul 13 RESCORED 6/14→3/14 (21.4%); Jul 14 batch 4/15=26.7%; AS drops to 40.19%; chip rally day 2
 
 - **LARGEST PRICE CORRECTIONS IN RUN HISTORY.** Jul 20 report prices were captured ~1hr before close and diverged sharply during final-hour selloff. LRCX $374→$306.90 (-18% error — LARGEST EVER), AMAT $597→$560.81 (-6.5%), GOOGL $357→$346.77 (-2.9%), ASML $1,805→~$1,750 (-3%), VIX 15.34→18.65 (+21.6%). The Jul 20 "equipment supercycle validated" narrative (ASML +3.4%, AMAT +2.7%, LRCX +6.8%) was entirely wrong — actual: ASML flat, AMAT -3.6%, LRCX -12.4%.
