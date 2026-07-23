@@ -1,6 +1,18 @@
 # Methodology Changelog
 
-## v1.4 — 2026-07-23 — DEFENSE EARNINGS BOOM + GOOGL CAPEX SHOCK; CS 75.88 (delta -0.65, 5th consecutive decline); Jul 16 batch 6/16=37.5%; AS drops to 39.71%; 7 signal changes; META Q2 CORRECTED to Jul 29
+## v1.4 — 2026-07-23 POST-CLOSE VERIFICATION — 2 MAJOR CORRECTIONS, NRG SCORE FLIP
+
+- **Post-close price verification identified 2 major corrections (>3% error), 4 moderate corrections, 1 macro correction.**
+- **GOOGL: Report $319.70 → Actual $347.15 (ERROR: +8.6% MAJOR).** Report captured after-hours/pre-market low following Q2 earnings release. GOOGL dropped ~5% AH to $329.43 on capex shock but recovered during Jul 23 regular session to close -1.38% (not -6.55% as reported). Score unchanged (ACCUMULATE at $371.58 → $347.15 = -6.6%, still INCORRECT; was reported as -14.0% INCORRECT). GOOGL CONTRARIAN signal partially invalidated: at $347 RSI is ~35-38 (not ~25 deeply oversold as stated). Above SMA200 (~$340), not below both MAs. Signal still directionally valid but weaker.
+- **NRG: Report $129.11 → Actual $139.95 (ERROR: +8.4% MAJOR).** NRG traded to intraday low $131.82 but recovered to close $139.95. **Score FLIPS INCORRECT → CORRECT.** Jul 16 ACCUMULATE at $137.90 → actual $139.95 = +1.49% (bullish, matching signal).
+- **VIX: Report 17.75 (+4.1%) → Actual 16.64 (-2.4%).** Intraday spike reversed. VIX declined, not rose.
+- **Other corrections:** META $616→$627.17 (+1.8%), VST $162.33→$166.00 (+2.3%), LMT $560→$566.84 (+1.2%), ASML $1,769→$1,800 (+1.8%). No score changes.
+- **Jul 16 batch corrected: 6/16 → 7/16 = 43.8%.** NRG INCORRECT → CORRECT. Batch was below average (37.5%) but is now at average (43.8%).
+- **AS corrected: 39.71% → 39.89% (219/549).** +0.18pp. Still below 40% threshold but narrowing.
+- **CS corrected: 75.88 → 75.96.** Delta from baseline -0.65 → -0.57 (narrowed).
+- **AMAT (~$530.34) and LRCX (~$320) unable to verify** — Jul 23 closing prices not available in post-close sources. Flagged for next report.
+
+## v1.4 — 2026-07-23 — DEFENSE EARNINGS BOOM + GOOGL CAPEX SHOCK; CS 75.96 corrected (delta -0.57); Jul 16 batch 7/16=43.8% corrected; AS 39.89% corrected; 7 signal changes; META Q2 CORRECTED to Jul 29
 
 - **Jul 16 batch scored 6/16 = 37.5% (below rolling average).** CORRECT: TSM +4.5% (ACCUM), VST +5.5% (CONTRA), CEG +6.5% (CONTRA), BAH +5.6% (ACCUM), LMT +9.3% (ACCUM), RTX +8.2% (ACCUM). INCORRECT: AMD +5.3% (WATCH — large move), GOOGL −14.0% (ACCUM), MSFT −2.7% (ACCUM), META −8.0% (LONG), AMAT −17.2% (ACCUM), LRCX −21.9% (ACCUM), OKLO −2.6% (SPEC), NRG −6.4% (ACCUM), SMR +13.3% (AVOID), PLTR −3.8% (ACCUM). NULL: NVDA +0.4%, ASML −0.9%.
 - **Pattern identified:** Massive sector bifurcation. Defense primes (LMT +9.3%, RTX +8.2%, BAH +5.6%) and nuclear CONTRARIAN (VST +5.5%, CEG +6.5%) carried all correct signals. Equipment ACCUMULATE (AMAT −17.2%, LRCX −21.9%) and hyperscaler signals (GOOGL −14.0%, META −8.0%) were catastrophic failures. The Jul 17 semiconductor selloff obliterated ACCUMULATE calls made at Jul 16 elevated prices. LONG signals continue 0% hit rate.
