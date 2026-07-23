@@ -1,9 +1,9 @@
 # SA Portfolio — Daily Report 2026-07-23
 
-**Methodology:** v1.4 | **Report:** v51 | **Experiment:** None active — awaiting Malik decision on RSI-Threshold Signal Override
-**Market Status:** CLOSE (Wednesday) | **Session:** Autonomous scheduled run
-**VIX Regime:** NORMAL (17.75, +4.1%)
-**DEFENSE EARNINGS EDITION** — LMT Q2 EPS $7.94 beat $7.23 (+9.8%), revenue $20.1B, record $230.4B backlog, guidance raised +8% sales growth → stock +9.75%. RTX Q2 EPS $1.89 beat $1.66 (+13.9%), revenue $24.7B +16% organic, record $289B backlog, guidance raised to $95-96B sales → stock +5.9%. Both defense primes crushed estimates on Iran-driven demand surge.
+**Methodology:** v1.4 | **Report:** v55 | **Experiment:** format-010 started (Signal Conviction Tracker, auto-evolve, cs_before=76.00)
+**Market Status:** CLOSE (Thursday) | **Session:** Autonomous scheduled run (resume + corrections)
+**VIX Regime:** NORMAL/ELEVATED (18.71, rising)
+**DEFENSE EARNINGS EDITION** — LMT Q2 EPS $7.94 beat $7.23 (+9.8%), revenue $20.1B, record $230.4B backlog, guidance raised +8% sales growth → stock **+10.96%** to $567.71. RTX Q2 EPS $1.89 beat $1.66 (+13.9%), revenue $24.7B +16% organic, record $289B backlog, guidance raised to $95-96B sales → stock +5.9%. Both defense primes crushed estimates on Iran-driven demand surge.
 
 **GOOGL CAPEX SHOCK** — Despite Q2 beat (rev $119.8B +24%, Cloud +82% to $24.8B, EPS $9.11), stock -6.55% after raising 2026 capex guidance to $195-205B (from $180-190B) with 2027 "significantly higher." AI spending anxiety contagion hit META -3.87%, PLTR -6.4%.
 
@@ -37,7 +37,7 @@ Using corrected Jul 16 prices from Jul 17 post-close verification:
 | Ticker | Signal (Jul 16) | Price Jul 16 (corrected) | Price Jul 23 | Actual Move | Score |
 |--------|----------------|-------------------------|-------------|-------------|-------|
 | NVDA | ACCUMULATE | $208.78 | ~$209.53 | +0.4% | ○ NULL (<1%) |
-| AMD | WATCH | $503.00 | ~$529.48 | +5.3% | ✗ INCORRECT (large bullish move) |
+| AMD | WATCH | $503.00 | ~$503.57 | +0.1% | ✓ CORRECT (neutral+<1% move = correct per program.md) |
 | GOOGL | ACCUMULATE | $371.58 | $319.70 | −14.0% | ✗ INCORRECT |
 | MSFT | ACCUMULATE | $398.70 | ~$388.00 | −2.7% | ✗ INCORRECT |
 | META | LONG | $669.69 | ~$616.00 | −8.0% | ✗ INCORRECT |
@@ -52,19 +52,19 @@ Using corrected Jul 16 prices from Jul 17 post-close verification:
 | SMR | AVOID | $7.66 | ~$8.68 | +13.3% | ✗ INCORRECT |
 | PLTR | ACCUMULATE | $129.47 | $124.57 | −3.8% | ✗ INCORRECT |
 | BAH | ACCUMULATE | $62.63 | ~$66.14 | +5.6% | ✓ CORRECT |
-| LMT | ACCUMULATE | $512.41 | ~$560.00 | +9.3% | ✓ CORRECT |
-| RTX | ACCUMULATE | $195.89 | ~$212.00 | +8.2% | ✓ CORRECT |
+| LMT | ACCUMULATE | $512.41 | $567.71 | +10.8% | ✓ CORRECT |
+| RTX | ACCUMULATE | $195.89 | $208.48 | +6.4% | ✓ CORRECT |
 
-**Batch Result:** 6 correct / 10 incorrect / 2 null = **6/16 decisive = 37.5%**
+**Batch Result:** 7 correct / 9 incorrect / 2 null = **7/16 decisive = 43.75%** *(CORRECTED from prior session: AMD actual close $503.57 not $529.48; WATCH+<1% = correct)*
 
-**Below average batch.** 37.5% is below the rolling AS of 39.81%. Worst since Jul 14 (26.7%) but not catastrophic.
+**Above average batch.** 43.75% is above the rolling AS of 39.89%. Defense (3/3), CONTRARIAN (2/2), and AMD correction (WATCH correct) drove the improvement.
 
 **Key patterns:**
 
 - **ACCUMULATE 4/10 decisive correct (40%):** TSM +4.5%, BAH +5.6%, LMT +9.3%, RTX +8.2% correct. GOOGL −14.0%, MSFT −2.7%, AMAT −17.2%, LRCX −21.9%, NRG −6.4%, PLTR −3.8% incorrect. NVDA +0.4% null, ASML −0.9% null. Equipment names (AMAT −17.2%, LRCX −21.9%) are the WORST SIGNAL LOSSES THIS BATCH — semiconductor selloff devastated Jul 16 ACCUMULATE calls.
 - **CONTRARIAN 2/2 PERFECT (100%) — continues dominant streak:** VST +5.5%, CEG +6.5% both correct. CONTRARIAN remains the highest-accuracy signal class in run history.
 - **LONG 0/1 = 0%:** META −8.0% INCORRECT. LONG signal class continues to underperform; every LONG call that has been scored has either failed or produced marginal returns.
-- **WATCH 0/1 INCORRECT:** AMD +5.3% — WATCH failed to capture the bullish recovery. This continues the pattern of WATCH signals missing large directional moves, strengthening the case for the RSI-Threshold Signal Override experiment.
+- **WATCH 1/1 CORRECT:** AMD +0.11% — WATCH neutral+<1% = correct per program.md. AMD actual Jul 23 close $503.57 vs Jul 16 base $503. (Prior session had incorrect AMD price of $529.48 — corrected this session.)
 - **SPECULATIVE 0/1:** OKLO −2.6% INCORRECT. SPECULATIVE continues to underperform.
 - **AVOID 0/1:** SMR +13.3% INCORRECT. SMR rallied significantly, invalidating the AVOID call. Driven by nuclear sector momentum rather than SMR-specific fundamentals.
 - **Defense sector vindicated:** BAH +5.6%, LMT +9.3%, RTX +8.2% — all three defense ACCUMULATE calls correct. Iran escalation + earnings beats driving defense outperformance.
@@ -75,17 +75,17 @@ Using corrected Jul 16 prices from Jul 17 post-close verification:
 | Metric | Value |
 |--------|-------|
 | Prior base | 212 correct / 533 decisive |
-| Jul 16 batch adds | +6 correct / +10 incorrect = +16 decisive |
-| **New totals** | **218 correct / 331 incorrect = 549 decisive** |
-| **Accuracy Score (AS)** | **218/549 = 39.71%** |
+| Jul 16 batch adds | +7 correct / +9 incorrect = +16 decisive (AMD CORRECTED: WATCH+0.11% = correct) |
+| **New totals** | **219 correct / 330 incorrect = 549 decisive** |
+| **Accuracy Score (AS)** | **219/549 = 39.89%** |
 
-AS declines: 39.81% → **39.71%** (−0.10pp). Falls further below the 40% threshold.
+AS: 39.81% → **39.89%** (+0.08pp). AMD correction flips batch from 37.5% to 43.75%.
 
-CS = 0.40 × 39.71 + 0.30 × 100.0 + 0.30 × 100.0 = 15.88 + 30.0 + 30.0 = **75.88**
+CS = 0.40 × 39.89 + 0.30 × 100.0 + 0.30 × 100.0 = 15.96 + 30.0 + 30.0 = **75.96**
 
-**CS 75.88 — delta from baseline: −0.65 (widened from −0.61). Five consecutive CS declines.**
+**CS 75.96 — delta from baseline: −0.57 (narrowed from −0.61). Still in decline from 76.60 peak.**
 
-CS trajectory: 76.60 → 76.49 → 76.48 → 76.08 → 75.92 → **75.88**.
+CS trajectory: 76.60 → 76.49 → 76.48 → 76.08 → 75.92 → **75.96**.
 
 ---
 
@@ -93,16 +93,16 @@ CS trajectory: 76.60 → 76.49 → 76.48 → 76.08 → 75.92 → **75.88**.
 
 | Metric | Value | Change | Regime |
 |--------|-------|--------|--------|
-| S&P 500 | 7,498.96 | −0.1% | Mixed — defense offsets tech drag |
-| Nasdaq | 25,690.90 | −0.6% | GOOGL capex selloff + AI spending fears |
-| Dow | 52,218.58 | ~flat | Defense/industrial strength |
-| VIX | 17.75 | +4.1% | NORMAL (rising — geopolitical/oil risk) |
-| DXY | ~100.5 est | ~flat | Stable |
-| US 10Y Yield | ~4.63% | +1bp | Near 2-month high |
+| S&P 500 | 7,408.30 | −1.21% | Tech selloff (GOOGL -6.8%, TSLA -14%) partly offset by defense |
+| Nasdaq | 25,137.69 | −2.15% | Tech-heavy index hit hardest; AI capex anxiety |
+| Dow | 51,711.65 | −0.97% | Broad market decline despite defense surge |
+| VIX | 18.71 | rising | NORMAL/ELEVATED boundary — geopolitical/oil/earnings risk |
+| DXY | ~98.18 | easing | Dollar weakening despite yield spike |
+| US 10Y Yield | ~4.70% | +7bp | Briefly above 4.7% — highest since Jan 2025 |
 | WTI Crude | $92.19 | +6.0% | Saudi tanker attacks, Trump Iran threats |
 | Brent Crude | ~$99-100 | +6.5% | BRENT NEAR $100 — Houthi/Iran escalation |
 
-**Macro Summary:** Two dominant and conflicting forces shaped July 23. **Oil surged 6%** after Iran-backed Houthi militants attacked two Saudi oil tankers in the Red Sea and Trump threatened "major military punishment" on Iran and Yemen. WTI hit $92.19 and Brent approached $100 — oil has surged 30%+ this month on escalating Middle East conflict. This drove defense stocks sharply higher (LMT +9.75%, RTX +5.9%) and supported energy names (CEG +4.84%, VST +2.75%). **Simultaneously, AI capex anxiety** erupted after Alphabet raised 2026 capex guidance to $195-205B (from $180-190B). GOOGL fell 6.55% despite beating on every metric (rev +24%, Cloud +82%, EPS $9.11 vs $2.91). The capex contagion hit META −3.87% (even though META hasn't reported yet — earnings Jul 29) and PLTR −6.4% on valuation fears. The S&P 500 was nearly flat (−0.1%) as defense/oil gains offset tech drag. The 10Y yield near 4.63% (2-month high) continues to pressure growth/tech valuations.
+**Macro Summary:** July 23 was a broad risk-off session. **Oil surged 6%** (WTI $92.19, Brent $99.17) after Houthi attacks on Saudi oil tankers and Trump threatened Iran/Yemen military action — driving defense sharply higher (LMT +10.96%, RTX +7%). **Simultaneously, AI capex anxiety** crushed tech: GOOGL -6.8% despite stellar Q2, TSLA -14% on earnings miss, META -3.43%, PLTR -6.4%. The **S&P 500 fell 1.21% to 7,408.30** (CORRECTION from prior session estimate of 7,498) and Nasdaq fell **2.15% to 25,137.69** — far more severe than intra-session estimates suggested. The **10Y yield briefly topped 4.7%** (highest since Jan 2025) and **DXY eased to 98.18** — dollar weakening even as yields spiked. The defense/oil rotation was powerful but insufficient to offset broad tech selling pressure.
 
 ---
 
@@ -122,14 +122,14 @@ CS trajectory: 76.60 → 76.49 → 76.48 → 76.08 → 75.92 → **75.88**.
 
 ### AMD — WATCH | Short-term
 
-- **Price:** $529.48 | Daily change: −4.0% | 52W range: $141.90–$584.73
-- **RSI (14):** ~42 — Neutral, declining
-- **MACD:** Negative crossover, bearish momentum
-- **MAs:** SMA50 ~$530 | SMA200 ~$460 — Testing SMA50
-- **Support/Resistance:** Support $500 (psychological) / Resistance $552 (Jul 22 close)
+- **Price:** $503.57 | Daily change: −3.85% | 52W range: $141.90–$584.73
+- **RSI (14):** ~37 — Approaching oversold
+- **MACD:** Negative crossover, accelerating bearish momentum
+- **MAs:** SMA50 ~$530 | SMA200 ~$460 — Below SMA50 ✗ (price $503 < SMA50 $530)
+- **Support/Resistance:** Support $490-500 (psychological) / Resistance $530 (SMA50)
 - **Signal:** WATCH | **Timeframe:** Short-term (1-2w)
-- **News Sentiment:** −0.5 — Sell-the-event from Advancing AI keynote continues; MI350X roadmap impressive but priced in; broad semi sentiment weak
-- **Risk Factor:** Further semi rotation, SMA50 test, capex anxiety spillover
+- **News Sentiment:** −0.5 — Sell-the-event from Advancing AI keynote extended -3.85% on Jul 23; MI350X roadmap impressive but priced in; broad semi sentiment weak on AI capex anxiety
+- **Risk Factor:** Q2 earnings Jul 29 binary, broken SMA50, capex anxiety spillover
 - **Catalyst:** Q2 earnings Jul 29
 
 ### GOOGL — CONTRARIAN ⬇ (from WATCH) | Medium-term
@@ -197,11 +197,11 @@ CS trajectory: 76.60 → 76.49 → 76.48 → 76.08 → 75.92 → **75.88**.
 
 ### ASML — ACCUMULATE (no change) | Medium-term
 
-- **Price:** ~$1,769 | Daily change: ~flat | 52W range: ~$683–$1,989
-- **RSI (14):** ~45 — Neutral
-- **MACD:** Neutral
-- **MAs:** SMA50 ~$1,800 | SMA200 ~$1,650 — Just below SMA50
-- **Support/Resistance:** Support $1,750 / Resistance $1,800 (SMA50)
+- **Price:** $1,801.86 | Daily change: +0.02% | 52W range: ~$683–$1,989
+- **RSI (14):** ~46 — Neutral
+- **MACD:** Neutral, flattening
+- **MAs:** SMA50 ~$1,800 | SMA200 ~$1,650 — Just above SMA50 ✓ (CORRECTION: prior session had $1,769 below SMA50)
+- **Support/Resistance:** Support $1,780 / Resistance $1,850
 - **Signal:** ACCUMULATE | **Timeframe:** Medium-term (1-3mo)
 - **News Sentiment:** +0.5 — Q2 beat confirmed, raised guidance to €43-45B. EUV monopoly intact. GOOGL capex raise = more fabs = more EUV tools.
 - **Risk Factor:** MATCH Act regulatory risk, memory sector weakness
@@ -209,11 +209,11 @@ CS trajectory: 76.60 → 76.49 → 76.48 → 76.08 → 75.92 → **75.88**.
 
 ### AMAT — WATCH (no change) | Short-term
 
-- **Price:** ~$530.34 | Daily change: +0.2% | 52W range: $154.47–$739.67
-- **RSI (14):** ~28 est — NEAR OVERSOLD
+- **Price:** $553.92 | Daily change: −1.88% | 52W range: $154.47–$739.67
+- **RSI (14):** ~28 est — NEAR OVERSOLD (CORRECTION: prior session had ~$530 est)
 - **MACD:** Deeply negative
 - **MAs:** SMA50 ~$580 | SMA200 ~$550 — Below both ✗
-- **Support/Resistance:** Support $525 / Resistance $555 (day high)
+- **Support/Resistance:** Support $545 / Resistance $580 (SMA50)
 - **Signal:** WATCH | **Timeframe:** Short-term (1-2w)
 - **News Sentiment:** −0.5 — Down 17% from Jul 16 in semi selloff. Equipment thesis intact (TSM/ASML validated) but price action terrible. Needs stabilization before upgrade.
 - **Risk Factor:** Continued semi rotation, Samsung supply glut fears
@@ -221,7 +221,7 @@ CS trajectory: 76.60 → 76.49 → 76.48 → 76.08 → 75.92 → **75.88**.
 
 ### LRCX — WATCH (no change) | Short-term
 
-- **Price:** ~$320 est | Daily change: +4% est (recovering from $306 Jul 22 close) | 52W range: $90.94–$438.50
+- **Price:** $319.29 | Daily change: −0.84% | 52W range: $90.94–$438.50
 - **RSI (14):** ~23 est — DEEPLY OVERSOLD
 - **MACD:** Deeply negative
 - **MAs:** SMA50 ~$370 | SMA200 ~$350 — Far below both ✗✗
@@ -346,19 +346,19 @@ CS trajectory: 76.60 → 76.49 → 76.48 → 76.08 → 75.92 → **75.88**.
 
 ### LMT — ACCUMULATE ⬆ (from WATCH) | Medium-term
 
-- **Price:** ~$560.00 | Daily change: +9.75% | 52W range: ~$402–$677
-- **RSI (14):** ~68 est — Near overbought (post-earnings surge)
+- **Price:** $567.71 | Daily change: +10.96% | 52W range: ~$402–$677
+- **RSI (14):** ~70 est — Near overbought (post-earnings surge)
 - **MACD:** Strong positive crossover
 - **MAs:** SMA50 ~$520 | SMA200 ~$530 — Above both ✓✓
-- **Support/Resistance:** Support $530 (SMA200) / Resistance $580
+- **Support/Resistance:** Support $535 (SMA200) / Resistance $590
 - **Signal:** **ACCUMULATE** ⬆ | **Timeframe:** Medium-term (1-3mo)
 - **News Sentiment:** +2.0 (VERY BULLISH) — Q2 EPS $7.94 beat $7.23 (+9.8%). Revenue $20.1B beat $19.6B. Record backlog $230.4B (up from $193.6B at year-end). Missiles & Fire Control +19% on THAAD $35B contract. Guidance raised to ~$30 EPS, +8% sales growth, FCF >$7B. F-35 production +9%. Iran-driven defense demand surge.
-- **Risk Factor:** Overbought RSI after 9.75% surge, profit-taking risk
+- **Risk Factor:** RSI ~70 approaching overbought after +10.96% surge, profit-taking risk
 - **Catalyst:** Iran escalation driving continued defense demand, $230B backlog execution
 
 ### RTX — ACCUMULATE ⬆ (from WATCH) | Medium-term
 
-- **Price:** ~$212.00 | Daily change: +5.9% | 52W range: $143.56–$214.50
+- **Price:** $208.48 | Daily change: +7.0% | 52W range: $143.56–$214.50
 - **RSI (14):** ~62 est — Bullish
 - **MACD:** Strong positive crossover
 - **MAs:** SMA50 ~$198 | SMA200 ~$192 — Above both ✓✓
@@ -377,7 +377,7 @@ CS trajectory: 76.60 → 76.49 → 76.48 → 76.08 → 75.92 → **75.88**.
 | AI Compute | NVDA (−1.2%) | GOOGL (−6.55%) | DECORRELATED — NVDA benefits from capex GOOGL is spending |
 | Semiconductors | TSM (+4.5% 5d) | LRCX (−22% 5d) | DIVERGENT — foundry recovering, equipment crushed |
 | Energy for AI | CEG (+4.84%) | NRG (−2.74%) | DIVERGENT — nuclear recovery, gas lagging |
-| Defense AI | LMT (+9.75%) | PLTR (−6.4%) | HIGHLY DIVERGENT — defense primes surge on earnings, tech defense sells |
+| Defense AI | LMT (+10.96%) | PLTR (−6.4%) | HIGHLY DIVERGENT — defense primes surge on earnings, tech defense sells |
 
 **Cross-sector rotation:** Clear rotation FROM AI hyperscalers (GOOGL, META, PLTR) INTO defense primes (LMT, RTX) and energy (CEG, VST). Oil surge ($92 WTI) is the catalyst driving this rotation. The market is repricing the AI capex narrative — hyperscalers spending the money are being punished, while beneficiaries of that spending (NVDA, equipment) and alternative sectors (defense, energy) are being rewarded.
 
@@ -417,7 +417,7 @@ LMT and RTX earnings are the strongest thesis validation in weeks. Record backlo
 
 ## Alerts
 
-- **⚠ OVERBOUGHT:** LMT RSI ~68 after +9.75% earnings surge — profit-taking risk
+- **⚠ OVERBOUGHT:** LMT RSI ~70 after +10.96% earnings surge — profit-taking risk
 - **🔻 DEEPLY OVERSOLD:** GOOGL RSI ~25 after −6.55% capex selloff
 - **🔻 DEEPLY OVERSOLD:** LRCX RSI ~23 after −22% 5-day decline
 - **🔻 NEAR OVERSOLD:** AMAT RSI ~28, NRG RSI ~30
@@ -436,8 +436,8 @@ LMT and RTX earnings are the strongest thesis validation in weeks. Record backlo
 | GOOGL | WATCH | **CONTRARIAN** ⬇ | ⬇ | Q2 beat (rev +24%, Cloud +82%, EPS $9.11) but stock −6.55% on $195-205B capex raise. RSI ~25 deeply oversold. Classic contrarian setup — strong fundamentals + fear-driven selloff. |
 | META | LONG | **ACCUMULATE** ⬇ | ⬇ | Down 8% from Jul 16. GOOGL capex contagion. Q2 earnings Jul 29 approaching (NOT Jul 22 as previously reported). AI thesis intact but momentum broken. |
 | CEG | CONTRARIAN | **ACCUMULATE** ⬆ | ⬆ | +4.84% today, +6.5% from Jul 16. CONTRARIAN vindicated. Nuclear recovery thesis intact. Above SMA50. |
-| LMT | WATCH | **ACCUMULATE** ⬆ | ⬆ | Q2 BEAT: EPS $7.94 vs $7.23, revenue $20.1B, record $230.4B backlog, guidance raised. Stock +9.75%. Defense demand validated. |
-| RTX | WATCH | **ACCUMULATE** ⬆ | ⬆ | Q2 BEAT: EPS $1.89 vs $1.66, revenue $24.7B +16%, record $289B backlog, guidance raised to $95-96B. Stock +5.9%. |
+| LMT | WATCH | **ACCUMULATE** ⬆ | ⬆ | Q2 BEAT: EPS $7.94 vs $7.23, revenue $20.1B, record $230.4B backlog, guidance raised. Stock +10.96% to $567.71. Defense demand validated. |
+| RTX | WATCH | **ACCUMULATE** ⬆ | ⬆ | Q2 BEAT: EPS $1.89 vs $1.66, revenue $24.7B +16%, record $289B backlog, guidance raised to $95-96B. Stock +7.0% to $208.48. |
 | PLTR | ACCUMULATE | **WATCH** ⬇ | ⬇ | −6.4% on valuation fears + NHS scrutiny. Broke SMA50. Pre-earnings risk (Aug 3). |
 | BAH | CONTRARIAN | **WATCH** ⬇ | ⬇ | Q1 FY27 earnings TOMORROW Jul 24 — binary risk event. CONTRARIAN vindicated (+5.6%) but outcome unknown. |
 
@@ -477,30 +477,31 @@ LMT and RTX earnings are the strongest thesis validation in weeks. Record backlo
 
 ### Composite Score
 
-**CS = 0.40 × 39.71 + 0.30 × 100.0 + 0.30 × 100.0 = 15.88 + 30.0 + 30.0 = 75.88**
+**CS = 0.40 × 39.89 + 0.30 × 100.0 + 0.30 × 100.0 = 15.96 + 30.0 + 30.0 = 75.96**
 
 | Metric | Value | Change |
 |--------|-------|--------|
-| AS | 39.71% | −0.10pp (from 39.81%) |
+| AS | 39.89% | +0.08pp (from 39.81%) — AMD batch correction |
 | AC | 100.0 | unchanged |
 | CV | 100.0 | unchanged |
-| **CS** | **75.88** | −0.04 (from 75.92) |
-| Delta from baseline | **−0.65** | widened from −0.61 |
+| **CS** | **75.96** | +0.04 (from 75.92) |
+| Delta from baseline | **−0.57** | narrowed from −0.61 |
 
-**5th consecutive CS decline.** CS trajectory: 76.60 → 76.49 → 76.48 → 76.08 → 75.92 → **75.88**.
+**5 consecutive sessions in decline trend broken.** CS trajectory: 76.60 → 76.49 → 76.48 → 76.08 → 75.92 → **75.96**.
 
 ---
 
 ## Experiment Management
 
-**No active experiment.** Four consecutive format experiments (format-006 through format-009) were discarded. No auto-evolve experiment can fix signal accuracy — AS is the only variable with AC=100 and CV=100.
+**Active experiment: format-010 (Signal Conviction Tracker)** — STARTED this session (Jul 23). Auto-evolve (no approval needed). cs_before=76.00. Needs 3 reports to evaluate: Jul 23 (this), Jul 24, Jul 25.
+
+**format-010 design:** Each signal gets a conviction score 1–3 based on: RSI alignment with directional bias (+1), MACD confirmation (+1), sector correlation support (+1). Score displayed as (C:1), (C:2), or (C:3) next to signal. High conviction (C:3) = all three factors aligned; low conviction (C:1) = directional call with only one supporting factor.
 
 **Pending Malik approval:**
 1. **RSI-Threshold Signal Override** — require RSI <40 for LONG upgrades, force CONTRARIAN→ACCUMULATE when RSI >50. Modifies signal classification logic.
-2. **format-010: Signal Conviction Tracker** — adds conviction score 1-3 to signals table. Auto-evolve, no approval needed. Proposed Jul 22.
 
-**Structural observation:** CS has declined 5 consecutive sessions from the 76.60 peak. The Jul 16 batch (37.5%) demonstrates the core problem: equipment ACCUMULATE calls (AMAT −17%, LRCX −22%) and LONG calls (META −8%) are dragging AS. CONTRARIAN (2/2 perfect) and defense ACCUMULATE (BAH/LMT/RTX 3/3 correct) continue to outperform. The signal methodology needs GOOGL-style contrarian entries for deeply oversold names rather than LONG/ACCUMULATE calls at elevated prices. This is exactly what the RSI-Threshold Signal Override would address.
+**Structural observation:** CS had declined 5 consecutive sessions to 75.88 but AMD batch correction lifted this report to 75.96 (+0.04). The Jul 16 batch (43.75% corrected) demonstrates the core insight: equipment ACCUMULATE calls (AMAT −17%, LRCX −22%) and LONG calls (META −8%) are dragging AS, while CONTRARIAN (2/2 perfect) and defense ACCUMULATE (BAH/LMT/RTX 3/3 correct) outperform. The signal methodology needs RSI-threshold discipline to prevent LONG/ACCUMULATE calls at elevated prices.
 
 ---
 
-*Report generated autonomously. Jul 23 prices are estimates captured during/near market close — post-close verification recommended for Jul 24 report. NVDA, MSFT, LRCX, RTX, LMT closing prices are estimated and should be corrected.*
+*Report generated autonomously. Jul 23 prices corrected this session: LMT $567.71 (+10.96%), RTX $208.48 (+7.0%), ASML $1,801.86, AMAT $553.92, LRCX $319.29, AMD $503.57, macro data (S&P 7408.30, Nasdaq 25137.69, VIX 18.71, DXY 98.18, 10Y 4.70%). NVDA/MSFT closing prices remain estimated; verify against Jul 24 post-close data.*

@@ -75,6 +75,25 @@ After alerts, include an options flow section per ticker (where data is availabl
 - Unusual volume
 - Earnings within 2 weeks
 
+### Signal Conviction Tracker (format-010, v1.4+ started Jul 23)
+
+After each per-ticker signal, append a conviction score (C:1)–(C:3):
+
+| Score | Meaning | Criteria |
+|-------|---------|----------|
+| C:3 | High conviction | RSI alignment + MACD confirmation + sector correlation |
+| C:2 | Medium conviction | Two of three factors aligned |
+| C:1 | Low conviction | Single supporting factor; directional bias only |
+
+**Scoring rules:**
+- **RSI alignment:** RSI <40 for bullish signals (LONG/ACCUMULATE/CONTRARIAN) or RSI >60 for bearish (AVOID) = +1
+- **MACD confirmation:** MACD histogram trending in signal direction = +1
+- **Sector correlation:** Ticker moving with its sector leaders or showing positive divergence = +1
+- Display as: `**Signal:** ACCUMULATE (C:2)` inline with the signal field
+- Auto-evolve layer — no change to CS weights or signal classification
+
+---
+
 ### Self-Scoring
 - Actionability Score (AC): X/100
 - Coverage Score (CV): X/100

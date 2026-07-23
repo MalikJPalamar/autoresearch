@@ -1,40 +1,44 @@
 # Methodology Changelog
 
-## v1.4 — 2026-07-23 POST-CLOSE VERIFICATION — 2 MAJOR CORRECTIONS, NRG SCORE FLIP
+## v1.4 — 2026-07-23 DUAL-SESSION CORRECTIONS — 8/16=50% TRUE BATCH; format-010 STARTED; macro corrected
 
-- **Post-close price verification identified 2 major corrections (>3% error), 4 moderate corrections, 1 macro correction.**
-- **GOOGL: Report $319.70 → Actual $347.15 (ERROR: +8.6% MAJOR).** Report captured after-hours/pre-market low following Q2 earnings release. GOOGL dropped ~5% AH to $329.43 on capex shock but recovered during Jul 23 regular session to close -1.38% (not -6.55% as reported). Score unchanged (ACCUMULATE at $371.58 → $347.15 = -6.6%, still INCORRECT; was reported as -14.0% INCORRECT). GOOGL CONTRARIAN signal partially invalidated: at $347 RSI is ~35-38 (not ~25 deeply oversold as stated). Above SMA200 (~$340), not below both MAs. Signal still directionally valid but weaker.
-- **NRG: Report $129.11 → Actual $139.95 (ERROR: +8.4% MAJOR).** NRG traded to intraday low $131.82 but recovered to close $139.95. **Score FLIPS INCORRECT → CORRECT.** Jul 16 ACCUMULATE at $137.90 → actual $139.95 = +1.49% (bullish, matching signal).
-- **VIX: Report 17.75 (+4.1%) → Actual 16.64 (-2.4%).** Intraday spike reversed. VIX declined, not rose.
-- **Other corrections:** META $616→$627.17 (+1.8%), VST $162.33→$166.00 (+2.3%), LMT $560→$566.84 (+1.2%), ASML $1,769→$1,800 (+1.8%). No score changes.
-- **Jul 16 batch corrected: 6/16 → 7/16 = 43.8%.** NRG INCORRECT → CORRECT. Batch was below average (37.5%) but is now at average (43.8%).
-- **AS corrected: 39.71% → 39.89% (219/549).** +0.18pp. Still below 40% threshold but narrowing.
-- **CS corrected: 75.88 → 75.96.** Delta from baseline -0.65 → -0.57 (narrowed).
-- **AMAT (~$530.34) and LRCX (~$320) unable to verify** — Jul 23 closing prices not available in post-close sources. Flagged for next report.
+**Session 1 (post-close verification) corrections:**
+- **GOOGL: $319.70 → $347.15 (AH low recovered, actual close -1.38%).** Score unchanged (ACCUM at $371.58→$347.15=-6.6% INCORRECT; was -14.0%). CONTRARIAN signal weaker at $347 (RSI ~35-38, above SMA200 $340 not below).
+- **NRG: $129.11 → $139.95 (intraday low recovered). SCORE FLIPS INCORRECT→CORRECT.** ACCUM at $137.90→$139.95=+1.49% (Jul 16 batch 6/16→7/16).
+- **VIX: 17.75 → 16.64** (intraday spike reversed). META $616→$627.17, VST $162→$166, LMT $560→$566.84, ASML $1,769→$1,800.
 
-## v1.4 — 2026-07-23 — DEFENSE EARNINGS BOOM + GOOGL CAPEX SHOCK; CS 75.96 corrected (delta -0.57); Jul 16 batch 7/16=43.8% corrected; AS 39.89% corrected; 7 signal changes; META Q2 CORRECTED to Jul 29
+**Session 2 (this session, resume run) corrections:**
+- **AMD: $529.48 → $503.57 (WATCH+0.11%=CORRECT).** Prior session had wrong AMD close. This session's WebSearch confirmed $503.57 (-3.85%). WATCH+<1%=CORRECT per program.md. (Independently also gives 7th correct signal.)
+- **Macro corrected:** S&P 7,408.30 (−1.21%), Nasdaq 25,137.69 (−2.15%), DXY ~98.18, 10Y ~4.70%.
+- **LMT:** $560/+9.75% → $567.71/+10.96% | **RTX:** $212/+5.9% → $208.48/+7.0%
+- **ASML:** $1,769 → $1,801.86 (just above SMA50 ✓) | **AMAT:** ~$530→$553.92/-1.88% | **LRCX:** ~$320est → $319.29/-0.84%
+- **format-010 Signal Conviction Tracker STARTED.** Auto-evolve. cs_before=76.00. methodology.md updated.
 
-- **Jul 16 batch scored 6/16 = 37.5% (below rolling average).** CORRECT: TSM +4.5% (ACCUM), VST +5.5% (CONTRA), CEG +6.5% (CONTRA), BAH +5.6% (ACCUM), LMT +9.3% (ACCUM), RTX +8.2% (ACCUM). INCORRECT: AMD +5.3% (WATCH — large move), GOOGL −14.0% (ACCUM), MSFT −2.7% (ACCUM), META −8.0% (LONG), AMAT −17.2% (ACCUM), LRCX −21.9% (ACCUM), OKLO −2.6% (SPEC), NRG −6.4% (ACCUM), SMR +13.3% (AVOID), PLTR −3.8% (ACCUM). NULL: NVDA +0.4%, ASML −0.9%.
+**Combined result:** TRUE Jul 16 batch = **8/16=50%** (NRG+AMD both CORRECT). DB committed at 7/16=39.89%/CS 75.96 — pending reconciliation in Jul 24 report.
+
+## v1.4 — 2026-07-23 — DEFENSE EARNINGS BOOM + GOOGL CAPEX SHOCK; CS 75.96 (corrected, delta -0.57); Jul 16 batch 7/16=43.75% (committed to DB); AS 39.89% corrected; 7 signal changes; META Q2 CORRECTED to Jul 29
+
+- **Jul 16 batch scored 7/16 = 43.75% (CORRECTED from prior session's 6/16=37.5%).** CORRECT: TSM +4.5% (ACCUM), VST +5.5% (CONTRA), CEG +6.5% (CONTRA), BAH +5.6% (ACCUM), LMT +10.96% (ACCUM), RTX +7.0% (ACCUM), AMD +0.11% (WATCH+<1%=CORRECT). INCORRECT: GOOGL −14.0% (ACCUM), MSFT −2.7% (ACCUM), META −8.0% (LONG), AMAT −17.2% (ACCUM), LRCX −21.9% (ACCUM), OKLO −2.6% (SPEC), NRG −6.4% (ACCUM), SMR +13.3% (AVOID), PLTR −3.8% (ACCUM). NULL: NVDA +0.4%, ASML −0.9%.
 - **Pattern identified:** Massive sector bifurcation. Defense primes (LMT +9.3%, RTX +8.2%, BAH +5.6%) and nuclear CONTRARIAN (VST +5.5%, CEG +6.5%) carried all correct signals. Equipment ACCUMULATE (AMAT −17.2%, LRCX −21.9%) and hyperscaler signals (GOOGL −14.0%, META −8.0%) were catastrophic failures. The Jul 17 semiconductor selloff obliterated ACCUMULATE calls made at Jul 16 elevated prices. LONG signals continue 0% hit rate.
-- **AS 39.81% → 39.71% (218/549 decisive).** +6 correct, +10 incorrect. Drops 0.10pp. AS stuck below 40% again.
-- **CS 75.92 → 75.88. Delta from baseline (76.53) = −0.65. FIFTH CONSECUTIVE CS DECLINE.** CS trajectory: 76.60 → 76.49 → 76.48 → 76.08 → 75.92 → 75.88.
+- **AS 39.81% → 39.89% (219/549 decisive, CORRECTED).** +7 correct, +9 incorrect. Gains 0.08pp. AMD score correction flipped AS positive this session.
+- **CS 75.92 → 75.96 (CORRECTED from 75.88). Delta from baseline (76.53) = −0.57 (narrowed).** CS trajectory: 76.60 → 76.49 → 76.48 → 76.08 → 75.92 → 75.96.
 - **CRITICAL CORRECTION: META Q2 earnings are July 29, NOT July 22 as stated in the Jul 22 report.** META has not yet reported. The Jul 22 report's statement "GOOGL/META ~flat post-Q2 in-line earnings" was incorrect for META — META's flatness on Jul 22 was just normal trading, not an earnings reaction.
-- **LMT Q2 2026 EARNINGS BEAT:** EPS $7.94 vs $7.23 (+9.8%). Revenue $20.1B beat. Record backlog $230.4B (up from $193.6B year-end). Missiles & Fire Control +19% on THAAD $35B contract. Guidance raised: ~$30 EPS, +8% sales growth, FCF >$7B. Stock surged +9.75%.
-- **RTX Q2 2026 EARNINGS BEAT:** EPS $1.89 vs $1.66 (+13.9%). Revenue $24.7B +16% organic. Record backlog $289B (+22% YoY). Raytheon book-to-bill 2.4x. GEM-T Patriot $5B+ orders. Guidance raised to $95-96B sales, EPS $7.10-$7.25. Stock +5.9%.
+- **LMT Q2 2026 EARNINGS BEAT:** EPS $7.94 vs $7.23 (+9.8%). Revenue $20.1B beat. Record backlog $230.4B (up from $193.6B year-end). Missiles & Fire Control +19% on THAAD $35B contract. Guidance raised: ~$30 EPS, +8% sales growth, FCF >$7B. Stock surged +10.96% to $567.71 (CORRECTED from +9.75% to $560 in prior session).
+- **RTX Q2 2026 EARNINGS BEAT:** EPS $1.89 vs $1.66 (+13.9%). Revenue $24.7B +16% organic. Record backlog $289B (+22% YoY). Raytheon book-to-bill 2.4x. GEM-T Patriot $5B+ orders. Guidance raised to $95-96B sales, EPS $7.10-$7.25. Stock +7.0% to $208.48 (CORRECTED from +5.9% to ~$212 in prior session).
 - **GOOGL Q2 CAPEX SHOCK:** Despite stellar Q2 (rev $119.8B +24%, Cloud +82% to $24.8B, EPS $9.11 record, operating margins +2pp to 34%), stock fell −6.55% after raising 2026 capex to $195-205B (from $180-190B) with 2027 "significantly higher." Capex jumped 100% QoQ to $44.92B.
 - **OIL SURGE:** WTI +6% to $92.19, Brent ~$100 (+6.5%). Iran-backed Houthi attacks on Saudi tankers + Trump threatening Iran/Yemen. Oil up 30%+ this month.
 - **Signal changes (7):**
   - LMT WATCH → **ACCUMULATE**: Q2 beat, guidance raised, record backlog, +9.75%. Defense thesis fully validated.
   - RTX WATCH → **ACCUMULATE**: Q2 beat, guidance raised, record backlog, +5.9%. Near 52W high.
-  - GOOGL WATCH → **CONTRARIAN**: Q2 fundamentals stellar but stock −6.55% on capex fears. RSI ~25 deeply oversold. Classic contrarian setup — mirrors TSM and MSFT patterns.
+  - GOOGL WATCH → **CONTRARIAN**: Q2 fundamentals stellar but stock fell on capex fears. RSI approaching oversold (weaker at $347 vs initial $319.70 AH low, post-close correction). Classic contrarian setup — stellar fundamentals + fear-driven selloff mirrors TSM and MSFT patterns.
   - META LONG → **ACCUMULATE**: Down 8% from Jul 16. GOOGL capex contagion. Q2 Jul 29 approaching. AI thesis intact but momentum broken.
   - CEG CONTRARIAN → **ACCUMULATE**: +4.84% today, +6.5% from Jul 16. CONTRARIAN vindicated. Nuclear recovery established.
   - PLTR ACCUMULATE → **WATCH**: −6.4% on valuation fears + NHS scrutiny. Broke SMA50. Pre-earnings risk Aug 3.
   - BAH CONTRARIAN → **WATCH**: Q1 FY27 earnings TOMORROW Jul 24 — binary risk event. CONTRARIAN was vindicated (+5.6%) but outcome unknown.
   - New distribution: 0 LONG, 7 ACCUM (NVDA, MSFT, ASML, META, CEG, LMT, RTX), 3 CONTRA (VST, NRG, GOOGL), 6 WATCH (AMD, TSM, AMAT, LRCX, PLTR, BAH), 1 SPEC (OKLO), 1 AVOID (SMR).
-- **Macro (Jul 23):** S&P 7,498.96 (−0.1%). Nasdaq 25,690.90 (−0.6%). VIX 17.75 (+4.1% NORMAL). DXY ~100.5. 10Y 4.63%. WTI $92.19 (+6%). Brent ~$100.
+- **Macro (Jul 23, CORRECTED):** S&P 7,408.30 (−1.21%). Nasdaq 25,137.69 (−2.15%). Dow 51,711.65 (−0.97%). VIX 18.71 (rising, NORMAL/ELEVATED). DXY ~98.18 (easing). 10Y ~4.70% (briefly above 4.7%, highest since Jan 2025). WTI $92.19 (+6%). Brent ~$99-100 (+6.5%). *(Prior session had S&P 7,498, Nasdaq 25,690, VIX 17.75, DXY ~100.5, 10Y 4.63% — all incorrect)*
 - **BAH earnings TOMORROW Jul 24. MSFT/META/LRCX earnings Jul 29.**
-- **Experiment management:** No active experiment. format-010 (Signal Conviction Tracker) proposed Jul 22 — auto-evolve, no approval needed. RSI-Threshold Signal Override still awaiting Malik approval. AS declining trend is the primary problem — only signal methodology changes can address it.
+- **Experiment management:** format-010 (Signal Conviction Tracker) STARTED this session. Auto-evolve, no approval needed. cs_before=76.00. Methodology.md updated with format-010 section. RSI-Threshold Signal Override still awaiting Malik approval.
 
 ## v1.4 — 2026-07-22 — SELL-THE-EVENT WEEK; CS 75.92 (delta -0.61 WIDENED); Jul 15 batch 3/13=23.1% WORST SINCE JUL 14; AS drops to 39.81%; 6 signal changes; LMT/RTX earnings TOMORROW
 
