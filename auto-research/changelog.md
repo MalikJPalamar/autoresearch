@@ -1,5 +1,21 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-24 — BAH EARNINGS BEAT + OIL PLUNGE; CS 75.93 (delta -0.60); AMD LARGEST PRICE ERROR EVER; Jul 17 batch 7/16=43.75%; format-010 report 1/3
+
+- **MAJOR AMD PRICE CORRECTION: Jul 23 report had $503.57, actual close was $548.70 — $45 error (8.9% LARGEST EVER).** Jul 16 batch AMD WATCH +0.11%→+9.1%: CORRECT→INCORRECT. Batch rescored 7/16→6/16=37.5%. AS corrected 39.89→39.71%. CS corrected 75.96→75.88.
+- **Jul 17 batch scored 7/16 = 43.75% (above rolling average).** CORRECT: NVDA +2.7% (ACCUM), VST +2.6% (CONTRA), CEG +14.1% (CONTRA), OKLO +10.3% (SPEC), BAH +18.3% (ACCUM), LMT +9.6% (ACCUM), RTX +8.0% (ACCUM). INCORRECT: AMD +12.2% (WATCH>3%), GOOGL -8.4% (ACCUM), MSFT -2.8% (ACCUM), META -6.5% (LONG), TSM +5.6% (WATCH>3%), AMAT -5.3% (WATCH>3%), LRCX -12.2% (WATCH>3%), NRG -1.6% (ACCUM), SMR +30.1% (AVOID worst failure ever). NULL: ASML -0.4%, PLTR -0.2%.
+- **Pattern: Defense sweep 3/3 + CONTRARIAN 2/2 perfect carry performance.** BAH +18.3% (earnings beat), LMT +9.6%, RTX +8.0%. LONG 0/1 (META -6.5%). WATCH 0/4 all large moves missed. SMR +30.1% = worst AVOID failure in run history — nuclear sector tailwind overwhelmed bearish thesis.
+- **AS 39.71% (corrected) → 39.82% (225/565 decisive).** +7 correct, +9 incorrect. Jul 17 batch above rolling average lifts AS.
+- **CS 75.88 (corrected) → 75.93. Delta from baseline (76.53) = -0.60.** CS trajectory: 76.60→76.49→76.48→76.08→75.92→75.96→75.88→75.93.
+- **BAH Q1 FY27 EARNINGS BEAT:** Adj EPS $1.81 vs $1.48 consensus (+22.3%). Revenue $2.8B (-4.2% YoY but margin expansion). Stock surged +13.1% to ~$74.51 (range $67.20-$76.20). BAH WATCH → ACCUMULATE.
+- **OIL PLUNGE:** WTI $89.04 (-3.42%), Brent $96.70 (-3.96%) on hopes of US-Iran diplomatic talks. Reverses prior week's Iran escalation premium.
+- **Market recovery:** Dow +0.7%, S&P +0.5%, Nasdaq flat. GOOGL continued falling post-capex shock (~$318, -8.4% from Jul 17).
+- **Signal change (1):** BAH WATCH → ACCUMULATE (earnings beat, guidance strong, +13.1%).
+- **New distribution:** 0 LONG, 8 ACCUM (NVDA, MSFT, ASML, META, CEG, LMT, RTX, BAH), 3 CONTRA (VST, NRG, GOOGL), 5 WATCH (AMD, TSM, AMAT, LRCX, PLTR), 1 SPEC (OKLO), 1 AVOID (SMR).
+- **format-010 (Signal Conviction Tracker) report 1/3.** CS 75.93 (delta from cs_before 76.00 = -0.07). Conviction distribution: 1×C:3 (VST), 4×C:2 (CEG, BAH, LMT, RTX), 13×C:1. High conviction concentrated in defense + energy — the sectors with highest accuracy this batch. 2 more reports needed for keep/discard.
+- **Macro (Jul 24):** S&P ~7,445 (+0.5%). Nasdaq ~25,137 (flat). Dow ~52,073 (+0.7%). VIX ~17.5 (NORMAL, declining). DXY ~98.5. 10Y ~4.65%. WTI $89.04 (-3.42%). Brent $96.70 (-3.96%).
+- **Next report: Jul 27 (Monday).** MSFT/META/LRCX earnings Jul 29. PLTR earnings Aug 3.
+
 ## v1.4 — 2026-07-23 DUAL-SESSION CORRECTIONS — 8/16=50% TRUE BATCH; format-010 STARTED; macro corrected
 
 **Session 1 (post-close verification) corrections:**
