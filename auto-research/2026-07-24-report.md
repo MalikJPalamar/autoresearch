@@ -41,10 +41,10 @@ Using corrected Jul 17 prices from Jul 20 post-close verification:
 
 | Ticker | Signal (Jul 17) | Price Jul 17 (corrected) | Price Jul 24 | Actual Move | Score |
 |--------|----------------|-------------------------|-------------|-------------|-------|
-| NVDA | ACCUMULATE | $201.60 | ~$207 | +2.7% | CORRECT |
+| NVDA | ACCUMULATE | $201.60 | $208.76 | +3.6% | CORRECT |
 | AMD | WATCH | $477.81 | ~$536 | +12.2% | INCORRECT (WATCH + large move >3%) |
-| GOOGL | ACCUMULATE | $347.00 | ~$318 | -8.4% | INCORRECT |
-| MSFT | ACCUMULATE | ~$393 | ~$382 | -2.8% | INCORRECT |
+| GOOGL | ACCUMULATE | $347.00 | $317.69 | -8.5% | INCORRECT |
+| MSFT | ACCUMULATE | ~$393 | $381.58 | -2.9% | INCORRECT |
 | META | LONG | $647.00 | ~$605 | -6.5% | INCORRECT |
 | TSM | WATCH | ~$394 | ~$416 | +5.6% | INCORRECT (WATCH + >3%) |
 | ASML | ACCUMULATE | $1,786.87 | ~$1,780 | -0.4% | NULL (<1%) |
@@ -98,16 +98,16 @@ CS trajectory: 76.60 -> 76.49 -> 76.48 -> 76.08 -> 75.92 -> 75.96 (report) -> 75
 
 | Metric | Value | Change | Regime |
 |--------|-------|--------|--------|
-| S&P 500 | ~7,445 | +0.5% | Recovery from Thursday selloff |
-| Nasdaq | ~25,140 | flat | Tech-heavy index dragged by GOOGL continued decline |
-| Dow | ~52,074 | +0.7% | Blue chip rebound led by defense + BAH |
+| S&P 500 | 7,411.98 | +0.05% | Fractional recovery; sold off late as GOOGL/tech weighed |
+| Nasdaq | 24,975.82 | -0.64% | Tech-heavy index fell on GOOGL continued capex selloff |
+| Dow | 51,947.25 | +0.46% | Blue chip rebound led by defense + BAH |
 | VIX | ~17.5 est | -6.5% est | NORMAL (declining as oil tensions ease) |
 | DXY | ~98.5 est | +0.3% est | Stable |
 | US 10Y Yield | ~4.68% | -2bp est | Marginal easing |
 | WTI Crude | $89.04 | -3.42% | Plunge from $92.19 on US-Iran talk hopes |
 | Brent Crude | $96.70 | -3.96% | Fell below $100 after hitting $100+ Thursday |
 
-**Macro Summary:** Friday was a broad relief rally after Thursday's sharp selloff. Oil plunged ~3.5-4% as hopes emerged for US-Iran diplomatic engagement, pulling Brent back below $100 after briefly breaching it Thursday. The Dow led gains (+0.7%) with defense names (BAH +13.1%, LMT/RTX continuing post-earnings gains) and blue chips rebounding. Nasdaq was flat as GOOGL's continued post-capex selloff offset gains elsewhere. Despite the daily recovery, both Brent (up ~10% weekly) and WTI (up ~8% weekly) posted their largest weekly gains since May, reflecting structural Middle East risk premium. VIX declined toward 17.5, confirming the recovery but remaining above pre-earnings levels (~15-16).
+**Macro Summary:** Friday ended mixed after intraday strength evaporated. Oil plunged ~3.5-4% as hopes emerged for US-Iran diplomatic engagement, pulling Brent back below $100 after briefly breaching it Thursday. The Dow gained +0.46% with defense names (BAH +13.1%, LMT/RTX continuing post-earnings gains) and blue chips holding. Nasdaq fell -0.64% as GOOGL's continued post-capex selloff and broader tech weakness overwhelmed gains elsewhere. S&P managed just +0.05%. Despite the daily recovery, both Brent (up ~10% weekly) and WTI (up ~8% weekly) posted their largest weekly gains since May, reflecting structural Middle East risk premium. VIX declined toward 17.5, confirming the recovery but remaining above pre-earnings levels (~15-16).
 
 ---
 
@@ -115,7 +115,7 @@ CS trajectory: 76.60 -> 76.49 -> 76.48 -> 76.08 -> 75.92 -> 75.96 (report) -> 75
 
 ### NVDA — ACCUMULATE (C:1) | Medium-term
 
-- **Price:** ~$207 est | Daily change: ~-0.8% est | 52W range: $157.34-$236.54
+- **Price:** $208.76 | Daily change: ~+0.5% | 52W range: $157.34-$236.54
 - **RSI (14):** ~47 — Neutral
 - **MACD:** Neutral, near signal line
 - **MAs:** SMA50 ~$207 | SMA200 ~$195 — Near SMA50, above SMA200
@@ -142,7 +142,7 @@ CS trajectory: 76.60 -> 76.49 -> 76.48 -> 76.08 -> 75.92 -> 75.96 (report) -> 75
 
 ### GOOGL — CONTRARIAN (C:1) | Medium-term
 
-- **Price:** ~$318 est | Daily change: ~-8% est | 52W range: $174.38-$408.61
+- **Price:** $317.69 | Daily change: ~-8.5% | 52W range: $174.38-$408.61
 - **RSI (14):** ~18 est — EXTREMELY OVERSOLD
 - **MACD:** Deeply negative, accelerating
 - **MAs:** SMA50 ~$350 | SMA200 ~$340 — Far below both
@@ -155,7 +155,7 @@ CS trajectory: 76.60 -> 76.49 -> 76.48 -> 76.08 -> 75.92 -> 75.96 (report) -> 75
 
 ### MSFT — ACCUMULATE (C:1) | Medium-term
 
-- **Price:** ~$382 | Daily change: ~-1.5% est | 52W range: ~$349-$555
+- **Price:** $381.58 | Daily change: ~-0.4% | 52W range: ~$349-$555
 - **RSI (14):** ~38 — Approaching oversold
 - **MACD:** Negative, flattening
 - **MAs:** SMA50 ~$385 | SMA200 ~$410 — Below both
@@ -184,10 +184,10 @@ CS trajectory: 76.60 -> 76.49 -> 76.48 -> 76.08 -> 75.92 -> 75.96 (report) -> 75
 | Rank | Ticker | 5-Day Return | RSI est | RS Signal |
 |------|--------|-------------|---------|-----------|
 | 1 | AMD | +12.2% | 42 | (correction reveals sector leader) |
-| 2 | NVDA | +2.7% | 47 | |
-| 3 | MSFT | -2.8% | 38 | |
+| 2 | NVDA | +3.6% | 47 | |
+| 3 | MSFT | -2.9% | 38 | |
 | 4 | META | -6.5% | 36 | |
-| 5 | GOOGL | -8.4% | 18 OS | |
+| 5 | GOOGL | -8.5% | 18 OS | |
 
 **Sector note:** AMD's corrected price reveals it was the actual sector leader (+12.2% from Jul 17), not the laggard the Jul 23 report suggested. NVDA held steady (+2.7%) while GOOGL's capex shock drove it to extreme oversold. The sector is bifurcated between GPU beneficiaries (NVDA stable, AMD recovering) and capex spenders (GOOGL/META declining).
 
