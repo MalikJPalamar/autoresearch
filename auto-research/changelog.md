@@ -1,5 +1,21 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-27 — CHINA DUV LITHO SHOCK + OIL CRASH; CS 75.88 (delta -0.65); Jul 20 batch 6/16=37.5%; ASML downgraded; format-010 report 2/3
+
+- **CHINA DUV LITHOGRAPHY SHOCK:** The Information reports China has begun producing domestic DUV lithography machines. Structural threat to ASML's DUV monopoly (~40% of revenue). ASML -7.9%, LRCX -8.5%, AMAT -4.9% on the day. EUV monopoly intact (no Chinese replication). ASML ACCUMULATE → **WATCH** — first time in the portfolio a structural thesis component (litho monopoly) has been partially invalidated by a competitor.
+- **OIL CRASH:** WTI -8.7% to ~$81, Brent -8.2% to ~$92 on US-Iran peace talks revival. Reverses prior weeks' escalation premium. Nuclear energy names (VST, CEG) underperform on day — oil crash reduces urgency for alternatives.
+- **FOMC/EARNINGS MEGA-WEEK AHEAD:** Jul 29 is the most concentrated binary risk day in run history — FOMC decision + MSFT earnings + META earnings + LRCX earnings all on the same day. FOMC begins Jul 28.
+- **Jul 24 price corrections applied:** VST ~$155→$163.38 (+5.4% error). NRG ~$129→~$141 (+9.3% PENDING VERIFICATION). PLTR ~$132→$129.20 (-2.1% confirmed, Jul 17 PLTR NULL→INCORRECT). BAH ~$74.51→$72.53 (-2.7%, no batch impact). Jul 17 batch re-scored: 7/17=41.2% (adding PLTR as incorrect+decisive).
+- **Jul 20 batch scored 6/16 = 37.5% (below rolling average).** CORRECT: VST +3.3% (CONTRA), CEG +10.2% (CONTRA), NRG +6.0% (ACCUM), BAH +13.5% (CONTRA), LMT +12.9% (ACCUM), RTX +9.1% (ACCUM). INCORRECT: NVDA -2.9%, AMD -3.9%, GOOGL -5.4%, META -10.5%, ASML -7.5%, AMAT -4.1%, LRCX -9.0%, PLTR -1.1%, OKLO -6.4%, SMR +5.1%. NULL: MSFT -0.3%, TSM -0.9%.
+- **Pattern: CONTRARIAN 4/4 PERFECT (100%) resumes streak.** BAH +13.5% (earnings carry), CEG +10.2% (nuclear recovery), VST +3.3%. ACCUMULATE 3/10 (30%) — only defense primes (LMT, RTX) and NRG correct. Equipment ACCUMULATE catastrophically wrong: ASML -7.5%, AMAT -4.1%, LRCX -9.0% (China DUV shock hit scoring day). LONG 0/1 (META -10.5%) — lifetime failure continues.
+- **AS 39.75% (corrected) → 39.69% (231/582 decisive).** +6 correct, +10 incorrect, +16 decisive. Modest decline; batch below rolling average.
+- **CS 75.90 (corrected) → 75.88. Delta from baseline (76.53) = -0.65.** CS trajectory: 76.60→76.49→76.48→76.08→75.92→75.96→75.88→75.93→75.90→75.88.
+- **Signal change (1):** ASML ACCUMULATE → **WATCH**. China DUV production threatens ~40% of ASML revenue (DUV segment). Below SMA50. Structural reassessment needed. EUV monopoly intact — not AVOID.
+- **New distribution:** 0 LONG, 7 ACCUM (NVDA, MSFT, META, CEG, LMT, RTX, BAH), 3 CONTRA (VST, NRG, GOOGL), 6 WATCH (AMD, TSM, ASML, AMAT, LRCX, PLTR), 1 SPEC (OKLO), 1 AVOID (SMR).
+- **format-010 (Signal Conviction Tracker) report 2/3.** CS 75.88 (running avg 75.89 vs cs_before 76.00, delta -0.11). Conviction distribution: 0×C:3, 4×C:2 (CEG, BAH, LMT, RTX), 14×C:1. VST drops from C:3 to C:1 (MACD no longer clearly positive). C:2 cluster narrows to defense + nuclear — sectors with highest accuracy. 1 more report needed for keep/discard.
+- **Macro (Jul 27 intraday):** VIX ~17.57 (NORMAL). DXY ~97.79. 10Y ~4.28%. WTI ~$81.24 (-8.7%). Brent ~$92.41 (-8.2%). S&P ~7,362. Nasdaq ~24,600.
+- **Next report: Jul 28 (Tuesday).** FOMC begins Jul 28. MSFT/META/LRCX earnings Jul 29 (same day as FOMC decision). AMD earnings Aug 4. PLTR earnings Aug 3.
+
 ## v1.4 — 2026-07-24 — BAH EARNINGS BEAT + OIL PLUNGE; CS 75.93 (delta -0.60); AMD LARGEST PRICE ERROR EVER; Jul 17 batch 7/16=43.75%; format-010 report 1/3
 
 - **MAJOR AMD PRICE CORRECTION: Jul 23 report had $503.57, actual close was $548.70 — $45 error (8.9% LARGEST EVER).** Jul 16 batch AMD WATCH +0.11%→+9.1%: CORRECT→INCORRECT. Batch rescored 7/16→6/16=37.5%. AS corrected 39.89→39.71%. CS corrected 75.96→75.88.
