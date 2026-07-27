@@ -1,5 +1,16 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-27 POST-CLOSE VERIFICATION — NRG CONFIRMED; CS 75.95 (corrected from 75.88, delta -0.58)
+
+- **NRG Jul 24 close CONFIRMED at $141.03.** Jul 24 report had ~$129 (9.3% error MAJOR). Jul 17 NRG ACCUMULATE at $131.10 → $141.03 = +7.6% **CORRECT** (was INCORRECT at -1.6%). Jul 17 batch corrected: 7/17=41.2% → **8/17=47.1%**. AS corrected: 231/582=39.69% → **232/582=39.86%**. CS corrected: 75.88 → **75.95** (delta -0.58, narrowed from -0.65).
+- **VIX corrected: 17.57 → 18.58 (+5.7% error).** Market anxiety ahead of FOMC mega-week higher than midday snapshot. Still NORMAL regime.
+- **AMD actual close $482.78** (report had ~$490, -1.5% error). Broke below $500 confirmed — range $476.93-$537.83.
+- **NVDA actual close ~$195.60** (report had ~$198, -1.2% error). Decline was -5.43% not -4.4%.
+- **Dow corrected: 52,175.90 → 51,947.25** (-0.4% error). **Nasdaq corrected: 24,925.97 → 24,975.82** (+0.2% error).
+- **PLTR PENDING:** If close confirmed ≥$134.50, Jul 20 PLTR move = -0.76% (NULL, not INCORRECT -1.1%). Would improve batch 6/16→6/15=40.0%.
+- **No Jul 20 batch scoring changes from post-close corrections.** All 16 decisive signals retain original scores (6/16=37.5%).
+- **format-010 running avg corrected:** (75.97 + 75.95) / 2 = **75.96** vs cs_before 76.00 (delta **-0.04**, improved from -0.11). 1 more report needed.
+
 ## v1.4 — 2026-07-27 — CHINA DUV LITHO SHOCK + OIL CRASH; CS 75.88 (delta -0.65); Jul 20 batch 6/16=37.5%; ASML downgraded; format-010 report 2/3
 
 - **CHINA DUV LITHOGRAPHY SHOCK:** The Information reports China has begun producing domestic DUV lithography machines. Structural threat to ASML's DUV monopoly (~40% of revenue). ASML -7.9%, LRCX -8.5%, AMAT -4.9% on the day. EUV monopoly intact (no Chinese replication). ASML ACCUMULATE → **WATCH** — first time in the portfolio a structural thesis component (litho monopoly) has been partially invalidated by a competitor.
