@@ -19,7 +19,7 @@ seed.sql    — inserts 18 tickers + backfills data from existing reports
 From Project Settings > API Keys, copy:
 - `SUPABASE_URL` — your project URL (from General settings)
 - `SUPABASE_PUBLISHABLE_KEY` — the publishable key (starts with `sb_publishable_`)
-- `SUPABASE_SECRET_KEY` — the secret key (starts with `sb_secret_`, only if RLS blocks writes)
+- `SUPABASE_SECRET_KEY` — the secret key (starts with `sb_secret_`). **Required for writes**: RLS is enabled on every table with SELECT-only policies, so the publishable key can read but not insert or update.
 
 On your VPS, copy `.env.example` to `.env` and fill in the values:
 
