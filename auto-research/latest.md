@@ -540,3 +540,25 @@ Defense sector earnings (LMT Q2, RTX Q2, BAH Q1) all delivered beat-and-raise qu
 ---
 
 *Next report: Jul 29 (Wednesday) — FOMC decision + MSFT/META/LRCX earnings day. Jul 22 signals score. format-010 DISCARDED; methodology.md reverted; no active experiment.*
+
+---
+
+## Post-Session Price Corrections (Jul 28 Confirmed Closes)
+
+*Verified via post-session web search. Jul 28 report captured intraday prices; actual closes differ for some tickers.*
+
+| Ticker | Report Price | Confirmed Close | Error | Impact |
+|--------|-------------|----------------|-------|--------|
+| PLTR | $131.53 (-0.4%) | **$122.92 (-6.5%)** | **-6.1% MAJOR** | Jul 21 PLTR actual_move = -1.4% → -7.85% (still INCORRECT, no AS change) |
+| LRCX | $259.00 est | **$267.68 (-7.73%)** | +3.4% | Bearish direction confirmed; WATCH maintained |
+| NVDA | $197.00 | **$196.51 (-4.99%)** | -0.25% | Negligible |
+| MSFT | $397.24 (+1.0%) | **$389.10 (+1.94%)** | -2.1% | Direction correct; earnings Jul 29 will reset |
+| GOOGL | $332.00 (+1.7%) | **$326.57 (+2.34%)** | -1.6% | Direction correct; CONTRARIAN maintained |
+| AMD | $453.50 (-8.85%) | **$453.50** | EXACT | — |
+| TSM | $387.00 (-3.0%) | **$386.99 (-3.03%)** | EXACT | — |
+
+**Macro confirmed:** S&P 7,405.47 (-0.10%), Nasdaq 100 27,632.17 (-1.45%), DJIA 52,571 (+0.69%), VIX 18.70, US 10Y 4.62%.
+
+**WTI:** Report $79.26. Web search returned $91.57 which conflicts with oil crash narrative — treating as suspect. Pending verification Jul 29.
+
+**Signal changes from corrections:** None. PLTR remains WATCH (pre-earnings binary Aug 3). No scoring impact on AS (PLTR Jul 21 signal was INCORRECT regardless of magnitude).

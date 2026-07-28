@@ -1,15 +1,25 @@
 # Methodology Changelog
 
-## v1.4 — 2026-07-28 POST-CLOSE VERIFICATION — MSFT corrected; CS 75.96→75.93 (delta -0.60)
+## v1.4 — 2026-07-28 POST-CLOSE VERIFICATION (2) — PLTR -6.5% CONFIRMED; LRCX $267.68; Supabase sync completed
+
+- **PLTR: Report $131.53 (-0.4%) → Confirmed close $122.92 (-6.5%). MAJOR ERROR (-6.1%).** Pre-earnings risk-off + global selloff contagion. Day range $117.89–$127.18. Jul 21 PLTR actual_move_5d_pct corrected in DB: -1.4% → -7.85% (still INCORRECT, no AS change). Signal remains WATCH (earnings Aug 3 binary).
+- **LRCX: Report $259.00 est → Confirmed $267.68 (-7.73%). ERROR: +3.4%.** Direction still bearish; WATCH maintained.
+- **NVDA: $196.51 confirmed (-4.99% from ~$207 prev close).** Negligible price error vs report ~$197.00. Jul 27 actual close inconsistency noted — requires verification.
+- **AMD: $453.50 EXACT MATCH.** TSM $386.99 EXACT MATCH.
+- **WTI: Report $79.26 vs web search $91.57 — SUSPICIOUS (conflicts with oil crash narrative). Treating report as authoritative pending verification.**
+- **Macro confirmed:** S&P 7,405.47 (-0.10%), Nasdaq 100 27,632.17 (-1.45%), DJIA 52,571 (+0.69%), VIX 18.70 (+12.4%), US 10Y 4.62%.
+- **Supabase fully synced this session:** Jul 21 signals scored (7/17=41.2%), Jul 28 report inserted (v58, CS 75.96), format-010 DISCARDED (DB updated), Jul 28 signals inserted (18 rows), daily_prices inserted for Jul 28.
+- **No AS change from PLTR correction.** PLTR was already scored INCORRECT; correction changes magnitude only.
+
+## v1.4 — 2026-07-28 POST-CLOSE VERIFICATION (1) — MSFT corrected; CS 75.96→75.93 (delta -0.60)
 
 - **MSFT close corrected: $397.24 → $389.10 (-2.1% error).** Jul 21 MSFT CONTRARIAN at $399.32 → $389.10 = -2.56%. Score flips **NULL → INCORRECT** (CONTRARIAN predicts bullish; stock declined >1%). Jul 21 batch corrected: 7/17=41.2% → **7/18=38.9%**.
 - **AS corrected: 39.90% → 39.83% (239/600 decisive).** +1 decisive signal (MSFT), no change in correct count.
 - **CS corrected: 75.96 → 75.93. Delta from baseline (76.53) = -0.60** (widened from -0.57).
-- **Dow MAJOR correction: 52,210.08 → 52,747.32 (+1.03%).** Report understated Dow rally by 537 points. Defensive rotation was significantly stronger than captured.
+- **Dow MAJOR correction: 52,210.08 → 52,747.32 (+1.03%).** Report understated Dow rally by 537 points.
 - **S&P 500 corrected: 7,413.18 → 7,428.78.** Nasdaq corrected: 24,932.08 → 24,876.91.
 - **GOOGL corrected: $332.00 → $326.57 (-1.6%).** No batch impact (already INCORRECT).
-- **NVDA direction uncertain:** Report said +0.3%; TheStreet says -1.1%. No batch impact (already INCORRECT at either price).
-- **Equipment price cascade identified:** AMAT Jul 27 actual close $516.89 (report had $537.70, 3.9% error). LRCX Jul 27 actual close ~$305 (report had $279.30). Jul 28 estimates cascade from these errors. No batch scoring impact (all equipment INCORRECT).
+- **Equipment price cascade identified:** AMAT Jul 27 actual close $516.89 (report had $537.70, 3.9% error). LRCX Jul 27 actual close ~$305 (report had $279.30). No batch scoring impact (all equipment INCORRECT).
 - **RTX potential new 52W high:** One source shows $218.42, above prior 52W high $214.89. PENDING verification.
 - **See `auto-research/corrections-pending-jul28.md` for full correction details.**
 - **Action for Jul 29 report:** Apply MSFT correction (AS 39.83%, CS 75.93), verify PENDING prices.
