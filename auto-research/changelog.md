@@ -1,5 +1,19 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-28 POST-CLOSE VERIFICATION — MSFT corrected; CS 75.96→75.93 (delta -0.60)
+
+- **MSFT close corrected: $397.24 → $389.10 (-2.1% error).** Jul 21 MSFT CONTRARIAN at $399.32 → $389.10 = -2.56%. Score flips **NULL → INCORRECT** (CONTRARIAN predicts bullish; stock declined >1%). Jul 21 batch corrected: 7/17=41.2% → **7/18=38.9%**.
+- **AS corrected: 39.90% → 39.83% (239/600 decisive).** +1 decisive signal (MSFT), no change in correct count.
+- **CS corrected: 75.96 → 75.93. Delta from baseline (76.53) = -0.60** (widened from -0.57).
+- **Dow MAJOR correction: 52,210.08 → 52,747.32 (+1.03%).** Report understated Dow rally by 537 points. Defensive rotation was significantly stronger than captured.
+- **S&P 500 corrected: 7,413.18 → 7,428.78.** Nasdaq corrected: 24,932.08 → 24,876.91.
+- **GOOGL corrected: $332.00 → $326.57 (-1.6%).** No batch impact (already INCORRECT).
+- **NVDA direction uncertain:** Report said +0.3%; TheStreet says -1.1%. No batch impact (already INCORRECT at either price).
+- **Equipment price cascade identified:** AMAT Jul 27 actual close $516.89 (report had $537.70, 3.9% error). LRCX Jul 27 actual close ~$305 (report had $279.30). Jul 28 estimates cascade from these errors. No batch scoring impact (all equipment INCORRECT).
+- **RTX potential new 52W high:** One source shows $218.42, above prior 52W high $214.89. PENDING verification.
+- **See `auto-research/corrections-pending-jul28.md` for full correction details.**
+- **Action for Jul 29 report:** Apply MSFT correction (AS 39.83%, CS 75.93), verify PENDING prices.
+
 ## v1.4 — 2026-07-28 — GLOBAL CHIP SELLOFF + FOMC DAY 1; CS 75.96 (delta -0.57); Jul 21 batch 7/17=41.2%; format-010 DISCARDED (5th consecutive)
 
 - **GLOBAL CHIP SELLOFF:** SK Hynix -14.65% (worst since Jan '25), AMD -8.37% ($453.50), NVDA -4.3% ($197.00), ASML -11.8% ($1,535), AMAT -4.0% ($537.70), LRCX -11.4% ($279.30). Triggered by SK Hynix CapEx cut guidance. SOX deep bear territory.
