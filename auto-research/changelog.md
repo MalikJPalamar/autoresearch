@@ -1,5 +1,20 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-28 — GLOBAL CHIP SELLOFF + FOMC DAY 1; CS 75.96 (delta -0.57); Jul 21 batch 7/17=41.2%; format-010 DISCARDED (5th consecutive)
+
+- **GLOBAL CHIP SELLOFF:** SK Hynix -14.65% (worst since Jan '25), AMD -8.37% ($453.50), NVDA -4.3% ($197.00), ASML -11.8% ($1,535), AMAT -4.0% ($537.70), LRCX -11.4% ($279.30). Triggered by SK Hynix CapEx cut guidance. SOX deep bear territory.
+- **Jul 21 batch scored 7/17 = 41.2% (at rolling average).** CORRECT: VST +4.0% (CONTRA), CEG +13.0% (CONTRA), BAH +11.2% (CONTRA), LMT +16.3% (ACCUM), RTX +8.2% (ACCUM), OKLO +5.9% (SPEC), NRG +9.2% (ACCUM). INCORRECT: NVDA -3.9%, AMD -16.2%, GOOGL -5.7% (WATCH>3%), META -8.0%, TSM -3.8%, ASML -11.8%, AMAT -4.0% (WATCH>3%), LRCX -11.4% (WATCH>3%), PLTR +0.4% (ACCUM<1%). NULL: MSFT -0.5% (CONTRA<1%), SMR -2.5% (AVOID, moved in signal direction but <3%).
+- **Pattern: CONTRARIAN 3/3 PERFECT (100%) — extends streak.** VST +4.0%, CEG +13.0%, BAH +11.2% all correct. Defense carrying: LMT +16.3%, RTX +8.2%. ACCUMULATE worst ever 1/7 (14.3%) — only NRG correct. Chip ACCUMULATE 0/4 (NVDA, AMD, TSM, ASML all incorrect). LONG 0/1 (META -8.0%) — lifetime failure continues.
+- **AS 39.86% → 39.90% (239/599 decisive).** +7 correct, +10 incorrect, +17 decisive. Batch at rolling average; AS ticks up marginally.
+- **CS 75.95 → 75.96. Delta from baseline (76.53) = -0.57.** CS trajectory: ...75.92→75.96→75.88→75.93→75.90→75.88→75.95→75.96.
+- **format-010 (Signal Conviction Tracker) DISCARDED.** 3-report avg CS 75.95 vs cs_before 76.00 = delta -0.05. Per methodology: CS decreased → DISCARD. Conviction tracker added no predictive value. methodology.md reverted to remove Signal Conviction Tracker section.
+- **5th consecutive format experiment discarded:** format-006 (-2.21), format-007 (-2.17), format-008 (-1.09), format-009 (-0.37), format-010 (-0.05). Convergence toward zero confirms format experiments cannot improve CS when AC=100 and CV=100. AS is the only lever.
+- **No signal changes.** FOMC Day 1 + MSFT/META/LRCX earnings tomorrow = maximum binary risk. Signal freeze until post-event reassessment Jul 29.
+- **Signal distribution:** 0 LONG, 7 ACCUM (NVDA, MSFT, META, CEG, LMT, RTX, BAH), 3 CONTRA (VST, NRG, GOOGL), 6 WATCH (AMD, TSM, ASML, AMAT, LRCX, PLTR), 1 SPEC (OKLO), 1 AVOID (SMR).
+- **No active experiment.** RSI-Threshold Signal Override remains the recommended next experiment (requires Malik approval — modifies signal classification logic).
+- **Macro (Jul 28):** S&P ~7,300 (-1.4%). Nasdaq ~24,200 (-2.9%). VIX 19.21 NORMAL. DXY ~97.8. 10Y ~4.25%. WTI $73.62 (-3.3% oil crash continues). FOMC Day 1 of 2.
+- **Next report: Jul 29 (Wednesday).** FOMC decision + MSFT/META/LRCX earnings day. Jul 22 signals score. No active experiment.
+
 ## v1.4 — 2026-07-27 POST-CLOSE VERIFICATION — NRG CONFIRMED; CS 75.95 (corrected from 75.88, delta -0.58)
 
 - **NRG Jul 24 close CONFIRMED at $141.03.** Jul 24 report had ~$129 (9.3% error MAJOR). Jul 17 NRG ACCUMULATE at $131.10 → $141.03 = +7.6% **CORRECT** (was INCORRECT at -1.6%). Jul 17 batch corrected: 7/17=41.2% → **8/17=47.1%**. AS corrected: 231/582=39.69% → **232/582=39.86%**. CS corrected: 75.88 → **75.95** (delta -0.58, narrowed from -0.65).
