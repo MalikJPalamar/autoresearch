@@ -1,5 +1,20 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-29 POST-CLOSE VERIFICATION — PLTR corrected; MSFT/META/LRCX earnings; CS 75.76→75.74 (delta -0.79 NEW WORST)
+
+- **PLTR: Report $124.16 (-0.70%) → Confirmed close $123.53 (-1.20%). Score flips NULL → INCORRECT.** ACCUMULATE at $125.03 → $123.53 = -1.20% (>1% threshold). Jul 22 batch corrected: 3/14=21.4% → **3/15=20.0% NEW WORST BATCH EVER.**
+- **AS corrected: 39.41% → 39.35% (242/615 decisive).** +1 decisive signal (PLTR), no change in correct count.
+- **CS corrected: 75.76 → 75.74. Delta from baseline (76.53) = -0.79** (widened from -0.77, NEW WORST).
+- **MSFT Q4 FY26 MASSIVE BEAT (after close):** EPS $4.81 (+14.3% vs $4.21 est), Rev $90.0B (+18% YoY, +2.9% vs est), Azure +43%, Cloud $59.3B (+27%), Azure surpassed $100B ARR. AH +3.07% to $402.52. Regular close $390.54 confirmed (~$390 report estimate essentially correct).
+- **META Q2 2026 MIXED (after close):** Rev $60.8B (+28% YoY, beat $60.2B est), EPS $6.18 GAAP (-13% YoY, missed $7.23 est on $2.4B legal charge), Operating margin 31% (down from 43%). Q3 guide $61-64B above consensus. Revenue thesis intact but margin compression concerning.
+- **LRCX Q4 FY26 BEAT (after close):** EPS $1.82 (beat $1.72 est by 5.8%), Rev $6.72B (+30% YoY, slight miss $6.80B est). AH +5.91%. Earnings catalyst for deeply oversold stock (RSI 27).
+- **Macro corrections:** S&P 7,316.15 (report ~7,347, -0.4% error). Dow 51,594.14 (report ~51,850, -0.5% error, fell ~1,100 pts not ~900). Nasdaq 24,442.94 (report ~24,529, Nasdaq now in correction territory >10% off ATH). **WTI $84.31 (report $89.88, -6.6% error MAJOR).** Brent $89.61. 10Y 4.67% (+7bps, report had 4.64%).
+- **AMAT close $476.46** (report ~$463, +2.9% underestimate). **OKLO close $38.11** (report ~$40, -4.7% overestimate). Both tickers already INCORRECT in Jul 22 batch — no scoring change.
+- **GOOGL PENDING verification.** Jul 28 close $333.71. If Jul 29 close ≤$336.63 (>3% below Jul 22 base $347.04), GOOGL flips NULL→INCORRECT. Would further worsen batch to 3/16=18.8%.
+- **Post-earnings signal reassessments needed Jul 30:** MSFT ACCUMULATE → potential LONG upgrade. LRCX WATCH → potential CONTRARIAN/ACCUMULATE upgrade. META ACCUMULATE maintained (revenue beat but margin compression).
+- **No active experiment.** RSI-Threshold Signal Override still awaiting Malik approval.
+- **See `auto-research/corrections-pending-jul29.md` for full correction details.**
+
 ## v1.4 — 2026-07-29 — TRIPLE SHOCK: FOMC HAWKISH + IRAN ATTACK + EARNINGS; CS 75.76 (delta -0.77 WORST); Jul 22 batch 3/14=21.4% TIED WORST
 
 - **TRIPLE SHOCK DAY:** (1) FOMC held 3.50-3.75%, 9-3 vote with 3 hawkish dissents (Hammack, Kashkari, Logan wanted hike). Markets sold off hard. (2) Iran surprise attack on US troops in Iraq/Syria — Trump pledged military retaliation. Oil surged +6.9% to $89.88. (3) MSFT/META/LRCX earnings after close (not yet reported at time of report).
