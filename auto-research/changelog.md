@@ -1,5 +1,19 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-29 — TRIPLE SHOCK: FOMC HAWKISH + IRAN ATTACK + EARNINGS; CS 75.76 (delta -0.77 WORST); Jul 22 batch 3/14=21.4% TIED WORST
+
+- **TRIPLE SHOCK DAY:** (1) FOMC held 3.50-3.75%, 9-3 vote with 3 hawkish dissents (Hammack, Kashkari, Logan wanted hike). Markets sold off hard. (2) Iran surprise attack on US troops in Iraq/Syria — Trump pledged military retaliation. Oil surged +6.9% to $89.88. (3) MSFT/META/LRCX earnings after close (not yet reported at time of report).
+- **Jul 22 batch scored 3/14 = 21.4% — TIED WORST EVER (with Jul 13 corrected).** CORRECT: CEG +1.8% (CONTRA), SMR -7.8% (AVOID), BAH +20.3% (ACCUM). INCORRECT: NVDA -9.2% (ACCUM), AMD -10.3% (WATCH>3%), GOOGL -6.3% (WATCH>3%), MSFT -2.7% (ACCUM), META -7.5% (LONG), TSM -7.3% (WATCH>3%), ASML -14.2% (ACCUM), AMAT -10.6% (WATCH>3%), LRCX -16.4% (WATCH>3%), LMT -11.2% (WATCH), RTX -9.7% (WATCH). NULL: VST flat (CONTRA<1%), OKLO -0.4% (SPEC<1%), NRG -0.6% (CONTRA<1%), PLTR (excluded pending verify).
+- **Jul 28 price corrections applied:** MSFT $397.24→$393.35, GOOGL $332→$326.57, ASML $1535→$1586.06, LRCX $259→$267.68, PLTR $131.53→$122.92. Equipment cascade errors documented.
+- **AS 39.83% → 39.41% (242/614 decisive).** +3 correct, +14 decisive from Jul 22 batch. Worst AS drop in a single batch.
+- **CS 75.93 → 75.76. Delta from baseline (76.53) = -0.77.** WORST delta ever. CS trajectory: ...75.93→75.76.
+- **1 signal change:** NVDA ACCUMULATE → CONTRARIAN (RSI 28.5 deeply oversold, -9.2% in a day, lost key $185 support).
+- **Signal distribution:** 0 LONG, 6 ACCUM (MSFT, META, CEG, LMT, RTX, BAH), 4 CONTRA (NVDA, VST, NRG, GOOGL), 6 WATCH (AMD, TSM, ASML, AMAT, LRCX, PLTR), 1 SPEC (OKLO), 1 AVOID (SMR).
+- **No active experiment.** 5 consecutive format experiments discarded. RSI-Threshold Signal Override remains recommended (requires Malik approval — modifies signal classification logic).
+- **Macro (Jul 29):** S&P ~7,347 (-1.1%). Nasdaq ~24,529 (-1.4%). Dow ~51,850 (-1.7%, ~900 pts). VIX ~19.5 NORMAL. DXY ~101.3 (MAJOR jump from Jul 28 est ~97.8). 10Y 4.64%. WTI $89.88 (+6.9% Iran attack). Oil price swing from $73.62→$89.88 in 1 day.
+- **Key pattern: WATCH signals 0/5 INCORRECT on large moves.** All WATCH tickers moved >3% against the grain. LONG 0/1 continues lifetime failure. CONTRA resilient (CEG correct). AVOID working (SMR -7.8%).
+- **Next report: Jul 30 (Thursday).** Post-earnings reassessment (MSFT/META/LRCX). Jul 23 signals score. Iran escalation monitoring. No active experiment.
+
 ## v1.4 — 2026-07-28 POST-CLOSE VERIFICATION (2) — PLTR -6.5% CONFIRMED; LRCX $267.68; Supabase sync completed
 
 - **PLTR: Report $131.53 (-0.4%) → Confirmed close $122.92 (-6.5%). MAJOR ERROR (-6.1%).** Pre-earnings risk-off + global selloff contagion. Day range $117.89–$127.18. Jul 21 PLTR actual_move_5d_pct corrected in DB: -1.4% → -7.85% (still INCORRECT, no AS change). Signal remains WATCH (earnings Aug 3 binary).
