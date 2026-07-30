@@ -1,5 +1,25 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-30 POST-CLOSE VERIFICATION — PLTR MAJOR correction; AMD flips; net scoring unchanged; CS 75.56
+
+- **PLTR: Report ~$131 (+5.2%) → Confirmed close $122.05 (-2.02%). MAJOR ERROR +$8.95 (+7.3%).** PLTR WATCH at $124.57 → $122.05 = -2.02% (1-3% range). Score flips **INCORRECT → NULL.** Pre-earnings risk-off continued; FxLeaders confirms PLTR at $122 before Aug 3 earnings.
+- **AMD: Report ~$494 (-1.9%) → Confirmed close $483.55 (-3.97%). ERROR -$10.45 (-2.1%).** AMD WATCH at $503.57 → $483.55 = -3.97% (>3%). Score flips **NULL → INCORRECT.**
+- **Net batch impact: ZERO.** PLTR removes 1 incorrect/decisive, AMD adds 1 incorrect/decisive. Batch remains **3/15 = 20.0%** (TIES WORST). AS unchanged 245/630 = 38.89%. CS unchanged 75.56. Delta -0.97.
+- **MSFT: $455.92 → $455.46 (-0.1%).** MacroTrends/Bloomberg confirm +16.62% (+$64.92). Negligible error. Score unchanged (CORRECT +17.3% from $388 base).
+- **CEG: ~$260 → $265.72 (+2.2%).** Previous close $257.95. Score unchanged (INCORRECT: $274.90→$265.72 = -3.34%).
+- **OKLO: ~$41 → $41.51 (+1.2%).** Nuclear stocks rallied (Holtec SMR announcement). Score unchanged (INCORRECT: $44.50→$41.51 = -6.7%).
+- **NVDA: $193.97 → $193.69 (-0.1%).** Confirmed. Negligible.
+- **NRG: $133.66 confirmed.** Previous close $124.23 (+7.6%). Match.
+- **TSM: $401.54 confirmed.** Previous close $374.67 (+7.17%). Match.
+- **AMAT: $498.42 confirmed.** Daily change corrected +4.6%→actual unclear (TradingKey says +14.93% from different base; Jul 29 close $476.46 gives +4.6%). Price correct.
+- **BAH: $67.31 confirmed.** LMT: $569.03 confirmed. SMR: $8.37 confirmed (~$8.36 report).
+- **Macro corrections:** Nasdaq 24,834→**25,049.96** (+2.48%, was +1.6% — ERROR +0.9%). VIX 18.01→**17.09** (-17.28%, was -12.8% — ERROR 5.1%). Dow ~51,867→**~52,208** (+1.19%, was +0.53% — ERROR 0.7%). S&P 7,416 confirmed (+1.36%).
+- **GOOGL: ~$335 → ~$333** (Jul 29 close $336.71 -1.07% = $333.12). Score unchanged (INCORRECT: $347.15→$333 = -4.1%).
+- **META: $532.81 → ~$532-535** (regular close $585.61 Jul 29, -9% = ~$533). Approximately correct.
+- **VST: ~$155 → PENDING.** Jul 27 confirmed $157.08. Jul 30 close not definitively verified. Score unchanged either way (INCORRECT from $166 base).
+- **RTX: $215.25 → PENDING.** Jul 29 was $215.54. Jul 30 approximately $215. Score unchanged (CORRECT from $208.48 base).
+- **Corrected Jul 23 batch breakdown:** CORRECT (3): MSFT +17.3% (ACCUM), RTX +3.2% (ACCUM), SMR -3.6% (AVOID). INCORRECT (12): NVDA -7.4%, AMD -3.97% (was NULL), GOOGL -4.1%, META -15.0%, TSM -4.7%, ASML -7.6%, AMAT -10.0%, LRCX -5.1%, VST -6.6%, CEG -3.3%, OKLO -6.7%, NRG -4.5%. NULL (3): PLTR -2.0% (was INCORRECT), BAH +1.8%, LMT +0.2%.
+
 ## v1.4 — 2026-07-30 — POST-EARNINGS TECH RALLY; Jul 23 batch 3/15=20.0% TIES WORST; CS 75.56 (delta -0.97)
 
 - **Jul 23 batch scored 3/15 = 20.0% — TIES WORST BATCH EVER (with Jul 22 corrected 3/15).** 5-day window captured worst selloff (China DUV + FOMC hawkish + Iran attack) + partial recovery (MSFT/LRCX earnings rally). Only MSFT +17.5%, RTX +3.2%, SMR -3.7% (AVOID) scored correct.
