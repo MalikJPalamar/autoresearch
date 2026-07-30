@@ -1,5 +1,18 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-30 — POST-EARNINGS TECH RALLY; Jul 23 batch 3/15=20.0% TIES WORST; CS 75.56 (delta -0.97)
+
+- **Jul 23 batch scored 3/15 = 20.0% — TIES WORST BATCH EVER (with Jul 22 corrected 3/15).** 5-day window captured worst selloff (China DUV + FOMC hawkish + Iran attack) + partial recovery (MSFT/LRCX earnings rally). Only MSFT +17.5%, RTX +3.2%, SMR -3.7% (AVOID) scored correct.
+- **CONTRARIAN 0/3 — STREAK DESTROYED.** GOOGL -3.5%, VST -6.6%, NRG -4.5% all failed. After 6+ batches of near-perfect accuracy, deep-value thesis overwhelmed by macro shocks.
+- **AS 39.35% → 38.89% (245/630 decisive).** +3 correct, +15 decisive. AS trajectory: 39.86→39.83→39.35→38.89. Lost 2.62pp from 41.51% peak (Jul 16) in 14 days.
+- **CS 75.74 → 75.56. Delta from baseline (76.53) = -0.97** (widened from -0.79, approaching -1.00).
+- **Jul 29 corrections applied:** PLTR $124.16→$123.53 (NULL→INCORRECT), WTI $89.88→$84.31 (MAJOR), NVDA $199.32→$190.01 (magnitude only).
+- **Post-earnings tech rally:** MSFT +16.7% (Azure +43%, $100B ARR — STRONGEST AI THESIS VALIDATION EVER), LRCX +18.3% (Q1 guide $8.1B vs $7.13B consensus, $1B beat), AMD +13% (chip rally read-through). META -9% (EPS $6.18 miss, $2.4B legal, margin 31%).
+- **5 signal changes:** AMD/TSM/ASML/AMAT WATCH→ACCUMULATE (chip rally validation), META ACCUMULATE→WATCH (earnings miss). LRCX WATCH→ACCUMULATE (earnings beat). Net: 9 ACCUM (up from 6), 4 WATCH (down from 6).
+- **No active experiment.** 5 consecutive format experiments exhausted (format-006 through format-010 all DISCARDED). No further auto-evolve experiments possible (AC=100, CV=100 — format changes cannot improve CS). RSI-Threshold Signal Override remains the only viable path — requires Malik approval.
+- **Structural insight:** Signals issued at local highs systematically score poorly when 5-day lookback captures a selloff, even if subsequent recovery validates the thesis. MSFT ACCUMULATE at $388 → $456 (+17.5%) proves the thesis was correct, but the window also captured $388→$390→$389→$456 path.
+- **Next report: Jul 31.** Jul 24 signals score. PLTR earnings Aug 3. AMD earnings Aug 4.
+
 ## v1.4 — 2026-07-29 POST-CLOSE VERIFICATION — PLTR corrected; MSFT/META/LRCX earnings; CS 75.76→75.74 (delta -0.79 NEW WORST)
 
 - **PLTR: Report $124.16 (-0.70%) → Confirmed close $123.53 (-1.20%). Score flips NULL → INCORRECT.** ACCUMULATE at $125.03 → $123.53 = -1.20% (>1% threshold). Jul 22 batch corrected: 3/14=21.4% → **3/15=20.0% NEW WORST BATCH EVER.**
