@@ -1,5 +1,19 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-31 — END-OF-MONTH; Jul 24 batch 4/16=25.0%; CS 75.42 (delta -1.11 NEW WORST)
+
+- **Jul 24 batch scored 4/16 = 25.0% — 3RD WORST BATCH.** 5-day window Jul 24→Jul 31 captured post-FOMC hawkish hold, Iran tensions, and earnings season volatility.
+- **CORRECT (4):** GOOGL +8.3% (CONTRARIAN validated), MSFT +22.1% (ACCUMULATE — LARGEST CORRECT MOVE EVER, Azure +43% catalyst), SMR -14.2% (AVOID validated, nuclear selloff), RTX +3.0% (ACCUMULATE validated, defense resilient).
+- **INCORRECT (12):** NVDA -2.2%, AMD -9.8%, META -9.6%, TSM -3.2%, ASML -5.6%, AMAT -6.3%, LRCX -1.5%, VST -5.8%, CEG -5.6%, OKLO -10.8%, NRG -7.8%, BAH -9.3%. Broad semiconductor and energy weakness overwhelmed bullish signals.
+- **NULL (2):** PLTR +0.6% (WATCH, <1% move), LMT +0.5% (ACCUMULATE, <1% move).
+- **AS 38.89% → 38.54% (249/646 decisive).** 4th consecutive decline from 41.51% peak (Jul 16). Lost 2.97pp in 15 days.
+- **CS 75.56 → 75.42. Delta from baseline (76.53) = -1.11 — NEW WORST.** First time exceeding -1.00 threshold.
+- **MSFT +22.1% is the single largest correct directional call in portfolio history.** Azure +43% growth, $100B ARR, EPS $4.81 massive beat. The AI compute thesis fully validated on this one ticker.
+- **Bond yields surging:** 10Y at 4.72%, highest since late 2024. Hawkish FOMC (3 dissents wanting hike) + strong GDP creating headwind for growth equities.
+- **Signal distribution unchanged from Jul 30:** ACCUMULATE(9), CONTRARIAN(4), WATCH(3), SPECULATIVE(1), AVOID(1). No signal changes today — end-of-month positioning holds.
+- **No active experiment.** RSI-Threshold Signal Override awaiting Malik approval (requires signal classification logic change). 5 consecutive format experiments (format-006 through format-010) discarded.
+- **End-of-month summary:** July was the most volatile month since portfolio inception. FOMC hawkish hold, China DUV shock, Iran tensions, and massive earnings season created unprecedented signal stress. AS declined from 39.86% (Jul 27) to 38.54%, a -1.32pp monthly loss.
+
 ## v1.4 — 2026-07-30 POST-CLOSE VERIFICATION — PLTR MAJOR correction; AMD flips; net scoring unchanged; CS 75.56
 
 - **PLTR: Report ~$131 (+5.2%) → Confirmed close $122.05 (-2.02%). MAJOR ERROR +$8.95 (+7.3%).** PLTR WATCH at $124.57 → $122.05 = -2.02% (1-3% range). Score flips **INCORRECT → NULL.** Pre-earnings risk-off continued; FxLeaders confirms PLTR at $122 before Aug 3 earnings.
