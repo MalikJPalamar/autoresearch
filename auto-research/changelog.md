@@ -1,5 +1,16 @@
 # Methodology Changelog
 
+## v1.4 — 2026-07-31 POST-CLOSE VERIFICATION — Supabase sync complete; AMD/CEG/BAH major deviations from estimates
+
+- **Supabase sync complete:** Jul 31 report inserted as v61 (id=61, CS 75.42), macro id=46, 18 signals (IDs 1009-1026), 18 daily prices (IDs 842-859). Jul 24 batch scored in DB (4 correct, 12 incorrect, 2 null).
+- **AMD: report est ~$495 → actual close $429.56 (-13.2% from estimate).** Pre-earnings selloff ahead of Aug 4 report. AMD ACCUMULATE signal baseline now anchored at $429.56; 5-day window scores Aug 7.
+- **CEG: report est ~$258 → actual close $296.61 (+14.9% from estimate).** Nuclear energy rally — CEG had major intraday surge. CEG ACCUMULATE signal baseline at $296.61.
+- **BAH: report est ~$67 → actual close $72.53 (+8.2% from estimate).** Defense earnings beat likely. BAH WATCH signal baseline at $72.53.
+- **VST: report est ~$155 → actual close $148.62 (-4.1% from estimate).** VST CONTRARIAN baseline at $148.62.
+- **AMAT +14.97%, LRCX +17.98% on actual close** — chip rally fully materialized. ACCUMULATE signals well-positioned for Aug 7 scoring window.
+- **No scoring changes to prior batches.** Jul 24 window closed Jul 31 — scores locked (4C/12I/2N). Price deviations only affect forward baseline for Aug 7 scoring.
+- **Next scoring date: Aug 7 (5 trading days from Jul 31).** PLTR earnings Aug 3, AMD earnings Aug 4 — both could move signals significantly.
+
 ## v1.4 — 2026-07-31 — END-OF-MONTH; Jul 24 batch 4/16=25.0%; CS 75.42 (delta -1.11 NEW WORST)
 
 - **Jul 24 batch scored 4/16 = 25.0% — 3RD WORST BATCH.** 5-day window Jul 24→Jul 31 captured post-FOMC hawkish hold, Iran tensions, and earnings season volatility.
