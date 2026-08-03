@@ -1,5 +1,21 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-03 — EARNINGS MEGA-WEEK + OIL CRASH; Jul27 batch 8/15=53.3%; CS 75.55 (FIRST INCREASE IN 5 BATCHES)
+
+- **Jul 27 batch scored 8/15 = 53.3% — 4TH BEST BATCH.** 5-day window Jul 27→Aug 3. Best batch since Jun 22 (8/16=50.0%).
+- **CORRECT (8):** NVDA +4.2% (ACCUMULATE validated), GOOGL +3.7% (CONTRARIAN validated), MSFT +4.6% (ACCUMULATE validated), META +6.1% (ACCUMULATE validated, ad recovery), TSM +5.3% (WATCH, >1% move = CORRECT), ASML +3.8% (WATCH, >1% = CORRECT), CEG +7.8% (ACCUMULATE validated, nuclear rally), LMT +3.4% (ACCUMULATE validated, defense steady).
+- **INCORRECT (4):** AMD -3.0% (ACCUMULATE but declined pre-earnings), VST -5.4% (CONTRARIAN but continued selling), NRG -5.5% (CONTRARIAN failed, energy pullback), OKLO -3.8% (SPECULATIVE, missed).
+- **NULL (3):** AMAT -0.3% (WATCH, <1%), LRCX +0.2% (WATCH, <1%), BAH +0.1% (ACCUMULATE, <1%).
+- **AS 38.54% → 38.88% (257/661 decisive). First AS increase in 5 consecutive batches.** Reversed 5-batch decline from 41.51% peak (Jul 16). Gained +0.34pp.
+- **CS 75.42 → 75.55. Delta from baseline (76.53) = -0.98.** Improved from -1.11 (previous worst). AC 100, CV 100 unchanged.
+- **PLTR earnings reported after hours Aug 3:** Q2 EPS $0.13 (beat $0.12), Rev $1.04B (beat $1.01B), AiiP ARR $1.2B +45%. Stock AH +2.7%. PLTR WATCH signal maintained — next scoring window captures this move.
+- **3 signal changes:** AMD ACCUMULATE→WATCH (earnings Aug 4, binary outcome), GOOGL CONTRARIAN→ACCUMULATE (4-session recovery validated +3.7%), META WATCH→ACCUMULATE (ad revenue recovery +6.1%).
+- **New signal distribution:** ACCUMULATE(10: NVDA, GOOGL, MSFT, META, TSM, ASML, AMAT, LRCX, CEG, RTX), CONTRARIAN(3: VST, NRG, LMT), WATCH(3: AMD, PLTR, BAH), SPECULATIVE(1: OKLO), AVOID(1: SMR).
+- **Oil crash WTI ~$67 (-7%):** Iran de-escalation + OPEC+ October output increase. Bearish for VST/NRG/CEG energy complex but bullish macro tailwind (lower input costs).
+- **Earnings mega-week Aug 3-7:** PLTR (Aug 3 AH), AMD (Aug 4 AH), AMAT (Aug 5 AH), VST (Aug 5 AM), CEG (Aug 6 AM), BAH (Aug 7 AM), SMR (Aug 7 AM). 7/18 tickers reporting creates highest single-week signal volatility risk.
+- **No active experiment.** RSI-Threshold Signal Override still awaiting Malik approval. No further auto-evolve experiments possible (AC/CV both at 100%).
+- **Prices are estimates pending post-close verification.** Major data sources (Barchart, TipRanks, Investing.com) returned HTTP 403. All data from search snippets. Historical corrections show 5-15% deviations possible.
+
 ## v1.4 — 2026-07-31 POST-CLOSE VERIFICATION — Supabase sync complete; AMD/CEG/BAH major deviations from estimates
 
 - **Supabase sync complete:** Jul 31 report inserted as v61 (id=61, CS 75.42), macro id=46, 18 signals (IDs 1009-1026), 18 daily prices (IDs 842-859). Jul 24 batch scored in DB (4 correct, 12 incorrect, 2 null).
