@@ -318,18 +318,18 @@ CS trajectory: ...75.93 → 75.74 → 75.56 → 75.42 → **75.55**
 
 ## Defense AI Sector
 
-### PLTR — WATCH | Short-term — EARNINGS REPORTED TODAY
+### PLTR — ACCUMULATE ⬆ | Medium-term — POST-CLOSE UPGRADE
 
-- **Price:** ~$123 pre-earnings | Daily change: +2.2% est | 52W range: $106.37-$207.52
-- **RSI (14):** ~42 est — Neutral
-- **MACD:** -0.77, bearish tilt
-- **MAs:** SMA50 ~$132 | SMA200 ~$155 — Below both
-- **Support/Resistance:** Support $117 (recent low) / Resistance $132 (SMA50)
-- **Signal:** WATCH | **Timeframe:** Short-term (1-2w)
-- **News Sentiment:** +1.0 — **Q2 EARNINGS REPORTED AFTER CLOSE TODAY:** GAAP EPS $0.34 (in-line), adjusted EPS $0.33, adjusted operating margin 60%. **FY2026 guidance raised to $7.650-7.662B** (from prior). 8th consecutive EPS beat. However, stock has fallen after each of the last 4 earnings beats. Options pricing 8-15% swing.
-- **Risk Factor:** Historical post-beat selloff pattern; 40% off ATH; below both SMAs
-- **Catalyst:** FY guidance raise ($7.65B); defense AI (NGC2, Maven); AH reaction determines signal
-- **Note:** WATCH maintained pending after-hours reaction. If stock rises >5% AH, upgrade to ACCUMULATE. If falls, CONTRARIAN consideration at these levels.
+- **Price:** ~$123 pre-close | AH: ~$137.76 (+12%) | 52W range: $106.37-$207.52
+- **RSI (14):** ~42 pre-close — Neutral (will expand significantly at open Aug 4)
+- **MACD:** -0.77, bearish tilt (AH strength will flip this)
+- **MAs:** SMA50 ~$132 | SMA200 ~$155 — Pre-close below both; AH price reclaims SMA50
+- **Support/Resistance:** New support $132 (SMA50 reclaimed AH) / New resistance $155 (SMA200)
+- **Signal:** **ACCUMULATE** ⬆ (upgraded from WATCH, post-close) | **Timeframe:** Medium-term (1-3mo)
+- **News Sentiment:** +2.0 (VERY BULLISH) — **Q2 MASSIVE BEAT:** Adj EPS $0.41 (vs $0.35 est, +17.1%), Revenue $1.94B (+93% YoY, vs $1.80B est, +7.8%). **FY2026 guidance raised to $8.15-8.16B** (from $7.65-7.66B, +6.5% raise). 8th consecutive EPS beat. US commercial revenue booming +149%. Stock +12% AH to ~$137.76. Pre-close WATCH condition met ("if stock rises >5% AH, upgrade to ACCUMULATE").
+- **Risk Factor:** Historical post-beat selloff pattern (reversed 4-streak with magnitude of this beat); 40% below ATH; AH gains may fade at open
+- **Catalyst:** FY guide $8.15-8.16B execution; US commercial +149% YoY momentum; NGC2/Maven defense; AiiP ARR $1.2B +45%
+- **Upgrade rationale:** +12% AH exceeds the +5% threshold stated in pre-market analysis. Revenue $1.94B (vs report estimate $1.04B) — the initial estimate was significantly wrong. This is one of the strongest beats in PLTR history. WATCH is not appropriate after a 93% YoY revenue surge + 6.5% FY guide raise.
 
 ### BAH — WATCH | Short-term
 
@@ -452,18 +452,19 @@ LMT and RTX record backlogs ($519B combined) provide unprecedented revenue visib
 
 **EARNINGS MEGA-WEEK: 7 of 18 tickers report within 4 trading days (Aug 3-7).** This is the most concentrated earnings period in portfolio history.
 
-### Signal Changes Today (3)
+### Signal Changes Today (4 — including post-close PLTR upgrade)
 
 | Ticker | Old Signal | New Signal | Rationale |
 |--------|-----------|------------|-----------|
 | AMD | ACCUMULATE | **WATCH** ⬇ | Earnings Aug 4 binary risk; pre-earnings derisking -1.9% |
 | GOOGL | CONTRARIAN | **ACCUMULATE** ⬆ | +12.8% validates CONTRARIAN; above both SMAs; RSI 55 recovering |
 | META | WATCH | **ACCUMULATE** ⬆ | Oversold bounce +6.2%; revenue beat; one-time EPS miss; Morgan Stanley capex reassurance |
+| PLTR | WATCH | **ACCUMULATE** ⬆ | POST-CLOSE: Q2 massive beat EPS $0.41 vs $0.35 est; Rev $1.94B +93% YoY; FY guide $8.15-8.16B (+6.5%); stock +12% AH |
 
-**New distribution:** ACCUMULATE(10), CONTRARIAN(3), WATCH(3), SPECULATIVE(1), AVOID(1)
-- ACCUMULATE: MSFT, GOOGL, META, TSM, ASML, AMAT, LRCX, CEG, LMT, RTX
+**New distribution (post-close final):** ACCUMULATE(11), CONTRARIAN(3), WATCH(2), SPECULATIVE(1), AVOID(1)
+- ACCUMULATE: MSFT, GOOGL, META, TSM, ASML, AMAT, LRCX, CEG, LMT, RTX, PLTR
 - CONTRARIAN: NVDA, VST, NRG
-- WATCH: AMD, PLTR, BAH
+- WATCH: AMD, BAH
 - SPECULATIVE: OKLO
 - AVOID: SMR
 
@@ -496,3 +497,30 @@ LMT and RTX record backlogs ($519B combined) provide unprecedented revenue visib
 The WATCH class remains problematic (0/4), consistently missing large moves. This reinforces the need for RSI-Threshold Signal Override — the current WATCH signal catches too many tickers that subsequently make >3% moves.
 
 **Next scoring date:** Aug 7 (5 trading days from Jul 31). Jul 31 signals score. PLTR/AMD/NRG/SMR/CEG/VST/OKLO earnings will all fall within the scoring window — highest-variance scoring batch in run history.
+
+---
+
+## POST-CLOSE VERIFICATION — August 3, 2026
+
+### PLTR Q2 MASSIVE BEAT — MAJOR CORRECTION TO INITIAL ESTIMATE
+
+| Item | Initial Estimate | Actual | Error |
+|------|-----------------|--------|-------|
+| Adj EPS | $0.33 | **$0.41** | +24.2% MAJOR |
+| Revenue | $1.04B | **$1.94B** | +86.5% MAJOR |
+| FY Guide | $7.650-7.662B | **$8.15-8.16B** | +6.5% |
+| AH move | Unknown | **+12%** (~$137.76) | — |
+
+**Signal correction: PLTR WATCH → ACCUMULATE (post-close, pre-open Aug 4).** The pre-close WATCH was based on estimated earnings. Actual results far exceeded consensus: Rev $1.94B vs $1.80B est (vs $1.04B initial model), US commercial +149% YoY, AiiP ARR $1.2B +45%. The +12% AH move exceeds the +5% upgrade threshold stated in the pre-market analysis. PLTR is now the most compelling short-term setup in the portfolio — massive fundamental beat, below-ATH entry, AH reclaiming SMA50.
+
+**Supabase sync:** Jul 27 signals scored (18 rows), Aug 3 daily_prices inserted (18 rows), Aug 3 technicals inserted (18 rows), Aug 3 signals inserted (18 rows, PLTR as ACCUMULATE), macro record inserted, report record pending.
+
+### Key Confirmed Prices (Aug 3 close)
+- **NVDA:** $200.75 (est $205, -2.1% error) — CONTRARIAN from $198 still +1.4% (CORRECT)
+- **LRCX:** $289.97 (est $294, -1.4% error) — Score unchanged INCORRECT
+- **ASML:** $1,633.53 (est $1,700, -3.9% error) — Jul 27 base $1,618 → move +0.96% = borderline NULL (report scored INCORRECT based on +5.1% estimate; may warrant correction)
+- **OKLO:** $41.60 (est $41, +1.5% error) — Score CORRECT confirmed
+- **SMR:** $9.03 (est $8.92, +1.2% error) — Score INCORRECT confirmed
+- **LMT:** $585.16 (est $585, -0.0% error) — Score CORRECT confirmed
+
+**ASML NOTE:** Confirmed Aug 3 close $1,633.53 vs Jul 27 base $1,618 = +0.96% (< 1%). This is borderline CORRECT (WATCH + <1% = CORRECT per rules) vs the report's INCORRECT (+5.1% estimate). Actual Jul 27 ASML close requires verification — if Jul 27 was actually ~$1,660 (post-China DUV -7.9% from Jul 24 $1,801), then move = -1.6% = NULL. Scoring adjustment may be warranted in next session.
