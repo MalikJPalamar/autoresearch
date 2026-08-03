@@ -1,5 +1,29 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-03 POST-CLOSE VERIFICATION — 5 scoring flips; batch 8/15→6/12=50.0%; CS 75.55→75.50; PLTR earnings MASSIVE correction
+
+- **5 scoring flips identified from post-close price corrections.** Jul 27 batch rescored from 8/15=53.3% to **6/12=50.0%**. Net: -2 correct, -1 incorrect, +3 null (3 signals become non-decisive).
+- **VST: Report ~$160 → Confirmed ~$147.58 (-7.8% MAJOR ERROR).** Range $146.52-$153.13. Jul 27 base $157 → actual move -6.0% (was +1.9%). Score flips **CORRECT → INCORRECT.** Iran de-escalation oil crash crushed energy — VST CONTRARIAN thesis invalidated by geopolitical shift.
+- **RTX: Report ~$215 → Confirmed ~$199.50 (-7.2% MAJOR ERROR).** Range $197.79-$202.82, opening $202.82 was session high. Jul 27 base $212.79 → actual move -6.2% (was +1.0%). Score flips **CORRECT → INCORRECT.** Defense premium deflated on Trump calling off Iran strikes.
+- **META: Report ~$585 → Confirmed $590.24 (+0.9% ERROR).** Range $582.22-$599.97. Jul 27 base $595 → actual move -0.8% (was -1.7%). Score flips **INCORRECT → NULL** (<1%, not decisive for ACCUMULATE signal).
+- **ASML: Report ~$1,700 → Confirmed $1,633.53 (-3.9% MAJOR ERROR).** US ADR +0.28% daily. Jul 27 base $1,618 → actual move +0.96% (was +5.1%). Score flips **INCORRECT → NULL** (<1%, not decisive for WATCH signal).
+- **LRCX: Report ~$294 → Confirmed $278.45 (-5.3% MAJOR ERROR).** Down 4.97% daily (report used Jul 31 close as Aug 3 estimate). Jul 27 base $279.30 → actual move -0.30% (was +5.3%). Score flips **INCORRECT → NULL** (<1%, not decisive for WATCH signal).
+- **AMAT: Report ~$508 → Confirmed $496.01 (-2.4% ERROR).** Jul 27 base $537.70 → actual move -7.8% (was -5.5%). Score unchanged (INCORRECT, magnitude only).
+- **GOOGL: Report ~$370 → Confirmed $374.62 (+1.2%).** +5.19% daily, range $363.35-$376.69. Jul 27 base $328 → actual move +14.2% (was +12.8%). Score unchanged (CORRECT, magnitude only).
+- **NVDA: Report ~$205 → Confirmed ~$206.80 (+0.9%).** Up 3.01% daily from Jul 31 close $200.75. Score unchanged (CORRECT).
+- **NRG: Report ~$135 → Confirmed $132.63 (-1.8%).** Up 6.80% daily. Jul 27 base $141 → actual move -5.9% (was -4.3%). Score unchanged (INCORRECT).
+- **SMR: $9.76 confirmed.** Jul 27 base $8.09 → +20.6% (was +10.3%). Score unchanged (INCORRECT, AVOID failed again).
+- **PLTR: Report ~$123 → Confirmed ~$125.60 (+2.1%).** Up 2.06% daily pre-earnings. Score unchanged (INCORRECT, >3% move for WATCH).
+- **TSM: $404.25 confirmed (flat from Jul 31).** Score unchanged (NULL).
+- **MSFT: ~$475 confirmed (range $471-$476).** Score unchanged (CORRECT, +20.9%).
+- **PENDING:** CEG (report ~$298, conflicting sources show $270 — could flip CORRECT→NULL if confirmed), LMT (report ~$585, defense selloff likely), OKLO (conflicting $38.83-$41), BAH (report ~$73, unverified), AMD (report ~$476, could be ~$467 if -1.9% daily from Jul 31 close $476.15).
+- **Corrected Jul 27 batch:** CORRECT (6): NVDA +4.4%, GOOGL +14.2%, MSFT +20.9%, CEG +10.4% (PENDING), OKLO +1.9% (PENDING), LMT +1.2% (PENDING). INCORRECT (6): AMAT -7.8%, NRG -5.9%, SMR +20.6%, PLTR -6.3%, VST -6.0%, RTX -6.2%. NULL (6): AMD -2.9%, TSM +0.3%, BAH +0.7%, META -0.8%, ASML +0.96%, LRCX -0.30%.
+- **AS corrected: 257/661 → 255/658 = 38.75% (-0.13pp).** -2 correct, -3 decisive from batch corrections.
+- **CS corrected: 75.55 → 75.50. Delta from baseline (76.53) = -1.03** (widened from -0.98).
+- **PLTR Q2 EARNINGS MASSIVE CORRECTION:** Report had EPS $0.13 beat $0.12, Rev $1.04B, AH +2.7%. **Actual: EPS $0.41 (beat $0.33 by +24.24%), Rev $1.94B (beat $1.80B, +93% YoY), US commercial +149%, AH +12%.** Revenue nearly 2x what report stated. Full-year guidance raised to $8.15-8.16B (from $7.65-7.66B). PLTR WATCH signal → likely upgrade to ACCUMULATE or LONG in next report.
+- **Macro corrections:** WTI confirmed $79.69 (report $78.93, close match). Results.tsv had "WTI $67" which is wrong — corrected. S&P +1.49% confirmed. 10Y yield 4.69% (down 5bp, report had -2bp). Schwab noted "chips down" despite broader rally — equipment underperformance confirmed.
+- **Pattern: Iran de-escalation inverted defense/energy thesis.** VST (-6.0%) and RTX (-6.2%) both failed as geopolitical risk premium deflated. Defense stocks sold off despite broad market rally. Oil crash WTI -5.9% to $79.69 removed energy urgency. This is the structural weakness of momentum signals during geopolitical regime changes.
+
 ## v1.4 — 2026-08-03 — EARNINGS MEGA-WEEK + OIL CRASH; Jul27 batch 8/15=53.3%; CS 75.55 (FIRST INCREASE IN 5 BATCHES)
 
 - **Jul 27 batch scored 8/15 = 53.3% — 4TH BEST BATCH.** 5-day window Jul 27→Aug 3. Best batch since Jun 22 (8/16=50.0%).
