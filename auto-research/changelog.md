@@ -1,5 +1,23 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-04 — PLTR +26% EARNINGS SURGE + NRG -14% EARNINGS MISS; Jul28 batch 6/16=37.5%; CS 75.49 (delta -1.04)
+
+- **Jul 28 batch scored 6/16 = 37.5% — BELOW ROLLING AVERAGE (38.75%).** 5-day window Jul 28→Aug 4.
+- **CORRECT (6):** NVDA +5.25% (ACCUMULATE validated), GOOGL +14.71% (CONTRARIAN validated, capex-shock recovery massive), MSFT +23.14% (ACCUMULATE validated — EXTENDS OWN RECORD largest correct move ever, Azure +43% $100B ARR), CEG +3.94% (ACCUMULATE validated, nuclear resilience), OKLO +7.37% (SPECULATIVE correct, DOE support), RTX +1.81% (ACCUMULATE validated).
+- **INCORRECT (10):** AMD +12.18% (WATCH, pre-earnings rally overwhelmed neutral signal), TSM +4.91% (WATCH, >3%), ASML +7.38% (WATCH, equipment recovery), AMAT +10.76% (WATCH, equipment recovery), LRCX +15.83% (WATCH, post-earnings Q4 beat + $8.1B guide), VST -5.28% (CONTRARIAN failed, oil crash + pre-earnings selloff), NRG -7.88% (CONTRARIAN failed, Q2 earnings miss -14.5% today), SMR +11.73% (AVOID failed again, 4th of last 5 batches), PLTR +28.97% (WATCH, LARGEST WATCH MISS IN PORTFOLIO HISTORY — Q2 blowout Rev $1.94B +93% YoY), BAH -1.89% (ACCUMULATE, defense weakness).
+- **NULL (2):** META -0.63% (ACCUMULATE, <1% not decisive), LMT +0.04% (ACCUMULATE, <1%).
+- **ACCUMULATE 4/5 decisive correct (80%) — BEST ACCUMULATE BATCH EVER.** MSFT +23.14% largest correct. BAH only miss.
+- **WATCH 0/6 INCORRECT — WORST WATCH BATCH IN RUN HISTORY.** All 6 moved >3%, all decisive, all incorrect. PLTR +28.97% worst miss. Equipment names (TSM, ASML, AMAT, LRCX) all rallied hard post-earnings chip recovery.
+- **CONTRARIAN 1/3 (33.3%) — streak further deteriorated.** GOOGL correct, VST/NRG both failed as oil crash + Iran de-escalation crushed energy thesis.
+- **AS 38.75% → 38.72% (261/674 decisive, -0.03pp).** Marginal decline, batch slightly below average.
+- **CS 75.50 → 75.49. Delta from baseline (76.53) = -1.04** (widened from -1.03).
+- **Signal changes:** MSFT ACCUMULATE → WATCH (RSI 76.28 overbought, +25% 3-day rally unsustainable). PLTR maintained at ACCUMULATE (upgraded post-close Aug 3 after Q2 blowout).
+- **Final signal distribution:** ACCUMULATE(11: NVDA, GOOGL, META, TSM, ASML, AMAT, LRCX, CEG, LMT, RTX, PLTR), CONTRARIAN(2: VST, NRG), WATCH(3: AMD, MSFT, BAH), SPECULATIVE(1: OKLO), AVOID(1: SMR).
+- **Macro:** S&P ~7,600 +2.0% NEW ALL-TIME HIGH, Dow 53,178 +2.0% NEW ATH, Nasdaq ~25,914 +2.8%, VIX 16.52 NORMAL, DXY 99.97 flat, 10Y 4.63% -4bp, WTI $76.14 -5.2% (Iran de-escalation oil crash continues). Risk-on rotation: into tech/growth, out of energy/commodities.
+- **Key events:** PLTR Q2 blowout (Rev $1.94B +93% YoY, EPS $0.41, US Commercial +149%, operating margins 62% ATH, stock +26.17%); NRG Q2 miss (EPS $1.49 vs $1.69, Texas EBITDA -26%, stock -14.47% new 52W low); AMD earnings AH tonight; SOXX +5.7% chip recovery; FCC drafting Chinese optical transceiver ban.
+- **Earnings mega-week continues:** AMD Aug 4 AH (tonight), SMR Aug 5 AH, CEG Aug 6 AM, VST/OKLO/BAH Aug 7 AM, AMAT Aug 13 AH.
+- **No active experiment.** RSI-Threshold Signal Override awaiting Malik approval. No auto-evolve experiments viable (AC/CV both 100%). AS is the only lever.
+
 ## v1.4 — 2026-08-03 POST-CLOSE VERIFICATION — PLTR MASSIVE BEAT; signal upgraded to ACCUMULATE; ASML scoring note
 
 - **PLTR Q2 MASSIVE BEAT — INITIAL ESTIMATE SEVERELY WRONG.** Initial report had EPS $0.33, Rev $1.04B. Actual: Adj EPS $0.41 (vs $0.35 est, +24% over estimate), Rev $1.94B (+93% YoY, +86% over initial model). FY guide $8.15-8.16B (vs prior $7.65-7.66B). Stock +12% AH to ~$137.76. **PLTR WATCH → ACCUMULATE (post-close upgrade)**. The +12% AH exceeds the +5% threshold stated in pre-market analysis. This is the largest positive estimate error for a single earnings report in run history.
