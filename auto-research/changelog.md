@@ -1,5 +1,20 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-04 POST-CLOSE VERIFICATION — AMD Q2 BEAT but AH -7.5% (5th consecutive post-earnings decline); price corrections minor; CS unchanged 75.49
+
+- **AMD Q2 2026 EARNINGS (after close Aug 4):** Revenue $11.536B (+50% YoY, beat $11.284B consensus), Adj EPS $1.66 (beat $1.62 consensus), Data Center $6.7B (+107% YoY, 58% of revenue). Q3 guide ~$13B ±$300M (above $12.52B consensus). CEO Lisa Su: "strong momentum as EPYC demand accelerates, Instinct deployments scale, and Helios begins to ramp."
+- **AMD STOCK -7.5% AFTER HOURS despite beat.** 5th consecutive earnings where AMD closed lower after reporting despite beats. Investors wanted blowout; +50% YoY and $1.66 EPS wasn't enough vs elevated expectations. AH price ~$470 (from ~$508.75 close). **AMD WATCH signal maintained** — the neutral stance was ironically vindicated by the AH decline, even though the Jul 28 batch scored it INCORRECT for the +12.18% pre-earnings rally.
+- **Price corrections (minor, no scoring flips):**
+  - OKLO: $42.99 → $43.75 (+1.8% error). Jul 28 score unchanged (SPECULATIVE CORRECT, +9.27% vs +7.37% report).
+  - NRG: ~$120.50 → ~$117.04 (-2.9% error). Jul 28 score unchanged (CONTRARIAN INCORRECT, -10.5% vs -7.88% report).
+  - VIX: 16.52 → 15.86 (-4.0% error). VIX actually fell on the rally day (institutional hedging narrative in report was incorrect — standard risk-off hedging unwound).
+- **Confirmed prices (matching report):** S&P 500 7,600.50 (report ~7,600 exact), Dow 53,178.41 (exact), Nasdaq 25,913.90 (exact). PLTR ~$158.55 confirmed (+26.17%). MSFT $479.20 confirmed (range $471-$492).
+- **Jul 28 batch UNCHANGED: 6/16 = 37.5%. AS unchanged 38.72% (261/674). CS unchanged 75.49 (delta -1.04).**
+- **No signal changes from post-close.** AMD WATCH maintained (AH decline confirms neutral stance). All other signals hold.
+- **Earnings mega-week continues:** SMR Aug 5 AH, CEG Aug 6 AM, VST/OKLO/BAH Aug 7 AM, AMAT Aug 13 AH.
+- **No active experiment.** RSI-Threshold Signal Override awaiting Malik approval. No auto-evolve experiments viable (AC/CV both 100%). 5 consecutive format experiments exhausted.
+- **Loop 2 status:** Blocked. No experiment to evaluate, no auto-evolve scope remaining. AS (38.72%) is the only lever for CS improvement, and improving AS requires signal classification methodology changes (Malik approval required). The WATCH signal failure pattern (0/6 this batch, worst ever) and CONTRARIAN deterioration (1/3) are structural issues that format changes cannot address.
+
 ## v1.4 — 2026-08-04 — PLTR +26% EARNINGS SURGE + NRG -14% EARNINGS MISS; Jul28 batch 6/16=37.5%; CS 75.49 (delta -1.04)
 
 - **Jul 28 batch scored 6/16 = 37.5% — BELOW ROLLING AVERAGE (38.75%).** 5-day window Jul 28→Aug 4.
