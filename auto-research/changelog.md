@@ -1,5 +1,14 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-04 SCHEDULED SESSION — Supabase DB sync complete; no new experiment; earnings mega-week watch
+
+- **Supabase fully synced this session:** Jul 28 signals scored in DB (18 rows: 6 correct / 10 incorrect / 2 null, matching Aug 4 report batch results). Aug 4 daily_prices (18 rows), technicals (18 rows), macro (id=48, S&P 7,739 actual close / Dow 54,086 / VIX 16.40 / WTI $77.77 / 10Y 4.69%), signals (IDs 1045-1062), and report record (id=63, v63, CS 75.49) all inserted.
+- **Macro confirmed (actual closes):** S&P 500 7,739 (+1.82%, report had ~7,600 intraday estimate), Dow 54,086 (+1.71%, +908 pts), VIX 16.40, DXY 99.72, US 10Y 4.69%, WTI $77.77 (-3.20%), Brent $81.81 (-2.34%). S&P and Dow new all-time closing highs confirmed.
+- **No new experiment.** DB confirms zero pending experiments. Auto-evolve scope exhausted (AC=100, CV=100; 5 consecutive format experiments format-006 through format-010 discarded). "Correlation breakdown alerts" (next Phase 3 item) is a new layer requiring Malik approval. RSI-Threshold Signal Override remains pending Malik decision.
+- **Next scoring date: Aug 11** (5 trading days from Aug 4). Aug 4 signals (IDs 1045-1062) inserted, scored_at NULL.
+- **Earnings mega-week active:** SMR Aug 5 AH, CEG Aug 6 AM, VST/OKLO/BAH Aug 7 AM, AMAT Aug 13 AH, NVDA Aug 26 AH.
+- **AS 38.72%, CS 75.49 (delta -1.04 from baseline 76.53).** AS remains sole lever for CS improvement.
+
 ## v1.4 — 2026-08-04 POST-CLOSE VERIFICATION — AMD Q2 BEAT but AH -7.5% (5th consecutive post-earnings decline); price corrections minor; CS unchanged 75.49
 
 - **AMD Q2 2026 EARNINGS (after close Aug 4):** Revenue $11.536B (+50% YoY, beat $11.284B consensus), Adj EPS $1.66 (beat $1.62 consensus), Data Center $6.7B (+107% YoY, 58% of revenue). Q3 guide ~$13B ±$300M (above $12.52B consensus). CEO Lisa Su: "strong momentum as EPYC demand accelerates, Instinct deployments scale, and Helios begins to ramp."
