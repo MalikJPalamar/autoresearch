@@ -1,5 +1,18 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-05 — GOOGL AI BRAIN DRAIN + AMD -8.8% POST-EARNINGS + NVDA +4.5% SPACEX; Jul29 batch 46.7% 5th best; CS 75.62 (delta -0.91 BEST SINCE JUL 16)
+
+- **NRG Aug 4 MAJOR price correction:** $120.50 → ~$140.00 (+16.2% error). Intraday low ($112.50) was captured instead of actual close. Stock V-recovered from $112.50 to $142.01 high. **SCORING FLIP: Jul 28 NRG CONTRARIAN INCORRECT→CORRECT** (from $130.81 base, +7.02% = CORRECT). Jul 28 batch rescored 6/16→7/16=43.75%. AS corrected 38.72→38.87% (262/674).
+- **AMD Aug 4 price correction:** $508.75→$518.58 (+1.9% error). No scoring impact (future window).
+- **Jul 29 batch scored 7/15 = 46.7% — 5TH BEST BATCH IN HISTORY.** CONTRARIAN 3/4=75% (NVDA +11.1%, GOOGL +7.4%, NRG +12.9%; VST -2.5% only miss). ACCUMULATE 3/4 decisive correct (MSFT +25.4% EXTENDS ALL-TIME RECORD, CEG +4.0%, LMT +1.4%; META/BAH/RTX null). WATCH 0/5 INCORRECT — 3rd consecutive 0/5+ batch, structural failure pattern confirmed (AMD +8.2%, TSM +9.5%, ASML +9.8%, AMAT +11.9%, LRCX +20.5%, PLTR +31.7%). SPECULATIVE 1/1 (OKLO +9.2%). AVOID 0/1 (SMR +11.3%, 4th of 5 failures).
+- **AS 38.87% → 39.04% (+0.17pp from batch).** Total: 269/689. +0.32pp net from start of session (38.72→39.04).
+- **CS 75.55 (corrected) → 75.62 (delta -0.91 from baseline 76.53).** BEST SINCE JUL 16. Improved from -1.04. CS trajectory: 75.42→75.55→75.50→75.55→75.62.
+- **Signal changes (2):** GOOGL ACCUMULATE→WATCH (Jeff Dean + key AI researchers departing, -5% on day, brain drain risk to AI thesis). NVDA CONTRARIAN→ACCUMULATE (RSI recovery from oversold, SpaceX Starlink AI partnership catalyst, +4.5% on day).
+- **Market:** S&P ~7,610, Dow ~53,400, Nasdaq ~25,600. WTI ~$76, VIX ~16.5 NORMAL. AMD -8.8% post-earnings decline (5th consecutive).
+- **Earnings calendar:** SMR Aug 5 AH, CEG Aug 6 AM, VST/OKLO/BAH Aug 7 AM, AMAT Aug 13 AH, NVDA Aug 26 AH.
+- **No active experiment.** RSI-Threshold Signal Override awaiting Malik approval. Auto-evolve scope exhausted. AS remains sole CS lever.
+- **Loop 2 status:** No experiment to evaluate. WATCH 0/5 structural failure continues to drag AS — methodology changes (requiring approval) needed to address.
+
 ## v1.4 — 2026-08-04 SCHEDULED SESSION — Supabase DB sync complete; no new experiment; earnings mega-week watch
 
 - **Supabase fully synced this session:** Jul 28 signals scored in DB (18 rows: 6 correct / 10 incorrect / 2 null, matching Aug 4 report batch results). Aug 4 daily_prices (18 rows), technicals (18 rows), macro (id=48, S&P 7,739 actual close / Dow 54,086 / VIX 16.40 / WTI $77.77 / 10Y 4.69%), signals (IDs 1045-1062), and report record (id=63, v63, CS 75.49) all inserted.
