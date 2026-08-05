@@ -1,5 +1,24 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-05 POST-CLOSE VERIFICATION — S&P flat not +0.6%; Nasdaq -0.8% snapped rally; OKLO $41.60→$43.33; no scoring flips; CS unchanged 75.62
+
+- **S&P 500 MAJOR correction:** Report ~7,784 (+0.6%) → Actual ~7,722 (-0.2%). Report captured midday gains that were given back. S&P snapped 4-day winning streak on GOOGL/AMD selloff. Rotation from tech into blue chips.
+- **Nasdaq correction:** Report ~26,550 (flat) → Actual ~26,372 (-0.8%). Snapped 4-day rally. Tech pullback driven by GOOGL -5% brain drain + AMD -8.8% post-earnings.
+- **Dow CONFIRMED:** Report ~54,470 (+0.7%) → Actual ~54,559 (+0.87%, +472.98 pts). **NEW ALL-TIME CLOSING HIGH.** Dow outperformed on blue-chip rotation.
+- **MSFT confirmed:** Report $489.88 → Actual $490.24 (+0.07% error). AH $490.52. Essentially exact.
+- **AMD confirmed:** Report $472.94. ✓ Multiple sources confirm -8.8% post-earnings decline.
+- **OKLO correction:** Report $41.60 → Actual $43.33 (+4.2% error). Jul 29 OKLO SPECULATIVE scoring: $38.11→$43.33 = +13.7% (was +9.2%). Score unchanged (still CORRECT).
+- **GOOGL estimated correction:** Report ~$362 → Estimated ~$358 (-5.0% from Aug 4 close $377.28 = ~$358.42). -1.0% error. Jul 29 scoring: $337→$358 = +6.2% (was +7.4%). Score unchanged (still CORRECT for CONTRARIAN).
+- **CEG estimated correction:** Report $267.25 → Estimated ~$264. Jul 29 scoring: $257→$264 = +2.7% (was +4.0%). Score unchanged (still CORRECT for ACCUMULATE, >1%).
+- **PLTR correction:** Report $162.66 (Aug 4 close used) → Aug 5 actual ~$160.35 (range $160.11-$166.06, -1.4% error). Jul 29 scoring: $123.53→$160.35 = +29.8% (was +31.7%). Score unchanged (still INCORRECT for WATCH, >3%).
+- **NVDA:** Report $221.51. Calculated from Aug 4 close $211.94 +4.31% = $221.08. Report ~$0.43 high (0.2%). Essentially correct.
+- **LRCX:** Report $307.24 → Search found $307.42. Essentially exact.
+- **ASML estimated:** Report $1,696.75. Aug 4 close ~$1,711.89 (Morningstar). One search found $1,678.22. If ~$1,680 actual, report is +1.0% high. Jul 29 scoring: $1,545→$1,680 = +8.7% (was +9.8%). Score unchanged (still INCORRECT for WATCH, >3%).
+- **Jul 29 batch UNCHANGED: 7/15 = 46.7%. AS unchanged 39.04% (269/689). CS unchanged 75.62 (delta -0.91).**
+- **SMR Q2 earnings:** Call scheduled 5pm ET Aug 5. Results not yet indexed in search. Consensus: EPS -$0.13, Rev $8.91M. Pending next session verification.
+- **Earnings this week:** CEG Aug 6 AM, VST/OKLO/BAH Aug 7 AM, AMAT Aug 13 AH, NVDA Aug 26 AH.
+- **Key pattern: Report macro estimates captured midday gains.** S&P opened +0.6% from record but closed flat as GOOGL/AMD selloff dragged tech. Dow rotated higher on blue-chip strength. This is the 2nd consecutive report where intraday estimates diverged significantly from closing prices.
+
 ## v1.4 — 2026-08-05 — GOOGL AI BRAIN DRAIN + AMD -8.8% POST-EARNINGS + NVDA +4.5% SPACEX; Jul29 batch 46.7% 5th best; CS 75.62 (delta -0.91 BEST SINCE JUL 16)
 
 - **NRG Aug 4 MAJOR price correction:** $120.50 → ~$140.00 (+16.2% error). Intraday low ($112.50) was captured instead of actual close. Stock V-recovered from $112.50 to $142.01 high. **SCORING FLIP: Jul 28 NRG CONTRARIAN INCORRECT→CORRECT** (from $130.81 base, +7.02% = CORRECT). Jul 28 batch rescored 6/16→7/16=43.75%. AS corrected 38.72→38.87% (262/674).
