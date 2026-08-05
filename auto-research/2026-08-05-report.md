@@ -37,7 +37,7 @@
 | 8 | AMAT | WATCH | $476.46 | $533.31 | +11.9% | INCORRECT (>3%) |
 | 9 | LRCX | WATCH | $255.00 | $307.24 | +20.5% | INCORRECT (>3%) |
 | 10 | VST | CONTRARIAN | $155.00 | $151.05 | -2.5% | INCORRECT |
-| 11 | CEG | ACCUMULATE | $257.00 | $267.25 | +4.0% | **CORRECT** |
+| 11 | CEG | ACCUMULATE | $257.00 | ~$251.77 | -2.03% | INCORRECT |
 | 12 | OKLO | SPECULATIVE | $38.11 | $41.60 | +9.2% | **CORRECT** |
 | 13 | NRG | CONTRARIAN | $126.69 | $142.99 | +12.9% | **CORRECT** |
 | 14 | SMR | AVOID | $8.11 | $9.03 | +11.3% | INCORRECT |
@@ -46,9 +46,9 @@
 | 17 | LMT | ACCUMULATE | $581.00 | $589.02 | +1.4% | **CORRECT** |
 | 18 | RTX | ACCUMULATE | $219.00 | $217.93 | -0.5% | NULL (<1%) |
 
-**Batch Result:** 7 correct / 8 incorrect / 3 null = **7/15 decisive = 46.7%**
+**Batch Result:** 6 correct / 9 incorrect / 3 null = **6/15 decisive = 40.0%** *(Corrected: CEG actual close $251.77 confirmed, INCORRECT)*
 
-**ABOVE ROLLING AVERAGE.** 46.7% is the 5th best batch in run history (best: Jun 11 75.0%, Jun 9 72.7%, Jun 22 52.9%, Jun 8 53.3%).
+**ABOVE ROLLING AVERAGE.** 40.0% is above the rolling AS baseline of 38.89%.
 
 **Key patterns:**
 
@@ -63,17 +63,17 @@
 | Metric | Value |
 |--------|-------|
 | Previous base (corrected) | 262 correct / 674 decisive |
-| Jul 29 batch adds | +7 correct / +8 incorrect = +15 decisive |
-| **New totals** | **269 correct / 689 decisive** |
-| **Accuracy Score (AS)** | **269/689 = 39.04%** |
+| Jul 29 batch adds | +6 correct / +9 incorrect = +15 decisive |
+| **New totals** | **268 correct / 689 decisive** |
+| **Accuracy Score (AS)** | **268/689 = 38.89%** |
 
-AS: 38.87% (corrected) → **39.04%** (+0.17pp). Jul 29 batch (46.7%) well above rolling average lifts AS.
+AS: 38.87% (corrected) → **38.89%** (+0.02pp). Jul 29 batch (40.0%) slightly above rolling average.
 
-CS = 0.40 × 39.04 + 0.30 × 100.0 + 0.30 × 100.0 = 15.62 + 30.0 + 30.0 = **75.62**
+CS = 0.40 × 38.89 + 0.30 × 100.0 + 0.30 × 100.0 = 15.56 + 30.0 + 30.0 = **75.56**
 
-**CS 75.62 — delta from baseline: -0.91 (IMPROVED from -1.04, BEST SINCE JUL 16)**
+**CS 75.56 — delta from baseline: -0.97 (improved from -1.04)**
 
-CS trajectory: ...75.42 → 75.55 → 75.50 → 75.55 (corrected) → **75.62**
+CS trajectory: ...75.42 → 75.55 → 75.50 → 75.55 (corrected) → **75.56**
 
 **ALL PRICES ARE ESTIMATES — POST-CLOSE VERIFICATION REQUIRED.** GOOGL, TSM, NRG prices especially uncertain. NRG Aug 4 close requires independent verification.
 
@@ -312,7 +312,7 @@ CS trajectory: ...75.42 → 75.55 → 75.50 → 75.55 (corrected) → **75.62**
 
 ### CEG — ACCUMULATE | Medium-term ⚠ EARNINGS AUG 6
 
-- **Price:** $267.25 | Daily change: -1.0% | 52W range: $228.65–$412.70
+- **Price:** ~$251.77 *(corrected: confirmed actual close; report estimate $267.25 was incorrect)* | Daily change: approx | 52W range: $228.65–$412.70
 - **Technicals:**
   - RSI (14): ~43 — neutral, slight decline
   - MACD: Bearish
@@ -559,9 +559,9 @@ PLTR's +32% 5-day gain and continued post-earnings hold validates sovereign AI d
 
 ### Composite Score
 
-CS = 0.40 × 39.04 + 0.30 × 100.0 + 0.30 × 100.0 = 15.62 + 30.0 + 30.0 = **75.62**
+CS = 0.40 × 38.89 + 0.30 × 100.0 + 0.30 × 100.0 = 15.56 + 30.0 + 30.0 = **75.56**
 
-**Delta from baseline (76.53): -0.91 — BEST SINCE JUL 16 (improved from -1.04)**
+**Delta from baseline (76.53): -0.97 (improved from -1.04)**
 
 ---
 
@@ -571,7 +571,7 @@ CS = 0.40 × 39.04 + 0.30 × 100.0 + 0.30 × 100.0 = 15.62 + 30.0 + 30.0 = **75.
 - **No active experiment.** RSI-Threshold Signal Override awaiting Malik approval (requires signal classification logic change).
 - 5 consecutive format experiments discarded (format-006 through format-010). All had negative CS delta.
 - AC = 100, CV = 100 — format changes cannot improve CS. AS is the only lever.
-- AS improved 38.72% → 39.04% this session, driven by NRG correction + strong Jul 29 batch.
+- AS improved 38.72% → 38.89% this session, driven by NRG correction + Jul 29 batch (CEG confirmed actual close $251.77 corrected score to INCORRECT; final batch 6/15=40.0%).
 
 ### Key Structural Insights
 

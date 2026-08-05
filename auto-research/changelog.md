@@ -1,5 +1,13 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-05 POST-SESSION CORRECTION — CEG Jul29 scoring INCORRECT (actual close $251.77 not $267.25); 7/15→6/15 batch; AS 39.04%→38.89%; CS 75.62→75.56
+
+- **CEG Jul29 SCORING CORRECTION:** Post-close estimate was $267.25 (CORRECT, +4.0%); confirmed actual Aug 5 close $251.77. From $257.00 Jul29 base: ($251.77-$257.00)/$257.00 = **-2.03% = INCORRECT** (ACCUMULATE + ≥1% fall = incorrect). CEG signal id=983 updated in Supabase with actual_move_5d_pct=-2.03, signal_correct=false.
+- **Jul29 batch corrected: 7/15 → 6/15 = 40.0%** (was 46.7%). 6 correct / 9 incorrect / 3 null.
+- **AS corrected: 39.04% → 38.89%** (268/689 decisive; was 269/689).
+- **CS corrected: 75.62 → 75.56** (0.40 × 38.89 + 0.30 × 100 + 0.30 × 100). Delta from baseline 76.53: -0.97 (was -0.91).
+- **Supabase fully synced:** reports id=64 (v64, CS=75.56, AS=38.89, AC=100, CV=100), signals IDs 1063-1080 (18 rows), macro id=49, daily_prices (18 rows), technicals (18 rows) all inserted.
+
 ## v1.4 — 2026-08-05 POST-CLOSE VERIFICATION — S&P flat not +0.6%; Nasdaq -0.8% snapped rally; OKLO $41.60→$43.33; no scoring flips; CS unchanged 75.62
 
 - **S&P 500 MAJOR correction:** Report ~7,784 (+0.6%) → Actual ~7,722 (-0.2%). Report captured midday gains that were given back. S&P snapped 4-day winning streak on GOOGL/AMD selloff. Rotation from tech into blue chips.
