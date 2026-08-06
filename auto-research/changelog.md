@@ -1,5 +1,28 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-06 POST-CLOSE VERIFICATION — CEG sell-the-news fade $275→~$269 (POTENTIAL SCORING FLIP); PLTR ~$153.66; Dow correction; most tickers confirmed
+
+- **CEG SELL-THE-NEWS FADE — POTENTIAL SCORING FLIP:** Report estimated CEG at ~$275 (+9% est on earnings beat). Pre-market opened at $282.50 (+6.56%), but per Benzinga "traded about 1.1% higher Thursday morning after surging as much as 6.9% earlier." Multiple Yahoo articles describe CEG as "dipping" or "dropping despite market gains." Estimated close ~$268-$269 (+1.1-1.5% from Aug 5 close $265.12). Jul 30 CEG ACCUMULATE at base $265.72 → if close $269 = +1.23% (CORRECT, ≥1%); if close $268 = +0.86% (NULL, <1%). **SCORING FLIP RISK: depends on whether close is above or below $268.38.** PENDING definitive close verification.
+- **PLTR correction:** Report ~$155 → TradingKey confirms -3.01% on Aug 6. From Aug 5 close $158.43: actual ~$153.66. Error: +0.87%. Jul 30 scoring: base $122.05 → $153.66 = +25.9% (unchanged INCORRECT for WATCH, was +27.0%).
+- **Dow correction:** Report ~54,177 → Actual 53,885 (-0.85%, -464 pts per CNBC/Yahoo). Error ~0.54%. Dow fell more than estimated.
+- **Confirmed prices (exact or near-exact):**
+  - NVDA: $219.15 (report ~$219, +0.07% error). Day range $214.80-$222.22.
+  - AMD: $482.05 EXACT MATCH.
+  - GOOGL: $359.61 (report $359.30, +0.09% error). Previous close $362.43.
+  - MSFT: $487.46 EXACT MATCH (Morningstar previous close confirms).
+  - TSM: $414.00 (report $414.00, EXACT). Day range $413.07-$426.30.
+  - ASML: ~$1,678 (report ~$1,675, +0.18% error).
+  - LRCX: ~$307.42 (report ~$308, -0.19% error).
+- **Confirmed macro:**
+  - S&P 500: 7,709.96 (-0.18%). Report ~7,714. Error -0.05%.
+  - Nasdaq: 26,348.35 (-0.06%). Report ~26,370. Error -0.08%.
+  - Dow: 53,885 (-0.85%). Report ~54,177. Error -0.54%.
+- **Pending verification:** META (~$588 vs sources showing $588-$593 range), VST (~$141, range $140-$145 confirmed), NRG (~$120), RTX ($221.87), LMT (~$589), BAH (~$72), OKLO ($42.64), SMR (~$9.04).
+- **IF no CEG scoring flip:** AS 39.29% (277/705), CS 75.72 (delta -0.81) UNCHANGED.
+- **IF CEG flips CORRECT→NULL:** AS 39.29%→39.20% (276/704, -0.09pp), CS 75.72→75.68 (delta -0.85).
+- **Earnings tomorrow Aug 7 AM:** VST (Q2, EPS $2.41 est), OKLO (Q2, pre-revenue), BAH (Q1 FY27). Triple earnings day.
+- **LMT Aug 5 close note:** One source shows $577.60, but report had ~$589 (+1.1%). If LMT's Aug 5 close was actually ~$577-$582 rather than ~$583, the Aug 6 report price may be overestimated. PENDING verification.
+
 ## v1.4 — 2026-08-06 — CEG EARNINGS BEAT + NRG LARGEST PRICE ERROR IN HISTORY + Jul30 batch ACCUM 87.5% ALL-TIME BEST; CS 75.72 (delta -0.81 BEST SINCE JUL 9)
 
 - **NRG Aug 5 PRICE CORRECTION — LARGEST ERROR IN HISTORY (-15.6%):** Report estimated $142.99, actual close $120.73. Error: ($142.99-$120.73)/$120.73 = **+18.4% overestimate**. NRG's extreme intraday volatility ($112.50-$142.01 range Aug 4) makes point-in-time web search snapshots unreliable. 3rd consecutive report with NRG error >15%.
