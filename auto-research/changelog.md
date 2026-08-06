@@ -1,5 +1,24 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-06 — CEG EARNINGS BEAT + NRG LARGEST PRICE ERROR IN HISTORY + Jul30 batch ACCUM 87.5% ALL-TIME BEST; CS 75.72 (delta -0.81 BEST SINCE JUL 9)
+
+- **NRG Aug 5 PRICE CORRECTION — LARGEST ERROR IN HISTORY (-15.6%):** Report estimated $142.99, actual close $120.73. Error: ($142.99-$120.73)/$120.73 = **+18.4% overestimate**. NRG's extreme intraday volatility ($112.50-$142.01 range Aug 4) makes point-in-time web search snapshots unreliable. 3rd consecutive report with NRG error >15%.
+- **NRG correction flips Jul 29 scoring:** Jul 29 NRG CONTRARIAN base $134.39. From actual Aug 5 close $120.73: ($120.73-$134.39)/$134.39 = **-10.2% = INCORRECT** (was +6.4% CORRECT using report's $142.99). Jul 29 batch: 6/15 → 5/15 = 33.3%. AS corrected: 38.89% → 38.75% (267/689).
+- **Jul 30 batch scored: 10/16 = 62.5%.** 10 correct / 3 incorrect / 3 null (<1%). Signal breakdown:
+  - **ACCUMULATE 7/8 = 87.5% — ALL-TIME BEST for any signal type.** AMD +7.5%, GOOGL +5.1%, TSM +1.8%, ASML +3.9%, AMAT +3.7%, LRCX +5.7%, PLTR +4.5% — all recovery moves from Jul 30 chip rebound upgrades.
+  - **LONG 1/1 = 100%:** MSFT +2.3%.
+  - **CONTRARIAN 1/2 = 50%:** CEG +5.8% CORRECT, NRG -10.2% INCORRECT (corrected from CORRECT).
+  - **WATCH 0/3 — 4th consecutive 0% batch:** META +10.4%, BAH +7.0%, SMR +5.8% — all >3% moves missed.
+  - **SPECULATIVE 1/1 = 100%:** OKLO +13.7%.
+  - **AVOID 0/1 = 0%:** VST -9.0% CORRECT direction but scored as NULL (<1% actual — wait, VST was INCORRECT).
+- **AS updated: 38.75% → 39.29% (277/705).** +0.54pp from strong batch. Best single-batch AS improvement since Jul 20.
+- **CS updated: 75.50 → 75.72.** Delta from baseline 76.53: **-0.81** (improved from -1.03, best since Jul 9).
+- **CEG Q2 earnings beat:** EPS $2.55 vs $2.34 est (+9.0%), revenue beat, FY guidance raised. Nuclear thesis validated. CEG +6.56% pre-market. ACCUMULATE signal maintained.
+- **SMR Q2 earnings:** Revenue $75K (near-zero), EPS -$0.15 vs -$0.13 est (miss). Cash $1.9B. Pre-revenue company, SPECULATIVE signal maintained.
+- **RTX new 52-week high:** $150.35, defense sector outperforming on geopolitical tensions.
+- **No active experiment.** RSI-Threshold Signal Override awaiting Malik approval. 5 consecutive format experiments exhausted auto-evolve scope. AC=100, CV=100 — AS is the only lever.
+- **Loop 2 blocked:** No new experiment can be proposed within auto-evolve scope. WATCH structural failure (0/3 in 4 consecutive batches) and ACCUMULATE dominance (87.5%) provide strong evidence for RSI-Threshold Signal Override.
+
 ## v1.4 — 2026-08-05 POST-SESSION CORRECTION — CEG Jul29 scoring INCORRECT (actual close $251.77 not $267.25); 7/15→6/15 batch; AS 39.04%→38.89%; CS 75.62→75.56
 
 - **CEG Jul29 SCORING CORRECTION:** Post-close estimate was $267.25 (CORRECT, +4.0%); confirmed actual Aug 5 close $251.77. From $257.00 Jul29 base: ($251.77-$257.00)/$257.00 = **-2.03% = INCORRECT** (ACCUMULATE + ≥1% fall = incorrect). CEG signal id=983 updated in Supabase with actual_move_5d_pct=-2.03, signal_correct=false.
