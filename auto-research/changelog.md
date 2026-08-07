@@ -1,5 +1,24 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-07 — NFP MISS -23K JOBS + CEG SCORING FLIP CONFIRMED + Jul31 batch 10/16=62.5%; CS 75.87 (delta -0.66 BEST SINCE JUL 10)
+
+- **CEG Aug 6 PRICE CORRECTION — SCORING FLIP CONFIRMED:** Report estimated ~$275, actual close $261.10 (-5.1% error). CEG reported Q2 EPS $2.55 beat, guidance raised, pre-market surged +6.56% to $282.50 — but reversed entirely, closing BELOW pre-earnings price $265.12. **WORST SELL-THE-NEWS EVENT IN PORTFOLIO HISTORY.** Jul 30 CEG ACCUMULATE at base $265.72 → $261.10 = -1.74% = INCORRECT (was +3.5% CORRECT). Jul 30 batch corrected 10/16 → 9/16 = 56.3%. AS corrected 277/705 → 276/705 = 39.15% (-0.14pp). CS corrected 75.72 → 75.66 (delta -0.87).
+- **Jul 31 batch scored: 10/16 = 62.5% — 2ND CONSECUTIVE.** Signal breakdown:
+  - **ACCUMULATE 7/8 = 87.5% — TIES ATH for 2ND CONSECUTIVE BATCH.** AMD +13.9%, MSFT +7.3%, TSM +2.6%, ASML +2.7%, AMAT +6.5%, LMT +1.9%, RTX +1.8% all correct. CEG -9.1% incorrect (sell-the-news from corrected base $296.61).
+  - **CONTRARIAN 2/4 = 50%:** NVDA +13.8% (largest CONTRARIAN correct ever), GOOGL +9.0% correct. VST -7.2%, NRG -11.6% incorrect (energy CONTRARIAN continues failing).
+  - **WATCH 0/2 = 0% — 6TH CONSECUTIVE 0% BATCH.** PLTR +38.5% NEW ALL-TIME WORST WATCH MISS (exceeds +28.97% Jul 28). META +7.8% missed. BAH +1.9% NULL.
+  - **SPECULATIVE 1/1 = 100%:** OKLO +7.0%.
+  - **AVOID 0/1 = 0%:** SMR +6.4% (6th of 7 AVOID failures).
+- **AS updated: 39.15% → 39.67% (+0.52pp).** 286/721 decisive. NEW SESSION HIGH — first time above 39.5% since Jul 10 (41.01%).
+- **CS updated: 75.66 → 75.87.** Delta from baseline 76.53: **-0.66 (BEST SINCE JUL 10).**
+- **NFP MISS -23,000 jobs** (vs +150K est) — first negative print since Dec 2020. Markets now pricing 1 hike by year-end (was 2). DXY 99.60 (7-week low). Unambiguously positive for growth/tech.
+- **VST Q2 earnings:** Revenue $4.02B (miss $5.73B est), EBITDA $1.767B +30% YoY, GAAP net income $305M (includes $472M unrealized hedge loss). CONTRARIAN maintained.
+- **OKLO Q2 earnings:** Revenue $1.21M (massive beat vs $0.1M est), EPS -$0.28 (miss -$0.16), cash $3.0B. Stock +8.1%. SPECULATIVE maintained.
+- **PLTR continues surge:** +8.3% today, $168.92, RSI ~78 extremely overbought. +38.5% in 5 trading days — largest single-ticker 5-day move in portfolio history.
+- **No signal changes.** All 18 signals carry forward.
+- **No active experiment.** RSI-Threshold Signal Override awaiting Malik approval. AC=100, CV=100 — AS is the only CS lever. 5 consecutive format experiments exhausted auto-evolve scope.
+- **Upcoming earnings:** AMAT Aug 13 AH, NVDA Aug 26 AH.
+
 ## v1.4 — 2026-08-06 POST-CLOSE VERIFICATION — CEG sell-the-news fade $275→~$269 (POTENTIAL SCORING FLIP); PLTR ~$153.66; Dow correction; most tickers confirmed
 
 - **CEG SELL-THE-NEWS FADE — POTENTIAL SCORING FLIP:** Report estimated CEG at ~$275 (+9% est on earnings beat). Pre-market opened at $282.50 (+6.56%), but per Benzinga "traded about 1.1% higher Thursday morning after surging as much as 6.9% earlier." Multiple Yahoo articles describe CEG as "dipping" or "dropping despite market gains." Estimated close ~$268-$269 (+1.1-1.5% from Aug 5 close $265.12). Jul 30 CEG ACCUMULATE at base $265.72 → if close $269 = +1.23% (CORRECT, ≥1%); if close $268 = +0.86% (NULL, <1%). **SCORING FLIP RISK: depends on whether close is above or below $268.38.** PENDING definitive close verification.
