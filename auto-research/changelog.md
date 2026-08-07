@@ -1,5 +1,20 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-07 POST-CLOSE VERIFICATION — BAH SCORING FLIP $73.93→$69.72 (NULL→INCORRECT); NVDA $224→$221; VST $138→$141; OKLO $44.92→$45.41; CS 75.87→75.84
+
+- **BAH MAJOR CORRECTION + SCORING FLIP:** Report ~$73.93 (+1.9% est) → Actual close **$69.72** (open $67.29, low $66.86, high $70.13). Error: **+6.0% MAJOR.** BAH Q1 FY27 earnings reported Aug 7 AM: Rev $2.8B (-4.2% YoY), adj diluted EPS $1.81 (+22%), EBITDA $334M (margin 11.9% +130bp), FCF $261M, backlog $39B (+3.2%). FY27 guidance reaffirmed $11.2-11.7B rev. **Stock dropped -5.6% on earnings** despite broader market rally — civil segment headwinds (revenue -20%+ expected) and defense-only growth spooked investors. Jul 31 BAH WATCH base $72.53 → $69.72 = **-3.87% = INCORRECT** (was +1.9% NULL). **SCORING FLIP: NULL → INCORRECT.**
+- **Jul 31 batch rescored: 10/16 → 10/17 = 58.8%** (was 62.5%). +1 decisive (BAH), +0 correct. BAH joins INCORRECT column.
+- **AS corrected: 286/721 → 286/722 = 39.61%** (-0.06pp). +1 decisive, +0 correct.
+- **CS corrected: 75.87 → 75.84.** Delta from baseline 76.53: **-0.69** (widened from -0.66).
+- **NVDA correction:** Report $224.22 → day range $219.36-$221.67 (prev close $218.99). Likely close ~$221. Error ~1.5%. Jul 31 scoring: base $197 → ~$221 = +12.2% (was +13.8%). Score unchanged (CORRECT). Direction confirmed.
+- **VST correction:** Report ~$138 → actual $141.38. Error +2.4%. Q2 earnings confirmed: Rev $4.02B (miss $5.73B), EBITDA $1.767B (+30% YoY). Stock not as weak as estimated. Jul 31 scoring: base $148.62 → $141.38 = -4.9% (was -7.2%). Score unchanged (INCORRECT, magnitude only).
+- **OKLO correction:** Report $44.92 → actual $45.41 (+7.63% from prev $42.19). Error +1.1%. Q2 Rev $1.21M beat confirmed. Jul 31 scoring: base $42 → $45.41 = +8.1% (was +7.0%). Score unchanged (CORRECT).
+- **Confirmed exact or near-exact:** MSFT $499.86 ✓, TSM $422.82 ✓, ASML $1,704.37 ✓, AMAT $537.76 ✓, LRCX $314.00 ✓, GOOGL $377.73 (report ~$375, +0.7%), META ~$589.90 (report $589.81), NRG $119.05 (report $119.40, -0.3%), LMT ~$583 (report $582.85), PLTR ~$169 (Forbes: +8.9%, report $168.92).
+- **Macro confirmed:** S&P 500 **7,757.64** (+0.62%, report ~7,748). Nasdaq **26,690.62** (+1.3%, report ~26,585). Dow **54,036.93** (+0.28%, report ~53,939). VIX **14.93** (report 15.15, -1.5% error). DXY **99.54** (report ~99.60). **10Y yield 4.65%** (report ~4.55% — 10bp error, yields didn't fall as much as estimated on NFP).
+- **PENDING verification:** AMD (range $476-$504, report $489.29), CEG (report $269.54), RTX (report $217.93), SMR (report $9.04, Aug 6 close $9.47).
+- **BAH Q1 FY27 earnings detail:** Civil segment revenue expected to fall low-20% range for FY27 — historic downturn. National security segment strong. Margin expansion (+130bp) offset by revenue mix headwind. Stock opened -8.6% at $67.29 before recovering to $69.72 (-5.6% close). Report's "no new catalyst" assessment for BAH was incorrect — Q1 FY27 earnings drove significant downside.
+- **No scoring flips from other corrections.** BAH is the only flip this verification.
+
 ## v1.4 — 2026-08-07 — NFP MISS -23K JOBS + CEG SCORING FLIP CONFIRMED + Jul31 batch 10/16=62.5%; CS 75.87 (delta -0.66 BEST SINCE JUL 10)
 
 - **CEG Aug 6 PRICE CORRECTION — SCORING FLIP CONFIRMED:** Report estimated ~$275, actual close $261.10 (-5.1% error). CEG reported Q2 EPS $2.55 beat, guidance raised, pre-market surged +6.56% to $282.50 — but reversed entirely, closing BELOW pre-earnings price $265.12. **WORST SELL-THE-NEWS EVENT IN PORTFOLIO HISTORY.** Jul 30 CEG ACCUMULATE at base $265.72 → $261.10 = -1.74% = INCORRECT (was +3.5% CORRECT). Jul 30 batch corrected 10/16 → 9/16 = 56.3%. AS corrected 277/705 → 276/705 = 39.15% (-0.14pp). CS corrected 75.72 → 75.66 (delta -0.87).
