@@ -1,5 +1,29 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-10 — $500B AI FINANCING DEAL + Aug3 batch 10/14=71.4% 2ND BEST EVER + AS crosses 40%; CS 76.09 (delta -0.44 BEST SINCE JUL 10)
+
+- **Aug 7 post-close corrections integrated:** BAH $73.93→$69.72 SCORING FLIP (NULL→INCORRECT), NVDA $224.22→~$221, VST $138→$141.38, OKLO $44.92→$45.41, GOOGL $375→$377.73. Jul 31 batch corrected 10/16→10/17=58.8%. AS corrected 286/721→286/722=39.61%. CS corrected 75.87→75.84.
+- **Additional Aug 7 corrections (no scoring flips):** AMD $489.29→$483.36 (-1.2%), RTX $217.93→$223.03 (+2.3%).
+- **Aug 3 batch scored: 10/14 = 71.4% — 2ND BEST BATCH IN RUN HISTORY.** Only Jun 11 (75.0%) was better. Signal breakdown:
+  - **ACCUMULATE 7/9 = 77.8% — 3RD CONSECUTIVE 70%+ BATCH.** MSFT +5.3%, TSM +4.2%, ASML +6.6%, AMAT +8.7%, LRCX +11.8%, PLTR +36.8%, RTX +4.6% all correct. GOOGL -5.4% incorrect (brain drain selloff wiped Aug 3 upgrade gains), CEG -9.4% incorrect (sell-the-news continued). META +0.8%, LMT +0.5% NULL.
+  - **CONTRARIAN 1/2 = 50%:** NVDA +4.9% correct. VST -4.1% incorrect (4th consecutive failure). NRG +0.1% NULL.
+  - **WATCH 0/1 = 0% — 7TH CONSECUTIVE 0% BATCH.** BAH -3.9% incorrect. AMD +2.7% NULL.
+  - **SPECULATIVE 1/1 = 100%:** OKLO +16.6% (largest SPECULATIVE correct in history).
+  - **AVOID 1/1 = 100%:** SMR -3.9% correct — **FIRST AVOID CORRECT IN 7 BATCHES** (corrected base $9.76).
+- **PLTR ACCUMULATE +36.8% CORRECT — SIGNAL UPGRADE VALIDATED.** The Aug 3 post-close upgrade from WATCH to ACCUMULATE turned what would have been WATCH INCORRECT (+36.8% >3%) into the largest ACCUMULATE correct in run history. Single most impactful signal change: ~+0.4pp AS contribution.
+- **AS updated: 39.61% → 40.22% (+0.61pp).** 296/736 decisive. **CROSSES 40% MILESTONE — first time above 40% since Jul 10 (41.01%).** 3 consecutive strong batches (58.8%, 62.5% corrected, 71.4%) reversed the decline from 38.54% Jul 31 low.
+- **CS updated: 75.84 → 76.09.** Delta from baseline 76.53: **-0.44 (BEST SINCE JUL 10).** CS trajectory: ...75.66 → 75.84 → **76.09**.
+- **$500B AI infrastructure financing deal** (FT: Apollo, Blackstone, hyperscalers). NVDA -1.8% sell-the-news (from corrected $221 close) but fundamentally bullish — private capital underwriting AI at unprecedented scale.
+- **OKLO volume surge:** $48.52, +6.8% (from corrected $45.41), 22.1M shares (2.2x avg). Post-Q2 earnings momentum continuing.
+- **GOOGL -6.2%:** Brain drain selloff continues from Jeff Dean departure (Aug 5). At SMA200 ~$350, critical support. (From corrected $377.73.)
+- **BAH +0.6%:** Modest bounce from corrected earnings selloff close $69.72. Q1 FY27 civil segment -20% guidance spooked investors.
+- **Oil +3%:** Hormuz Strait tensions returning. WTI $80.42, Brent $84.18. Negative for VST/NRG gas margins.
+- **VIX 14.90 sub-15:** Deep complacency. CPI Tuesday could spike volatility.
+- **ASML SMA50 breakout:** $1,740.99 (+2.1%), above SMA50 (~$1,700) for first time since China DUV selloff.
+- **No signal changes.** All 18 signals carry forward. Distribution: ACCUM(10), CONTRA(2), WATCH(4), SPEC(1), AVOID(1).
+- **No active experiment.** RSI-Threshold Signal Override awaiting Malik approval. AC=100, CV=100 — AS is the only CS lever.
+- **Upcoming:** AMAT earnings Aug 13 AH (3 days), CPI Tuesday Aug 11, NVDA earnings Aug 26 AH.
+
 ## v1.4 — 2026-08-07 POST-CLOSE VERIFICATION — BAH SCORING FLIP $73.93→$69.72 (NULL→INCORRECT); NVDA $224→$221; VST $138→$141; OKLO $44.92→$45.41; CS 75.87→75.84
 
 - **BAH MAJOR CORRECTION + SCORING FLIP:** Report ~$73.93 (+1.9% est) → Actual close **$69.72** (open $67.29, low $66.86, high $70.13). Error: **+6.0% MAJOR.** BAH Q1 FY27 earnings reported Aug 7 AM: Rev $2.8B (-4.2% YoY), adj diluted EPS $1.81 (+22%), EBITDA $334M (margin 11.9% +130bp), FCF $261M, backlog $39B (+3.2%). FY27 guidance reaffirmed $11.2-11.7B rev. **Stock dropped -5.6% on earnings** despite broader market rally — civil segment headwinds (revenue -20%+ expected) and defense-only growth spooked investors. Jul 31 BAH WATCH base $72.53 → $69.72 = **-3.87% = INCORRECT** (was +1.9% NULL). **SCORING FLIP: NULL → INCORRECT.**
