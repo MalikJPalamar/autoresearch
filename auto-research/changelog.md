@@ -1,5 +1,34 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-10 POST-CLOSE VERIFICATION — 2 SCORING FLIPS: LMT NULL→CORRECT ($588→$605.59 Patriot missile), NRG NULL→INCORRECT ($132.79→$119.87 52W low); MAJOR CORRECTIONS RTX $208.77→$226.13 BAH $70.17→$76.77 MSFT $500→$510; batch corrected 10/14→11/16=68.8%; AS 40.22→40.24; CS 76.09→76.10
+
+- **LMT SCORING FLIP (NULL→CORRECT):** Report estimated $588.00 (+0.5% from $585.16 base). TradingKey confirms LMT +3.00% on Aug 10 from Friday Aug 8 close $587.95. Aug 10 close ≈ **$605.59**. From Aug 3 base $585.16: ($605.59-$585.16)/$585.16 = **+3.49% = CORRECT** (ACCUMULATE + ≥1% gain). Driver: $58.62B PAC-3 MSE Patriot missile contract + geopolitical tension tailwinds. Pre-close report used Aug 7 close ($583) instead of Aug 8 close ($587.95), then applied wrong Aug 10 estimate.
+- **NRG SCORING FLIP (NULL→INCORRECT):** Report estimated ~$132.79 (+0.1% from $132.63 base). Multiple sources confirm NRG near 52-week low area: Investing.com reports 52W low $120.11, Robinhood shows high $119.87 / low $119.00 on Aug 10. Aug 10 close ≈ **$119.87**. From Aug 3 base $132.63: ($119.87-$132.63)/$132.63 = **-9.62% = INCORRECT** (CONTRARIAN + ≥1% decline = incorrect). NRG's price data is the most unreliable in the portfolio — the $132.79 estimate was a 10.8% overestimate, consistent with 3 of the last 5 sessions having >10% NRG errors. Pre-close report correctly flagged this as uncertain.
+- **RTX MAJOR CORRECTION (no scoring flip):** Report $208.77 → Actual **$226.13** (intraday $223.86-$226.33). Error +8.3%. Prior close (Aug 8) $223.03. From Aug 3 base $199.50: +13.3% (was +4.6%). CORRECT either way, magnitude larger. The report appears to have used a stale/incorrect price rather than the Aug 8 close.
+- **BAH MAJOR CORRECTION (no scoring flip):** Report $70.17 → Estimated **~$76.77** (intraday read, LOW confidence). Error +9.4%. BAH rebounded sharply from Aug 7 earnings selloff ($69.72) through Aug 8-10. From Aug 3 base $73: +5.2% (was -3.9%). INCORRECT either way (WATCH + >3%), but direction flips from decline to gain.
+- **MSFT CORRECTION:** Report $500 → Actual **~$510.02** (+2.0%). Error +2.0%. Bernstein raised PT to $660, AI capex "surprisingly measured" thesis drove rally. From Aug 3 base $475: +7.4% (was +5.3%). CORRECT either way, magnitude larger.
+- **NVDA confirmed:** Report ~$217 → Actual **~$217.52** (-2.9% from Aug 8 close $223.96). Near-exact. CORRECT unchanged.
+- **GOOGL confirmed:** Report $354.45 → Actual **~$355.84** (+0.67% on Aug 10). Near-exact. INCORRECT unchanged (-5.0% from base $374.62).
+- **TSM confirmed:** Report $421.35 → Actual **$420.04** (+0.44%). Near-exact. CORRECT unchanged.
+- **AMAT confirmed:** Report $539.14 → Actual **$539.14** (exact match). CORRECT unchanged.
+- **META confirmed:** Report $594.79 → Actual **~$594.60**. Near-exact. NULL unchanged.
+- **OKLO confirmed:** Report $48.52 → Actual **$48.42** (+14.77%). Near-exact. CORRECT unchanged.
+- **PLTR confirmed:** Report $171.81 → Actual **$172.01** (+10.32%). Near-exact. CORRECT unchanged.
+- **VST estimated:** Report $141.60 → Actual **~$140.72** (-0.47%). Near-exact. INCORRECT unchanged.
+- **ASML unverified:** Conflicting data ($1,748.59 vs $1,740.99). Score unchanged (CORRECT either way).
+- **LRCX unverified:** Conflicting data ($307.51 vs $313.31). Score unchanged (CORRECT either way).
+- **CEG estimated:** ~$270, near report $269.89. Score unchanged (INCORRECT either way).
+- **AMD unverified:** No confirmed Aug 10 close found. Score unchanged (NULL either way).
+- **SMR PENDING:** Report $9.38 → Motley Fool "barely budged after earnings" suggests ~$9.82 (from estimated Aug 8 close). If $9.82: from base $9.76, move +0.6% = NULL (was CORRECT at -3.9%). **POTENTIAL FLIP: CORRECT → NULL.** If confirmed, batch becomes 10/15=66.7%, AS=296/737=40.16%, CS=76.07. PENDING next session verification.
+- **Aug 3 batch corrected: 10/14 → 11/16 = 68.8%** (was 71.4%). +1 correct (LMT), +1 incorrect (NRG), -2 null. Batch rate declines because two former NULLs became decisive and net 1 correct vs 1 incorrect.
+- **AS corrected: 296/736 → 297/738 = 40.24%** (+0.02pp). LMT adds +1 correct +1 decisive; NRG adds +1 decisive.
+- **CS corrected: 76.09 → 76.10.** Delta from baseline 76.53: **-0.43** (improved from -0.44, NEW BEST SINCE JUL 10).
+- **Macro confirmed:** S&P 500 **7,753.11** (-0.06%, report ~7,750). Nasdaq **26,605.36** (-0.32%, report ~26,583). Dow **53,975.98** (-0.11%, report ~53,875). VIX **~14.90** (report 14.90 exact). WTI **$80.42** (report $80.42 exact). DXY **~99.5** (report ~99.5). 10Y **~4.65%** (report ~4.65%).
+- **Key market news:** Berkshire Hathaway Q2 beat (BRK +2.5%, GOOGL now Berkshire top-5 holding); AI investment ROI doubts drove NVDA -2.9% AAPL -2.1%; Intel -5% on $15B share offering; $58.6B PAC-3 Patriot missile contract (LMT +3%, RTX +1.4%); Iran/Hormuz tensions driving oil +3%.
+- **No signal changes.** All 18 signals carry forward.
+- **No active experiment.** RSI-Threshold Signal Override awaiting Malik approval.
+- **Data quality note:** Pre-close report missed Aug 8 (Friday) trading session entirely. RTX, LMT, BAH, and NRG estimates were based on Aug 7 closes + Aug 10 intraday snapshots, causing large errors. Aug 8 Friday had significant defense-sector moves (Patriot contract) and NRG continued decline that the pre-close report didn't capture.
+
 ## v1.4 — 2026-08-10 — $500B AI FINANCING DEAL + Aug3 batch 10/14=71.4% 2ND BEST EVER + AS crosses 40%; CS 76.09 (delta -0.44 BEST SINCE JUL 10)
 
 - **Aug 7 post-close corrections integrated:** BAH $73.93→$69.72 SCORING FLIP (NULL→INCORRECT), NVDA $224.22→~$221, VST $138→$141.38, OKLO $44.92→$45.41, GOOGL $375→$377.73. Jul 31 batch corrected 10/16→10/17=58.8%. AS corrected 286/721→286/722=39.61%. CS corrected 75.87→75.84.
