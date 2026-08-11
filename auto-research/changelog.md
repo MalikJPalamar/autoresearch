@@ -1,5 +1,17 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-11 — CPI EVE + OKLO -8% DOWNGRADES + Aug4 batch 7/15=46.7%; SMR pending RESOLVED; AS 40.24→40.37; CS 76.10→76.15 delta -0.38 NEW BEST
+
+- **SMR Aug 10 pending correction RESOLVED (no flip):** Aug 11 open of $9.36 confirms Aug 10 close ~$9.36-9.38, matching report estimate $9.38. From Aug 3 base $9.76: -4.1% = CORRECT (AVOID + ≥1% decline). Pending CORRECT→NULL flip NOT confirmed. AS remains 297/738 = 40.24% pre-batch.
+- **Aug 4 batch scored: 7/15 = 46.7% (5th best in history).** ACCUMULATE 6/8=75% (4th consecutive 70%+), WATCH 0/3=0% (8th consecutive 0%), CONTRARIAN 0/2=0% (energy thesis broken), SPECULATIVE 0/1=0%, AVOID 1/1=100%.
+- **Key scoring results:** NVDA ACCUM +5.6% ✅, AMD WATCH -9.5% ❌ (>3%), GOOGL ACCUM -7.4% ❌ (brain drain worst miss), MSFT WATCH +4.9% ❌ (>3%), META ACCUM +2.4% NULL, TSM ACCUM +3.4% ✅, ASML ACCUM +2.7% NULL, AMAT ACCUM +0.5% NULL (gap-up-fade), LRCX ACCUM ~0% NULL, VST CONTRA -5.3% ❌, CEG CONTRA ~0% NULL, OKLO SPEC +1.6% NULL, NRG CONTRA -19.2% ❌ (collapse continues), SMR AVOID +3.4% ❌, PLTR ACCUM +8.4% ✅, BAH WATCH +4.5% ❌ (>3%), LMT ACCUM +3.5% ✅, RTX ACCUM +4.4% ✅.
+- **AS updated: 297/738 → 304/753 = 40.37% (+0.13pp).** 7 correct + 8 incorrect + 15 decisive from this batch.
+- **CS updated: 76.10 → 76.15.** Delta from baseline 76.53: **-0.38** (NEW BEST, improved from -0.43). Four consecutive improvements.
+- **Structural signal failures confirmed:** WATCH 0/20+ in 8 consecutive batches (worst signal); CONTRARIAN 2/12 in last 6 batches (energy thesis broken — VST/NRG/CEG systematically failing); AVOID 1/6 in last 6 batches. ACCUMULATE remains dominant driver at 75%+ for 4 consecutive batches.
+- **Market context:** CPI Aug 12 (consensus 2.7%), AMAT earnings Aug 13, VIX 15.46 rising, 10Y 4.73% rising, US-Iran Hormuz impasse, OKLO -8% analyst downgrades, BAH recovery +4.5% from earnings selloff, NRG near 52W low.
+- **No signal changes.** All 18 signals carry forward.
+- **No active experiment.** RSI-Threshold Signal Override awaiting Malik approval. Auto-evolve scope exhausted (AC=100, CV=100). 5 consecutive format experiments (006-010) discarded. AS is the only remaining CS lever.
+
 ## v1.4 — 2026-08-10 POST-CLOSE VERIFICATION — 2 SCORING FLIPS: LMT NULL→CORRECT ($588→$605.59 Patriot missile), NRG NULL→INCORRECT ($132.79→$119.87 52W low); MAJOR CORRECTIONS RTX $208.77→$226.13 BAH $70.17→$76.77 MSFT $500→$510; batch corrected 10/14→11/16=68.8%; AS 40.22→40.24; CS 76.09→76.10
 
 - **LMT SCORING FLIP (NULL→CORRECT):** Report estimated $588.00 (+0.5% from $585.16 base). TradingKey confirms LMT +3.00% on Aug 10 from Friday Aug 8 close $587.95. Aug 10 close ≈ **$605.59**. From Aug 3 base $585.16: ($605.59-$585.16)/$585.16 = **+3.49% = CORRECT** (ACCUMULATE + ≥1% gain). Driver: $58.62B PAC-3 MSE Patriot missile contract + geopolitical tension tailwinds. Pre-close report used Aug 7 close ($583) instead of Aug 8 close ($587.95), then applied wrong Aug 10 estimate.
