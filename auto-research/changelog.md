@@ -1,5 +1,23 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-11 POST-CLOSE VERIFICATION — CEG SCORING FLIP $279.22→$270.43 (CORRECT→NULL); META $604.58→$594.92; PLTR $175.23→$172.95; batch 7/15→6/14=42.9%; AS 40.37→40.29; CS 76.15→76.12 delta -0.41
+
+- **CEG MAJOR CORRECTION + SCORING FLIP:** Report estimated ~$279.22 (+3.25% daily). Actual close **$270.43** (+0.20% daily). Error: **+3.2% MAJOR.** The report's +3.25% estimate was based on a TradingKey article that appears to have captured an intraday spike that was entirely given back — actual close was +0.20%. From Aug 4 base $270.00: ($270.43-$270.00)/$270.00 = **+0.16% = NULL** (was +3.4% CORRECT). **SCORING FLIP: CORRECT → NULL.**
+- **META correction:** Report ~$604.58 → Actual **$594.92** (high $612.42, low $593.40). Error -1.6%. From Aug 4 base $590.24: ($594.92-$590.24)/$590.24 = +0.79% = NULL (was +2.4% NULL). **No scoring flip** (NULL→NULL, magnitude change only).
+- **PLTR correction:** Report $175.23 → Actual **~$172.95** (range $168.35-$179.60). Error -1.3%. Report used Aug 10 close as Aug 11 estimate. From Aug 4 base $158.55: ($172.95-$158.55)/$158.55 = +9.08% (was +10.52%). **No scoring flip** (CORRECT→CORRECT).
+- **OKLO correction:** Report $44.49 → Actual **$44.28** (high $48.67, low $43.82). Error -0.5%. Volume 14.24M (1.3x avg). From Aug 4 base $43.75: +1.21% (was +1.69%). **No scoring flip** (CORRECT→CORRECT).
+- **AMAT correction:** Report ~$524.85 → Actual **$522.87** (HIGH $559.00, LOW $521.54). Error -0.4%. Dramatic intraday reversal confirmed — opened $559 (session high), sold to $521.54 low. From Aug 4 base $547.14: -4.43% (was -4.07%). **No scoring flip** (INCORRECT→INCORRECT).
+- **SMR correction:** Report ~$9.70 → Actual **~$9.61**. Error -0.9%. +5% on session (24/7 Wall St confirms). From Aug 4 base $9.05: +6.19% (was +7.18%). **No scoring flip** (INCORRECT→INCORRECT).
+- **GOOGL estimated correction:** Report $346.72 → Estimated **~$344.63** (-3.6% from Aug 10 $357.52, per TradingKey). Error +0.6%. From Aug 4 base $374.62: -8.01% (was -7.44%). **No scoring flip** (INCORRECT→INCORRECT).
+- **Confirmed exact or near-exact:** NVDA $218.51 ✓ (range $218.45-$222.40), AMD $469.29 ✓, MSFT $502.56 ✓ (range $499.55-$505.33, prev close $506.06), VST $144.94 ✓ (range $143.11-$146.89), NRG $118.13 ✓, LMT $603.50 ✓ (range $603.07-$603.88), RTX $223.74 ✓ (range $222.34-$225.40), BAH $80.19 ✓ (range $77.76-$80.23).
+- **Unverified:** TSM (Aug 10 close $418.47; no definitive Aug 11 close found), ASML (EUR close 1,513.80; USD ADR close unverified).
+- **Aug 4 batch corrected: 7/15 → 6/14 = 42.9%** (was 46.7%). CEG removes 1 correct and 1 decisive.
+- **AS corrected: 304/753 → 303/752 = 40.29%** (-0.08pp). -1 correct, -1 decisive from CEG flip.
+- **CS corrected: 76.15 → 76.12.** Delta from baseline 76.53: **-0.41** (widened from -0.38).
+- **Macro corrections:** VIX report 15.46 → actual **15.28** (down 1.16%, not up 3.76% as estimated; VIX Aug 10 close was ~15.46 not 14.90). DXY 99.84 ✓. 10Y 4.73% ✓. S&P ~7,753 ✓. Nasdaq ~26,605 ✓. Dow ~53,976 ✓.
+- **No signal changes.** All 18 signals carry forward.
+- **No active experiment.** RSI-Threshold Signal Override awaiting Malik approval.
+
 ## v1.4 — 2026-08-11 — CPI EVE + OKLO -8% DOWNGRADES + Aug4 batch 7/15=46.7%; SMR pending RESOLVED; AS 40.24→40.37; CS 76.10→76.15 delta -0.38 NEW BEST
 
 - **SMR Aug 10 pending correction RESOLVED (no flip):** Aug 11 open of $9.36 confirms Aug 10 close ~$9.36-9.38, matching report estimate $9.38. From Aug 3 base $9.76: -4.1% = CORRECT (AVOID + ≥1% decline). Pending CORRECT→NULL flip NOT confirmed. AS remains 297/738 = 40.24% pre-batch.
