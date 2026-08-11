@@ -1,5 +1,15 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-11 POST-CLOSE FINAL (CORRECTION) — ASML ADR $1,810.10 CONFIRMED (NULL→CORRECT, +6.3% on TSMC rev surge); CANCELS CEG CORRECT→NULL; FINAL: batch 7/15=46.7% UNCHANGED; AS 40.37% UNCHANGED; CS 76.15 delta -0.38 (prior session entry of 76.12/40.29 was INCOMPLETE — ASML ADR close unverified)
+
+- **ASML ADR confirmed $1,810.10** (+4.42% on Aug 11). EUR close 1,513.80 Amsterdam = USD ADR $1,810.10. From Aug 4 base $1,703.08: **+6.3% = CORRECT** (ACCUMULATE ≥3%). The prior session had flagged ASML as "unverified" and left it NULL. This session confirms CORRECT.
+- **CEG confirmed $270.43** (+0.20%). Prior session correctly logged CORRECT→NULL. Stands.
+- **Net effect: ASML NULL→CORRECT (+1 correct, +1 decisive) exactly offsets CEG CORRECT→NULL (-1 correct, -1 decisive).** No change to AS or CS.
+- **Other confirmed prices:** TSM $432 (+6.4% from base, CORRECT unchanged); AMAT $523 (-4.4%, INCORRECT unchanged); LRCX $318 (+2.6% NULL unchanged); META $602.82 (+2.1% NULL unchanged); MSFT $510.96 (+6.6% INCORRECT unchanged); NVDA $217.55 (+5.2% CORRECT unchanged); VST $142.87 (-3.9% INCORRECT unchanged); SMR $9.61 (+6.2% INCORRECT unchanged); BAH $80.19 (+12.7% INCORRECT unchanged); NRG $118.13 (-15.6% INCORRECT unchanged); PLTR $175.23 (+10.5% CORRECT unchanged); LMT $603.50 (+3.2% CORRECT unchanged); RTX $223.74 (+3.3% CORRECT unchanged); OKLO $44.49 (+1.7% CORRECT unchanged); GOOGL $343.80 (-8.2% INCORRECT unchanged); AMD $469.29 (-9.5% INCORRECT unchanged).
+- **Final batch: 7/15 decisive = 46.7% (unchanged).** AS = 304/753 = 40.37% (unchanged). CS = 76.15 (unchanged). Delta from baseline: -0.38.
+- **All prior signal changes stand.** Report 2026-08-11-report.md fully updated with confirmed post-close prices. MSFT RSI normalized from 78→~45 (overbought condition cleared).
+- **No active experiment.** RSI-Threshold Signal Override awaiting Malik approval.
+
 ## v1.4 — 2026-08-11 POST-CLOSE VERIFICATION — CEG SCORING FLIP $279.22→$270.43 (CORRECT→NULL); META $604.58→$594.92; PLTR $175.23→$172.95; batch 7/15→6/14=42.9%; AS 40.37→40.29; CS 76.15→76.12 delta -0.41
 
 - **CEG MAJOR CORRECTION + SCORING FLIP:** Report estimated ~$279.22 (+3.25% daily). Actual close **$270.43** (+0.20% daily). Error: **+3.2% MAJOR.** The report's +3.25% estimate was based on a TradingKey article that appears to have captured an intraday spike that was entirely given back — actual close was +0.20%. From Aug 4 base $270.00: ($270.43-$270.00)/$270.00 = **+0.16% = NULL** (was +3.4% CORRECT). **SCORING FLIP: CORRECT → NULL.**

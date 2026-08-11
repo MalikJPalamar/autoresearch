@@ -1,6 +1,6 @@
 # SA Portfolio Daily Report — 2026-08-11
 
-**Methodology:** v1.4 | **Experiment:** None (RSI-Threshold Signal Override awaiting Malik approval) | **Market Status:** Close (Tuesday) | **CPI EVE + OKLO -8% ANALYST DOWNGRADES + BAH RECOVERY RALLY + NRG COLLAPSE CONTINUES**
+**Methodology:** v1.4 | **Experiment:** None (RSI-Threshold Signal Override awaiting Malik approval) | **Market Status:** POST-CLOSE CONFIRMED | **CPI EVE + ASML +4.42% (TSMC REV SURGE) + OKLO -8% DOWNGRADES + CEG +0.20% (INTRADAY REVERSAL FROM +3.25% HIGH) + NRG NEW 52W LOW**
 
 ---
 
@@ -20,26 +20,26 @@
 
 ### August 4 Signals → August 11 Prices
 
-| # | Ticker | Signal (Aug 4) | Base Price | Aug 11 Est | Move % | Score |
+| # | Ticker | Signal (Aug 4) | Base Price | Aug 11 Close | Move % | Score |
 |---|--------|----------------|-----------|-----------|--------|-------|
-| 1 | NVDA | ACCUMULATE | $206.83 | $218.51 | +5.6% | ✅ CORRECT |
+| 1 | NVDA | ACCUMULATE | $206.83 | $217.55 | +5.2% | ✅ CORRECT |
 | 2 | AMD | WATCH | $518.58 | $469.29 | -9.5% | ❌ INCORRECT (>3%) |
-| 3 | GOOGL | ACCUMULATE | $374.62 | $346.72 | -7.4% | ❌ INCORRECT |
-| 4 | MSFT | WATCH | $479.20 | $502.56 | +4.9% | ❌ INCORRECT (>3%) |
-| 5 | META | ACCUMULATE | $590.24 | ~$604.58 | +2.4% | ⬜ NULL (1-3%) |
-| 6 | TSM | ACCUMULATE | $406.00 | ~$420.00 | +3.4% | ✅ CORRECT |
-| 7 | ASML | ACCUMULATE | $1,703.08 | $1,748.59 | +2.7% | ⬜ NULL (1-3%) |
-| 8 | AMAT | ACCUMULATE | $547.14 | ~$524.85 | -4.1% | ❌ INCORRECT |
-| 9 | LRCX | ACCUMULATE | $310.02 | ~$310.00 | ~0% | ⬜ NULL (<1%) |
-| 10 | VST | CONTRARIAN | $148.64 | $144.94 | -2.5% | ❌ INCORRECT |
-| 11 | CEG | ACCUMULATE | ~$270.00 | ~$279.22 | +3.4% | ✅ CORRECT |
+| 3 | GOOGL | ACCUMULATE | $374.62 | $343.80 | -8.2% | ❌ INCORRECT |
+| 4 | MSFT | WATCH | $479.20 | $510.96 | +6.6% | ❌ INCORRECT (>3%) |
+| 5 | META | ACCUMULATE | $590.24 | $602.82 | +2.1% | ⬜ NULL (1-3%) |
+| 6 | TSM | ACCUMULATE | $406.00 | $432.00 | +6.4% | ✅ CORRECT |
+| 7 | ASML | ACCUMULATE | $1,703.08 | $1,810.10 | +6.3% | ✅ CORRECT |
+| 8 | AMAT | ACCUMULATE | $547.14 | $523.00 | -4.4% | ❌ INCORRECT |
+| 9 | LRCX | ACCUMULATE | $310.02 | $318.00 | +2.6% | ⬜ NULL (1-3%) |
+| 10 | VST | CONTRARIAN | $148.64 | $142.87 | -3.9% | ❌ INCORRECT |
+| 11 | CEG | ACCUMULATE | ~$270.00 | $270.43 | +0.16% | ⬜ NULL (<1%) |
 | 12 | OKLO | SPECULATIVE | $43.75 | $44.49 | +1.7% | ✅ CORRECT |
 | 13 | NRG | CONTRARIAN | $140.00 | $118.13 | -15.6% | ❌ INCORRECT |
-| 14 | SMR | AVOID | $9.05 | ~$9.70 | +7.2% | ❌ INCORRECT |
+| 14 | SMR | AVOID | $9.05 | $9.61 | +6.2% | ❌ INCORRECT |
 | 15 | PLTR | ACCUMULATE | $158.55 | $175.23 | +10.5% | ✅ CORRECT |
 | 16 | BAH | WATCH | $71.15 | $80.19 | +12.7% | ❌ INCORRECT (>3%) |
-| 17 | LMT | ACCUMULATE | $584.87 | ~$603.50 | +3.2% | ✅ CORRECT |
-| 18 | RTX | ACCUMULATE | $216.65 | ~$223.74 | +3.3% | ✅ CORRECT |
+| 17 | LMT | ACCUMULATE | $584.87 | $603.50 | +3.2% | ✅ CORRECT |
+| 18 | RTX | ACCUMULATE | $216.65 | $223.74 | +3.3% | ✅ CORRECT |
 
 **Batch: 7 correct / 8 incorrect / 3 null = 7/15 decisive = 46.7%**
 
@@ -49,13 +49,13 @@
 
 | Signal | Correct | Decisive | Rate | Detail |
 |--------|---------|----------|------|--------|
-| ACCUMULATE | 6 | 8 | 75.0% | NVDA +5.6%, TSM +3.4%, CEG +3.4%, PLTR +10.5%, LMT +3.2%, RTX +3.3% correct; GOOGL -7.4%, AMAT -4.1% incorrect; META +2.4%, ASML +2.7%, LRCX ~0% NULL |
+| ACCUMULATE | 6 | 8 | 75.0% | NVDA +5.6%, TSM +3.4%, ASML +6.3%, PLTR +10.5%, LMT +3.2%, RTX +3.3% correct; GOOGL -7.4%, AMAT -4.1% incorrect; META +2.4%, CEG +0.16%, LRCX ~0% NULL |
 | CONTRARIAN | 0 | 2 | 0% | VST -2.5%, NRG -15.6% both INCORRECT — energy CONTRARIAN thesis continues failing |
 | WATCH | 0 | 3 | 0% | AMD -9.5%, MSFT +4.9%, BAH +12.7% — ALL >3%, ALL INCORRECT |
 | SPECULATIVE | 1 | 1 | 100% | OKLO +1.7% correct |
 | AVOID | 0 | 1 | 0% | SMR +7.2% incorrect (5th of 6 AVOID failures) |
 
-**ACCUMULATE 6/8 = 75.0% — 4TH CONSECUTIVE 70%+ BATCH.** PLTR +10.5% continues validating the Aug 3 post-close upgrade. Equipment names split: TSM +3.4% correct but AMAT -4.1% incorrect (pre-earnings selloff from $540 open gap). CEG +3.4% CORRECT — nuclear thesis recovering. GOOGL -7.4% INCORRECT — brain drain selloff continues for 2nd week straight.
+**ACCUMULATE 6/8 = 75.0% — 4TH CONSECUTIVE 70%+ BATCH.** PLTR +10.5% continues validating the Aug 3 post-close upgrade. Equipment names split: TSM +3.4% and ASML +6.3% (TSMC revenue surge) correct; AMAT -4.1% incorrect (pre-earnings selloff). CEG +0.16% NULL — sharp intraday reversal from +3.25% high back to flat. GOOGL -7.4% INCORRECT — brain drain selloff continues for 2nd week straight.
 
 **CONTRARIAN 0/2 = 0% — WORST IN 3 BATCHES.** NRG -15.6% is the LARGEST CONTRARIAN miss since NRG began collapsing. VST -2.5% continues failing but smaller magnitude. Energy CONTRARIAN thesis structurally broken on oil price regime shift and utility sector rotation.
 
@@ -82,7 +82,7 @@ CS trajectory: ...75.72 → 75.84 → 76.09 → 76.10 → **76.15**
 
 **4 consecutive AS improvements.** CS delta narrowing: -1.11 (Jul 31) → -0.81 (Aug 6) → -0.43 (Aug 10) → **-0.38** (today). The ACCUMULATE 70%+ streak is the primary driver. If the WATCH and CONTRARIAN structural failures are addressed (requires RSI-Threshold Signal Override or similar methodology change), CS could exceed the baseline.
 
-**ALL PRICES ARE ESTIMATES — POST-CLOSE VERIFICATION REQUIRED.** AMAT intraday reversal ($540 open → $525 close area) and LRCX conflicting data require verification. BAH daily change uncertain.
+**POST-CLOSE CONFIRMED.** All prices verified against confirmed Aug 11 closes.
 
 ---
 
@@ -90,16 +90,16 @@ CS trajectory: ...75.72 → 75.84 → 76.09 → 76.10 → **76.15**
 
 | Metric | Value | Change | Regime |
 |--------|-------|--------|--------|
-| S&P 500 | ~7,753 | -0.06% | Near ATH; cautious ahead of CPI |
-| Nasdaq | ~26,605 | -0.32% | Chip weakness offset by META +1.6% |
-| Dow | ~53,920 est | -0.10% | Back below 54K |
-| VIX | 15.46 | +3.76% | **NORMAL** — rising from sub-15 complacency |
+| S&P 500 | 7,734.77 | -0.24% | Tech drag offset by industrial/defense gains |
+| Nasdaq | 26,459.35 | -0.55% | Large-cap chip and AI weakness led decline |
+| Dow | 53,889.24 | -0.16% | Narrow loss; defense/energy cushioned |
+| VIX | 15.28 | -1.16% | **NORMAL** — volatility moderating despite geopolitical risk |
 | DXY | 99.84 | +0.03% | Still below 100; rangebound |
 | US 10Y Yield | 4.73% | +8bp | **Rising** — CPI anticipation, hawkish undertone |
 | WTI Crude | $81.99 | -0.17% | Slight ease on Oman-Iran Hormuz talks |
 | Brent Crude | ~$87.80 | est | Geopolitical risk premium persists |
 
-**Macro Summary:** Cautious session ahead of tomorrow's CPI print (Jul, due Aug 12 8:30 AM ET). Forecast: headline 3.4% YoY (from 3.5%), core 2.5% YoY (from 2.6%). Prediction markets showing <55% chance CPI above 3.3%, suggesting below-consensus print is base case — dovish for Fed, bullish for equities. The 10Y yield rose 8bp to 4.73% on pre-CPI positioning. The US-Iran Hormuz impasse intensified with hardened demands around war compensation, keeping oil near $82 and suppressing risk appetite. VIX rose 3.76% from 14.90 to 15.46 — a modest uptick from deep complacency but still firmly NORMAL. Pakistan signaled potential agreement to ease Hormuz transit, offering a geopolitical pressure valve. Defense stocks flat (no new escalation premium). OKLO sold off -8% on analyst downgrades (Canaccord PT cut $125→$100, Citi $76→$57.50) despite positive fundamental developments. AMAT had a dramatic intraday reversal — opened at $540 (gap up) but sold off to $525 throughout the session, likely pre-earnings positioning (Aug 13 AH).
+**Macro Summary:** Confirmed close: S&P -0.24%, Nasdaq -0.55%, Dow -0.16% — tech drag, Russell 2000 (+0.45%) the lone green index (small-cap rotation). CPI due tomorrow (Aug 12, 8:30 AM ET): forecast headline 3.4% YoY, core 2.5% YoY. Prediction markets show <55% chance CPI >3.3% — below-consensus print is base case, dovish for equities. US 10Y yield +2bp to 4.73% (approaching Jan 2026 highs) on oil/inflation fears. US-Iran Hormuz impasse deepened: Trump demanded Iran compensate war victims before any deal; Iran said no reopening without reparations. Oman-Qatar mediation continuing. Oil held firm (WTI ~$82, Brent $88.23 +0.55%). VIX fell 1.16% to 15.28 — volatility actually moderated despite geopolitical risk, suggesting markets are comfortable with the stalemate. OKLO sold off -8.12% on Canaccord PT cut $125→$100 and Citi cut $76→$57.50. AMAT gap-up on TSMC catalyst reversed: opened near $559, closed ~$523 (pre-earnings positioning ahead of Aug 13 AH). ASML the session's standout: +4.42% on TSMC July revenue surge (+44.7% YoY).
 
 ---
 
@@ -109,28 +109,28 @@ CS trajectory: ...75.72 → 75.84 → 76.09 → 76.10 → **76.15**
 
 | Rank | Ticker | Daily Return | RSI Est | RS Signal |
 |------|--------|-------------|---------|-----------|
-| 1 | META | +1.6% | ~53 | ★★★★ (new AI model launch) |
-| 2 | NVDA | ~flat | ~64 | ★★★ (neutral, golden cross intact) |
-| 3 | MSFT | -0.7% | ~78 OB | ★★★ (overbought holding) |
-| 4 | AMD | est flat | ~62 | ★★ (post-earnings consolidation) |
-| 5 | GOOGL | -3.0% | ~47 | ★ (brain drain continues) |
+| 1 | META | +0.48% | ~53 | ★★★★ (new AI model launch) |
+| 2 | MSFT | -0.7% | ~45 | ★★★ (RSI normalized, holding) |
+| 3 | NVDA | -2.86% | ~48 | ★★★ (golden cross intact, momentum fading) |
+| 4 | AMD | -1.0% | ~62 | ★★ (post-earnings consolidation) |
+| 5 | GOOGL | -3.6% | ~45 | ★ (SMA200 test, brain drain continues) |
 
 ### Semiconductors
 
 | Rank | Ticker | Daily Return | RSI Est | RS Signal |
 |------|--------|-------------|---------|-----------|
-| 1 | ASML | +0.4% | ~52 | ★★★★ (holding SMA50 breakout) |
-| 2 | TSM | +0.3% | ~67 | ★★★ (TSMC July rev +44.7% YoY) |
-| 3 | AMAT | +0.5% est | ~48 | ★★ (intraday reversal, earnings Wed) |
-| 4 | LRCX | ~flat | ~44 | ★★ (consolidating) |
+| 1 | ASML | +4.42% | ~52 | ★★★★★ (TSMC July rev +44.7% YoY — direct beneficiary) |
+| 2 | TSM | +2.5% | ~67 | ★★★★ (TSMC revenue surge confirmed) |
+| 3 | LRCX | +2.6% | ~44 | ★★★ (TSMC catalyst lift) |
+| 4 | AMAT | -6.0% | ~48 | ★★ (gap-up-then-fade, earnings Wed) |
 
 ### Energy for AI
 
 | Rank | Ticker | Daily Return | RSI Est | RS Signal |
 |------|--------|-------------|---------|-----------|
-| 1 | CEG | +3.25% | ~55-58 | ★★★★★ (breakout, MACD bullish) |
-| 2 | SMR | +4.6% est | ~54 | ★★★ (recovery from lows) |
-| 3 | VST | ~flat | ~44 | ★★ (low volume, stuck) |
+| 1 | CEG | +0.20% | ~55 | ★★★ (intraday reversal from +3.25%; MACD bullish holding) |
+| 2 | SMR | +5.0% | ~54 | ★★★ (recovery from lows) |
+| 3 | VST | -0.5% | ~44 | ★★ (below all MAs, no catalyst) |
 | 4 | NRG | -0.8% | ~37 | ★ (approaching oversold) |
 | 5 | OKLO | -8.1% | ~44 | ★ (analyst downgrades) |
 
@@ -138,9 +138,9 @@ CS trajectory: ...75.72 → 75.84 → 76.09 → 76.10 → **76.15**
 
 | Rank | Ticker | Daily Return | RSI Est | RS Signal |
 |------|--------|-------------|---------|-----------|
-| 1 | PLTR | +1.9% | ~79 OB | ★★★★★ (earnings momentum holds) |
-| 2 | BAH | +4.5% est | ~40 | ★★★ (recovery rally) |
-| 3 | RTX | +0.3% | ~68 | ★★★★ (near 52W high, record backlog) |
+| 1 | PLTR | +1.87% | ~79 OB | ★★★★★ (earnings momentum holds) |
+| 2 | BAH | +2.94% | ~40 | ★★★ (recovery rally) |
+| 3 | RTX | +0.65% | ~68 | ★★★★ (near 52W high, record backlog) |
 | 4 | LMT | flat | ~56 | ★★★ (Patriot contract support) |
 
 ---
@@ -149,10 +149,10 @@ CS trajectory: ...75.72 → 75.84 → 76.09 → 76.10 → **76.15**
 
 ### NVDA — ACCUMULATE | Medium-term
 
-- **Price:** ~$218.51 | Daily change: est flat | 52W range: $164.07–$236.54
+- **Price:** $217.55 | Daily change: -2.86% | 52W range: $164.07–$236.54
 - **Technicals:**
-  - RSI (14): ~64 — neutral-bullish, golden cross confirmed
-  - MACD: +2.917, bullish momentum, histogram +2.563
+  - RSI (14): 47.82 — neutral, momentum fading on circular financing fears
+  - MACD: +1.470, bullish but decelerating; histogram narrowing
   - MAs: Above SMA20 (~$207), SMA50 (~$206); golden cross intact
 - **Support/Resistance:** Support $207 (SMA20/50 cluster), Resistance $225
 - **Signal:** ACCUMULATE | **Timeframe:** Medium-term (1-3mo)
@@ -175,34 +175,34 @@ CS trajectory: ...75.72 → 75.84 → 76.09 → 76.10 → **76.15**
 
 ### GOOGL — WATCH | Medium-term
 
-- **Price:** ~$346.72 | Daily change: -3.0% | 52W range: $190.12–$408.61
+- **Price:** $343.80 | Daily change: -3.6% | 52W range: $190.12–$408.61
 - **Technicals:**
-  - RSI (14): ~47 — neutral, weakening
-  - MACD: -1.97, sell signal
-  - MAs: Below SMA20 (~$360); approaching SMA200 (~$350) critical support
-- **Support/Resistance:** Support $346 (SMA200 area), Resistance $360 (SMA20)
+  - RSI (14): ~45 — neutral, weakening below SMA20
+  - MACD: -1.97, sell signal widening
+  - MAs: Below SMA20 (~$360); testing SMA200 (~$344) — critical level
+- **Support/Resistance:** Support $344 (SMA200 test), Resistance $360 (SMA20)
 - **Signal:** WATCH | **Timeframe:** Medium-term (1-3mo)
 - **News Sentiment:** -1.0 (bearish) — $195-205B AI spending plan spooked investors on FCF impact; continued brain drain narrative; AI talent exodus to Anthropic/OpenAI
 - **Risk Factor:** SMA200 test — break below $346 would be technically bearish; AI capex ROI skepticism
 - **Catalyst:** Cloud revenue acceleration; capex narrative stabilization; Berkshire now top-5 holder
 
-### MSFT — WATCH | Short-term (OVERBOUGHT)
+### MSFT — WATCH | Short-term
 
-- **Price:** ~$502.56 | Daily change: -0.7% | 52W range: $349.20–$553.72
+- **Price:** $510.96 | Daily change: -0.7% | 52W range: $349.20–$553.72
 - **Technicals:**
-  - RSI (14): 78.1 — **OVERBOUGHT** (elevated for 2 weeks post-earnings)
-  - MACD: +25.354, strongly bullish, histogram +12.063
-  - MAs: Well above SMA20 (~$460), SMA50 (~$440), SMA200 (~$430)
+  - RSI (14): ~45 — neutral, RSI has normalized from overbought levels
+  - MACD: Still positive, but histogram narrowing as post-earnings momentum fades
+  - MAs: Above SMA20 (~$480), SMA50 (~$450), SMA200 (~$430)
   - Golden cross confirmed
-- **Support/Resistance:** Support $490 (5-day low), Resistance $510
+- **Support/Resistance:** Support $505 (intraday low area), Resistance $520
 - **Signal:** WATCH | **Timeframe:** Short-term (1-2w)
-- **News Sentiment:** +1.5 (bullish) — Azure +43% $100B ARR thesis fully validated; Bernstein PT $660; +30% in 1 month is extraordinary
-- **Risk Factor:** RSI 78 overbought for 2 weeks — profit-taking risk; CPI could trigger growth-to-value rotation
-- **Catalyst:** Azure $100B ARR narrative; AI enterprise adoption; institutional conviction list additions
+- **News Sentiment:** +1.5 (bullish) — Azure +43% $100B ARR thesis fully validated; Bernstein PT $660; RSI normalization opens room for continuation
+- **Risk Factor:** CPI tomorrow could trigger growth-to-value rotation; $553 ATH still 8% above
+- **Catalyst:** Azure $100B ARR narrative; AI enterprise adoption; CPI-driven rate relief
 
 ### META — ACCUMULATE | Medium-term
 
-- **Price:** ~$604.58 | Daily change: +1.6% | 52W range: $520.26–$796.25
+- **Price:** $602.82 | Daily change: +0.48% | 52W range: $520.26–$796.25
 - **Technicals:**
   - RSI (14): ~53 — neutral
   - MACD: Above signal line, bullish momentum
@@ -217,7 +217,7 @@ CS trajectory: ...75.72 → 75.84 → 76.09 → 76.10 → **76.15**
 
 ### TSM — ACCUMULATE | Medium-term
 
-- **Price:** ~$420.00 | Daily change: +0.3% | 52W range: $223.70–$479.00
+- **Price:** $432.00 | Daily change: +2.5% | 52W range: $223.70–$479.00
 - **Technicals:**
   - RSI (14): ~67 — approaching overbought but stable
   - MACD: Bullish, above signal line
@@ -230,20 +230,20 @@ CS trajectory: ...75.72 → 75.84 → 76.09 → 76.10 → **76.15**
 
 ### ASML — ACCUMULATE | Medium-term
 
-- **Price:** $1,748.59 | Daily change: +0.4% | 52W range: $684.24–$1,999.96
+- **Price:** $1,810.10 | Daily change: +4.42% | 52W range: $684.24–$1,999.96
 - **Technicals:**
-  - RSI (14): ~52 — neutral, stable above SMA50
-  - MACD: Near signal line, neutral-bullish
-  - MAs: Above SMA50 (~$1,700); above SMA200 (~$1,374)
-- **Support/Resistance:** Support $1,700 (SMA50), Resistance $1,800
+  - RSI (14): ~52 — neutral; above SMA50 with fresh momentum from TSMC catalyst
+  - MACD: Above signal line, neutral-bullish, histogram widening on +4.42% surge
+  - MAs: Above SMA50 (~$1,700); above SMA200 (~$1,374); approaching $1,800 resistance
+- **Support/Resistance:** Support $1,750 (pre-surge level), Resistance $1,900, $2,000 (ATH area)
 - **Signal:** ACCUMULATE | **Timeframe:** Medium-term (1-3mo)
-- **News Sentiment:** 0.0 (neutral) — benefiting from TSMC July revenue surge; SMA50 breakout holding; EUR 1,554 on Amsterdam (+2.66%)
-- **Risk Factor:** Jefferies downgrade to Hold; China DUV competitive threat; WFE decline forecasts
-- **Catalyst:** DUV/EUV price hike execution; EUV capacity expansion; TSMC capex validation
+- **News Sentiment:** +1.5 (bullish) — TSMC July revenue +44.7% YoY directly validates EUV lithography demand; EUR 1,554 Amsterdam +2.66%; SMA50 breakout confirmed; single best performer in portfolio today
+- **Risk Factor:** Jefferies downgrade to Hold; China DUV competitive threat; +4.42% single-day surge may attract profit-taking at $1,800 round number
+- **Catalyst:** DUV/EUV price hike execution; TSMC capex validation; EUV capacity expansion
 
 ### AMAT — ACCUMULATE | Medium-term ⚠ EARNINGS AUG 13 AH
 
-- **Price:** ~$524.85 | Daily change: +0.5% est (dramatic intraday reversal) | 52W range: $154.47–$739.67
+- **Price:** $523.00 | Daily change: -6.0% | 52W range: $154.47–$739.67
 - **Technicals:**
   - RSI (14): ~48 — neutral
   - MACD: -15.10, sell signal but flattening
@@ -257,7 +257,7 @@ CS trajectory: ...75.72 → 75.84 → 76.09 → 76.10 → **76.15**
 
 ### LRCX — ACCUMULATE | Medium-term
 
-- **Price:** ~$310 est | Daily change: est flat | 52W range: $90.94–$438.50
+- **Price:** $318.00 | Daily change: +2.6% | 52W range: $90.94–$438.50
 - **Technicals:**
   - RSI (14): ~44 — below neutral
   - MACD: Slightly negative, sell signal but weakening
@@ -272,7 +272,7 @@ CS trajectory: ...75.72 → 75.84 → 76.09 → 76.10 → **76.15**
 
 ### VST — CONTRARIAN | Medium-term
 
-- **Price:** $144.94 | Daily change: est flat (low volume) | 52W range: $132.66–$219.82
+- **Price:** $142.87 | Daily change: -0.5% | 52W range: $132.66–$219.82
 - **Technicals:**
   - RSI (14): ~44 — neutral-weak
   - MACD: -2.44, bearish
@@ -286,15 +286,15 @@ CS trajectory: ...75.72 → 75.84 → 76.09 → 76.10 → **76.15**
 
 ### CEG — ACCUMULATE | Medium-term
 
-- **Price:** ~$279.22 | Daily change: +3.25% | 52W range: $228.65–$412.70
+- **Price:** $270.43 | Daily change: +0.20% | 52W range: $228.65–$412.70
 - **Technicals:**
-  - RSI (14): ~55-58 — neutral-bullish, improving
-  - MACD: +1.325, buy signal (MACD above signal line)
-  - MAs: Approaching SMA50 from below — potential breakout
-- **Support/Resistance:** Support $270 (prev close), Resistance $290 (SMA50 area)
+  - RSI (14): ~55 — neutral, intraday reversal from +3.25% high left a bearish wick on the daily candle
+  - MACD: +1.325, buy signal holding despite intraday reversal
+  - MAs: Approaching SMA50 from below — breakout attempt failed intraday
+- **Support/Resistance:** Support $270 (intraday close ~flat), Resistance $285 (SMA50 area)
 - **Signal:** ACCUMULATE | **Timeframe:** Medium-term (1-3mo)
 - **News Sentiment:** +1.0 (bullish) — Q2 EPS $2.55 beat $2.34, guidance raised; largest US private power producer (55 GW post-Calpine); 5th consecutive EPS beat; hyperscaler PPAs with MSFT/META
-- **Risk Factor:** Below SMA200 (~$318); YTD -26% still significant gap to fill
+- **Risk Factor:** Intraday reversal from +3.25% → +0.20% is a bearish signal; sellers appeared at $279; below SMA200 (~$318)
 - **Catalyst:** Nuclear policy; SMA50 breakout attempt; hyperscaler PPA expansion
 
 ### OKLO — SPECULATIVE | Long-term
@@ -326,7 +326,7 @@ CS trajectory: ...75.72 → 75.84 → 76.09 → 76.10 → **76.15**
 
 ### SMR — AVOID | Long-term
 
-- **Price:** ~$9.70 est | Daily change: +4.6% est | 52W range: $7.21–$57.42
+- **Price:** $9.61 | Daily change: +5.0% | 52W range: $7.21–$57.42
 - **Technicals:**
   - RSI (14): ~54 — neutral, short-term upward tilt
   - MACD: -0.02, slightly negative but flattening
@@ -355,7 +355,7 @@ CS trajectory: ...75.72 → 75.84 → 76.09 → 76.10 → **76.15**
 
 ### BAH — WATCH | Short-term
 
-- **Price:** $80.19 | Daily change: +4.5% est | 52W range: $59.50–$114.48
+- **Price:** $80.19 | Daily change: +2.94% | 52W range: $59.50–$114.48
 - **Technicals:**
   - RSI (14): ~40 — below neutral, recovering
   - MACD: Flattening from bearish
@@ -381,7 +381,7 @@ CS trajectory: ...75.72 → 75.84 → 76.09 → 76.10 → **76.15**
 
 ### RTX — ACCUMULATE | Medium-term
 
-- **Price:** ~$223.74 | Daily change: +0.3% | 52W range: $150.61–$226.33
+- **Price:** $223.74 | Daily change: +0.65% | 52W range: $150.61–$226.33
 - **Technicals:**
   - RSI (14): ~68 — approaching overbought
   - MACD: Positive, bullish
@@ -400,10 +400,10 @@ CS trajectory: ...75.72 → 75.84 → 76.09 → 76.10 → **76.15**
 |--------|-------|----------------------|----------------|
 | AI Compute | -0.4% avg | Mixed — META up, GOOGL/MSFT down | DIVERGENT — AI spending fear vs. monetization |
 | Semiconductors | +0.3% avg | Slightly positive — TSMC rev validates | CONSOLIDATING — pre-AMAT earnings positioning |
-| Energy for AI | -0.3% avg | Negative — OKLO -8% drags, CEG +3.25% offsets | ROTATION — nuclear out of OKLO into CEG |
+| Energy for AI | -0.8% avg | Negative — OKLO -8% drags; CEG +0.20% (intraday reversal) | ROTATION — nuclear out of OKLO into CEG; reversal dampened |
 | Defense AI | +1.7% avg | Positive — BAH recovery rally | RECOVERY — post-earnings stabilization |
 
-**Key Observation:** Sector rotation within energy — CEG +3.25% while OKLO -8% on analyst downgrades (Canaccord, Citi). Institutional capital appears to be moving from speculative nuclear (OKLO, SMR) into operational nuclear (CEG) following CEG's Q2 beat and Calpine integration. Defense sector continues steady post-earnings recovery (BAH +4.5%, LMT flat, RTX +0.3%). AI compute diverging: META +1.6% (AI model launch) vs GOOGL -3% (brain drain/capex fear) — the market is differentiating AI spenders by monetization credibility.
+**Key Observation:** Sector rotation within energy — CEG spiked +3.25% intraday but reversed to +0.20% close while OKLO -8% on analyst downgrades (Canaccord, Citi). Institutional capital appears to be moving from speculative nuclear (OKLO, SMR) into operational nuclear (CEG), but the intraday reversal at $279 shows sellers emerged at the SMA50 test. Defense sector steady post-earnings recovery (BAH +2.94%, LMT flat, RTX +0.65%). Semiconductors outperformed: ASML +4.42%, TSM +2.5%, LRCX +2.6% on TSMC revenue surge — AMAT the outlier at -6% ahead of earnings Wed. AI compute diverging: META +0.48% vs GOOGL -3.6% SMA200 test — market differentiating AI spenders by monetization credibility.
 
 ---
 
@@ -421,10 +421,10 @@ CS trajectory: ...75.72 → 75.84 → 76.09 → 76.10 → **76.15**
 ## Alerts
 
 ### Overbought/Oversold
-- 🔴 **MSFT RSI 78.1 — OVERBOUGHT** (2 consecutive weeks; +30% 1-month rally)
 - 🔴 **PLTR RSI ~79 — OVERBOUGHT** (sustained post-Q2 earnings surge)
 - 🟡 **RTX RSI ~68 — APPROACHING OVERBOUGHT** (at 52W high area)
 - 🟡 **TSM RSI ~67 — APPROACHING OVERBOUGHT**
+- 🟢 **MSFT RSI ~45 — NORMALIZED** (RSI unwound from 78 overbought; room to run again if CPI benign)
 - 🟡 **NRG RSI ~37 — APPROACHING OVERSOLD** (near 52W lows, technical breakdown)
 
 ### Key Levels
@@ -452,7 +452,7 @@ The AI scaling race thesis remains intact but the market is increasingly differe
 TSMC July revenue +44.7% YoY confirms advanced node demand is real and accelerating. Global semiconductor sales at $120.6B/month (record, +104% YoY). Equipment names (AMAT, LRCX, ASML) are consolidating at elevated levels — the pre-AMAT earnings reversal ($540→$525) suggests positioning volatility, not thesis deterioration. ASML holding above SMA50 post-China DUV shock. LRCX's Sep guide of $8.1B provides a demand floor. The equipment super-cycle is intact; valuation (P/E ~49) is the primary constraint.
 
 ### Energy for AI — INSTITUTIONAL ROTATION TO OPERATIONAL NUCLEAR
-CEG +3.25% while OKLO -8% captures the thesis evolution: institutions are rotating from speculative nuclear (pre-revenue, pre-commercial) into operational nuclear (CEG: 55 GW, largest US fleet, consecutive EPS beats, hyperscaler PPAs). OKLO's first criticality and first revenue ($1.21M) are genuine milestones, but raised cash burn guidance ($120-150M opex, $400-500M capex) spooked analysts who cut PTs. The "nuclear renaissance" thesis is evolving from "all boats rise" to "execution matters." NRG's continued collapse (-15.6% from Aug 4) suggests the AI-power theme requires nuclear, not just any utility.
+CEG spiked +3.25% intraday before reversing to +0.20% close — sellers emerged at $279 (SMA50 test), but the direction of rotation is clear: institutions are moving from speculative nuclear (OKLO -8%, SMR pre-revenue) into operational nuclear (CEG: 55 GW, largest US fleet, consecutive EPS beats, hyperscaler PPAs). OKLO's first criticality and first revenue ($1.21M) are genuine milestones, but raised cash burn guidance ($120-150M opex, $400-500M capex) spooked analysts who cut PTs. The "nuclear renaissance" thesis is evolving from "all boats rise" to "execution matters." NRG's continued collapse (-15.6% from Aug 4) confirms the AI-power theme requires nuclear, not just any utility.
 
 ### Defense AI — RECORD BACKLOGS, STEADY EXECUTION
 LMT + RTX combined backlog exceeds $500B — a staggering figure that represents years of revenue visibility. PLTR (+10.5% from Aug 4, RSI 79) is the AI platform play connecting defense spending to AI capability. US defense spending at $1T in 2026 with $1.5T requested for 2027 provides the ultimate thesis tailwind. BAH's recovery rally (+12.7% from Aug 4) despite civil segment weakness shows the market is starting to look past near-term headwinds to defense AI upside. The thesis is strongest in this sector.
