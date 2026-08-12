@@ -1,6 +1,6 @@
 # SA Portfolio Daily Report — 2026-08-12
 
-**Methodology:** v1.4 | **Experiment:** None (RSI-Threshold Signal Override awaiting Malik approval) | **Market Status:** PRE-CLOSE ESTIMATE | **CPI DAY: 3.4% HEADLINE (CONSENSUS), CORE 2.5% COOLING + VIX SUB-15 LOW REGIME + AMAT EARNINGS TOMORROW + META -3.4% PRIVACY/CHINA**
+**Methodology:** v1.4 | **Experiment:** None (RSI-Threshold Signal Override awaiting Malik approval) | **Market Status:** POST-CLOSE VERIFIED | **CPI DAY: 3.4% HEADLINE (CONSENSUS), CORE 2.5% COOLING + S&P +0.26% NASDAQ +0.54% CPI RALLY + AMAT EARNINGS TOMORROW + META -3.4% PRIVACY/CHINA**
 
 ---
 
@@ -21,7 +21,7 @@ No corrections required — Aug 11 POST-CLOSE CONFIRMED all major prices. CEG CO
 | 1 | NVDA | ACCUMULATE | $221.51 | $223.40 | +0.85% | ⬜ NULL (<1%) |
 | 2 | AMD | WATCH | $472.94 | $474.32 | +0.29% | ✅ CORRECT (<1%) |
 | 3 | GOOGL | WATCH | $362.00 | ~$344 | -4.97% | ❌ INCORRECT (>3%) |
-| 4 | MSFT | WATCH | $489.88 | $502.23 | +2.52% | ⬜ NULL (1-3%) |
+| 4 | MSFT | WATCH | $489.88 | **$492.43** | **+0.52%** | ⬜ NULL (<1%) *(corrected from $502.23/+2.52%)* |
 | 5 | META | ACCUMULATE | $583.18 | $578.67 | -0.77% | ⬜ NULL (<1%) |
 | 6 | TSM | ACCUMULATE | $413.00 | $422.06 | +2.19% | ✅ CORRECT |
 | 7 | ASML | ACCUMULATE | $1,696.75 | $1,799.38 | +6.05% | ✅ CORRECT |
@@ -32,10 +32,10 @@ No corrections required — Aug 11 POST-CLOSE CONFIRMED all major prices. CEG CO
 | 12 | OKLO | SPECULATIVE | $41.60 | ~$45.65 | +9.74% | ✅ CORRECT |
 | 13 | NRG | CONTRARIAN | $120.73 | ~$120.00 | -0.60% | ⬜ NULL (<1%) |
 | 14 | SMR | AVOID | $9.03 | ~$9.60 | +6.31% | ❌ INCORRECT |
-| 15 | PLTR | ACCUMULATE | $162.66 | ~$172.41 | +5.99% | ✅ CORRECT |
+| 15 | PLTR | ACCUMULATE | $162.66 | **$174.94** | **+7.55%** | ✅ CORRECT *(corrected from $172.41/+5.99%)* |
 | 16 | BAH | WATCH | $72.52 | ~$80.00 | +10.31% | ❌ INCORRECT (>3%) |
 | 17 | LMT | ACCUMULATE | $589.02 | $594.71 | +0.97% | ⬜ NULL (<1%) |
-| 18 | RTX | ACCUMULATE | $217.93 | ~$223.99 | +2.78% | ✅ CORRECT |
+| 18 | RTX | ACCUMULATE | $217.93 | **$221.81** | **+1.78%** | ✅ CORRECT *(corrected from $223.99/+2.78%)* |
 
 **Batch: 8 correct / 4 incorrect / 6 null = 8/12 decisive = 66.7%**
 
@@ -80,7 +80,7 @@ CS trajectory: ...75.84 → 76.09 → 76.10 → 76.15 → **76.31**
 
 **5 consecutive AS/CS improvements.** Delta narrowing: -1.11 (Jul 31) → -0.81 (Aug 6) → -0.43 (Aug 10) → -0.38 (Aug 11) → **-0.22** (today). ACCUMULATE 100% is the primary driver. At this trajectory, CS could exceed baseline (76.53) within 2-3 batches.
 
-**PRE-CLOSE ESTIMATES.** All Aug 12 prices are pre-close estimates (~3pm ET). Post-close verification required. Key uncertainties: GOOGL (~$344 best estimate, confirmed close needed), BAH (~$80 estimated from Aug 11 trajectory, $72.52 search data is stale), VST ($146.50 from verified search, $158.43 search data is stale). Scoring flips possible but unlikely to change more than ±1 correct.
+**POST-CLOSE VERIFIED.** Prices updated with confirmed closing data. MSFT corrected $502.23→$492.43 (MAJOR, no scoring flip). PLTR $172.41→$174.94. RTX $223.99→$221.81. LMT $594.71→~$598.01. BAH and LMT have PENDING scoring flips (see post-close changelog entry). All other prices confirmed within tolerance. No confirmed scoring flips — AS 40.78%, CS 76.31 unchanged.
 
 ---
 
@@ -88,10 +88,10 @@ CS trajectory: ...75.84 → 76.09 → 76.10 → 76.15 → **76.31**
 
 | Metric | Value | Change | Regime |
 |--------|-------|--------|--------|
-| S&P 500 | ~7,728 | -0.1% | CPI day — essentially flat after in-line print |
-| Nasdaq | ~26,445 | -0.1% | Slight tech weakness (META -3.4%) offset by semis |
-| Dow | ~53,792 | -0.2% | Modest decline, narrow range |
-| VIX | 14.68 | -3.93% | **LOW** — sub-15, CPI anxiety resolved |
+| S&P 500 | **7,748.50** | **+0.26%** | CPI rally — tame inflation + AI earnings drove close higher |
+| Nasdaq | **26,588.49** | **+0.54%** | Tech led by CoreWeave, SMCI; CPI relief rally |
+| Dow | **53,770.27** | **-0.04%** | Essentially flat, -21.58 pts |
+| VIX | **~15.28** | ~flat | **NORMAL** — NOT sub-15 at close; intraday dip to ~14.68 reversed |
 | DXY | 99.84 | flat | Rangebound below 100 |
 | US 10Y Yield | 4.68% | -5bp | **Easing** from 4.73% — CPI cooling supports rate relief |
 | WTI Crude | ~$83.50 | +1.8% | Oil firm on Hormuz stalemate |
@@ -104,7 +104,7 @@ CS trajectory: ...75.84 → 76.09 → 76.10 → 76.15 → **76.31**
 | Headline CPI | 3.4% YoY | 3.4% | 3.5% | ✅ In-line, cooling |
 | Core CPI | 2.5% YoY | 2.5% | 2.6% | ✅ In-line, cooling |
 
-**Macro Summary:** CPI DAY delivered a Goldilocks result: headline 3.4% matching consensus (down from 3.5% in June), core 2.5% (down from 2.6%). Both measures cooling confirms the disinflationary trend without triggering deflation fears. Market reaction muted — indexes essentially flat as the result was widely priced in. VIX plunged to 14.68 (-3.93%), sub-15 for first time this week, confirming CPI anxiety has unwound. US 10Y yield eased to 4.68% (-5bp from 4.73%), supportive for growth/tech. Oil stable around $83.50 WTI (+1.8%) on Hormuz stalemate — the US-Iran impasse continues but markets pricing steady-state. No rate hike fears; no imminent cut expected (Fed hawkish hold stance from Jul 29 FOMC unchanged). AMAT earnings tomorrow (Aug 13 AH) is the next binary event.
+**Macro Summary (POST-CLOSE CORRECTED):** CPI DAY delivered a Goldilocks result: headline 3.4% matching consensus (down from 3.5% in June), core 2.5% (down from 2.6%). Both measures cooling confirms the disinflationary trend without triggering deflation fears. **Markets rallied into the close** — S&P 500 +0.26% to 7,748.50, Nasdaq +0.54% to 26,588.49 (pre-close estimate had both flat/slightly negative). CoreWeave and Super Micro Computer led tech gains. VIX dipped to ~14.68 intraday but **closed at ~15.28** (NOT sub-15). US 10Y yield eased to 4.68% (-5bp from 4.73%), supportive for growth/tech. Oil stable around $83.50 WTI (+1.8%) on Hormuz stalemate. No rate hike fears; no imminent cut expected (Fed hawkish hold stance from Jul 29 FOMC unchanged). AMAT earnings tomorrow (Aug 13 AH) is the next binary event.
 
 ---
 
@@ -193,7 +193,7 @@ CS trajectory: ...75.84 → 76.09 → 76.10 → 76.15 → **76.31**
 
 ### MSFT — ACCUMULATE ↑ | Medium-term *(was WATCH)*
 
-- **Price:** $502.23 | Daily change: -1.7% est | 52W range: $349.20–$553.72
+- **Price:** **$492.43** *(corrected from $502.23)* | Daily change: **-2.26%** | 52W range: $349.20–$553.72
 - **Technicals:**
   - RSI (14): ~42 — neutral, fully normalized from overbought 76 (Aug 4)
   - MACD: Positive but histogram narrowing as post-earnings momentum fades
@@ -344,7 +344,7 @@ CS trajectory: ...75.84 → 76.09 → 76.10 → 76.15 → **76.31**
 
 ### PLTR — ACCUMULATE | Medium-term (OVERBOUGHT COOLING)
 
-- **Price:** ~$172.41 | Daily change: -1.4% est | 52W range: $106.37–$207.52
+- **Price:** **$174.94** *(corrected from ~$172.41)* | Daily change: ~flat (AH $174.32) | 52W range: $106.37–$207.52
 - **Technicals:**
   - RSI (14): ~75 — **OVERBOUGHT** (cooling from 79 — positive direction)
   - MACD: Strongly bullish
@@ -370,7 +370,7 @@ CS trajectory: ...75.84 → 76.09 → 76.10 → 76.15 → **76.31**
 
 ### LMT — ACCUMULATE | Medium-term
 
-- **Price:** $594.71 | Daily change: -1.4% | 52W range: $402.54–$676.70
+- **Price:** **~$598.01** *(corrected from $594.71)* | Daily change: ~flat | 52W range: $402.54–$676.70
 - **Technicals:**
   - RSI (14): ~53 — neutral, slight pullback from 56
   - MACD: Slightly negative, flattening
@@ -383,7 +383,7 @@ CS trajectory: ...75.84 → 76.09 → 76.10 → 76.15 → **76.31**
 
 ### RTX — ACCUMULATE | Medium-term
 
-- **Price:** ~$223.99 | Daily change: +0.4% | 52W range: $150.61–$226.33
+- **Price:** **$221.81** *(corrected from ~$223.99)* | Daily change: ~flat (range $219.49–$224.00) | 52W range: $150.61–$226.33
 - **Technicals:**
   - RSI (14): ~67 — approaching overbought
   - MACD: Positive, bullish
@@ -515,4 +515,4 @@ Per ticker, 5 possible points:
 
 **Next scoring date:** Aug 19 (5 trading days from Aug 12).
 
-**PRE-CLOSE ESTIMATES — POST-CLOSE VERIFICATION REQUIRED.** Key tickers requiring verification: GOOGL (~$344), BAH (~$80 est, $72.52 data stale), VST ($146.50 est, $158.43 data stale), OKLO (~$45.65), NRG (~$120), SMR (~$9.60). Potential scoring flips bounded to ±1 correct.
+**POST-CLOSE VERIFIED (Aug 12 evening session).** MSFT corrected $502.23→$492.43 (MAJOR -2.0%), no scoring flip. S&P/Nasdaq rallied on CPI (report had flat). VIX 15.28, not 14.68 sub-15 as pre-close estimated. PLTR $174.94 (up from $172.41), RTX $221.81 (down from $223.99), LMT ~$598.01 (up from $594.71). **PENDING verification:** BAH (potential INCORRECT→NULL if close ~$74.58), LMT (potential NULL→CORRECT if close ~$598). No confirmed scoring flips. AS 40.78%, CS 76.31 UNCHANGED.

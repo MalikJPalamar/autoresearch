@@ -1,5 +1,33 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-12 POST-CLOSE VERIFIED — MSFT MAJOR CORRECTION $502.23→$492.43 (-2.0%); S&P 7,728→7,748.50 (+0.26%), Nasdaq 26,445→26,588.49 (+0.54%); VIX 14.68→15.28 (NOT sub-15); NO SCORING FLIPS; AS 40.78% CS 76.31 UNCHANGED
+
+- **MSFT MAJOR PRICE CORRECTION:** Report estimated $502.23 (-1.7% est). Actual close **$492.43** (prev $503.81, -2.26%). Error: +2.0% overestimate ($9.80). Scoring: WATCH base $489.88 → $492.43 = +0.52% = **NULL** (<1%). Was +2.52% NULL (1-3%). **No scoring flip** (NULL→NULL, magnitude only).
+- **S&P 500 MAJOR CORRECTION:** Report ~7,728 (-0.1%). Actual **7,748.50** (+0.26%). Markets ROSE on CPI, not flat. Pre-close snapshot captured early-session weakness that reversed into close.
+- **Nasdaq MAJOR CORRECTION:** Report ~26,445 (-0.1%). Actual **26,588.49** (+0.54%). CPI-driven tech rally: CoreWeave, Super Micro Computer led. 143-point underestimate.
+- **Dow CONFIRMED:** Report ~53,792 (-0.2%). Actual **53,770.27** (-0.04%, -21.58 pts). Essentially flat. Close match.
+- **VIX CORRECTION:** Report 14.68 (-3.93% "LOW sub-15"). Actual **~15.28**. VIX was NOT sub-15 at close. Pre-close snapshot captured intraday CPI-relief dip that reversed. VIX flat from Aug 11 close (15.28→~15.28).
+- **NVDA confirmed:** Report $223.40. Sources show $223.40-$223.96. Near-exact.
+- **AMD confirmed:** Report $474.32. TradingKey confirms +3.02% on Aug 12. Close **$474.32** confirmed. After-hours $475.
+- **GOOGL confirmed:** Report ~$344. Actual **~$343.00**. Error -0.3%. Scoring unchanged: WATCH base $362 → -5.25% INCORRECT (was -4.97% INCORRECT).
+- **META confirmed:** Report $578.67. Actual **$578.27** (high $604.50, low $577.50). Near-exact.
+- **TSM confirmed:** Report $422.06. Trading at $422.06. Match.
+- **ASML confirmed:** Report $1,799.38. ADR $1,799.38 (EUR 1,568.80). Match.
+- **AMAT confirmed:** Report $537.00. Trading at $537.00 (high $541.14, low $522.66). Match.
+- **LRCX UNVERIFIED:** Report $313.31. Aug 11 close $311.31-$311.41. If Aug 12 close ~$311, scoring from base $307.24: +1.22% = CORRECT (was +1.97% CORRECT). **No flip likely.**
+- **VST confirmed:** Report ~$146.50. Trading at $146.50 (range $145.31-$149.38). Match.
+- **CEG confirmed:** Report ~$278.36. Trading at $278.36 (+2.93%). Match.
+- **OKLO correction:** Report ~$45.65. Investing.com shows $45.10 (prev $47.01, but prev close data inconsistent with verified Aug 11 close ~$44.28). Scoring: SPEC base $41.60 → $45.10 = +8.41% CORRECT (was +9.74% CORRECT). **No flip.**
+- **NRG confirmed:** Report ~$120. Actual ~$119.79 (+0.74% on day). Close match.
+- **SMR UNVERIFIED:** Report ~$9.60. Aug 9 data shows $9.82. Aug 11 close $9.61. No definitive Aug 12 close found. Score unchanged either way (AVOID INCORRECT, >1% gain).
+- **PLTR correction:** Report ~$172.41. Actual **$174.94** (AH $174.32). Error +1.5%. Scoring: ACCUM base $162.66 → $174.94 = +7.55% CORRECT (was +5.99% CORRECT). **No flip.**
+- **BAH UNVERIFIED:** Report ~$80. Aug 10 close $77.90. One source shows $74.58 (context unclear, may be stale). If Aug 12 close ~$74.58: WATCH base $72.52 → +2.84% = NULL (1-3%, not >3% threshold for INCORRECT). **POTENTIAL SCORING FLIP: INCORRECT→NULL.** PENDING next session verification. If confirmed, batch becomes 8/11 = 72.7%, AS = 312/764 = 40.84%, CS = 76.34.
+- **LMT correction:** Report $594.71. Actual **~$598.01** (range $598.01). Error +0.6%. Scoring: ACCUM base $589.02 → $598.01 = +1.53% = NULL (<3% for ACCUM, but wait — ACCUM ≥1% = CORRECT). Actually $598.01 from base $589.02 = +1.53% = CORRECT (was +0.97% NULL). **POTENTIAL SCORING FLIP: NULL→CORRECT.** PENDING verification.
+- **RTX correction:** Report ~$223.99. Actual **~$221.81** (range $219.49-$224.00). Error -1.0%. Scoring: ACCUM base $217.93 → $221.81 = +1.78% CORRECT (was +2.78% CORRECT). **No flip.**
+- **BAH ex-div date correction:** Report stated "ex-div Aug 14 ($0.59)". Search shows latest ex-div was June 10, 2026; next ex-div not yet announced. Aug 14 ex-div appears incorrect.
+- **Batch UNCHANGED (pending BAH/LMT verification):** 8/12 = 66.7%. AS 40.78% (312/765). CS 76.31. Delta -0.22.
+- **IF BAH flips INCORRECT→NULL AND LMT flips NULL→CORRECT:** Batch becomes 9/11 = 81.8% (NEW ALL-TIME BEST). AS = 313/763 = 41.02% (NEW ATH). CS = 76.41 (delta -0.12 APPROACHING BASELINE). Both corrections plausible but PENDING definitive close verification.
+
 ## v1.4 — 2026-08-12 PRE-CLOSE — CPI DAY 3.4% (CONSENSUS); Aug 5 batch 8/12=66.7% TIED 4TH BEST; AS 40.37→40.78 (+0.41pp); CS 76.15→76.31 delta -0.22 NEW BEST; ACCUMULATE 6/6=100% ALL-TIME BEST; WATCH 1/3 FIRST NON-ZERO IN 9 BATCHES; MSFT WATCH→ACCUMULATE
 
 - **Aug 5 signal scoring (5 trading days: Aug 6, 7, 10, 11, 12):**
