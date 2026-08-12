@@ -1,5 +1,26 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-12 PRE-CLOSE — CPI DAY 3.4% (CONSENSUS); Aug 5 batch 8/12=66.7% TIED 4TH BEST; AS 40.37→40.78 (+0.41pp); CS 76.15→76.31 delta -0.22 NEW BEST; ACCUMULATE 6/6=100% ALL-TIME BEST; WATCH 1/3 FIRST NON-ZERO IN 9 BATCHES; MSFT WATCH→ACCUMULATE
+
+- **Aug 5 signal scoring (5 trading days: Aug 6, 7, 10, 11, 12):**
+  - CORRECT (8): AMD WATCH +0.3%, TSM ACCUM +2.2%, ASML ACCUM +6.1%, LRCX ACCUM +2.0%, CEG ACCUM +10.6%, OKLO SPEC +9.7%, PLTR ACCUM +6.0%, RTX ACCUM +2.8%
+  - INCORRECT (4): GOOGL WATCH -5.0% (>3%), VST CONTRA -3.0%, BAH WATCH +10.3% (>3%), SMR AVOID +6.3%
+  - NULL (6): NVDA +0.9%, MSFT +2.5%, META -0.8%, AMAT +0.7%, NRG -0.6%, LMT +1.0%
+  - **Batch: 8/12 = 66.7%** — tied 4th best in history
+- **ACCUMULATE 6/6 = 100%** — ALL-TIME BEST. 5th consecutive 70%+ batch. TSM, ASML, LRCX, CEG, PLTR, RTX all correct. 4 NULLs (NVDA, META, AMAT, LMT) show narrow-range consolidation.
+- **WATCH 1/3 = 33.3%** — FIRST NON-ZERO IN 9 BATCHES. AMD +0.29% breaks the 8-batch zero streak. Borderline result but streak is officially broken.
+- **CONTRARIAN 0/1 = 0%** — VST -3.0% continues energy failure pattern. 0/4 in last 4 batches.
+- **AVOID 0/1 = 0%** — SMR +6.3% fails again. 6th of 7 recent failures.
+- **AS: 304/753 = 40.37% → 312/765 = 40.78%** (+0.41pp). 5th consecutive improvement.
+- **CS: 76.15 → 76.31.** Delta from baseline 76.53: **-0.22 NEW BEST** (narrowed from -0.38).
+- **CS trajectory:** -1.11 → -0.81 → -0.43 → -0.38 → **-0.22**. At this rate, CS exceeds baseline within 2-3 batches.
+- **Signal change: MSFT WATCH → ACCUMULATE.** RSI overbought condition (76 on Aug 4) fully unwound to ~42. Azure +43% $100B ARR thesis intact. Wells Fargo PT $604. All MAs bullish. Overbought concern 100% resolved.
+- **CPI July results:** Headline 3.4% YoY (consensus), core 2.5% YoY (from 2.6%). Both cooling. VIX plunged to 14.68 (LOW regime, sub-15). 10Y yield eased 5bp to 4.68%.
+- **Key news:** META -3.4% (privacy complaint + China block), PLTR -1.4% (ARK sold 109K shares, Burry bearish), CEG +2.9% (guidance raised $11.50-12.50), AMAT +2.75% (earnings tomorrow Aug 13 AH), energy sector bounce (CEG +2.9%, VST +2.5%, OKLO +2.6%).
+- **PRE-CLOSE ESTIMATES.** Post-close verification needed: GOOGL (~$344), BAH (~$80 est), VST ($146.50 est), OKLO (~$45.65), NRG (~$120), SMR (~$9.60).
+- **No active experiment.** RSI-Threshold Signal Override awaiting Malik approval.
+- **Next scoring date:** Aug 19 (5 trading days from Aug 12).
+
 ## v1.4 — 2026-08-11 POST-CLOSE FINAL (CORRECTION) — ASML ADR $1,810.10 CONFIRMED (NULL→CORRECT, +6.3% on TSMC rev surge); CANCELS CEG CORRECT→NULL; FINAL: batch 7/15=46.7% UNCHANGED; AS 40.37% UNCHANGED; CS 76.15 delta -0.38 (prior session entry of 76.12/40.29 was INCOMPLETE — ASML ADR close unverified)
 
 - **ASML ADR confirmed $1,810.10** (+4.42% on Aug 11). EUR close 1,513.80 Amsterdam = USD ADR $1,810.10. From Aug 4 base $1,703.08: **+6.3% = CORRECT** (ACCUMULATE ≥3%). The prior session had flagged ASML as "unverified" and left it NULL. This session confirms CORRECT.
