@@ -1,5 +1,23 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-13 PRE-CLOSE — PPI DAY: Aug6 batch 12/16=75.0% TIES ATB; AS 41.49% NEW ATH (+0.71pp); CS 76.60 EXCEEDS BASELINE (76.53) 2ND TIME EVER; S&P 500 7,800 NEW ATH; NVDA golden cross
+
+- **Aug 6 Batch Scored:** 12 correct / 4 incorrect / 2 null = **12/16 = 75.0%** — TIES ALL-TIME BEST (Jun 11 12/16=75.0%)
+- **ACCUMULATE 9/10 = 90.0%** — 2nd best ever. Only RTX -1.3% missed. ASML +8.3%, LRCX +5.9%, TSM +4.7%, AMAT +2.1% equipment sweep all correct. PLTR +14.0% largest correct this batch.
+- **CONTRARIAN 1/1 = 100%** — VST +5.4% FIRST CONTRARIAN CORRECT IN 5 BATCHES. Energy contrarian thesis showing signs of life.
+- **WATCH 2/3 = 66.7%** — BEST WATCH BATCH EVER. AMD +0.18% and MSFT +0.99% both correct. GOOGL -3.63% persistent drag. BAH +3.58% borderline INCORRECT (>3%).
+- **AVOID 0/1 = 0%** — SMR +6.4% INCORRECT. AVOID has failed 7 of 8 recent batches.
+- **AS: 40.78% → 41.49%** (+0.71pp — LARGEST SINGLE-BATCH IMPROVEMENT IN RUN HISTORY). 6th consecutive improvement. NEW ALL-TIME HIGH.
+- **CS: 76.31 → 76.60** (+0.29). Delta from baseline: **+0.07 — EXCEEDS BASELINE (76.53) FOR 2ND TIME EVER.** 6 consecutive CS improvements.
+- **Macro:** PPI July +4.7% YoY (down from 5.5%) — wholesale inflation cooling. S&P 500 cleared 7,800 for first time ever. VIX 14.74 LOW regime. 10Y yield ~4.63% easing.
+- **NVDA golden cross:** 50-day SMA crossed above 200-day SMA. First golden cross since chip selloff recovery.
+- **AMAT earnings tonight:** Q3 FY26 AH. Consensus EPS $3.38, Rev ~$9.0B. Binary event for equipment sector.
+- **SMR $750M ATM shelf:** Registered Aug 11. ~18% potential dilution. AVOID reinforced.
+- **NVDA Aug 12 PENDING CORRECTION:** Report estimated $223.40 but sources suggest actual close ~$217.50 (error +$5.90/+2.7%). If confirmed: Aug 5 batch worsens 8/12→7/13, AS drops to ~40.26%. PENDING definitive verification.
+- **BAH/LMT PENDING from Aug 12:** BAH potential INCORRECT→NULL; LMT potential NULL→CORRECT. Both pending verification.
+- **No signal changes.** All 18 signals carry forward.
+- **No active experiment.** Auto-evolve scope exhausted. RSI-Threshold Signal Override awaiting Malik approval.
+
 ## v1.4 — 2026-08-12 POST-CLOSE VERIFIED — MSFT MAJOR CORRECTION $502.23→$492.43 (-2.0%); S&P 7,728→7,748.50 (+0.26%), Nasdaq 26,445→26,588.49 (+0.54%); VIX 14.68→15.28 (NOT sub-15); NO SCORING FLIPS; AS 40.78% CS 76.31 UNCHANGED
 
 - **MSFT MAJOR PRICE CORRECTION:** Report estimated $502.23 (-1.7% est). Actual close **$492.43** (prev $503.81, -2.26%). Error: +2.0% overestimate ($9.80). Scoring: WATCH base $489.88 → $492.43 = +0.52% = **NULL** (<1%). Was +2.52% NULL (1-3%). **No scoring flip** (NULL→NULL, magnitude only).
