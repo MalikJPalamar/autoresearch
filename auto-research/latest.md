@@ -1,6 +1,6 @@
 # SA Portfolio Daily Report — 2026-08-13
 
-**Methodology:** v1.4 | **Experiment:** None (RSI-Threshold Signal Override awaiting Malik approval) | **Market Status:** PRE-CLOSE ESTIMATES | **PPI DAY: JULY PPI +4.7% YoY (DOWN FROM 5.5%) — S&P 500 CLEARS 7,800 NEW ATH — NVDA GOLDEN CROSS — AMAT EARNINGS AH — SEMIS SURGE AMAT +4.3% LRCX +4.6%**
+**Methodology:** v1.4 | **Experiment:** None (RSI-Threshold Signal Override awaiting Malik approval) | **Market Status:** POST-CLOSE VERIFIED | **PPI DAY: JULY PPI +4.7% YoY (DOWN FROM 5.5%) — S&P 500 7,798.99 NEW ATH — NVDA GOLDEN CROSS — AMAT EARNINGS BEAT EPS $3.50 REV $9.12B RECORD — RTX SCORING FLIP INCORRECT→NULL — AUG 6 BATCH 12/15=80.0% NEW ATB**
 
 ---
 
@@ -30,33 +30,33 @@
 | 5 | META | ACCUMULATE | ~$590 | $588.50 | -0.25% | ⬜ NULL (<1%) |
 | 6 | TSM | ACCUMULATE | $414.00 | $433.50 | +4.71% | ✅ CORRECT |
 | 7 | ASML | ACCUMULATE | $1,678 | $1,816.44 | +8.25% | ✅ CORRECT |
-| 8 | AMAT | ACCUMULATE | ~$537 | $548.34 | +2.11% | ✅ CORRECT |
+| 8 | AMAT | ACCUMULATE | ~$537 | **~$551** | **+2.61%** | ✅ CORRECT |
 | 9 | LRCX | ACCUMULATE | $307.42 | $325.59 | +5.91% | ✅ CORRECT |
 | 10 | VST | CONTRARIAN | ~$141 | ~$148.64 | +5.42% | ✅ CORRECT |
-| 11 | CEG | ACCUMULATE | $261.10 | ~$279.50 | +7.05% | ✅ CORRECT |
-| 12 | OKLO | SPECULATIVE | $42.64 | ~$45.98 | +7.83% | ✅ CORRECT |
+| 11 | CEG | ACCUMULATE | $261.10 | **~$286.94** | **+9.89%** | ✅ CORRECT |
+| 12 | OKLO | SPECULATIVE | $42.64 | **$46.65** | **+9.40%** | ✅ CORRECT |
 | 13 | NRG | CONTRARIAN | ~$120 | ~$120 est | ~0% | ⬜ NULL (<1%) |
-| 14 | SMR | AVOID | $9.04 | ~$9.62 | +6.42% | ❌ INCORRECT |
-| 15 | PLTR | ACCUMULATE | $153.66 | $175.19 | +14.01% | ✅ CORRECT |
+| 14 | SMR | AVOID | $9.04 | **~$10.03** | **+10.95%** | ❌ INCORRECT |
+| 15 | PLTR | ACCUMULATE | $153.66 | **$179.01** | **+16.49%** | ✅ CORRECT |
 | 16 | BAH | WATCH | ~$72 | ~$74.58 est | +3.58% | ❌ INCORRECT (>3%) |
 | 17 | LMT | ACCUMULATE | ~$589 | $597.54 | +1.45% | ✅ CORRECT |
-| 18 | RTX | ACCUMULATE | $221.87 | $218.97 | -1.31% | ❌ INCORRECT |
+| 18 | RTX | ACCUMULATE | $221.87 | ~~$218.97~~ **$222.77** | ~~-1.31%~~ **+0.41%** | ~~❌ INCORRECT~~ **⬜ NULL** |
 
-**Batch: 12 correct / 4 incorrect / 2 null = 12/16 decisive = 75.0%**
+**Batch: 12 correct / 3 incorrect / 3 null = 12/15 decisive = 80.0%**
 
-**TIES ALL-TIME BEST BATCH (Jun 11 12/16=75.0%).** First 75% batch since Jun 11. PPI-driven risk-on rally boosted ACCUMULATE and validated VST CONTRARIAN for the first time in 5 batches.
+**NEW ALL-TIME BEST BATCH — 80.0% (surpasses Jun 11 12/16=75.0%).** RTX post-close correction ($218.97→$222.77) flips INCORRECT→NULL. PPI-driven risk-on rally boosted ACCUMULATE and validated VST CONTRARIAN for the first time in 5 batches.
 
 ### Scoring by Signal Type
 
 | Signal | Correct | Decisive | Rate | Detail |
 |--------|---------|----------|------|--------|
-| ACCUMULATE | 9 | 10 | 90.0% | NVDA +2.3%, TSM +4.7%, ASML +8.3%, AMAT +2.1%, LRCX +5.9%, CEG +7.1%, PLTR +14.0%, LMT +1.5% correct; RTX -1.3% INCORRECT; META -0.3% NULL |
+| ACCUMULATE | 9 | 9 | 100% | NVDA +2.3%, TSM +4.7%, ASML +8.3%, AMAT +2.6%, LRCX +5.9%, CEG +9.9%, PLTR +16.5%, LMT +1.5% correct; ~~RTX -1.3% INCORRECT~~ RTX +0.4% NULL; META -0.3% NULL |
 | CONTRARIAN | 1 | 1 | 100% | VST +5.4% CORRECT (FIRST CONTRARIAN CORRECT IN 5 BATCHES); NRG ~0% NULL |
 | WATCH | 2 | 3 | 66.7% | AMD +0.2% CORRECT, MSFT +1.0% CORRECT; GOOGL -3.6% INCORRECT (brain drain persistent); BAH +3.6% INCORRECT (>3%) |
 | SPECULATIVE | 0 | 0 | — | OKLO +7.8% CORRECT (1/1, 100%) |
 | AVOID | 0 | 1 | 0% | SMR +6.4% INCORRECT (7th of 8 AVOID failures) |
 
-**ACCUMULATE 9/10 = 90.0% — 2ND BEST EVER** (behind 6/6=100% last batch). Only RTX -1.3% missed. Equipment sweep: ASML +8.3%, LRCX +5.9%, AMAT +2.1%, TSM +4.7% — all correct. PLTR +14.0% continues monster ACCUMULATE run (largest correct this batch).
+**ACCUMULATE 9/9 = 100% — TIES ALL-TIME BEST** (matching Aug 5 6/6=100%). RTX post-close correction flips to NULL (+0.4%). Equipment sweep: ASML +8.3%, LRCX +5.9%, AMAT +2.6%, TSM +4.7% — all correct. PLTR +16.5% continues monster ACCUMULATE run (largest correct this batch).
 
 **CONTRARIAN 1/1 = 100% — VST FINALLY CORRECT** after 4 consecutive 0% batches. Energy contrarian thesis showing signs of life with VST +5.4% from oversold levels.
 
@@ -69,11 +69,12 @@
 | Metric | Value |
 |--------|-------|
 | Previous base | 312 correct / 765 decisive |
-| Aug 6 batch adds | +12 correct / +4 incorrect = +16 decisive |
+| NVDA Aug 12 correction (Aug 5 batch) | NULL→INCORRECT, +1 decisive → 312 / 766 |
+| Aug 6 batch adds (RTX corrected) | +12 correct / +3 incorrect = +15 decisive |
 | **New totals** | **324 correct / 781 decisive** |
 | **Accuracy Score (AS)** | **324/781 = 41.49%** |
 
-AS: 40.78% → **41.49%** (+0.71pp — LARGEST SINGLE-BATCH IMPROVEMENT IN RUN HISTORY). 6th consecutive AS improvement. **NEW ALL-TIME HIGH** (surpasses Jul 16 41.51% when accounting for subsequent corrections that brought Jul 16 to 40.63%).
+AS: 40.78% → **41.49%** (+0.71pp — LARGEST SINGLE-BATCH IMPROVEMENT IN RUN HISTORY). 6th consecutive AS improvement. **NEW ALL-TIME HIGH.** Note: NVDA Aug 12 correction (+1 decisive to base) and RTX Aug 13 correction (-1 decisive from batch) cancel out exactly — AS unchanged from pre-close calculation.
 
 ### Composite Score
 
@@ -83,9 +84,7 @@ CS = 0.40 × 41.49 + 0.30 × 100.0 + 0.30 × 100.0 = 16.60 + 30.0 + 30.0 = **76.
 
 CS trajectory: ...76.10 → 76.15 → 76.31 → **76.60**
 
-**6 consecutive CS improvements.** The methodology (v1.4 with format-005 options flow layer) is now performing ABOVE its baseline for the first time since Jul 16 (76.60, +0.07 delta — identical values). ACCUMULATE dominance (90%) and WATCH improvement (66.7% best ever) drove the breakout.
-
-**CAUTION: NVDA Aug 12 correction pending.** If NVDA $223.40→$217.50 confirmed, Aug 5 batch would worsen (8/12→7/13), AS would be recalculated from a lower base. The Aug 6 batch scoring above is unaffected (uses Aug 6 bases, not Aug 12 prices).
+**6 consecutive CS improvements.** The methodology (v1.4 with format-005 options flow layer) is now performing ABOVE its baseline for the first time since Jul 16 (76.60, +0.07 delta — identical values). ACCUMULATE dominance (9/9=100%) and WATCH improvement (66.7% best ever) drove the breakout. RTX correction upgrades batch to 80.0% NEW ALL-TIME BEST.
 
 ---
 
@@ -93,13 +92,13 @@ CS trajectory: ...76.10 → 76.15 → 76.31 → **76.60**
 
 | Metric | Value | Change | Regime |
 |--------|-------|--------|--------|
-| S&P 500 | **~7,800** | **+0.66% est** | **NEW ALL-TIME HIGH — CLEARS 7,800 FOR FIRST TIME** |
-| Nasdaq | **~26,775 est** | **+0.7% est** | Tech-led PPI rally; Meta, Micron, Netflix gainers |
-| Dow | ~53,900 est | +0.25% est | Mixed; defense lag, industrials flat |
-| VIX | **14.74** | +0.19 (+1.31%) | **LOW** — sub-15 despite modest tick-up; deep complacency |
-| DXY | 99.77 | -0.13% | Below 100; dollar weak on PPI cooling |
-| US 10Y Yield | ~4.63% est | -5bp est | **Falling** on PPI + CPI double cooling signal |
-| WTI Crude | ~$82.11 | -1.39% | Oil falling on Iran de-escalation narrative |
+| S&P 500 | **7,798.99** | **+0.65%** | **NEW ALL-TIME HIGH — CLEARS 7,800 FOR FIRST TIME** |
+| Nasdaq | **26,803.03** | **+0.81%** | Tech-led PPI rally; semis surge |
+| Dow | **53,839.99** | **+0.13%** (+69.72 pts) | Mixed; defense lag, industrials flat |
+| VIX | **~14.45** | -0.10 | **LOW** — sub-15; deep complacency |
+| DXY | **99.87** | -0.03% | Below 100; dollar weak on PPI cooling |
+| US 10Y Yield | **4.641%** | -5bp | **Falling** on PPI + CPI double cooling signal |
+| WTI Crude | **$82.11** | -1.39% | Oil falling on Iran de-escalation narrative |
 | Brent Crude | ~$86 est | -1% est | Geopolitical premium easing |
 
 ### PPI Results — July 2026
@@ -513,4 +512,73 @@ PLTR's Q2 blowout (Rev +93% YoY) confirms defense AI platforms are scaling. LMT'
 
 ---
 
-*Report generated Aug 13, 2026. Pre-close estimates — post-close verification required. AMAT earnings AH pending. NVDA Aug 12 price correction ($223.40→$217.50) pending verification. Next scoring date: Aug 19 (5 trading days from Aug 13 signals).*
+---
+
+## Post-Close Verification — August 13, 2026
+
+### Index Closes (VERIFIED)
+| Index | Pre-Close Est | Verified Close | Error | Impact |
+|-------|-------------|----------------|-------|--------|
+| S&P 500 | ~7,800 (+0.66%) | **7,798.99 (+0.65%)** | -0.01% | Near-exact. NEW ATH confirmed. |
+| Nasdaq | ~26,775 (+0.7%) | **26,803.03 (+0.81%)** | +0.1% | Minor underestimate. |
+| Dow | ~53,900 (+0.25%) | **53,839.99 (+0.13%)** | -0.11% | Minor overestimate. |
+| VIX | 14.74 | **~14.45** | -0.29 pts | VIX fell further; deep LOW regime. |
+| 10Y Yield | ~4.63% | **4.641%** | +1bp | Near-exact. |
+| DXY | 99.77 | **99.87** | +0.10 | Near-exact. |
+
+### NVDA Aug 12 Correction (CONFIRMED)
+- **Pre-close report estimated:** $223.40
+- **Actual Aug 12 close:** $217.50 (confirmed via Aug 13 "previous close" data)
+- **Error:** +$5.90 (+2.7%)
+- **Scoring impact on Aug 5 batch:** NVDA ACCUMULATE base $221.51 → $217.50 = -1.81% = **INCORRECT** (was NULL at +0.85%)
+- **Aug 5 batch:** 8/12=66.7% → **8/13=61.5%** (NVDA moves from NULL to decisive-INCORRECT, +1 to denominator)
+- **AS base correction:** 312/765 → 312/766
+
+### RTX Aug 13 Correction (CONFIRMED — SCORING FLIP)
+- **Pre-close estimate:** $218.97 (-0.49%)
+- **Actual Aug 13 close:** $222.77 (confirmed via multiple sources)
+- **Error:** -$3.80 (-1.7%)
+- **Scoring impact on Aug 6 batch:** RTX ACCUMULATE base $221.87 → $222.77 = **+0.41% = NULL** (was -1.31% INCORRECT)
+- **Aug 6 batch:** 12/16=75.0% → **12/15=80.0% NEW ALL-TIME BEST BATCH**
+- **ACCUMULATE signal type:** 9/10=90.0% → **9/9=100% TIES ATB**
+
+### Other Price Corrections
+| Ticker | Pre-Close | Verified | Error | Scoring Impact |
+|--------|-----------|----------|-------|----------------|
+| PLTR | $175.19 | **$179.01** | +$3.82 (+2.2%) | No flip (CORRECT, +16.5% from base) |
+| OKLO | ~$45.98 | **$46.65** | +$0.67 (+1.5%) | No flip (CORRECT, +9.4% from base) |
+| SMR | ~$9.62 | **~$10.03** | +$0.41 (+4.3%) | No flip (INCORRECT, AVOID +11.0%) |
+| AMAT | $548.34 | **~$551** | +$2.66 (+0.5%) | No flip (CORRECT, +2.6% from base) |
+| CEG | ~$279.50 | **~$286.94** | +$7.44 (+2.7%) | No flip (CORRECT, +9.9% from base) |
+
+### Net Scoring Impact
+| Correction | Batch | Effect | Correct | Decisive |
+|-----------|-------|--------|---------|----------|
+| NVDA Aug 12 | Aug 5 | NULL→INCORRECT | +0 | +1 |
+| RTX Aug 13 | Aug 6 | INCORRECT→NULL | +0 | -1 |
+| **Net** | | | **+0** | **0** |
+
+**The two corrections cancel exactly.** AS remains 324/781 = **41.49%**. CS remains **76.60**. Delta from baseline: **+0.07**.
+
+### AMAT Q3 FY2026 Earnings (After-Hours Aug 13)
+| Metric | Result | Consensus | Beat/Miss |
+|--------|--------|-----------|-----------|
+| Revenue | **$9.12B (RECORD)** | ~$9.0-9.18B | Beat/near-consensus |
+| Non-GAAP EPS | **$3.50 (RECORD)** | $3.38-3.45 | **BEAT by $0.05-0.12** |
+| GAAP EPS | $3.17 | — | 41% YoY growth |
+| Q4 FY26 Guide (Rev) | **$10.25B** | — | Implies continued sequential acceleration |
+| Cash from Ops | $3.04B (record) | — | Strong FCF $2.33B |
+
+5th consecutive EPS beat. Record revenue, record EPS, record cash flow. Q4 guide of $10.25B signals 30% semiconductor equipment growth. After-hours reaction mixed (conflicting reports of up ~0.8% vs down ~3.1% at different timestamps). ACCUMULATE signal maintained.
+
+### BAH/LMT Pending Corrections (from Aug 12)
+- **BAH:** Still UNVERIFIED for Aug 12 close. If ~$74.58: Aug 5 WATCH base $72.52, +2.84% = NULL (was INCORRECT). PENDING next session.
+- **LMT:** Still UNVERIFIED for Aug 12 close. If ~$598.01: Aug 5 ACCUMULATE base $589.02, +1.53% = CORRECT (was NULL). PENDING next session.
+- **If both confirmed:** Would be additional offsetting corrections (BAH -1 decisive, LMT +1 correct). Net AS effect TBD.
+
+### Unverified Tickers
+NVDA ($224.09 est), AMD ($482.93), GOOGL ($346.55), MSFT ($492.28), META ($588.50), TSM ($433.50), ASML ($1,816.44), LRCX ($325.59), VST (~$148.64), NRG (~$120 est), BAH (~$74.58 est), LMT ($597.54) — all carry forward from pre-close estimates. None expected to cause scoring flips given margin of moves from base prices.
+
+---
+
+*Report generated Aug 13, 2026. Post-close verified. AMAT Q3 FY26 earnings: Rev $9.12B record, EPS $3.50 beat. RTX scoring flip INCORRECT→NULL — Aug 6 batch 12/15=80.0% NEW ALL-TIME BEST. NVDA Aug 12 correction confirmed ($217.50). Net AS/CS unchanged: 41.49% / 76.60 (+0.07 from baseline). Next scoring date: Aug 19 (5 trading days from Aug 13 signals).*

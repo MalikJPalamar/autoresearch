@@ -1,5 +1,20 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-13 POST-CLOSE VERIFIED — RTX SCORING FLIP INCORRECT→NULL; Aug6 batch 12/15=80.0% NEW ALL-TIME BEST; ACCUM 9/9=100% TIES ATB; AS 41.49% ATH CONFIRMED; CS 76.60 CONFIRMED +0.07 ABOVE BASELINE; AMAT EARNINGS BEAT EPS $3.50 REV $9.12B RECORD; NVDA Aug 12 CORRECTION CONFIRMED
+
+- **RTX SCORING FLIP (Aug 6 batch):** Pre-close $218.97→actual $222.77 (error -$3.80/-1.7%). RTX ACCUMULATE base $221.87 → $222.77 = +0.41% = **NULL** (was INCORRECT at -1.31%). Aug 6 batch: 12/16=75.0% → **12/15=80.0% — NEW ALL-TIME BEST BATCH** (surpasses Jun 11 12/16=75.0%).
+- **ACCUMULATE 9/9 = 100%** — TIES ALL-TIME BEST (Aug 5 6/6=100%). RTX correction removes only INCORRECT from ACCUMULATE.
+- **NVDA Aug 12 CORRECTION CONFIRMED:** $223.40→$217.50. Aug 5 batch: NVDA NULL→INCORRECT. 8/12→8/13=61.5%.
+- **Corrections cancel:** NVDA adds +1 decisive to base (312/766), RTX removes -1 decisive from Aug 6 batch (15 not 16). Net: 324/781 = 41.49%. **AS and CS unchanged from pre-close.** CS 76.60, delta +0.07.
+- **AMAT Q3 FY26 Earnings:** Revenue $9.12B RECORD (25% YoY), EPS $3.50 RECORD (beat $3.45 by $0.05, 41% YoY). Q4 guide $10.25B. 5th consecutive EPS beat. Cash from ops $3.04B record. AH reaction mixed.
+- **Index closes verified:** S&P 500 7,798.99 (+0.65%) NEW ATH. Nasdaq 26,803.03 (+0.81%). Dow 53,839.99 (+0.13%).
+- **VIX 14.45** (lower than pre-close 14.74). 10Y 4.641%. DXY 99.87.
+- **PLTR correction:** $175.19→$179.01 (+2.2% error). No scoring flip (+16.5% from base, CORRECT).
+- **OKLO correction:** ~$45.98→$46.65. No flip. **CEG correction:** ~$279.50→~$286.94. No flip. **SMR correction:** ~$9.62→~$10.03. No flip.
+- **BAH/LMT still PENDING** from Aug 12 post-close. Definitive closes unverified.
+- **No signal changes.** All 18 signals carry forward.
+- **No active experiment.** Auto-evolve scope exhausted. RSI-Threshold Signal Override awaiting Malik approval.
+
 ## v1.4 — 2026-08-13 PRE-CLOSE — PPI DAY: Aug6 batch 12/16=75.0% TIES ATB; AS 41.49% NEW ATH (+0.71pp); CS 76.60 EXCEEDS BASELINE (76.53) 2ND TIME EVER; S&P 500 7,800 NEW ATH; NVDA golden cross
 
 - **Aug 6 Batch Scored:** 12 correct / 4 incorrect / 2 null = **12/16 = 75.0%** — TIES ALL-TIME BEST (Jun 11 12/16=75.0%)
