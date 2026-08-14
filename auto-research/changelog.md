@@ -1,5 +1,29 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-14 — AUG 13 CORRECTIONS (AMAT AH→REGULAR, NRG WRONG PRICE) + AMAT LONG→ACCUMULATE SELL-THE-NEWS + Aug7 batch 10/15=66.7% + MICHIGAN SENTIMENT PLUNGED 51 + AS 41.89% 8TH CONSECUTIVE ATH + CS 76.76 EXCEEDS BASELINE 3RD TIME
+
+- **Aug 13 Price Corrections Applied:**
+  - AMAT: Report used AH price $552.99. Regular close was **$534.54**. Aug 6 batch: CORRECT→**NULL** (base $537→$534.54 = -0.46%). -1 correct, -1 decisive.
+  - NRG: Report used $127.81. Actual close approximately **$119.78**. Aug 6 batch: CORRECT→**NULL** (base $120→$119.78 = -0.18%). -1 correct, -1 decisive.
+  - VST: Report used $139.68. Actual close approximately **$146**. Aug 6 batch: NULL→**CORRECT** (base $141→$146 = +3.55%). PENDING definitive confirmation.
+  - CEG: Report $267.20 → actual ~$277.72. No scoring flip (CORRECT→CORRECT).
+  - LMT: Report $597.54 → actual ~$606.72. No scoring flip (CORRECT→CORRECT).
+- **Conservative corrected base:** 325→323 correct, 782→780 decisive (excludes VST pending). AS 41.56%→41.41%.
+- **AMAT LONG→ACCUMULATE:** LONG upgrade was based on AH price $552.99. Regular close $534.54 shows muted market-hours reaction. Aug 14 trading $504-$518 = sell-the-news. At SMA200 $510 critical support. Downgraded to ACCUMULATE.
+- **Aug 7 Batch Scored:** 10 correct / 5 incorrect / 3 null = **10/15 = 66.7%**
+  - CORRECT: NVDA +1.95%, TSM +1.81%, ASML +8.44%, LRCX +7.33%, VST +3.93%, CEG +6.45%, OKLO -0.37%(SPEC), NRG +1.35%, PLTR +5.47%, LMT +2.57%
+  - INCORRECT: AMD +3.60%(WATCH>3%), GOOGL -8.93%(WATCH>3%), AMAT -5.16%(ACCUM), SMR +8.96%(AVOID), BAH +11.50%(WATCH>3%)
+  - NULL: MSFT -0.59%, META +0.86%, RTX -0.46%
+- **ACCUMULATE 7/8 = 87.5%** — 7th consecutive batch above 70%. Only AMAT -5.16% missed (sell-the-news).
+- **CONTRARIAN 2/2 = 100%** — VST +3.93% and NRG +1.35% BOTH CORRECT. 2nd consecutive batch with contrarian hits. Energy thesis validating.
+- **WATCH 0/3 = 0%** — 9th consecutive 0% batch. AMD +3.60%, GOOGL -8.93%, BAH +11.50% all exceed 3% threshold. WATCH remains the primary structural drag on AS.
+- **AVOID 0/1** — SMR +8.96% INCORRECT. 8th AVOID failure in 9 batches. Nuclear momentum overrides fundamental AVOID thesis.
+- **AS: 41.41% → 41.89%** (+0.48pp). 333/795. 8th consecutive AS improvement. NEW ALL-TIME HIGH.
+- **CS: 76.62 → 76.76** (+0.14). Delta from baseline: **+0.23 — EXCEEDS BASELINE (76.53) FOR 3RD TIME.**
+- **Macro:** Michigan Consumer Sentiment PLUNGED to 51 (lowest since Jun 2022, prior 66.4). Retail Sales -0.6% MoM (worst 2026 print). VIX 14.48 LOW. Consumer economy deteriorating while AI infrastructure investment accelerates — purest Aschenbrenner thesis divergence.
+- **Signal changes:** AMAT LONG→ACCUMULATE. All other 17 unchanged.
+- **No active experiment.** Auto-evolve scope exhausted. RSI-Threshold Signal Override awaiting Malik approval.
+
 ## v1.4 — 2026-08-13 POST-CLOSE VERIFIED — AMAT Q3 RECORD BEAT EPS $3.50 vs $3.38 + Q4 GUIDE $10.25B ("UNPRECEDENTED DEMAND") → AMAT LONG UPGRADE; Aug6 batch 12/16=75.0% CONFIRMED (VST NULL NRG CORRECT — flips cancel); LMT Aug5 NULL→CORRECT; AS 41.56% NEW ALL-TIME HIGH; CS 76.62 DELTA +0.09 EXCEEDS BASELINE
 
 - **AMAT Q3 FY2026 BEAT:** EPS $3.50 vs $3.38 consensus (+3.6%); Rev $9.12B beat; Q4 guide $10.25B ("unprecedented demand"). Immediate ACCUMULATE→**LONG** upgrade. Largest quarterly revenue guide in AMAT history.
