@@ -1,5 +1,25 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-14 POST-CLOSE VERIFIED — AMD $500.75→$514.13 ($4.75B BOND OFFERING +6.5%); AMAT $510→$504.67; LRCX $337→$330.17; NO SCORING FLIPS; AS 41.89% CS 76.76 CONFIRMED; S&P 7,785.76 Nasdaq 26,729 Dow 53,732
+
+- **AMD MAJOR CORRECTION:** Report $500.75 → Actual **$514.13** (+6.5% on $4.75B bond offering — largest-ever AMD USD bond financing for AI/data center). Error +2.7%. WATCH base $483.36 → +6.37% = INCORRECT (was +3.60% INCORRECT). **No scoring flip.**
+- **AMAT correction:** Report $510.00 → Actual **$504.67** (range $496-$523). Error -1.0%. ACCUM base $537.76 → -6.15% = INCORRECT (was -5.16%). **No scoring flip.**
+- **LRCX correction:** Report $337.01 → Actual **$330.17** (range $330.07-$342.00). Error -2.0%. Late-day Michigan Sentiment selloff hit semis. ACCUM base $314.00 → +5.15% = CORRECT (was +7.33%). **No scoring flip.**
+- **CEG correction:** Report $286.94 → Actual ~$283 (prev close $278.64, day range $280.67-$287.00). ACCUM base $269.54 → +5.0% = CORRECT. **No scoring flip.**
+- **RTX correction:** Report $222.00 → Actual $222.76. ACCUM base $223.03 → -0.12% = NULL. **No scoring flip.**
+- **GOOGL correction:** Report $344.00 → ~$345.56 (TradingKey -0.23% from $346.36). WATCH base $377.73 → -8.52% = INCORRECT. **No scoring flip.**
+- **Confirmed exact/near-exact:** NVDA $225.30 ✓, MSFT $496.92 ✓ (range $493-$501), META ~$594.97 ✓, TSM $430.49 ✓, ASML $1,848.30 ✓, VST $146.93 ✓, OKLO $45.24 ✓, NRG $120.66 ✓, SMR $9.85 ✓, PLTR $178.25 ✓, BAH $77.74 ✓ (ex-div $0.59), LMT $598.01 ✓.
+- **OKLO daily change correction:** Report -0.5%, actual prev close $46.45 → $45.24 = -2.6%. No scoring impact.
+- **BAH ex-div Aug 14:** $0.59 cash dividend. No scoring impact (INCORRECT regardless).
+- **Aug 7 batch: 10/15 = 66.7% CONFIRMED.** No scoring flips from corrections.
+- **AS: 41.89% (333/795) CONFIRMED.** 8th consecutive improvement stands.
+- **CS: 76.76 CONFIRMED.** Delta +0.23 from baseline (76.53). EXCEEDS BASELINE 3RD TIME.
+- **VST Aug 13 correction:** Prev close ~$146.45 consistent with estimated ~$146. LIKELY CONFIRMED (would flip NULL→CORRECT, AS→41.96%, CS→76.78) but conservative calc excludes.
+- **MSFT PENDING:** Day range $493.01-$501.34. If close <$494.86, scoring flips NULL→INCORRECT. Pending next session.
+- **Macro:** S&P 7,785.76 (-0.2%) ✓, Nasdaq 26,729.16 (-0.3%) ✓, Dow 53,732.41 (-107.58 pts). Markets sold off from intraday highs on Michigan Sentiment 51 + Retail Sales -0.6%. Third consecutive weekly gain despite Friday pullback.
+- **No signal changes.** All 18 signals carry forward.
+- **No active experiment.** RSI-Threshold Signal Override awaiting Malik approval.
+
 ## v1.4 — 2026-08-14 — AUG 13 CORRECTIONS (AMAT AH→REGULAR, NRG WRONG PRICE) + AMAT LONG→ACCUMULATE SELL-THE-NEWS + Aug7 batch 10/15=66.7% + MICHIGAN SENTIMENT PLUNGED 51 + AS 41.89% 8TH CONSECUTIVE ATH + CS 76.76 EXCEEDS BASELINE 3RD TIME
 
 - **Aug 13 Price Corrections Applied:**
