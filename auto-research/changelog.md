@@ -1,5 +1,31 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-17 POST-CLOSE — AMD +6.50% SMA50 BREAKOUT + ANTHROPIC $11.5B Q2 14x YoY + Aug10 batch 8/15=53.3% + CONTRA 2/2=100% BEST EVER + AS 42.10% NEW ATH 9TH CONSECUTIVE + CS 76.84 EXCEEDS BASELINE 4TH TIME
+
+- **Aug 14 Price Corrections Applied:**
+  - AMD: Report $500.75. Actual close **$514.13** (+2.7% error). Aug 7 batch: No scoring flip (AMD WATCH +6.37% still >3% INCORRECT).
+  - AMAT: Report $510. Actual close **$504.67** (-1.0% error). Aug 7 batch: No scoring flip (AMAT ACCUM -6.15% still INCORRECT).
+  - LRCX: Report $337. Actual close **$330.17** (-2.0% error). Aug 7 batch: No scoring flip (LRCX ACCUM still >1% gain CORRECT).
+  - **No scoring flips.** Aug 7 batch remains 10/15 = 66.7%. AS 41.89%, CS 76.76 confirmed.
+- **Aug 10 Batch Scored:** 8 correct / 7 incorrect / 3 null = **8/15 = 53.3%**
+  - CORRECT: NVDA +3.90%, TSM +3.12%, ASML +7.75%, LRCX +8.95%, VST +5.63%, CEG +14.82%, NRG +5.31%, PLTR +2.32%
+  - INCORRECT: AMD +5.19%(WATCH>3%), MSFT -5.25%(WATCH>3%), META -4.67%(ACCUM), AMAT -5.93%(ACCUM), OKLO -9.11%(SPEC), LMT -1.13%(ACCUM), RTX -1.10%(ACCUM)
+  - NULL: GOOGL -2.49%(WATCH 1-3%), SMR -0.11%(AVOID <1%), BAH -2.85%(WATCH 1-3%)
+- **ACCUMULATE 6/10 = 60.0%** — breaks the 70%+ streak after 7 consecutive batches. Semi equipment (ASML +7.75%, LRCX +8.95%) strong. Defense (LMT -1.13%, RTX -1.10%) and AI capex-heavy (META -4.67%, AMAT -5.93%) dragging.
+- **CONTRARIAN 2/2 = 100%** — **BEST CONTRARIAN BATCH IN RUN HISTORY.** VST +5.63% and NRG +5.31% both validated. Reverses 6-batch CONTRARIAN failure streak. Energy thesis showing signs of life.
+- **WATCH 0/2 = 0%** — 10th consecutive 0% batch. AMD +5.19%, MSFT -5.25% both exceed 3% threshold. WATCH remains structural AS drag.
+- **SPECULATIVE 0/1** — OKLO -9.11% INCORRECT. Post-Q2 earnings momentum fully reversed.
+- **AVOID 0/0** — SMR -0.11% NULL (<1%). No decisive AVOID signal.
+- **AS: 41.89% → 42.10%** (+0.21pp). 341/810. 9th consecutive AS improvement. **NEW ALL-TIME HIGH — first time above 42%.**
+- **CS: 76.76 → 76.84** (+0.08). Delta from baseline: **+0.31 — EXCEEDS BASELINE (76.53) FOR 4TH CONSECUTIVE REPORT.**
+- **CS trajectory:** 75.84 → 76.09 → 76.10 → 76.15 → 76.60 → 76.62 → 76.76 → **76.84**
+- **Signal changes:**
+  - AMD WATCH → **ACCUMULATE** — +6.50% SMA50 breakout above $500. RSI 53.8 neutral, room to run. WATCH was too conservative.
+  - META ACCUMULATE → **WATCH** — Youth addiction trial (29 state AGs) Aug 18. Share buybacks frozen 3rd quarter. DRAM +700%. FCF compressed to $784M. Capex $130-145B.
+- **Macro:** S&P 7,785.76 (-0.17%). VIX 14.64 **2026 LOW**. DXY ~99.40 sub-100. 10Y 4.69%. **30Y ~5.27% 19-YEAR HIGH.** WTI $82.55 +5% weekly (Hormuz tensions). Anthropic Q2 $11.5B revenue (14x YoY) validates AI scaling thesis. FOMC minutes Aug 20.
+- **No active experiment.** Auto-evolve scope exhausted. RSI-Threshold Signal Override awaiting Malik approval.
+- **Next scoring date:** Aug 24 (5 trading days from Aug 17: Aug 18, 19, 20, 21, 24).
+
 ## v1.4 — 2026-08-14 POST-CLOSE VERIFIED — AMD $500.75→$514.13 ($4.75B BOND OFFERING +6.5%); AMAT $510→$504.67; LRCX $337→$330.17; NO SCORING FLIPS; AS 41.89% CS 76.76 CONFIRMED; S&P 7,785.76 Nasdaq 26,729 Dow 53,732
 
 - **AMD MAJOR CORRECTION:** Report $500.75 → Actual **$514.13** (+6.5% on $4.75B bond offering — largest-ever AMD USD bond financing for AI/data center). Error +2.7%. WATCH base $483.36 → +6.37% = INCORRECT (was +3.60% INCORRECT). **No scoring flip.**
