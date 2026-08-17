@@ -1,5 +1,20 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-17 POST-CLOSE VERIFIED — LRCX $339.20→$332.36, META ~$567→$565.76, ASML $1,875.98→$1,880.85; NO SCORING FLIPS; AS 42.10% CS 76.84 CONFIRMED
+
+- **LRCX correction:** Report $339.20 → actual **$332.36** (error +2.1%). From Aug 10 base $311.35: +6.75% (was +8.95%). **No scoring flip** (CORRECT→CORRECT, ACCUMULATE ≥1% gain).
+- **META correction:** Report ~$567 → actual **$565.76** (-4.08% per Benzinga, error +0.2%). From Aug 10 base $594.79: -4.88% (was -4.67%). **No scoring flip** (INCORRECT→INCORRECT).
+- **ASML correction:** Report $1,875.98 → actual **$1,880.85** (error -0.3%). From Aug 10 base $1,740.99: +8.03% (was +7.75%). **No scoring flip** (CORRECT→CORRECT).
+- **OKLO estimated correction:** Report $44.10 → estimated **$44.38** (next-day prev close). From Aug 10 base $48.52: -8.54% (was -9.11%). **No scoring flip** (INCORRECT→INCORRECT). Daily range $44.45-$45.10 confirms close above report estimate.
+- **Confirmed exact/near-exact:** AMAT $507.18 ✓ (exact), NRG $126.24 ✓ (confirmed via next-day prev close), MSFT -3.17% ✓ (TradingKey confirmed).
+- **Index data CONFIRMED EXACT:** S&P 500 7,785.76, Nasdaq 26,729.16, Dow 53,732.41 (all match CNBC/Yahoo/TheStreet).
+- **VST estimated:** Range $145.38-$150.21 confirmed. Report $148.64 within range. One source shows $145.56 — if confirmed, from base $140.72: +3.44% (was +5.63%). **No scoring flip** (CORRECT→CORRECT, CONTRARIAN ≥1%).
+- **CEG PENDING:** Report ~$310. Aug 14 close confirmed $283.97. Aug 17 close unverifiable from web searches. ~$310 implies +9.2% from Aug 14 (2 trading days). Plausible given nuclear rally but unconfirmed. **PENDING next session.**
+- **Unverified (insufficient data):** NVDA (~$226, pre-market $226.44 confirmed), AMD ($514.39), GOOGL (~$347), TSM ($431.53), PLTR (~$176, Aug 16 close $174.04), BAH ($74.58), LMT ($598.75), RTX ($223.64), SMR ($9.37).
+- **Aug 10 batch: 8/15 = 53.3% UNCHANGED.** No scoring flips from any corrections.
+- **AS: 42.10% (341/810) CONFIRMED.** CS: 76.84 CONFIRMED. Delta +0.31 from baseline.
+- **No active experiment.** RSI-Threshold Signal Override awaiting Malik approval.
+
 ## v1.4 — 2026-08-17 POST-CLOSE — AMD +6.50% SMA50 BREAKOUT + ANTHROPIC $11.5B Q2 14x YoY + Aug10 batch 8/15=53.3% + CONTRA 2/2=100% BEST EVER + AS 42.10% NEW ATH 9TH CONSECUTIVE + CS 76.84 EXCEEDS BASELINE 4TH TIME
 
 - **Aug 14 Price Corrections Applied:**
