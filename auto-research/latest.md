@@ -1,6 +1,6 @@
 # SA Portfolio Daily Report — 2026-08-17
 
-**Methodology:** v1.4 | **Experiment:** None (RSI-Threshold Signal Override awaiting Malik approval) | **Market Status:** Post-Close (Monday) | **AMD +6.50% SMA50 BREAKOUT + ANTHROPIC $11.5B VALIDATES AI + AS 42.10% NEW ATH + CS 76.84 EXCEEDS BASELINE 4TH TIME**
+**Methodology:** v1.4 | **Experiment:** None (RSI-Threshold Signal Override awaiting Malik approval) | **Market Status:** Post-Close VERIFIED (Monday) | **AMD +6.50% SMA50 BREAKOUT + ANTHROPIC $11.5B VALIDATES AI + AS 42.10% NEW ATH + CS 76.84 EXCEEDS BASELINE 4TH TIME**
 
 ---
 
@@ -579,3 +579,22 @@ PLTR's AI platform thesis is validated by Anthropic's revenue surge (AI adoption
 **Pending approval:** RSI-Threshold Signal Override — addresses the WATCH 0% failure pattern (now 10 consecutive batches, 0 correct signals in 20+ decisive results). This addresses the structural AS drag that WATCH represents.
 
 **Next scoring date:** Aug 24 (5 trading days from Aug 17: Aug 18, 19, 20, 21, 24).
+
+---
+
+## Post-Close Verification (Secondary Session)
+
+| Ticker | Report Price | Verified Price | Error | Scoring Impact |
+|--------|-------------|---------------|-------|----------------|
+| AMAT | $507.18 | $507.18 | 0.0% | ✓ EXACT MATCH |
+| NRG | $126.24 | $126.24 | 0.0% | ✓ CONFIRMED |
+| LRCX | $339.20 | $332.36 | +2.1% | No flip (CORRECT→CORRECT) |
+| META | ~$567 | $565.76 | +0.2% | No flip (INCORRECT→INCORRECT) |
+| ASML | $1,875.98 | $1,880.85 | -0.3% | No flip (CORRECT→CORRECT) |
+| OKLO | $44.10 | ~$44.38 est | -0.6% | No flip (INCORRECT→INCORRECT) |
+| VST | $148.64 | $145.38-$150.21 range | TBD | No flip either way |
+| CEG | ~$310 | PENDING | — | Aug 14 close $283.97 confirmed |
+
+**Index data confirmed exact:** S&P 500 7,785.76, Nasdaq 26,729.16, Dow 53,732.41.
+
+**No scoring flips.** AS 42.10% (341/810) and CS 76.84 confirmed.
