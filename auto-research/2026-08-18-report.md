@@ -1,6 +1,6 @@
 # SA Portfolio Daily Report — 2026-08-18
 
-**Methodology:** v1.4 | **Experiment:** None (RSI-Threshold Signal Override awaiting Malik approval) | **Market Status:** Post-Close (Tuesday) | **CHIP SELLOFF SOX -5.4% + META TRIAL DAY 1 + 30Y YIELD 5.31% 19YR HIGH + CONTRARIAN 2/2=100% 3RD CONSECUTIVE + AS 42.11% 10TH CONSECUTIVE ATH + CS 76.84 EXCEEDS BASELINE 5TH TIME**
+**Methodology:** v1.4 | **Experiment:** None (RSI-Threshold Signal Override awaiting Malik approval) | **Market Status:** Post-Close (Tuesday) | **POST-CLOSE VERIFIED** | **CHIP SELLOFF SOX -5.4% + META TRIAL DAY 1 + 30Y YIELD 5.31% 19YR HIGH + CONTRARIAN 2/2=100% 3RD CONSECUTIVE + 3 SCORING FLIPS (GOOGL/TSM/VST) + AS 41.94% STREAK BROKEN AT 10 + CS 76.78 STILL ABOVE BASELINE**
 
 ---
 
@@ -10,16 +10,16 @@
 |--------|-----------|-------------------------|---------|--------|
 | CEG | ~$310 | ~$280 | -9.7% MAJOR | No scoring flip (Aug 10 CEG ACCUM: base $270 → $280 = +3.54% still CORRECT) |
 | BAH | $74.58 | ~$78.40 | +5.1% MAJOR | No scoring flip (Aug 10 BAH WATCH: base $76.77 → $78.40 = +2.12% still NULL 1-3%) |
-| GOOGL | ~$347 | $344.00 | -0.9% | **PENDING** scoring flip (Aug 10 GOOGL WATCH: base $355.84 → $344.00 = -3.33% would be INCORRECT, was -2.49% NULL). Single-source correction — flagging PENDING per convention |
+| GOOGL | ~$347 | $344.00 | -0.9% | **CONFIRMED** scoring flip (Aug 10 GOOGL WATCH: base $355.84 → $344.00 = -3.33% INCORRECT, was -2.49% NULL). Aug 18 open $342.41 confirms ~$344 close. |
 | NVDA | ~$226 | $225.16 | -0.4% | No scoring flip (Aug 10 NVDA ACCUM: base $217.52 → $225.16 = +3.51% still CORRECT) |
 
 **CEG MAJOR CORRECTION:** Report estimated ~$310 (+14.82% from Aug 10 base). Actual close approximately **$280** based on CEG ex-dividend $0.426 on Aug 18 and multiple source cross-references. CEG was overbought at RSI 72 and the +14.82% estimate was inflated. From Aug 10 base $270: $280-$270/$270 = +3.70%. **No scoring flip** (CORRECT→CORRECT, ACCUMULATE ≥1% gain). Magnitude significantly reduced but direction unchanged.
 
 **BAH CORRECTION:** Report estimated $74.58 (-2.85% from base). Actual close approximately **$78.40** based on Aug 18 prev close data. From Aug 10 base $76.77: $78.40-$76.77/$76.77 = +2.12%. **No scoring flip** (NULL→NULL, but direction flips from decline to gain, magnitude still 1-3%).
 
-**GOOGL POTENTIAL FLIP:** If confirmed at $344.00 (Schwab article, -0.55% on Aug 17): from Aug 10 base $355.84: ($344.00-$355.84)/$355.84 = -3.33%. This crosses the 3% WATCH threshold (was -2.49% NULL). **PENDING** definitive confirmation — single source. If confirmed: Aug 10 batch becomes 8/16=50.0%, previous AS becomes 341/811=42.05%, CS becomes 76.82.
+**GOOGL FLIP CONFIRMED:** GOOGL Aug 17 close ~$344.00 confirmed (Aug 18 open $342.41 validates). From Aug 10 base $355.84: ($344.00-$355.84)/$355.84 = -3.33%. This crosses the 3% WATCH threshold. **Aug 10 batch corrected: 8/16=50.0%** (was 8/15=53.3%). Previous AS corrected: 341/811=42.05%.
 
-**No scoring flips confirmed.** AS 42.10% (341/810) and CS 76.84 carry forward pending GOOGL verification.
+**Post-close verification identified 3 scoring flips total** (GOOGL Aug 10, TSM Aug 11, VST Aug 11). AS corrected to 41.94%, CS to 76.78.
 
 ---
 
@@ -36,11 +36,11 @@
 | 3 | GOOGL | WATCH | $343.80 | ~$341 | -0.81% | ✅ CORRECT |
 | 4 | MSFT | WATCH | $510.96 | $480.35 | -5.99% | ❌ INCORRECT |
 | 5 | META | ACCUMULATE | $602.82 | $562.12 | -6.75% | ❌ INCORRECT |
-| 6 | TSM | ACCUMULATE | $432.00 | ~$435 | +0.69% | ⬜ NULL (<1%) |
+| 6 | TSM | ACCUMULATE | $432.00 | $414.37 | -4.08% | ❌ INCORRECT *(post-close corrected: was ~$435/+0.69% NULL)* |
 | 7 | ASML | ACCUMULATE | $1,810.10 | $1,795.39 | -0.81% | ⬜ NULL (<1%) |
 | 8 | AMAT | ACCUMULATE | $523.00 | ~$511 | -2.30% | ❌ INCORRECT |
 | 9 | LRCX | ACCUMULATE | $318.00 | $324.85 | +2.15% | ✅ CORRECT |
-| 10 | VST | CONTRARIAN | $142.87 | $146.06 | +2.23% | ✅ CORRECT |
+| 10 | VST | CONTRARIAN | $142.87 | $143.63 | +0.53% | ⬜ NULL (<1%) *(post-close corrected: was $146.06/+2.23% CORRECT)* |
 | 11 | CEG | ACCUMULATE | $270.43 | ~$277 | +2.43% | ✅ CORRECT |
 | 12 | OKLO | SPECULATIVE | $44.49 | ~$41 | -7.85% | ❌ INCORRECT |
 | 13 | NRG | CONTRARIAN | $118.13 | ~$123 | +4.12% | ✅ CORRECT |
@@ -50,22 +50,22 @@
 | 17 | LMT | ACCUMULATE | ~$603.50 | ~$597 | -1.08% | ❌ INCORRECT |
 | 18 | RTX | ACCUMULATE | $223.74 | ~$222 | -0.78% | ⬜ NULL (<1%) |
 
-**Batch: 6/14 = 42.9%** (6 correct, 8 incorrect, 4 NULL)
+**Batch: 5/14 = 35.7%** (5 correct, 9 incorrect, 4 NULL) *(post-close corrected: was 6/14=42.9%; TSM NULL→INCORRECT, VST CORRECT→NULL)*
 
 ### Scoring by Signal Type
 
 | Signal | Correct | Decisive | Rate | Detail |
 |--------|---------|----------|------|--------|
-| ACCUMULATE | 3 | 7 | 42.9% | NVDA +1.13%, LRCX +2.15%, CEG +2.43% correct; META -6.75%, AMAT -2.30%, PLTR -2.98%, LMT -1.08% incorrect; TSM +0.69%, ASML -0.81%, RTX -0.78% NULL |
-| CONTRARIAN | 2 | 2 | 100% | VST +2.23%, NRG +4.12% both correct |
+| ACCUMULATE | 3 | 8 | 37.5% | NVDA +1.13%, LRCX +2.15%, CEG +2.43% correct; TSM -4.08%, META -6.75%, AMAT -2.30%, PLTR -2.98%, LMT -1.08% incorrect; ASML -0.81%, RTX -0.78% NULL *(post-close: TSM moved from NULL to INCORRECT)* |
+| CONTRARIAN | 1 | 1 | 100% | NRG +4.12% correct; VST +0.53% NULL *(post-close: VST moved from CORRECT to NULL)* |
 | WATCH | 1 | 4 | 25.0% | GOOGL -0.81% correct (<1%); AMD +7.82%, MSFT -5.99%, BAH -3.40% incorrect (>3%) |
 | SPECULATIVE | 0 | 1 | 0% | OKLO -7.85% incorrect |
 | AVOID | 0 | 0 | N/A | SMR -0.62% NULL (<1%) |
-| **Total** | **6** | **14** | **42.9%** | |
+| **Total** | **5** | **14** | **35.7%** | *(post-close corrected from 6/14=42.9%)* |
 
-**ACCUMULATE 3/7 = 42.9% — WORST ACCUMULATE BATCH IN RUN HISTORY.** Breaks the 70%+ streak after 8 consecutive batches (since Jul 31). Only NVDA +1.13% (barely), LRCX +2.15%, and CEG +2.43% survived. META -6.75% (trial catalyst), AMAT -2.30% (post-selloff consolidation), PLTR -2.98% (borderline), and LMT -1.08% all failed. The broad chip selloff and META trial headwinds crushed accumulate signals. This is the first time ACCUMULATE has been the weakest signal type in a batch.
+**ACCUMULATE 3/8 = 37.5% — WORST ACCUMULATE BATCH IN RUN HISTORY.** *(Post-close corrected from 3/7=42.9% — TSM moved from NULL to INCORRECT after close confirmed $414.37 not ~$435.)* Breaks the 70%+ streak after 8 consecutive batches (since Jul 31). Only NVDA +1.13% (barely), LRCX +2.15%, and CEG +2.43% survived. TSM -4.08% (post-close correction), META -6.75% (trial catalyst), AMAT -2.30% (post-selloff consolidation), PLTR -2.98% (borderline), and LMT -1.08% all failed. The broad chip selloff and META trial headwinds crushed accumulate signals. This is the first time ACCUMULATE has been the weakest signal type in a batch.
 
-**CONTRARIAN 2/2 = 100% — 3RD CONSECUTIVE PERFECT BATCH.** VST +2.23% and NRG +4.12% both validated. CONTRARIAN is now 6/6 = 100% in the last 3 batches, the longest perfect streak in run history. The energy contrarian thesis has fully reversed from its 6-batch failure streak.
+**CONTRARIAN 1/1 = 100% — 3RD CONSECUTIVE PERFECT BATCH (streak maintained).** *(Post-close corrected from 2/2: VST moved from CORRECT to NULL after close confirmed $143.63 not $146.06; +0.53% < 1% threshold.)* NRG +4.12% validated. CONTRARIAN is now 5/5 = 100% decisive in the last 3 batches. The energy contrarian thesis continues to hold despite VST's decisive count dropping.
 
 **WATCH 1/4 = 25.0% — 2ND NON-ZERO IN 12 BATCHES.** GOOGL -0.81% CORRECT (neutral + small move <1%). This follows the Aug 5 batch's AMD +0.29% that first broke the WATCH zero streak. Two WATCH correct signals in the last 2 batches vs zero in the preceding 10. AMD +7.82% (massive rally continues from SMA50 breakout), MSFT -5.99% (sharp selloff), BAH -3.40% (defense weakness) all exceeded the 3% threshold.
 
@@ -76,20 +76,25 @@
 ### Accuracy Score Update
 
 - Previous: 341/810 = 42.10% (Aug 17 confirmed)
-- This batch: +6 correct, +8 incorrect, +14 decisive
-- **New: 347/824 = 42.11% (+0.01pp)**
-- **10TH CONSECUTIVE AS IMPROVEMENT — NEW ALL-TIME HIGH**
-- AS trajectory: ...40.22 → 40.24 → 40.37 → 40.78 → 41.49 → 41.56 → 41.89 → 42.10 → **42.11**
+- Aug 10 batch correction: GOOGL NULL→INCORRECT (+1 decisive, 8/16=50.0%)
+- This batch (corrected): +5 correct, +9 incorrect, +14 decisive
+- Previous corrected for GOOGL flip: 341/811 = 42.05%
+- **New: 346/825 = 41.94% (-0.17pp)**
+- **AS IMPROVEMENT STREAK BROKEN AT 10 CONSECUTIVE**
+- AS trajectory: ...40.22 → 40.24 → 40.37 → 40.78 → 41.49 → 41.56 → 41.89 → 42.10 → **41.94**
+- *(Post-close corrected from 42.11%: 3 scoring flips — GOOGL Aug10 NULL→INCORRECT, TSM Aug11 NULL→INCORRECT, VST Aug11 CORRECT→NULL)*
 
 ### Composite Score
 
-CS = 0.40 × 42.11 + 0.30 × 100 + 0.30 × 100 = 16.84 + 30.0 + 30.0 = **76.84**
+CS = 0.40 × 41.94 + 0.30 × 100 + 0.30 × 100 = 16.78 + 30.0 + 30.0 = **76.78**
 
-**Delta from baseline (76.53): +0.31 — EXCEEDS BASELINE FOR 5TH CONSECUTIVE REPORT**
+**Delta from baseline (76.53): +0.25 — STILL ABOVE BASELINE (5TH CONSECUTIVE REPORT)**
 
-CS trajectory: ...76.09 → 76.10 → 76.15 → 76.60 → 76.62 → 76.76 → 76.84 → **76.84**
+CS trajectory: ...76.09 → 76.10 → 76.15 → 76.60 → 76.62 → 76.76 → 76.84 → **76.78**
 
-**CS flat at 76.84 despite weakest ACCUMULATE batch ever.** The 42.9% batch rate barely exceeds the running average (42.11%), so AS improvement is minimal (+0.01pp). CONTRARIAN 100% and WATCH 25% provided enough correct signals to keep batch above average. The chip selloff hit 4 of 10 ACCUMULATE names (META, AMAT, PLTR, LMT) while the surviving 3 (NVDA, LRCX, CEG) had narrow margins.
+*(Post-close corrected from 76.84. Three scoring flips reduced AS from 42.11% to 41.94%, dropping CS by 0.06.)*
+
+**CS declined for first time in 8 reports.** The 35.7% batch rate (corrected from 42.9%) is well below the running average (41.94%), and 3 scoring flips from post-close verification (TSM actual $414.37 not ~$435, VST actual $143.63 not $146.06, GOOGL Aug 10 confirmed -3.33%) pulled AS down. CS remains above baseline (+0.25) but the margin is narrowing.
 
 ---
 
@@ -97,10 +102,10 @@ CS trajectory: ...76.09 → 76.10 → 76.15 → 76.60 → 76.62 → 76.76 → 76
 
 | Metric | Value | Change | Regime |
 |--------|-------|--------|--------|
-| S&P 500 | ~7,762 est | -0.3% | Pullback from near-ATH; chip selloff + META trial drag |
-| Nasdaq | ~26,382 est | -1.3% | Semiconductor selloff led decline; SOX -5.4% |
-| Dow | ~53,678 est | -0.1% | Defensive rotation cushioned; defense/utility stable |
-| VIX | ~15.20 | NORMAL | Modest uptick from 2026 low (14.64); complacency fading slightly |
+| S&P 500 | 7,691.76 | -1.2% | Pullback from near-ATH; chip selloff + META trial drag *(post-close corrected from ~7,762)* |
+| Nasdaq | 26,289.71 | -1.6% | Semiconductor selloff led decline; SOX -5.4% *(post-close corrected from ~26,382)* |
+| Dow | 53,343.40 | -0.7% | Defensive rotation cushioned; defense/utility stable *(post-close corrected from ~53,678)* |
+| VIX | 15.19 | NORMAL | Modest uptick from 2026 low (14.64); complacency fading slightly *(post-close confirmed 15.19)* |
 | DXY | ~99.40 | Flat | Still sub-100; 2-month low area |
 | US 10Y Yield | ~4.70% | +1bp | Stable; FOMC minutes Wednesday Aug 20 |
 | US 30Y Yield | ~5.31% | HIGH | **19-YEAR HIGH — new high from ~5.27% Friday** |
@@ -132,12 +137,12 @@ Broad AI Compute weakness. NVDA led declines (-2.3%) on chip selloff despite app
 
 | Rank | Ticker | Daily Return | RSI(14) | RS Signal |
 |------|--------|-------------|---------|-----------|
-| 1 | TSM | +0.8% | ~70 | ★★★★★ ⚠ OVERBOUGHT |
+| 1 | TSM | -4.1% | ~70 | ★★★★★ ⚠ OVERBOUGHT *(post-close corrected from +0.8%)* |
 | 2 | AMAT | +0.8% est | ~44 | ★★★ |
 | 3 | LRCX | -2.3% | ~61 | ★★ |
 | 4 | ASML | -4.5% | ~53 | ★ |
 
-ASML was the hardest hit (-4.5%) in the SOX selloff. TSM bucked the trend (+0.8%), showing resilience at RSI 70 overbought. AMAT modest rebound (+0.8%) after being the biggest S&P 500 decliner on Aug 17 (-5.10%). Equipment names diverging: AMAT recovering while ASML correcting.
+ASML was the hardest hit (-4.5%) in the SOX selloff. TSM did NOT buck the trend — actual close $414.37 (-4.1%), post-close corrected from +0.8%. AMAT modest rebound (+0.8%) after being the biggest S&P 500 decliner on Aug 17 (-5.10%). All semi names participated in selloff.
 
 ### Energy for AI
 
@@ -202,7 +207,7 @@ PLTR worst defense decliner (-3.4%) as elevated valuation gets hit in risk-off r
 
 ### GOOGL — WATCH | Short-term
 
-- **Price:** ~$341 est | Daily change: -0.9% est | 52W range: $190.12–$408.61
+- **Price:** $344.20 | Daily change: -0.9% est | 52W range: $190.12–$408.61 *(post-close: GOOGL Aug 17 close confirmed ~$344, Aug 10 batch NULL→INCORRECT)*
 - **Technicals:**
   - RSI (14): ~54 — neutral
   - MACD: Bearish, below signal line
@@ -253,7 +258,7 @@ PLTR worst defense decliner (-3.4%) as elevated valuation gets hit in risk-off r
 
 ### TSM — ACCUMULATE | Medium-term
 
-- **Price:** ~$435 est | Daily change: +0.8% est | 52W range: $223.70–$479.00
+- **Price:** $414.37 | Daily change: -4.1% | 52W range: $223.70–$479.00 *(post-close corrected from ~$435/+0.8%)*
 - **Technicals:**
   - RSI (14): ~70 — **OVERBOUGHT**
   - MACD: Bullish but moderating
@@ -264,7 +269,7 @@ PLTR worst defense decliner (-3.4%) as elevated valuation gets hit in risk-off r
 - **Risk Factor:** RSI 70 overbought; Taiwan geopolitical risk; broad semiconductor selloff could catch up
 - **Catalyst:** N2 ramp; monthly revenue data; $60-64B capex execution; AI chip demand
 
-*ACCUMULATE maintained with OVERBOUGHT flag. TSM +0.8% BUCKED the SOX -5.4% selloff — strongest relative strength in semiconductor sector. NULL in Aug 11 batch (+0.69%). RSI 70 overbought but fundamentals strongest in portfolio.*
+*ACCUMULATE maintained with OVERBOUGHT flag. TSM actually closed at $414.37 (-4.1%), NOT +0.8% as initially estimated — did NOT buck the SOX selloff. INCORRECT in Aug 11 batch (-4.08%, post-close corrected from NULL/+0.69%). RSI 70 overbought — the selloff confirms overbought risk was real.*
 
 ---
 
@@ -304,7 +309,7 @@ PLTR worst defense decliner (-3.4%) as elevated valuation gets hit in risk-off r
 
 ### LRCX — ACCUMULATE | Medium-term
 
-- **Price:** $324.85 | Daily change: -2.3% | 52W range: $103.55–$370.00
+- **Price:** $323.21 | Daily change: -2.8% | 52W range: $103.55–$370.00 *(post-close corrected from $324.85/-2.3%)*
 - **Technicals:**
   - RSI (14): ~61 — neutral-bullish
   - MACD: Moderating; sell pressure increasing
@@ -321,7 +326,7 @@ PLTR worst defense decliner (-3.4%) as elevated valuation gets hit in risk-off r
 
 ### VST — CONTRARIAN | Medium-term
 
-- **Price:** $146.06 | Daily change: -1.7% | 52W range: $75.00–$195.00
+- **Price:** $143.63 | Daily change: -2.5% | 52W range: $75.00–$195.00 *(post-close corrected from $146.06/-1.7%)*
 - **Technicals:**
   - RSI (14): ~36 — approaching oversold
   - MACD: Bearish, below signal line
@@ -332,7 +337,7 @@ PLTR worst defense decliner (-3.4%) as elevated valuation gets hit in risk-off r
 - **Risk Factor:** SMA50 breakdown at $150; energy sector weakness; oil price pass-through
 - **Catalyst:** AI datacenter power purchase agreements; nuclear capacity expansion; DOE policy support
 
-*CONTRARIAN maintained. VST -1.7% continues the selloff pattern. CORRECT in Aug 11 batch (+2.23%) — CONTRARIAN CORRECT for 3RD CONSECUTIVE BATCH (100% streak). RSI ~36 approaching oversold strengthens the contrarian buy case. SMA50 at $150 is critical support.*
+*CONTRARIAN maintained. VST actual close $143.63 (-2.5%, corrected from $146.06/-1.7%). NULL in Aug 11 batch (+0.53%, post-close corrected from CORRECT/+2.23% — move below 1% threshold). CONTRARIAN 100% decisive streak maintained (1/1 this batch, NRG only decisive). RSI ~36 approaching oversold strengthens the contrarian buy case.*
 
 ---
 
@@ -355,7 +360,7 @@ PLTR worst defense decliner (-3.4%) as elevated valuation gets hit in risk-off r
 
 ### OKLO — SPECULATIVE | Long-term
 
-- **Price:** ~$41 est | Daily change: -7.6% est | 52W range: $10.00–$65.00
+- **Price:** $41.40 | Daily change: -6.9% | 52W range: $10.00–$65.00 *(post-close corrected from ~$41/-7.6%)*
 - **Technicals:**
   - RSI (14): ~31 — **APPROACHING OVERSOLD**
   - MACD: Strongly bearish
@@ -483,9 +488,9 @@ PLTR worst defense decliner (-3.4%) as elevated valuation gets hit in risk-off r
 | Energy ↔ Defense | Moderate (0.40) | Both stable | Geopolitical tensions (Iran/Hormuz) supporting both sectors |
 
 **Rotation Signals:**
-- **INTO:** Defense (LMT -0.3%, RTX -0.7%), TSM (bucking SOX selloff)
-- **OUT OF:** Semiconductors ex-TSM (ASML -4.5%, LRCX -2.3%), OKLO (-7.6%)
-- **DIVERGENCE:** TSM (+0.8%) vs ASML (-4.5%) within semiconductors — foundry vs equipment divergence
+- **INTO:** Defense (LMT -0.3%, RTX -0.7%)
+- **OUT OF:** Semiconductors (TSM -4.1%, ASML -4.5%, LRCX -2.8%), OKLO (-6.9%) *(TSM post-close corrected: did NOT buck selloff)*
+- **DIVERGENCE:** AMAT (+0.8%) vs ASML (-4.5%) within semiconductors — post-earnings recovery vs selloff
 - **CLASSIC RISK-OFF:** Defense outperforming semis by 3-4% — rotation from growth to value/defense
 
 ---
@@ -569,16 +574,16 @@ Defense sector showing classic risk-off resilience: LMT -0.3%, RTX -0.7% vs NVDA
 
 ### Composite Score
 
-**CS = 0.40 × 42.11 + 0.30 × 100.0 + 0.30 × 100.0 = 16.84 + 30.0 + 30.0 = 76.84**
+**CS = 0.40 × 41.94 + 0.30 × 100.0 + 0.30 × 100.0 = 16.78 + 30.0 + 30.0 = 76.78**
 
-**Delta from baseline (76.53): +0.31 — EXCEEDS BASELINE FOR 5TH CONSECUTIVE REPORT**
+**Delta from baseline (76.53): +0.25 — STILL ABOVE BASELINE (5TH CONSECUTIVE REPORT)**
 
 | Metric | Value | Change from Aug 17 |
 |--------|-------|--------------------|
-| AS | 42.11% | +0.01pp (10th consecutive ATH) |
+| AS | 41.94% | -0.17pp (streak broken at 10) *(post-close corrected from 42.11%)* |
 | AC | 100.0% | unchanged |
 | CV | 100.0% | unchanged |
-| CS | 76.84 | flat (5th consecutive above baseline) |
+| CS | 76.78 | -0.06 (5th consecutive above baseline, but first decline in 8 reports) *(post-close corrected from 76.84)* |
 
 ---
 
@@ -586,7 +591,7 @@ Defense sector showing classic risk-off resilience: LMT -0.3%, RTX -0.7% vs NVDA
 
 **No active experiment.** RSI-Threshold Signal Override awaiting Malik approval (would modify signal classification logic to override WATCH signals when RSI crosses key thresholds). Auto-evolve scope exhausted (AC=100, CV=100). Five consecutive format experiments (006-010) discarded. AS is the only remaining CS lever.
 
-**Pending approval:** RSI-Threshold Signal Override — addresses the WATCH failure pattern (WATCH 1/4 = 25.0% today, but 2/8 non-zero in last 2 batches shows marginal improvement). ACCUMULATE 3/7 = 42.9% (worst ever) suggests methodology needs attention beyond just WATCH fixes.
+**Pending approval:** RSI-Threshold Signal Override — addresses the WATCH failure pattern (WATCH 1/4 = 25.0% today, but 2/8 non-zero in last 2 batches shows marginal improvement). ACCUMULATE 3/8 = 37.5% (worst ever, post-close corrected from 3/7=42.9%) suggests methodology needs attention beyond just WATCH fixes.
 
 **Next scoring date:** Aug 25 (5 trading days from Aug 18: Aug 19, 20, 21, 22, 25).
 
@@ -594,12 +599,12 @@ Defense sector showing classic risk-off resilience: LMT -0.3%, RTX -0.7% vs NVDA
 
 ## Key Observations
 
-1. **ACCUMULATE structural break:** 3/7 = 42.9% is the worst ACCUMULATE batch in run history, ending an 8-batch 70%+ streak. The chip selloff (META trial + SOX selloff + 30Y yields) hit 4 of 7 decisive ACCUMULATE names. This is the first batch where ACCUMULATE was NOT the strongest signal type.
+1. **ACCUMULATE structural break:** 3/8 = 37.5% (post-close corrected from 3/7=42.9%) is the worst ACCUMULATE batch in run history, ending an 8-batch 70%+ streak. TSM's actual close at $414.37 (-4.08%) adds a 5th incorrect to the ACCUMULATE column. The chip selloff hit 5 of 8 decisive ACCUMULATE names.
 
-2. **CONTRARIAN emerges as strongest signal:** 2/2 = 100% for the 3rd consecutive batch (6/6 = 100% over 3 batches). VST and NRG contrarian thesis fully validated after the 6-batch failure streak from earlier. The energy contrarian play is working.
+2. **CONTRARIAN still positive but narrower:** 1/1 = 100% decisive (post-close corrected from 2/2: VST's actual close $143.63 = +0.53% moves to NULL). NRG +4.12% is the only decisive CONTRARIAN. The 100% streak is maintained but on a smaller sample.
 
 3. **WATCH showing signs of life:** 1/4 = 25.0% with GOOGL correct. Two WATCH correct signals in the last 2 batches after 10 consecutive 0% batches. The RSI-Threshold Signal Override would further improve WATCH by preventing neutral signals when RSI crosses key thresholds.
 
-4. **AS improvement decelerating:** +0.01pp is the smallest improvement in the 10-batch streak. Batch accuracy (42.9%) is barely above the running average (42.11%). The ACCUMULATE weakness means AS is plateauing near 42%.
+4. **AS improvement streak BROKEN at 10:** Post-close verification revealed 3 scoring flips that drop AS from 42.11% to 41.94% (-0.17pp). The 10-consecutive-improvement streak ends. Batch accuracy (35.7%) is well below the running average.
 
-5. **CS plateau risk:** CS flat at 76.84 for 2 consecutive reports. With AC and CV at 100%, AS is the only lever. At current trajectory (tiny AS improvements), CS could stagnate or decline if ACCUMULATE weakness persists.
+5. **CS first decline in 8 reports:** CS drops from 76.84 to 76.78 (-0.06). Still above baseline (+0.25) but the margin is narrowing. With AC and CV at 100%, AS is the only lever, and the post-close correction pattern means reported AS tends to be revised downward.

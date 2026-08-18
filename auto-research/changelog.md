@@ -1,5 +1,22 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-18 POST-CLOSE VERIFIED — 3 SCORING FLIPS (GOOGL/TSM/VST) + AS 42.11→41.94% STREAK BROKEN AT 10 + CS 76.84→76.78 FIRST DECLINE IN 8 + STILL ABOVE BASELINE (+0.25)
+
+- **3 scoring flips identified through post-close price verification:**
+  - **GOOGL Aug 10 NULL→INCORRECT:** Aug 17 close confirmed ~$344.00 (Aug 18 open $342.41 validates). From Aug 10 base $355.84: -3.33% crosses 3% WATCH threshold (was -2.49% NULL). Aug 10 batch corrected: 8/16=50.0% (was 8/15=53.3%).
+  - **TSM Aug 11 NULL→INCORRECT:** Actual close **$414.37** (not ~$435 est). From Aug 11 base $432.00: -4.08% (was +0.69% NULL). Major price error — report overestimated by ~$21 (~5%). TSM did NOT buck the SOX -5.4% selloff.
+  - **VST Aug 11 CORRECT→NULL:** Actual close **$143.63** (not $146.06). From Aug 11 base $142.87: +0.53% (was +2.23% CORRECT). Move below 1% threshold, becomes NULL.
+- **Aug 11 batch corrected:** 6/14 → **5/14 = 35.7%**. TSM adds 1 decisive + 1 incorrect; VST removes 1 correct + 1 decisive.
+- **Aug 10 batch corrected:** 8/15 → **8/16 = 50.0%**. GOOGL adds 1 decisive + 1 incorrect.
+- **AS: 42.11% → 41.94%** (-0.17pp). 346/825. **10-CONSECUTIVE-IMPROVEMENT STREAK BROKEN.**
+- **CS: 76.84 → 76.78** (-0.06). **First CS decline in 8 reports.** Delta from baseline: +0.25, still above 76.53.
+- **Index corrections (MAJOR):** S&P 500 **7,691.76** (was ~7,762), Nasdaq **26,289.71** (was ~26,382), Dow **53,343.40** (was ~53,678). Broader selloff than initially estimated.
+- **Other price corrections:** LRCX $324.85→**$323.21**, OKLO ~$41→**$41.40**, VIX ~15.20→**15.19**, META ~$564.46, MSFT ~$481.88.
+- **AMD Aug 17 PENDING:** Yahoo Finance shows $488.89 (-3.38%) vs report's $514.39 (+6.50%). If $488.89 confirmed, AMD Aug 10 would flip from INCORRECT to NULL (~0% from base). Flagged for next session.
+- **ACCUMULATE corrected: 3/8 = 37.5%** (was 3/7=42.9%). TSM joins incorrect column.
+- **CONTRARIAN corrected: 1/1 = 100% decisive** (was 2/2). VST moves to NULL. Streak maintained on smaller sample.
+- No signal changes. No experiment. RSI-Threshold Signal Override awaiting Malik approval.
+
 ## v1.4 — 2026-08-18 — CHIP SELLOFF SOX -5.4% + META TRIAL DAY 1 + ACCUM 3/7=42.9% WORST EVER + CONTRA 2/2=100% 3RD CONSECUTIVE + AS 42.11% 10TH ATH + CS 76.84 EXCEEDS BASELINE 5TH TIME
 
 - **Aug 17 Price Corrections Applied:** CEG ~$310→~$280 MAJOR no flip, BAH $74.58→~$78.40 no flip, GOOGL ~$347→$344 PENDING flip, NVDA ~$226→$225.16 no flip.
