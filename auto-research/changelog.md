@@ -1,5 +1,14 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-18 — CHIP SELLOFF SOX -5.4% + META TRIAL DAY 1 + ACCUM 3/7=42.9% WORST EVER + CONTRA 2/2=100% 3RD CONSECUTIVE + AS 42.11% 10TH ATH + CS 76.84 EXCEEDS BASELINE 5TH TIME
+
+- **Aug 17 Price Corrections Applied:** CEG ~$310→~$280 MAJOR no flip, BAH $74.58→~$78.40 no flip, GOOGL ~$347→$344 PENDING flip, NVDA ~$226→$225.16 no flip.
+- **Aug 11 Batch Scored:** 6/14 = 42.9%. CORRECT: NVDA, GOOGL, LRCX, VST, CEG, NRG. INCORRECT: AMD, MSFT, META, AMAT, OKLO, PLTR, BAH, LMT. NULL: TSM, ASML, SMR, RTX.
+- ACCUMULATE 3/7=42.9% WORST EVER. CONTRARIAN 2/2=100% 3RD CONSECUTIVE. WATCH 1/4=25.0% 2ND NON-ZERO IN 12.
+- AS: 42.10→42.11% (+0.01pp) 10TH CONSECUTIVE ATH. CS: 76.84 flat, delta +0.31, 5TH CONSECUTIVE ABOVE BASELINE.
+- No signal changes. No experiment. RSI-Threshold Signal Override awaiting Malik approval.
+- Next scoring: Aug 25.
+
 ## v1.4 — 2026-08-17 POST-CLOSE VERIFIED — LRCX $339.20→$332.36, META ~$567→$565.76, ASML $1,875.98→$1,880.85; NO SCORING FLIPS; AS 42.10% CS 76.84 CONFIRMED
 
 - **LRCX correction:** Report $339.20 → actual **$332.36** (error +2.1%). From Aug 10 base $311.35: +6.75% (was +8.95%). **No scoring flip** (CORRECT→CORRECT, ACCUMULATE ≥1% gain).
