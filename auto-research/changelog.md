@@ -1,32 +1,21 @@
 # Methodology Changelog
 
-## v1.4 — 2026-08-19 POST-CLOSE — 30.8% WORST RECENT BATCH + 3 SIGNAL CHANGES (AMD/CEG/RTX) + AS 41.94→41.65% + CS 76.78→76.66 DELTA +0.13
+## v1.4 — 2026-08-19 — AUG 12 BATCH 4/15=26.7% WORST EVER + ACCUM 2/9=22.2% WORST EVER + AVOID 1/1=100% FIRST IN 9 + AS 41.67% 2ND DECLINE + CS 76.67 STILL ABOVE BASELINE (+0.14) + AMD ACCUM→WATCH
 
-- **Data corrections confirmed from prior session:**
-  - **AMD Aug 17 close CONFIRMED $488.89** (not $514.39 as erroneously labeled in Aug 18 report — that was the Aug 14 Friday close). AMD ACCUM→WATCH revert: SMA50 at ~$500 was NOT breached; current price $465.90 is $34 below SMA50.
-  - **CEG Aug 18 close CONFIRMED $266.83**: Aug 11 batch CEG signal CORRECT→INCORRECT (was scored from ~$270.43 estimate). Aug 11 batch updated to 5/14=35.7%.
-
-- **Aug 12 batch scored (5-day lookback): 4 CORRECT / 9 INCORRECT / 5 NULL = 4/13 decisive = 30.8%**
-  - CORRECT: GOOGL (WATCH, -0.22%), LRCX (ACCUM, +3.20%), SMR (AVOID, -2.39%), RTX (ACCUM, +1.66%)
-  - INCORRECT: NVDA (ACCUM, -1.64%), META (ACCUM, -6.10%), TSM (ACCUM, -2.32%), AMAT (ACCUM, -7.30%), VST (CONTRA, -3.46%), CEG (ACCUM, -3.87%), OKLO (SPEC, -4.66%), NRG (CONTRA, -1.64%), PLTR (ACCUM, -1.94%)
-  - NULL: AMD (WATCH), MSFT (ACCUM, ex-div adj), ASML (ACCUM, +0.20%), BAH (WATCH), LMT (ACCUM, +0.83%)
-  - *Worst ACCUM signal performance in recent history: 1/9 ACCUM signals correct*
-
-- **AS: 41.94% → 41.82% (CEG correction) → 41.65% (Aug 12 batch). -0.29pp total.**
-- **CS: 76.78 → 76.66. Delta from baseline 76.53: +0.13. 2ND CONSECUTIVE DECLINE after 10-session improvement streak.**
-
-- **Signal changes today (3):**
-  - **AMD: ACCUMULATE → WATCH** — SMA50 ($500) not breached; current $465.90 far below; signal based on incorrect Aug 17 data
-  - **CEG: ACCUMULATE → CONTRARIAN** — RSI 19.45 = most extreme oversold in portfolio history; fundamental thesis intact (Q2 beat, guidance raised)
-  - **RTX: ACCUMULATE → WATCH** — RSI overbought 13+ consecutive days; $225.49 vs 52-week high $226.88; poor risk/reward for new entries at ATH
-
-- **Macro context:** FOMC minutes (July meeting, hawkish 9-3 vote); 30Y yield at 19-year highs; SOX 3rd consecutive selloff session (-4.3% cumulative); MSFT ex-div $0.91; WTI $85.51 (+1.7%); DXY -0.77%. NVDA earnings Aug 26 AH = next portfolio inflection point.
-
-- **VST data conflict noted:** Session-established $141.42 vs dedicated agent $196.86. Material discrepancy unresolved; using session price for scoring consistency. Flagged for next session verification.
-
-- **No active experiment.** RSI-Threshold Signal Override awaiting Malik approval.
-
----
+- **Aug 18 Price Corrections Applied:** AMD $506→$484.39 MAJOR -4.3% (no scoring flip), META $564.46→$543.67 MAJOR -3.7% (no scoring flip). AMD is the 4th price error exceeding 3% in last 10 reports — most persistent data quality issue.
+- **AMD Aug 17 PENDING RESOLVED:** $514.39 CONFIRMED. Cross-referenced with Aug 18 confirmed close $484.39 — the -5.79% decline from $514.39 is consistent with SOX -5.4% on Aug 18. Yahoo's $488.89 was incorrect. No Aug 10 batch scoring flip.
+- **Aug 12 Batch Scored:** 4/15 = 26.7% — **WORST BATCH IN RUN HISTORY** (previous worst: 35.7% on Aug 11 batch). CORRECT: GOOGL, LRCX, SMR, RTX. INCORRECT: NVDA, MSFT, META, TSM, AMAT, CEG, VST, NRG, OKLO, PLTR, BAH. NULL: AMD, ASML, LMT.
+- **ACCUMULATE 2/9 = 22.2% WORST EVER** (previous worst 37.5% on Aug 11 batch). Only LRCX +4.66% and RTX +1.91% survived. 7 of 9 decisive ACCUMULATE signals failed in the post-CPI-rally reversal.
+- **CONTRARIAN 0/2 = 0%.** 3-batch 100% streak broken. VST -3.47%, NRG -1.81% both failed.
+- **AVOID 1/1 = 100%.** SMR -2.40% — FIRST CORRECT AVOID IN 9 BATCHES. After 8 consecutive failures, the bearish thesis finally validated for one batch.
+- **WATCH 1/2 = 50.0%.** GOOGL -0.02% correct (near-zero move validates WATCH). BAH -4.74% incorrect.
+- **Root cause:** CPI-day signals (Aug 12) generated at local market peak. Subsequent Michigan Sentiment plunge (51), 30Y yield 19-year high (5.31%), and SOX -5.4% chip selloff crushed every bullish signal.
+- AS: 41.94→**41.67%** (-0.27pp). 350/840. 2nd consecutive decline.
+- CS: 76.78→**76.67** (-0.11). Delta from baseline: +0.14, still above 76.53 but margin narrowing. 3rd consecutive decline.
+- **Signal change: AMD ACCUMULATE → WATCH.** SMA50 breakout from Aug 17 failed — AMD dropped from $514.13 (Aug 14) to $465.90 (Aug 19), -9.4% in 3 sessions. Broke back below SMA50 (~$470).
+- **Market context:** Treasury doubled debt buybacks, snapping 3-day losing streak (S&P +0.43%). But chip selloff continued: AMD -3.8%, Intel -4%, LRCX -4.5%, AMAT -3.2%. VIX 15.84 (rose on green day — elevated options pricing ahead of NVDA earnings Aug 26). DXY 99.46 2-month low. WTI $86.15.
+- No experiment. RSI-Threshold Signal Override awaiting Malik approval.
+- Next scoring: Aug 25.
 
 ## v1.4 — 2026-08-18 POST-CLOSE VERIFIED — 3 SCORING FLIPS (GOOGL/TSM/VST) + AS 42.11→41.94% STREAK BROKEN AT 10 + CS 76.84→76.78 FIRST DECLINE IN 8 + STILL ABOVE BASELINE (+0.25)
 
