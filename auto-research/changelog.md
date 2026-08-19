@@ -1,5 +1,33 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-19 POST-CLOSE — 30.8% WORST RECENT BATCH + 3 SIGNAL CHANGES (AMD/CEG/RTX) + AS 41.94→41.65% + CS 76.78→76.66 DELTA +0.13
+
+- **Data corrections confirmed from prior session:**
+  - **AMD Aug 17 close CONFIRMED $488.89** (not $514.39 as erroneously labeled in Aug 18 report — that was the Aug 14 Friday close). AMD ACCUM→WATCH revert: SMA50 at ~$500 was NOT breached; current price $465.90 is $34 below SMA50.
+  - **CEG Aug 18 close CONFIRMED $266.83**: Aug 11 batch CEG signal CORRECT→INCORRECT (was scored from ~$270.43 estimate). Aug 11 batch updated to 5/14=35.7%.
+
+- **Aug 12 batch scored (5-day lookback): 4 CORRECT / 9 INCORRECT / 5 NULL = 4/13 decisive = 30.8%**
+  - CORRECT: GOOGL (WATCH, -0.22%), LRCX (ACCUM, +3.20%), SMR (AVOID, -2.39%), RTX (ACCUM, +1.66%)
+  - INCORRECT: NVDA (ACCUM, -1.64%), META (ACCUM, -6.10%), TSM (ACCUM, -2.32%), AMAT (ACCUM, -7.30%), VST (CONTRA, -3.46%), CEG (ACCUM, -3.87%), OKLO (SPEC, -4.66%), NRG (CONTRA, -1.64%), PLTR (ACCUM, -1.94%)
+  - NULL: AMD (WATCH), MSFT (ACCUM, ex-div adj), ASML (ACCUM, +0.20%), BAH (WATCH), LMT (ACCUM, +0.83%)
+  - *Worst ACCUM signal performance in recent history: 1/9 ACCUM signals correct*
+
+- **AS: 41.94% → 41.82% (CEG correction) → 41.65% (Aug 12 batch). -0.29pp total.**
+- **CS: 76.78 → 76.66. Delta from baseline 76.53: +0.13. 2ND CONSECUTIVE DECLINE after 10-session improvement streak.**
+
+- **Signal changes today (3):**
+  - **AMD: ACCUMULATE → WATCH** — SMA50 ($500) not breached; current $465.90 far below; signal based on incorrect Aug 17 data
+  - **CEG: ACCUMULATE → CONTRARIAN** — RSI 19.45 = most extreme oversold in portfolio history; fundamental thesis intact (Q2 beat, guidance raised)
+  - **RTX: ACCUMULATE → WATCH** — RSI overbought 13+ consecutive days; $225.49 vs 52-week high $226.88; poor risk/reward for new entries at ATH
+
+- **Macro context:** FOMC minutes (July meeting, hawkish 9-3 vote); 30Y yield at 19-year highs; SOX 3rd consecutive selloff session (-4.3% cumulative); MSFT ex-div $0.91; WTI $85.51 (+1.7%); DXY -0.77%. NVDA earnings Aug 26 AH = next portfolio inflection point.
+
+- **VST data conflict noted:** Session-established $141.42 vs dedicated agent $196.86. Material discrepancy unresolved; using session price for scoring consistency. Flagged for next session verification.
+
+- **No active experiment.** RSI-Threshold Signal Override awaiting Malik approval.
+
+---
+
 ## v1.4 — 2026-08-18 POST-CLOSE VERIFIED — 3 SCORING FLIPS (GOOGL/TSM/VST) + AS 42.11→41.94% STREAK BROKEN AT 10 + CS 76.84→76.78 FIRST DECLINE IN 8 + STILL ABOVE BASELINE (+0.25)
 
 - **3 scoring flips identified through post-close price verification:**
