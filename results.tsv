@@ -573,3 +573,4 @@ a0d83c5	2.316606	0.0	discard	experiment 1205: ASPECT_RATIO 48->64 (+0.013 bpb, 1
 7e240b9	2.316390	0.0	discard	experiment 1209: increase dropout 0.20/0.15/0.30 (+0.012 bpb)
 365a406	2.322105	0.0	discard	experiment 1210: STABLE_RATIO 0.25->0.40 (+0.018 bpb)
 6a6cbfe	2.315599	0.0	discard	experiment 1211: STABLE_RATIO 0.25->0.10 (+0.012 bpb)
+1c16481	2.326220	0.0	discard	experiment 1212: HEAD_DIM 64->48 (+0.022 bpb)
