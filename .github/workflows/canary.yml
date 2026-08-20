@@ -1,0 +1,55 @@
+name: SA loop canary
+
+# Fails (and GitHub emails the repo owner) when the daily loop has not produced
+# today's report or when an approval request has been waiting for more than 3 days.
+# No secrets required.
+
+on:
+  schedule:
+    - cron: "0 23 * * 1-5"   # 23:00 UTC Mon-Fri, after Loop 1 (19:00) and Loop 2 (21:00)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  canary:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: sa-main
+
+      - name: Today's report exists
+        run: |
+          today=$(date -u +%F)
+          f="auto-research/${today}-report.md"
+          if [ ! -s "$f" ]; then
+            echo "::error::Missing $f — Loop 1 did not run or did not push today (UTC)."
+            ls -1 auto-research/*-report.md | tail -3
+            exit 1
+          fi
+          echo "OK: $f present ($(wc -l < "$f") lines)"
+
+      - name: Approval not stuck > 3 days
+        run: |
+          f=auto-research/state.json
+          if [ ! -s "$f" ]; then
+            echo "::error::$f missing — both loops must maintain it."
+            exit 1
+          fi
+          python3 - "$f" <<'PY'
+          import json, sys, datetime
+          s = json.load(open(sys.argv[1]))
+          if not s.get("awaiting_approval"):
+              print("OK: not awaiting approval"); sys.exit(0)
+          since = s.get("awaiting_approval_since")
+          if not since:
+              print("::error::awaiting_approval is true but awaiting_approval_since is unset"); sys.exit(1)
+          d = datetime.date.fromisoformat(since[:10])
+          age = (datetime.datetime.now(datetime.timezone.utc).date() - d).days
+          issue = s.get("approval_issue")
+          if age > 3:
+              print(f"::error::Approval pending {age} days (since {since}, issue #{issue}). See open needs-approval issues."); sys.exit(1)
+          print(f"OK: awaiting approval for {age} day(s) (issue #{issue})")
+          PY

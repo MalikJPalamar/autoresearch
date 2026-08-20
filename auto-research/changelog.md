@@ -1,5 +1,14 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-21 — LOOP HARDENING (PR): `scripts/prices.sh` PRIMARY PRICE SOURCE + state.json + APPROVAL INBOX VIA GITHUB ISSUES + format-012 RSI-THRESHOLD SIGNAL OVERRIDE APPROVED & QUEUED
+
+- **Price source:** `scripts/prices.sh` (Yahoo Finance chart API, Stooq fallback) is now the primary source for all 18 closes; web search is fallback only and must pass the format-011 checks. First run on Aug 21 reproduced the independently verified Aug 19 closes exactly (ASML $1,751.73, LRCX $307.17, PLTR $175.19, RTX $220.35) — i.e. it would have prevented all five Aug 20 scoring flips.
+- **format-011 Price Verification Protocol** remains ACTIVE (report 1/3, cs_before 76.53); the script is a data-source change inside its scope.
+- **format-012 RSI-Threshold Signal Override — APPROVED by Malik 2026-08-20 (issue #19), QUEUED.** Malik's approval named it "format-011", but that id was already taken by the Price Verification Protocol started the same day, so it is registered as format-012. It starts automatically when format-011 resolves, as a 3-report KEEP/DISCARD with automatic revert on DISCARD. Rules: RSI>70 → LONG/ACCUM→WATCH; RSI<30 → WATCH→CONTRARIAN; LONG upgrades require RSI<40. Close issue #19 on activation.
+- **Policy:** signal-logic experiments are now pre-approved when run as 3-report KEEP/DISCARD with auto-revert (program.md "Auto-evolve"). Approval requests go through a single `needs-approval` GitHub issue; "awaiting approval" is no longer logged in results.tsv.
+- **State:** `auto-research/state.json` added (active experiment, start date, reports scored, baseline, approval status, last report/scored dates). Both loops update it; `.github/workflows/canary.yml` (23:00 UTC Mon–Fri) fails if today's report is missing or an approval has waited > 3 days.
+
+
 ## v1.4 — 2026-08-20 POST-CLOSE — GOOGL SCORING FLIP + MAJOR INDEX CORRECTIONS + format-011 FIRST CATCH
 
 Post-close verification found a **$6 GOOGL error** ($344.50→$338.20) that the format-011 protocol caught. Aug 13 batch revised 3/16→2/15=13.3%, tying Aug 12 for worst ever. AS 41.00→40.94. CS 76.40→76.38 (delta -0.15). Indices corrected: S&P -39pts, Nasdaq -78pts, Dow -310pts (late-day selloff after pre-close snapshot). META and TSM confirmed exact. 6 tickers remain pending (NVDA, CEG, PLTR, BAH, LMT, RTX).
@@ -1566,6 +1575,7 @@ All Aug 20 figures are **pre-close (~15:15 ET)**. No Aug 20 last price could be 
 - **Notes:** Accuracy scoring begins after 5 trading days of history
 
 ## Queued Experiments
+- **format-012:** RSI-Threshold Signal Override — **APPROVED 2026-08-20 (issue #19), starts when format-011 resolves**
 - **format-003:** Relative strength ranking within sectors — **KEPT (resolved 2026-05-13, CS delta +35.6)**
 - **format-004:** Add stop-loss level, price target, and R/R ratio per ticker — auto-evolve — **ACTIVE (started 2026-05-13)**
 - **format-005:** Options flow / unusual activity (requires Malik approval — Phase 3)

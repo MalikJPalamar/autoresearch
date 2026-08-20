@@ -59,6 +59,7 @@ Per ticker, 0-5 points:
 
 ## Data Sources (Priority Order)
 
+0. **`scripts/prices.sh`** — settled closes for all 18 tickers (Yahoo chart API, Stooq fallback). Always first; the web sources below are for indicators, news, macro, and price fallback only.
 1. Google Finance — real-time quotes
 2. TipRanks — technical indicators, analyst consensus
 3. Investing.com — RSI, MACD, MAs, macro data
@@ -74,7 +75,12 @@ Per ticker, 0-5 points:
 
 Run at 9pm CET on weekdays:
 
-1. Web search all 18 tickers for current price, daily change, volume
+1. **Run `scripts/prices.sh`** (primary price source — Yahoo Finance chart API,
+   Stooq fallback; no keys). It prints settled close, previous close, daily
+   change, high/low and volume for all 18 tickers. Use these numbers verbatim.
+   Web search is the **fallback only** for tickers the script returns as `NA`,
+   and any web-sourced price must pass the format-011 verification checks.
+   Never overwrite a script close with a web-search figure.
 2. Web search for technical indicators (RSI, MACD, SMA/EMA)
 3. Identify support/resistance levels
 4. Generate directional bias signal per ticker
@@ -83,12 +89,24 @@ Run at 9pm CET on weekdays:
 7. Write report to `auto-research/YYYY-MM-DD-report.md`
 8. Self-score: calculate AC and CV for this report
 9. Update `auto-research/latest.md` as symlink/copy
-10. Commit and push
+10. Update `auto-research/state.json` (`last_report_date`, `last_cs`, `last_as`,
+    `updated_at`, `updated_by: "loop1"`)
+11. Commit and push
 
 ## Loop 2 — Auto-Research
 
 Run after Loop 1 or on-demand:
 
+0. **Approval inbox (GitHub Issues).** At session start run:
+   `gh issue list --state open --label needs-approval` and
+   `gh issue list --state open --label approved`
+   (if a label is missing, create it: `gh label create needs-approval --color D93F0B`,
+   `gh label create approved --color 0E8A16`).
+   - For each **approved** issue: activate what it approves (update methodology.md,
+     changelog.md, results.tsv, state.json), then close it with a comment stating
+     the experiment id and "scoring begins next report".
+   - Open **needs-approval** issues are still pending: do nothing except keep
+     `state.json.awaiting_approval = true`. Do **not** re-log the ask in results.tsv.
 1. Read past reports and signals
 2. Calculate Accuracy Score from 5-day lookback window
 3. Calculate full Composite Score (CS = 0.40*AS + 0.30*AC + 0.30*CV)
@@ -99,6 +117,21 @@ Run after Loop 1 or on-demand:
    - CS same or worse → mark DISCARD, revert methodology.md
 6. Propose next experiment from the rollout sequence
 7. Log to `auto-research/changelog.md` and `auto-research/results.tsv`
+8. Update `auto-research/state.json` (`active_experiment`, `experiment_start_date`,
+   `reports_scored`, `baseline_cs`, `awaiting_approval`, `last_scored_date`,
+   `updated_at`, `updated_by: "loop2"`). The canary workflow reads this file.
+
+### Asking for approval
+
+When a change needs Malik's approval, create **one** GitHub issue:
+`gh issue create --label needs-approval --title "APPROVAL NEEDED: <short name>" --body "<what, why, expected CS impact, exact methodology diff>"`.
+Before creating, check `gh issue list --state open --label needs-approval` and
+**do not create a duplicate** if an issue with the same title exists. Set
+`state.json.awaiting_approval = true`, `awaiting_approval_since = <today>`,
+`approval_issue = <number>`. Do **not** repeat "awaiting approval" in
+results.tsv or report headers on subsequent days — the issue is the single
+record of the request. Malik approves by relabeling the issue `approved` (or
+commenting "approved"); Loop 2 picks it up at the next session start.
 
 ## Experiment Rules
 
@@ -107,12 +140,28 @@ Run after Loop 1 or on-demand:
 - Data source selection and prioritization
 - Data presentation (tables vs prose)
 - Coverage depth per ticker
+- **Signal-logic experiments (pre-approved by Malik, 2026-08-20)** — changes to
+  how signals are classified (RSI thresholds, overrides, upgrade/downgrade
+  rules) may be started without asking, **provided** they run as a standard
+  3-report KEEP/DISCARD experiment against the current baseline CS and are
+  **automatically reverted in methodology.md on DISCARD**. Still one experiment
+  at a time.
 
 ### Requires Malik's approval:
 - Adding/removing research layers
 - Changing CS scoring weights
 - Adding/removing tickers
-- Modifying signal classification logic
+- Signal-logic changes that are *not* run as a 3-report KEEP/DISCARD experiment
+  (i.e. permanent changes without measurement)
+
+### Experiment id collision note (2026-08-21)
+The loop started the Price Verification Protocol as `format-011` on 2026-08-20,
+the same day Malik approved the RSI-Threshold Signal Override under the name
+"format-011" in issue #19. The id stays with the Price Verification Protocol
+(already in results.tsv/changelog). The RSI-Threshold Signal Override is
+registered as **`format-012`**, APPROVED and QUEUED: start it as soon as
+format-011 resolves (KEEP or DISCARD), with `cs_before` = the 3-report CS at
+that point. Close issue #19 when format-012 is activated.
 
 ## Research Layer Rollout Sequence
 
@@ -137,6 +186,8 @@ Run after Loop 1 or on-demand:
 - Cross-Sector Momentum Divergence Alert — format-008, DISCARDED Jul 7 (CS -1.09, 3-report avg 75.44 vs baseline 76.53)
 - Enhanced Sector Rotation Signal — format-009, DISCARDED Jul 16 (CS -0.37, 3-report avg 76.16 vs baseline 76.53)
 - Signal Conviction Tracker — format-010, DISCARDED Jul 28 (CS -0.05, 3-report avg 75.95 vs baseline 76.00)
+- Price Verification Protocol — format-011, ACTIVE since Aug 20 (cs_before 76.53; `scripts/prices.sh` added Aug 21 as primary source)
+- RSI-Threshold Signal Override — format-012, APPROVED Aug 20 (issue #19), QUEUED behind format-011
 - Correlation breakdown alerts
 
 **Phase 4 — Future (requires data accumulation):**
