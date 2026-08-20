@@ -562,3 +562,4 @@ b609207	2.273314	0.0	keep	experiment 1164: TOTAL_BATCH_SIZE 2^18->2^17 (-0.073 b
 11fbcbc	1.787604	0.0	keep	experiment 1171: DEPTH 3->4 (-0.017 bpb vs new baseline 1.805, more model capacity)
 5fa34d4	1.912305	0.0	discard	experiment 1172: DEPTH 4->5 (+0.125 bpb, too large for 5-min budget, only 12 steps)
 7ebda2f	1.826658	0.0	discard	experiment 1173: HEAD_DIM 64->32 (+0.039 bpb, more heads but slower and worse)
+a862da3	1.803022	0.0	discard	experiment 1174: FINAL_LR_FRAC 0.05->0.01 (+0.015 bpb, deeper decay didn't help)
