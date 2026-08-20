@@ -1,5 +1,9 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-20 POST-CLOSE — GOOGL SCORING FLIP + MAJOR INDEX CORRECTIONS + format-011 FIRST CATCH
+
+Post-close verification found a **$6 GOOGL error** ($344.50→$338.20) that the format-011 protocol caught. Aug 13 batch revised 3/16→2/15=13.3%, tying Aug 12 for worst ever. AS 41.00→40.94. CS 76.40→76.38 (delta -0.15). Indices corrected: S&P -39pts, Nasdaq -78pts, Dow -310pts (late-day selloff after pre-close snapshot). META and TSM confirmed exact. 6 tickers remain pending (NVDA, CEG, PLTR, BAH, LMT, RTX).
+
 ## v1.4 — 2026-08-20 — SYSTEMIC PRICE-DATA FAILURE (5 OF 18 AUG 19 CLOSES WRONG, ALL BIASED HIGH) + 5 SCORING FLIPS + AUG 12 REVISED 26.7%→13.3% NEW WORST EVER + ACCUM 0/9 FIRST ZERO BATCH + AUG 13 BATCH 3/16=18.8% + AS 41.00% + CS 76.40 FALLS BELOW BASELINE FIRST TIME IN 7 + format-011 PRICE VERIFICATION PROTOCOL STARTED + 3 SIGNAL CHANGES
 
 ### The Data Failure

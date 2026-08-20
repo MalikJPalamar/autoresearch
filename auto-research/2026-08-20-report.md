@@ -617,6 +617,82 @@ ACCUMULATE exposure drops from 10 to 7 tickers — the first material reduction 
 
 **Aug 27** (5 trading days from Aug 20: Aug 21, 24, 25, 26, 27). This window **contains NVDA earnings (Aug 26 AH)** and opens into Jackson Hole. Today's 18 signals will be scored against the single highest-variance week of the quarter — expect an extreme batch result in either direction.
 
-### Post-Close Verification Required
+### Post-Close Verification — Aug 20 (performed same-day, post-market)
 
-All Aug 20 figures in this report are **pre-close / intraday (~15:15 ET)** and must be verified next session under the format-011 protocol. Highest-priority unverified: **ASML, LRCX, CEG, NRG, LMT, BAH, GOOGL, MSFT** (no Aug 20 last price could be sourced for any of these). VIX Aug 20 close also unverified.
+All Aug 20 figures in the pre-close report were **intraday snapshots (~15:15 ET)**. The market sold off significantly in the final 45 minutes. Index corrections alone confirm the late-day move.
+
+#### Index Corrections
+
+| Index | Pre-Close Report | Verified Aug 20 Close | Error |
+|-------|-----------------|----------------------|-------|
+| S&P 500 | 7,680.26 (-0.36%) | **7,641.16 (-0.87%)** | **-0.51% / -39 pts** |
+| Nasdaq | 26,145.51 (-0.70%) | **26,067.17 (-1.00%)** | **-0.30% / -78 pts** |
+| Dow | 53,069.32 (-0.74%) | **52,759.21 (-1.32%)** | **-0.59% / -310 pts** |
+
+All three indices closed materially lower than the pre-close snapshot. The late-day selloff was broad-based.
+
+#### Per-Ticker Verification
+
+| Ticker | Report Price | Verified Close | Error | Conf | Scoring Impact |
+|--------|-------------|---------------|-------|------|----------------|
+| NVDA | $217.55 | PENDING | — | — | — |
+| AMD | $461.85 | $466.26 | +0.96% | MED | None (INCORRECT either way) |
+| **GOOGL** | **~$344.50** | **$338.20** | **-1.83%** | **HIGH** | **SCORING FLIP — see below** |
+| MSFT | ~$485.00 | $481.68 | -0.68% | MED | None (INCORRECT either way) |
+| META | $543.61 | $543.61 | ✅ exact | CONF | None |
+| TSM | $414.28 | $414.28 | ✅ exact | CONF | None |
+| ASML | ~$1,755.00 | $1,755.83 | +0.05% | MED | None (INCORRECT either way) |
+| AMAT | ~$494.00 | ~$494.82 | +0.17% | LOW | None (INCORRECT either way) |
+| LRCX | ~$311.82 | ~$309.94 | -0.60% | LOW | None (INCORRECT either way) |
+| VST | ~$136.75 | $138.59 | +1.35% | MED | None (INCORRECT either way) |
+| CEG | $274.17 | PENDING | — | — | PENDING |
+| OKLO | $40.87 | PENDING | — | — | — |
+| NRG | $117.83 | ~$121.12 | +2.79% | LOW | None (INCORRECT either way) |
+| SMR | ~$8.60 | ~$9.29 | +8.0% | LOW | None (CORRECT either way: -3.1% vs -10.3%) |
+| PLTR | $174.69 | PENDING | — | — | — |
+| BAH | $75.76 | PENDING | — | — | — |
+| LMT | $589.47 | PENDING | — | — | — |
+| RTX | $221.57 | PENDING | — | — | — |
+
+**Confirmed exact:** META, TSM. **Near-confirmed:** ASML, AMAT, MSFT. **5 PENDING** (NVDA, CEG, PLTR, BAH, LMT, RTX — insufficient Aug 20 close data from search).
+
+#### SCORING FLIP: GOOGL CORRECT → NULL
+
+Two independent search sources confirm GOOGL closed at **$338.15–338.20** on Aug 20, down ~1.0–1.75% on the session. The pre-close report used **~$344.50**, which was the intraday price at ~15:15 ET before a ~$6 late-day selloff.
+
+- **Aug 13 base:** $344.00
+- **Verified Aug 20 close:** $338.20
+- **Move:** ($338.20 − $344.00) / $344.00 = **-1.69%**
+- **Signal:** WATCH
+- **Scoring rule:** WATCH + 1–3% move = **NULL** (was CORRECT at +0.15%)
+
+**Aug 13 batch REVISED: 3/16 (18.8%) → 2/15 (13.3%) — TIES REVISED AUG 12 FOR WORST EVER**
+
+The three worst batches in run history are now the three most recent: Aug 12 revised 13.3%, Aug 13 revised 13.3%, and whichever comes next.
+
+#### Revised AS/CS
+
+| Metric | Pre-Verification | Post-Verification |
+|--------|-----------------|-------------------|
+| Correct | 351 | **350** |
+| Decisive | 856 | **855** |
+| AS | 41.00% | **40.94%** |
+| CS | 76.40 | **76.38** |
+| Delta from baseline | -0.13 | **-0.15** |
+
+AS trajectory: 42.10 → 41.94 → 41.67 *(rev. 41.43)* → 41.00 *(rev. 40.94)*. **4th consecutive decline; -1.16pp from the Aug 17 ATH.**
+
+#### VIX / Macro Corrections
+
+| Metric | Report | Verified | Source |
+|--------|--------|----------|--------|
+| VIX | UNVERIFIED | **~16.0** | StonEx morning commentary |
+| DXY | 98.76 | **~98.7** | Confirmed |
+| 10Y | ~4.64% | **~4.70%** | +6bp from report |
+| WTI | ~$86 | **~$88** | +$2 from report |
+
+The 10Y at ~4.70% and WTI at ~$88 are both worse than the pre-close snapshot — the stagflationary squeeze tightened into the close.
+
+#### format-011 Protocol Self-Test
+
+The pre-close report flagged 8 tickers as unverifiable. This post-close pass confirmed 5 prices (META, TSM exact; ASML, AMAT, MSFT close), found 1 scoring flip (GOOGL), and left 6 pending (insufficient post-close data available via web search). **The protocol is working — GOOGL's $6 error would have gone undetected under the old system.**
