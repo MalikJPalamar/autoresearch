@@ -24,7 +24,7 @@ if [ -f "$REPO_DIR/.env" ]; then
 fi
 
 cd "$REPO_DIR"
-git pull origin master 2>/dev/null || true
+git pull origin "$(git rev-parse --abbrev-ref HEAD)" 2>/dev/null || true
 
 SUPABASE_INSTRUCTION=""
 SUPA_KEY="${SUPABASE_SECRET_KEY:-${SUPABASE_PUBLISHABLE_KEY:-${SUPABASE_ANON_KEY:-}}}"
