@@ -571,3 +571,4 @@ a0d83c5	2.316606	0.0	discard	experiment 1205: ASPECT_RATIO 48->64 (+0.013 bpb, 1
 7b6422e	2.308821	0.0	discard	experiment 1207: MATRIX_LR 0.12->0.15 (+0.005 bpb)
 982491e	2.313971	0.0	discard	experiment 1208: reduce dropout 0.15/0.12/0.25->0.10/0.08/0.15 (+0.010 bpb)
 7e240b9	2.316390	0.0	discard	experiment 1209: increase dropout 0.20/0.15/0.30 (+0.012 bpb)
+365a406	2.322105	0.0	discard	experiment 1210: STABLE_RATIO 0.25->0.40 (+0.018 bpb)
