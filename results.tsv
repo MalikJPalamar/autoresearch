@@ -561,3 +561,4 @@ f3dcfaf	2.359681	0.0	discard	experiment 1163: WEIGHT_DECAY 0.01->0.02 (+0.014 bp
 b609207	2.273314	0.0	keep	experiment 1164: TOTAL_BATCH_SIZE 2^18->2^17 (-0.073 bpb)
 f786ca5	2.266964	0.0	keep	experiment 1165: TOTAL_BATCH_SIZE 2^17->2^16, 18 steps (-0.009 bpb)
 fa14322	2.371241	0.0	baseline	baseline (new session, fresh tokenizer): DEPTH=3, ASPECT_RATIO=48, HEAD_DIM=64, MATRIX_LR=0.12, dropout=0.15/0.12/0.25, grad_clip=0.05, ns_steps=1
+a0c8eff	2.385471	0.0	discard	experiment 1200: TOTAL_BATCH_SIZE 2^16->2^15 (+0.014 bpb, 75 steps)
