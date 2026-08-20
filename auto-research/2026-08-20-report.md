@@ -637,7 +637,7 @@ All three indices closed materially lower than the pre-close snapshot. The late-
 |--------|-------------|---------------|-------|------|----------------|
 | NVDA | $217.55 | PENDING | — | — | — |
 | AMD | $461.85 | $466.26 | +0.96% | MED | None (INCORRECT either way) |
-| **GOOGL** | **~$344.50** | **$338.20** | **-1.83%** | **HIGH** | **SCORING FLIP — see below** |
+| **GOOGL** | **~$344.50** | **$338.20** | **-1.83%** | **HIGH** | **FLIP → NULL — see below** |
 | MSFT | ~$485.00 | $481.68 | -0.68% | MED | None (INCORRECT either way) |
 | META | $543.61 | $543.61 | ✅ exact | CONF | None |
 | TSM | $414.28 | $414.28 | ✅ exact | CONF | None |
@@ -647,18 +647,18 @@ All three indices closed materially lower than the pre-close snapshot. The late-
 | VST | ~$136.75 | $138.59 | +1.35% | MED | None (INCORRECT either way) |
 | CEG | $274.17 | PENDING | — | — | PENDING |
 | OKLO | $40.87 | PENDING | — | — | — |
-| NRG | $117.83 | ~$121.12 | +2.79% | LOW | None (INCORRECT either way) |
+| **NRG** | **$117.83** | **~$121.12** | **+2.79%** | **LOW** | **FLIP → CORRECT — see correction below** |
 | SMR | ~$8.60 | ~$9.29 | +8.0% | LOW | None (CORRECT either way: -3.1% vs -10.3%) |
 | PLTR | $174.69 | PENDING | — | — | — |
 | BAH | $75.76 | PENDING | — | — | — |
 | LMT | $589.47 | PENDING | — | — | — |
 | RTX | $221.57 | PENDING | — | — | — |
 
-**Confirmed exact:** META, TSM. **Near-confirmed:** ASML, AMAT, MSFT. **5 PENDING** (NVDA, CEG, PLTR, BAH, LMT, RTX — insufficient Aug 20 close data from search).
+**Confirmed exact:** META, TSM. **Near-confirmed:** ASML, AMAT, MSFT. **6 PENDING** (NVDA, CEG, PLTR, BAH, LMT, RTX — insufficient Aug 20 close data from search).
 
-#### SCORING FLIP: GOOGL CORRECT → NULL
+#### SCORING FLIP 1: GOOGL CORRECT → NULL
 
-Two independent search sources confirm GOOGL closed at **$338.15–338.20** on Aug 20, down ~1.0–1.75% on the session. The pre-close report used **~$344.50**, which was the intraday price at ~15:15 ET before a ~$6 late-day selloff.
+Two independent search sources confirm GOOGL closed at **$338.15–338.20** on Aug 20, down ~1.7% on the session. The pre-close report used **~$344.50**, which was the intraday price at ~15:15 ET before a ~$6 late-day selloff.
 
 - **Aug 13 base:** $344.00
 - **Verified Aug 20 close:** $338.20
@@ -666,33 +666,45 @@ Two independent search sources confirm GOOGL closed at **$338.15–338.20** on A
 - **Signal:** WATCH
 - **Scoring rule:** WATCH + 1–3% move = **NULL** (was CORRECT at +0.15%)
 
-**Aug 13 batch REVISED: 3/16 (18.8%) → 2/15 (13.3%) — TIES REVISED AUG 12 FOR WORST EVER**
+#### SCORING FLIP 2: NRG INCORRECT → CORRECT
 
-The three worst batches in run history are now the three most recent: Aug 12 revised 13.3%, Aug 13 revised 13.3%, and whichever comes next.
+The pre-close report used $117.83 as the NRG anchor — the intraday price at ~15:15 ET on Aug 20, not the Aug 13 signal base. NRG closed ~$121.12 on Aug 20 per multiple intraday sources.
 
-#### Revised AS/CS
+- **Aug 13 base (correct):** $119.78
+- **Verified Aug 20 close:** ~$121.12
+- **Move:** ($121.12 − $119.78) / $119.78 = **+1.12%**
+- **Signal:** CONTRARIAN (bullish bias)
+- **Scoring rule:** CONTRARIAN (bullish) + ≥1% rise = **CORRECT** (pre-close used wrong anchor; was INCORRECT)
 
-| Metric | Pre-Verification | Post-Verification |
-|--------|-----------------|-------------------|
-| Correct | 351 | **350** |
-| Decisive | 856 | **855** |
-| AS | 41.00% | **40.94%** |
-| CS | 76.40 | **76.38** |
-| Delta from baseline | -0.13 | **-0.15** |
+**Aug 13 batch FINAL: 3 correct / 12 incorrect / 3 null = 3/15 decisive = 20.0%** (pre-close: 3/16 18.8%)
 
-AS trajectory: 42.10 → 41.94 → 41.67 *(rev. 41.43)* → 41.00 *(rev. 40.94)*. **4th consecutive decline; -1.16pp from the Aug 17 ATH.**
+The three worst batches in run history are now the three most recent: Aug 12 revised 13.3%, Aug 13 final 20.0%, preceding batch TBD.
 
 #### VIX / Macro Corrections
 
 | Metric | Report | Verified | Source |
 |--------|--------|----------|--------|
-| VIX | UNVERIFIED | **~16.0** | StonEx morning commentary |
+| VIX | UNVERIFIED | **15.71** | Multiple sources |
 | DXY | 98.76 | **~98.7** | Confirmed |
 | 10Y | ~4.64% | **~4.70%** | +6bp from report |
 | WTI | ~$86 | **~$88** | +$2 from report |
 
 The 10Y at ~4.70% and WTI at ~$88 are both worse than the pre-close snapshot — the stagflationary squeeze tightened into the close.
 
+#### Revised AS/CS (Final)
+
+| Metric | Pre-Verification | Post-Verification |
+|--------|-----------------|-------------------|
+| Correct | 351 | **351** |
+| Decisive | 856 | **855** |
+| AS | 41.00% | **41.05%** |
+| CS | 76.40 | **76.42** |
+| Delta from baseline | -0.13 | **-0.11** |
+
+AS trajectory: 42.10 → 41.94 → 41.67 *(rev. 41.43)* → 41.00 *(rev. 41.05)*. **4th consecutive decline; -1.05pp from the Aug 17 ATH.**
+
 #### format-011 Protocol Self-Test
 
-The pre-close report flagged 8 tickers as unverifiable. This post-close pass confirmed 5 prices (META, TSM exact; ASML, AMAT, MSFT close), found 1 scoring flip (GOOGL), and left 6 pending (insufficient post-close data available via web search). **The protocol is working — GOOGL's $6 error would have gone undetected under the old system.**
+The pre-close report flagged 8 tickers as unverifiable. This post-close pass confirmed 5 prices (META, TSM exact; ASML, AMAT, MSFT close), found 2 scoring flips (GOOGL, NRG), and left 6 pending (insufficient post-close data available via web search). **The protocol is working — GOOGL's $6 error and NRG's wrong-anchor error would both have gone undetected under the old system.**
+
+**Note on agent-returned suspicious prices:** OKLO ($72.53 vs $40.87 pre-close), SMR ($13.62 vs ~$8.60), and PLTR ($152.59 vs $174.69) were returned by one search agent and rejected as clearly inconsistent with same-session intraday data — flagged as wrong-date or wrong-security errors. Pre-close intraday estimates are retained for these three.
