@@ -1,5 +1,106 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-20 — SYSTEMIC PRICE-DATA FAILURE (5 OF 18 AUG 19 CLOSES WRONG, ALL BIASED HIGH) + 5 SCORING FLIPS + AUG 12 REVISED 26.7%→13.3% NEW WORST EVER + ACCUM 0/9 FIRST ZERO BATCH + AUG 13 BATCH 3/16=18.8% + AS 41.00% + CS 76.40 FALLS BELOW BASELINE FIRST TIME IN 7 + format-011 PRICE VERIFICATION PROTOCOL STARTED + 3 SIGNAL CHANGES
+
+### The Data Failure
+
+Independent multi-source verification of all 18 Aug 19 closes found **5 materially wrong, every one biased high**, and **three exactly matching a prior session's close**:
+
+| Ticker | Our Record | Verified Aug 19 | Nature of Error |
+|--------|-----------|----------------|-----------------|
+| **ASML** | $1,802.98 | **$1,751.73** (-2.84%) | **= Aug 18 close exactly** — full session stale |
+| **LRCX** | $327.92 | **$307.17** (-6.33%) | **= Aug 18 close exactly** — full session stale |
+| **RTX** | $226.06 | **~$220.35** (-2.28%) | Intraday high captured; close was -2.28%, not +0.97% |
+| **PLTR** | $171.43 | **$175.19** (+2.1%) | ≈ Aug 18 close ($171.54) — one session stale |
+| **LMT** | $593.65 | **$589.47** (-2.9%) | ≈ Aug 17 close ($593.74) — two sessions stale |
+| CEG | ~$267.76 | **$274.17** (+2.75%) | -2.34% error; resolved by arithmetic ($274.17 − $7.34 = $266.83 = confirmed Aug 18 close) |
+| SMR | $9.37 | **$9.19** | -1.92% error |
+| NVDA | $219.12 | $217.56 | -0.71% |
+| META | ~$544.96 | $547.98 | +0.55% |
+| AMD / GOOGL / TSM / AMAT / BAH | — | minor (<0.6%) | within tolerance |
+| MSFT / VST / OKLO / NRG | — | **exact** ✅ | |
+
+**Root cause:** the pipeline has been ingesting **live quote widgets during the session** rather than settled closes. A quote page cached pre-open serves the *previous* close while appearing current — which is precisely the ASML/LRCX signature. The bias is systematically upward because intraday highs get captured on green opens.
+
+**RTX: the reported breakout never happened.** Yesterday's report led with "RTX AT 52W ATH $226.06 vs $226.33 — breakout or rejection imminent." Both numbers were wrong. The true 52-week high is **$226.88, set ~Aug 10**. On Aug 19 RTX opened $225.93, tagged $226.41, then reversed to a $220.22 low and ~$220.35 close (-2.28%) on 5.75M shares — a **bearish outside-day rejection**, with RSI ~77 after 13 consecutive overbought days. $226.41–$226.88 is now a confirmed double top.
+
+### 5 Scoring Flips — Aug 12 Batch Revised 4/15 (26.7%) → 2/15 (13.3%)
+
+- **ASML NULL → INCORRECT** (+0.20% → -2.65%)
+- **LRCX CORRECT → INCORRECT** (+4.66% → -1.96%)
+- **PLTR INCORRECT → NULL** (-2.01% → +0.14%)
+- **LMT NULL → INCORRECT** (-0.73% → -1.43%)
+- **RTX CORRECT → NULL** (+1.91% → -0.66%)
+
+**2/15 = 13.3% — NEW WORST BATCH IN RUN HISTORY, half the previous worst (26.7%, set yesterday).** Both surviving correct signals are non-bullish (GOOGL WATCH flat, SMR AVOID down). **Every bullish signal in the Aug 12 batch failed.**
+
+**ACCUMULATE revised to 0/9 = 0.0% — the first zero-percent ACCUMULATE batch ever.** The correction removed both apparent survivors; LRCX and RTX were artifacts of bad prices.
+
+AS corrected: 41.67% → **41.43%** (348/840). CS corrected: 76.67 → **76.57** (delta +0.04).
+
+### Aug 13 Batch Scored: 3/16 = 18.8% (2nd worst ever)
+
+- CORRECT (3): GOOGL WATCH +0.15%, SMR AVOID -10.32%, RTX ACCUM +1.17%
+- INCORRECT (13): NVDA -2.88%, AMD -4.37%, MSFT -1.42%, META -8.32%, TSM -4.43%, ASML -3.06%, AMAT -7.59%, LRCX -4.38%, VST -6.34%, CEG -1.28%, OKLO -12.39%, NRG -1.63%, LMT -2.84%
+- NULL (2): PLTR -0.29%, BAH +1.58%
+
+**The two worst batches in run history are now back-to-back.**
+
+- **ACCUMULATE 1/9 = 11.1%** — worst non-zero batch ever. **Across the last two windows ACCUMULATE is 1 for 18 = 5.6%.**
+- **LONG 0/1** — AMAT -7.59%, post-earnings sell-the-news despite a record Q3.
+- **CONTRARIAN 0/2** — 0/4 over two batches. Energy contrarian thesis broken, not early.
+- **WATCH 1/2 = 50%** — GOOGL correct.
+- **AVOID 1/1 = 100% — 2nd consecutive correct.** SMR -10.32% after -4.27%. First sustained AVOID success in the run; the difference is a concrete dated catalyst (the $750M ATM filed Aug 11) replacing a general valuation view.
+
+**AS: 41.43% → 41.00%** (351/856). 3rd consecutive decline; -1.10pp from the Aug 17 ATH of 42.10%.
+
+**CS: 76.57 → 76.40. Delta from baseline: -0.13 — BELOW BASELINE FOR THE FIRST TIME IN 7 REPORTS.** The six-report streak above 76.53 (Aug 13–19) is over and the +0.31 peak margin has fully reversed.
+
+CS delta trajectory: +0.23 → +0.31 → +0.25 → +0.14 *(rev. +0.04)* → **-0.13**
+
+### format-011 — Price Verification Protocol (STARTED, report 0/3)
+
+**Auto-evolve scope** (`program.md`: "data source selection and prioritization"). No layer added, no weights changed, no tickers changed, no signal classification changed — **no approval required.**
+
+AC and CV have been pinned at 100.0 for 20 consecutive reports, so **AS is the only CS lever**. Five consecutive format experiments (006–010) failed because they all targeted presentation rather than measurement. Today shows the problem was never the analysis — it was the input.
+
+Protocol, applied before any close is logged:
+1. **Arithmetic reconciliation** — `quoted price − reported $ change` must equal the prior close. (Resolved CEG and VST today.)
+2. **Range check** — the close must fall inside the reported intraday high/low. (Disqualified GuruFocus's NRG $120.58, which exceeded the session high of $118.92.)
+3. **Session-date check** — reject any quote whose "previous close" equals our own prior-session record; that signature means a cached pre-open page. (This is the ASML/LRCX defect.)
+4. **Source blacklist** — GuruFocus and Motley Fool auto-quote pages excluded for NRG and CEG.
+5. **Fail-safe** — any price failing 2+ checks is marked UNVERIFIED and **scored NULL, not estimated.** Guessing has been worse than abstaining.
+
+`cs_before = 76.53` (baseline maintained from format-005 KEEP). **Known confound:** correcting an optimistic bias lowers AS first. Reports 1–3 must be judged on measurement stability — if AS falls but the per-report correction count approaches zero, the experiment is working.
+
+### Signal Changes (3)
+
+- **RTX ACCUMULATE → WATCH** — double-top rejection at $226.41 against the $226.88 Aug 10 high; RSI ~77 overbought 13 consecutive sessions; Morgan Stanley PT $220 now below spot. Excellent fundamentals ($22.9B Tomahawk award Aug 17, >$260B backlog) against an exhausted chart = conflicting signals.
+- **PLTR ACCUMULATE → WATCH** — RSI ~72.9; $175.42 has capped every intraday rally; P/E ~150 / P/S ~74 into rising long yields. The NATO Maven win is real but already priced.
+- **LRCX ACCUMULATE → CONTRARIAN** — RSI ~30–36 after -10.7% in two sessions and -20.4% in 30 days, with the thesis *strengthening* into the weakness ($3B R&D expansion announced today, September guide +52% YoY, Bernstein PT $360). Deliberate bet that this differs in kind from the energy contrarians (oversold + deteriorating) — it is oversold + improving.
+
+**ACCUMULATE exposure cut from 10 tickers to 7** — the first material reduction in the signal driving the AS decline. Distribution: ACCUM (7) NVDA, MSFT, TSM, ASML, AMAT, CEG, LMT · WATCH (6) AMD, GOOGL, META, PLTR, BAH, RTX · CONTRA (3) VST, NRG, LRCX · SPEC (1) OKLO · AVOID (1) SMR.
+
+### Market Context
+
+- **Anthropic's numbers are the dominant catalyst.** ~$65B annualized run-rate at end-July and 2028 guidance of $190–200B, both **below buy-side expectations** (street modelled ~$80B ARR, $400–500B exit valuation). This repriced the entire AI-capex complex at once. **Tell: semiconductors fell Aug 19 despite falling yields** — capex repricing, not a duration trade.
+- **July FOMC minutes (Aug 19) materially hawkish.** 9–3 hold at 3.50–3.75% with **three dissents wanting a 25bp HIKE** (Logan, Hammack, Kashkari). "Many participants assessed that policy tightening would likely be necessary if inflation did not decline." Named tariff pass-through, Middle East energy, and **AI-buildout demand** as price pressures — turning the portfolio's own thesis into a reason for the Fed to stay hawkish.
+- **Bessent's buyback intervention lasted exactly one session.** 30Y: 5.33–5.34% Aug 18 (19-year high) → ~5.19% Aug 19 on the doubled long-end buybacks → **back to 5.25% today, +6bp.** Bloomberg: "at best a circuit breaker."
+- **Iran escalated to open economic warfare.** Trump promised "the MOST CRUSHING ECONOMIC OPERATION EVER"; 25% secondary tariffs threatened on buyers of Iranian goods (aimed at China); UAE suspended all transactions with Iran; 8 Hormuz vessel attacks this month. WTI ~$86 (+2%), Brent $93.01.
+- **The consumer is cracking.** Walmart -9% on the slowest US comp growth since 2020, blamed on consumers making "trade-offs" over high gas prices. Jobless claims 206k (firm), cutting against any dovish pivot.
+- **Indices:** S&P 7,680.26 (-0.36%), Nasdaq 26,145.51 (-0.70%, **5th straight down day**), Dow 53,069.32 (-0.74%), Russell 2000 **+0.50%** (lone green index). DXY 98.76.
+- **Aug 19 index corrections:** S&P **7,707.98** (was ~7,725), Nasdaq **26,331.09** (was ~26,394), Dow **53,463.05** (was ~53,477). VIX 15.84 ✅ exact.
+- **Semiconductor dispersion emerged for the first time** — TSM +0.53% (foundry capex contracted and revenue booked) while equipment was crushed (LRCX -10.7% over two sessions, AMAT -9.6%). The market is distinguishing signed capacity from future orders.
+- **Truist cut PTs across the whole SMR group today** (OKLO, SMR, NNE), Buy maintained. URA -3%.
+
+### Upcoming
+
+**NVDA Q2 FY27 earnings Wed Aug 26 AH**, implied move ±6.7% vs 5% average realized. **Jackson Hole Aug 27–29 — Warsh's first keynote as Fed Chair**, landing the day after NVDA, with core PCE the same stretch. Next scoring **Aug 27**, a window that contains both — expect an extreme batch result in either direction.
+
+### Post-Close Verification Required
+
+All Aug 20 figures are **pre-close (~15:15 ET)**. No Aug 20 last price could be sourced for **ASML, LRCX, CEG, NRG, LMT, BAH, GOOGL, MSFT**, or for VIX. These are the highest-priority format-011 targets next session.
+
 ## v1.4 — 2026-08-19 — AUG 12 BATCH 4/15=26.7% WORST EVER + ACCUM 2/9=22.2% WORST EVER + AVOID 1/1=100% FIRST IN 9 + AS 41.67% 2ND DECLINE + CS 76.67 STILL ABOVE BASELINE (+0.14) + AMD ACCUM→WATCH
 
 - **Aug 18 Price Corrections Applied:** AMD $506→$484.39 MAJOR -4.3% (no scoring flip), META $564.46→$543.67 MAJOR -3.7% (no scoring flip). AMD is the 4th price error exceeding 3% in last 10 reports — most persistent data quality issue.
