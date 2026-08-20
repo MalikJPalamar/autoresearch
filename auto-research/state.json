@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "active_experiment": "format-011",
+  "active_experiment_name": "Price Verification Protocol",
+  "experiment_start_date": "2026-08-20",
+  "reports_scored": 1,
+  "baseline_cs": 76.53,
+  "awaiting_approval": false,
+  "awaiting_approval_since": null,
+  "approval_issue": null,
+  "queued_experiment": "format-012",
+  "queued_experiment_name": "RSI-Threshold Signal Override",
+  "queued_experiment_issue": 19,
+  "last_report_date": "2026-08-20",
+  "last_scored_date": "2026-08-20",
+  "last_cs": 76.42,
+  "last_as": 41.05,
+  "updated_by": "feat/loop-hardening seed",
+  "updated_at": "2026-08-21T00:00:00Z"
+}

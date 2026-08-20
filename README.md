@@ -1,3 +1,23 @@
+# autoresearch — `sa-main`: Situational Awareness Portfolio
+
+> **This branch is not the ML training loop.** `sa-main` is the default branch and
+> runs the **SA Portfolio**: an autonomous daily stock-report loop over 18 tickers
+> mapped to Leopold Aschenbrenner's AI-scaling thesis, using the karpathy
+> keep/discard experiment method on the *report methodology* instead of on a model.
+>
+> - Entry points: [`CLAUDE.md`](CLAUDE.md) (scheduled-session policy) and [`program.md`](program.md) (full methodology)
+> - Live state: [`auto-research/`](auto-research/) — daily `YYYY-MM-DD-report.md`, `latest.md`, `results.tsv`, `changelog.md`, `methodology.md`, `state.json`
+> - Tools: [`scripts/prices.sh`](scripts/prices.sh) (close prices, no keys), [`cron/`](cron/) (self-hosted schedule), [`.github/workflows/canary.yml`](.github/workflows/canary.yml) (missed-report alarm)
+> - Approvals: GitHub issues labeled `needs-approval` / `approved`
+>
+> The original karpathy/autoresearch **ML loop is archived on the `master` branch**.
+> `train.py`, `prepare.py`, `pyproject.toml`, `uv.lock`, `analysis.ipynb` and
+> `progress.png` on this branch are leftovers from that template and are **not used**
+> by the SA Portfolio loops (see the policy block at the top of `CLAUDE.md`).
+> The original README follows below for reference.
+
+---
+
 # autoresearch
 
 ![teaser](progress.png)

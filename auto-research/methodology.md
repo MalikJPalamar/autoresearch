@@ -67,6 +67,26 @@ After alerts, include an options flow section per ticker (where data is availabl
 - Only include tickers with actionable options data — skip if no unusual activity found
 - This layer completes CV to 15/15 (100%)
 
+### Price Verification Protocol (format-011, ACTIVE since 2026-08-20, report 1/3)
+
+Primary price source is `scripts/prices.sh` (Yahoo chart API, Stooq fallback),
+run at report time; its closes are used verbatim. Any price that has to come
+from web search must pass, before it is logged:
+1. Arithmetic reconciliation — `quoted price − reported $ change` = prior close
+2. Range check — close inside the reported intraday high/low
+3. Session-date check — reject quotes whose "previous close" equals our own prior-session record (cached pre-open page)
+4. Source blacklist — GuruFocus and Motley Fool auto-quote pages excluded for NRG and CEG
+5. Fail-safe — a price failing 2+ checks is marked UNVERIFIED and scored NULL, not estimated
+
+### RSI-Threshold Signal Override (format-012, APPROVED 2026-08-20 — issue #19, QUEUED)
+
+Starts automatically when format-011 resolves; 3-report KEEP/DISCARD, reverted
+on DISCARD. Rules applied at signal time, after the discretionary signal is set:
+- RSI(14) > 70 → LONG / ACCUMULATE downgraded to **WATCH** (overbought caution)
+- RSI(14) < 30 → WATCH upgraded to **CONTRARIAN** (oversold)
+- A LONG upgrade requires RSI(14) < 40 at the time of upgrade
+- Each override is listed in the report under "RSI Overrides" (ticker, RSI, from → to)
+
 ---
 
 ### Alerts
