@@ -715,3 +715,5 @@ a4bd0ce	2.281659	0.0	keep	experiment 1333: EMBEDDING_LR 0.7->1.0 (avg 2.282 vs 2
 106f218	2.287747	0.0	discard	experiment 1351: gradient clipping 0.05->0.10 (+0.002 bpb)
 106f218	2.286026	0.0	discard	experiment 1352: SCALAR_LR 0.45->0.35 (+0.001 bpb)
 106f218	2.283761	0.0	keep	experiment 1353: Muon momentum warmup 4->2 steps (-0.002 bpb)
+4d882fc	2.285586	0.0	discard	experiment 1354: WEIGHT_DECAY 0.01->0.02 (noise)
+4d882fc	2.281155	0.0	keep	experiment 1355: FINAL_LR_FRAC 0.05->0.02 (-0.004 bpb)
