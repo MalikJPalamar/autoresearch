@@ -574,3 +574,4 @@ a0d83c5	2.316606	0.0	discard	experiment 1205: ASPECT_RATIO 48->64 (+0.013 bpb, 1
 365a406	2.322105	0.0	discard	experiment 1210: STABLE_RATIO 0.25->0.40 (+0.018 bpb)
 6a6cbfe	2.315599	0.0	discard	experiment 1211: STABLE_RATIO 0.25->0.10 (+0.012 bpb)
 1c16481	2.326220	0.0	discard	experiment 1212: HEAD_DIM 64->48 (+0.022 bpb)
+a4d7d4c	2.314627	0.0	discard	experiment 1213: relax grad clip 0.05->1.0 (+0.011 bpb)
