@@ -581,3 +581,4 @@ aeffd27	2.317209	0.0	discard	experiment 1216: WEIGHT_DECAY 0.01->0.03 (+0.013 bp
 2d6c061	2.316059	0.0	discard	experiment 1217: RoPE base 10000->5000 (+0.012 bpb)
 6fb0400	2.307889	0.0	discard	experiment 1218: add QK-norm (+0.004 bpb)
 4092b47	2.335473	0.0	discard	experiment 1219: DEVICE_BATCH_SIZE 16->8 (+0.031 bpb)
+f6391a4	2.320692	0.0	discard	experiment 1220: remove embedding dropout (+0.017 bpb)
