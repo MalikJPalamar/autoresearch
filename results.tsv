@@ -746,3 +746,8 @@ none	0.571956	0.0	DISCARD	experiment 1354: ADAM_BETAS beta2 0.99->0.999 (+0.015 
 none	0.569228	0.0	DISCARD	experiment 1355: grad clip 0.10->0.20 (3-run avg 0.569, worse)
 none	0.566776	0.0	DISCARD	experiment 1356: STABLE_RATIO 0.25->0.15 (+0.010 bpb worse)
 b77b222	0.544301	0.0	keep	experiment 1357: MLP hidden 3/2*n_embd->n_embd (3-run avg 0.544, -0.013 bpb)
+none	0.583869	0.0	DISCARD	experiment 1358: ASPECT_RATIO 48->64 with narrow MLP (+0.040 bpb, too big)
+none	0.561167	0.0	DISCARD	experiment 1359: DEPTH 4->5 with narrow MLP (+0.017 bpb, too few steps)
+none	0.000000	0.0	DISCARD	experiment 1360: DEPTH 5 AR38 192-dim (OOM killed)
+none	0.000000	0.0	DISCARD	experiment 1361: SCALAR_LR 0.60->0.40 (CPU slowdown, invalid)
+none	0.000000	0.0	DISCARD	experiment 1362: MATRIX_LR 0.02->0.015 (CPU slowdown, invalid)
