@@ -1,5 +1,17 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-21 REPORT — `scripts/prices.sh` BLOCKED BY ORG EGRESS POLICY (403, NOT A FLAKE) + FULL WEBSEARCH FALLBACK FOR ALL 18 TICKERS + 3 PENDING + AUG14 BATCH TIES WORST EVER + format-011 REPORT 2/3
+
+`scripts/prices.sh --json` returned `NA` for all 18 tickers. The session's agent-proxy diagnostics confirmed both `query1.finance.yahoo.com` and `stooq.com` CONNECT attempts were rejected with a **403 organization egress-policy denial** — not a transient failure, and per the proxy's own guidance, not to be retried. This is the first real-world stress test of the format-011 WebSearch fallback path across the *entire* ticker list rather than a handful of exceptions.
+
+Applying the protocol's fail-safe rule strictly: **ASML** (no Aug 21 print found by search at all), **NRG** (20%-wide source disagreement spanning multiple scoring outcomes), and **BAH** (no confirmed Aug 21 print, only a stale Aug 20 value) were all marked UNVERIFIED and their Aug 14 signal scores left **PENDING** rather than estimated. Several other tickers (AMD, TSM, AMAT, LRCX, CEG, PLTR, LMT, RTX) had real source disagreement but the disputed range didn't cross a scoring-verdict boundary, so those were scored with an explicit confidence flag, consistent with the precedent set for SMR on Aug 20.
+
+Aug 14 batch scored 2/15 = 13.3%, tying the Aug 12 batch for the worst in run history — every ACCUMULATE signal failed (0/11) as the Aug 18–21 AI-capex/chip-equipment/nuclear selloff worked through the window. AS fell 41.05→40.57 (5th consecutive decline from the Aug 17 ATH of 42.10). CS fell 76.42→76.23, below the format-011 baseline (76.53) for the 2nd time since the experiment started — format-011 is now on report 2/3, one more report needed before KEEP/DISCARD.
+
+Two discretionary signal changes on RSI normalization: **PLTR WATCH→ACCUMULATE** (RSI cooled 70-73→52.3, price held support) and **RTX WATCH→ACCUMULATE** (double top resolved bearishly as flagged Aug 20, RSI cooled 77→mid-50s, price pulled back into a support zone with the Tomahawk-contract thesis intact). **CEG's 50/200-day SMA death cross was confirmed** (first in the run) and flagged for monitoring against otherwise-strong fundamentals, without a signal downgrade this report.
+
+**Action item:** if this environment is expected to allow financial-data-site egress, the org's network policy for `query1.finance.yahoo.com` / `stooq.com` needs review — this will recur every session until fixed.
+
 ## v1.4 — 2026-08-21 — LOOP HARDENING (PR): `scripts/prices.sh` PRIMARY PRICE SOURCE + state.json + APPROVAL INBOX VIA GITHUB ISSUES + format-012 RSI-THRESHOLD SIGNAL OVERRIDE APPROVED & QUEUED
 
 - **Price source:** `scripts/prices.sh` (Yahoo Finance chart API, Stooq fallback) is now the primary source for all 18 closes; web search is fallback only and must pass the format-011 checks. First run on Aug 21 reproduced the independently verified Aug 19 closes exactly (ASML $1,751.73, LRCX $307.17, PLTR $175.19, RTX $220.35) — i.e. it would have prevented all five Aug 20 scoring flips.
