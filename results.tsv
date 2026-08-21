@@ -694,3 +694,4 @@ af132e2	2.293213	0.0	discard	experiment 1325: STABLE_RATIO 0.35->0.40 (+0.006 bp
 27bd9fd	2.286977	0.0	discard	experiment 1330: WARMUP_RATIO 0.0->0.05 (no improvement)
 27bd9fd	2.292522	0.0	discard	experiment 1331: Muon beta2 0.99->0.95 (+0.006 bpb)
 27bd9fd	2.284225	0.0	keep	experiment 1332: remove dmodel LR scaling (avg 2.284 vs 2.292 baseline, -0.008 bpb)
+a4bd0ce	2.281659	0.0	keep	experiment 1333: EMBEDDING_LR 0.7->1.0 (avg 2.282 vs 2.284, -0.002 bpb)
