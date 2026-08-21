@@ -582,3 +582,4 @@ aeffd27	2.317209	0.0	discard	experiment 1216: WEIGHT_DECAY 0.01->0.03 (+0.013 bp
 6fb0400	2.307889	0.0	discard	experiment 1218: add QK-norm (+0.004 bpb)
 4092b47	2.335473	0.0	discard	experiment 1219: DEVICE_BATCH_SIZE 16->8 (+0.031 bpb)
 f6391a4	2.320692	0.0	discard	experiment 1220: remove embedding dropout (+0.017 bpb)
+54dd027	2.321660	0.0	discard	experiment 1221: FINAL_LR_FRAC 0.05->0.10 (+0.018 bpb)
