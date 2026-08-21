@@ -615,3 +615,7 @@ e791b4d	2.298171	0.0	keep	experiment 1242: UNEMBEDDING_LR 0.006->0.003 (-0.001 b
 fde3590	2.288148	0.0	discard	experiment 1251: embedding dropout 0.08->0.05 (no improvement)
 fde3590	2.288284	0.0	discard	experiment 1252: dropout 0.15->0.10, attn_dropout 0.12->0.08 (no improvement)
 fde3590	2.294485	0.0	keep	experiment 1253: mlp_dropout 0.25->0.20 (-0.007 bpb)
+0d60a7b	2.297316	0.0	discard	experiment 1254: mlp_dropout 0.20->0.15 (+0.002 bpb)
+0d60a7b	2.297540	0.0	discard	experiment 1255: attn_dropout 0.12->0.08 (+0.003 bpb)
+0d60a7b	2.295460	0.0	discard	experiment 1256: STABLE_RATIO 0.25->0.15 (no improvement)
+0d60a7b	2.284892	0.0	keep	experiment 1257: STABLE_RATIO 0.25->0.35 (-0.010 bpb)
