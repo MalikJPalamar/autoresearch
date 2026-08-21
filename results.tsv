@@ -600,3 +600,7 @@ c49fa8b	2.321517	0.0	discard	experiment 1235: FINAL_LR_FRAC 0.05->0.01 (+0.017 b
 c49fa8b	2.323244	0.0	discard	experiment 1236: remove cautious WD mask from Muon (+0.019 bpb)
 c49fa8b	2.301632	0.0	keep	experiment 1237: logit softcap=30 (-0.002 bpb, avg of 3 runs: 2.302)
 71f6af4	2.298799	0.0	keep	experiment 1238: logit softcap 30->20 (-0.003 bpb)
+e791b4d	2.297576	0.0	discard	experiment 1239: softcap 20->15 (avg 2.299 same as baseline)
+e791b4d	2.299337	0.0	discard	experiment 1240: softcap 20->10 (no improvement)
+e791b4d	2.301506	0.0	discard	experiment 1241: c_proj small nonzero init (+0.003 bpb)
+e791b4d	2.298171	0.0	keep	experiment 1242: UNEMBEDDING_LR 0.006->0.003 (-0.001 bpb)
