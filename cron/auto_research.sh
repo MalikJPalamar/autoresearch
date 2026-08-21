@@ -27,12 +27,13 @@ cd "$REPO_DIR"
 git pull origin "$(git rev-parse --abbrev-ref HEAD)" 2>/dev/null || true
 
 SUPABASE_INSTRUCTION=""
-SUPA_KEY="${SUPABASE_SECRET_KEY:-${SUPABASE_PUBLISHABLE_KEY:-${SUPABASE_ANON_KEY:-}}}"
+SUPA_KEY="${SUPABASE_SECRET_KEY:-}"
 if [ -n "${SUPABASE_URL:-}" ] && [ -n "$SUPA_KEY" ]; then
   SUPABASE_INSTRUCTION="Supabase is configured. Read signal history from Supabase (GET \$SUPABASE_URL/rest/v1/signals?select=*,tickers(symbol)&date=eq.<5-days-ago>) to score accuracy. After experiment evaluation, update the experiments table via the REST API. Use curl headers: apikey: \$SUPA_KEY, Authorization: Bearer \$SUPA_KEY, Content-Type: application/json, Prefer: resolution=merge-duplicates. The env vars SUPABASE_URL and SUPA_KEY are available."
   export SUPA_KEY
 fi
 
+set +e
 claude -p \
   "Read CLAUDE.md and program.md. Execute Loop 2 (Auto-Research):
 
@@ -49,7 +50,8 @@ claude -p \
 ${SUPABASE_INSTRUCTION}" \
   --allowedTools "Bash(git:*),Bash(curl:*),Read,Edit,Write,WebSearch,WebFetch" \
   > "$LOG_DIR/research_${TIMESTAMP}.log" 2>&1
-
 EXIT_CODE=$?
+set -e
+
 echo "[$(date)] Loop 2 finished with exit code $EXIT_CODE" >> "$LOG_DIR/research_${TIMESTAMP}.log"
 exit $EXIT_CODE

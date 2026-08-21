@@ -43,7 +43,7 @@ echo ""
 
 # Last Loop 1 run
 if [ -d "$LOG_DIR" ]; then
-    LAST_DAILY="$(ls -t "$LOG_DIR"/daily_*.log 2>/dev/null | head -1)"
+    LAST_DAILY="$(ls "$LOG_DIR"/daily_*.log 2>/dev/null | sort -r | head -1 || true)"
     if [ -n "$LAST_DAILY" ]; then
         DAILY_DATE="$(stat -c %Y "$LAST_DAILY" 2>/dev/null || stat -f %m "$LAST_DAILY" 2>/dev/null)"
         DAILY_AGE=$(( ($(date +%s) - DAILY_DATE) / 3600 ))
@@ -59,7 +59,7 @@ if [ -d "$LOG_DIR" ]; then
         echo -e "Loop 1:   ${YELLOW}Never run${NC}"
     fi
 
-    LAST_RESEARCH="$(ls -t "$LOG_DIR"/research_*.log 2>/dev/null | head -1)"
+    LAST_RESEARCH="$(ls "$LOG_DIR"/research_*.log 2>/dev/null | sort -r | head -1 || true)"
     if [ -n "$LAST_RESEARCH" ]; then
         RESEARCH_DATE="$(stat -c %Y "$LAST_RESEARCH" 2>/dev/null || stat -f %m "$LAST_RESEARCH" 2>/dev/null)"
         RESEARCH_AGE=$(( ($(date +%s) - RESEARCH_DATE) / 3600 ))
@@ -82,7 +82,7 @@ fi
 echo ""
 
 # Latest report
-LATEST_REPORT="$(ls -t "$REPO_DIR/auto-research/"*-report*.md 2>/dev/null | grep -v latest | head -1)"
+LATEST_REPORT="$(ls "$REPO_DIR/auto-research/"*-report*.md 2>/dev/null | grep -v latest | sort -r | head -1 || true)"
 if [ -n "$LATEST_REPORT" ]; then
     REPORT_NAME="$(basename "$LATEST_REPORT")"
     echo "Latest report: $REPORT_NAME"
