@@ -604,3 +604,5 @@ e791b4d	2.297576	0.0	discard	experiment 1239: softcap 20->15 (avg 2.299 same as 
 e791b4d	2.299337	0.0	discard	experiment 1240: softcap 20->10 (no improvement)
 e791b4d	2.301506	0.0	discard	experiment 1241: c_proj small nonzero init (+0.003 bpb)
 e791b4d	2.298171	0.0	keep	experiment 1242: UNEMBEDDING_LR 0.006->0.003 (-0.001 bpb)
+4713f5c	2.523313	0.0	discard	experiment 1243: UNEMBEDDING_LR 0.003->0.001 (+0.225 bpb)
+4713f5c	2.292573	0.0	keep	experiment 1244: UNEMBEDDING_LR 0.003->0.004 (-0.005 bpb)
