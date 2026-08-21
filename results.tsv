@@ -674,3 +674,8 @@ none	1.012013	0.0	DISCARD	experiment 1282: FINAL_LR_FRAC 0.10->0.05 (+0.373 bpb 
 none	0.879967	0.0	DISCARD	experiment 1283: FINAL_LR_FRAC 0.10->0.20 (+0.241 bpb worse)
 none	0.933398	0.0	DISCARD	experiment 1284: TOTAL_BS 2^14->2^15 (+0.294 bpb, only 121 steps)
 none	0.646786	0.0	DISCARD	experiment 1285: grad clip 0.10->1.00 (noise)
+none	0.647000	0.0	DISCARD	experiment 1286: ADAM_BETAS beta1 0.05->0.10 (3-run avg 0.647 vs baseline 0.639)
+none	1.433024	0.0	DISCARD	experiment 1287: Muon momentum target 0.98->0.90 (+0.794 bpb, way too low)
+none	1.433024	0.0	DISCARD	experiment 1288: Muon momentum target 0.98->0.95 (+0.081 bpb vs new env baseline 1.352)
+none	1.487663	0.0	DISCARD	experiment 1289: EMBEDDING_LR 0.7->0.5 (+0.136 bpb worse)
+none	1.538545	0.0	DISCARD	experiment 1290: ASPECT_RATIO 48->64 (larger model, only 68 steps, +0.187 bpb worse)
