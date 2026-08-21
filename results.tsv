@@ -577,3 +577,4 @@ a0d83c5	2.316606	0.0	discard	experiment 1205: ASPECT_RATIO 48->64 (+0.013 bpb, 1
 a4d7d4c	2.314627	0.0	discard	experiment 1213: relax grad clip 0.05->1.0 (+0.011 bpb)
 a86adc9	2.322257	0.0	discard	experiment 1214: MLP hidden 4*n_embd//3 (+0.018 bpb)
 f491c13	2.316921	0.0	discard	experiment 1215: EMBEDDING_LR 0.7->1.0 (+0.013 bpb)
+aeffd27	2.317209	0.0	discard	experiment 1216: WEIGHT_DECAY 0.01->0.03 (+0.013 bpb)
