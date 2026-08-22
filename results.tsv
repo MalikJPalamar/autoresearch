@@ -857,3 +857,4 @@ e4ea247	2.277164	0.0	keep	experiment 1478: MLP hidden 2x (-0.002 bpb, verified 3
 3a4142f	2.282543	0.0	discard	experiment 1493: SiLU->Mish (+0.005 bpb)
 3a4142f	2.287243	0.0	discard	experiment 1494: quadratic warmdown (+0.010 bpb)
 3a4142f	2.277254	0.0	keep	experiment 1495: sqrt warmdown schedule (-0.002 bpb, verified 4 runs)
+12c4289	2.276634	0.0	keep	experiment 1496: warmdown exponent 0.5->0.7 (-0.001 bpb, verified 3 runs)
