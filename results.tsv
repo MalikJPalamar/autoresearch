@@ -875,3 +875,6 @@ e1333f7	2.275580	0.0	keep	experiment 1510: STABLE_RATIO 0.25->0.30 (-0.0003 bpb,
 c623021	2.275959	0.0	discard	experiment 1511: STABLE_RATIO 0.30->0.35 (noise)
 c623021	2.275958	0.0	discard	experiment 1512: EMBEDDING_LR 1.2->1.5 (noise)
 c623021	2.275479	0.0	keep	experiment 1513: polar express norm 1.02->1.00 (-0.0002 bpb, verified 3 runs)
+bb495e4	2.275359	0.0	discard	experiment 1514: WEIGHT_DECAY 0.01->0.008 (noise)
+bb495e4	2.275484	0.0	discard	experiment 1515: FINAL_LR_FRAC 0.05->0.10 (noise)
+bb495e4	2.279529	0.0	discard	experiment 1516: MLP hidden 9/5x (+0.004 bpb)
