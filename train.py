@@ -357,7 +357,7 @@ class GPT(nn.Module):
 
         logits = self.lm_head(x)
         logits = logits.float()
-        logits = 20.0 * torch.tanh(logits / 20.0)
+        logits = 18.0 * torch.tanh(logits / 18.0)
 
         if targets is not None:
             smoothing = 0.0
