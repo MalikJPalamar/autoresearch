@@ -866,3 +866,4 @@ e4ea247	2.277164	0.0	keep	experiment 1478: MLP hidden 2x (-0.002 bpb, verified 3
 97e9551	2.277597	0.0	discard	experiment 1502: x0_lambdas beta1 0.5->0.9 (noise)
 97e9551	2.276566	0.0	discard	experiment 1503: resid_lambdas LR x2 (noise)
 97e9551	2.276248	0.0	keep	experiment 1504: embedding weight decay 0.01 (-0.001 bpb, verified 3 runs)
+d0e0796	2.275967	0.0	keep	experiment 1505: embedding WD 0.01->0.02 (-0.0003 bpb, verified 3 runs)
