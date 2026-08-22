@@ -867,3 +867,8 @@ e4ea247	2.277164	0.0	keep	experiment 1478: MLP hidden 2x (-0.002 bpb, verified 3
 97e9551	2.276566	0.0	discard	experiment 1503: resid_lambdas LR x2 (noise)
 97e9551	2.276248	0.0	keep	experiment 1504: embedding weight decay 0.01 (-0.001 bpb, verified 3 runs)
 d0e0796	2.275967	0.0	keep	experiment 1505: embedding WD 0.01->0.02 (-0.0003 bpb, verified 3 runs)
+e1333f7	2.276158	0.0	discard	experiment 1506: embedding WD 0.02->0.03 (noise)
+e1333f7	2.276135	0.0	discard	experiment 1507: lm_head WD 0.01 (noise)
+e1333f7	2.277720	0.0	discard	experiment 1508: Muon WD 0.01->0.015 (+0.002 bpb)
+e1333f7	2.275995	0.0	discard	experiment 1509: RoPE base 5000->4000 (noise)
+e1333f7	2.275580	0.0	keep	experiment 1510: STABLE_RATIO 0.25->0.30 (-0.0003 bpb, verified 3 runs)
