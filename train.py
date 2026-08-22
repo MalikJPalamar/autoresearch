@@ -610,7 +610,7 @@ def get_lr_multiplier(progress):
         return 1.0
     else:
         decay_progress = (progress - WARMUP_RATIO - STABLE_RATIO) / (1.0 - WARMUP_RATIO - STABLE_RATIO)
-        return FINAL_LR_FRAC + (1.0 - FINAL_LR_FRAC) * (1 - decay_progress)
+        return FINAL_LR_FRAC + (1.0 - FINAL_LR_FRAC) * (1 - decay_progress) ** 0.5
 
 def get_muon_momentum(step):
     frac = min(step / 2, 1.0)
