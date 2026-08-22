@@ -756,3 +756,5 @@ a4bd0ce	2.281659	0.0	keep	experiment 1333: EMBEDDING_LR 0.7->1.0 (avg 2.282 vs 2
 01d2c28	2.281473	0.0	discard	experiment 1392: logit dropout 0.05 (+0.001 bpb)
 01d2c28	2.280851	0.0	discard	experiment 1393: NorMuon clamp 1e-10->1e-8 (noise)
 01d2c28	2.284025	0.0	discard	experiment 1394: dropout before norm (+0.004 bpb)
+384acfe	2.281099	0.0	discard	experiment 1395: MATRIX_LR 0.14 + WD 0.02 (+0.001 bpb)
+384acfe	2.278076	0.0	keep	experiment 1396: STABLE_RATIO 0.25 + FINAL_LR_FRAC 0.05 (-0.002 bpb)
