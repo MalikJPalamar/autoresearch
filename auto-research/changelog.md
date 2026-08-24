@@ -1,5 +1,23 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-24 REPORT — format-011 DISCARDED (3-report avg 76.23 vs baseline 76.53) → format-012 RSI-THRESHOLD OVERRIDE ACTIVATED SAME DAY + AUG17 BATCH 8.3% NEW WORST BATCH EVER + `scripts/prices.sh` BLOCKED AGAIN (403, 2ND TIME IN 3 SESSIONS)
+
+`scripts/prices.sh --json` failed identically to Aug 21 — both Yahoo and Stooq CONNECT attempts rejected with a 403 organization egress-policy denial, confirmed via the proxy status endpoint. This is now a 2nd occurrence in 3 sessions 3 days apart; treat it as a standing configuration issue rather than a one-off flake going forward. Full WebSearch fallback (2+ source cross-check per ticker) was used for all 18 tickers under the format-011 protocol for this, its final resolving report.
+
+**Aug 17 batch scored 1/12 decisive = 8.3%** — a new worst batch in run history, surpassing the prior worst of 13.3% (Aug 12 revised, Aug 21). Every ACCUMULATE signal failed for the 2nd consecutive batch (0/10 decisive, following 0/11 on the Aug 14 batch — 0/21 combined across the last two scoring windows). Only GOOGL's WATCH signal survived. 3 tickers were marked PENDING per the format-011 fail-safe rule: ASML (no reconcilable Aug 24 USD ADR close — EUR and USD reads didn't reconcile via FX), and SMR and PLTR (both had plausible price ranges spanning a scoring-verdict boundary). AS fell 40.57→40.14 (354/882), the 6th consecutive decline from the Aug 17 ATH of 42.10 (-1.96pp cumulative). CS fell 76.23→76.05.
+
+**format-011 Price Verification Protocol resolved: DISCARD.** 3-report average CS = (76.42 + 76.23 + 76.05) / 3 = 76.23, vs. baseline (cs_before) 76.53 — delta -0.30. Per program.md's mechanical KEEP/DISCARD rule this is a DISCARD; `auto-research/methodology.md` has been reverted to its pre-2026-08-20 form (the Price Verification Protocol section removed). For the record: this decline was driven almost entirely by the AS component — a genuine, broad Aug 18–24 AI-capex/chip-equipment/nuclear-sector selloff dragged both scoring windows evaluated under the experiment — not by any defect in the protocol, which correctly refused to fabricate precision across two sessions of complete `prices.sh` outage (5 PENDING tickers total across its 3 reports, zero fabricated prices). The DISCARD reflects the auto-evolve formula operating exactly as designed (CS-based, no discretionary override), per the 2026-08-20 blanket pre-approval. Informal 2+ source cross-checking will continue as standard report practice even without the dedicated methodology section, since `prices.sh` availability cannot be assumed session to session.
+
+**format-012 RSI-Threshold Signal Override activated the same day** (program.md: "starts automatically when format-011 resolves"), applied starting with today's own signal generation — report 1/3, baseline_cs = 76.23 (Aug 21, the last report prior to activation). Zero overrides fired on this first report: every RSI reading that sat near a 70/30 threshold (TSM's prior overbought read, AMAT's and SMR's stale 70+ reads, LMT's and CEG's conflicting sub-30 reads) was flagged by source cross-verification as unreliable or internally inconsistent with price action, and the override rule requires a *confirmed* current reading — a meaningful early data point on how often this rule will actually be triggerable given real-world WebSearch data quality.
+
+Two discretionary signal downgrades (independent of format-012's mechanical rule): **AMAT ACCUMULATE→WATCH** (China revenue mix fell to ~28% from ~35% YoY, cautious Q4 guidance despite the Q3 EPS beat, and price broke decisively below its $511 support level) and **CEG ACCUMULATE→WATCH** (the 50/200-day death cross confirmed Aug 21 has now persisted a full week with price still below both key MAs — explicitly flagged as "a candidate for downgrade if next report confirms continued technical deterioration" in the Aug 21 report, and it has).
+
+**format-013 "Correlation Breakdown Alerts" proposed and queued** behind format-012 — the next item in the Phase 3 rollout sequence (program.md), auto-evolve/pre-approved per the 2026-08-20 blanket signal-logic approval, to start automatically once format-012 resolves.
+
+**Corrected:** NVDA's Q2 FY27 earnings date is **Wednesday Aug 26 after hours** (not Tuesday as stated in the Aug 21 report) — one day before Fed Chair Warsh's first Jackson Hole keynote (Friday Aug 28), compressing the next scoring window's dominant catalysts into a 72-hour span.
+
+**Action item (repeated):** the `query1.finance.yahoo.com` / `stooq.com` egress block has now recurred across 2 sessions 3 days apart — this should be treated as a standing configuration issue if `prices.sh`-primary sourcing per program.md is still the intended design.
+
 ## v1.4 — 2026-08-21 REPORT — `scripts/prices.sh` BLOCKED BY ORG EGRESS POLICY (403, NOT A FLAKE) + FULL WEBSEARCH FALLBACK FOR ALL 18 TICKERS + 3 PENDING + AUG14 BATCH TIES WORST EVER + format-011 REPORT 2/3
 
 `scripts/prices.sh --json` returned `NA` for all 18 tickers. The session's agent-proxy diagnostics confirmed both `query1.finance.yahoo.com` and `stooq.com` CONNECT attempts were rejected with a **403 organization egress-policy denial** — not a transient failure, and per the proxy's own guidance, not to be retried. This is the first real-world stress test of the format-011 WebSearch fallback path across the *entire* ticker list rather than a handful of exceptions.
@@ -1587,7 +1605,9 @@ All Aug 20 figures are **pre-close (~15:15 ET)**. No Aug 20 last price could be 
 - **Notes:** Accuracy scoring begins after 5 trading days of history
 
 ## Queued Experiments
-- **format-012:** RSI-Threshold Signal Override — **APPROVED 2026-08-20 (issue #19), starts when format-011 resolves**
+- **format-013:** Correlation Breakdown Alerts — auto-evolve, pre-approved (2026-08-20 blanket signal-logic approval) — **QUEUED, starts when format-012 resolves**
+- **format-012:** RSI-Threshold Signal Override — **ACTIVE since 2026-08-24 (report 1/3), baseline_cs=76.23**
+- **format-011:** Price Verification Protocol — **DISCARDED 2026-08-24 (3-report avg 76.23 vs baseline 76.53, delta -0.30); methodology.md reverted**
 - **format-003:** Relative strength ranking within sectors — **KEPT (resolved 2026-05-13, CS delta +35.6)**
 - **format-004:** Add stop-loss level, price target, and R/R ratio per ticker — auto-evolve — **ACTIVE (started 2026-05-13)**
 - **format-005:** Options flow / unusual activity (requires Malik approval — Phase 3)

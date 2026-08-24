@@ -67,21 +67,20 @@ After alerts, include an options flow section per ticker (where data is availabl
 - Only include tickers with actionable options data — skip if no unusual activity found
 - This layer completes CV to 15/15 (100%)
 
-### Price Verification Protocol (format-011, ACTIVE since 2026-08-20, report 1/3)
+### RSI-Threshold Signal Override (format-012, ACTIVE since 2026-08-24, report 1/3)
 
-Primary price source is `scripts/prices.sh` (Yahoo chart API, Stooq fallback),
-run at report time; its closes are used verbatim. Any price that has to come
-from web search must pass, before it is logged:
-1. Arithmetic reconciliation — `quoted price − reported $ change` = prior close
-2. Range check — close inside the reported intraday high/low
-3. Session-date check — reject quotes whose "previous close" equals our own prior-session record (cached pre-open page)
-4. Source blacklist — GuruFocus and Motley Fool auto-quote pages excluded for NRG and CEG
-5. Fail-safe — a price failing 2+ checks is marked UNVERIFIED and scored NULL, not estimated
+format-011 (Price Verification Protocol) ran its full 3-report evaluation
+(2026-08-20 → 2026-08-24) and was DISCARDED: 3-report average CS 76.23 vs.
+baseline 76.53 (delta -0.30). Reverted per the auto-evolve rule (decision
+mechanical, driven by AS decline from a broad market selloff, not a defect
+in the protocol itself — see 2026-08-24 changelog entry for detail). This
+section is reverted to its pre-2026-08-20 form. Cross-checking prices across
+2+ sources when `scripts/prices.sh` is unavailable remains informal report
+practice even without a dedicated methodology section.
 
-### RSI-Threshold Signal Override (format-012, APPROVED 2026-08-20 — issue #19, QUEUED)
-
-Starts automatically when format-011 resolves; 3-report KEEP/DISCARD, reverted
-on DISCARD. Rules applied at signal time, after the discretionary signal is set:
+format-012 starts automatically now that format-011 has resolved; 3-report
+KEEP/DISCARD against baseline CS 76.23, reverted on DISCARD. Rules applied
+at signal time, after the discretionary signal is set:
 - RSI(14) > 70 → LONG / ACCUMULATE downgraded to **WATCH** (overbought caution)
 - RSI(14) < 30 → WATCH upgraded to **CONTRARIAN** (oversold)
 - A LONG upgrade requires RSI(14) < 40 at the time of upgrade
