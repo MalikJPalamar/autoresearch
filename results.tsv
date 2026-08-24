@@ -1266,3 +1266,5 @@ e4aa9fc	2.286100	0.0	discard	experiment 1882: resid LR scale 0.01->0.005 (+0.004
 0973bef	2.284400	0.0	discard	experiment 1908: lm_head WD 0.005 (noise)
 0973bef	2.301100	0.0	discard	experiment 1909: sigmoid-constrained x0/resid mixing (+0.019 bpb)
 0973bef	2.280800	0.0	discard	experiment 1910: Muon beta2 0.99->0.95 (noise, 0.0002 better but step count confound)
+0af0c47	2.280800	0.0	discard	experiment 1911: remove resid_lambdas multiply (noise, 0.0004 better)
+0af0c47	2.000000	0.0	discard	experiment 1912: hybrid warmdown power-law+linear (killed by OOM, exit 137)
