@@ -1268,3 +1268,6 @@ e4aa9fc	2.286100	0.0	discard	experiment 1882: resid LR scale 0.01->0.005 (+0.004
 0973bef	2.280800	0.0	discard	experiment 1910: Muon beta2 0.99->0.95 (noise, 0.0002 better but step count confound)
 0af0c47	2.280800	0.0	discard	experiment 1911: remove resid_lambdas multiply (noise, 0.0004 better)
 0af0c47	2.000000	0.0	discard	experiment 1912: hybrid warmdown power-law+linear (killed by OOM, exit 137)
+6e84703	2.279600	0.0	discard	experiment 1913: FINAL_LR_FRAC 0.05->0.08 (noise at 24 steps)
+6e84703	2.278900	-0.001	keep	experiment 1914: FINAL_LR_FRAC 0.05->0.10 (-0.001 bpb, 4 runs avg 2.2789 vs baseline 2.2799)
+6e84703	2.281400	0.0	discard	experiment 1915: FINAL_LR_FRAC 0.10->0.15 (inconsistent, step count confound)
