@@ -67,7 +67,7 @@ After alerts, include an options flow section per ticker (where data is availabl
 - Only include tickers with actionable options data — skip if no unusual activity found
 - This layer completes CV to 15/15 (100%)
 
-### RSI-Threshold Signal Override (format-012, ACTIVE since 2026-08-24, report 1/3)
+### RSI-Threshold Signal Override (format-012, ACTIVE since 2026-08-24, report 2/3 as of 2026-08-25)
 
 format-011 (Price Verification Protocol) ran its full 3-report evaluation
 (2026-08-20 → 2026-08-24) and was DISCARDED: 3-report average CS 76.23 vs.

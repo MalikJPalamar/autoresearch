@@ -1,5 +1,19 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-25 REPORT — format-012 REPORT 2/3, ZERO OVERRIDES AGAIN + `scripts/prices.sh` BLOCKED 3RD SESSION + WebFetch ALSO BLOCKED (NEW, WORSE)
+
+`scripts/prices.sh --json` failed identically to Aug 21/24 (403 policy denial on both Yahoo and Stooq). New and worse today: every WebFetch call against finance domains (Google Finance, TipRanks, Investing.com, TradingView, Yahoo, CNBC, StockAnalysis.com, Robinhood, Barchart, Schwab) also returned `EGRESS_BLOCKED`. All 18 tickers were researched via WebSearch-snippet synthesis only, with no direct-page-fetch fallback available for verification — a materially weaker data cycle than either prior outage session. 6 of 18 tickers landed PENDING (roughly double the usual 1-3): GOOGL and CEG (ranges spanning a scoring-verdict boundary), OKLO, PLTR, and BAH (no reconcilable/genuine Aug 25 price found at all), and SMR (range spanning CORRECT/INCORRECT). This is the 3rd consecutive occurrence of the Yahoo/Stooq block over 5 sessions — flagged again as a standing configuration issue, now compounded by the WebFetch-wide block, both worth escalating to a human if `prices.sh`-primary sourcing is still the intended design.
+
+**Aug 18 batch scored 1/10 decisive = 10.0%** (MSFT the lone correct signal). The ACCUMULATE cohort has now failed 3 consecutive batches: Aug14 (0/11), Aug17 (0/10), Aug18 (1/8) — 1/29 decisive = 3.4% combined across the last three scoring windows, though today's added PENDING count muddies how much of that is real signal failure vs. data-outage-driven inconclusiveness. AS fell 40.14→39.80 (355/892), the 7th consecutive decline from the Aug 17 ATH of 42.10 (-2.30pp cumulative). CS fell 76.05→75.92.
+
+**format-012 report 2/3: zero RSI overrides fired again.** Every RSI reading gathered this session was DISPUTED, SUSPICIOUS, PENDING, or explicitly flagged stale by the research pass (AMAT's 72.8 flagged as likely-stale/inconsistent with a stock that just broke support; CEG's reads spanned 19.45 to 58.5, a 39-point internal contradiction; RTX's only "confirmed" overbought read was self-flagged ~1 month stale; MSFT's only RSI figure predates its subsequent pullback). With 2 of the 3 evaluation reports now compromised by unreliable RSI data, the format-012 KEEP/DISCARD decision due after the next report will effectively be testing "does an override rule that's never fired change CS" rather than testing the override logic itself — worth flagging explicitly when the resolution is written up, and worth considering whether format-012 deserves a data-quality-adjusted extension rather than a clean 3-report read once/if `prices.sh` access is restored.
+
+**Running 2-report average CS = (76.05 + 75.92) / 2 = 75.99**, vs. baseline (cs_before) 76.23 — delta -0.24, still short of the 3rd report needed to resolve.
+
+One discretionary signal downgrade (independent of format-012's mechanical rule): **AMD ACCUMULATE→WATCH** — AMD broke below the $500 SMA50 support level that anchored its Aug 17 upgrade, trading down to ~$456 before a Raymond James-upgrade-driven bounce to ~$476.50; even after the bounce it remains below both SMA50 (~$485) and SMA200 (~$496). Multi-source-corroborated technical breakdown, not a data artifact.
+
+Approval inbox checked (`needs-approval`, `approved` labels): both empty. No approvals to action this session. format-013 (Correlation Breakdown Alerts) remains queued behind format-012.
+
 ## v1.4 — 2026-08-24 REPORT — format-011 DISCARDED (3-report avg 76.23 vs baseline 76.53) → format-012 RSI-THRESHOLD OVERRIDE ACTIVATED SAME DAY + AUG17 BATCH 8.3% NEW WORST BATCH EVER + `scripts/prices.sh` BLOCKED AGAIN (403, 2ND TIME IN 3 SESSIONS)
 
 `scripts/prices.sh --json` failed identically to Aug 21 — both Yahoo and Stooq CONNECT attempts rejected with a 403 organization egress-policy denial, confirmed via the proxy status endpoint. This is now a 2nd occurrence in 3 sessions 3 days apart; treat it as a standing configuration issue rather than a one-off flake going forward. Full WebSearch fallback (2+ source cross-check per ticker) was used for all 18 tickers under the format-011 protocol for this, its final resolving report.
@@ -1606,7 +1620,7 @@ All Aug 20 figures are **pre-close (~15:15 ET)**. No Aug 20 last price could be 
 
 ## Queued Experiments
 - **format-013:** Correlation Breakdown Alerts — auto-evolve, pre-approved (2026-08-20 blanket signal-logic approval) — **QUEUED, starts when format-012 resolves**
-- **format-012:** RSI-Threshold Signal Override — **ACTIVE since 2026-08-24 (report 1/3), baseline_cs=76.23**
+- **format-012:** RSI-Threshold Signal Override — **ACTIVE since 2026-08-24 (report 2/3 as of 2026-08-25), baseline_cs=76.23, running 2-report avg 75.99 (delta -0.24), zero overrides fired in either report to date**
 - **format-011:** Price Verification Protocol — **DISCARDED 2026-08-24 (3-report avg 76.23 vs baseline 76.53, delta -0.30); methodology.md reverted**
 - **format-003:** Relative strength ranking within sectors — **KEPT (resolved 2026-05-13, CS delta +35.6)**
 - **format-004:** Add stop-loss level, price target, and R/R ratio per ticker — auto-evolve — **ACTIVE (started 2026-05-13)**

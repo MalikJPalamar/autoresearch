@@ -3,7 +3,7 @@
   "active_experiment": "format-012",
   "active_experiment_name": "RSI-Threshold Signal Override",
   "experiment_start_date": "2026-08-24",
-  "reports_scored": 1,
+  "reports_scored": 2,
   "baseline_cs": 76.23,
   "awaiting_approval": false,
   "awaiting_approval_since": null,
@@ -11,10 +11,10 @@
   "queued_experiment": "format-013",
   "queued_experiment_name": "Correlation Breakdown Alerts",
   "queued_experiment_issue": null,
-  "last_report_date": "2026-08-24",
-  "last_scored_date": "2026-08-24",
-  "last_cs": 76.05,
-  "last_as": 40.14,
+  "last_report_date": "2026-08-25",
+  "last_scored_date": "2026-08-25",
+  "last_cs": 75.92,
+  "last_as": 39.80,
   "updated_by": "loop1+loop2",
-  "updated_at": "2026-08-24T21:45:00Z"
+  "updated_at": "2026-08-25T21:45:00Z"
 }
