@@ -67,24 +67,33 @@ After alerts, include an options flow section per ticker (where data is availabl
 - Only include tickers with actionable options data — skip if no unusual activity found
 - This layer completes CV to 15/15 (100%)
 
-### RSI-Threshold Signal Override (format-012, ACTIVE since 2026-08-24, report 2/3 as of 2026-08-25)
+### RSI-Threshold Signal Override (format-012) — DISCARDED 2026-08-26
 
 format-011 (Price Verification Protocol) ran its full 3-report evaluation
 (2026-08-20 → 2026-08-24) and was DISCARDED: 3-report average CS 76.23 vs.
-baseline 76.53 (delta -0.30). Reverted per the auto-evolve rule (decision
-mechanical, driven by AS decline from a broad market selloff, not a defect
-in the protocol itself — see 2026-08-24 changelog entry for detail). This
-section is reverted to its pre-2026-08-20 form. Cross-checking prices across
-2+ sources when `scripts/prices.sh` is unavailable remains informal report
-practice even without a dedicated methodology section.
+baseline 76.53 (delta -0.30). Reverted per the auto-evolve rule.
 
-format-012 starts automatically now that format-011 has resolved; 3-report
-KEEP/DISCARD against baseline CS 76.23, reverted on DISCARD. Rules applied
-at signal time, after the discretionary signal is set:
-- RSI(14) > 70 → LONG / ACCUMULATE downgraded to **WATCH** (overbought caution)
-- RSI(14) < 30 → WATCH upgraded to **CONTRARIAN** (oversold)
-- A LONG upgrade requires RSI(14) < 40 at the time of upgrade
-- Each override is listed in the report under "RSI Overrides" (ticker, RSI, from → to)
+format-012 (RSI-Threshold Signal Override, 2026-08-24 → 2026-08-26) was also
+DISCARDED: 3-report average CS 75.95 vs. baseline 76.23 (delta -0.28). The
+rule never fired a single override in any of its 3 evaluation reports —
+reliable RSI reads were unavailable on the relevant tickers each cycle due
+to the ongoing `scripts/prices.sh` outage — so the decision reflects the
+concurrent AS decline, not a defect in the override logic itself. See the
+2026-08-26 changelog entry for detail. This section is reverted to its
+pre-2026-08-24 form (no RSI-threshold override rule). Cross-checking prices
+across 2+ sources when `scripts/prices.sh` is unavailable remains informal
+report practice even without a dedicated methodology section.
+
+### Correlation Breakdown Alerts (format-013, ACTIVE since 2026-08-26, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.92 (the 2026-08-25 CS),
+reverted on DISCARD. Flag a ticker when its move materially decouples from
+its sector: >2% divergence from its sector's aggregate daily move, or a
+previously-noted cross-sector rotation pattern (e.g., AI Compute ↔
+Semiconductors) visibly breaks down for that ticker. Log each flagged
+breakdown under a "Correlation Breakdown Alerts" subsection: ticker,
+expected vs. actual move, and a 1-line read on whether it's idiosyncratic
+(earnings, contract news) or a genuine regime shift.
 
 ---
 

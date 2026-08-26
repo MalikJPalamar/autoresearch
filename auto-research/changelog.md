@@ -1,5 +1,25 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-26 REPORT — format-012 RESOLVED (DISCARD, never fired) + format-013 ACTIVATED + `scripts/prices.sh` BLOCKED 4TH SESSION + NVDA EARNINGS BEAT-AND-RAISE
+
+`scripts/prices.sh --json` failed identically to Aug 21/24/25 (403 policy denial on both Yahoo and Stooq, confirmed via proxy status). 4th consecutive session over 6 trading days — escalating again as a standing configuration issue, not a flake. WebSearch-snippet fallback used for all 18 tickers; most technical (RSI/MACD/MA) reads came back disputed, stale, or internally contradictory across sources, consistent with the last 3 sessions.
+
+**NVDA reported Q2 FY27 earnings after today's close: clean beat-and-raise** — Revenue $96.2B (+106% YoY) vs. ~$92.1-92.2B consensus, EPS $2.22 vs. ~$2.09 consensus, Data Center revenue $89.0B (+117% YoY) vs. ~$86.33B expected, Q3 guide $108B vs. $104.2B street. Stock fell ~1.3% after hours anyway — margin guide compressed to 74% (from 75%) and the guide excludes all China DC revenue; 4th sell-the-news reaction in NVDA's last 5 print cycles.
+
+**Aug 19 batch scored 6/17 decisive = 35.3%** (GOOGL, MSFT, TSM, CEG, OKLO, PLTR correct; NVDA, AMD, META, ASML, AMAT, LRCX, VST, NRG, SMR, LMT, RTX incorrect; BAH PENDING — no genuine Aug 26 price found). An improvement from Aug 18's 10.0% floor but still below the historical average — this window captured the Aug 20-24 selloff that the Aug 25-26 partial bounce hasn't fully erased. AS fell 39.80→39.71 (361/909), 8th consecutive decline from the Aug 17 ATH of 42.10 (-2.39pp cumulative). CS fell 75.92→75.89.
+
+**format-012 (RSI-Threshold Signal Override) RESOLVED: DISCARD.** 3-report average CS = (76.05 + 75.92 + 75.89) / 3 = 75.95, vs. baseline (cs_before) 76.23 — delta -0.28. Per the auto-evolve rule, CS did not improve, so DISCARD; `methodology.md` reverted to its pre-2026-08-24 form. **Important caveat:** the rule fired **zero overrides across all 3 reports** — every RSI read on a relevant ticker was disputed, stale, or unusable each cycle due to the concurrent `prices.sh` outage. This DISCARD is driven entirely by the AS decline during the evaluation window, not evidence against the override logic, which was never actually exercised. Recommend re-proposing this experiment once reliable technical-data sourcing is restored, so it gets a real test.
+
+**format-013 (Correlation Breakdown Alerts) ACTIVATED** automatically per the pre-approved rollout queue (signal-logic, blanket-approved 2026-08-20). Report 1/3 today, `baseline_cs = 75.92` (Aug 25, last report before activation). No breakdown flags yet — the rule needs a same-day sector-aggregate comparison, which starts next report (Aug 27).
+
+**format-014 (Catalyst Countdown Table) proposed and queued** behind format-013 — auto-evolve (report presentation), no approval needed. Phase 3 rollout list is now otherwise exhausted; Phase 4 items (ML predictions, backtesting, catalyst calendar automation) remain gated on data accumulation per program.md.
+
+One discretionary signal change (independent of format-012/013's mechanical rules): **META WATCH→ACCUMULATE** — Meta settled the 29-state child-safety/addiction lawsuit for up to $16.68B, removing a modeled worst-case tail risk as large as $1.4T (Jefferies: "clearing event"); stock popped on the news. AMD stays at WATCH — Raymond James upgraded to Strong Buy ($641 PT) but price has not reclaimed the $500 SMA50 that was the explicit bar set in the Aug 25 downgrade.
+
+Approval inbox checked (`needs-approval`, `approved` labels): both empty. No approvals to action this session.
+
+---
+
 ## v1.4 — 2026-08-25 REPORT — format-012 REPORT 2/3, ZERO OVERRIDES AGAIN + `scripts/prices.sh` BLOCKED 3RD SESSION + WebFetch ALSO BLOCKED (NEW, WORSE)
 
 `scripts/prices.sh --json` failed identically to Aug 21/24 (403 policy denial on both Yahoo and Stooq). New and worse today: every WebFetch call against finance domains (Google Finance, TipRanks, Investing.com, TradingView, Yahoo, CNBC, StockAnalysis.com, Robinhood, Barchart, Schwab) also returned `EGRESS_BLOCKED`. All 18 tickers were researched via WebSearch-snippet synthesis only, with no direct-page-fetch fallback available for verification — a materially weaker data cycle than either prior outage session. 6 of 18 tickers landed PENDING (roughly double the usual 1-3): GOOGL and CEG (ranges spanning a scoring-verdict boundary), OKLO, PLTR, and BAH (no reconcilable/genuine Aug 25 price found at all), and SMR (range spanning CORRECT/INCORRECT). This is the 3rd consecutive occurrence of the Yahoo/Stooq block over 5 sessions — flagged again as a standing configuration issue, now compounded by the WebFetch-wide block, both worth escalating to a human if `prices.sh`-primary sourcing is still the intended design.
@@ -1619,8 +1639,9 @@ All Aug 20 figures are **pre-close (~15:15 ET)**. No Aug 20 last price could be 
 - **Notes:** Accuracy scoring begins after 5 trading days of history
 
 ## Queued Experiments
-- **format-013:** Correlation Breakdown Alerts — auto-evolve, pre-approved (2026-08-20 blanket signal-logic approval) — **QUEUED, starts when format-012 resolves**
-- **format-012:** RSI-Threshold Signal Override — **ACTIVE since 2026-08-24 (report 2/3 as of 2026-08-25), baseline_cs=76.23, running 2-report avg 75.99 (delta -0.24), zero overrides fired in either report to date**
+- **format-014:** Catalyst Countdown Table — auto-evolve, no approval needed — **QUEUED, starts when format-013 resolves**
+- **format-013:** Correlation Breakdown Alerts — auto-evolve, pre-approved (2026-08-20 blanket signal-logic approval) — **ACTIVE since 2026-08-26 (report 1/3), baseline_cs=75.92**
+- **format-012:** RSI-Threshold Signal Override — **DISCARDED 2026-08-26 (3-report avg 75.95 vs baseline 76.23, delta -0.28; zero overrides fired in any report — data-quality-driven, not evidence against the logic); methodology.md reverted**
 - **format-011:** Price Verification Protocol — **DISCARDED 2026-08-24 (3-report avg 76.23 vs baseline 76.53, delta -0.30); methodology.md reverted**
 - **format-003:** Relative strength ranking within sectors — **KEPT (resolved 2026-05-13, CS delta +35.6)**
 - **format-004:** Add stop-loss level, price target, and R/R ratio per ticker — auto-evolve — **ACTIVE (started 2026-05-13)**
