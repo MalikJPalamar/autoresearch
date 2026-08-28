@@ -1,5 +1,23 @@
 # Methodology Changelog
 
+## v1.4 — 2026-08-28 REPORT — format-013 report 2/3 (running avg flat vs. baseline) + `scripts/prices.sh` BLOCKED 5TH SESSION + Aug 27 session gap + AS STREAK BROKEN + Jackson Hole / Warsh hawkish debut
+
+**Operational note: no report was published 2026-08-27** (a weekday) — `state.json.last_report_date` was still 2026-08-26 when this session started, a 2-day gap. This session proceeded normally (the 5-trading-day scoring window Aug21→Aug28 is unaffected — Aug 24, 25, 26, 27, 28 are the 5 trading days regardless of whether a report was published each day), but a human should check why the Aug 27 scheduled trigger didn't fire or complete.
+
+`scripts/prices.sh --json` failed identically to Aug 21/24/25/26 (403 policy denial on both Yahoo and Stooq, confirmed via proxy status) — **5th consecutive session**, now a standing configuration issue. Full WebSearch fallback used for all 18 tickers via parallel sector-research agents; several technicals (notably ASML, OKLO, SMR) came back disputed/stale and were explicitly withheld rather than reported with false precision.
+
+**Jackson Hole:** Fed Chair Warsh's first keynote as Chair (10am ET) was read as hawkish — inflation still "predominant" focus, no "meaningful improvement" in underlying trends, door open to hikes. September hike odds jumped to ~50-57%, flipping a green morning red. NVDA gave back roughly half of Thursday's post-earnings +8.4% pop (intraday low -3.1%, closing around -0.8%), compounded by a same-day headline that Nvidia paused parts of an AI-cloud financing program amid customer-restriction disputes.
+
+**Aug 21 batch scored 5/10 decisive = 50.0%** — best decisive rate since Aug 13 (NVDA, GOOGL, MSFT, VST, PLTR correct; META, AMAT, OKLO, NRG, LMT incorrect; TSM, ASML, RTX NULL on sub-1% moves; AMD, LRCX, CEG, SMR, BAH all marked **PENDING** under the fail-safe rule because the plausible WebSearch price range spanned a scoring boundary — notably SMR's daily direction itself was disputed between sources, -5.4% vs. +4.6-5.5%). AS rose 39.71→39.83 (366/919, +0.12pp) — **the 8-report losing streak from the Aug 17 ATH (42.10) is broken**. CS rose 75.89→75.93.
+
+**2 discretionary signal changes:** MSFT ACCUMULATE→WATCH (RSI 83.9 deep overbought after 5 consecutive up days and +28% over the trailing month — mirrors the Aug 4/Aug 12 overbought-downgrade/re-upgrade precedent, now more extreme); LRCX ACCUMULATE→WATCH (continued -3.84% decline, 4th down session in 6, MACD rolled back to sell, underperforming its own equipment peer group alongside AMAT — the Aug 20 CONTRARIAN dip-buy thesis has not validated despite genuinely bullish fundamentals in the window).
+
+**format-013 (Correlation Breakdown Alerts) report 2/3.** CS 75.93 vs. baseline 75.92 (delta +0.01); 2-report running average 75.91 vs. baseline (delta -0.01) — essentially flat, no clear KEEP/DISCARD signal yet, 1 more report needed. The rule fired real flags this report: MSFT (+1.8-3% vs. a flat-to-negative AI Compute basket) and ASML (+0.8% vs. a -3.2% Semiconductors basket) both read as idiosyncratic single-name moves, not sector rotation; PLTR and BAH also flagged vs. their Defense AI peers. The more structurally interesting observation is a **fraying (not fully broken) AI Compute ↔ Semiconductors correlation** — NVDA/MSFT (shipping-and-beating names) diverging positively from AMAT/LRCX (capex-cycle equipment names under margin/China-revenue scrutiny) — a multi-session pattern worth continued tracking.
+
+**format-014 (Catalyst Countdown Table) remains queued** behind format-013, unchanged.
+
+Approval inbox checked (`needs-approval`, `approved` labels) — both empty, no action needed.
+
 ## v1.4 — 2026-08-26 REPORT — format-012 RESOLVED (DISCARD, never fired) + format-013 ACTIVATED + `scripts/prices.sh` BLOCKED 4TH SESSION + NVDA EARNINGS BEAT-AND-RAISE
 
 `scripts/prices.sh --json` failed identically to Aug 21/24/25 (403 policy denial on both Yahoo and Stooq, confirmed via proxy status). 4th consecutive session over 6 trading days — escalating again as a standing configuration issue, not a flake. WebSearch-snippet fallback used for all 18 tickers; most technical (RSI/MACD/MA) reads came back disputed, stale, or internally contradictory across sources, consistent with the last 3 sessions.
