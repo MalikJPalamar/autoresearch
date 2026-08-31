@@ -84,16 +84,31 @@ pre-2026-08-24 form (no RSI-threshold override rule). Cross-checking prices
 across 2+ sources when `scripts/prices.sh` is unavailable remains informal
 report practice even without a dedicated methodology section.
 
-### Correlation Breakdown Alerts (format-013, ACTIVE since 2026-08-26, report 1/3)
+### Correlation Breakdown Alerts (format-013, KEPT 2026-08-31 — now a standing section)
 
-3-report KEEP/DISCARD against baseline CS 75.92 (the 2026-08-25 CS),
-reverted on DISCARD. Flag a ticker when its move materially decouples from
-its sector: >2% divergence from its sector's aggregate daily move, or a
-previously-noted cross-sector rotation pattern (e.g., AI Compute ↔
-Semiconductors) visibly breaks down for that ticker. Log each flagged
-breakdown under a "Correlation Breakdown Alerts" subsection: ticker,
-expected vs. actual move, and a 1-line read on whether it's idiosyncratic
-(earnings, contract news) or a genuine regime shift.
+3-report KEEP/DISCARD against baseline CS 75.92 (the 2026-08-25 CS) resolved
+2026-08-31: 3-report average CS 75.94 vs. baseline 75.92 (delta +0.02) = KEEP
+(marginal — see the 2026-08-31 changelog entry for the caveat that this
+margin is thin and the resolving report's own alert layer mostly could not
+run due to a severe data-availability gap). Retained permanently as a
+standing report section, no longer a scored experiment. Flag a ticker when
+its move materially decouples from its sector: >2% divergence from its
+sector's aggregate daily move, or a previously-noted cross-sector rotation
+pattern (e.g., AI Compute ↔ Semiconductors) visibly breaks down for that
+ticker. Log each flagged breakdown under a "Correlation Breakdown Alerts"
+subsection: ticker, expected vs. actual move, and a 1-line read on whether
+it's idiosyncratic (earnings, contract news) or a genuine regime shift.
+
+### Catalyst Countdown Table (format-014, ACTIVE since 2026-08-31, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 76.00 (the 2026-08-31 CS),
+reverted on DISCARD. After the per-sector signal tables, add a single
+compact table across all 18 tickers: next confirmed/estimated catalyst
+(earnings, contract decision, regulatory date) and days-until, sorted
+ascending, so near-term binary events are visible at a glance without
+scanning all 18 per-ticker sections. Source catalyst dates from the same
+per-ticker research already performed for that report; do not add new data
+gathering solely for this table.
 
 ---
 
