@@ -3,7 +3,7 @@
   "active_experiment": "format-014",
   "active_experiment_name": "Catalyst Countdown Table",
   "experiment_start_date": "2026-08-31",
-  "reports_scored": 0,
+  "reports_scored": 2,
   "baseline_cs": 76.00,
   "awaiting_approval": false,
   "awaiting_approval_since": null,
@@ -11,10 +11,10 @@
   "queued_experiment": null,
   "queued_experiment_name": null,
   "queued_experiment_issue": null,
-  "last_report_date": "2026-08-31",
-  "last_scored_date": "2026-08-31",
-  "last_cs": 76.00,
-  "last_as": 40.00,
+  "last_report_date": "2026-09-01",
+  "last_scored_date": "2026-09-01",
+  "last_cs": 75.97,
+  "last_as": 39.91,
   "updated_by": "loop1+loop2",
-  "updated_at": "2026-08-31T21:35:00Z"
+  "updated_at": "2026-09-01T21:45:00Z"
 }
