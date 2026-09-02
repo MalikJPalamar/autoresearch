@@ -1687,8 +1687,9 @@ All Aug 20 figures are **pre-close (~15:15 ET)**. No Aug 20 last price could be 
 - **Notes:** Accuracy scoring begins after 5 trading days of history
 
 ## Queued Experiments
-- **(none queued):** Phase 3 rollout list exhausted as of 2026-08-31 — next Loop 2 session should propose a new experiment once format-014 resolves.
-- **format-014:** Catalyst Countdown Table — auto-evolve, pre-approved (2026-08-20 blanket signal-logic/presentation approval) — **ACTIVE since 2026-08-31 (report 1/3), baseline_cs=76.00**
+- **(none queued):** Phase 3 rollout list remains exhausted; no queued item behind format-015.
+- **format-015:** Same-Session News-Shock Signal Override — auto-evolve signal-logic, pre-approved (2026-08-20 blanket approval) — **ACTIVE since 2026-09-02 (report 1/3), baseline_cs=76.00**
+- **format-014:** Catalyst Countdown Table — **DISCARDED 2026-09-02 (3-report avg 75.99 vs baseline 76.00, delta -0.01); methodology.md reverted. Note: AC/CV saturated at 100/100, so presentation experiments can no longer move CS except via AS noise — future queue items should favor signal-logic.**
 - **format-013:** Correlation Breakdown Alerts — **KEPT (marginal) 2026-08-31 (3-report avg 75.94 vs baseline 75.92, delta +0.02); retained permanently in methodology.md as a standing report section**
 - **format-012:** RSI-Threshold Signal Override — **DISCARDED 2026-08-26 (3-report avg 75.95 vs baseline 76.23, delta -0.28; zero overrides fired in any report — data-quality-driven, not evidence against the logic); methodology.md reverted**
 - **format-011:** Price Verification Protocol — **DISCARDED 2026-08-24 (3-report avg 76.23 vs baseline 76.53, delta -0.30); methodology.md reverted**

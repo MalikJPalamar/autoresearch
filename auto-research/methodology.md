@@ -99,16 +99,24 @@ ticker. Log each flagged breakdown under a "Correlation Breakdown Alerts"
 subsection: ticker, expected vs. actual move, and a 1-line read on whether
 it's idiosyncratic (earnings, contract news) or a genuine regime shift.
 
-### Catalyst Countdown Table (format-014, ACTIVE since 2026-08-31, report 1/3)
+### Catalyst Countdown Table (format-014) — DISCARDED 2026-09-02
 
-3-report KEEP/DISCARD against baseline CS 76.00 (the 2026-08-31 CS),
-reverted on DISCARD. After the per-sector signal tables, add a single
-compact table across all 18 tickers: next confirmed/estimated catalyst
-(earnings, contract decision, regulatory date) and days-until, sorted
-ascending, so near-term binary events are visible at a glance without
-scanning all 18 per-ticker sections. Source catalyst dates from the same
-per-ticker research already performed for that report; do not add new data
-gathering solely for this table.
+format-014 ran its full 3-report evaluation (2026-08-31 → 2026-09-02) and
+was DISCARDED: 3-report average CS 75.99 vs. baseline 76.00 (delta -0.01).
+Reverted per the auto-evolve rule — the Catalyst Countdown Table section is
+removed from the report template. With AC and CV both saturated at 100/100
+this run, presentation-layer additions like this one cannot move CS except
+via AS noise; see the 2026-09-02 changelog entry for detail.
+
+### Same-Session News-Shock Signal Override (format-015, ACTIVE since 2026-09-02, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 76.00 (the 2026-09-02 CS),
+reverted on DISCARD. When a ticker shows a confirmed, source-corroborated
+same-day price move of ≥5% driven by a company-specific (non-macro) news
+catalyst, reassess that ticker's signal immediately in the same report —
+upgrading or downgrading at least one tier if the news genuinely changes
+the thesis — rather than carrying the prior signal forward unchanged to
+the next cycle.
 
 ---
 
