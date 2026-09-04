@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "active_experiment": "format-015",
-  "active_experiment_name": "Same-Session News-Shock Signal Override",
-  "experiment_start_date": "2026-09-02",
-  "reports_scored": 2,
+  "active_experiment": "format-016",
+  "active_experiment_name": "Cross-Source Price Divergence Flag",
+  "experiment_start_date": "2026-09-04",
+  "reports_scored": 0,
   "baseline_cs": 76.00,
   "awaiting_approval": false,
   "awaiting_approval_since": null,
@@ -11,10 +11,10 @@
   "queued_experiment": null,
   "queued_experiment_name": null,
   "queued_experiment_issue": null,
-  "last_report_date": "2026-09-03",
-  "last_scored_date": "2026-09-02",
+  "last_report_date": "2026-09-04",
+  "last_scored_date": "2026-09-04",
   "last_cs": 76.00,
   "last_as": 40.00,
   "updated_by": "loop1+loop2",
-  "updated_at": "2026-09-03T21:45:00Z"
+  "updated_at": "2026-09-04T21:55:00Z"
 }

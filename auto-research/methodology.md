@@ -108,15 +108,33 @@ removed from the report template. With AC and CV both saturated at 100/100
 this run, presentation-layer additions like this one cannot move CS except
 via AS noise; see the 2026-09-02 changelog entry for detail.
 
-### Same-Session News-Shock Signal Override (format-015, ACTIVE since 2026-09-02, report 1/3)
+### Same-Session News-Shock Signal Override (format-015) — DISCARDED 2026-09-04
 
-3-report KEEP/DISCARD against baseline CS 76.00 (the 2026-09-02 CS),
-reverted on DISCARD. When a ticker shows a confirmed, source-corroborated
-same-day price move of ≥5% driven by a company-specific (non-macro) news
-catalyst, reassess that ticker's signal immediately in the same report —
-upgrading or downgrading at least one tier if the news genuinely changes
-the thesis — rather than carrying the prior signal forward unchanged to
-the next cycle.
+format-015 ran its full 3-report evaluation (2026-09-02 → 2026-09-04) and
+was DISCARDED: 3-report average CS 76.00 vs. baseline 76.00 (delta 0.00) =
+"same" per program.md's Loop 2 rule. The rule fired once across the 3
+reports (the 2026-09-02 PLTR downgrade to WATCH, not yet scored as of this
+revert) and was correctly declined on two subsequent candidate moves
+(PLTR's Sep 3 unconfirmed technical bounce; AMD's Sep 4 sector-beta-driven
+intraday swing) — a precision result, not a defect, but with AC/CV pinned
+at 100/100 a rule this rarely exercised cannot move CS within a 3-report
+window. See the 2026-09-04 changelog entry for detail. This section is
+reverted to its pre-2026-09-02 form (no same-session news-shock override
+rule); a confirmed, well-corroborated company-specific catalyst can still
+be reflected in that ticker's next-cycle signal via ordinary discretionary
+signal changes.
+
+### Cross-Source Price Divergence Flag (format-016, ACTIVE since 2026-09-04, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 76.00 (the 2026-09-04 CS),
+reverted on DISCARD. For each ticker, compute a **Dispute Severity** flag
+from the spread between the widest two independently-sourced price/RSI
+reads found that session: **LOW** (spread <1%), **MEDIUM** (spread 1-5%),
+**HIGH** (spread >5%, or genuinely unresolved direction). Surface this as
+a column in the per-sector tables (or an equivalent standing subsection)
+so readers can see at a glance which figures are load-bearing vs.
+directional-only. Data-presentation category (auto-evolve, no approval
+needed). Effective starting the 2026-09-05 report.
 
 ---
 
