@@ -142,21 +142,38 @@ column in the per-sector tables (or an equivalent standing subsection)
 so readers can see at a glance which figures are load-bearing vs.
 directional-only.
 
-### Golden Cross / Death Cross Signal Confirmation Override (format-017, ACTIVE since 2026-09-08, report 1/3)
+### Golden Cross / Death Cross Signal Confirmation Override (format-017) — DISCARDED 2026-09-11
 
-3-report KEEP/DISCARD against baseline CS 76.06 (the 2026-09-08 CS),
+format-017 ran its full 3-report evaluation (2026-09-08 → 2026-09-11,
+with no report on 2026-09-10) and was DISCARDED: 3-report average CS
+76.05 vs. baseline 76.06 (delta −0.01). Reverted per the
+auto-evolve rule. The rule never fired a single override in any of its
+3 evaluation reports — every ticker's cross status each cycle was
+either standing/old, genuinely unresolved across sources, or not found
+— so the decision reflects the rarity of genuine SMA-cross events
+within a 3-report window, not a demonstrated defect in the override
+logic itself. See the 2026-09-11 changelog entry for detail. This
+section is reverted to its pre-2026-09-08 form (no golden/death-cross
+override rule).
+
+### MACD Signal-Line Crossover Confirmation Override (format-018, ACTIVE since 2026-09-11, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 76.03 (the 2026-09-11 CS),
 reverted on DISCARD. Signal-logic experiment, auto-evolve per the
-2026-08-20 pre-approval. Rule: when a ticker's 50-day SMA is confirmed
-to newly cross **above** its 200-day SMA (golden cross) within the
-current reporting session, and RSI(14) reads 40-70 (not overextended),
-and the ticker is not already ACCUMULATE/CONTRARIAN, upgrade it to
-ACCUMULATE. When a ticker's 50-day SMA is confirmed to newly cross
-**below** its 200-day SMA (death cross) within the current reporting
-session, and RSI(14) reads below 60, and the ticker is currently
-ACCUMULATE/CONTRARIAN, downgrade it to WATCH. Applies only to *newly
-confirmed* crosses in the session being reported, not to standing/
-carried-forward crosses already reflected in the existing signal.
-Effective starting the 2026-09-09 report.
+2026-08-20 pre-approval. Rule: when a ticker's MACD line is confirmed
+to newly cross **above** its signal line (bullish crossover) within
+the current reporting session, and RSI(14) reads below 70 (not
+overbought), and the ticker is currently WATCH, upgrade it to
+ACCUMULATE. When a ticker's MACD line is confirmed to newly cross
+**below** its signal line (bearish crossover) within the current
+reporting session, and RSI(14) reads above 30 (not oversold), and the
+ticker is currently ACCUMULATE/CONTRARIAN, downgrade it to WATCH.
+Applies only to *newly confirmed* crossovers in the session being
+reported, not to standing/carried-forward crossover states already
+reflected in the existing signal. Effective starting the 2026-09-11
+report (this report evaluates as report 1/3 going forward, since MACD
+crossovers were assessed qualitatively this session but no rule was
+yet formally active).
 
 ---
 
