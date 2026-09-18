@@ -3,7 +3,7 @@
   "active_experiment": "format-019",
   "active_experiment_name": "Analyst Rating Action Confirmation Override",
   "experiment_start_date": "2026-09-15",
-  "reports_scored": 0,
+  "reports_scored": 1,
   "baseline_cs": 75.92,
   "awaiting_approval": false,
   "awaiting_approval_since": null,
@@ -11,10 +11,10 @@
   "queued_experiment": null,
   "queued_experiment_name": null,
   "queued_experiment_issue": null,
-  "last_report_date": "2026-09-15",
-  "last_scored_date": "2026-09-15",
-  "last_cs": 75.92,
-  "last_as": 39.80,
+  "last_report_date": "2026-09-18",
+  "last_scored_date": "2026-09-18",
+  "last_cs": 75.88,
+  "last_as": 39.70,
   "updated_by": "loop1+loop2",
-  "updated_at": "2026-09-15T21:45:00Z"
+  "updated_at": "2026-09-18T21:21:00Z"
 }

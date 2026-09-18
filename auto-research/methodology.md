@@ -172,7 +172,7 @@ cross format-017, MACD format-018) to discard on this same zero-fire
 basis. See the 2026-09-15 changelog entry for detail. This section is
 reverted to its pre-2026-09-11 form (no MACD-crossover override rule).
 
-### Analyst Rating Action Confirmation Override (format-019, ACTIVE since 2026-09-15, report 1/3)
+### Analyst Rating Action Confirmation Override (format-019, ACTIVE since 2026-09-15, report 2/3)
 
 3-report KEEP/DISCARD against baseline CS 75.92 (the 2026-09-15 CS),
 reverted on DISCARD. Signal-logic experiment, auto-evolve per the
@@ -188,7 +188,11 @@ Sell/Underweight) or a price-target cut of ≥10%, and the ticker is
 currently ACCUMULATE/CONTRARIAN, downgrade it to WATCH. Applies only
 to actions explicitly dated to the session being reported, not to
 standing/carried-forward analyst actions already reflected in the
-existing signal. Effective starting the 2026-09-15 report.
+existing signal. Effective starting the 2026-09-15 report. First live
+fires occurred 2026-09-18 (report 2/3): GOOGL (Tigress Financial PT
+$415→$485, +16.9%, Strong Buy) and LRCX (Berenberg PT $350→$420,
++20%, Buy) both upgraded WATCH→ACCUMULATE. Running 2-report average
+CS 75.90 vs. baseline 75.92 (delta −0.02); resolves next report.
 
 ---
 
