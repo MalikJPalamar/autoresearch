@@ -172,27 +172,53 @@ cross format-017, MACD format-018) to discard on this same zero-fire
 basis. See the 2026-09-15 changelog entry for detail. This section is
 reverted to its pre-2026-09-11 form (no MACD-crossover override rule).
 
-### Analyst Rating Action Confirmation Override (format-019, ACTIVE since 2026-09-15, report 2/3)
+### Analyst Rating Action Confirmation Override (format-019) — DISCARDED 2026-09-21
 
-3-report KEEP/DISCARD against baseline CS 75.92 (the 2026-09-15 CS),
+format-019 ran its full 3-report evaluation (2026-09-15 → 2026-09-21)
+and was DISCARDED: 3-report average CS 75.88 vs. baseline 75.92
+(delta −0.04). Reverted per the auto-evolve rule — no analyst-rating-
+action override rule applies going forward. Unlike the three prior
+technical-crossover experiments (format-012/017/018), this rule did
+fire real, well-corroborated overrides: GOOGL and LRCX both
+WATCH→ACCUMULATE on 2026-09-18 (Tigress Financial and Berenberg PT
+raises, +16.9%/+20%), and MSFT WATCH→ACCUMULATE on 2026-09-21 (Cantor
+Fitzgerald PT raise, +16.5%). A fourth qualifying action (META, Wells
+Fargo PT raise +24.4% on 2026-09-21) found no WATCH tier to upgrade
+from and did not fire. Despite these genuine fires, the rule's effect
+(1-2 of 18 tickers per report) was too small to move a CS computed
+across the full accuracy-scoring history; the 3-report average was
+dominated by AS noise from that window's 5-day-lookback batches (Sep
+8, Sep 11, Sep 14), not by the override logic itself. See the
+2026-09-21 changelog entry for detail. This section is reverted to
+its pre-2026-09-15 form (no analyst-rating-action override rule); the
+real signal changes already made under it while active (GOOGL/LRCX on
+Sep 18, MSFT on Sep 21) are not retroactively undone — they were based
+on genuine, confirmed analyst actions and remain part of the
+historical record, consistent with how format-011's discarded
+protocol did not unwind prices already verified under it.
+
+### Earnings Beat/Miss Confirmation Override (format-020, ACTIVE since 2026-09-21, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.84 (the 2026-09-21 CS),
 reverted on DISCARD. Signal-logic experiment, auto-evolve per the
-2026-08-20 pre-approval, proposed to deliberately move away from
-technical-crossover triggers (which discarded three times running on
-a zero-fire basis) toward a catalyst type that is reliably reported
-with an explicit same-day date in financial news. Rule: when a ticker
-receives a same-session, explicitly-dated sell-side analyst upgrade
-(to Buy/Overweight/Outperform) or a price-target raise of ≥10%, and
-the ticker is currently WATCH, upgrade it to ACCUMULATE. When a
-ticker receives a same-session, explicitly-dated downgrade (to
-Sell/Underweight) or a price-target cut of ≥10%, and the ticker is
-currently ACCUMULATE/CONTRARIAN, downgrade it to WATCH. Applies only
-to actions explicitly dated to the session being reported, not to
-standing/carried-forward analyst actions already reflected in the
-existing signal. Effective starting the 2026-09-15 report. First live
-fires occurred 2026-09-18 (report 2/3): GOOGL (Tigress Financial PT
-$415→$485, +16.9%, Strong Buy) and LRCX (Berenberg PT $350→$420,
-+20%, Buy) both upgraded WATCH→ACCUMULATE. Running 2-report average
-CS 75.90 vs. baseline 75.92 (delta −0.02); resolves next report.
+2026-08-20 pre-approval. With the Phase 3 rollout list exhausted and
+four consecutive narrow-trigger signal-logic experiments now resolved
+(RSI-threshold, golden/death-cross, and MACD-crossover all zero-fire
+DISCARDs; analyst-rating-action a real-but-small-effect DISCARD), this
+experiment stays in the same "confirmed, dated catalyst" family but
+shifts to quarterly earnings surprises, which have a defined seasonal
+window several portfolio tickers enter during the likely 3-report
+evaluation period (TSM ~Oct 15, ASML ~Oct 14, MSFT/GOOGL/META ~late
+Oct, LMT/RTX ~Oct 20-27). Rule: when a ticker reports a same-session,
+explicitly-dated confirmed earnings beat (EPS ≥10% above consensus,
+or a guidance raise explicitly framed as a beat) and the ticker is
+currently WATCH, upgrade it to ACCUMULATE. When a ticker reports a
+same-session, explicitly-dated confirmed earnings miss (EPS ≥10%
+below consensus, or a guidance cut) and the ticker is currently
+ACCUMULATE/CONTRARIAN, downgrade it to WATCH. Applies only to actions
+explicitly dated to the session being reported. Effective starting
+the 2026-09-21 report. 0 overrides fired report 1/3 (no earnings
+reports dated to 2026-09-21 for any of the 18 tickers).
 
 ---
 
