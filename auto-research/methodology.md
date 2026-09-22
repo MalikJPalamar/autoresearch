@@ -197,7 +197,7 @@ on genuine, confirmed analyst actions and remain part of the
 historical record, consistent with how format-011's discarded
 protocol did not unwind prices already verified under it.
 
-### Earnings Beat/Miss Confirmation Override (format-020, ACTIVE since 2026-09-21, report 1/3)
+### Earnings Beat/Miss Confirmation Override (format-020, ACTIVE since 2026-09-21, report 2/3)
 
 3-report KEEP/DISCARD against baseline CS 75.84 (the 2026-09-21 CS),
 reverted on DISCARD. Signal-logic experiment, auto-evolve per the
@@ -218,7 +218,9 @@ below consensus, or a guidance cut) and the ticker is currently
 ACCUMULATE/CONTRARIAN, downgrade it to WATCH. Applies only to actions
 explicitly dated to the session being reported. Effective starting
 the 2026-09-21 report. 0 overrides fired report 1/3 (no earnings
-reports dated to 2026-09-21 for any of the 18 tickers).
+reports dated to 2026-09-21 for any of the 18 tickers). 0 overrides
+fired report 2/3 (no earnings reports dated to 2026-09-22 for any
+of the 18 tickers).
 
 ---
 
