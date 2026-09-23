@@ -197,30 +197,48 @@ on genuine, confirmed analyst actions and remain part of the
 historical record, consistent with how format-011's discarded
 protocol did not unwind prices already verified under it.
 
-### Earnings Beat/Miss Confirmation Override (format-020, ACTIVE since 2026-09-21, report 2/3)
+### Earnings Beat/Miss Confirmation Override (format-020) — DISCARDED 2026-09-23
 
-3-report KEEP/DISCARD against baseline CS 75.84 (the 2026-09-21 CS),
+format-020 ran its full 3-report evaluation (2026-09-21 → 2026-09-23)
+and was DISCARDED: 3-report average CS 75.83 vs. baseline 75.84
+(delta −0.01). Reverted per the auto-evolve rule. The rule never
+fired a single override in any of its 3 evaluation reports — no
+earnings reports were dated to 2026-09-21, 2026-09-22, or 2026-09-23
+for any of the 18 tickers, all of which enter their next reporting
+window in mid-to-late October — so the decision reflects the
+seasonal timing gap, not a demonstrated defect in the override logic
+itself. This is the 4th consecutive zero-fire discard among
+"confirmed, same-session, dated-catalyst" override experiments
+(RSI-threshold format-012, golden/death-cross format-017,
+MACD-crossover format-018, now format-020); only format-019
+(analyst-rating-action) fired real overrides in this family, and
+even those were too small to move CS. See the 2026-09-23 changelog
+entry for the full meta-observation on why this experiment family
+has run out of statistical power against a saturated AC/CV and a
+1,000+ signal cumulative AS denominator. This section is reverted to
+its pre-2026-09-21 form (no earnings-beat/miss override rule).
+
+### Same-Session Extreme-Volume Confirmation Override (format-021, ACTIVE since 2026-09-23, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.83 (the 2026-09-23 CS),
 reverted on DISCARD. Signal-logic experiment, auto-evolve per the
-2026-08-20 pre-approval. With the Phase 3 rollout list exhausted and
-four consecutive narrow-trigger signal-logic experiments now resolved
-(RSI-threshold, golden/death-cross, and MACD-crossover all zero-fire
-DISCARDs; analyst-rating-action a real-but-small-effect DISCARD), this
-experiment stays in the same "confirmed, dated catalyst" family but
-shifts to quarterly earnings surprises, which have a defined seasonal
-window several portfolio tickers enter during the likely 3-report
-evaluation period (TSM ~Oct 15, ASML ~Oct 14, MSFT/GOOGL/META ~late
-Oct, LMT/RTX ~Oct 20-27). Rule: when a ticker reports a same-session,
-explicitly-dated confirmed earnings beat (EPS ≥10% above consensus,
-or a guidance raise explicitly framed as a beat) and the ticker is
-currently WATCH, upgrade it to ACCUMULATE. When a ticker reports a
-same-session, explicitly-dated confirmed earnings miss (EPS ≥10%
-below consensus, or a guidance cut) and the ticker is currently
-ACCUMULATE/CONTRARIAN, downgrade it to WATCH. Applies only to actions
-explicitly dated to the session being reported. Effective starting
-the 2026-09-21 report. 0 overrides fired report 1/3 (no earnings
-reports dated to 2026-09-21 for any of the 18 tickers). 0 overrides
-fired report 2/3 (no earnings reports dated to 2026-09-22 for any
-of the 18 tickers).
+2026-08-20 pre-approval. Deliberately shifts away from the
+narrow-single-event-override pattern (4 of the last 5 such
+experiments zero-fired) toward a higher-frequency rule with more
+realistic odds of firing within a 3-report window. Rule: when a
+ticker moves >3% in a session AND that move is corroborated by
+explicitly-flagged unusual/elevated volume (>2x 20-day average, or a
+source explicitly describing the volume as "unusual"/"elevated"),
+treat the move as institutionally-confirmed: (a) if the ticker is
+WATCH and the move is up off a support level, upgrade to ACCUMULATE;
+(b) if the ticker is ACCUMULATE/CONTRARIAN and the move is down
+through a support level, downgrade to WATCH. Applies only when both
+the price-move and volume conditions are independently corroborated
+same-session, and never on a ticker whose same-session price itself
+carries a HIGH dispute-severity flag. Effective starting the
+2026-09-23 report. 0 overrides fired report 1/3 (today's >3% movers —
+GOOGL, PLTR, OKLO, SMR — lacked same-session, explicitly-flagged
+unusual-volume corroboration).
 
 ---
 

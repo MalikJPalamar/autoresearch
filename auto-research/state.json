@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "active_experiment": "format-020",
-  "active_experiment_name": "Earnings Beat/Miss Confirmation Override",
-  "experiment_start_date": "2026-09-21",
-  "reports_scored": 2,
-  "baseline_cs": 75.84,
+  "active_experiment": "format-021",
+  "active_experiment_name": "Same-Session Extreme-Volume Confirmation Override",
+  "experiment_start_date": "2026-09-23",
+  "reports_scored": 1,
+  "baseline_cs": 75.83,
   "awaiting_approval": false,
   "awaiting_approval_since": null,
   "approval_issue": null,
   "queued_experiment": null,
   "queued_experiment_name": null,
   "queued_experiment_issue": null,
-  "last_report_date": "2026-09-22",
+  "last_report_date": "2026-09-23",
   "last_scored_date": "2026-09-22",
   "last_cs": 75.83,
   "last_as": 39.57,
   "updated_by": "loop1+loop2",
-  "updated_at": "2026-09-22T21:35:00Z"
+  "updated_at": "2026-09-23T21:35:00Z"
 }
