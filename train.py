@@ -171,7 +171,7 @@ class CausalSelfAttention(nn.Module):
 class MLP(nn.Module):
     def __init__(self, config):
         super().__init__()
-        hidden = 3 * config.n_embd // 2
+        hidden = 2 * config.n_embd
         self.c_fc = nn.Linear(config.n_embd, 2 * hidden, bias=False)
         self.c_proj = nn.Linear(hidden, config.n_embd, bias=False)
         self.resid_dropout = nn.Dropout(config.mlp_dropout if config.mlp_dropout > 0 else config.dropout)
@@ -239,10 +239,10 @@ class GPT(nn.Module):
             torch.nn.init.zeros_(block.mlp.c_proj.weight)
         # Per-layer scalars
         self.resid_lambdas.fill_(1.0)
-        self.x0_lambdas.fill_(0.0)
+        self.x0_lambdas.fill_(0.1)
         # Value embeddings
         for ve in self.value_embeds.values():
-            torch.nn.init.uniform_(ve.weight, -s, s)
+            torch.nn.init.uniform_(ve.weight, -std, std)
         # Gate weights init to zero (sigmoid(0)=0.5, scaled by 2 -> 1.0 = neutral)
         for block in self.transformer.h:
             if block.attn.ve_gate is not None:
@@ -256,7 +256,7 @@ class GPT(nn.Module):
         for ve in self.value_embeds.values():
             ve.to(dtype=torch.bfloat16)
 
-    def _precompute_rotary_embeddings(self, seq_len, head_dim, base=10000, device=None):
+    def _precompute_rotary_embeddings(self, seq_len, head_dim, base=5000, device=None):
         if device is None:
             device = self.transformer.wte.weight.device
         channel_range = torch.arange(0, head_dim, 2, dtype=torch.float32, device=device)
@@ -321,11 +321,10 @@ class GPT(nn.Module):
         assert len(list(self.parameters())) == (len(matrix_params) + len(embedding_params) +
             len(lm_head_params) + len(value_embeds_params) + len(resid_params) + len(x0_params))
         # Scale LR ∝ 1/√dmodel (tuned at 768 dim)
-        dmodel_lr_scale = (model_dim / 768) ** -0.5
-        print(f"Scaling AdamW LRs by 1/sqrt({model_dim}/768) = {dmodel_lr_scale:.6f}")
+        dmodel_lr_scale = 1.0
         param_groups = [
             dict(kind='adamw', params=lm_head_params, lr=unembedding_lr * dmodel_lr_scale, betas=adam_betas, eps=1e-10, weight_decay=0.0),
-            dict(kind='adamw', params=embedding_params, lr=embedding_lr * dmodel_lr_scale, betas=adam_betas, eps=1e-10, weight_decay=0.0),
+            dict(kind='adamw', params=embedding_params, lr=embedding_lr * dmodel_lr_scale, betas=adam_betas, eps=1e-10, weight_decay=0.02),
             dict(kind='adamw', params=value_embeds_params, lr=embedding_lr * dmodel_lr_scale, betas=adam_betas, eps=1e-10, weight_decay=0.0),
             dict(kind='adamw', params=resid_params, lr=scalar_lr * 0.01, betas=adam_betas, eps=1e-10, weight_decay=0.0),
             dict(kind='adamw', params=x0_params, lr=scalar_lr, betas=(0.5, 0.99), eps=1e-10, weight_decay=0.0),
@@ -348,7 +347,7 @@ class GPT(nn.Module):
 
         x = self.transformer.wte(idx)
         x = norm(x)
-        x = F.dropout(x, p=0.12, training=self.training)
+        x = F.dropout(x, p=0.08, training=self.training)
         x0 = x
         for i, block in enumerate(self.transformer.h):
             x = self.resid_lambdas[i] * x + self.x0_lambdas[i] * x0
@@ -358,6 +357,7 @@ class GPT(nn.Module):
 
         logits = self.lm_head(x)
         logits = logits.float()
+        logits = 18.0 * torch.tanh(logits / 18.0)
 
         if targets is not None:
             smoothing = 0.0
@@ -396,7 +396,7 @@ def _muon_step_impl(stacked_grads, stacked_params, momentum_buffer, second_momen
     g = stacked_grads.lerp_(momentum_buffer, momentum)
     # Polar express orthogonalization
     X = g.bfloat16()
-    X = X / (X.norm(dim=(-2, -1), keepdim=True) * 1.02 + 1e-6)
+    X = X / (X.norm(dim=(-2, -1), keepdim=True) + 1e-6)
     if g.size(-2) > g.size(-1):
         for a, b, c in polar_express_coeffs[:ns_steps]:
             A = X.mT @ X
@@ -517,20 +517,20 @@ HEAD_DIM = 128 if HAS_CUDA else 64          # target head dimension for attentio
 WINDOW_PATTERN = "L" # sliding window pattern: L=full, S=half context
 
 # Optimization
-TOTAL_BATCH_SIZE = 2**19 if HAS_CUDA else 2**17 # tokens per optimizer step
-EMBEDDING_LR = 0.7      # learning rate for token embeddings (Adam)
-UNEMBEDDING_LR = 0.006  # learning rate for lm_head (Adam)
+TOTAL_BATCH_SIZE = 2**19 if HAS_CUDA else 2**16 # tokens per optimizer step
+EMBEDDING_LR = 1.2      # learning rate for token embeddings (Adam)
+UNEMBEDDING_LR = 0.004  # learning rate for lm_head (Adam)
 MATRIX_LR = 0.12        # learning rate for matrix parameters (Muon)
 SCALAR_LR = 0.45        # learning rate for per-layer scalars (Adam)
-WEIGHT_DECAY = 0.01     # cautious weight decay for Muon
+WEIGHT_DECAY = 0.01      # cautious weight decay for Muon
 ADAM_BETAS = (0.01, 0.99) # Adam beta1, beta2
 WARMUP_RATIO = 0.0      # fraction of time budget for LR warmup
-STABLE_RATIO = 0.25     # fraction of time budget at peak LR (WSD schedule)
+STABLE_RATIO = 0.30     # fraction of time budget at peak LR (WSD schedule)
 WARMDOWN_RATIO = 1.0    # fraction of time budget for LR warmdown
-FINAL_LR_FRAC = 0.05    # final LR as fraction of initial
+FINAL_LR_FRAC = 0.10    # final LR as fraction of initial
 
 # Model size
-DEPTH = 8 if HAS_CUDA else 3               # number of transformer layers
+DEPTH = 8 if HAS_CUDA else 6               # number of transformer layers
 DEVICE_BATCH_SIZE = 128 if HAS_CUDA else 16  # per-device batch size
 
 # ---------------------------------------------------------------------------
@@ -560,7 +560,7 @@ def build_model_config(depth):
     return GPTConfig(
         sequence_len=MAX_SEQ_LEN, vocab_size=vocab_size,
         n_layer=depth, n_head=num_heads, n_kv_head=num_heads, n_embd=model_dim,
-        window_pattern=WINDOW_PATTERN, dropout=0.15, attn_dropout=0.12, mlp_dropout=0.25,
+        window_pattern=WINDOW_PATTERN, dropout=0.18, attn_dropout=0.12, mlp_dropout=0.20,
     )
 
 config = build_model_config(DEPTH)
@@ -610,11 +610,11 @@ def get_lr_multiplier(progress):
         return 1.0
     else:
         decay_progress = (progress - WARMUP_RATIO - STABLE_RATIO) / (1.0 - WARMUP_RATIO - STABLE_RATIO)
-        return FINAL_LR_FRAC + (1.0 - FINAL_LR_FRAC) * (1 - decay_progress)
+        return FINAL_LR_FRAC + (1.0 - FINAL_LR_FRAC) * (1 - decay_progress) ** 0.7
 
 def get_muon_momentum(step):
-    frac = min(step / 8, 1)
-    return (1 - frac) * 0.85 + frac * 0.98
+    frac = min(step / 2, 1.0)
+    return (1 - frac) * 0.90 + frac * 0.98
 
 def get_weight_decay(progress):
     return WEIGHT_DECAY
@@ -650,7 +650,7 @@ while True:
         if group['kind'] == 'muon':
             group["momentum"] = muon_momentum
             group["weight_decay"] = muon_weight_decay
-    torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=0.05)
+    torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=0.06)
     optimizer.step()
     model.zero_grad(set_to_none=True)
 
