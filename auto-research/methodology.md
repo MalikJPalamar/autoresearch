@@ -218,27 +218,53 @@ has run out of statistical power against a saturated AC/CV and a
 1,000+ signal cumulative AS denominator. This section is reverted to
 its pre-2026-09-21 form (no earnings-beat/miss override rule).
 
-### Same-Session Extreme-Volume Confirmation Override (format-021, ACTIVE since 2026-09-23, report 1/3)
+### Same-Session Extreme-Volume Confirmation Override (format-021) — DISCARDED 2026-09-25
 
-3-report KEEP/DISCARD against baseline CS 75.83 (the 2026-09-23 CS),
+format-021 ran its full 3-report evaluation (2026-09-23 → 2026-09-25)
+and was DISCARDED: 3-report average CS 75.82 vs. baseline 75.83
+(delta −0.01). Reverted per the auto-evolve rule. The rule never
+fired a single override in any of its 3 evaluation reports — the
+largest same-day movers each session (GOOGL/PLTR/OKLO/SMR on Sep 23;
+Sep 24 had no qualifying mover; META/MSFT on Sep 25) either lacked
+explicitly-flagged same-session unusual/elevated volume corroboration
+or fell outside the rule's WATCH/ACCUMULATE/CONTRARIAN tier
+eligibility — so the decision reflects the rarity of a fully-
+qualifying same-session setup, not a demonstrated defect in the
+override logic itself. This is the 5th consecutive zero-fire discard
+among "confirmed, same-session, dated-catalyst" override experiments
+(RSI-threshold format-012, golden/death-cross format-017,
+MACD-crossover format-018, earnings format-020, now extreme-volume
+format-021); only format-019 (analyst-rating-action) fired real
+overrides in this family, and even those were too small to move CS.
+See the 2026-09-25 changelog entry for detail. This section is
+reverted to its pre-2026-09-23 form (no same-session extreme-volume
+override rule).
+
+### HIGH-Dispute-Severity Signal Hold Protocol (format-022, ACTIVE since 2026-09-25, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.81 (the 2026-09-25 CS),
 reverted on DISCARD. Signal-logic experiment, auto-evolve per the
-2026-08-20 pre-approval. Deliberately shifts away from the
-narrow-single-event-override pattern (4 of the last 5 such
-experiments zero-fired) toward a higher-frequency rule with more
-realistic odds of firing within a 3-report window. Rule: when a
-ticker moves >3% in a session AND that move is corroborated by
-explicitly-flagged unusual/elevated volume (>2x 20-day average, or a
-source explicitly describing the volume as "unusual"/"elevated"),
-treat the move as institutionally-confirmed: (a) if the ticker is
-WATCH and the move is up off a support level, upgrade to ACCUMULATE;
-(b) if the ticker is ACCUMULATE/CONTRARIAN and the move is down
-through a support level, downgrade to WATCH. Applies only when both
-the price-move and volume conditions are independently corroborated
-same-session, and never on a ticker whose same-session price itself
-carries a HIGH dispute-severity flag. Effective starting the
-2026-09-23 report. 0 overrides fired report 1/3 (today's >3% movers —
-GOOGL, PLTR, OKLO, SMR — lacked same-session, explicitly-flagged
-unusual-volume corroboration).
+2026-08-20 pre-approval. Deliberately targets the root cause behind
+five consecutive zero-fire discards in the narrow-single-event-
+override family: AC/CV are saturated at 100/100, so only AS can move
+CS, and AS's cumulative denominator (1,045 as of 2026-09-25) is too
+large for a rule firing on 1-2 of 18 tickers per report to move CS
+within a 3-report window. This rule is instead high-frequency by
+construction: data-quality/price-dispute issues have hit 5-7 of 18
+tickers per session across nearly every recent report. Rule: when a
+ticker's same-session price/technical data carries a HIGH Dispute
+Severity flag under the standing format-016 Cross-Source Price
+Divergence Flag (either >5% spread across sources, or genuinely
+unresolved direction/date), that ticker's signal is mechanically held
+at WATCH for that report, overriding whatever the discretionary/
+technical read would otherwise suggest. AVOID/SPECULATIVE-tier
+tickers are exempt (their classification already reflects elevated/
+binary risk independent of price precision). The hold automatically
+lifts the next session the ticker's dispute severity drops to
+LOW/MEDIUM. Effective starting the 2026-09-25 report. Fired on 3
+tickers report 1/3 (TSM, LRCX, CEG — all held at WATCH; this formalizes
+what had already been ad hoc discretionary practice on these same
+three names).
 
 ---
 
