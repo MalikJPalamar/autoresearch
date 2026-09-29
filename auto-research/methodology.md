@@ -240,31 +240,45 @@ See the 2026-09-25 changelog entry for detail. This section is
 reverted to its pre-2026-09-23 form (no same-session extreme-volume
 override rule).
 
-### HIGH-Dispute-Severity Signal Hold Protocol (format-022, ACTIVE since 2026-09-25, report 1/3)
+### HIGH-Dispute-Severity Signal Hold Protocol (format-022, KEPT 2026-09-29 — now a standing section)
 
-3-report KEEP/DISCARD against baseline CS 75.81 (the 2026-09-25 CS),
-reverted on DISCARD. Signal-logic experiment, auto-evolve per the
-2026-08-20 pre-approval. Deliberately targets the root cause behind
-five consecutive zero-fire discards in the narrow-single-event-
-override family: AC/CV are saturated at 100/100, so only AS can move
-CS, and AS's cumulative denominator (1,045 as of 2026-09-25) is too
-large for a rule firing on 1-2 of 18 tickers per report to move CS
-within a 3-report window. This rule is instead high-frequency by
-construction: data-quality/price-dispute issues have hit 5-7 of 18
-tickers per session across nearly every recent report. Rule: when a
-ticker's same-session price/technical data carries a HIGH Dispute
-Severity flag under the standing format-016 Cross-Source Price
-Divergence Flag (either >5% spread across sources, or genuinely
-unresolved direction/date), that ticker's signal is mechanically held
-at WATCH for that report, overriding whatever the discretionary/
-technical read would otherwise suggest. AVOID/SPECULATIVE-tier
-tickers are exempt (their classification already reflects elevated/
-binary risk independent of price precision). The hold automatically
-lifts the next session the ticker's dispute severity drops to
-LOW/MEDIUM. Effective starting the 2026-09-25 report. Fired on 3
-tickers report 1/3 (TSM, LRCX, CEG — all held at WATCH; this formalizes
-what had already been ad hoc discretionary practice on these same
-three names).
+3-report KEEP/DISCARD against baseline CS 75.81 (the 2026-09-25 CS)
+resolved 2026-09-29: 3-report average CS 75.82 vs. baseline 75.81
+(delta +0.01) = KEEP (marginal — see the 2026-09-29
+changelog entry for the caveat that the resolving report's own CS was
+depressed by that session's severe data-access outage, not a clean
+causal read on the rule). Retained permanently as a standing report
+mechanism, no longer a scored experiment. Rule: when a ticker's
+same-session price/technical data carries a HIGH Dispute Severity flag
+under the standing format-016 Cross-Source Price Divergence Flag
+(either >5% spread across sources, or genuinely unresolved
+direction/date/no confirmed print), that ticker's signal is
+mechanically held at WATCH for that report, overriding whatever the
+discretionary/technical read would otherwise suggest. AVOID/
+SPECULATIVE-tier tickers are exempt (their classification already
+reflects elevated/binary risk independent of price precision). The
+hold automatically lifts the next session the ticker's dispute
+severity drops to LOW/MEDIUM. Effective since the 2026-09-25 report.
+Report 1/3 (Sep 25) fired on 3 tickers (TSM, LRCX, CEG); report 2/3
+(Sep 28) fired on 6 tickers; report 3/3 (Sep 29, the worst
+data-quality session of the run) fired on 12 of 18 tickers, including
+4 real interventions (NVDA, AMAT, PLTR, LMT held down from ACCUMULATE
+to WATCH rather than carried forward on zero confirmed data) —
+the clearest demonstration yet of the rule's purpose.
+
+### MEDIUM-Dispute-Severity Position-Sizing Caveat (format-023, ACTIVE since 2026-09-29, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.81 (the 2026-09-29 CS),
+reverted on DISCARD. Data-presentation / signal-logic-adjacent
+experiment, auto-evolve per the 2026-08-20 pre-approval. Extends the
+standing format-016/format-022 dispute-severity framework one tier
+down: format-022 already mechanically holds HIGH-dispute tickers at
+WATCH; this rule targets the MEDIUM-dispute tier instead, which does
+not warrant a full signal hold but does warrant a risk-adjusted
+entry/exit read. Rule: when a ticker's Dispute Severity (per format-016)
+is MEDIUM (not HIGH), its Entry/Exit Zone must carry an explicit
+reduced-conviction / smaller-size caveat, without changing the
+signal tier itself. Effective starting the 2026-09-29 report.
 
 ---
 
