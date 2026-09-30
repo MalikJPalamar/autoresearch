@@ -3,7 +3,7 @@
   "active_experiment": "format-023",
   "active_experiment_name": "MEDIUM-Dispute-Severity Position-Sizing Caveat",
   "experiment_start_date": "2026-09-29",
-  "reports_scored": 0,
+  "reports_scored": 1,
   "baseline_cs": 75.81,
   "awaiting_approval": false,
   "awaiting_approval_since": null,
@@ -11,10 +11,10 @@
   "queued_experiment": null,
   "queued_experiment_name": null,
   "queued_experiment_issue": null,
-  "last_report_date": "2026-09-29",
+  "last_report_date": "2026-09-30",
   "last_scored_date": "2026-09-29",
   "last_cs": 75.81,
   "last_as": 39.53,
   "updated_by": "loop1+loop2",
-  "updated_at": "2026-09-29T21:00:00Z"
+  "updated_at": "2026-09-30T21:20:00Z"
 }
