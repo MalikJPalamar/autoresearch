@@ -266,19 +266,38 @@ data-quality session of the run) fired on 12 of 18 tickers, including
 to WATCH rather than carried forward on zero confirmed data) —
 the clearest demonstration yet of the rule's purpose.
 
-### MEDIUM-Dispute-Severity Position-Sizing Caveat (format-023, ACTIVE since 2026-09-29, report 1/3)
+### MEDIUM-Dispute-Severity Position-Sizing Caveat (format-023) — DISCARDED 2026-10-01
 
-3-report KEEP/DISCARD against baseline CS 75.81 (the 2026-09-29 CS),
-reverted on DISCARD. Data-presentation / signal-logic-adjacent
-experiment, auto-evolve per the 2026-08-20 pre-approval. Extends the
-standing format-016/format-022 dispute-severity framework one tier
-down: format-022 already mechanically holds HIGH-dispute tickers at
-WATCH; this rule targets the MEDIUM-dispute tier instead, which does
-not warrant a full signal hold but does warrant a risk-adjusted
-entry/exit read. Rule: when a ticker's Dispute Severity (per format-016)
-is MEDIUM (not HIGH), its Entry/Exit Zone must carry an explicit
-reduced-conviction / smaller-size caveat, without changing the
-signal tier itself. Effective starting the 2026-09-29 report.
+format-023 ran its full 3-report evaluation (2026-09-29 → 2026-10-01)
+and was DISCARDED: 3-report average CS 75.81 vs. baseline 75.81
+(delta 0.00) = DISCARD per program.md's Loop 2 rule and this
+project's exact-zero-delta precedent (format-015, 2026-09-04). The
+rule fired 0/3 reports — the historic data blackout across all 3
+evaluation reports (0-2 of 18 tickers confirmed per session) left
+almost no ticker ever landing at the MEDIUM dispute tier the rule
+targets, a data-availability artifact rather than a demonstrated
+defect in the underlying logic. See the 2026-10-01 changelog entry
+for detail. This section is reverted to its pre-2026-09-29 form (no
+MEDIUM-dispute position-sizing rule); the standing format-016/
+format-022 dispute-severity framework (Cross-Source Price Divergence
+Flag, HIGH-Dispute-Severity Signal Hold) is unaffected.
+
+### Stale-Data Mislabel Cross-Check Protocol (format-024, ACTIVE since 2026-10-01, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.81 (the 2026-10-01 CS),
+reverted on DISCARD. Data-presentation/data-source experiment,
+auto-evolve per the 2026-08-20 pre-approval. Motivated by two
+concrete catches in the 2026-10-01 report: a "$587.95" LMT figure and
+a "$129.13" BAH figure, both widely surfaced by WebSearch as
+"current," were traced to data roughly 7 weeks and roughly a year
+stale respectively. Rule: before accepting any WebSearch-sourced
+"today" price as a candidate, cross-check its implied day-over-day or
+multi-day move against the most recent confirmed-dated anchor
+available in the same research pass. If the implied move exceeds
+~15% with no corroborating same-day news to explain it, treat the
+candidate as a probable stale/mislabeled figure, exclude it from the
+confirmed-price candidate set, and fall back to PENDING/UNCONFIRMED
+rather than use it. Effective starting the 2026-10-01 report.
 
 ---
 
