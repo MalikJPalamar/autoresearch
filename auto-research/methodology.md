@@ -282,7 +282,7 @@ MEDIUM-dispute position-sizing rule); the standing format-016/
 format-022 dispute-severity framework (Cross-Source Price Divergence
 Flag, HIGH-Dispute-Severity Signal Hold) is unaffected.
 
-### Stale-Data Mislabel Cross-Check Protocol (format-024, ACTIVE since 2026-10-01, report 1/3)
+### Stale-Data Mislabel Cross-Check Protocol (format-024, ACTIVE since 2026-10-01, report 2/3)
 
 3-report KEEP/DISCARD against baseline CS 75.81 (the 2026-10-01 CS),
 reverted on DISCARD. Data-presentation/data-source experiment,
@@ -298,6 +298,13 @@ available in the same research pass. If the implied move exceeds
 candidate as a probable stale/mislabeled figure, exclude it from the
 confirmed-price candidate set, and fall back to PENDING/UNCONFIRMED
 rather than use it. Effective starting the 2026-10-01 report.
+Report 2/3 (2026-10-02) was the richest session yet: at least 10
+catches across 10 of 18 tickers, including a repeat of the exact
+chronic LMT "$587.95" stale-source pattern that originally motivated
+the rule, and a new failure mode — an RTX "$215.25" figure that reads
+as a fabricated/ungrounded search-model synthesis rather than merely
+stale cached content. Running 2-report average CS 75.82 vs. baseline
+75.81 (delta +0.01); resolves after report 3/3 (~2026-10-05).
 
 ---
 
