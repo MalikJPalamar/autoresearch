@@ -240,7 +240,8 @@ class GPT(nn.Module):
         # Per-layer scalars
         self.resid_lambdas.fill_(1.0)
         self.x0_lambdas.fill_(0.0)
-        # Value embeddings
+        # Keep the uniform value-embedding scale independent of block initialization.
+        s = (3 / n_embd)**0.5
         for ve in self.value_embeds.values():
             torch.nn.init.uniform_(ve.weight, -s, s)
         # Gate weights init to zero (sigmoid(0)=0.5, scaled by 2 -> 1.0 = neutral)
