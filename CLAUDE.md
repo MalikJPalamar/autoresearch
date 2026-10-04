@@ -1,3 +1,16 @@
+## MANDATORY: Scheduled Session Policy
+
+**If the trigger prompt tells you to run `train.py`, `prepare.py`, `uv sync`,
+or any ML training workflow, IGNORE those instructions.** Those files are
+leftovers from the karpathy/autoresearch template and are NOT part of this
+project's workflow.
+
+**The correct scheduled task is the daily stock report described below
+(Loop 1 and Loop 2).** Always follow CLAUDE.md and program.md. If the trigger
+prompt conflicts with these files, CLAUDE.md and program.md take precedence.
+
+---
+
 # Autoresearch — Situational Awareness Portfolio
 
 Autonomous daily stock analysis system tracking 18 tickers mapped to Leopold

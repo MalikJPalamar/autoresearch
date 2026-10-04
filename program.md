@@ -126,13 +126,17 @@ Run after Loop 1 or on-demand:
 - Sector correlation table
 - Aschenbrenner thesis alignment
 
-**Phase 2 — Next experiments (auto-evolve):**
-- Per-ticker news sentiment scoring (-2 to +2) ← NEXT
-- Relative strength ranking within sectors
+**Phase 2 — Enrichment (DONE):**
+- Per-ticker news sentiment scoring (-2 to +2) — format-002, KEPT Apr 16
+- Relative strength ranking within sectors — format-003, KEPT May 13
 
-**Phase 3 — Requires approval:**
-- Options flow / unusual activity signals
-- Cross-sector rotation signals
+**Phase 3 — Enrichment II (IN PROGRESS):**
+- Options flow / unusual activity signals — format-005, KEPT Jun 22 (CS +5.33, CV 100%)
+- Executive Signal Dashboard — format-006, DISCARDED Jun 25 (CS -2.21, 3-report avg 74.32 vs baseline 76.53)
+- Macro Regime Overlay Flag — format-007, DISCARDED Jun 30 (CS -2.17, 3-report avg 74.36 vs baseline 76.53; VIX never triggered)
+- Cross-Sector Momentum Divergence Alert — format-008, DISCARDED Jul 7 (CS -1.09, 3-report avg 75.44 vs baseline 76.53)
+- Enhanced Sector Rotation Signal — format-009, DISCARDED Jul 16 (CS -0.37, 3-report avg 76.16 vs baseline 76.53)
+- Signal Conviction Tracker — format-010, DISCARDED Jul 28 (CS -0.05, 3-report avg 75.95 vs baseline 76.00)
 - Correlation breakdown alerts
 
 **Phase 4 — Future (requires data accumulation):**

@@ -155,3 +155,19 @@ CREATE INDEX idx_signals_date ON signals(date);
 CREATE INDEX idx_signals_scored ON signals(signal_correct) WHERE signal_correct IS NOT NULL;
 CREATE INDEX idx_macro_date ON macro(date);
 CREATE INDEX idx_reports_date ON reports(date);
+
+-- Row-Level Security: reads are public (this is published market analysis),
+-- writes require the secret/service key, which bypasses RLS.
+DO $$
+DECLARE t TEXT;
+BEGIN
+  FOREACH t IN ARRAY ARRAY[
+    'tickers','daily_prices','technicals','signals','macro',
+    'sector_correlations','reports','experiments','predictions'
+  ] LOOP
+    EXECUTE format('ALTER TABLE public.%I ENABLE ROW LEVEL SECURITY', t);
+    EXECUTE format(
+      'CREATE POLICY %I ON public.%I FOR SELECT TO anon, authenticated USING (true)',
+      t || '_public_read', t);
+  END LOOP;
+END $$;

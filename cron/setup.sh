@@ -1,98 +1,94 @@
 #!/usr/bin/env bash
-# Setup script for autoresearch cron jobs
+# Setup script for SA Portfolio cron jobs
 # Usage: ./cron/setup.sh [install|uninstall|status]
 
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_DIR="$(dirname "$SCRIPT_DIR")"
-CRON_MARKER="# autoresearch cron jobs"
+CRON_FILE="/etc/cron.d/autoresearch"
 
 usage() {
     echo "Usage: $0 [install|uninstall|status]"
     echo ""
     echo "Commands:"
-    echo "  install    Install cron jobs (merges with existing crontab)"
-    echo "  uninstall  Remove autoresearch cron jobs from crontab"
-    echo "  status     Show current autoresearch cron job status"
+    echo "  install    Install cron jobs to /etc/cron.d/autoresearch"
+    echo "  uninstall  Remove autoresearch cron jobs"
+    echo "  status     Show current cron job status and recent logs"
     echo ""
     echo "The cron jobs will:"
-    echo "  - Run a daily training report at 9pm CET (weekdays)"
-    echo "  - Run overnight auto-research (~100 experiments) at 11pm CET (weekdays)"
-    echo "  - Clean up old logs weekly"
+    echo "  - Loop 1: Daily SA report at 9pm CET (19:00 UTC) on weekdays"
+    echo "  - Loop 2: Auto-research evaluation at 11pm CET (21:00 UTC) on weekdays"
+    echo "  - Cleanup: Remove logs older than 30 days (Sundays at 3am UTC)"
 }
 
 install_crons() {
-    # Make scripts executable
     chmod +x "$SCRIPT_DIR/daily_report.sh"
     chmod +x "$SCRIPT_DIR/auto_research.sh"
-
-    # Create log directory
     mkdir -p "$SCRIPT_DIR/logs"
 
-    # Update REPO_DIR in crontab.conf to actual path
-    CRONTAB_CONTENT="$(sed "s|REPO_DIR=.*|REPO_DIR=$REPO_DIR|" "$SCRIPT_DIR/crontab.conf")"
-
-    # Check if autoresearch crons already installed
-    EXISTING="$(crontab -l 2>/dev/null || true)"
-    if echo "$EXISTING" | grep -q "$CRON_MARKER"; then
-        echo "Autoresearch cron jobs already installed. Updating..."
-        # Remove old entries and add new ones
-        CLEANED="$(echo "$EXISTING" | sed "/$CRON_MARKER/,/^$/d")"
-        echo "$CLEANED"$'\n'"$CRONTAB_CONTENT" | crontab -
-    else
-        # Append to existing crontab
-        if [ -n "$EXISTING" ]; then
-            echo "$EXISTING"$'\n'"$CRONTAB_CONTENT" | crontab -
-        else
-            echo "$CRONTAB_CONTENT" | crontab -
-        fi
+    if [ ! -f "$REPO_DIR/.env" ]; then
+        echo "WARNING: No .env file found at $REPO_DIR/.env"
+        echo "  Supabase integration will be skipped until credentials are configured."
+        echo "  Copy .env.example to .env and fill in your Supabase credentials."
+        echo ""
     fi
 
-    echo "Cron jobs installed successfully."
+    if ! command -v claude &>/dev/null; then
+        echo "ERROR: 'claude' CLI not found in PATH."
+        echo "  Install Claude Code: https://docs.anthropic.com/en/docs/claude-code"
+        exit 1
+    fi
+
+    cat > "$CRON_FILE" <<CRONTAB
+# Situational Awareness Portfolio — Cron Jobs
+# Installed by: $0
+# Repo: $REPO_DIR
+
+SHELL=/bin/bash
+PATH=/usr/local/bin:/usr/bin:/bin
+
+# Loop 1 — Daily SA Report: 9pm CET (19:00 UTC) on weekdays
+0 19 * * 1-5 root $SCRIPT_DIR/daily_report.sh
+
+# Loop 2 — Auto-Research: 11pm CET (21:00 UTC) on weekdays
+0 21 * * 1-5 root $SCRIPT_DIR/auto_research.sh
+
+# Cleanup: Remove logs older than 30 days (Sundays at 3am UTC)
+0 3 * * 0 root find $SCRIPT_DIR/logs -name '*.log' -mtime +30 -delete
+CRONTAB
+
+    echo "Cron jobs installed to $CRON_FILE"
     echo ""
-    echo "Schedule:"
-    echo "  Daily report:   9pm CET (19:00 UTC) Mon-Fri"
-    echo "  Auto-research: 11pm CET (21:00 UTC) Mon-Fri (~100 experiments)"
-    echo "  Log cleanup:    3am UTC Sundays"
+    echo "Schedule (all times weekdays only):"
+    echo "  Loop 1 (Daily Report):   19:00 UTC / 9pm CET"
+    echo "  Loop 2 (Auto-Research):  21:00 UTC / 11pm CET"
+    echo "  Log cleanup:             03:00 UTC Sundays"
     echo ""
     echo "Logs: $SCRIPT_DIR/logs/"
     echo ""
-    echo "To verify: crontab -l"
+    echo "To verify: cat $CRON_FILE"
 }
 
 uninstall_crons() {
-    EXISTING="$(crontab -l 2>/dev/null || true)"
-    if [ -z "$EXISTING" ]; then
-        echo "No crontab found."
-        return
-    fi
-
-    if echo "$EXISTING" | grep -q "$CRON_MARKER"; then
-        # Remove autoresearch block
-        CLEANED="$(echo "$EXISTING" | sed "/$CRON_MARKER/,/^$/d" | sed '/^$/N;/^\n$/d')"
-        if [ -z "$CLEANED" ]; then
-            crontab -r 2>/dev/null || true
-        else
-            echo "$CLEANED" | crontab -
-        fi
-        echo "Autoresearch cron jobs removed."
+    if [ -f "$CRON_FILE" ]; then
+        rm "$CRON_FILE"
+        echo "Cron jobs removed ($CRON_FILE deleted)."
     else
-        echo "No autoresearch cron jobs found in crontab."
+        echo "No autoresearch cron jobs found at $CRON_FILE."
     fi
 }
 
 show_status() {
-    echo "=== Autoresearch Cron Status ==="
+    echo "=== SA Portfolio Cron Status ==="
     echo ""
 
-    # Check if crons are installed
-    EXISTING="$(crontab -l 2>/dev/null || true)"
-    if echo "$EXISTING" | grep -q "$CRON_MARKER"; then
+    if [ -f "$CRON_FILE" ]; then
         echo "Status: INSTALLED"
+        echo "File:   $CRON_FILE"
         echo ""
-        echo "Active cron entries:"
-        echo "$EXISTING" | grep -A1 "$CRON_MARKER" | grep -v "^#" | grep -v "^$" | grep -v "REPO_DIR\|SHELL\|PATH" || true
+        echo "Active entries:"
+        grep -v "^#" "$CRON_FILE" | grep -v "^$" | grep -v "^SHELL\|^PATH" || true
     else
         echo "Status: NOT INSTALLED"
         echo "Run '$0 install' to set up cron jobs."
@@ -100,13 +96,26 @@ show_status() {
 
     echo ""
 
-    # Show recent logs if any
+    if [ -f "$REPO_DIR/.env" ]; then
+        echo "Supabase: configured (.env found)"
+    else
+        echo "Supabase: NOT configured (no .env file)"
+    fi
+
+    echo ""
+
     if [ -d "$SCRIPT_DIR/logs" ]; then
         LOG_COUNT="$(find "$SCRIPT_DIR/logs" -name '*.log' 2>/dev/null | wc -l)"
         echo "Logs: $LOG_COUNT files in $SCRIPT_DIR/logs/"
         if [ "$LOG_COUNT" -gt 0 ]; then
             echo "Latest:"
-            ls -lt "$SCRIPT_DIR/logs/"*.log 2>/dev/null | head -3 | awk '{print "  " $NF " (" $6, $7, $8 ")"}'
+            ls -lt "$SCRIPT_DIR/logs/"*.log 2>/dev/null | head -3 | while read -r line; do
+                FILE="$(echo "$line" | awk '{print $NF}')"
+                SIZE="$(echo "$line" | awk '{print $5}')"
+                DATE="$(echo "$line" | awk '{print $6, $7, $8}')"
+                BASENAME="$(basename "$FILE")"
+                echo "  $BASENAME ($SIZE bytes, $DATE)"
+            done
         fi
     else
         echo "Logs: No log directory yet"
@@ -114,16 +123,15 @@ show_status() {
 
     echo ""
 
-    # Show results summary if available
-    RESULTS_FILE="$REPO_DIR/results.tsv"
+    RESULTS_FILE="$REPO_DIR/auto-research/results.tsv"
     if [ -f "$RESULTS_FILE" ] && [ "$(wc -l < "$RESULTS_FILE")" -gt 1 ]; then
         TOTAL="$(tail -n +2 "$RESULTS_FILE" | wc -l)"
-        KEEPS="$(tail -n +2 "$RESULTS_FILE" | awk -F'\t' '$4=="keep"' | wc -l)"
-        BEST="$(tail -n +2 "$RESULTS_FILE" | awk -F'\t' '$4=="keep" && $2+0>0 {print $2}' | sort -n | head -1)"
-        echo "Results: $TOTAL experiments ($KEEPS kept)"
-        echo "Best val_bpb: ${BEST:-N/A}"
+        KEEPS="$(tail -n +2 "$RESULTS_FILE" | grep -i "keep" | wc -l)"
+        LATEST_CS="$(tail -1 "$RESULTS_FILE" | awk -F'\t' '{print $4}')"
+        echo "Experiments: $TOTAL total ($KEEPS kept)"
+        echo "Latest CS:   ${LATEST_CS:-N/A}"
     else
-        echo "Results: No experiments recorded yet"
+        echo "Experiments: No results recorded yet"
     fi
 }
 
