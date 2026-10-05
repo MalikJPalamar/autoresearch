@@ -282,14 +282,17 @@ MEDIUM-dispute position-sizing rule); the standing format-016/
 format-022 dispute-severity framework (Cross-Source Price Divergence
 Flag, HIGH-Dispute-Severity Signal Hold) is unaffected.
 
-### Stale-Data Mislabel Cross-Check Protocol (format-024, ACTIVE since 2026-10-01, report 2/3)
+### Stale-Data Mislabel Cross-Check Protocol (format-024, KEPT 2026-10-05 — now a standing section)
 
-3-report KEEP/DISCARD against baseline CS 75.81 (the 2026-10-01 CS),
-reverted on DISCARD. Data-presentation/data-source experiment,
-auto-evolve per the 2026-08-20 pre-approval. Motivated by two
-concrete catches in the 2026-10-01 report: a "$587.95" LMT figure and
-a "$129.13" BAH figure, both widely surfaced by WebSearch as
-"current," were traced to data roughly 7 weeks and roughly a year
+3-report KEEP/DISCARD against baseline CS 75.81 (the 2026-10-01 CS)
+resolved 2026-10-05: 3-report average CS 75.83 vs. baseline 75.81
+(delta +0.02) = KEEP (marginal — consistent with this project's
+established practice of keeping thin-margin positive deltas; see the
+2026-10-05 changelog entry for detail). Retained permanently as a
+standing report mechanism, no longer a scored experiment. Motivated
+by two concrete catches in the 2026-10-01 report: a "$587.95" LMT
+figure and a "$129.13" BAH figure, both widely surfaced by WebSearch
+as "current," were traced to data roughly 7 weeks and roughly a year
 stale respectively. Rule: before accepting any WebSearch-sourced
 "today" price as a candidate, cross-check its implied day-over-day or
 multi-day move against the most recent confirmed-dated anchor
@@ -297,14 +300,37 @@ available in the same research pass. If the implied move exceeds
 ~15% with no corroborating same-day news to explain it, treat the
 candidate as a probable stale/mislabeled figure, exclude it from the
 confirmed-price candidate set, and fall back to PENDING/UNCONFIRMED
-rather than use it. Effective starting the 2026-10-01 report.
-Report 2/3 (2026-10-02) was the richest session yet: at least 10
-catches across 10 of 18 tickers, including a repeat of the exact
-chronic LMT "$587.95" stale-source pattern that originally motivated
-the rule, and a new failure mode — an RTX "$215.25" figure that reads
-as a fabricated/ungrounded search-model synthesis rather than merely
-stale cached content. Running 2-report average CS 75.82 vs. baseline
-75.81 (delta +0.01); resolves after report 3/3 (~2026-10-05).
+rather than use it. Effective starting the 2026-10-01 report. Across
+its 3-report run the protocol made at least 25 distinct catches,
+including recurring instances of genuine news events from prior
+months or years (Meta's Feb 2024 dividend announcement, AMD-OpenAI's
+Oct 2025 deal, GOOGL's Sept 2025 antitrust ruling, NVDA's Sept 2025
+OpenAI deal) resurfacing mislabeled as "today," plus at least one
+apparently fabricated/ungrounded search-model synthesis (an RTX
+"$215.25" figure on 2026-10-02).
+
+### Anchor-Chain Price Confirmation Protocol (format-025, ACTIVE since 2026-10-05, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.86 (the 2026-10-05 CS),
+reverted on DISCARD. Data-source/data-presentation refinement to the
+standing format-016/format-022 framework, auto-evolve per the
+2026-08-20 pre-approval. Motivated by a 2026-10-05 AMAT case: two
+sources clustered tightly on price *level* ($514.39 vs $515.12, 0.14%
+apart) but reported mutually inconsistent daily %-changes (+3.91% vs
++1.47%) — strong evidence the two figures were not from the same
+session despite their coincidental proximity. Rule: a "today" price
+candidate may be classified at the dispute-severity tier implied by
+cross-source agreement (format-016) only if it can be arithmetically
+chained to a specific, previously-confirmed dated close via a stated
+%-change that is internally consistent across the corroborating
+sources (e.g. the 2026-10-02 TSM case: Oct 1 close $459.20 × 1.0264 =
+$471.32, matching a same-day headline). Two sources whose price
+levels cluster tightly but whose stated %-changes are mutually
+inconsistent must be classified no better than HIGH, regardless of
+the apparent level agreement. Effective starting the 2026-10-05
+report. Report 1/3: applied to today's own AMAT classification,
+correctly keeping it at HIGH dispute / WATCH rather than reconfirming
+ACCUMULATE on a coincidental, non-corroborating price cluster.
 
 ---
 
