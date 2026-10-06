@@ -3,7 +3,7 @@
   "active_experiment": "format-025",
   "active_experiment_name": "Anchor-Chain Price Confirmation Protocol",
   "experiment_start_date": "2026-10-05",
-  "reports_scored": 0,
+  "reports_scored": 2,
   "baseline_cs": 75.86,
   "awaiting_approval": false,
   "awaiting_approval_since": null,
@@ -11,10 +11,10 @@
   "queued_experiment": null,
   "queued_experiment_name": null,
   "queued_experiment_issue": null,
-  "last_report_date": "2026-10-05",
-  "last_scored_date": "2026-10-05",
-  "last_cs": 75.86,
-  "last_as": 39.64,
+  "last_report_date": "2026-10-06",
+  "last_scored_date": "2026-10-06",
+  "last_cs": 75.85,
+  "last_as": 39.62,
   "updated_by": "loop1+loop2",
-  "updated_at": "2026-10-05T21:15:00Z"
+  "updated_at": "2026-10-06T21:20:00Z"
 }
