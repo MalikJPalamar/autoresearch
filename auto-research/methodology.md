@@ -309,28 +309,54 @@ OpenAI deal) resurfacing mislabeled as "today," plus at least one
 apparently fabricated/ungrounded search-model synthesis (an RTX
 "$215.25" figure on 2026-10-02).
 
-### Anchor-Chain Price Confirmation Protocol (format-025, ACTIVE since 2026-10-05, report 1/3)
+**Known-bad source (added 2026-10-07):** investsmart.com.au has
+repeatedly surfaced an identical "$587.95" LMT figure across many
+non-consecutive sessions since at least early October (now ~7+ weeks
+stale), on 2026-10-07 paired with a derived RSI(14)=67.2 that merely
+rides the same stale price. Treat any investsmart.com.au LMT figure
+matching "$587.95" as a permanently-known-bad cached page, not a
+fresh candidate requiring the implied-move check each time.
 
-3-report KEEP/DISCARD against baseline CS 75.86 (the 2026-10-05 CS),
-reverted on DISCARD. Data-source/data-presentation refinement to the
-standing format-016/format-022 framework, auto-evolve per the
-2026-08-20 pre-approval. Motivated by a 2026-10-05 AMAT case: two
-sources clustered tightly on price *level* ($514.39 vs $515.12, 0.14%
-apart) but reported mutually inconsistent daily %-changes (+3.91% vs
-+1.47%) — strong evidence the two figures were not from the same
-session despite their coincidental proximity. Rule: a "today" price
-candidate may be classified at the dispute-severity tier implied by
-cross-source agreement (format-016) only if it can be arithmetically
-chained to a specific, previously-confirmed dated close via a stated
-%-change that is internally consistent across the corroborating
-sources (e.g. the 2026-10-02 TSM case: Oct 1 close $459.20 × 1.0264 =
-$471.32, matching a same-day headline). Two sources whose price
-levels cluster tightly but whose stated %-changes are mutually
-inconsistent must be classified no better than HIGH, regardless of
-the apparent level agreement. Effective starting the 2026-10-05
-report. Report 1/3: applied to today's own AMAT classification,
-correctly keeping it at HIGH dispute / WATCH rather than reconfirming
-ACCUMULATE on a coincidental, non-corroborating price cluster.
+### Anchor-Chain Price Confirmation Protocol (format-025) — DISCARDED 2026-10-07
+
+format-025 ran its full 3-report evaluation (2026-10-05 → 2026-10-07)
+and was DISCARDED: 3-report average CS 75.857 vs. baseline 75.86
+(delta -0.003, effectively zero). Per this project's exact/near-zero-
+delta precedent (format-015, format-023), reverted per the auto-evolve
+rule. The rule fired twice across its run (CEG and RTX on 2026-10-06),
+correctly classifying both HIGH rather than MEDIUM, but with AC/CV
+saturated at 100/100 this was too rare to move a cumulative 1000+
+decision AS denominator. See the 2026-10-07 changelog entry for
+detail. This section is reverted to its pre-2026-10-05 form (no
+dedicated anchor-chain scoring rule); the underlying insight — that
+tight price-level clustering can mask a mutually inconsistent
+%-change chain — remains available as informal good practice within
+the standing format-016/format-022 dispute-severity framework, which
+is unaffected.
+
+### Duplicate-Session Stale-Feed Detection Protocol (format-026, ACTIVE since 2026-10-07, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.86 (the 2026-10-07 CS),
+reverted on DISCARD. Data-source/data-presentation refinement,
+auto-evolve per the 2026-08-20 pre-approval. Motivated by a repeating
+pattern first seen 2026-10-06: a "today" price candidate that matches
+a prior session's already-logged, already-excluded figure verbatim —
+identical price, $-change, *and* %-change — rather than merely a
+stale-but-different number. By 2026-10-07 this had recurred for a 2nd
+consecutive session on NVDA/AMD/MSFT/META and a 3rd consecutive
+session on AMAT. Rule: when a "today" price candidate exactly matches
+(price, $-change, and %-change all identical) a figure already logged
+and excluded for that ticker in a prior session's report, classify it
+as a confirmed frozen-feed artifact (a stronger-confidence subset of
+the standing format-024 stale-data check) and (a) exclude it as
+usual; (b) track and report the consecutive-session count for that
+ticker; (c) once a ticker reaches 3 consecutive sessions of the exact
+pattern, flag its WebSearch-sourced price as structurally unreliable
+in the report until a genuinely new, non-duplicate figure appears.
+Effective starting the 2026-10-07 report. Report 1/3: applied to
+NVDA/AMD/MSFT/META (2nd consecutive session, flagged) and AMAT (3rd
+consecutive session — the escalation threshold fires for the first
+time).
 
 ---
 
