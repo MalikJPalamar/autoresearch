@@ -317,6 +317,18 @@ rides the same stale price. Treat any investsmart.com.au LMT figure
 matching "$587.95" as a permanently-known-bad cached page, not a
 fresh candidate requiring the implied-move check each time.
 
+**Known-bad source generalized (added 2026-10-08):** investsmart.com.au
+is now treated as a broadly unreliable/frozen-cache source, not just
+for the LMT "$587.95" figure. On 2026-10-08 the same domain showed
+internally self-contradictory "current" prices for RTX ($197.55 on
+4+ pages vs. $198.81 on another, all labeled "current") and was
+confirmed as the specific serial source behind the NVDA/AMD/META
+exact-duplicate figures driving the format-026 escalations that
+session. Treat any "current price" figure from investsmart.com.au
+for any of the 18 tickers with elevated suspicion by default, and
+cross-check it against at least one other source before using it —
+do not rely on it as a sole source.
+
 ### Anchor-Chain Price Confirmation Protocol (format-025) — DISCARDED 2026-10-07
 
 format-025 ran its full 3-report evaluation (2026-10-05 → 2026-10-07)
@@ -334,7 +346,7 @@ tight price-level clustering can mask a mutually inconsistent
 the standing format-016/format-022 dispute-severity framework, which
 is unaffected.
 
-### Duplicate-Session Stale-Feed Detection Protocol (format-026, ACTIVE since 2026-10-07, report 1/3)
+### Duplicate-Session Stale-Feed Detection Protocol (format-026, ACTIVE since 2026-10-07, report 2/3)
 
 3-report KEEP/DISCARD against baseline CS 75.86 (the 2026-10-07 CS),
 reverted on DISCARD. Data-source/data-presentation refinement,
@@ -356,7 +368,14 @@ in the report until a genuinely new, non-duplicate figure appears.
 Effective starting the 2026-10-07 report. Report 1/3: applied to
 NVDA/AMD/MSFT/META (2nd consecutive session, flagged) and AMAT (3rd
 consecutive session — the escalation threshold fires for the first
-time).
+time). Report 2/3 (2026-10-08): NVDA/AMD/META reached their own 3rd
+consecutive session and crossed the escalation threshold; MSFT's
+streak broke (different, non-duplicate noise, still unusable); AMAT's
+streak broke with a genuinely fresh, corroborated price ($509.57,
+-2.13%), the clearest demonstration yet that the escalation flag
+signals temporary unreliability rather than a permanent blacklist.
+Running 2-report average CS 75.86 vs. baseline 75.86 — one more
+report needed to resolve.
 
 ---
 
