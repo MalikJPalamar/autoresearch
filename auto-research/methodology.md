@@ -346,36 +346,48 @@ tight price-level clustering can mask a mutually inconsistent
 the standing format-016/format-022 dispute-severity framework, which
 is unaffected.
 
-### Duplicate-Session Stale-Feed Detection Protocol (format-026, ACTIVE since 2026-10-07, report 2/3)
+### Duplicate-Session Stale-Feed Detection Protocol (format-026) — DISCARDED 2026-10-09
 
-3-report KEEP/DISCARD against baseline CS 75.86 (the 2026-10-07 CS),
+format-026 ran its full 3-report evaluation (2026-10-07 → 2026-10-09)
+and was DISCARDED: 3-report average CS 75.85 vs. baseline 75.86
+(delta -0.01). Per this project's near-zero/negative-delta precedent
+(format-015, format-021, format-023, format-025), reverted per the
+auto-evolve rule. The rule fired repeatedly and correctly — NVDA,
+AMD, and META each reached a 4th consecutive session of an
+exact-duplicate frozen feed by report 3/3, and AMAT cleanly
+demonstrated the escalation flag's "temporary, not permanent"
+semantics by breaking its own 3-session streak with a genuinely
+fresh price on 2026-10-08 — but with AC/CV saturated at 100/100 this
+was too small an effect to move a cumulative 1000+-decision AS
+denominator. See the 2026-10-09 changelog entry for detail. This
+section is reverted to its pre-2026-10-07 form (no dedicated
+duplicate-session tracking/escalation mechanism); exact-duplicate
+figures remain informally excludable as a strict subset of the
+standing format-024 Stale-Data Mislabel Cross-Check, which is
+unaffected.
+
+### Known-Bad-Source Registry & Same-Session Self-Contradiction Flag (format-027, ACTIVE since 2026-10-09, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.84 (the 2026-10-09 CS),
 reverted on DISCARD. Data-source/data-presentation refinement,
-auto-evolve per the 2026-08-20 pre-approval. Motivated by a repeating
-pattern first seen 2026-10-06: a "today" price candidate that matches
-a prior session's already-logged, already-excluded figure verbatim —
-identical price, $-change, *and* %-change — rather than merely a
-stale-but-different number. By 2026-10-07 this had recurred for a 2nd
-consecutive session on NVDA/AMD/MSFT/META and a 3rd consecutive
-session on AMAT. Rule: when a "today" price candidate exactly matches
-(price, $-change, and %-change all identical) a figure already logged
-and excluded for that ticker in a prior session's report, classify it
-as a confirmed frozen-feed artifact (a stronger-confidence subset of
-the standing format-024 stale-data check) and (a) exclude it as
-usual; (b) track and report the consecutive-session count for that
-ticker; (c) once a ticker reaches 3 consecutive sessions of the exact
-pattern, flag its WebSearch-sourced price as structurally unreliable
-in the report until a genuinely new, non-duplicate figure appears.
-Effective starting the 2026-10-07 report. Report 1/3: applied to
-NVDA/AMD/MSFT/META (2nd consecutive session, flagged) and AMAT (3rd
-consecutive session — the escalation threshold fires for the first
-time). Report 2/3 (2026-10-08): NVDA/AMD/META reached their own 3rd
-consecutive session and crossed the escalation threshold; MSFT's
-streak broke (different, non-duplicate noise, still unusable); AMAT's
-streak broke with a genuinely fresh, corroborated price ($509.57,
--2.13%), the clearest demonstration yet that the escalation flag
-signals temporary unreliability rather than a permanent blacklist.
-Running 2-report average CS 75.86 vs. baseline 75.86 — one more
-report needed to resolve.
+auto-evolve per the 2026-08-20 pre-approval. Motivated by two
+compounding findings on 2026-10-09: investsmart.com.au (already
+flagged for LMT/RTX/NVDA/AMD/META) also served internally
+inconsistent figures for AMAT/ASML/LRCX that implied previous closes
+inconsistent with the prior day's confirmed figures; and, newly, the
+WebSearch summarization layer itself produced self-contradictory
+output from otherwise-reputable aggregators (conflicting
+intraday/close timestamps for the same date; an incorrect
+day-of-week/weekend claim on a Friday trading day). Rule: (a)
+maintain a running registry of domains confirmed unreliable across
+2+ prior sessions (seed: investsmart.com.au); any price from a
+registry-listed domain is excluded by default without re-deriving
+the implied-move check each time, unless independently corroborated
+by a second, non-listed source; (b) when a single source's own
+snippets internally contradict each other within the same research
+pass, flag that source as unreliable for the session, exclude it,
+and log the specific contradiction found. Effective starting the
+2026-10-09 report.
 
 ---
 
