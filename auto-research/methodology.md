@@ -366,28 +366,49 @@ figures remain informally excludable as a strict subset of the
 standing format-024 Stale-Data Mislabel Cross-Check, which is
 unaffected.
 
-### Known-Bad-Source Registry & Same-Session Self-Contradiction Flag (format-027, ACTIVE since 2026-10-09, report 1/3)
+### Known-Bad-Source Registry & Same-Session Self-Contradiction Flag (format-027) — DISCARDED 2026-10-13
 
-3-report KEEP/DISCARD against baseline CS 75.84 (the 2026-10-09 CS),
-reverted on DISCARD. Data-source/data-presentation refinement,
-auto-evolve per the 2026-08-20 pre-approval. Motivated by two
-compounding findings on 2026-10-09: investsmart.com.au (already
-flagged for LMT/RTX/NVDA/AMD/META) also served internally
-inconsistent figures for AMAT/ASML/LRCX that implied previous closes
-inconsistent with the prior day's confirmed figures; and, newly, the
-WebSearch summarization layer itself produced self-contradictory
-output from otherwise-reputable aggregators (conflicting
-intraday/close timestamps for the same date; an incorrect
-day-of-week/weekend claim on a Friday trading day). Rule: (a)
-maintain a running registry of domains confirmed unreliable across
-2+ prior sessions (seed: investsmart.com.au); any price from a
-registry-listed domain is excluded by default without re-deriving
-the implied-move check each time, unless independently corroborated
-by a second, non-listed source; (b) when a single source's own
-snippets internally contradict each other within the same research
-pass, flag that source as unreliable for the session, exclude it,
-and log the specific contradiction found. Effective starting the
-2026-10-09 report.
+format-027 ran its full 3-report evaluation (2026-10-09 → 2026-10-13)
+and was DISCARDED: 3-report average CS 75.843 vs. baseline 75.84
+(delta +0.003, rounding to 0.00). Per this project's exact-zero-delta
+precedent (format-015, format-023; format-025's -0.003 treated
+identically), reverted per the auto-evolve rule. The rule fired
+repeatedly and correctly throughout its run — investsmart.com.au's
+chronic frozen NVDA/AMD/META/LMT/RTX digits, its AMAT/LRCX
+stale-recycling variant, a TSM day-of-week sanity failure, a TSM
+same-session self-contradiction (2026-10-12), and a further TSM
+stale-recycling catch (2026-10-13) — but with AC/CV saturated at
+100/100 this was too small an effect to move a cumulative
+1000+-decision AS denominator. See the 2026-10-13 changelog entry
+for detail. This section is reverted to its pre-2026-10-09 form (no
+dedicated registry/self-contradiction mechanism); investsmart.com.au's
+demonstrated unreliability and the self-contradiction check remain
+informally live under the standing format-024 Stale-Data Mislabel
+Cross-Check Protocol below, which already treats repeat-offender
+domains with elevated suspicion by default.
+
+### Correlation-Breakdown Signal Confirmation Override (format-028, ACTIVE since 2026-10-13, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.85 (the 2026-10-13 CS),
+reverted on DISCARD. Signal-logic, auto-evolve per the 2026-08-20
+pre-approval. Motivated by the Phase 3 rollout list being exhausted
+and the recurring meta-finding across format-012/017/018/020/021 that
+single-event override triggers (RSI threshold, golden/death cross,
+MACD crossover, earnings beat/miss, extreme volume) fire too rarely
+to move CS against a saturated AC/CV and a 1000+-decision AS
+denominator. This rule instead keys off the standing format-013
+Correlation Breakdown Alert trigger (a >2% same-day divergence from a
+ticker's sector aggregate, or a standing cross-sector rotation pattern
+visibly breaking down), which occurs far more often than a single
+dated technical/event crossover. Rule: when such a divergence is
+found **and** is attributable to a confirmed, genuinely-dated,
+ticker-specific catalyst (not shared sector beta), upgrade a WATCH
+signal toward the implied direction — ACCUMULATE for a positive
+idiosyncratic divergence, or a flagged bearish-tilt note (not a
+mechanical AVOID) for a negative one. A divergence explained by shared
+sector-wide movement (profit-taking, sector rotation, broad risk-on/
+risk-off) does not qualify and must not fire. Effective starting the
+2026-10-13 report.
 
 ---
 
