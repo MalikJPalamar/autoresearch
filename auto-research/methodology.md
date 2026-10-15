@@ -387,28 +387,56 @@ informally live under the standing format-024 Stale-Data Mislabel
 Cross-Check Protocol below, which already treats repeat-offender
 domains with elevated suspicion by default.
 
-### Correlation-Breakdown Signal Confirmation Override (format-028, ACTIVE since 2026-10-13, report 1/3)
+### Correlation-Breakdown Signal Confirmation Override (format-028) — DISCARDED 2026-10-15
 
-3-report KEEP/DISCARD against baseline CS 75.85 (the 2026-10-13 CS),
+format-028 ran its full 3-report evaluation (2026-10-13 → 2026-10-15)
+and was DISCARDED: 3-report average CS 75.847 vs. baseline 75.85
+(delta -0.003, effectively zero). Per this project's exact/near-zero-
+delta precedent (format-015, format-023; format-025's -0.003 and
+format-027's +0.003 treated identically), reverted per the auto-evolve
+rule. This was the most frequently-firing rule yet in the "confirmed-
+same-session-event override" family: 0 candidates fired on report 1/3
+(2026-10-13 — AMAT's divergence correctly declined as shared sector
+beta, not idiosyncratic), 3 genuine fires on report 2/3 (2026-10-14 —
+NVDA/AMD/META bearish-tilt flags on a confirmed CPI-driven divergence
+from GOOGL/MSFT, each tied to a dated idiosyncratic catalyst:
+AI-infrastructure financing/credit risk for NVDA, the OpenAI revenue-
+run-rate dispute for AMD, an above-consensus capex estimate for META),
+and 0 fires on report 3/3 (2026-10-15 — not a decline on the merits
+but a total data blackout across all 5 AI Compute tickers, leaving no
+confirmed same-day move to evaluate at all). Despite the real fires,
+the effect was still too small to move a cumulative 1000+-decision AS
+denominator with AC/CV saturated at 100/100. See the 2026-10-15
+changelog entry for detail. This section is reverted to its
+pre-2026-10-13 form (no correlation-breakdown confirmation override
+rule); the bearish-tilt flags already logged on NVDA/AMD/META on
+2026-10-14 are not retroactively undone — consistent with how
+format-019's real fires were treated — and the standing format-013
+Correlation Breakdown Alerts mechanism this rule built on top of is
+unaffected.
+
+### Pre-Earnings Positioning Signal Dampener (format-029, ACTIVE since 2026-10-15, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.85 (the 2026-10-15 CS),
 reverted on DISCARD. Signal-logic, auto-evolve per the 2026-08-20
-pre-approval. Motivated by the Phase 3 rollout list being exhausted
-and the recurring meta-finding across format-012/017/018/020/021 that
-single-event override triggers (RSI threshold, golden/death cross,
-MACD crossover, earnings beat/miss, extreme volume) fire too rarely
-to move CS against a saturated AC/CV and a 1000+-decision AS
-denominator. This rule instead keys off the standing format-013
-Correlation Breakdown Alert trigger (a >2% same-day divergence from a
-ticker's sector aggregate, or a standing cross-sector rotation pattern
-visibly breaking down), which occurs far more often than a single
-dated technical/event crossover. Rule: when such a divergence is
-found **and** is attributable to a confirmed, genuinely-dated,
-ticker-specific catalyst (not shared sector beta), upgrade a WATCH
-signal toward the implied direction — ACCUMULATE for a positive
-idiosyncratic divergence, or a flagged bearish-tilt note (not a
-mechanical AVOID) for a negative one. A divergence explained by shared
-sector-wide movement (profit-taking, sector rotation, broad risk-on/
-risk-off) does not qualify and must not fire. Effective starting the
-2026-10-13 report.
+pre-approval. Motivated by format-028's resolution leaving the Phase 3
+rollout list exhausted, and by an imminent earnings cluster across the
+portfolio (TSM reported 2026-10-15; ASML 2026-10-14; META 2026-10-21;
+RTX 2026-10-20; LMT 2026-10-22; BAH 2026-10-23 — all confirmed
+company dates) that gives this rule a materially higher expected fire
+rate than the single-event technical/catalyst overrides that kept
+discarding on zero fires (format-012/017/018/020/021) or on too-rare
+real fires (format-019, format-028). Rule: when a ticker has a
+confirmed earnings date within ±3 trading days of the report date,
+suppress any discretionary signal-tier change (upgrade or downgrade)
+that would otherwise be made primarily on that ticker's pre/post-
+earnings price action alone (noise/positioning, not a confirmed
+non-earnings fundamental catalyst) — hold the signal at its current
+tier and log explicitly that the dampener suppressed what would
+otherwise have been a discretionary change. A tier change motivated by
+a distinct, confirmed, non-earnings catalyst (e.g., an analyst action,
+a contract win, a macro-driven correlation breakdown) is unaffected
+and may still fire normally. Effective starting the 2026-10-15 report.
 
 ---
 
