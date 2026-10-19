@@ -415,28 +415,56 @@ format-019's real fires were treated — and the standing format-013
 Correlation Breakdown Alerts mechanism this rule built on top of is
 unaffected.
 
-### Pre-Earnings Positioning Signal Dampener (format-029, ACTIVE since 2026-10-15, report 1/3)
+### Pre-Earnings Positioning Signal Dampener (format-029) — DISCARDED 2026-10-19
 
-3-report KEEP/DISCARD against baseline CS 75.85 (the 2026-10-15 CS),
-reverted on DISCARD. Signal-logic, auto-evolve per the 2026-08-20
-pre-approval. Motivated by format-028's resolution leaving the Phase 3
-rollout list exhausted, and by an imminent earnings cluster across the
-portfolio (TSM reported 2026-10-15; ASML 2026-10-14; META 2026-10-21;
-RTX 2026-10-20; LMT 2026-10-22; BAH 2026-10-23 — all confirmed
-company dates) that gives this rule a materially higher expected fire
-rate than the single-event technical/catalyst overrides that kept
-discarding on zero fires (format-012/017/018/020/021) or on too-rare
-real fires (format-019, format-028). Rule: when a ticker has a
-confirmed earnings date within ±3 trading days of the report date,
-suppress any discretionary signal-tier change (upgrade or downgrade)
-that would otherwise be made primarily on that ticker's pre/post-
-earnings price action alone (noise/positioning, not a confirmed
-non-earnings fundamental catalyst) — hold the signal at its current
-tier and log explicitly that the dampener suppressed what would
-otherwise have been a discretionary change. A tier change motivated by
-a distinct, confirmed, non-earnings catalyst (e.g., an analyst action,
-a contract win, a macro-driven correlation breakdown) is unaffected
-and may still fire normally. Effective starting the 2026-10-15 report.
+format-029 ran its full 3-report evaluation (2026-10-15 → 2026-10-19)
+and was DISCARDED: 3-report average CS 75.80 vs. baseline 75.85
+(delta -0.05). Reverted per the auto-evolve rule. Firing history:
+report 1/3 (Oct 15) had 0 eligible tickers in the ±3-trading-day
+earnings window at all; report 2/3 (Oct 16) had 2 eligible tickers
+(RTX, META) but 0 pending discretionary changes to suppress; report
+3/3 (Oct 19) had 3 eligible tickers (RTX, META, LMT) and produced the
+rule's one genuine fire of its entire run, suppressing META's
+format-022 hold-lift reversion to ACCUMULATE given its Oct 21 earnings
+were 2 trading days out. This is a cleaner result than most of the
+"confirmed-same-session-event override" family's zero-fire discards
+(format-012/017/018/020/021) — the rule did fire once, correctly in
+spirit — but one suppression across 54 ticker-report evaluations was
+not enough to move a cumulative 1000+-decision AS denominator, and the
+3-report CS decline was itself dominated by the historic Oct 12
+signal batch (6/18 decisive, 0 correct) scored on the resolution day,
+not by the dampener logic. See the 2026-10-19 changelog entry for
+detail. This section is reverted to its pre-2026-10-15 form (no
+pre-earnings positioning dampener rule); the one real suppression
+already logged (META, 2026-10-19) is not retroactively undone —
+consistent with how format-019's and format-028's real fires were
+treated on their own DISCARDs.
+
+### Confirmed RSI/Trend Momentum Tilt (format-030, ACTIVE since 2026-10-19, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.74 (the 2026-10-19 CS,
+after format-029's DISCARD is folded in), reverted on DISCARD.
+Signal-logic, auto-evolve per the 2026-08-20 pre-approval. Motivated
+by the entire "confirmed-same-session-event override" family
+(format-012/017/018/019/020/021/028/029) having run out of statistical
+power: each fires on at most a handful of 18 tickers per report, gated
+behind a rare dated catalyst, which cannot move a CS computed against
+a 1000+-decision cumulative AS denominator with AC/CV saturated at
+100/100. format-030 instead evaluates **every** ticker's confirmed
+same-session RSI(14) against this methodology's own existing
+oversold/overbought thresholds (<30 / >70, as already used in the
+Sector RS Ranking section below) every single report, independent of
+news flow — a condition most tickers have some reading for in most
+sessions, giving this rule a structurally higher expected fire
+frequency than any prior member of the override family. Rule: for any
+ticker with a confirmed or specifically-timestamped-and-uncontradicted
+same-session RSI(14) reading, if RSI ≤ 30 (oversold) and that ticker's
+sector carries a STRONG or STRONGEST Aschenbrenner alignment (thesis
+intact), upgrade a WATCH signal to CONTRARIAN; if RSI ≥ 70 (overbought)
+and the ticker is currently above WATCH, flag an explicit overbought
+caution and consider a one-tier downgrade toward WATCH absent a fresh
+confirmatory catalyst. All other readings leave the signal unchanged.
+Effective starting the 2026-10-19 report.
 
 ---
 
