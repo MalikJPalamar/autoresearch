@@ -440,31 +440,53 @@ already logged (META, 2026-10-19) is not retroactively undone —
 consistent with how format-019's and format-028's real fires were
 treated on their own DISCARDs.
 
-### Confirmed RSI/Trend Momentum Tilt (format-030, ACTIVE since 2026-10-19, report 1/3)
+### Confirmed RSI/Trend Momentum Tilt (format-030) — DISCARDED 2026-10-21
 
-3-report KEEP/DISCARD against baseline CS 75.74 (the 2026-10-19 CS,
-after format-029's DISCARD is folded in), reverted on DISCARD.
+format-030 ran its full 3-report evaluation (2026-10-19 → 2026-10-21)
+and was DISCARDED: 3-report average CS 75.68 vs. baseline 75.74
+(delta -0.06). Reverted per the auto-evolve rule. The rule never
+fired a single override in any of its 3 evaluation reports — no
+ticker on any of the 3 sessions ever produced a confirmed or
+specifically-timestamped-and-uncontradicted same-session RSI(14)
+reading at all (not merely a non-qualifying value), a complete
+data-availability gap driven by `scripts/prices.sh`'s now-41-session
+block plus WebFetch's non-functional state on 2 of the 3 evaluation
+days — so the decision reflects the chronic data-access conditions,
+not a demonstrated defect in the RSI-threshold logic itself. This is
+despite format-030 being deliberately designed to fire more often
+than the "confirmed-same-session-event override" family it was meant
+to improve on (evaluating every ticker every day rather than gating
+behind a rare dated catalyst) — even that structural advantage could
+not overcome a run where the underlying RSI data itself was never
+once confirmed-available. See the 2026-10-21 changelog entry for
+detail. This section is reverted to its pre-2026-10-19 form (no
+RSI-threshold momentum-tilt rule).
+
+### Confirmed Multi-Day Trend Momentum Tilt (format-031, ACTIVE since 2026-10-21, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.64 (the 2026-10-21 CS,
+after format-030's DISCARD is folded in), reverted on DISCARD.
 Signal-logic, auto-evolve per the 2026-08-20 pre-approval. Motivated
-by the entire "confirmed-same-session-event override" family
-(format-012/017/018/019/020/021/028/029) having run out of statistical
-power: each fires on at most a handful of 18 tickers per report, gated
-behind a rare dated catalyst, which cannot move a CS computed against
-a 1000+-decision cumulative AS denominator with AC/CV saturated at
-100/100. format-030 instead evaluates **every** ticker's confirmed
-same-session RSI(14) against this methodology's own existing
-oversold/overbought thresholds (<30 / >70, as already used in the
-Sector RS Ranking section below) every single report, independent of
-news flow — a condition most tickers have some reading for in most
-sessions, giving this rule a structurally higher expected fire
-frequency than any prior member of the override family. Rule: for any
+directly by format-030's failure mode: RSI requires a dedicated
+technicals source, which has been unconfirmable for weeks under
+current data-access conditions. This project's own standing Sector
+Relative Strength Ranking section (format-003) already computes an
+**N-day return** for every ticker from nothing more than two
+confirmed prices (today's and a prior session's) — a structurally
+more available input than RSI, since it needs no dedicated
+technicals page, only the same price data this report already
+gathers (or, on a data-gap day, carries forward). Rule: for any
 ticker with a confirmed or specifically-timestamped-and-uncontradicted
-same-session RSI(14) reading, if RSI ≤ 30 (oversold) and that ticker's
+multi-day cumulative return (measured over the same window used in
+the standing Sector RS Ranking section, typically since the last
+report or ~5 trading days on a data-gap day) of ≤ -10% and whose
 sector carries a STRONG or STRONGEST Aschenbrenner alignment (thesis
-intact), upgrade a WATCH signal to CONTRARIAN; if RSI ≥ 70 (overbought)
-and the ticker is currently above WATCH, flag an explicit overbought
-caution and consider a one-tier downgrade toward WATCH absent a fresh
-confirmatory catalyst. All other readings leave the signal unchanged.
-Effective starting the 2026-10-19 report.
+intact), upgrade a WATCH signal to CONTRARIAN; if the cumulative
+return is ≥ +15% and the ticker is currently above WATCH, flag an
+explicit overbought/extended caution and consider a one-tier
+downgrade toward WATCH absent a fresh confirmatory catalyst. All
+other readings leave the signal unchanged. Effective starting the
+2026-10-21 report.
 
 ---
 
