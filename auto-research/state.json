@@ -3,7 +3,7 @@
   "active_experiment": "format-031",
   "active_experiment_name": "Confirmed Multi-Day Trend Momentum Tilt",
   "experiment_start_date": "2026-10-21",
-  "reports_scored": 1,
+  "reports_scored": 2,
   "baseline_cs": 75.64,
   "awaiting_approval": false,
   "awaiting_approval_since": null,
@@ -11,10 +11,10 @@
   "queued_experiment": null,
   "queued_experiment_name": null,
   "queued_experiment_issue": null,
-  "last_report_date": "2026-10-21",
-  "last_scored_date": "2026-10-21",
-  "last_cs": 75.64,
-  "last_as": 39.10,
+  "last_report_date": "2026-10-22",
+  "last_scored_date": "2026-10-22",
+  "last_cs": 75.63,
+  "last_as": 39.07,
   "updated_by": "loop1+loop2",
-  "updated_at": "2026-10-21T21:30:00Z"
+  "updated_at": "2026-10-22T21:30:00Z"
 }
