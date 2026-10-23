@@ -462,31 +462,56 @@ once confirmed-available. See the 2026-10-21 changelog entry for
 detail. This section is reverted to its pre-2026-10-19 form (no
 RSI-threshold momentum-tilt rule).
 
-### Confirmed Multi-Day Trend Momentum Tilt (format-031, ACTIVE since 2026-10-21, report 1/3)
+### Confirmed Multi-Day Trend Momentum Tilt (format-031) — DISCARDED 2026-10-23
 
-3-report KEEP/DISCARD against baseline CS 75.64 (the 2026-10-21 CS,
-after format-030's DISCARD is folded in), reverted on DISCARD.
-Signal-logic, auto-evolve per the 2026-08-20 pre-approval. Motivated
-directly by format-030's failure mode: RSI requires a dedicated
-technicals source, which has been unconfirmable for weeks under
-current data-access conditions. This project's own standing Sector
-Relative Strength Ranking section (format-003) already computes an
-**N-day return** for every ticker from nothing more than two
-confirmed prices (today's and a prior session's) — a structurally
-more available input than RSI, since it needs no dedicated
-technicals page, only the same price data this report already
-gathers (or, on a data-gap day, carries forward). Rule: for any
-ticker with a confirmed or specifically-timestamped-and-uncontradicted
-multi-day cumulative return (measured over the same window used in
-the standing Sector RS Ranking section, typically since the last
-report or ~5 trading days on a data-gap day) of ≤ -10% and whose
-sector carries a STRONG or STRONGEST Aschenbrenner alignment (thesis
-intact), upgrade a WATCH signal to CONTRARIAN; if the cumulative
-return is ≥ +15% and the ticker is currently above WATCH, flag an
-explicit overbought/extended caution and consider a one-tier
-downgrade toward WATCH absent a fresh confirmatory catalyst. All
-other readings leave the signal unchanged. Effective starting the
-2026-10-21 report.
+format-031 ran its full 3-report evaluation (2026-10-21 → 2026-10-23)
+and was DISCARDED: 3-report average CS 75.633 vs. baseline 75.64
+(delta -0.01). Per this project's near-zero/negative-delta precedent
+(format-015, format-023, format-025, format-027, format-028,
+format-029), reverted per the auto-evolve rule. The rule fired once
+across its run — LRCX WATCH→CONTRARIAN on 2026-10-23 (its own
+resolution day), on a confirmed-anchor-to-specifically-timestamped
+cumulative return of approximately -12.6% (Oct 20's confirmed $263.45
+close to Oct 23's Finviz-timestamped $230.18) in the STRONGEST-aligned
+Semiconductors sector — correctly identifying a thesis-intact,
+sector-sympathy-driven drawdown as contrarian value, in the same
+"logic worked, CS didn't move" pattern as format-019's, format-028's,
+and format-029's real-but-too-small fires. One fire across 54
+ticker-report evaluations was not enough to move a cumulative
+1000+-decision AS denominator with AC/CV saturated at 100/100. See
+the 2026-10-23 changelog entry for detail. This section is reverted
+to its pre-2026-10-21 form (no multi-day trend-momentum-tilt rule);
+the one real fire (LRCX, 2026-10-23) is not retroactively undone.
+
+### Near-Date Base Substitution Protocol (format-032, ACTIVE since 2026-10-23, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.63 (the 2026-10-23 CS,
+after format-031's DISCARD is folded in), reverted on DISCARD.
+Signal-logic/scoring-methodology, auto-evolve per the 2026-08-20
+pre-approval. Motivated by a distinct failure mode from the
+"confirmed-same-session-event override" family (format-012 through
+format-031): the chronic `scripts/prices.sh` outage (43+ sessions)
+and recurring WebFetch failures have driven an extremely high
+PENDING rate in 5-day-lookback scoring — the 2026-10-23 report's own
+Oct 16 batch scored 0% decisive because every one of the 18 tickers
+had "no confirmed print" on the origin day itself, not merely on the
+scoring day. A batch that is 0-18% decisive each cycle gives the AS
+metric very little signal to move on regardless of signal quality.
+Rule: when a ticker's origin-day report logged "no usable base"/"no
+confirmed print," but a confirmed or specifically-timestamped-and-
+uncontradicted price for that same ticker was found within ±1
+trading day of the origin date (either already published in that
+neighboring day's report, or surfaced via WebSearch this session and
+attributable with confidence to a specific neighboring date),
+substitute that near-date price as the effective scoring base —
+explicitly flagged in the scoring table as a **substituted base**
+(near-date, not exact-date) rather than silently treated as exact.
+All other scoring mechanics (≥1% match/contradiction, the
+neutral-signal gap, etc.) apply unchanged to the substituted base. A
+base with no price found within ±1 trading day of origin still stays
+PENDING — this narrows, but does not eliminate, the PENDING rate.
+Effective starting the 2026-10-23 report, first substantively
+testable on the next 5-day-lookback scoring pass (~2026-10-26).
 
 ---
 
