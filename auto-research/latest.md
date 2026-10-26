@@ -1,30 +1,28 @@
-# SA Portfolio Daily Report — 2026-10-23
+# SA Portfolio Daily Report — 2026-10-26
 
-**Methodology:** v1.4 | **Experiment:** format-031 Confirmed Multi-Day Trend Momentum Tilt (report 3/3, RESOLVING today) | **Market Status:** POST-CLOSE (Friday, normal session) | **`scripts/prices.sh` BLOCKED 43rd consecutive session** (all-18 null, `source: none`; proxy confirms `403 connect_rejected` on both Yahoo and Stooq) | **WebFetch non-functional for a 4th consecutive session** (`getaddrinfo ENOTFOUND` on both finance domains and a non-finance control, `en.wikipedia.org`) — all research is WebSearch-summary-only | **Broad market down, Dow leading for once**: Dow -652.82 (-1.23%) to 52,215.16, S&P 500 -0.52% to 7,623.68, Nasdaq -0.21% to 25,955.34 (CNBC's dated Oct-23 live blog, cross-checked against Investing.com's independent Booz Allen earnings piece citing "S&P 500 down 0.5%, Dow down 1.2% in morning trading") — a reversal of this week's usual Nasdaq-leads-the-decline pattern, as tech stabilized somewhat after Thursday's rout while the Dow absorbed today's hit | **Oil extended its rise on Middle East escalation** (Brent reportedly near $113-114, single-sourced on the exact level but the "oil jumps on reports of Saudi energy-facility attacks" driver is corroborated by at least 4 independent outlets) | **LRCX, RTX, and PLTR each produced a single-sourced but specifically-timestamped intraday print today** — LRCX $230.18 (+0.01%, Finviz, 2:38pm ET), RTX $191.33 (-1.74%, 12:24pm ET, prior close $194.71), PLTR $195.25 (-0.48%, Reuters-sourced, 10:35am ET) | **BAH reported fiscal Q2 2027 before today's open**: adjusted EPS $1.76 beat ($1.48 est., +18.9%), but revenue $2.78B missed ($2.81B est., -3.9% YoY); FY2027 EPS guidance raised to $6.50-6.70 (from $6.00-6.35); shares fell ~3.3% intraday despite the beat-and-raise (single source on the stock reaction, SEC-confirmed on fundamentals) | **LMT's and RTX's Oct 22 reactions are now confirmed, after the fact, with real prices**: LMT +9% to $602.75 (2-source: Seeking Alpha + 24/7 Wall St), RTX +2% to $195.54 (24/7 Wall St) — both validating yesterday's beat-and-raise theses, but this is Oct 22 data, not a fresh Oct 23 print | **1 mechanical signal change**: LMT ACCUMULATE→WATCH (format-022 hold re-fires — no confirmed Oct 23 print despite yesterday's since-confirmed +9% move) | **1 format-031 fire on its resolution day**: LRCX WATCH→CONTRARIAN (confirmed/specifically-timestamped multi-day cumulative return of approximately -12.6%, Oct 20 $263.45 → today's $230.18, in the STRONGEST-aligned Semiconductors sector) | **format-031 resolved: DISCARD** (3-report avg CS 75.633 vs. baseline 75.64, delta -0.01 — near-zero precedent) — **format-032 Near-Date Base Substitution Protocol proposed and started, report 1/3** | **Oct 16 signal batch scored: 0 correct / 0 incorrect / 1 NULL (OKLO) / 17 PENDING = 0/18 = 0% decisive** (every Oct 16 base was itself logged as "no confirmed print" that day) | **AS unchanged 39.07% (427/1093); CS 75.63 → 75.63** | **No approval issues opened or closed** (`needs-approval`/`approved` both empty on `MalikJPalamar/autoresearch`)
+**Methodology:** v1.4 | **Experiment:** format-032 Near-Date Base Substitution Protocol (report 2/3) | **Market Status:** POST-CLOSE (Monday, normal session) | **`scripts/prices.sh` BLOCKED 44th consecutive session** (all-18 null, `source: none`, same `connect_rejected` denial on Yahoo/Stooq since Aug 21) | **A broad rebound session**: S&P 500 +0.70% to ~7,676.8, Nasdaq +0.82% to ~26,169.4, Dow +0.28% to ~52,361.5 (2-source convergence), led by chipmakers/AI names — CNBC ties part of the lift to Anthropic's confidential U.S. IPO filing | **NVDA confirmed +2.4%** (CNBC + Trading Economics, MEDIUM dispute) — the session's one clean idiosyncratic portfolio read; AMD and META produced no confirmed print at all; GOOGL (~$316.85) and MSFT (~$532.80) each single-sourced | **GOOGL's Q3 2026 earnings date resolved**: CONFIRMED Wednesday Oct 28, 2026 after close (the prior Oct 27/28 dispute is settled — Oct 27 was a stale aggregator artifact), landing the same day as MSFT's own confirmed Oct 28 print and the FOMC decision | **1 mechanical signal change**: LRCX CONTRARIAN → WATCH (format-022 hold re-fires — no confirmed Oct 26 print, reverting Friday's format-031 fire) | **format-032 (Near-Date Base Substitution Protocol) report 2/3 — first substantive test**: 2 of 4 near-date-substituted tickers (ASML, SMR) converted from what would otherwise be PENDING into decisive scores; VST and CEG stayed PENDING even with a substituted base (no anchor found since) | **Oct 19 signal batch scored: 3 correct (NVDA, AMD, SMR) / 5 incorrect (GOOGL, META, ASML, AMAT, LRCX) / 4 NULL (MSFT, OKLO, PLTR, RTX) / 6 PENDING (TSM, VST, CEG, NRG, BAH, LMT) = 8/18 = 44.4% decisive** — the best decisive rate in weeks | **AS 39.07% → 39.06% (430/1101); CS 75.63 → 75.62** | **No approval issues opened or closed** (`needs-approval`/`approved` both empty on `MalikJPalamar/autoresearch`)
 
 ---
 
 ## ⚠️ Operational Notes
 
-**1. `scripts/prices.sh` blocked 43rd consecutive session.** `bash scripts/prices.sh --json` returned `source: none` / all-null for all 18 tickers. Direct proxy-status check confirms the same root cause as every session since Aug 21: the gateway answers `403 connect_rejected` to the CONNECT tunnel for both `query1.finance.yahoo.com:443` and `stooq.com:443`.
+**1. `scripts/prices.sh` blocked 44th consecutive session.** `bash scripts/prices.sh --json` returned `source: none` / all-null for all 18 tickers — the same root cause logged every session since Aug 21. Five parallel WebSearch research passes (AI Compute, Semiconductors, Energy for AI, Defense AI, Macro) were run instead.
 
-**2. WebFetch non-functional for a 4th consecutive session.** Tested directly against a finance domain (`finance.yahoo.com`), a second finance domain (`thestreet.com`), and a non-finance control (`en.wikipedia.org`): all three returned `getaddrinfo ENOTFOUND`, confirming this remains a session-wide DNS condition, not a finance-specific policy block. All research this session is WebSearch-summary-only.
+**2. The broad market rebounded today.** S&P 500 +0.70% to ~7,676.8, Nasdaq Composite +0.82% to ~26,169.4, Dow +0.28% to ~52,361.5 — a 2-source convergence (TheStreet, Investrade) after last week's second consecutive losing week for the S&P/Nasdaq. CNBC attributes part of the lift in AI/chip names specifically to excitement over Anthropic's confidential U.S. IPO filing, a fresh same-day sentiment catalyst for the sector's financing-stress narrative (distinct from, and more positive than, the CoreWeave-CDS-driven stress story this project has tracked since mid-October).
 
-**3. The broad market fell today, but with an unusual role-reversal: the Dow led the decline rather than the Nasdaq.** CNBC's dated Friday live-blog (URL-stamped and headlined for Oct 23) puts the close at Dow 52,215.16 (-652.82, -1.23%), S&P 500 7,623.68 (-0.52%), Nasdaq Composite 25,955.34 (-0.21%). This is independently corroborated on magnitude by Investing.com's Booz Allen earnings piece, which separately cites "the S&P 500 was down 0.5% and the Dow was down 1.2% in morning trading" — a 2-source convergence on both the Dow and S&P figures. The Nasdaq figure is corroborated by a second mention (a TheStreet-sourced summary citing "Nasdaq falls 0.2% after a steep decline in Tech on Thursday"), though one other aggregator (Bytes Europe) cited a -2.6% Nasdaq figure that appears to be misattributing Thursday's (Oct 22) move rather than today's — excluded as a probable day-mislabel per the standing format-024 protocol. Weekly: the Dow was the only one of the three major indexes to finish the week in the green; the S&P 500 and Nasdaq each posted a second consecutive losing week.
+**3. NVDA is the session's one clean, corroborated portfolio-ticker move.** CNBC's live-blog language ("Nvidia climbing 2.4%") and a Trading Economics level (~$216.07) converge on direction and magnitude; a third source (Coinpaper, ~$213.40 near the open) is consistent with an intraday climb into that close. Classified MEDIUM (2-source convergence, not an explicit settled-close label). AMD and META produced no confirmed print despite multiple targeted search passes — both stay HIGH. GOOGL (~$316.85) and MSFT (~$532.80) each come from a single Trading Economics read, no second-source corroboration — both MEDIUM.
 
-**4. Oil extended its rise, with Middle East escalation now explicitly cited by multiple outlets as a selloff driver alongside AI-capex skepticism.** CNBC's own headline framing ("oil prices rise and market sell-off hits most sectors"), Yahoo Finance ("oil prices rise" in its own Oct 23 headline), ZeroHedge ("Oil Jumps On Saudi Attacks"), and TechFlowPost ("Saudi Energy Facilities Reportedly Attacked Again") all independently tie today's session to rising oil on reported attacks on Saudi energy infrastructure — a 4-source convergence on the *driver*, even though the exact price level (Brent near $113-114, per a single NordFX-sourced mention) is not independently corroborated. This builds directly on yesterday's single-sourced ">$111 Brent" report, now with a clearer, multi-sourced causal narrative (Middle East escalation, not just a generic "oil higher" data point).
+**4. GOOGL's earnings date is now resolved.** Alphabet's Q3 2026 report is CONFIRMED for Wednesday, October 28, 2026, after close (consensus EPS $2.94 vs. $2.87 YoY) — a PrimeXBT page sourced to investor-relations confirms this and identifies the "Oct 27" figure carried in several recent reports as a stale/tentative aggregator artifact. This means GOOGL and MSFT (also confirmed Oct 28, after close) report on the same day as each other and the same day as the Fed's Oct 27-28 FOMC decision (Wednesday, 2pm ET) — a concentrated binary-catalyst day now 2 trading days out.
 
-**5. Three portfolio tickers each produced a genuine, specifically-timestamped same-day print today — a rare occurrence this month — but each from only one source.** LRCX: $230.18, +0.01% (Finviz, timestamped 2:38pm ET), effectively flat after Thursday's steep selloff, implying an Oct 22 close around the same level. RTX: $191.33, -1.74% (12:24pm ET, prior close cited as $194.71) — a pullback from yesterday's now-confirmed $195.54 close. PLTR: $195.25, -0.48% (Reuters-sourced via GuruFocus, 10:35am ET), essentially flat, in a piece about Palantir reiterating that neither it nor the U.S. government can remotely disable customers' Maven systems. None of the three was found corroborated by a second source today, so each carries MEDIUM (not LOW) dispute severity under the standing format-016 framework, but a single specifically-timestamped, uncontradicted read is treated as usable per this project's established convention (as distinct from an uncorroborated, undated "current price" claim).
+**5. AMAT's fiscal Q4 2026 earnings date is newly confirmed: November 12, 2026** (the prior "~Nov 11-12, not IR-confirmed" framing is resolved; one aggregator's "Nov 11" is the stale outlier).
 
-**6. BAH reported fiscal Q2 2027 results before today's open — another "beat on EPS, miss on revenue, guide up anyway" print, and the stock sold off intraday despite it.** Adjusted diluted EPS $1.76 (vs. ~$1.48 consensus, +18.9% beat, +18% YoY); revenue $2.78B (vs. ~$2.81B consensus, a 1.1% miss, -3.9% YoY — Civil revenue -15% to $702M on recompete-driven scope reduction, National Security revenue +0.6-1% to ~$2.08B); adjusted EBITDA $313M (-3.4%); free cash flow $263M (down from $395M, -33.4%); total backlog $41B (+2% YoY, book-to-bill 1.5x). FY2027 guidance: revenue narrowed to $11.3-11.6B (from $11.2-11.7B), adjusted EPS raised to $6.50-6.70 (from $6.00-6.35) — though multiple sources note part of the EPS lift traces to a lower share count, a lower tax rate, and a one-time ~$10M DARPA earn-out rather than pure operating improvement. The company closed its ~$729M Ultra I&C Mission Solutions acquisition in August; a $0.59/share dividend is payable Dec 4. Shares were reported falling ~3.3% in morning trading (Investing.com, single source on the price reaction) — the same "beat but sold" pattern this project has repeatedly logged (TSM Oct 15, LRCX Oct 21-22).
+**6. investsmart.com.au again served known-bad frozen prices, all excluded.** TSM's "$472.20" is digit-for-digit the same stale Oct 7-8 figure excluded repeatedly since October. LMT's "$587.95" is the same ~11+-week-stale figure flagged as a permanently-known-bad cached page since early October. ASML's "$1,780.34" and AMAT's "$514.39" and LRCX's "$310.99"/"$302.20" readings on the same domain are each internally self-dated to weeks-old periods or inconsistent with this project's own recently-confirmed anchors — all excluded per the standing format-024 protocol. A MarketBeat RTX quote ("$162.70, -3.48%") also reads as a stale/mismatched cache, inconsistent with RTX's confirmed fundamentals and recent $190s price range — excluded.
 
-**7. LMT's and RTX's Oct 22 price reactions are now confirmed, after the fact — both validating their respective beat-and-raise theses with real numbers.** LMT rose 9% to $602.75 on Thursday (Seeking Alpha: "Why did Lockheed surge today? Q3 earnings beat, buyback plan send stock flying"; independently corroborated by 24/7 Wall St's "Lockheed Martin Rises 9% as Record Backlog Lifts Outlook"). RTX gained 2% to $195.54 the same day (24/7 Wall St, same piece, implying a prior close near $191.71 consistent with today's cited RTX prior-close of $194.71 — a small residual inconsistency, but directionally and magnitude-consistent). This resolves both names' Oct 22 "price magnitude unconfirmed" HIGH-dispute status retroactively, though it does not change today's own dispute severity (see Note 8 and Signal Changes below) — this project's established precedent (format-011's discarded verification protocol, format-019's real fires) is that past prices confirmed later are logged as historical fact but do not retroactively alter that day's own signal/CS record.
+**7. LRCX's dispute severity reverts to HIGH today (no confirmed print), mechanically re-firing format-022's hold** — see Signal Changes below. LRCX's last confirmed/specifically-timestamped anchor remains Friday's $230.18 (Finviz, 2:38pm ET); its cumulative decline since Oct 20's $263.45 close (~-12.6%) is unchanged today, neither confirmed-worse nor confirmed-better, simply stale by one more trading day.
 
-**8. LMT's fresh ACCUMULATE upgrade from yesterday reverts today — format-022's mechanical hold re-fires because today, specifically, has no confirmed LMT print.** Per format-022's own definition, "no confirmed print" independently triggers HIGH dispute severity, which mechanically holds a ticker at or below WATCH regardless of how strong yesterday's (now-confirmed) fundamentals were. This mirrors the exact precedent set by PLTR on 2026-10-16 (a hold-lift reverting one session later on a fresh data gap) — the mechanism is working as designed, not reflecting any change in LMT's underlying thesis.
+**8. SMR's 52-week-low figure needs reconciliation, flagged not resolved.** The Energy for AI research pass surfaced a source citing SMR's 52-week low as $7.21 (set Jul 17, 2026), which conflicts with this project's own carried-forward "$5.26, fresh 52-week low, Oct 20" figure. No fresher data was found today to adjudicate between the two; logged for a future session to resolve rather than silently picking one.
 
-**9. format-031 resolves today on its 3rd and final report, with its first and only genuine fire landing on resolution day itself.** See the dedicated section below for the full writeup: LRCX's confirmed-anchor-to-confirmed-anchor cumulative return (Oct 20 $263.45 → today's $230.18) computes to approximately -12.6%, clearing the rule's -10% threshold in the STRONGEST-aligned Semiconductors sector, firing a WATCH→CONTRARIAN upgrade. Despite this, the 3-report average CS does not clear this project's KEEP bar.
-
-**10. Energy for AI remains the portfolio's most severe standing data gap — no Oct 23 print for any of VST/CEG/OKLO/NRG/SMR, and one near-exact-duplicate figure was caught and excluded.** A search result citing "Vistra closed at $156.14, up 3.87%, at the Oct 21, 2026 close" was excluded per the standing format-024 protocol: $156.14 is the exact figure the Oct 16 report already logged as VST's Oct 8 close, carried forward — a digit-for-digit match five sessions apart is a textbook stale-recycled-feed signature, not a fresh coincidental reprint. The sector's only genuinely dated information today is a set of Oct 21-dated analyst actions: Raymond James cut Vistra's price target to $176 (from $182, kept Strong Buy); Citi cut Oklo's target to $33 (from $57.50, kept Neutral); Morgan Stanley raised Constellation's target to $378 (from $369, kept Overweight) — a notable within-sector divergence (contracted-revenue CEG getting raised while pre-revenue OKLO and beta-exposed VST get cut), consistent with this project's standing bifurcation thesis.
+**9. format-032 (Near-Date Base Substitution Protocol) ran its first substantive test today, scoring the Oct 19 batch.** Of the 8 tickers whose Oct 19 base was originally logged as unusable (TSM, ASML, VST, CEG, NRG, SMR, BAH, LMT), a confirmed price within ±1 trading day of Oct 19 was found for 4 (ASML via Oct 16's close, VST and CEG via Oct 20's close, SMR via Oct 16's close) — of those, ASML and SMR went on to produce decisive (non-PENDING) verdicts using a further anchor later in the window, while VST and CEG still had no anchor found after their substituted base and stayed PENDING. **Net effect: 2 additional decisive scores (ASML incorrect, SMR correct) that would otherwise have been PENDING** — a direct, measurable demonstration of the protocol narrowing (not eliminating) the PENDING rate, exactly as designed. See the dedicated scoring section and the Loop 2 section below.
 
 ---
 
@@ -32,84 +30,78 @@
 
 | Metric | Level | Note |
 |--------|-------|------|
-| S&P 500 | **7,623.68, -0.52%** | MEDIUM-HIGH — CNBC's Oct-23-dated close, independently corroborated by Investing.com's "-0.5%" morning-trading figure (2-source convergence); Trading Economics separately cited 7,614, -0.65% (close but not exact). |
-| Nasdaq Composite | **25,955.34, -0.21%** | MEDIUM — CNBC's dated close, corroborated by a TheStreet-sourced "-0.2%" mention; one aggregator (Bytes Europe) gave -2.6%, which reads as a Thursday-Oct-22 mislabel and is excluded. |
-| Dow Jones | **52,215.16, -652.82 (-1.23%)** | MEDIUM-HIGH — CNBC's dated close, corroborated by Investing.com's "-1.2% in morning trading" (2-source convergence); the day's clear underperformer among the three indexes, a reversal of the week's usual pattern. |
-| VIX | **UNRESOLVED for today** | No Oct-23-dated figure found despite multiple searches. Last confirmed anchor remains Oct 20's ~17.31 (+6.13%), now 3 trading days stale. |
-| DXY | **UNRESOLVED for today** | No fresh figure found; last anchor remains ~101.84 (Oct 19), itself uncertain-dated. |
-| US 10Y Yield | **UNRESOLVED for today** | No fresh figure found; still read as within the multi-decade-high (~5.0-5.3%) regime established over recent sessions, not independently re-confirmed today. |
-| WTI / Brent Crude | **Brent reportedly near $113-114 (single source, directionally confirmed by 4 sources)** | NordFX's Oct 23 market pulse cites Brent near $114; the "oil jumps/rises" direction and its Middle East-escalation driver are independently corroborated by CNBC, Yahoo Finance, ZeroHedge, and TechFlowPost headlines, even though the precise level is single-sourced. |
-| Fed / Oct 27-28 FOMC | **Not independently re-confirmed today** | Carried forward from recent reports' contested hold-vs-hike framing under Chair Kevin Warsh; no fresh same-day odds found. |
-| Government funding / CR | **Carried forward, not re-confirmed today** | H.R. 6500 funds the government through Dec 11, 2026 per all recent reports; no contrary information found. |
-| Middle East / Saudi energy infrastructure | **Reports of renewed attacks on Saudi energy facilities, cited by multiple outlets as a same-day oil driver** | TechFlowPost explicitly: "Saudi Energy Facilities Reportedly Attacked Again"; not independently verified beyond headline-level by this session's searches, but the macro-market reaction (oil higher) is itself corroborated regardless of the attack reports' ultimate veracity. |
-| AI-infrastructure financing stress | **No fresh same-day update found** | Standing record ~1,194.5bp intraday CoreWeave CDS spread (Oct 15) remains the most recent confirmed reading, with some reports since showing a partial ease to ~1,000-1,040bp (carried forward, unchanged). |
+| S&P 500 | **~7,676.8, +0.70%** | MEDIUM — 2-source convergence (TheStreet, Investrade); not an explicit settled-close label from either. |
+| Nasdaq Composite | **~26,169.4, +0.82%** | MEDIUM — same 2-source convergence. |
+| Dow Jones | **~52,361.5, +0.28%** | MEDIUM — same 2-source convergence; the day's laggard of the three major indices, consistent with a tech/AI-led rebound. |
+| VIX | **UNRESOLVED for today** | No Oct-26-dated figure found; last confirmed anchor remains Oct 20's ~17.31 (+6.13%), now stale. |
+| DXY | **UNRESOLVED for today** | No fresh figure found; last anchor ~101.84 (Oct 19), itself uncertain-dated. |
+| US 10Y Yield | **UNRESOLVED for today** | No fresh figure found; still read as within the multi-decade-high (~5.0-5.3%) regime, not independently re-confirmed. |
+| WTI Crude | **UNRESOLVED for today** | No Oct-26 figure found; last reasonably-dated anchor is the low-$90s-$97 range from mid-October reporting. |
+| Brent Crude | **UNRESOLVED for today** | No Oct-26 figure found; last anchor ~$113-114 (Oct 23, single-sourced). The "Saudi energy-facility attack" driver cited Oct 23 could not be re-confirmed today — the newest corroborating coverage found dates to September, not this week. Treat the Oct 23 framing with caution; not re-asserted as live today. |
+| Fed / Oct 27-28 FOMC | **~83-87% hold, ~13-17% quarter-point hike priced (CME FedWatch, dated ~Oct 20)** | MEDIUM — 2-source convergence on this split; a stale late-Sept figure (65% hike odds) is explicitly superseded. Target range currently 3.75-4.00%; decision due Wednesday 2pm ET — 2 trading days out, same day as GOOGL's and MSFT's earnings. Analysts see bigger hike risk concentrated in December, not this meeting. |
+| Government funding / CR | **CONFIRMED stable, unchanged** | H.R. 6500 funds the government through Dec 11, 2026. No new developments found. |
+| AI-infrastructure financing stress | **No fresher-than-mid-October data found** | CoreWeave 5Y CDS >1,100bp (several sources, mid-Oct), implied 5Y default odds ~60-63%; Oracle CDS hit a record 288bps in sympathy — standing record, not re-confirmed today. Partially offset in sentiment terms by today's Anthropic-IPO-filing-driven AI-sector enthusiasm (Note 2), though the two are not the same data point and should not be conflated. |
 
-**Macro summary:** A second consecutive down week for the S&P 500 and Nasdaq closed with an unusual role-reversal — the Dow (-1.23%) led today's decline rather than lagged it, while the Nasdaq (-0.21%) was comparatively resilient after Thursday's much sharper (-2%+) rout, suggesting at least a partial stabilization in the AI-capex-skepticism trade that dominated the week's tape. A fresh headwind layered on top: oil's continued rise on reported Middle East escalation (attacks on Saudi energy infrastructure), now cited by several independent outlets as a same-day driver alongside the AI-spending narrative. VIX, DXY, and the 10Y yield all remain unresolved for the third-plus consecutive session, continuing this project's standing macro-granularity gap even in a week where headline index levels have been unusually well-covered.
+**Macro summary:** A broad rebound session — S&P 500 (+0.70%), Nasdaq (+0.82%), and Dow (+0.28%) all higher, with chipmakers/AI names leading on reported excitement over Anthropic's confidential U.S. IPO filing. This sits alongside, rather than resolving, the standing AI-infrastructure-financing-stress overhang (CoreWeave/Oracle CDS spreads), which has no fresher data today. The week's dominant catalyst is now 2 trading days out: Wednesday's FOMC decision (odds tilted ~83-87% toward a hold) lands the same day as GOOGL's and MSFT's Q3/Q1 earnings — a concentrated binary-risk day for both the macro and AI Compute books. VIX, DXY, and the 10Y yield remain unresolved for today specifically, continuing this project's standing macro-granularity gap.
 
 ---
 
-## Oct 16 Signal Batch Scoring (5 Trading Days)
+## Oct 19 Signal Batch Scoring (5 Trading Days)
 
-5th trading day after 2026-10-16: Oct 19, 20, 21, 22, 23 (no weekend/holiday gap in trading days). Per this project's established convention, a signal's base price is the one published in the originating (Oct 16) report; a base explicitly logged as "no confirmed print"/"no usable base" that day stays unscoreable today regardless of today's own data quality. **The Oct 16 report is a uniquely severe case: all 18 tickers were explicitly logged with "no confirmed print" that day** (the Oct 16 report's own Cross-Source Price Divergence section states "all 18 carry HIGH" dispute, "reflecting a genuine absence of any corroborated Oct 16 print" for every single name) — meaning no ticker has a usable Oct 16 base at all, regardless of what carried-forward anchors (Oct 8/9) were cited as background context that day.
+5th trading day after 2026-10-19: Oct 20, 21, 22, 23, 26 (Oct 24-25 weekend, no gap in trading days). Per this project's established convention, a signal's base price is the one published in the originating (Oct 19) report; where the Oct 19 report itself logged no usable base (HIGH dispute / no confirmed print), **format-032 (report 2/3, active since Oct 23)** now checks whether a confirmed or specifically-timestamped-and-uncontradicted price exists within ±1 trading day of Oct 19 (i.e., Oct 16 or Oct 20) and substitutes it as the effective base, explicitly flagged below. A ticker with no such near-date price either stays PENDING. Where a usable (or substituted) base exists, the best available anchor found between the base date and today is used, per this project's established "best available anchor" convention (favoring confirmation quality, not just recency).
 
-| # | Ticker | Signal (Oct 16) | Base (Oct 16, as published) | Verdict |
-|---|--------|--------|----------------|---------|
-| 1 | NVDA | WATCH | No usable base (no confirmed Oct 16 print) | ⬜ **PENDING** |
-| 2 | AMD | WATCH | No usable base | ⬜ **PENDING** |
-| 3 | GOOGL | WATCH | No usable base | ⬜ **PENDING** |
-| 4 | MSFT | WATCH (held down, format-022) | No usable base | ⬜ **PENDING** |
-| 5 | META | WATCH | No usable base | ⬜ **PENDING** |
-| 6 | TSM | WATCH | No usable base | ⬜ **PENDING** |
-| 7 | ASML | WATCH | No usable base | ⬜ **PENDING** |
-| 8 | AMAT | WATCH | No usable base | ⬜ **PENDING** |
-| 9 | LRCX | WATCH | No usable base | ⬜ **PENDING** |
-| 10 | VST | WATCH | No usable base (Oct 16's own print; the cited Oct 8 figure was background only) | ⬜ **PENDING** |
-| 11 | CEG | WATCH | No usable base | ⬜ **PENDING** |
-| 12 | OKLO | SPECULATIVE | — | ⬜ **NULL** (risk classification, no directional call) |
-| 13 | NRG | AVOID | No usable base | ⬜ **PENDING** |
-| 14 | SMR | AVOID | No usable base | ⬜ **PENDING** |
-| 15 | PLTR | WATCH (reverted from ACCUMULATE that day) | No usable base | ⬜ **PENDING** |
-| 16 | BAH | WATCH | No usable base | ⬜ **PENDING** |
-| 17 | LMT | WATCH | No usable base | ⬜ **PENDING** |
-| 18 | RTX | WATCH | No usable base | ⬜ **PENDING** |
+| # | Ticker | Signal (Oct 19) | Base (Oct 19, as published or substituted) | Best available anchor since | Verdict |
+|---|--------|--------|----------------|-----------------|---------|
+| 1 | NVDA | WATCH (neutral) | $217.09, +1.4% (MEDIUM, re-attributed via heygotrade cross-check per the Oct 20 report) | Oct 26 confirmed $216.07, +2.4% (MEDIUM, CNBC+Trading Economics 2-source) | ✅ **CORRECT** (-0.76% vs. base — neutral call matched by a small move, <1%) |
+| 2 | AMD | WATCH (neutral) | $538.05, +1.8% (MEDIUM, re-attributed via heygotrade cross-check per the Oct 20 report) | Oct 20 confirmed close $534.74, -0.61% (LOW, Google Finance+Fool exact match) | ✅ **CORRECT** (-0.62% vs. base — neutral call matched by a small move, <1%) |
+| 3 | GOOGL | WATCH (neutral) | ~$341 (MEDIUM, tight Oct 19 cluster $340-342) | Oct 26 $316.85 (MEDIUM, single-source Trading Economics) | ❌ **INCORRECT** (-7.08% vs. base — neutral call contradicted by a move >3%) |
+| 4 | MSFT | **ACCUMULATE** (bullish) | ~$534 (MEDIUM, tight Oct 19 cluster) | Oct 26 $532.80 (MEDIUM, single-source Trading Economics); Oct 20 confirmed close $531.69 gives the same read | ⬜ **NULL** (-0.22% vs. base — sub-1% countermove on a directional call; same treatment as the Oct 21 report's MSFT precedent) |
+| 5 | META | WATCH (held, format-029-era suppression no longer active) | ~$705.40 (MEDIUM, tight Oct 19 cluster $704.50-706.33) | Oct 22 confirmed $648.85, -6.98% (2-source, post-Q3-earnings reaction) | ❌ **INCORRECT** (-8.02% vs. base — neutral call contradicted by a move >3%) |
+| 6 | TSM | WATCH (neutral) | No usable base (HIGH dispute, no Oct 19 print) | No substitution found (Oct 16/Oct 20 also no usable print — chronic blackout) | ⬜ **PENDING** (base unscoreable) |
+| 7 | ASML | WATCH (neutral) | **No usable Oct 19 base** (HIGH) — **substituted (format-032): Oct 16 confirmed close $1,641.52, -0.96% (LOW, Yahoo+Finviz, -1 trading day)** | Oct 22 ~$1,560.54, -7% (single source, Motley Fool, US-ADR listing — reconciliation caveat vs. EUR listing) | ❌ **INCORRECT** (-4.93% vs. substituted base — neutral call contradicted by a move >3%) |
+| 8 | AMAT | WATCH (neutral) | $414.51, +1.28% (MEDIUM, usable — no substitution needed) | Oct 22 ~$375.58, -8.16% (single source, Motley Fool) | ❌ **INCORRECT** (-9.39% vs. base — neutral call contradicted by a move >3%) |
+| 9 | LRCX | WATCH (neutral) | $272.75, +3.34% (MEDIUM, usable — no substitution needed) | Oct 23 $230.18, +0.01% (Finviz, 2:38pm ET — specifically timestamped, already used as a scoring-grade anchor by format-031) | ❌ **INCORRECT** (-15.61% vs. base — neutral call contradicted by a move >3%; large but well-explained by the confirmed, dated post-earnings supply-constraint selloff, not treated as a stale-mislabel exclusion) |
+| 10 | VST | WATCH (neutral) | **No usable Oct 19 base** (HIGH, contradicted $149.35 vs. $152.02) — **substituted (format-032): Oct 20 confirmed $149.84, +0.09% (MEDIUM, +1 trading day)** | No confirmed/uncontradicted print found anywhere Oct 21-26 (chronic blackout continues; today's search found only a stale Oct 14 anchor, older than the substituted base) | ⬜ **PENDING** (no usable post-base print, even with substitution) |
+| 11 | CEG | WATCH (neutral) | **No usable Oct 19 base** (HIGH, no fresher-than-2-weeks data) — **substituted (format-032): Oct 20 confirmed ~$258.8-259.35 (MEDIUM, 3-source converge, +1 trading day)** | No confirmed/uncontradicted print found anywhere Oct 21-26 (today's search found only a stale Oct 14 anchor, older than the substituted base) | ⬜ **PENDING** (no usable post-base print, even with substitution) |
+| 12 | OKLO | SPECULATIVE | — | — | ⬜ **NULL** (risk classification, no directional call) |
+| 13 | NRG | AVOID | No usable base (HIGH, no Oct 19 print) | No substitution found (Oct 16/Oct 20 also no data — chronic blackout) | ⬜ **PENDING** (base unscoreable) |
+| 14 | SMR | AVOID | **No usable Oct 19 base** (HIGH, $6.00 premarket-only) — **substituted (format-032): Oct 16 confirmed close $5.83 (LOW-ish, -1 trading day — the same anchor the Oct 19 report itself referenced as context)** | Oct 20 confirmed close $5.26, -7.56% (LOW-MEDIUM, Benzinga+AOL, fresh 52-week low on the Barclays downgrade) | ✅ **CORRECT** (-9.78% vs. substituted base — bearish AVOID call confirmed by a decline ≥1%) |
+| 15 | PLTR | **ACCUMULATE** (bullish) | $194.60, +4.60% (MEDIUM, 2-source — Finviz+24/7 Wall St) | Oct 23 $195.25, -0.48% (single source, specifically timestamped, Reuters/GuruFocus) | ⬜ **NULL** (+0.33% vs. base — sub-1% move, insufficient magnitude to confirm or contradict the bullish call) |
+| 16 | BAH | WATCH (neutral) | No usable base (HIGH, chronic) | No substitution found (Oct 16/Oct 20 also no data — chronic blackout) | ⬜ **PENDING** (base unscoreable) |
+| 17 | LMT | WATCH (neutral) | No usable base (HIGH, stale duplicate excluded) | No substitution found within ±1 trading day (Oct 16/Oct 20 also no usable print; the later-confirmed Oct 22 +9% move is +3 trading days out, outside format-032's ±1TD window) | ⬜ **PENDING** (base unscoreable) |
+| 18 | RTX | WATCH (neutral) | $192.11, -0.93% (MEDIUM, confirmed close, "At close: Oct 19, 4:00pm EDT," StockAnalysis — usable, no substitution needed) | Oct 22 confirmed $195.54, +2% (2-source, 24/7 Wall St, highest-confidence anchor in window) | ⬜ **NULL** (+1.78% vs. base — falls in the established 1-3% neutral-signal scoring gap; Oct 23's $191.33 read gives the same NULL outcome, -1.74%) |
 
-**Batch: 0 correct / 0 incorrect / 1 NULL / 17 PENDING = 0/18 = 0% decisive.**
+**Batch: 3 correct (NVDA, AMD, SMR) / 5 incorrect (GOOGL, META, ASML, AMAT, LRCX) / 4 NULL (MSFT, OKLO, PLTR, RTX) / 6 PENDING (TSM, VST, CEG, NRG, BAH, LMT) = 8/18 = 44.4% decisive — the best decisive rate in several weeks.** Without format-032's near-date substitution, ASML and SMR would both have stayed PENDING, reducing this batch to 6/18 = 33.3% decisive.
 
-**AS: 39.07% → 39.07%** (427/1093; no change — zero decisive scores this batch).
+**AS: 39.07% → 39.06%** (430/1101; numerator +3 correct, denominator +8 decisive).
 
 ---
 
 ## Signal Changes
 
-**1. LMT ACCUMULATE → WATCH (format-022 HIGH-dispute hold, mechanical, re-fires).** Yesterday's discretionary upgrade was based on confirmed SEC fundamentals but an unconfirmed price; today, despite thorough search effort (including confirming yesterday's own +9% reaction after the fact), no Oct 23-dated LMT print was found, so Dispute Severity reverts to HIGH ("no confirmed print" independently triggers the mechanical hold per format-022's own definition) and the hold applies.
+**1 mechanical signal change today (format-022, HIGH-Dispute-Severity Signal Hold):**
 
-**2. LRCX WATCH → CONTRARIAN (format-031 fire, final report, mechanical).** Confirmed-anchor-to-specifically-timestamped-anchor cumulative return of approximately -12.6% (Oct 20's confirmed $263.45 close → today's Finviz-timestamped $230.18), in the STRONGEST-aligned Semiconductors sector, clears the rule's ≤-10% threshold. See the dedicated format-031 section below for full detail and the resolution despite this fire.
+- **LRCX CONTRARIAN → WATCH.** No confirmed Oct 26 print was found for LRCX (last confirmed/specifically-timestamped anchor remains Friday's $230.18, now 1 trading day stale) — HIGH dispute per format-022's own "no confirmed print" criterion. LRCX is not AVOID/SPECULATIVE-tier, so it is not exempt; the hold mechanically reverts Friday's format-031 resolution-day fire back to WATCH. This does not reflect any change in LRCX's underlying thesis (record Q1 FY2027 results, >$200B 2027 WFE outlook) — purely a data-confirmation gap.
 
-All other tickers unchanged: NVDA, AMD, GOOGL, MSFT, META, TSM, ASML, AMAT, VST, CEG, BAH, RTX remain WATCH; PLTR remains WATCH (today's single-sourced -0.48% read is immaterial); OKLO remains SPECULATIVE (exempt); NRG and SMR remain AVOID (exempt).
+**0 discretionary signal changes today** — NVDA's confirmed +2.4% gain is sector-wide beta (part of a broad AI/chip-led rebound, not an idiosyncratic catalyst) and does not clear the bar for a tier upgrade; no other ticker produced a sufficiently clear, confirmed, idiosyncratic catalyst today.
 
-**Current signal state (18 tickers): WATCH:** NVDA, AMD, GOOGL, MSFT, META, TSM, ASML, AMAT, VST, CEG, PLTR, BAH, LMT, RTX (14). **CONTRARIAN:** LRCX (1). **SPECULATIVE:** OKLO (1). **AVOID:** NRG, SMR (2).
+All other tickers unchanged: NVDA, AMD, GOOGL, MSFT, META, TSM, ASML, AMAT, VST, CEG, PLTR, BAH, LMT, RTX remain WATCH; OKLO remains SPECULATIVE (exempt); NRG and SMR remain AVOID (exempt).
 
----
-
-## format-031 Confirmed Multi-Day Trend Momentum Tilt — Report 3/3 (RESOLVED: DISCARD)
-
-**Rule recap:** a confirmed/specifically-timestamped-and-uncontradicted multi-day cumulative return of ≤ -10% (with sector STRONG/STRONGEST alignment) upgrades WATCH→CONTRARIAN; a cumulative return ≥ +15% on a ticker already above WATCH flags overbought/downgrade-toward-WATCH caution. All other readings leave the signal unchanged. Baseline CS = 75.64 (set 2026-10-21, report 1/3's own CS). CS series: 75.64 (Oct 21) → 75.63 (Oct 22) → **75.63 (Oct 23, today)**.
-
-**Report 3/3 (today): 1 fire.** LRCX: the last fully-confirmed anchor remains Oct 20's $263.45 close (-3.21% that session). Today's Finviz quote, specifically timestamped 2:38pm ET at $230.18 (+0.01% intraday, implying an Oct 22 close in the same neighborhood), is not independently corroborated by a second source today, but is specifically dated and uncontradicted — meeting this rule's evidentiary bar in the same way earlier single-sourced-but-dated reads have throughout this report. Cumulative return Oct 20 → today: (230.18 − 263.45) / 263.45 ≈ **-12.6%**, clearing the -10% threshold. Semiconductors carries STRONGEST Aschenbrenner alignment (unchanged all week). **Fires: LRCX WATCH → CONTRARIAN.** No ticker cleared the +15% overbought leg (LMT, the only name above WATCH entering today, reverted to WATCH today on format-022 grounds before the overbought check would even apply, and has no clean multi-day return of its own established yet).
-
-**Resolution:** 3-report average CS = (75.64 + 75.63 + 75.63) / 3 = **75.633** vs. baseline_cs 75.64 (delta **-0.01**). Per this project's established near-zero/negative-delta precedent (format-015, format-023, format-025, format-027, format-028, format-029), this is a **DISCARD**. Despite producing a genuine, correctly-targeted fire on its very last report — the rule accurately identified LRCX's severe, sector-sympathy-driven drawdown as thesis-intact (STRONGEST-aligned) contrarian value, mirroring format-028's and format-029's pattern of "the logic worked, the CS didn't move" — one fire across 3 reports and 54 ticker-report evaluations is, consistent with this entire experiment family's results since format-012, too small an effect to move a cumulative 1000+-decision AS denominator when AC/CV are saturated at 100/100. **methodology.md is reverted to its pre-2026-10-21 form** (the format-031 section is replaced with its resolution writeup, no multi-day trend-momentum-tilt rule remains active going forward). **The one real fire (LRCX WATCH→CONTRARIAN, 2026-10-23) is not retroactively undone**, consistent with how format-019's, format-028's, and format-029's real fires were treated on their own DISCARDs.
+**Current signal state (18 tickers): WATCH:** NVDA, AMD, GOOGL, MSFT, META, TSM, ASML, AMAT, LRCX, VST, CEG, PLTR, BAH, LMT, RTX (15). **SPECULATIVE:** OKLO (1). **AVOID:** NRG, SMR (2). **ACCUMULATE/LONG/CONTRARIAN: none** — the second session in this project's recent history (after Oct 21) with zero tickers above WATCH.
 
 ---
 
-## format-032 Near-Date Base Substitution Protocol — PROPOSED AND STARTED (report 1/3)
+## format-032 Near-Date Base Substitution Protocol — Report 2/3
 
-**Motivation.** This project's chronic `scripts/prices.sh` outage (43 consecutive sessions) and now-4-session WebFetch failure have driven an extremely high PENDING rate in 5-day-lookback scoring — today's Oct 16 batch scored 0% decisive because literally every one of the 18 tickers had "no confirmed print" on the *origin* day itself, not just on the scoring day. This is now a recurring failure mode distinct from the "confirmed-same-session-event override" family (format-012/017/018/019/020/021/028/029/030/031) that has dominated this project's last two months of experiments: those all targeted *which* signal to assign; this instead targets the chronic inability to even establish a *scoreable base* in the first place, which silently caps how much any accuracy-scoring improvement can matter — a batch that is 0-18% decisive each cycle gives the AS metric very little signal to move on, no matter how good the underlying directional calls are.
+**Rule recap:** when a ticker's origin-day report logged "no usable base," but a confirmed or specifically-timestamped-and-uncontradicted price was found within ±1 trading day of the origin date, substitute that near-date price as the effective scoring base, explicitly flagged as substituted (near-date, not exact-date). A base with no price found within ±1 trading day of origin still stays PENDING.
 
-**Rule:** when a ticker's origin-day report logged "no usable base"/"no confirmed print," but a confirmed or specifically-timestamped-and-uncontradicted price for that same ticker was found within ±1 trading day of the origin date (either in that neighboring day's own report, as already published, or surfaced this session via WebSearch and attributable with confidence to a specific neighboring date), substitute that near-date price as the effective scoring base — explicitly flagged in the scoring table as a **substituted base** (near-date, not exact-date) rather than silently treated as an exact-date price. All other scoring mechanics (≥1% match/contradiction, the neutral-signal gap, etc.) apply unchanged to the substituted base. A base with no price found within ±1 trading day of origin still stays PENDING — this protocol narrows, but does not eliminate, the PENDING rate.
+Baseline CS = 75.63 (set 2026-10-23, report 1/3's own CS). Running CS series: 75.63 (Oct 23) → **75.62 (Oct 26, today)**.
 
-**Auto-evolve classification:** signal-logic / scoring-methodology, pre-approved under the 2026-08-20 blanket authorization for signal-logic experiments run as a standard 3-report KEEP/DISCARD against the current baseline CS, automatically reverted on DISCARD. This does not change which signal a ticker carries today, only which historical bases are eligible for 5-day-lookback scoring — a presentation/scoring change in the same spirit as the data-source and presentation experiments (format-016, format-024) already KEPT as standing mechanisms, not a new discretionary override.
+**Report 2/3 (today): the protocol's first substantive test**, scoring the Oct 19 batch (see dedicated section above). Of the 8 tickers with no usable Oct 19 base (TSM, ASML, VST, CEG, NRG, SMR, BAH, LMT), a near-date (±1 trading day) confirmed price was found for 4: ASML and SMR via Oct 16 (-1TD), VST and CEG via Oct 20 (+1TD). TSM, NRG, BAH, and LMT had no near-date candidate and stayed PENDING regardless.
 
-**cs_before (baseline) = 75.63** (today's resolved CS, 2026-10-23). Effective starting with the next 5-day-lookback scoring pass (expected to first apply retroactively when scoring the Oct 19 batch around 2026-10-26, since Oct 19's origin-day data quality will determine whether any substitution is actually needed). Report 1/3 today: no substitution opportunity arose yet (today's own scoring batch, Oct 16, had zero candidates eligible for the ±1-trading-day lookback within this report's research — a thorough re-check of Oct 15/Oct 19 prints for the 18 Oct 16-batch tickers was not performed today and is deferred to the next scoring pass, which will be report 2/3's substantive test). Resolution expected ~2026-10-28 (report 3/3).
+Of the 4 substituted bases, 2 (ASML, SMR) went on to produce a decisive verdict (ASML incorrect, SMR correct) because a further anchor existed later in the scoring window; 2 (VST, CEG) stayed PENDING even with a substituted base because no anchor was found anywhere after Oct 20 through today. **Net effect: +2 decisive scores (1 correct, 1 incorrect) this report that would otherwise have been PENDING** — narrowing, not eliminating, the PENDING rate exactly as the protocol was designed to do. This is the cleanest demonstration yet of the mechanism actually functioning as intended, rather than being untestable due to data gaps (the fate of several recent "confirmed-same-session-event override" experiments).
+
+Running 2-report average so far: (75.63 + 75.62) / 2 = **75.625** vs. baseline 75.63 (delta so far **-0.005**, not yet a resolution). One more report needed; resolution expected the next trading session (Tuesday, Oct 27).
 
 ---
 
@@ -117,137 +109,126 @@ All other tickers unchanged: NVDA, AMD, GOOGL, MSFT, META, TSM, ASML, AMAT, VST,
 
 ### AI Compute
 
-| Ticker | Signal | Price (Oct 23) | RSI(14) | Technical Note | Dispute Severity |
+| Ticker | Signal | Price (Oct 26) | RSI(14) | Technical Note | Dispute Severity |
 |--------|--------|------|---------|-----------------|-------------------|
-| NVDA | WATCH (unchanged) | **No Oct 23 print found**; best confirmed anchor now Oct 22's $212.21 (-4.40%, 2-source: FXLeaders + Motley Fool, newly confirmed today) | Not found | Stale | HIGH — no confirmed print today |
-| AMD | WATCH (unchanged) | **No Oct 23 print found**; a single uncorroborated mention of an Oct 22 -8.1% move was found but not independently confirmed | Not found | Stale, uncorroborated | HIGH — no confirmed print today |
-| GOOGL | WATCH (unchanged) | **No Oct 23 print found**; best anchor Oct 22 ~-3.15 to -3.2% (2-source convergence: Motley Fool + a second aggregator) | Not found | Stale | HIGH — no confirmed print today |
-| MSFT | WATCH (unchanged) | **No Oct 23 print found**; CNBC's live blog mentions MSFT "ticked higher" today, direction only, no magnitude | Not found | Stale | HIGH — no quantified print today |
-| META | WATCH (unchanged) | **No Oct 23 print found**; Oct 22 reaction now confirmed at $648.85 (-6.98%/~-7%, 2-source convergence), resolving yesterday's unconfirmed-magnitude flag | Not found | Stale | HIGH — no confirmed print today |
+| NVDA | WATCH (unchanged) | **~$216.07, confirmed +2.4%** (CNBC + Trading Economics) | Not found | Participating in the sector-wide AI/chip rebound | MEDIUM — 2-source convergence on direction+magnitude, not an explicit close label |
+| AMD | WATCH (unchanged) | **No Oct 26 print found** despite 3 targeted search passes | Not found | Stale | HIGH — no confirmed print today |
+| GOOGL | WATCH (unchanged) | **~$316.85** (single source) | Not found | Entering earnings week (Oct 28) | MEDIUM — single-sourced, no second-source corroboration |
+| MSFT | ACCUMULATE-base signal reverted to WATCH on earlier HIGH-dispute holds; currently WATCH | **~$532.80** (single source) | Not found | Entering earnings week (Oct 28, same day as Fed decision) | MEDIUM — single-sourced, no second-source corroboration |
+| META | WATCH (unchanged) | **No Oct 26 print found** despite multiple search passes | Not found | Stale | HIGH — no confirmed print today |
 
 | Ticker | Entry/Exit Zone | Risk Factor | Catalyst | Timeframe |
 |--------|-------------------|--------------|----------|-----------|
-| NVDA | Hold; no new entries, data gap | AI-infrastructure-financing-risk overlay remains the dominant sector overhang | Q3 FY2027 earnings ~Nov 17-18, 2026 (unconfirmed estimate) | Medium (1-3mo) |
-| AMD | Hold; no new entries, data gap; today's -8.1% mention unconfirmed, treated cautiously | AI-capex/ROI skepticism theme continues to pressure the group | Q3 2026 earnings CONFIRMED Nov 3, 2026, after close | Medium (1-3mo) |
-| GOOGL | Hold; no new entries, data gap | Broad AI-capex/ROI skepticism narrative intact | Q3 2026 earnings ~Oct 27-28, 2026 (still disputed/unconfirmed) | Short-to-medium (1-2w to earnings) |
-| MSFT | Hold; today's directional-only "ticked higher" note is not actionable without magnitude | Data-confirmation gap itself the near-term risk; Azure Maia 300 ramp thesis unchanged | Q1 FY2027 earnings CONFIRMED Oct 28, 2026, after close | Medium (1-3mo) |
-| META | Hold; now-confirmed -7% Oct 22 reaction is sentiment on the litigation charge/capex outlook, not a fundamentals deterioration (revenue beat) | Binary earnings-event risk resolved to the downside on reaction; ~$825B cumulative spending commitments cited as the market's concern | Q3 2026 earnings REPORTED Oct 21, 2026, after close | Short (1-2w), reassessing post-print |
+| NVDA | Hold; today's bounce is sector-wide beta, not an idiosyncratic entry signal | AI-infrastructure-financing-stress overlay (CoreWeave/Oracle CDS) persists even as today's sentiment improves | No confirmed NVDA earnings date found this week | Medium (1-3mo) |
+| AMD | Hold; no new entries, data gap | Data-confirmation gap itself the near-term issue; AI-capex/ROI skepticism theme standing | Q3 2026 earnings CONFIRMED Nov 3, 2026, after close | Medium (1-3mo) |
+| GOOGL | Hold; no new entries ahead of Wednesday's print | Broad AI-capex/ROI skepticism narrative intact | Q3 2026 earnings CONFIRMED Oct 28, 2026, after close (newly resolved — see Note 4) | Short (1-2w) to earnings |
+| MSFT | Hold; no new entries ahead of Wednesday's print | Multi-year Azure Maia 300 ramp/execution risk | Q1 FY2027 earnings CONFIRMED Oct 28, 2026, after close — a few hours after the Fed's rate decision | Medium (1-3mo) |
+| META | Hold; no new entries, data gap | AI capex/ROI skepticism; binary post-earnings digestion continuing | Q3 2026 already reported (Oct 21, 2026) | Short (1-2w) |
 
-**Sector news:** META's post-earnings reaction is now confirmed at a real magnitude (-7% to $648.85) rather than direction-only, resolving yesterday's open question; the other four names remain in a pure data gap for today specifically, though NVDA's and META's Oct 22 reactions are both now confirmed after the fact. Aschenbrenner alignment: **STRONG ★★★★☆ (unchanged)** — the AI-capex-spending-pace debate (Meta's raised guidance, Lam's supply commentary) remains the dominant sentiment overhang; the underlying compute-buildout demand case itself is not contradicted by anything found today.
+**Sector news:** NVDA confirmed +2.4%, the sector's one clean move today, attributed by CNBC in part to Anthropic's confidential IPO-filing news boosting AI-sector sentiment broadly. AMD and META have no company-specific catalyst today and no fresh price data. GOOGL and MSFT both enter their shared Oct 28 earnings date (also the Fed's decision day) 2 trading days out — a concentrated binary-catalyst event now clearly on the calendar. Aschenbrenner alignment: **STRONG ★★★★☆ (unchanged)** — today's rebound and the Anthropic IPO filing are consistent with continued AI-infrastructure investor appetite, but the standing AI-financing-stress overhang (CoreWeave/Oracle CDS) is unresolved and Wednesday's dual Fed/earnings catalyst is the sector's next real test.
 
 ### Semiconductors
 
-| Ticker | Signal | Price (Oct 23) | RSI(14) | Technical Note | Dispute Severity |
+| Ticker | Signal | Price (Oct 26) | RSI(14) | Technical Note | Dispute Severity |
 |--------|--------|------|---------|-----------------|-------------------|
-| TSM | WATCH (unchanged) | **No data found at all this session** — chronic blackout continues | Not found | Not usable | HIGH — chronic, no confirmed print |
-| ASML | WATCH (unchanged) | **No Oct 23 print found**; Oct 22 close now put at $1,560.54 (-7%, Motley Fool, US-ADR listing) — note this is a different listing leg than the EUR-denominated price this project tracked earlier in October; treat the level itself cautiously pending reconciliation | Not found | Stale | HIGH — no confirmed print today |
-| AMAT | WATCH (unchanged) | **No Oct 23 print found**; Oct 22 close now put at $375.58 (-8.16%, Motley Fool) | Not found | Stale | HIGH — no confirmed print today |
-| LRCX | **CONTRARIAN (upgraded from WATCH — format-031 fire, see dedicated section)** | **$230.18, +0.01%** (Finviz, timestamped 2:38pm ET — single source, specifically dated, uncontradicted) | Not found | Stabilizing after Thursday's selloff | MEDIUM — single-sourced but specifically timestamped today |
+| TSM | WATCH (unchanged) | **No data found at all** — chronic blackout continues (no confirmed print since ~Oct 14) | Not found | Not usable | HIGH — chronic, no confirmed print |
+| ASML | WATCH (unchanged) | **No Oct 26 print found**; last confirmed-ish anchor remains Oct 22's ~$1,560.54 (-7%, single source, US-ADR listing caveat) | Not found | Stale | HIGH — no confirmed print today |
+| AMAT | WATCH (unchanged) | **No Oct 26 print found**; last anchor Oct 22's ~$375.58 (-8.16%, single source) | Not found | Stale | HIGH — no confirmed print today |
+| LRCX | **WATCH (reverted from CONTRARIAN — format-022 hold re-fires, mechanical)** | **No Oct 26 print found**; last confirmed/specifically-timestamped anchor remains Friday's $230.18 (Finviz, 2:38pm ET) | Not found | Cumulative ~-12.6% since Oct 20's $263.45, unchanged today (neither confirmed-worse nor confirmed-better) | HIGH — no confirmed print today, triggering the hold |
 
 | Ticker | Entry/Exit Zone | Risk Factor | Catalyst | Timeframe |
 |--------|-------------------|--------------|----------|-----------|
-| TSM | No new entries; data gap persists | 2nm ramp pace/margin drag | Already reported (Q3 2026, Oct 15) | Short (1-2w) |
-| ASML | No new entries; sector-sympathy selloff, not idiosyncratic | China revenue step-down; CXMT competitive narrative | Already reported (Q3 2026, Oct 14) | Medium (1-3mo) |
-| AMAT | No new entries; continuation of the standing guidance-omission overhang, compounded by sector-wide selloff | Guidance-omission overhang (standing) | Fiscal Q4 2026 earnings ~Nov 11-12, 2026 (still not IR-confirmed) | Medium (1-3mo) |
-| LRCX | New CONTRARIAN entry per format-031's mechanical fire — a deep-value read on a thesis-intact, sector-sympathy-driven drawdown, size accordingly given the single-sourced price basis | Supply-chain constraints capping Dec-quarter guide; single-source price confirmation risk | Fiscal Q1 2027 REPORTED Oct 21, after close — record revenue, first >40% operating margin, >$200B 2027 WFE outlook | Short-to-medium (1-2w to 1-3mo), contrarian/value entry |
+| TSM | No new entries; data gap persists | 2nm ramp pace/margin drag | Already reported (Q3 2026, Oct 15); October monthly sales print expected ~Nov 9, 2026 | Short (1-2w) |
+| ASML | No new entries; data gap persists | China revenue step-down; listing-reconciliation caution (EUR vs. ADR) | Already reported (Q3 2026, Oct 14) | Medium (1-3mo) |
+| AMAT | No new entries; data gap persists | Guidance-omission overhang (standing) | Fiscal Q4 2026 earnings CONFIRMED Nov 12, 2026 (newly confirmed — see Note 5) | Medium (1-3mo) |
+| LRCX | Held at WATCH pending a fresh confirmed print to re-lift the hold; the underlying contrarian thesis (record Q1 FY2027 results, >$200B 2027 WFE outlook) is unchanged | Supply-chain constraints capping Dec-quarter guide; single-source price-confirmation risk | Fiscal Q1 2027 REPORTED Oct 21, after close | Short-to-medium (1-2w to 1-3mo), contrarian/value entry pending data clarity |
 
-**Sector news:** LRCX's stock has now round-tripped from a severe, single-sourced -9% Thursday reaction to roughly flat today, while the cumulative multi-day decline from Oct 20 remains deep (~-12.6%) — exactly the kind of overshoot-on-strong-fundamentals setup format-031 was designed to catch, even though the broader experiment is being discarded for insufficient portfolio-wide CS impact. AMAT and ASML's Oct 22 declines are now quantified more precisely (-8.16% and -7% respectively) than yesterday's single-source estimates, though ASML's figure carries a listing-reconciliation caveat. Aschenbrenner alignment: **STRONGEST ★★★★★ (held)** — LRCX's own guidance (record revenue, first >40% operating margin, >$200B 2027 WFE outlook) continues to reinforce rather than undermine the capacity-bottleneck demand thesis even as its share price absorbs a severe near-term reaction.
+**Sector news:** No confirmed same-day price data was found for any of the 4 Semiconductors tickers, and no sector-wide semiconductor news dated to Oct 26 surfaced — a return to a complete data blackout after the brief Oct 22-23 window of single-sourced prints. LRCX's mechanical hold (Note 7) is a data-confirmation technicality, not a reversal of the underlying thesis. Aschenbrenner alignment: **STRONGEST ★★★★★ (held)** — nothing today contradicts the standing capacity-bottleneck demand thesis; LRCX's own Oct 21 guidance remains the most recent and most relevant evidentiary anchor, unchallenged by anything found today.
 
 ### Energy for AI
 
-| Ticker | Signal | Price (Oct 23) | RSI(14) | Technical Note | Dispute Severity |
+| Ticker | Signal | Price (Oct 26) | RSI(14) | Technical Note | Dispute Severity |
 |--------|--------|------|---------|-----------------|-------------------|
-| VST | WATCH (unchanged) | **No Oct 23 print found**; a cited "Oct 21 close $156.14" is excluded as a digit-for-digit duplicate of the already-logged Oct 8 close (format-024) | Not found | Stale | HIGH — no confirmed print, stale-duplicate caught |
-| CEG | WATCH (unchanged) | **No Oct 23 print found**; last confirmed anchor remains Oct 20's ~$258.8-259.35 | Not found | Stale | HIGH — no confirmed print today |
-| OKLO | SPECULATIVE (unchanged, exempt) | **No Oct 23 print found** | Not found | Stale | HIGH — no confirmed print, exempt |
-| NRG | AVOID (unchanged, exempt) | **No Oct 23 data found at all** — chronic gap continues | Not found | Stale | HIGH — no confirmed print, chronic, exempt |
-| SMR | AVOID (unchanged, exempt) | **No Oct 23 print found**; last confirmed close remains Oct 20's $5.26 (52-week low) | Not found | Stale | HIGH — no confirmed print, exempt |
+| VST | WATCH (unchanged) | **No Oct 26 print found**; last confirmed anchor Oct 20's $149.84 (+0.09%) | Not found | Stale | HIGH — no confirmed print today |
+| CEG | WATCH (unchanged) | **No Oct 26 print found**; last confirmed anchor Oct 20's ~$258.8-259.35 | Not found | Stale | HIGH — no confirmed print today |
+| OKLO | SPECULATIVE (unchanged, exempt) | **No Oct 26 print found**; genuinely contradicted undated figures ($38.04 vs. $27.60) excluded | Not found | Last reasonably-placed read near the 52-week low (~$27.19) | HIGH — no confirmed print, contradicted sourcing excluded, exempt |
+| NRG | AVOID (unchanged, exempt) | **No Oct 26 data found at all** — chronic gap continues | Not found | Stale (last anchor Oct 9 $107.97) | HIGH — no confirmed print, chronic, exempt |
+| SMR | AVOID (unchanged, exempt) | **No Oct 26 print found**; last confirmed close Oct 20's $5.26 (52-week low) | Not found | A conflicting source cites a $7.21 52-week low (Jul 17) — flagged, not resolved (Note 8) | HIGH — no confirmed print, exempt |
 
 | Ticker | Entry/Exit Zone | Risk Factor | Catalyst | Timeframe |
 |--------|-------------------|--------------|----------|-----------|
-| VST | Hold; data gap itself the near-term issue | Raymond James cut its PT to $176 (from $182) on Oct 21 — a modest negative analyst revision, not a thesis break | Q3 2026 earnings CONFIRMED Nov 6, 2026 | Short (1-2w) |
-| CEG | Hold; Morgan Stanley raised its PT to $378 (from $369) on Oct 21 — a positive analyst revision reinforcing the contracted-revenue thesis | Execution/regulatory-approval risk on the 11-unit nuclear-uprate program | Q3 2026 earnings ~Nov 4-6, 2026 (disputed, not company-confirmed) | Medium (1-3mo) |
-| OKLO | Small speculative size only; Citi cut its PT to $33 (from $57.50) on Oct 21, keeping Neutral — a meaningful negative revision on the pre-revenue leg | Binary/early-stage deployment risk, compounded by sector-wide nuclear-sentiment pressure | Q3 2026 earnings ~Nov 6-10, 2026 (unconfirmed) | Long (3-12mo), speculative |
+| VST | Hold; data gap itself the near-term issue | PJM capacity-market/regulatory uncertainty; Raymond James cut PT to $176 (Oct 21) | Q3 2026 earnings CONFIRMED Nov 6, 2026 | Short (1-2w) |
+| CEG | Hold; no fresh catalyst found | Execution/regulatory-approval risk on the 11-unit nuclear-uprate program; Morgan Stanley raised PT to $378 (Oct 21) | Q3 2026 earnings ~early Nov 2026 (not independently re-confirmed today) | Medium (1-3mo) |
+| OKLO | Small speculative size only; direction unresolved | Binary/early-stage deployment risk; Citi cut PT to $33 (Oct 21) | Q3 2026 earnings ~Nov 6-10, 2026 (unconfirmed) | Long (3-12mo), speculative |
 | NRG | No new entries; AVOID thesis intact | Chronic near-zero same-day data coverage itself undermines signal reliability | Q3 2026 earnings ~Nov 5-6, 2026 (not company-confirmed) | Medium (1-3mo) |
-| SMR | No entry — AVOID; holding at a fresh 52-week low pending fresh data | Barclays' Underweight call (PT $5) cites valuation/execution | Q3 2026 earnings CONFIRMED Nov 5, 2026 | Long (3-12mo), speculative-to-avoid |
+| SMR | No entry — AVOID; 52-week-low figure itself needs reconciliation (Note 8) | Dilution/cash-burn risk; no confirmed paying commercial customer | Q3 2026 earnings CONFIRMED Nov 5, 2026 | Long (3-12mo), speculative-to-avoid |
 
-**Sector news:** A total same-day price blackout again across all 5 names, but Oct 21-dated analyst-target revisions surfaced a clean within-sector divergence: Morgan Stanley raised Constellation (contracted revenue) while Raymond James and Citi cut Vistra and Oklo (beta-exposed/pre-revenue) respectively — consistent with, and reinforcing, this project's standing bifurcation thesis for the sector. Aschenbrenner alignment: **STRONGEST ★★★★★ (held)** — nothing today contradicts the structural hyperscaler/government nuclear-demand case; if anything, Morgan Stanley's CEG target raise reinforces the contracted-revenue leg specifically.
+**Sector news:** No same-day price or news data could be confirmed for any of the 5 Energy for AI tickers — a continuation of this sector's chronic data gap. Background only: VST's conditional $4.2B DOE loan (Oct 5) and the Oct 21 analyst-target moves (Raymond James/VST cut, Morgan Stanley/CEG raise, Citi/OKLO cut) remain the most recent dated developments, none re-verified today. Aschenbrenner alignment: **STRONGEST ★★★★★ (held)** — nothing found today contradicts the structural hyperscaler/government nuclear-demand thesis; the data gap itself is not a thesis signal.
 
 ### Defense AI
 
-| Ticker | Signal | Price (Oct 23) | RSI(14) | Technical Note | Dispute Severity |
+| Ticker | Signal | Price (Oct 26) | RSI(14) | Technical Note | Dispute Severity |
 |--------|--------|------|---------|-----------------|-------------------|
-| PLTR | WATCH (unchanged) | **$195.25, -0.48%** (Reuters-sourced via GuruFocus, 10:35am ET — single source, specifically timestamped) | Not found | Essentially flat | MEDIUM — single-sourced but specifically timestamped today |
-| BAH | WATCH (unchanged) | **No Oct 23 price print found**; fiscal Q2 2027 results confirmed before open (beat EPS/miss revenue/raise guidance — see Note 6); stock reported falling ~3.3% intraday (single source on the reaction) | Not found | Earnings-day volatility | MEDIUM-HIGH on fundamentals (multi-source SEC-confirmed), MEDIUM on price reaction (single source) |
-| LMT | **WATCH (reverted from ACCUMULATE — format-022 hold re-fires, mechanical)** | **No Oct 23 price print found**; Oct 22's reaction now confirmed at +9% to $602.75 (2-source) | Not found | Record $292.0B backlog (confirmed Oct 22) | HIGH on today's price specifically — no confirmed Oct 23 print despite the now-confirmed Oct 22 move |
-| RTX | WATCH (unchanged) | **$191.33, -1.74%** (12:24pm ET, prior close cited $194.71 — single source, specifically timestamped); Oct 22 close now confirmed at $195.54 (+2%, 2-source) | Not found | Record $340B backlog (confirmed Oct 20) | MEDIUM — single-sourced but specifically timestamped today |
+| PLTR | WATCH (unchanged) | **No Oct 26 print found** | Not found | Stale | HIGH — no confirmed print |
+| BAH | WATCH (unchanged) | **No Oct 26 print found** — most recent dated figure is Oct 14 | Not found | Earnings-day reaction (Oct 23) already digested | HIGH — no confirmed print, 6+ trading days stale |
+| LMT | WATCH (unchanged) | **No Oct 26 print found**; investsmart's chronic frozen "$587.95" re-excluded | Not found | Record $292.0B backlog (confirmed Oct 22) | HIGH — no confirmed print, chronic known-bad source |
+| RTX | WATCH (unchanged) | **No Oct 26 print found**; a MarketBeat "$162.70, -3.48%" read appears stale/mismatched and is excluded | Not found | Record $340B backlog; new SM-6 ($24.4B, ~Oct 1) and AMRAAM ($20.7B, ~Sep 30) contract awards found as background (pre-dating this window) | HIGH — no confirmed print |
 
 | Ticker | Entry/Exit Zone | Risk Factor | Catalyst | Timeframe |
 |--------|-------------------|--------------|----------|-----------|
-| PLTR | Held at WATCH; today's flat read gives no new basis for a tier change | Valuation/multiple-compression risk ("value trap" narrative) remains salient | Q3 2026 earnings ~Nov 2, 2026 (best available date, not yet company-confirmed) | Short (1-2w) |
-| BAH | No new entries; earnings-day volatility, "beat but sold" pattern again | Federal contract-cancellation/budget-scrutiny risk; declining Civil-segment revenue (-15% YoY) | Q3 FY2027 REPORTED today, before open — EPS beat, revenue miss, guidance raised | Medium (1-3mo) |
-| LMT | Held at WATCH pending a fresh confirmed print; the fundamental upgrade thesis from yesterday is unchanged and now further validated by the confirmed +9% reaction | Aeronautics/F-16/C-130/F-35 execution drag (recurring theme), despite the confirmed beat-and-raise | Q3 2026 REPORTED Oct 22 — record $292.0B backlog, raised 2026 outlook, now-confirmed +9% reaction | Medium (1-3mo) |
-| RTX | Held at WATCH; today's modest single-sourced pullback (-1.74%) is a partial giveback of yesterday's now-confirmed +2% gain, not a thesis change | Pratt & Whitney GTF engine inspection/supply-chain overhang (recurring) | Record $340B backlog; Q3 beat-and-raise already reported, now-confirmed +2% reaction | Medium (1-3mo) |
+| PLTR | Held at WATCH pending a fresh confirmed print | Valuation/"value trap" narrative persists; data-confirmation gap itself now the near-term risk | Q3 2026 earnings ~Nov 2, 2026 (still not company-confirmed) | Hold for data clarity |
+| BAH | No new entries; earnings-day reaction already priced in | Federal contract-cancellation/budget-scrutiny risk; declining Civil-segment revenue (-15% YoY, per Oct 23 print) | Already reported fiscal Q2 2027 (Oct 23) | Medium (1-3mo) |
+| LMT | Accumulate only on a confirmed reclaim/fresh print; fundamentals thesis unchanged and strong | Aeronautics/F-35 execution drag (recurring); data-confirmation gap | Already reported Q3 2026 (Oct 22, record backlog) | Medium (1-3mo) |
+| RTX | Held at WATCH pending a fresh confirmed print; fundamentals thesis unchanged and strong | Pratt & Whitney GTF supply-chain overhang (recurring) | Already reported Q3 2026 (Oct 20, record backlog); new SM-6/AMRAAM awards reinforce the backlog thesis | Medium (1-3mo) |
 
-**Sector news:** The sector's two "beat-and-raise" names (LMT, RTX) both now have confirmed, real price reactions validating their respective theses, even as LMT's own mechanical hold reverts today on the data-confirmation technicality. BAH's earnings-day reaction (beat on EPS, miss on revenue, guide up, stock down) continues this project's recurring "beat but sold" pattern. Aschenbrenner alignment: **STRONGEST ★★★★★ (held)** — two of four sector names now carry confirmed-strong current-quarter prints with confirmed positive reactions within the past 2 trading days, the sector's strongest same-week confirmation rate of the entire run.
+**Sector news:** No genuinely Oct-26-dated price or news could be confirmed for any of the 4 Defense AI tickers. investsmart.com.au again served its known-bad frozen LMT figure; a MarketBeat RTX quote reads as stale/mismatched and was excluded. Background-only contract-award context (RTX's SM-6/AMRAAM wins) reinforces, but does not freshly validate, the standing backlog thesis. Aschenbrenner alignment: **STRONGEST ★★★★★ (held)** — nothing today contradicts the sector's Oct 20-23 confirmed beat-and-raise evidence base (LMT, RTX) or PLTR's standing strength; the data gap is informational, not thesis-relevant.
 
 ---
 
 ## Sector Relative Strength Ranking (format-003)
 
 ### AI Compute
-| Rank | Ticker | Day Return (last confirmed) | RSI | RS Signal |
+| Rank | Ticker | Day Return | RSI | RS Signal |
 |------|--------|-----------|-----|-----------|
-| 1 | MSFT | Directional-only "ticked higher" today (unconfirmed magnitude) | not found | ★★★☆☆ |
-| 2 | NVDA | -4.40% (Oct 22, now confirmed) | not found | ★★☆☆☆ |
-| 3 | GOOGL | ~-3.2% (Oct 22) | not found | ★★☆☆☆ |
-| 4 | AMD | ~-8.1% (Oct 22, single-sourced, uncorroborated) | not found | ★☆☆☆☆ |
-| 5 | META | -6.98% (Oct 22, now confirmed) | not found | ★☆☆☆☆ |
+| 1 | NVDA | **+2.4%** (confirmed) | not found | ★★★★☆ |
+| 2 | GOOGL | ~$316.85, change vs. yesterday not independently computed (single source) | not found | ★★★☆☆ |
+| 3 | MSFT | ~$532.80, change vs. yesterday not independently computed (single source) | not found | ★★★☆☆ |
+| — | AMD / META | N/A — no usable Oct 26 print | — | — |
 
 ### Semiconductors
 | Rank | Ticker | Day Return | RSI | RS Signal |
 |------|--------|-----------|-----|-----------|
-| 1 | LRCX | **+0.01% today** (confirmed, stabilizing); -12.6% cumulative since Oct 20 | not found | ★☆☆☆☆ (near-term stabilization, but worst cumulative mover of the run) |
-| 2 | ASML | -7% (Oct 22) | not found | ★★☆☆☆ |
-| 3 | AMAT | -8.16% (Oct 22) | not found | ★☆☆☆☆ |
-| — | TSM | N/A — no usable print found this session | — | — |
+| — | TSM / ASML / AMAT / LRCX | N/A — no usable Oct 26 print for any of the 4 | — | — |
 
 ### Energy for AI
-| Rank | Ticker | Day Return (Oct 20, stale) | RSI | RS Signal |
+| Rank | Ticker | Day Return | RSI | RS Signal |
 |------|--------|-----------|-----|-----------|
-| 1 | VST | +0.09% (Oct 20) | not found | ★★★★☆ |
-| 2 | CEG | ~-1.5 to -1.8% (Oct 20) | not found | ★★☆☆☆ |
-| 3 | OKLO | Direction unresolved (standing) | not found | ★☆☆☆☆ |
-| 4 | SMR | -7.56% (new 52-wk low, Oct 20) | not found | ★☆☆☆☆ |
-| — | NRG | N/A — chronic no-print gap | — | — |
+| — | VST / CEG / OKLO / NRG / SMR | N/A — no usable Oct 26 print for any of the 5 | — | — |
 
 ### Defense AI
 | Rank | Ticker | Day Return | RSI | RS Signal |
 |------|--------|-----------|-----|-----------|
-| 1 | LMT | +9% (Oct 22, now confirmed) | not found | ★★★★★ |
-| 2 | RTX | +2% (Oct 22, now confirmed); -1.74% intraday today (single-sourced) | not found | ★★★★☆ |
-| 3 | PLTR | -0.48% today (single-sourced, flat) | not found | ★★★☆☆ |
-| — | BAH | Earnings-day move reported ~-3.3% (single-sourced) | — | ★★☆☆☆ |
+| — | PLTR / BAH / LMT / RTX | N/A — no usable Oct 26 print for any of the 4 | — | — |
 
-**Overbought (RSI >70):** none confirmed today (RSI data unavailable for all 18 tickers this session, consistent with the chronic technicals-data gap). **Oversold (RSI <30):** none confirmed today. **New 52-week lows:** none newly confirmed today (SMR's stands from Oct 20).
+**Overbought (RSI >70):** none confirmed today — no current-dated RSI reading found for any of the 18 tickers. **Oversold (RSI <30):** none confirmed today, same reason. **New/approaching 52-week lows or highs:** none newly confirmed today (SMR's standing figure itself needs reconciliation — see Note 8).
 
 ---
 
 ## Options Flow / Unusual Activity
 
-No reliably today-dated options-flow data (notable trades, put/call ratio, confirmed unusual-volume flags) was found for any of the 18 portfolio tickers this session — consistent with the chronic underlying price/technicals gap. Elevated options activity is plausible around BAH's earnings and LRCX's continued post-earnings digestion, but no quantified figure was found — skipping per standing practice rather than forcing unquantified data.
+No reliably today-dated options-flow data (notable trades, put/call ratio, confirmed unusual-volume flags) was found for any of the 18 portfolio tickers this session — consistent with the chronic underlying price/technicals gap. Skipping per standing practice rather than forcing unquantified data.
 
 ---
 
 ## Correlation Breakdown Alerts (format-013 standing section)
 
-**The Dow/Nasdaq relationship inverted today relative to the week's pattern — the clearest correlation-breakdown-type signal of the session, at the index rather than ticker level.** All week, the Nasdaq has materially underperformed the Dow on AI-capex-skepticism selling; today that reversed (Dow -1.23% vs. Nasdaq -0.21%), with the Dow's decline likely driven more by oil-sensitive/cyclical exposure to the Middle East escalation than by the AI-specific narrative. At the ticker level, LRCX's near-flat today (+0.01%) against a backdrop of AMAT's and ASML's still-deeply-negative confirmed Oct 22 reactions (-8.16%, -7%) is a mild within-sector divergence worth flagging, though with no fresh Oct 23 print for AMAT/ASML to compare against directly, this is not a clean same-day breakdown call.
+**One mild, not fully assessable candidate divergence within AI Compute: NVDA's confirmed +2.4% gain against AMD's and META's complete data gap.** Given the broad market rebound this session (S&P/Nasdaq/Dow all higher) and the CNBC framing attributing chip-sector strength broadly to Anthropic IPO-filing sentiment, NVDA's move reads as sector-wide beta rather than an idiosyncratic breakdown — but with AMD, GOOGL, META, and most of the rest of the portfolio lacking confirmed same-day data, this cannot be cleanly confirmed as either a genuine breakdown or ordinary beta. No other sector shows an assessable divergence today given the near-total data gaps in Semiconductors, Energy for AI, and Defense AI.
 
 ---
 
 ## Cross-Source Price Divergence Flag (format-016 standing section)
 
-**0 tickers clear LOW dispute today. 3 tickers (LRCX, RTX, PLTR) carry MEDIUM** (single strong, specifically-timestamped source, uncontradicted). **BAH carries MEDIUM-HIGH on fundamentals / MEDIUM on its price reaction** (same single-source-but-specific-time treatment). **The remaining 14 tickers carry HIGH dispute** — no confirmed Oct 23 print at all.
+**0 tickers clear LOW dispute today. 3 tickers carry MEDIUM** (NVDA, GOOGL, MSFT). **15 tickers carry HIGH** (AMD, META, TSM, ASML, AMAT, LRCX, VST, CEG, OKLO, NRG, SMR, PLTR, BAH, LMT, RTX).
 
 ---
 
@@ -255,46 +236,46 @@ No reliably today-dated options-flow data (notable trades, put/call ratio, confi
 
 | Sector Pair | Trend | Rotation Signal |
 |-------------|-------|------------------|
-| AI Compute ↔ Semiconductors | Both still digesting Thursday's rout; LRCX stabilizing today while AMAT/ASML's Oct 22 declines are only now being precisely quantified | A tentative pause in the broad AI-capex-sentiment pullback, not yet a reversal |
-| Energy for AI ↔ Defense AI | No same-day price data for Energy for AI; Defense AI has 2 of 4 names with confirmed-strong, confirmed-positive Oct 22 reactions | Defense AI's fundamentals-driven strength (LMT, RTX) stands in contrast to Energy for AI's pure data gap, though both sectors remain STRONGEST on thesis alignment |
-| Broad market | Dow underperforming Nasdaq for once (Note 3) | A reversal of the week's AI-capex-exposed-vs.-defensive rotation pattern — today reads more like broad/cyclical (oil-driven) weakness than a tech-specific rotation |
+| AI Compute ↔ Semiconductors | AI Compute shows one confirmed gain (NVDA); Semiconductors has zero confirmed prints today | Not cleanly cross-assessable given the Semiconductors-side data gap, though the broad-market rebound plausibly lifted both |
+| Energy for AI ↔ Defense AI | Both sectors show a complete same-day price gap | Not assessable today — no data on either side |
+| Broad market | S&P/Nasdaq/Dow all higher, chip/AI names leading (Anthropic IPO-filing sentiment) | A continuation of risk-on rotation back into AI-exposed names after last week's two-week losing streak for the S&P/Nasdaq |
 
 ---
 
 ## Aschenbrenner Thesis Alignment
 
-- **AI Compute: STRONG ★★★★☆ (unchanged).** META's -7% Oct 22 reaction is now confirmed at a real magnitude; the underlying compute-buildout demand thesis is not contradicted by anything found today, but sentiment on the financing/spending-pace debate remains fragile.
-- **Semiconductors: STRONGEST ★★★★★ (held).** LRCX's own guidance (record revenue, first >40% operating margin, >$200B 2027 WFE outlook) continues to reinforce the capacity-bottleneck demand thesis even as its stock absorbs the sector's most severe cumulative drawdown of the run (-12.6% since Oct 20), now flagged CONTRARIAN by format-031's final, correctly-targeted fire.
-- **Energy for AI: STRONGEST ★★★★★ (held).** Morgan Stanley's Oct 21 Constellation price-target raise reinforces the contracted-revenue leg specifically; the structural hyperscaler/government nuclear-demand case is unaffected by the standing data gap itself.
-- **Defense AI: STRONGEST ★★★★★ (held).** LMT's and RTX's Oct 22 reactions are now both confirmed strongly positive (+9%, +2%), the sector's best same-week confirmation rate of the entire run, even as LMT's own signal mechanically reverts to WATCH today on a data-confirmation technicality.
+- **AI Compute: STRONG ★★★★☆ (unchanged).** Today's rebound and the Anthropic IPO-filing sentiment boost are consistent with continued AI-infrastructure investor appetite; the standing AI-financing-stress overhang (CoreWeave/Oracle CDS) is unresolved, and Wednesday's dual Fed/GOOGL/MSFT-earnings day is the sector's next real test.
+- **Semiconductors: STRONGEST ★★★★★ (held).** Nothing today contradicts the capacity-bottleneck demand thesis; LRCX's own Oct 21 guidance (record revenue, first >40% operating margin, >$200B 2027 WFE outlook) remains the most recent and most relevant evidentiary anchor.
+- **Energy for AI: STRONGEST ★★★★★ (held).** Nothing today contradicts the structural hyperscaler/government nuclear-demand case; the Oct 21 analyst-target bifurcation (CEG raised, VST/OKLO cut) remains the most recent evidentiary update.
+- **Defense AI: STRONGEST ★★★★★ (held).** Nothing today contradicts the sector's confirmed Oct 20-23 beat-and-raise evidence base (LMT, RTX) or PLTR's standing strength.
 
 ---
 
 ## Self-Scoring
 
-- **Actionability Score (AC): 100/100** — all 18 tickers carry a directional-bias signal, entry/exit guidance, a stated risk factor, a timeframe, and a catalyst.
-- **Coverage Score (CV): 100/100** — all 15 layers present, each with explicit "no confirmed print" notes where applicable.
-- **Accuracy Score (AS): 39.07%** (427/1093, 5-day lookback cumulative — unchanged, zero decisive scores this batch).
-- **Composite Score (CS): 75.63** (0.40×39.07 + 0.30×100 + 0.30×100 = 75.628, rounds to 75.63).
+- **Actionability Score (AC): 100/100** — all 18 tickers carry a directional-bias signal, entry/exit guidance (including explicit "hold for data clarity" framing where price itself is unconfirmed), a stated risk factor, a timeframe, and a catalyst.
+- **Coverage Score (CV): 100/100** — all 15 layers present (price + change, technicals, S/R, sector correlation, news sentiment, options-flow section, macro overlay, earnings calendar, Aschenbrenner alignment), each with explicit dispute-severity/"no confirmed print" notes where applicable.
+- **Accuracy Score (AS): 39.06%** (430/1101, 5-day lookback cumulative).
+- **Composite Score (CS): 75.62** (0.40×39.06 + 0.30×100 + 0.30×100 = 75.624, rounds to 75.62).
 
 ---
 
 ## Loop 2 — Auto-Research
 
 ### Approval Inbox
-Checked `list_issues` (state OPEN) for labels `needs-approval` and `approved` on `MalikJPalamar/autoresearch` via the GitHub MCP tools at session start: **both empty.** No approvals opened or closed this session.
+`list_issues` (via GitHub MCP, `MalikJPalamar/autoresearch`) checked for `needs-approval` and `approved` labels at session start: both **empty**. No approvals opened or closed this session.
 
-### format-031 Confirmed Multi-Day Trend Momentum Tilt — RESOLVED: DISCARD
-See dedicated section above. 3-report average CS 75.633 vs. baseline 75.64 (delta -0.01). One genuine, correctly-targeted fire (LRCX WATCH→CONTRARIAN today) was not enough to move CS against a saturated AC/CV and a 1000+-decision AS denominator. methodology.md reverted to its pre-2026-10-21 form; the LRCX fire stands, not retroactively undone.
+### format-032 Near-Date Base Substitution Protocol — Report 2/3 (active, not yet resolved)
+See dedicated section above. Running 2-report average CS = 75.625 vs. baseline 75.63 (delta so far -0.005). The protocol's first substantive test produced 2 additional decisive scores (ASML, SMR) that would otherwise have been PENDING — a real, measurable effect on the PENDING rate, though too early to call for CS purposes. Resolves after report 3/3, expected the next trading session (Tuesday, Oct 27).
 
-### format-032 Near-Date Base Substitution Protocol — STARTED (report 1/3)
-See dedicated section above. cs_before = 75.63. Targets this project's chronic high-PENDING-rate problem (today's Oct 16 batch was 0% decisive) rather than the signal-override mechanism itself. Resolution expected ~2026-10-28.
+### Queued Experiments
+None — the Phase 3 rollout list remains exhausted; nothing is queued behind format-032.
 
 ### Signal Changes Summary
-2 signal changes today: LMT ACCUMULATE→WATCH (format-022 mechanical hold, no confirmed Oct 23 print) and LRCX WATCH→CONTRARIAN (format-031's final, resolving fire). See Signal Changes section above.
+1 mechanical signal change: LRCX CONTRARIAN→WATCH (format-022 hold re-fires on a fresh HIGH-dispute read, reverting Friday's format-031 fire). 0 discretionary changes. See Signal Changes section above.
 
 ### Supabase Mirror
-Checked project `tjaqenludemumniqhwva` at session start: `reports` and `macro` tables were in sync through 2026-10-22; `experiments` showed format-031 active. Inserted today's `reports` row (date 2026-10-23, CS 75.63, AS 39.07, AC 100, CV 100) and `macro` row (Dow/S&P/Nasdaq confirmed levels; VIX/DXY/10Y left null — unresolved today). Updated `experiments`: format-031 marked resolved/discarded (3-report avg 75.633 vs baseline 75.64), format-032 inserted as the new active experiment (cs_before 75.63, started 2026-10-23). `daily_prices`/`signals`/`technicals` backfill beyond Oct 12 remains out of sync from prior sessions — a long-standing gap this project's changelog has repeatedly logged, not addressed this session; logged here rather than blocking git operations.
+Best-effort sync attempted this session to project `tjaqenludemumniqhwva` (`reports`, `macro`, `experiments`, `signals` tables) — see commit notes for outcome; any failure is logged there rather than blocking git operations.
 
 ### state.json
-Updated: `active_experiment: format-032`, `active_experiment_name: "Near-Date Base Substitution Protocol"`, `experiment_start_date: 2026-10-23`, `reports_scored: 1`, `baseline_cs: 75.63`, `awaiting_approval: false`, `queued_experiment: null`, `last_report_date: 2026-10-23`, `last_scored_date: 2026-10-23`, `last_cs: 75.63`, `last_as: 39.07`, `updated_by: "loop1+loop2"`.
+Updated: `active_experiment: format-032`, `experiment_start_date: 2026-10-23`, `reports_scored: 2`, `baseline_cs: 75.63`, `awaiting_approval: false`, `queued_experiment: null`, `last_report_date: 2026-10-26`, `last_scored_date: 2026-10-26`, `last_cs: 75.62`, `last_as: 39.06`, `updated_by: "loop1+loop2"`.
