@@ -483,35 +483,57 @@ the 2026-10-23 changelog entry for detail. This section is reverted
 to its pre-2026-10-21 form (no multi-day trend-momentum-tilt rule);
 the one real fire (LRCX, 2026-10-23) is not retroactively undone.
 
-### Near-Date Base Substitution Protocol (format-032, ACTIVE since 2026-10-23, report 1/3)
+### Near-Date Base Substitution Protocol (format-032) — DISCARDED 2026-10-27
 
-3-report KEEP/DISCARD against baseline CS 75.63 (the 2026-10-23 CS,
-after format-031's DISCARD is folded in), reverted on DISCARD.
-Signal-logic/scoring-methodology, auto-evolve per the 2026-08-20
-pre-approval. Motivated by a distinct failure mode from the
-"confirmed-same-session-event override" family (format-012 through
-format-031): the chronic `scripts/prices.sh` outage (43+ sessions)
-and recurring WebFetch failures have driven an extremely high
-PENDING rate in 5-day-lookback scoring — the 2026-10-23 report's own
-Oct 16 batch scored 0% decisive because every one of the 18 tickers
-had "no confirmed print" on the origin day itself, not merely on the
-scoring day. A batch that is 0-18% decisive each cycle gives the AS
-metric very little signal to move on regardless of signal quality.
-Rule: when a ticker's origin-day report logged "no usable base"/"no
-confirmed print," but a confirmed or specifically-timestamped-and-
-uncontradicted price for that same ticker was found within ±1
-trading day of the origin date (either already published in that
-neighboring day's report, or surfaced via WebSearch this session and
-attributable with confidence to a specific neighboring date),
-substitute that near-date price as the effective scoring base —
-explicitly flagged in the scoring table as a **substituted base**
-(near-date, not exact-date) rather than silently treated as exact.
-All other scoring mechanics (≥1% match/contradiction, the
-neutral-signal gap, etc.) apply unchanged to the substituted base. A
-base with no price found within ±1 trading day of origin still stays
-PENDING — this narrows, but does not eliminate, the PENDING rate.
-Effective starting the 2026-10-23 report, first substantively
-testable on the next 5-day-lookback scoring pass (~2026-10-26).
+format-032 ran its full 3-report evaluation (2026-10-23 → 2026-10-27)
+and was DISCARDED: 3-report average CS 75.61 vs. baseline 75.63
+(delta -0.02). Reverted per the auto-evolve rule. The protocol
+demonstrably worked exactly as designed — report 2/3 (Oct 26)
+substituted a near-date (±1 trading day) base for 4 of 8 otherwise-
+unusable Oct 19 bases (ASML/SMR via Oct 16, VST/CEG via Oct 20),
+converting 2 (ASML, SMR) into decisive scores; report 3/3 (Oct 27)
+substituted RTX's Oct 20 "confirmed-direction-only, no price" base
+with its confirmed Oct 19 close ($192.11, -1TD), converting what
+would otherwise have been PENDING into a CORRECT score (Oct 22's
+confirmed $195.54, +1.78% vs. the substituted base, matching the
+bullish ACCUMULATE call) — a 3rd genuine substitution success across
+the run (TSM/ASML/NRG/BAH/LMT had no ±1TD candidate available on
+report 3/3 and stayed PENDING regardless). Despite narrowing the
+PENDING rate exactly as intended on 3 separate occasions, this was
+still too small an effect to move a cumulative 1000+-decision AS
+denominator with AC/CV saturated at 100/100 — the same "logic worked,
+CS didn't move" pattern as format-013/016's marginal KEEPs but
+falling just short on the sign of the delta. See the 2026-10-27
+changelog entry for detail. This section is reverted to its
+pre-2026-10-23 form (no near-date base substitution rule); the
+substitutions already applied while active (ASML/SMR on 2026-10-26,
+RTX on 2026-10-27) are not retroactively undone, consistent with how
+prior real-but-insufficient fires (format-019/028/029/031) were
+treated on their own DISCARDs.
+
+### Near-Date Base Substitution Protocol v2 — ±2 Trading Day Window (format-033, ACTIVE since 2026-10-27, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.59 (the 2026-10-27 CS),
+reverted on DISCARD. Signal-logic/scoring-methodology, auto-evolve
+per the 2026-08-20 pre-approval. Motivated directly by format-032's
+own run: its ±1 trading day substitution window still left TSM,
+ASML, NRG, BAH, and LMT PENDING on report 3/3 (2026-10-27) because no
+qualifying price existed even 1 trading day to either side of their
+origin dates — a direct symptom of the chronic multi-session
+`scripts/prices.sh`/WebFetch blackout producing stretches of 3+
+consecutive dataless sessions for these chronically-stale names, not
+a flaw in the substitution logic itself. Rule: identical to
+format-032, except the lookback/lookahead window widens to **±2
+trading days** of the origin date when no ±1TD candidate exists.
+Explicitly flag the scoring table entry as a **substituted base
+(±2TD)** to distinguish it from a tighter, more reliable ±1TD
+substitution (format-032's standard) or an exact-date base. All other
+scoring mechanics (≥1% match/contradiction, the neutral-signal gap,
+substituted-base rules) carry over unchanged. A base with no
+qualifying price within ±2 trading days of origin still stays
+PENDING. Effective starting the 2026-10-27 report, first
+substantively testable on the next 5-day-lookback scoring pass
+(~2026-10-30).
 
 ---
 
