@@ -3,7 +3,7 @@
   "active_experiment": "format-033",
   "active_experiment_name": "Near-Date Base Substitution Protocol v2 (±2 Trading Day Window)",
   "experiment_start_date": "2026-10-27",
-  "reports_scored": 0,
+  "reports_scored": 1,
   "baseline_cs": 75.59,
   "awaiting_approval": false,
   "awaiting_approval_since": null,
@@ -11,10 +11,10 @@
   "queued_experiment": null,
   "queued_experiment_name": null,
   "queued_experiment_issue": null,
-  "last_report_date": "2026-10-27",
-  "last_scored_date": "2026-10-27",
-  "last_cs": 75.59,
-  "last_as": 38.97,
+  "last_report_date": "2026-10-28",
+  "last_scored_date": "2026-10-28",
+  "last_cs": 75.58,
+  "last_as": 38.94,
   "updated_by": "loop1+loop2",
-  "updated_at": "2026-10-27T21:30:00Z"
+  "updated_at": "2026-10-28T21:30:00Z"
 }
