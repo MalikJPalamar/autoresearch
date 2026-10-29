@@ -511,29 +511,60 @@ RTX on 2026-10-27) are not retroactively undone, consistent with how
 prior real-but-insufficient fires (format-019/028/029/031) were
 treated on their own DISCARDs.
 
-### Near-Date Base Substitution Protocol v2 — ±2 Trading Day Window (format-033, ACTIVE since 2026-10-27, report 1/3)
+### Near-Date Base Substitution Protocol v2 — ±2 Trading Day Window (format-033) — DISCARDED 2026-10-29
 
-3-report KEEP/DISCARD against baseline CS 75.59 (the 2026-10-27 CS),
-reverted on DISCARD. Signal-logic/scoring-methodology, auto-evolve
-per the 2026-08-20 pre-approval. Motivated directly by format-032's
-own run: its ±1 trading day substitution window still left TSM,
-ASML, NRG, BAH, and LMT PENDING on report 3/3 (2026-10-27) because no
-qualifying price existed even 1 trading day to either side of their
-origin dates — a direct symptom of the chronic multi-session
-`scripts/prices.sh`/WebFetch blackout producing stretches of 3+
-consecutive dataless sessions for these chronically-stale names, not
-a flaw in the substitution logic itself. Rule: identical to
-format-032, except the lookback/lookahead window widens to **±2
-trading days** of the origin date when no ±1TD candidate exists.
-Explicitly flag the scoring table entry as a **substituted base
-(±2TD)** to distinguish it from a tighter, more reliable ±1TD
-substitution (format-032's standard) or an exact-date base. All other
-scoring mechanics (≥1% match/contradiction, the neutral-signal gap,
-substituted-base rules) carry over unchanged. A base with no
-qualifying price within ±2 trading days of origin still stays
-PENDING. Effective starting the 2026-10-27 report, first
-substantively testable on the next 5-day-lookback scoring pass
-(~2026-10-30).
+format-033 ran its full 3-report evaluation (2026-10-27 → 2026-10-29)
+and was DISCARDED: 3-report average CS 75.583 vs. baseline 75.59
+(delta -0.007, rounds to -0.01). Per this project's near-zero/
+negative-delta precedent (format-015, format-023, format-025,
+format-027, format-028, format-031, format-032), reverted per the
+auto-evolve rule. Reports 1/3 and 2/3 produced 0 fires requiring the
+±2TD reach specifically (every substitution used ±1TD, which
+format-032 would also have found); report 3/3 finally produced the
+protocol's first genuine demonstration of its reason for existing —
+AMD's and MSFT's Oct 22 signals each had no usable ±1TD candidate but
+a confirmed price exactly at -2TD (Oct 20), converting both from what
+would have been PENDING under format-032 into decisive verdicts (AMD
+INCORRECT, MSFT CORRECT). Despite this clean capability
+demonstration, the 3-report CS was still flat-to-marginally-negative,
+dominated by AS noise across a cumulative 1,100+-decision denominator
+with AC/CV saturated at 100/100 — the same "logic worked, CS didn't
+move" pattern as several prior real-but-insufficient fires
+(format-019/028/029/031/032). See the 2026-10-29 changelog entry for
+detail. This section is reverted to its pre-2026-10-27 form (no
+near-date base substitution rule of any kind, consistent with
+format-032's own prior revert); the genuine fires already scored
+while either format-032 or format-033 was active (ASML/SMR on
+2026-10-26, RTX on 2026-10-27, AMD/MSFT on 2026-10-29) are not
+retroactively undone.
+
+### Confirmed Post-Earnings Gap-Reaction Override (format-034, ACTIVE since 2026-10-29, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.58 (the 2026-10-29 CS),
+reverted on DISCARD. Signal-logic, auto-evolve per the 2026-08-20
+pre-approval. Motivated by 2026-10-29's GOOGL/MSFT same-day earnings
+divergence (confirmed negative FCF vs. a confirmed Azure/FCF beat,
+each with a measurable price reaction) — earnings events come with
+SEC filings as a built-in confirmation source, largely insulating
+this rule from the WebSearch/`scripts/prices.sh` blackout that sank
+several predecessor technical-indicator override experiments
+(RSI-threshold format-012, golden/death-cross format-017,
+MACD-crossover format-018, earnings-beat/miss format-020,
+extreme-volume format-021, RSI/trend-momentum format-030/031). Rule:
+when a ticker reports earnings within the prior 1 trading day AND a
+confirmed (2-source, or a single specifically-timestamped source)
+same-session price reaction of ≥5% in either direction is found, a
+≥+5% reaction on a confirmed beat upgrades the ticker one tier toward
+ACCUMULATE (capped there); a ≥-5% reaction on a confirmed miss/
+negative print downgrades the ticker one tier toward AVOID (from
+WATCH or above only). Fires once per earnings/reaction event, on the
+report immediately following it. Flag any ticker scored under this
+rule as a **post-earnings gap override**, distinct from an ordinary
+discretionary catalyst-based call. Effective starting the
+2026-10-29 report. Report 1/3: 0 fires (GOOGL's qualifying -5%+
+reaction was already captured by an ordinary discretionary call made
+before this rule's activation; MSFT's confirmed beat reaction did not
+clear the ±5% threshold).
 
 ---
 
