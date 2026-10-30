@@ -3,7 +3,7 @@
   "active_experiment": "format-034",
   "active_experiment_name": "Confirmed Post-Earnings Gap-Reaction Override",
   "experiment_start_date": "2026-10-29",
-  "reports_scored": 1,
+  "reports_scored": 2,
   "baseline_cs": 75.58,
   "awaiting_approval": false,
   "awaiting_approval_since": null,
@@ -11,10 +11,10 @@
   "queued_experiment": null,
   "queued_experiment_name": null,
   "queued_experiment_issue": null,
-  "last_report_date": "2026-10-29",
-  "last_scored_date": "2026-10-29",
+  "last_report_date": "2026-10-30",
+  "last_scored_date": "2026-10-30",
   "last_cs": 75.58,
   "last_as": 38.94,
   "updated_by": "loop1+loop2",
-  "updated_at": "2026-10-29T21:15:00Z"
+  "updated_at": "2026-10-30T21:15:00Z"
 }
