@@ -538,33 +538,55 @@ while either format-032 or format-033 was active (ASML/SMR on
 2026-10-26, RTX on 2026-10-27, AMD/MSFT on 2026-10-29) are not
 retroactively undone.
 
-### Confirmed Post-Earnings Gap-Reaction Override (format-034, ACTIVE since 2026-10-29, report 1/3)
+### Confirmed Post-Earnings Gap-Reaction Override (format-034) — DISCARDED 2026-11-02
 
-3-report KEEP/DISCARD against baseline CS 75.58 (the 2026-10-29 CS),
+format-034 ran its full 3-report evaluation (2026-10-29 → 2026-11-02,
+with no report on the intervening weekend) and was DISCARDED:
+3-report average CS 75.58 vs. baseline 75.58 (delta 0.00). Per this
+project's exact-zero-delta precedent (format-015, format-023),
+reverted per the auto-evolve rule. The rule never fired a single
+override in any of its 3 evaluation reports — no ticker's earnings
+date ever fell within the prior-1-trading-day eligibility window
+during this specific 3-report stretch (AMD's Nov 3 report landed one
+day too late; PLTR's ~Nov 2 date was never company-confirmed) — so
+the decision reflects earnings-calendar timing, not a demonstrated
+defect in the override logic itself, which remains a reasonable idea
+(SEC-filed earnings reactions are among the best-evidenced events
+this project can score) that a different 3-report window could still
+exercise. See the 2026-11-02 changelog entry for detail. This section
+is reverted to its pre-2026-10-29 form (no post-earnings gap override
+rule).
+
+### Extended Lookback Fallback Protocol (format-035, ACTIVE since 2026-11-02, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.58 (the 2026-11-02 CS),
 reverted on DISCARD. Signal-logic, auto-evolve per the 2026-08-20
-pre-approval. Motivated by 2026-10-29's GOOGL/MSFT same-day earnings
-divergence (confirmed negative FCF vs. a confirmed Azure/FCF beat,
-each with a measurable price reaction) — earnings events come with
-SEC filings as a built-in confirmation source, largely insulating
-this rule from the WebSearch/`scripts/prices.sh` blackout that sank
-several predecessor technical-indicator override experiments
-(RSI-threshold format-012, golden/death-cross format-017,
-MACD-crossover format-018, earnings-beat/miss format-020,
-extreme-volume format-021, RSI/trend-momentum format-030/031). Rule:
-when a ticker reports earnings within the prior 1 trading day AND a
-confirmed (2-source, or a single specifically-timestamped source)
-same-session price reaction of ≥5% in either direction is found, a
-≥+5% reaction on a confirmed beat upgrades the ticker one tier toward
-ACCUMULATE (capped there); a ≥-5% reaction on a confirmed miss/
-negative print downgrades the ticker one tier toward AVOID (from
-WATCH or above only). Fires once per earnings/reaction event, on the
-report immediately following it. Flag any ticker scored under this
-rule as a **post-earnings gap override**, distinct from an ordinary
-discretionary catalyst-based call. Effective starting the
-2026-10-29 report. Report 1/3: 0 fires (GOOGL's qualifying -5%+
-reaction was already captured by an ordinary discretionary call made
-before this rule's activation; MSFT's confirmed beat reaction did not
-clear the ±5% threshold).
+pre-approval. Motivated by the recurring "good base, no forward
+anchor" pattern across every batch scored since format-032/033 were
+discarded (2026-10-27 → 2026-11-02): tickers increasingly clear the
+strict exact-date *origin*-side base requirement, but the chronic
+forward-side blackout leaves them permanently PENDING at the standard
+5-trading-day lookback. Unlike format-032/033 (which widened which
+day's price counts as the *starting* base), this rule targets the
+*scoring* side of the window — a lever no prior experiment in this
+project's 20+-item history has tried. Rule: when a signal cannot be
+scored at the standard 5-trading-day lookback because no confirmed
+forward price exists at exactly 5TD, check whether a confirmed
+(2-source, or single specifically-timestamped) price exists at the
+10th trading day after the signal date instead; if found, score the
+signal against that 10TD anchor, flagged in the batch table as
+"scored via 10TD fallback." This only activates for signals that
+would otherwise be unscoreable at 5TD — it never overrides a signal
+that already has a usable 5TD anchor, and a signal is counted exactly
+once in the AS numerator/denominator regardless of which window
+resolved it; a signal still unconfirmed at 10TD remains PENDING
+(checked once, not on an indefinitely-recurring basis). Effective
+starting the 2026-11-02 report. Report 1/3: not yet applicable — the
+2026-10-26 batch scored this session is only 5 trading days old, so
+its 10TD checkpoint (~2026-11-09) falls past this report's horizon;
+the rule's first real test will be against an older still-unscored
+batch once it reaches 10TD, or against today's own batch if it
+remains unscored by then.
 
 ---
 
