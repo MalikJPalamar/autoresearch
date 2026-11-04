@@ -557,36 +557,54 @@ exercise. See the 2026-11-02 changelog entry for detail. This section
 is reverted to its pre-2026-10-29 form (no post-earnings gap override
 rule).
 
-### Extended Lookback Fallback Protocol (format-035, ACTIVE since 2026-11-02, report 1/3)
+### Extended Lookback Fallback Protocol (format-035) — DISCARDED 2026-11-04
 
-3-report KEEP/DISCARD against baseline CS 75.58 (the 2026-11-02 CS),
+format-035 ran its full 3-report evaluation (2026-11-02 → 2026-11-04)
+and was DISCARDED: 3-report average CS 75.58 vs. baseline 75.58
+(delta 0.00). Per this project's exact-zero-delta precedent
+(format-015, format-023, format-034), reverted per the auto-evolve
+rule. Report 1/3 (Nov 2) was not yet applicable; report 2/3 (Nov 3)
+found 5 eligible candidates (AMD, MSFT, VST, CEG, SMR, from the Oct 20
+batch) at the new 10-trading-day checkpoint, 0 rescued; report 3/3
+(Nov 4) found **zero** eligible candidates at all — the Oct 21 origin
+session (whose batch would have reached its 10TD checkpoint today)
+was this project's single most severe same-day blackout, with no
+ticker clearing even the exact-date origin-side bar, so the
+forward-side extension had nothing to work with. This project has now
+separately tried and discarded both an origin-side fix (format-032/033,
+near-date base substitution) and a forward-side fix (format-035,
+extended lookback) for the chronic PENDING problem, with neither
+moving CS. See the 2026-11-04 changelog entry for detail. This section
+is reverted to its pre-2026-11-02 form (no 10-trading-day forward
+checkpoint).
+
+### Specifically-Timestamped Intraday Snapshot Protocol (format-036, ACTIVE since 2026-11-04, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.58 (the 2026-11-04 CS),
 reverted on DISCARD. Signal-logic, auto-evolve per the 2026-08-20
-pre-approval. Motivated by the recurring "good base, no forward
-anchor" pattern across every batch scored since format-032/033 were
-discarded (2026-10-27 → 2026-11-02): tickers increasingly clear the
-strict exact-date *origin*-side base requirement, but the chronic
-forward-side blackout leaves them permanently PENDING at the standard
-5-trading-day lookback. Unlike format-032/033 (which widened which
-day's price counts as the *starting* base), this rule targets the
-*scoring* side of the window — a lever no prior experiment in this
-project's 20+-item history has tried. Rule: when a signal cannot be
-scored at the standard 5-trading-day lookback because no confirmed
-forward price exists at exactly 5TD, check whether a confirmed
-(2-source, or single specifically-timestamped) price exists at the
-10th trading day after the signal date instead; if found, score the
-signal against that 10TD anchor, flagged in the batch table as
-"scored via 10TD fallback." This only activates for signals that
-would otherwise be unscoreable at 5TD — it never overrides a signal
-that already has a usable 5TD anchor, and a signal is counted exactly
-once in the AS numerator/denominator regardless of which window
-resolved it; a signal still unconfirmed at 10TD remains PENDING
-(checked once, not on an indefinitely-recurring basis). Effective
-starting the 2026-11-02 report. Report 1/3: not yet applicable — the
-2026-10-26 batch scored this session is only 5 trading days old, so
-its 10TD checkpoint (~2026-11-09) falls past this report's horizon;
-the rule's first real test will be against an older still-unscored
-batch once it reaches 10TD, or against today's own batch if it
-remains unscored by then.
+pre-approval. Motivated by the 2026-11-04 report's own research:
+WebSearch repeatedly surfaced specifically-timestamped intraday quotes
+(e.g. "$204.09 ... at 11:59am", "$172.28 ... as of 9:44am EST") that
+are currently excluded from scoring entirely because they are not
+settled closes — a different failure mode than the "no data at all"
+blackouts format-032/033/035 targeted. Rule: when no settled daily
+close is confirmable for a ticker on a given exact date, but one or
+more sources report a specifically-timestamped intraday quote from
+that same session, that intraday quote may serve as a valid exact-date
+price anchor (origin or forward) for 5-trading-day-lookback scoring,
+flagged in the batch table as "intraday snapshot, not settled close."
+If two or more independently-timestamped intraday quotes from the same
+session diverge by more than 2%, treat as HIGH dispute per the
+standing format-016 protocol and do not use either — this rule never
+lowers the evidentiary bar, it only widens what counts as a same-day
+confirmation when a close itself is unavailable. Never overrides a
+genuine settled close when one exists; a signal is counted once in the
+AS numerator/denominator regardless of which kind of anchor resolved
+it. Effective starting the 2026-11-04 report. Report 1/3: not yet
+applicable to scoring today's own batch (too recent); today's
+AMD/NVDA/PLTR intraday reads are the kind of data this rule is
+designed to eventually make scoreable once that batch reaches its
+5-day lookback.
 
 ---
 
