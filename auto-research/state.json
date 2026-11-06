@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "active_experiment": "format-036",
-  "active_experiment_name": "Specifically-Timestamped Intraday Snapshot Protocol",
-  "experiment_start_date": "2026-11-04",
-  "reports_scored": 2,
-  "baseline_cs": 75.58,
+  "active_experiment": "format-037",
+  "active_experiment_name": "Weekly/Multi-Day Aggregate Return Fallback Protocol",
+  "experiment_start_date": "2026-11-06",
+  "reports_scored": 1,
+  "baseline_cs": 75.56,
   "awaiting_approval": false,
   "awaiting_approval_since": null,
   "approval_issue": null,
   "queued_experiment": null,
   "queued_experiment_name": null,
   "queued_experiment_issue": null,
-  "last_report_date": "2026-11-05",
-  "last_scored_date": "2026-11-05",
+  "last_report_date": "2026-11-06",
+  "last_scored_date": "2026-11-06",
   "last_cs": 75.56,
   "last_as": 38.91,
   "updated_by": "loop1+loop2",
-  "updated_at": "2026-11-05T21:30:00Z"
+  "updated_at": "2026-11-06T21:30:00Z"
 }

@@ -578,33 +578,58 @@ moving CS. See the 2026-11-04 changelog entry for detail. This section
 is reverted to its pre-2026-11-02 form (no 10-trading-day forward
 checkpoint).
 
-### Specifically-Timestamped Intraday Snapshot Protocol (format-036, ACTIVE since 2026-11-04, report 1/3)
+### Specifically-Timestamped Intraday Snapshot Protocol (format-036) — DISCARDED 2026-11-06
 
-3-report KEEP/DISCARD against baseline CS 75.58 (the 2026-11-04 CS),
+format-036 ran its full 3-report evaluation (2026-11-04 → 2026-11-06)
+and was DISCARDED: 3-report average CS 75.567 vs. baseline 75.58
+(delta -0.01). Per this project's near-zero/negative-delta precedent
+(format-015, format-023, format-025, format-027, format-028,
+format-031, format-033, format-034, format-035), reverted per the
+auto-evolve rule. The rule never fired a single override in any of its
+3 evaluation reports — intraday-timestamped quotes did surface during
+the run (Nov 4's "$204.09 ... at 11:59am", "$172.28 ... as of 9:44am
+EST"), but none ever landed on the specific exact date needed to
+resolve an active 5-day-lookback pair within the rule's own 3-report
+window; the Nov 6 resolution report's own batch found zero usable
+origin-side bases at all for any of the 18 tickers (the most severe
+blackout of the run), underscoring that the chronic data-availability
+problem has only worsened, not that the rule's logic was defective.
+See the 2026-11-06 changelog entry for detail. This section is
+reverted to its pre-2026-11-04 form (no specifically-timestamped
+intraday-snapshot rule).
+
+### Weekly/Multi-Day Aggregate Return Fallback Protocol (format-037, ACTIVE since 2026-11-06, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.56 (the 2026-11-06 CS),
 reverted on DISCARD. Signal-logic, auto-evolve per the 2026-08-20
-pre-approval. Motivated by the 2026-11-04 report's own research:
-WebSearch repeatedly surfaced specifically-timestamped intraday quotes
-(e.g. "$204.09 ... at 11:59am", "$172.28 ... as of 9:44am EST") that
-are currently excluded from scoring entirely because they are not
-settled closes — a different failure mode than the "no data at all"
-blackouts format-032/033/035 targeted. Rule: when no settled daily
-close is confirmable for a ticker on a given exact date, but one or
-more sources report a specifically-timestamped intraday quote from
-that same session, that intraday quote may serve as a valid exact-date
-price anchor (origin or forward) for 5-trading-day-lookback scoring,
-flagged in the batch table as "intraday snapshot, not settled close."
-If two or more independently-timestamped intraday quotes from the same
-session diverge by more than 2%, treat as HIGH dispute per the
-standing format-016 protocol and do not use either — this rule never
-lowers the evidentiary bar, it only widens what counts as a same-day
-confirmation when a close itself is unavailable. Never overrides a
-genuine settled close when one exists; a signal is counted once in the
-AS numerator/denominator regardless of which kind of anchor resolved
-it. Effective starting the 2026-11-04 report. Report 1/3: not yet
-applicable to scoring today's own batch (too recent); today's
-AMD/NVDA/PLTR intraday reads are the kind of data this rule is
-designed to eventually make scoreable once that batch reaches its
-5-day lookback.
+pre-approval. Motivated by the 2026-11-06 report's Oct 30 signal
+batch, where every one of the 18 origin-side bases was unusable under
+the strict exact-date convention, while this same session's macro
+research readily surfaced well-sourced, specifically-dated
+**aggregate** multi-day figures (bundled index closes, weekly/monthly
+recap-style coverage) even when exact single-day ticker prints were
+unavailable — a different angle on the chronic blackout problem than
+near-date substitution (format-032/033), extended lookback
+(format-035), or intraday snapshots (format-036). Rule: when no
+exact-date daily close or specifically-timestamped intraday quote
+(origin or forward side) is confirmable for a ticker, but a
+reliably-sourced, specifically-dated cumulative return over a bounded
+multi-day window that fully contains the unresolved date is found
+(e.g. a company- or outlet-published "down/up X% this week" or "X%
+over the past N sessions" figure with a clear, stated end-date), that
+aggregate return may serve as a valid price-anchor proxy for
+5-trading-day-lookback scoring, flagged in the batch table as
+"aggregate-window anchor, not exact-date." If two or more
+aggregate-window candidates covering overlapping periods diverge by
+more than 2% on an annualized/pro-rated basis, treat as HIGH dispute
+per the standing format-016 protocol and do not use either. This rule
+never lowers the evidentiary bar on exact-date data — it only widens
+what counts as a confirmation when an exact-date read is unavailable.
+Effective starting the 2026-11-06 report. Report 1/3: no qualifying
+aggregate-window candidate was found for any of the 18 tickers in
+today's research; the rule's first opportunity to fire will arise once
+a future lookback window finds an aggregate-return figure covering an
+unresolved date.
 
 ---
 
