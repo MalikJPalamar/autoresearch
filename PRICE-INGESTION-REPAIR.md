@@ -23,7 +23,7 @@ Date fields must be retained by consumers. The 5-calendar-day bound is a conserv
 ## Validation on November 10, 2026
 
 - `bash -n scripts/prices.sh`: pass.
-- `python3 -m unittest discover -s tests -v`: 9 tests pass, offline synthetic fixtures.
+- `python3 -m unittest discover -s tests -v`: 13 tests pass, offline synthetic fixtures.
 - One read-only live NVDA GET and patched CLI completed, returning source Yahoo and date November 9, 2026. This establishes only a successful fetch in this cloud workspace, not production recovery.
 - All-18 smoke did not complete: runtime returned `network approval was cancelled before a decision was returned`. No claim of 18/18 recovery.
 - No changes merged, deployed or made to scheduled runtime.
@@ -36,3 +36,9 @@ Date fields must be retained by consumers. The 5-calendar-day bound is a conserv
 4. Require all 18 unique requested tickers, valid prices and the intended completed US session date. No null rows, stale dates, or intraday prices. Test next scheduled run as well; a manual run alone is not recovery.
 5. Wire price coverage/freshness into the report-quality gate, separately from report existence. Existing canary date-rollover repair is a distinct task; do not conflate report presence with data health.
 6. Only label recovered after the scheduled job produces and consumes valid 18/18 prices. If denied again, report domain/action/error immediately rather than generating another success-looking report.
+
+## Review correction: exact report-date gate
+
+Codex P1 review identified that the configured 19:00 UTC run precedes US settlement. The CLI now requires the current New York date by default, and rejects a previous-session result from either provider with null data and exit 1. An explicit `--date=YYYY-MM-DD` supports a deliberately requested historical session; it is never an automatic fallback. This prevents silent prior-day substitution without changing schedules or scoring.
+
+Regression coverage includes default-date prior-session rejection, intraday exclusion, explicit date mismatch, malformed dates and settled-current-date acceptance. All 13 tests pass offline. The existing 19:00 UTC job will correctly remain unverified before settlement; a separately approved post-close schedule is still needed to produce same-day settled closes at report time. No new live fetch or recovery claim is made.
