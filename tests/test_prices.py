@@ -7,18 +7,25 @@ import subprocess
 import tempfile
 import time
 import unittest
+from zoneinfo import ZoneInfo
 
 SCRIPT = Path(__file__).resolve().parents[1] / 'scripts/prices.sh'
 
 class PricesTest(unittest.TestCase):
-    def run_prices(self, body, stooq='', fail=False, ticker='NVDA'):
+    def run_prices(self, body, stooq='', fail=False, ticker='NVDA', expected_date=None, use_default=False):
         with tempfile.TemporaryDirectory() as tmp:
             p = Path(tmp)
             (p/'yahoo').write_text(json.dumps(body))
             (p/'stooq').write_text(stooq)
             (p/'curl').write_text('#!/bin/sh\ncase "$*" in\n*yahoo*) '+('echo "curl: connect_rejected" >&2; exit 22' if fail else 'cat "$FIXTURES/yahoo"')+';;\n*) cat "$FIXTURES/stooq";;\nesac\n')
             (p/'curl').chmod(0o755)
-            return subprocess.run(['bash',str(SCRIPT),'--json',ticker],env={**os.environ,'PATH':tmp+':'+os.environ['PATH'],'FIXTURES':tmp},text=True,capture_output=True)
+            date_args = []
+            if not use_default:
+                if expected_date is None:
+                    stamps = body.get("chart", {}).get("result", [{}])[0].get("timestamp", [int(time.time())])
+                    expected_date = dt.datetime.fromtimestamp(stamps[-1], ZoneInfo("America/New_York")).date().isoformat()
+                date_args = ["--date=" + expected_date]
+            return subprocess.run(['bash',str(SCRIPT),'--json',*date_args,ticker],env={**os.environ,'PATH':tmp+':'+os.environ['PATH'],'FIXTURES':tmp},text=True,capture_output=True)
 
     def body(self, closes=(100,110), **meta):
         now=int(time.time())
@@ -50,13 +57,37 @@ class PricesTest(unittest.TestCase):
         r['meta']['currentTradingPeriod']['regular']={'start':now-100,'end':now+1000}
         r['timestamp'][-1]=now-100
         result=json.loads(self.run_prices(body).stdout)[0]
-        self.assertEqual(result['close'],100)
+        self.assertIsNone(result['close'])
 
     def test_csv_fallback(self):
         date=(dt.datetime.now(dt.timezone.utc)-dt.timedelta(days=2)).date()
         csv=f'Symbol,Date,Time,Open,High,Low,Close,Volume\nNVDA.US,{date},22:00:00,100,120,90,110,123\n'
-        r=self.run_prices({},csv);self.assertEqual(r.returncode,0,r.stderr)
+        r=self.run_prices({},csv,expected_date=str(date));self.assertEqual(r.returncode,0,r.stderr)
         self.assertEqual(json.loads(r.stdout)[0]['source'],'stooq')
+
+    def test_default_today_rejects_prior_session(self):
+        r=self.run_prices(self.body(),use_default=True)
+        self.assertEqual(r.returncode,1)
+        self.assertIsNone(json.loads(r.stdout)[0]['close'])
+        self.assertIn('refusing previous-session substitution',r.stderr)
+
+    def test_wrong_explicit_date_rejected(self):
+        r=self.run_prices(self.body(),expected_date='2020-01-01')
+        self.assertEqual(r.returncode,1)
+        self.assertIsNone(json.loads(r.stdout)[0]['date'])
+
+    def test_invalid_date_rejected(self):
+        r=self.run_prices(self.body(),expected_date='2026-02-30')
+        self.assertEqual(r.returncode,2)
+        self.assertEqual(r.stdout,'')
+
+    def test_settled_current_day_accepted(self):
+        body=self.body();now=int(time.time());result=body['chart']['result'][0]
+        result['timestamp'][-1]=now-1000
+        result['meta']['currentTradingPeriod']['regular']={'start':now-2000,'end':now-901}
+        r=self.run_prices(body)
+        self.assertEqual(r.returncode,0,r.stderr)
+        self.assertEqual(json.loads(r.stdout)[0]['close'],110)
 
     def test_bad_ticker(self):
         r=self.run_prices(self.body(),ticker='NVDA"');self.assertEqual(r.returncode,2)
