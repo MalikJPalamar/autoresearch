@@ -9,6 +9,8 @@
 #   scripts/prices.sh            # table: TICKER DATE CLOSE PREV_CLOSE CHG% HIGH LOW VOLUME SOURCE
 #   scripts/prices.sh --json     # same data as JSON array
 #   scripts/prices.sh NVDA AMD   # subset of tickers
+#   scripts/prices.sh --date=2026-11-09 NVDA  # explicit expected session date
+# Default required date: today in New York. Earlier settled dates fail closed.
 #
 # Exit code 0 if every requested ticker resolved, 1 otherwise (missing rows are
 # printed with "NA" fields so the report can mark them UNVERIFIED per format-011).
@@ -16,10 +18,12 @@ set -uo pipefail
 
 TICKERS=(NVDA AMD GOOGL MSFT META TSM ASML AMAT LRCX VST CEG OKLO NRG SMR PLTR BAH LMT RTX)
 JSON=0
+EXPECTED_DATE=""
 args=()
 for a in "$@"; do
   case "$a" in
     --json) JSON=1 ;;
+    --date=*) EXPECTED_DATE="${a#--date=}" ;;
     -h|--help) sed -n '2,16p' "$0"; exit 0 ;;
     *) args+=("$(echo "$a" | tr '[:lower:]' '[:upper:]')") ;;
   esac
@@ -28,6 +32,29 @@ for t in "${args[@]}"; do
   [[ "$t" =~ ^[A-Z][A-Z0-9.-]{0,14}$ ]] || { echo "Invalid ticker: $t" >&2; exit 2; }
 done
 [ ${#args[@]} -gt 0 ] && TICKERS=("${args[@]}")
+
+EXPECTED_DATE=$(python3 - "$EXPECTED_DATE" <<'PYDATE'
+import datetime, sys
+from zoneinfo import ZoneInfo
+try:
+    value = sys.argv[1]
+    date = datetime.date.fromisoformat(value) if value else datetime.datetime.now(ZoneInfo("America/New_York")).date()
+    if value and value != date.isoformat():
+        raise ValueError("date must be YYYY-MM-DD")
+    print(date.isoformat())
+except ValueError as exc:
+    print("prices: invalid expected date: " + str(exc), file=sys.stderr)
+    sys.exit(2)
+PYDATE
+) || exit 2
+
+# Never let a valid prior-session quote masquerade as this report date.
+date_matches() {
+  local actual="${1%% *}"
+  [ "$actual" = "$EXPECTED_DATE" ] && return 0
+  echo "prices: expected settled date $EXPECTED_DATE, received ${actual:-none}; refusing previous-session substitution" >&2
+  return 1
+}
 
 UA='Mozilla/5.0 (compatible; sa-portfolio-prices/1.0)'
 
@@ -101,7 +128,7 @@ rc=0
 [ $JSON -eq 1 ] && printf '[' || printf '%-6s %-10s %10s %10s %8s %10s %10s %12s %s\n' TICKER DATE CLOSE PREV CHG% HIGH LOW VOLUME SOURCE
 first=1
 for t in "${TICKERS[@]}"; do
-  src=yahoo; line=$(yahoo "$t") || { src=stooq; line=$(stooq "$t") || { src=none; line=""; }; }
+  src=yahoo; line=$(yahoo "$t") && date_matches "$line" || { src=stooq; line=$(stooq "$t") && date_matches "$line" || { src=none; line=""; }; }
   if [ -z "$line" ]; then
     rc=1; date=NA close=NA prev=NA high=NA low=NA vol=NA chg=NA
   else
