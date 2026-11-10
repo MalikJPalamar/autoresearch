@@ -598,38 +598,57 @@ See the 2026-11-06 changelog entry for detail. This section is
 reverted to its pre-2026-11-04 form (no specifically-timestamped
 intraday-snapshot rule).
 
-### Weekly/Multi-Day Aggregate Return Fallback Protocol (format-037, ACTIVE since 2026-11-06, report 1/3)
+### Weekly/Multi-Day Aggregate Return Fallback Protocol (format-037) — DISCARDED 2026-11-10
 
-3-report KEEP/DISCARD against baseline CS 75.56 (the 2026-11-06 CS),
-reverted on DISCARD. Signal-logic, auto-evolve per the 2026-08-20
-pre-approval. Motivated by the 2026-11-06 report's Oct 30 signal
-batch, where every one of the 18 origin-side bases was unusable under
-the strict exact-date convention, while this same session's macro
-research readily surfaced well-sourced, specifically-dated
-**aggregate** multi-day figures (bundled index closes, weekly/monthly
-recap-style coverage) even when exact single-day ticker prints were
-unavailable — a different angle on the chronic blackout problem than
-near-date substitution (format-032/033), extended lookback
-(format-035), or intraday snapshots (format-036). Rule: when no
-exact-date daily close or specifically-timestamped intraday quote
-(origin or forward side) is confirmable for a ticker, but a
-reliably-sourced, specifically-dated cumulative return over a bounded
-multi-day window that fully contains the unresolved date is found
-(e.g. a company- or outlet-published "down/up X% this week" or "X%
-over the past N sessions" figure with a clear, stated end-date), that
-aggregate return may serve as a valid price-anchor proxy for
-5-trading-day-lookback scoring, flagged in the batch table as
-"aggregate-window anchor, not exact-date." If two or more
-aggregate-window candidates covering overlapping periods diverge by
-more than 2% on an annualized/pro-rated basis, treat as HIGH dispute
-per the standing format-016 protocol and do not use either. This rule
-never lowers the evidentiary bar on exact-date data — it only widens
-what counts as a confirmation when an exact-date read is unavailable.
-Effective starting the 2026-11-06 report. Report 1/3: no qualifying
-aggregate-window candidate was found for any of the 18 tickers in
-today's research; the rule's first opportunity to fire will arise once
-a future lookback window finds an aggregate-return figure covering an
-unresolved date.
+format-037 ran its full 3-report evaluation (2026-11-06 → 2026-11-10)
+and was DISCARDED: 3-report average CS 75.56 vs. baseline 75.56
+(delta 0.00). Per this project's exact-zero-delta precedent
+(format-015, format-023, format-034, format-035), reverted per the
+auto-evolve rule. The rule never found a single qualifying
+aggregate-window candidate across its 3 reports — report 2/3 (Nov 9)
+surfaced MSFT/GOOGL/META Nov 3→6 cumulative-return figures, but
+these did not fully contain either unresolved endpoint (Nov 2 or
+Nov 9) under the rule's own "fully contains the unresolved date"
+requirement, so they did not qualify; reports 1/3 and 3/3 found no
+candidates at all — so the decision reflects the rule's narrow
+applicability window given this project's specific mix of unresolved
+dates, not a demonstrated defect in the underlying logic. This is the
+11th consecutive DISCARD in this project's "data-reliability/
+confirmation protocol" and "confirmed-same-session-event override"
+experiment families (format-012/017/018/020/021/023/025/026/027/028/
+029/030/031/032/033/034/035/036), underscoring that neither an
+origin-side fix (near-date substitution, format-032/033), a
+forward-side fix (extended lookback, format-035), an intraday-snapshot
+angle (format-036), nor now an aggregate-window angle has broken the
+chronic exact-date blackout's grip on AS. See the 2026-11-10 changelog
+entry for detail. This section is reverted to its pre-2026-11-06 form
+(no aggregate-window fallback rule).
+
+### SEC-Filing Primary Confirmation Protocol (format-038, ACTIVE since 2026-11-10, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.56 (the 2026-11-10 CS),
+reverted on DISCARD. Data-source/presentation-depth experiment,
+auto-evolve (no approval needed). Motivated by a concrete catch in the
+2026-11-10 report: WebSearch news aggregation failed to produce any
+confirmed same-day data for 17 of 18 tickers that session, while a
+single targeted SEC EDGAR query instantly surfaced a specifically-dated
+(filed 2026-11-10) Form 6-K with concrete October revenue figures for
+TSM — a materially higher-confidence source than any WebSearch news
+snippet used elsewhere in that report. Rule: for each ticker, in
+addition to the standing WebSearch pass, run a targeted SEC EDGAR
+full-text/company-filings check (Form 6-K for foreign private issuers
+such as TSM/ASML, Form 8-K for US domestic issuers) for same-day-filed
+material events (earnings releases, monthly/quarterly sales reports,
+executive or governance disclosures, material agreements). A same-day
+SEC filing counts as a confirmed, specifically-dated **fundamentals/
+catalyst** data point for the Coverage and Actionability layers
+regardless of whether an exact closing stock price is available. This
+rule does not relax the strict exact-date price-anchor convention used
+for AS scoring, which remains unchanged — it only widens same-day
+*event* confirmation, scored via AC/CV rather than AS. Effective
+starting the 2026-11-10 report. Report 1/3: 1 genuine fire (TSM's
+October Form 6-K); the other 17 tickers had no same-day SEC filing
+found.
 
 ---
 

@@ -1,40 +1,40 @@
-# SA Portfolio Daily Report — 2026-11-09
+# SA Portfolio Daily Report — 2026-11-10
 
-**Methodology:** v1.4 | **Experiment:** format-037 Weekly/Multi-Day Aggregate Return Fallback Protocol (report 2/3) | **Market Status:** POST-CLOSE (Monday, normal session) | **`scripts/prices.sh` BLOCKED 54th consecutive session** (all-18 null, `source: none`) | **No genuinely Nov-9-dated price confirmed for any of the 18 tickers** despite ~15 WebSearch passes (sector-grouped, per-ticker, date-string-specific); WebFetch remains network-blocked for every specific article domain tried, capping confirmation at headline-level corroboration | **Strong multi-source (9 distinct dated articles) qualitative confirmation of a broad relief-rally Monday**: S&P 500 +1.3% / Nasdaq +1.6% at the open (single-sourced figures), Dow "surges over 1,000 points" (uncorroborated exact figure), oil falling sharply cited as a tailwind | **One genuine idiosyncratic divergence: NVDA is reported falling while the broad market/semis rally**, tied by several headlines to a new Jensen-Huang Chinese-spying-allegation story (lawmakers reportedly want to question him; Nvidia denies it) — single-sourced link between the story and today's price action, not independently corroborated | **AMD reported "jumping,"** consistent with the broad semis rebound, no figure confirmed | **format-022 mechanical hold fires once: VST ACCUMULATE → WATCH for today** (HIGH dispute — no confirmed Nov 9 print; underlying fundamentals view unchanged, hold auto-lifts once dispute drops to LOW/MEDIUM) | **Correction: OKLO's Q3 2026 earnings were NOT "~Nov 10" as previously carried forward — Oklo actually reported on 2026-11-06** (EPS -$0.28 vs -$0.29 consensus, a $0.01 beat; revenue $1.86M vs $2.17M consensus, a 14.2% miss; Aurora Idaho plant now guided to 2028-2029; FY26 guidance maintained) — mixed results, no signal change (OKLO stays SPECULATIVE) | **Nov 2 signal batch: 0 correct / 0 incorrect / 1 NULL (OKLO) / 17 PENDING = 0/18 decisive (0%)** — 4 tickers (PLTR, SMR, RTX, LMT) had a usable, single-sourced Nov 2 origin base, but zero tickers had a confirmed Nov 9 forward print, leaving all 4 unscoreable this cycle | **format-037 report 2/3: 0 fires** — the only aggregate-window candidates found (MSFT/GOOGL/META Nov 3→6 cumulative returns) don't fully contain either unresolved date (Nov 2 or Nov 9), so they don't qualify under the rule's own terms | **AS unchanged at 38.91% (435/1118); CS unchanged at 75.56** | **No approval issues opened or closed** (`needs-approval`/`approved` both empty on `MalikJPalamar/autoresearch`)
+**Methodology:** v1.4 | **Experiment:** format-037 Weekly/Multi-Day Aggregate Return Fallback Protocol (report 3/3 — RESOLVES TODAY) | **Market Status:** POST-CLOSE (Tuesday, normal session) | **`scripts/prices.sh` BLOCKED 55th consecutive session** (all-18 null, `source: none`) | **No genuinely Nov-10-dated price confirmed for any of the 18 tickers** despite ~14 WebSearch passes (sector-grouped, per-ticker, macro, and news-specific) | **One genuine, SEC-dated same-day catalyst: TSMC's October 2026 monthly revenue report (Form 6-K, filed 2026-11-10)** — consolidated revenue ~NT$586.89B, +14.7% MoM, +59.7% YoY, the first fully-confirmed same-day fundamentals event in several sessions | **Retrospective clarification of Monday Nov 9's close (multi-sourced, more precise than Monday's own single-sourced open-level reads): S&P 500 +2.35% (best day since April 2025), Nasdaq +2.7%, AMD +13%, Broadcom +9% — broad semis-led rally — while NVDA fell ~5%, tied to its board opening a formal investigation into the Jensen Huang/Alice Huang Chinese-spy allegation** | **Defense-sector political-risk overlay (new, dated Nov 4): LMT/RTX/BAH face a flagged, Democrat-controlled-Congress-driven scrutiny risk on future defense spending** — no signal change | **format-024 catch: an RTTNews "Constellation Energy Q3 profit misses estimates" result is last year's (2025) Q3, not 2026 — excluded; CEG's actual Q3 2026 results remain unconfirmed despite a Nov 6/Nov 9 date conflict across sources** | **Nov 3 signal batch: 0 correct / 0 incorrect / 1 NULL (OKLO) / 17 PENDING = 0/18 decisive (0%)** — no exact-date Nov 3 origin price was ever published by the originating report for any ticker, and no Nov 10 forward print was found today either | **format-037 report 3/3: 0 fires — no qualifying aggregate-window candidate found; experiment RESOLVES: 3-report avg CS 75.56 vs. baseline 75.56 (delta 0.00) = DISCARD** per this project's exact-zero-delta precedent; reverted in methodology.md | **format-038 SEC-Filing Primary Confirmation Protocol started today (report 1/3), motivated directly by today's TSM 6-K catch** | **AS unchanged at 38.91% (435/1118); CS unchanged at 75.56** | **No approval issues opened or closed** (`needs-approval`/`approved` both empty on `MalikJPalamar/autoresearch`)
 
 ---
 
 ## ⚠️ Operational Notes
 
-**1. `scripts/prices.sh` blocked 54th consecutive session.** `bash scripts/prices.sh --json` returned `source: none` / all-null for all 18 tickers, unchanged since Aug 21.
+**1. `scripts/prices.sh` blocked 55th consecutive session.** `bash scripts/prices.sh --json` returned `source: none` / all-null for all 18 tickers; the agent-proxy log confirms `connect_rejected` for both `query1.finance.yahoo.com:443` and `stooq.com:443`, unchanged since Aug 21.
 
-**2. Broad market: strong qualitative confirmation of a Monday relief rally, weak exact-figure confirmation.** Nine independently-titled, Nov-9-dated articles (TheStreet, BNN Bloomberg, TipRanks, Eurasia Business News, JournalArta, 24/7 Wall St, pro.thestreet.com, Stockopedia, Investrade) all converge on the same narrative: a broad rebound continuing Friday's bounce, oil sliding, and NVDA uniquely weak. WebFetch was network-blocked for every specific domain tried (thestreet.com, bnnbloomberg.ca, eurasiabusinessnews.com, 247wallst.com, journalarta.com, tipranks.com — all `ENOTFOUND`), so only headline/snippet-level figures were extractable: S&P 500 +1.3% and Nasdaq +1.6% at the open (JournalArta, single-sourced, intraday not close); Dow "surges over 1,000 points" (single headline, no second source with an exact figure). No settled close was confirmed for any of the three indices today.
+**2. TSMC's October 2026 monthly revenue — the session's one clean, SEC-dated catalyst.** TSMC's Form 6-K (filed with the SEC 2026-11-10, matching this report's date exactly) confirms October 2026 consolidated revenue of approximately NT$586.89 billion — up ~14.7% from September and ~59.7% year-over-year. January–October 2026 cumulative revenue reached ~NT$4,485.62 billion, +43.3% YoY. This resolves the catalyst this project had carried since the 2026-11-09 report ("October print expected ~Nov 10, 2026"). No signal change: TSM remains WATCH (strong top-line confirms the standing Aschenbrenner-aligned demand thesis, but this project's practice is to require a confirmed *price* reaction, not just a strong fundamentals print, before any discretionary upgrade — no Nov 10 price was found, see Note 3).
 
-**3. NVDA: a genuine, newsworthy divergence from the broad rally — single-sourced causal link.** Multiple Nov-9 headlines report NVDA falling even as the market and chip sector broadly rally, several explicitly tying the weakness to a Chinese-spying allegation against CEO Jensen Huang (originally reported by the NYT around Oct 30; lawmakers reportedly now want to question Huang; Nvidia denies the allegation). The *existence* of the story is multi-sourced; the *causal attribution* of today's specific price move to it is single-sourced (one headline pairing). No NVDA price or % figure was extracted for today. Last hard anchor remains Oct 29's confirmed $213.66 (-0.80%, stockanalysis.com/heygotrade). This is the session's one qualitative correlation-breakdown candidate (NVDA vs. its own AI Compute sector, which is otherwise reported rallying) — see the Correlation Breakdown Alerts section below; it is flagged as informal/qualitative since no quantified move exists for either side of the comparison today.
+**3. No individual ticker price confirmed for any of the 18 names today**, despite dedicated sector-grouped and per-ticker searches (AI Compute, Semiconductors, Energy for AI, Defense AI) plus targeted NVDA/PLTR/AMAT-specific passes. The chronic blackout continues unbroken.
 
-**4. AMD: reported "jumping" today, consistent with (not divergent from) the broad semis rebound.** One Nov-9 headline ("oil slides and AMD jumps") credits AMD with a notable gain; no price or % figure extracted. No signal change — already WATCH, and a single uncorroborated headline does not meet this project's confirmed-fundamentals bar for a discretionary move.
+**4. Retrospective clarification of Monday Nov 9's close — now multi-sourced and more precise than Monday's own report.** The 2026-11-09 report logged only single-sourced, open-level reads (S&P ~+1.3%, Nasdaq ~+1.6%). Today's research found consistent, independently-sourced closing figures from Yahoo Finance, CNBC, StockTitan, and others: **S&P 500 +2.35% (best single day since April 2025), Nasdaq Composite +2.7%**, with chip stocks leading — **AMD +13%, Broadcom +9%** — while **NVDA fell ~5%**, the one name sitting out the rally. This is a clarification of already-elapsed, non-rescoreable history (Nov 9's signals are not re-litigated), not a same-day Nov 10 data point, but it meaningfully firms up this project's confirmed-anchor chain for AMD and NVDA going into today.
 
-**5. VST held to WATCH today under the standing format-022 mechanism — the session's only mechanical intervention.** VST entered today at ACCUMULATE (discretionary upgrade from the 2026-11-06 report on a confirmed Q3 2026 beat-and-raise). No Nov 9 price was found for VST, which is a HIGH Dispute Severity condition under format-016 ("no confirmed print"). Per format-022, any ticker above WATCH with a HIGH dispute flag is mechanically held at WATCH for that report; VST is therefore shown as **WATCH (format-022 hold; underlying view remains ACCUMULATE)** below. The hold lifts automatically once a LOW/MEDIUM-dispute price is confirmed for VST.
+**5. NVDA: the Chinese-spying allegation has escalated to a formal board investigation.** StockTitan's Nov 9 closing synthesis explicitly ties NVDA's -5% Monday close to Nvidia's board opening a formal investigation into CEO Jensen Huang's relationship with Alice Huang, a Singapore-based data-center executive U.S. intelligence officials allege was funneling information to China (originally reported ~Oct 30 by the NYT; Nvidia has denied wrongdoing; China's Foreign Ministry called the allegation "baseless"). This is now a multi-sourced, confirmed governance-risk escalation (allegation → board investigation), not merely a one-day headline. No signal change: NVDA remains WATCH — the allegation is still unresolved/denied and has not yet produced a confirmed business-fundamentals impact, consistent with this project's practice of reserving discretionary downgrades for confirmed fundamentals deterioration (e.g., GOOGL's two-consecutive-quarter negative-FCF AVOID call) rather than unresolved governance headlines. The Risk Factor note below is updated to reflect the escalation.
 
-**6. OKLO earnings-date correction (format-024-style catch).** The 2026-11-06 report carried OKLO's Q3 2026 earnings as "projected ~Nov 10, 2026, not yet confirmed." Today's research found this was already stale: Oklo actually reported Q3 2026 on **2026-11-06** (8:30am ET call), the same day as that report. Results (MarketBeat transcript, finsee.ai, greenstocknews.com — multi-source consistent): loss **-$0.28/share** vs. **-$0.29** consensus (a $0.01 beat); revenue **$1.86M** vs. **$2.17M** consensus (a **14.2% miss**); the first Aurora plant (Idaho) now guided to come online **2028-2029**; FY26 opex-cash-use ($120-150M) and capex ($400-500M) guidance maintained. This is a mixed, confirmed fundamentals result — a marginal EPS beat alongside a meaningful revenue miss and (relative to the project's prior "~Nov 10" placeholder) no new information suggesting an accelerated timeline. No signal change: OKLO remains **SPECULATIVE** (already reflects binary/pre-revenue risk; a mixed result does not clear the bar for a directional flip either way). The "~Nov 10" catalyst placeholder is retired from this ticker's forward notes.
+**6. AMD's Monday +13% reads as sector-beta participation in the broad chip rally, not a company-specific catalyst** — consistent with this project's long-standing practice (five discarded "confirmed-same-session-event override" experiments, format-012/017/018/020/021/028/029/030/031, variously found that sector-beta-driven moves don't qualify for a discretionary override). No signal change: AMD remains WATCH.
 
-**7. TSM's October monthly sales print, previously flagged as an expected ~Nov 9 catalyst, has not yet been published.** A dedicated check of TSMC's SEC 6-K filings found the September print released Oct 8 and Q3 2026 earnings on Oct 15, but no October print as of today (normal cadence is ~10th of the following month, so ~Nov 10 remains plausible but unconfirmed). No signal change.
+**7. Defense-sector political-risk overlay (new).** A Dow Jones wire dated 2026-11-04 ("Defense Stocks Slump Amid Fears Democrats Could Hold Back Military Spending") reports LMT, RTX, and peers (L3Harris, Northrop Grumman) closing lower on concern that Democratic control of Congress following the midterms could bring closer scrutiny of defense budgets. This is a genuine, dated, sector-wide risk overlay — added to the standing Risk Factor language for LMT, RTX, and BAH below. No signal change (all three already reflect federal-budget/contract-scrutiny risk at WATCH/AVOID).
 
-**8. AMAT's fiscal Q4 2026 earnings remain confirmed for Nov 12, 2026** (re-confirmed, unchanged).
+**8. format-024 catch: a stale/mislabeled CEG earnings result excluded.** A search surfaced "Constellation Energy Corporation Q3 profit decreases, misses estimates" (RTTNews) reporting EPS $2.97 GAAP / $3.04 adjusted vs. $3.12 expected — but cross-checking against this quarter's analyst consensus (~$3.74–3.90 EPS per multiple 2026 preview sources) confirms this is **last year's (2025) Q3 result**, not 2026, recycled under a dateless headline. Excluded per the standing format-024 Stale-Data Mislabel Cross-Check Protocol. CEG's actual Q3 2026 earnings date is itself unresolved across sources (Earnings Whispers: Nov 9 before open; ChartRow/The Right Trader: Nov 6, unconfirmed/projected) and no confirmed 2026 results were found today — the chronic CEG data gap continues. No signal change (WATCH).
 
-**9. Oil fell sharply today per multiple headlines, with the two extracted figures not independently reconcilable to an exact percentage but broadly consistent in direction and magnitude.** One figure: Brent -4.3% to ~$94.11; another: WTI -~3% to ~$88. Against the last fully-confirmed anchor (Nov 8, WTI $90.34 / Brent $97.75, OilPriceAPI 01:30 UTC), both figures imply a decline in the low-single-digit-to-mid-single-digit percent range — directionally and roughly magnitude-consistent, not a genuine format-016 dispute (WTI and Brent are different benchmarks by design, not two competing reads of the same thing), but neither individual figure is independently corroborated by a second source, so both are treated as single-sourced/directional color rather than confirmed anchors.
+**9. AMAT's fiscal Q4 2026 earnings remain confirmed for Nov 12, 2026** (re-confirmed, unchanged, 2 trading days out). Consensus per preview sources: ~$10.3B revenue (+~51% YoY), ~$4.00 EPS.
 
-**10. VIX, DXY, and the US 10Y yield are all unresolved for today.** No dated Nov 9 print was found for any of the three. An undated TradersUnion snapshot showed a 10Y yield of 4.736% (1-month range 4.585-4.752%), but without a confirmed date it is not used. Last dated anchors: VIX Oct 22 (19.03, FRED `VIXCLS`); DXY ~101.84 (Oct 19); 10Y yield's Oct 12 pullback from its ~5.35% 24-year peak.
+**10. VIX anchor updated — materially more recent than the prior stale Oct 22 figure.** Multiple sources (247wallst, thetrading.tools) confirm the VIX closed at **28.18 on 2026-11-05**, up from 16.61 the prior session — the third-biggest one-day percentage jump since 1990 — during that session's broad "worst day since the 2025 Liberation Day tariffs" selloff (S&P -4.4%, NVDA -9.3%, both already scored in this project's history). This is now the most recent dated VIX print available (3 trading days stale vs. the prior Oct 22 anchor's much longer staleness) and replaces it below. No Nov 9 or Nov 10 VIX print was found, so the regime read (elevated, "normal" to "elevated" per the 15–35 scale) carries forward from Nov 5.
 
-**11. Next major catalyst: Tuesday Nov 10 CPI report** (single-sourced consensus estimate ~2.7% YoY), flagged by one source as the next big risk event for the market.
+**11. Oil: last confirmed anchor remains Nov 8's OilPriceAPI read** (WTI $90.34 / Brent $97.75, 01:30 UTC) — no fresher dated print found today; now 2 trading days stale.
 
-**12. No stale/mislabeled-price catches to flag today** (format-024) — no "today"-labeled price candidates surfaced for any ticker, so the cross-check had nothing to evaluate beyond Note 6's earnings-date correction.
+**12. DXY and the US 10Y yield remain unresolved and chronically stale.** No dated Nov-9/10 print found for either. Last anchors: DXY ~101.84 (Oct 19); 10Y yield's pullback from the ~5.35% 24-year peak (Oct 12). An undated TradersUnion 10Y snapshot (4.736%) remains unusable without a confirmed date, per standing practice.
 
-**13. No options-flow data found for any of the 18 tickers today.** Skipping per standing practice.
+**13. Nov 3 signal batch: the chronic exact-date blackout persists on both the origin and forward sides.** See the dedicated scoring section below — the originating 2026-11-03 report itself found zero confirmed prints for any of the 18 tickers that day, so there is no usable origin base for any ticker regardless of today's forward-side result (also zero).
 
-**14. Nov 2 signal batch: the chronic forward-side blackout persists even where an origin base exists.** See the dedicated scoring section below — 4 tickers (PLTR, SMR, RTX, LMT) cleared the Nov 2 origin-side bar (single-sourced each) but zero tickers have a confirmed Nov 9 forward print, so all 4 — and all 18 — remain unscored this cycle.
+**14. format-037 (Weekly/Multi-Day Aggregate Return Fallback Protocol) resolves today — DISCARD.** See the dedicated Loop 2 section below. format-038 (SEC-Filing Primary Confirmation Protocol) starts today, report 1/3.
 
-**15. format-037 (Weekly/Multi-Day Aggregate Return Fallback Protocol) — report 2/3, still 0 fires total.** See the dedicated Loop 2 section below.
+**15. No options-flow data found for any of the 18 tickers today.** Skipping per standing practice.
 
 ---
 
@@ -42,54 +42,55 @@
 
 | Metric | Level | Note |
 |--------|-------|------|
-| S&P 500 | **UNRESOLVED (settled close)**; today's open read ~+1.3% (single-sourced, JournalArta) | No settled Nov 9 close confirmed; WebFetch blocked on all candidate article domains. |
-| Nasdaq Composite | **UNRESOLVED (settled close)**; today's open read ~+1.6% (single-sourced) | Same caveat; Nasdaq again the most-cited index in the rebound narrative. |
-| Dow Jones | **UNRESOLVED**; one headline claims "+1,000+ points," uncorroborated exact figure | Directionally consistent with the broad rebound theme across all 9 dated articles. |
-| VIX | **UNRESOLVED for today** | Last confirmed anchor Oct 22's 19.03 (FRED `VIXCLS`), now chronically stale. |
+| S&P 500 | **UNRESOLVED for today (Nov 10)**; last confirmed close Nov 9's +2.35% (best day since April 2025) | Multi-sourced retrospective clarification of Monday — see Note 4. |
+| Nasdaq Composite | **UNRESOLVED for today**; last confirmed close Nov 9's +2.7% | Chip-stock-led rally Monday; no Nov 10 print found. |
+| Dow Jones | **UNRESOLVED for today and for Nov 9** | No reliable point-level Dow figure corroborated for either session in today's research. |
+| VIX | **UNRESOLVED for today**; updated anchor Nov 5's **28.18** (3rd-biggest 1-day % jump since 1990) | Replaces the prior, much-staler Oct 22 (19.03) anchor — see Note 10. |
 | DXY | **UNRESOLVED for today** | Last anchor ~101.84 (Oct 19), chronically stale. |
-| US 10Y Yield | **UNRESOLVED for today** | Undated TradersUnion snapshot (4.736%) not usable without a confirmed date; last dated anchor Oct 12's pullback from the ~5.35% 24-year peak. |
-| WTI / Brent Crude | **Directional-only, single-sourced each**: WTI ~-3% to ~$88; Brent -4.3% to ~$94.11 | Both consistent with "oil fell sharply" framing and with the Nov 8 anchor (WTI $90.34/Brent $97.75); not independently corroborated. |
-| NVDA-specific news | **Multi-sourced existence, single-sourced causal link** | Chinese-spying allegation against Jensen Huang (orig. ~Oct 30, NYT); lawmakers reportedly want to question him; Nvidia denies it. One headline ties today's NVDA weakness to the story. |
-| Next catalyst | **Tuesday Nov 10 CPI report**, single-sourced consensus ~2.7% YoY | Flagged as the next major macro risk event. |
+| US 10Y Yield | **UNRESOLVED for today** | Last dated anchor Oct 12's pullback from the ~5.35% 24-year peak. |
+| WTI / Brent Crude | **UNRESOLVED for today**; last confirmed anchor Nov 8's WTI $90.34 / Brent $97.75 (OilPriceAPI) | 2 trading days stale. |
+| TSM October monthly revenue | **CONFIRMED (SEC Form 6-K, filed 2026-11-10)**: ~NT$586.89B, +14.7% MoM, +59.7% YoY | See Note 2 — this session's one clean, dated fundamentals catalyst. |
+| NVDA governance risk | **Escalated, multi-sourced**: board investigation opened into Jensen Huang/Alice Huang Chinese-spy allegation | See Note 5. |
+| Defense-sector political risk | **New, dated Nov 4**: Democrat-controlled-Congress spending-scrutiny concern weighing on LMT/RTX/peers | See Note 7. |
 
-**Macro summary:** Today reads as a broad continuation of Friday's rebound — nine independently-dated articles agree on direction (indices up, oil down) even though none yielded an extractable settled close via search snippets (WebFetch remains blocked for every specific domain tried). The one clear idiosyncratic story is NVDA bucking the rally on a company-specific controversy, while AMD and the broader semis complex reportedly participate in the upside.
+**Macro summary:** No Nov 10 settled data exists for any index, VIX, DXY, the 10Y, oil, or any of the 18 tickers — the chronic blackout is unbroken. The session's genuine news is retrospective (a firmer read on Monday's broad chip-led rally and NVDA's divergence from it) and fundamentals-level (TSM's confirmed October revenue beat via SEC filing), rather than anything dated specifically to today.
 
 ---
 
-## Nov 2 Signal Batch Scoring (5 Trading Days)
+## Nov 3 Signal Batch Scoring (5 Trading Days)
 
-5th trading day after 2026-11-02 (Monday): Nov 3, 4, 5, 6, 9 (Nov 7-8 weekend, no holiday gap). Per the strict exact-date-only convention (format-032/033 discarded; no near-date substitution active), a signal's base price is usable only if the originating (Nov 2) report explicitly published a confirmed or specifically-timestamped price for that exact day.
+5th trading day after 2026-11-03 (Tuesday): Nov 4, 5, 6, 9, 10 (no holiday gap). Per the strict exact-date-only convention (format-032/033/035 all discarded; no near-date substitution, extended-lookback, or intraday-snapshot rescue active), a signal's base price is usable only if the originating (Nov 3) report explicitly published a confirmed or specifically-timestamped price for that exact day. The Nov 3 report itself stated plainly that **no individual ticker price was confirmed for any of the 18 names that day**.
 
-| # | Ticker | Signal (Nov 2, as published) | Base (Nov 2, exact-date only) | Nov 9 read | Verdict |
+| # | Ticker | Signal (Nov 3, as published) | Base (Nov 3, exact-date only) | Nov 10 read | Verdict |
 |---|--------|--------|----------------|-----------------|---------|
-| 1 | NVDA | WATCH | No Nov 2 print found | No Nov 9 print found | ⬜ **PENDING** |
-| 2 | AMD | WATCH | No Nov 2 print found | No Nov 9 print found | ⬜ **PENDING** |
-| 3 | GOOGL | AVOID | No Nov 2 print found | No Nov 9 print found | ⬜ **PENDING** |
-| 4 | MSFT | WATCH | No Nov 2 print found | No Nov 9 print found (Nov 3→6 aggregate +1.85% found, does not cover Nov 2 or Nov 9 — see Note 15) | ⬜ **PENDING** |
-| 5 | META | WATCH | No Nov 2 print found | No Nov 9 print found (Nov 3→6 aggregate -1.75% found, same caveat) | ⬜ **PENDING** |
-| 6 | TSM | WATCH | No Nov 2 print found | No Nov 9 print found | ⬜ **PENDING** |
-| 7 | ASML | WATCH | No Nov 2 print found | No Nov 9 print found | ⬜ **PENDING** |
-| 8 | AMAT | WATCH | No Nov 2 print found | No Nov 9 print found | ⬜ **PENDING** |
-| 9 | LRCX | WATCH | No Nov 2 print found | No Nov 9 print found | ⬜ **PENDING** |
-| 10 | VST | WATCH | No Nov 2 print found | No Nov 9 print found | ⬜ **PENDING** |
-| 11 | CEG | WATCH | No Nov 2 print found | No Nov 9 print found | ⬜ **PENDING** |
+| 1 | NVDA | WATCH | No Nov 3 print found in originating report | No Nov 10 print found | ⬜ **PENDING** |
+| 2 | AMD | WATCH | No Nov 3 print found | No Nov 10 print found | ⬜ **PENDING** |
+| 3 | GOOGL | AVOID | No Nov 3 print found | No Nov 10 print found | ⬜ **PENDING** |
+| 4 | MSFT | WATCH | No Nov 3 print found | No Nov 10 print found | ⬜ **PENDING** |
+| 5 | META | WATCH | No Nov 3 print found | No Nov 10 print found | ⬜ **PENDING** |
+| 6 | TSM | WATCH | No Nov 3 print found | No Nov 10 print found (Oct revenue confirmed, not a price — Note 2) | ⬜ **PENDING** |
+| 7 | ASML | WATCH | No Nov 3 print found | No Nov 10 print found | ⬜ **PENDING** |
+| 8 | AMAT | WATCH | No Nov 3 print found | No Nov 10 print found | ⬜ **PENDING** |
+| 9 | LRCX | WATCH | No Nov 3 print found | No Nov 10 print found | ⬜ **PENDING** |
+| 10 | VST | WATCH | No Nov 3 print found | No Nov 10 print found | ⬜ **PENDING** |
+| 11 | CEG | WATCH | No Nov 3 print found | No Nov 10 print found | ⬜ **PENDING** |
 | 12 | OKLO | SPECULATIVE | — | — | ⬜ **NULL** (risk classification, no directional call) |
-| 13 | NRG | AVOID | No Nov 2 data found | No Nov 9 data found | ⬜ **PENDING** |
-| 14 | SMR | AVOID | **~$5.35** (MoneyDJ, single-sourced, -4.80%) | No Nov 9 print found | ⬜ **PENDING** (usable base, no forward anchor) |
-| 15 | PLTR | WATCH | **~$178.34** (MoneyDJ, single-sourced, -3.13%) | No Nov 9 print found | ⬜ **PENDING** (usable base, no forward anchor) |
-| 16 | BAH | AVOID | No Nov 2 print found | No Nov 9 print found | ⬜ **PENDING** |
-| 17 | LMT | WATCH | **~$643.15** (MoneyDJ, single-sourced, +0.97%) | No Nov 9 print found | ⬜ **PENDING** (usable base, no forward anchor) |
-| 18 | RTX | WATCH | **~$202.79** (MoneyDJ, single-sourced, +1.50%) | No Nov 9 print found | ⬜ **PENDING** (usable base, no forward anchor) |
+| 13 | NRG | AVOID | No Nov 3 data found | No Nov 10 data found | ⬜ **PENDING** |
+| 14 | SMR | AVOID | No Nov 3 print found | No Nov 10 print found | ⬜ **PENDING** |
+| 15 | PLTR | WATCH | No Nov 3 exact print (fundamentals-only confirmation, Note on Nov 3 report) | No Nov 10 print found | ⬜ **PENDING** |
+| 16 | BAH | AVOID | No Nov 3 print found | No Nov 10 print found | ⬜ **PENDING** |
+| 17 | LMT | WATCH | No Nov 3 print found | No Nov 10 print found | ⬜ **PENDING** |
+| 18 | RTX | WATCH | No Nov 3 print found | No Nov 10 print found | ⬜ **PENDING** |
 
-**Result: 0 correct / 0 incorrect / 1 NULL (OKLO) / 17 PENDING = 0/18 decisive (0%).** Four tickers (PLTR, SMR, RTX, LMT) cleared the origin-side bar for the first time in several sessions — all four sourced from a single MoneyDJ table — but the complete Nov 9 forward-side blackout (Note 2-4) leaves every one of the 18 tickers unscoreable this cycle, continuing the project's chronic PENDING pattern.
+**Result: 0 correct / 0 incorrect / 1 NULL (OKLO) / 17 PENDING = 0/18 decisive (0%).** Neither side of the 5-day window produced a usable exact-date print for any ticker, continuing the project's chronic PENDING pattern.
 
 **AS: 38.91% → 38.91%** (435/1118; unchanged — zero decisive scores this batch).
 
 ---
 
-## format-037 Aggregate-Window Fallback Check (Weekly/Multi-Day Aggregate Return Fallback Protocol, report 2/3)
+## format-037 Resolution Check (Weekly/Multi-Day Aggregate Return Fallback Protocol, report 3/3 — FINAL)
 
-Candidates found this session: MSFT +1.85%, GOOGL +1.70%, META -1.75%, all specifically dated as a Nov 3 (Election Day close) → Nov 6 (Friday close) cumulative return (money365.market, single source). **None qualify.** The rule requires a bounded multi-day window that *fully contains* the unresolved date needed for scoring. Here the unresolved dates are Nov 2 (origin, unconfirmed for MSFT/META) and Nov 9 (forward, unconfirmed for all 18) — the Nov 3→6 window touches neither endpoint and leaves both the Nov 2→3 and Nov 6→9 gaps unbridged, so it does not meet the rule's own "fully contains the unresolved date" requirement. **0 fires, report 2/3.** Running total: 0/2 reports fired (report 1/3 on Nov 6 also found no qualifying candidate).
+Today's research found no reliably-sourced, specifically-dated cumulative multi-day return figure for any of the 18 tickers covering either unresolved endpoint (Nov 3 origin or Nov 10 forward) — the TSM revenue figure is a fundamentals print, not a price-return figure, and no other aggregate-window candidate surfaced. **0 fires, report 3/3.** Final tally: **0/3 reports fired** across the entire run (Nov 6, Nov 9, Nov 10). See the Loop 2 section below for the KEEP/DISCARD resolution.
 
 ---
 
@@ -97,85 +98,85 @@ Candidates found this session: MSFT +1.85%, GOOGL +1.70%, META -1.75%, all speci
 
 ### AI Compute
 
-| Ticker | Signal | Price (Nov 9) | RSI(14) | Technical Note | Dispute Severity |
+| Ticker | Signal | Price (Nov 10) | RSI(14) | Technical Note | Dispute Severity |
 |--------|--------|------|---------|-----------------|-------------------|
-| NVDA | WATCH (unchanged) | No Nov 9 print found; qualitative reports of weakness tied to a Chinese-spying allegation against Jensen Huang (see Note 3) | Not found | Stale | HIGH — no confirmed print today |
-| AMD | WATCH (unchanged) | No Nov 9 print found; qualitative reports of a gain ("AMD jumps," see Note 4) | Not found | Stale | HIGH — no confirmed print today |
-| GOOGL | AVOID (unchanged) | No Nov 9 print found; standing confirmed-negative-FCF thesis unaffected | Not found | Stale | HIGH — no confirmed print today |
-| MSFT | WATCH (unchanged) | No Nov 9 print found; Nov 3→6 aggregate +1.85% (does not resolve today, see format-037 check) | Not found | Stale | HIGH — no confirmed print today |
-| META | WATCH (unchanged) | No Nov 9 print found; Nov 3→6 aggregate -1.75% (does not resolve today) | Not found | Stale | HIGH — no confirmed print today |
+| NVDA | WATCH (unchanged) | No Nov 10 print found; last confirmed close Nov 9's ~-5% (board investigation into Chinese-spy allegation, see Note 5) | Not found | Stale | HIGH — no confirmed print today |
+| AMD | WATCH (unchanged) | No Nov 10 print found; last confirmed close Nov 9's +13% (sector-beta chip rally, see Note 6) | Not found | Stale | HIGH — no confirmed print today |
+| GOOGL | AVOID (unchanged) | No Nov 10 print found; standing confirmed-negative-FCF thesis unaffected | Not found | Stale | HIGH — no confirmed print today |
+| MSFT | WATCH (unchanged) | No Nov 10 print found | Not found | Stale | HIGH — no confirmed print today |
+| META | WATCH (unchanged) | No Nov 10 print found | Not found | Stale | HIGH — no confirmed print today |
 
 | Ticker | Entry/Exit Zone | Risk Factor | Catalyst | Timeframe |
 |--------|-------------------|--------------|----------|-----------|
-| NVDA | Hold; no new entries pending a confirmed print | Idiosyncratic reputational/regulatory risk (Chinese-spying allegation against the CEO); AI-regulatory-scrutiny risk (standing) | Q3 FY2027 earnings ~Nov 17-18, 2026 (unconfirmed estimate) | Short (1-2w), elevated volatility |
-| AMD | Hold; no new entries | Sector-beta exposure to the AI-regulatory-scrutiny risk | Q3 2026 already reported (Nov 3, confirmed beat) | Short (1-2w), elevated volatility |
+| NVDA | Hold; no new entries pending a confirmed print | **Escalated governance/reputational risk** — Nvidia's board has opened a formal investigation into the Jensen Huang/Alice Huang Chinese-spy allegation (Note 5); standing AI-regulatory-scrutiny risk | Q3 FY2027 earnings ~Nov 17-18, 2026 (unconfirmed estimate) | Short (1-2w), elevated volatility |
+| AMD | Hold; no new entries | Sector-beta exposure; AI-regulatory-scrutiny risk | Q3 2026 already reported (Nov 3, confirmed beat) | Short (1-2w), elevated volatility |
 | GOOGL | Held at AVOID | Confirmed negative FCF trend (2 consecutive quarters) | Next catalyst Q4 2026 results ~late Jan/early Feb 2027 | Medium (1-3mo) |
 | MSFT | Hold; strong confirmed underlying fundamentals (Oct 29 beat) | AI-regulatory-scrutiny risk; Azure Maia 300 ramp/execution risk | Q1 FY2027 already reported (beat-and-raise) | Medium (1-3mo) |
 | META | Hold; no new entries | AI capex/ROI skepticism; AI-regulatory-scrutiny risk | Q3 2026 already reported (Oct 21) | Short (1-2w) |
 
-**Sector news:** A genuine intra-sector split today — NVDA reportedly weak on a company-specific controversy while AMD reportedly gains with the broader semis rally; both qualitative, neither quantified. See Correlation Breakdown Alerts below. Aschenbrenner alignment: **STRONG ★★★☆☆ (held)** — unchanged pending company-specific confirmation of any sector-wide relief.
+**Sector news:** Monday's confirmed close shows a genuine, quantified intra-sector split — NVDA -5% (company-specific governance escalation) against AMD +13% (broad chip-sector beta) — the clearest confirmed version yet of the divergence this project flagged qualitatively on Nov 9 (see Correlation Breakdown Alerts below). Aschenbrenner alignment: **STRONG ★★★☆☆ (held)**.
 
 ### Semiconductors
 
-| Ticker | Signal | Price (Nov 9) | RSI(14) | Technical Note | Dispute Severity |
+| Ticker | Signal | Price (Nov 10) | RSI(14) | Technical Note | Dispute Severity |
 |--------|--------|------|---------|-----------------|-------------------|
-| TSM | WATCH (unchanged) | No Nov 9 print found; last confirmed close Oct 29's $433.46 | Not found | October monthly sales print not yet published (Note 7) | HIGH — no confirmed print today |
-| ASML | WATCH (unchanged) | No Nov 9 print found | Not found | Stale | HIGH — no confirmed print today |
-| AMAT | WATCH (unchanged) | No Nov 9 print found | Not found | Fiscal Q4 2026 earnings CONFIRMED Nov 12, 2026 | HIGH — no confirmed print today |
-| LRCX | WATCH (unchanged) | No Nov 9 print found | Not found | Stale | HIGH — no confirmed print today |
+| TSM | WATCH (unchanged) | No Nov 10 print found; last confirmed close Oct 29's $433.46 | Not found | **October monthly revenue CONFIRMED today** (SEC 6-K, +14.7% MoM/+59.7% YoY — Note 2) | HIGH — no confirmed print today |
+| ASML | WATCH (unchanged) | No Nov 10 print found | Not found | Stale | HIGH — no confirmed print today |
+| AMAT | WATCH (unchanged) | No Nov 10 print found | Not found | Fiscal Q4 2026 earnings CONFIRMED Nov 12, 2026 (2 trading days out) | HIGH — no confirmed print today |
+| LRCX | WATCH (unchanged) | No Nov 10 print found | Not found | Stale | HIGH — no confirmed print today |
 
 | Ticker | Entry/Exit Zone | Risk Factor | Catalyst | Timeframe |
 |--------|-------------------|--------------|----------|-----------|
-| TSM | No new entries; data gap persists | 2nm ramp pace/margin drag | October monthly sales print now expected ~Nov 10 (delayed from prior ~Nov 9 estimate) | Short (1-2w) |
+| TSM | No new entries; strong fundamentals confirmed, price reaction unconfirmed | 2nm ramp pace/margin drag | October sales print now resolved (Note 2); Q4 2026 earnings mid-Jan 2027 | Short (1-2w) |
 | ASML | No new entries | China revenue step-down; AI-regulatory-scrutiny selloff exposure | Already reported (Q3 2026, Oct 14) | Medium (1-3mo) |
 | AMAT | No new entries | Guidance-omission overhang; UBS's 2028 capacity-at-risk warning | Fiscal Q4 2026 earnings CONFIRMED Nov 12, 2026 | Medium (1-3mo) |
 | LRCX | No new entries; underlying contrarian-value thesis unchanged | Supply-chain constraints capping Dec-quarter guide | Fiscal Q1 FY2027 already reported (Oct 21) | Short-to-medium |
 
-**Sector news:** No same-day confirmation for any of the 4 names today. Aschenbrenner alignment: **STRONG ★★★★☆ (held)**.
+**Sector news:** TSM's confirmed October revenue print (Note 2) is the session's cleanest fundamentals data point; no same-day price confirmation for any of the 4 names. Aschenbrenner alignment: **STRONG ★★★★☆ (held)**.
 
 ### Energy for AI
 
-| Ticker | Signal | Price (Nov 9) | RSI(14) | Technical Note | Dispute Severity |
+| Ticker | Signal | Price (Nov 10) | RSI(14) | Technical Note | Dispute Severity |
 |--------|--------|------|---------|-----------------|-------------------|
-| VST | **WATCH (format-022 mechanical hold — underlying view ACCUMULATE, see Note 5)** | No Nov 9 print found | Not found | Q3 2026 beat-and-raise (Nov 6) stands; today's hold is a price-dispute mechanism, not a fundamentals reversal | HIGH — no confirmed print today |
-| CEG | WATCH (unchanged) | No Nov 9 print found; last confirmed anchor Oct 20's ~$258.8-259.35 | Not found | Stale | HIGH — no confirmed print today |
-| OKLO | SPECULATIVE (unchanged, exempt) | No Nov 9 print found | Not found | **Q3 2026 earnings CONFIRMED reported 2026-11-06** (EPS -$0.28 vs -$0.29 consensus; revenue $1.86M vs $2.17M, -14.2%; Aurora Idaho guided 2028-2029 — see Note 6) | HIGH — exempt; fundamentals confirmed |
-| NRG | AVOID (unchanged, exempt) | No Nov 9 data found; Q3 2026 results still not found | Not found | Chronic data gap continues | HIGH — exempt |
-| SMR | AVOID (unchanged, exempt) | No Nov 9 print found | Not found | Q3 2026 results confirmed (Nov 5); no fresh data today | HIGH — exempt |
+| VST | **WATCH (format-022 mechanical hold — underlying view ACCUMULATE)** | No Nov 10 print found | Not found | Q3 2026 beat-and-raise (Nov 6) stands; hold is a price-dispute mechanism, not a fundamentals reversal | HIGH — no confirmed print today |
+| CEG | WATCH (unchanged) | No Nov 10 print found; last confirmed anchor Oct 20's ~$258.8-259.35 | Not found | Q3 2026 earnings date conflicted (Nov 6 vs. Nov 9) across sources; actual results not found (Note 8) | HIGH — no confirmed print today |
+| OKLO | SPECULATIVE (unchanged, exempt) | No Nov 10 print found | Not found | Q3 2026 earnings confirmed reported 2026-11-06 (mixed — EPS beat, revenue miss) | HIGH — exempt; fundamentals confirmed |
+| NRG | AVOID (unchanged, exempt) | No Nov 10 data found; Q3 2026 results still not found | Not found | Chronic data gap continues | HIGH — exempt |
+| SMR | AVOID (unchanged, exempt) | No Nov 10 print found | Not found | Q3 2026 results confirmed (Nov 5); no fresh data today | HIGH — exempt |
 
 | Ticker | Entry/Exit Zone | Risk Factor | Catalyst | Timeframe |
 |--------|-------------------|--------------|----------|-----------|
 | VST | Held at WATCH today (format-022); no new entries until dispute clears | PJM capacity-market/regulatory uncertainty; integration risk on Cogentrix | Already reported Q3 2026 (Nov 6, confirmed beat-and-raise) | Medium (1-3mo) |
-| CEG | Hold; no fresh catalyst found | Execution/regulatory-approval risk on uprate program | Q3 2026 earnings expected imminently | Medium (1-3mo) |
+| CEG | Hold; no fresh confirmed catalyst found despite a reported Q3 date | Execution/regulatory-approval risk on uprate program; earnings-date uncertainty itself a minor data-quality risk | Q3 2026 earnings date conflicted Nov 6/Nov 9, result unconfirmed | Medium (1-3mo) |
 | OKLO | Small speculative size only | Binary/early-stage deployment risk; dilution risk; confirmed revenue miss | Aurora (Idaho) now guided online 2028-2029 | Long, speculative |
 | NRG | No new entries; AVOID thesis intact | Chronic near-zero same-day data coverage | Q3 2026 earnings expected imminently, not yet found | Medium (1-3mo) |
 | SMR | No entry — AVOID thesis reinforced | Dilution/cash-burn risk; confirmed non-recurring revenue step-down (Nov 5) | Already reported (Nov 5) | Long, speculative-to-avoid |
 
-**Sector news:** OKLO's mixed Q3 print (small EPS beat, meaningful revenue miss) is the session's one confirmed fundamentals event; VST's hold is mechanical (price-dispute driven), not a reversal of Nov 6's confirmed beat-and-raise. Aschenbrenner alignment: **STRONGEST ★★★★★ (held)**.
+**Sector news:** A format-024 catch (Note 8) excluded a mislabeled prior-year CEG "earnings miss" result; VST's hold remains mechanical. Aschenbrenner alignment: **STRONGEST ★★★★★ (held)**.
 
 ### Defense AI
 
-| Ticker | Signal | Price (Nov 9) | RSI(14) | Technical Note | Dispute Severity |
+| Ticker | Signal | Price (Nov 10) | RSI(14) | Technical Note | Dispute Severity |
 |--------|--------|------|---------|-----------------|-------------------|
-| PLTR | WATCH (unchanged) | No Nov 9 print found; Nov 2 base ~$178.34 confirmed (single-sourced), see scoring section | Not found | Stale | HIGH — no confirmed print today |
-| BAH | AVOID (unchanged) | No Nov 9 price print found | Not found | Goldman Sachs Sell rating, PT $80 (Oct 27) stands | HIGH — no confirmed print today |
-| LMT | WATCH (unchanged) | No Nov 9 print found; Nov 2 base ~$643.15 confirmed (single-sourced) | Not found | Record $292.0B backlog | HIGH — no confirmed print, chronic |
-| RTX | WATCH (unchanged) | No Nov 9 print found; Nov 2 base ~$202.79 confirmed (single-sourced) | Not found | Record $340B backlog | HIGH — no confirmed print today |
+| PLTR | WATCH (unchanged) | No Nov 10 print found; Nov 2 base ~$178.34 confirmed (single-sourced, carried) | Not found | Stale | HIGH — no confirmed print today |
+| BAH | AVOID (unchanged) | No Nov 10 price print found | Not found | Goldman Sachs Sell rating, PT $80 (Oct 27) stands; new sector political-risk overlay (Note 7) | HIGH — no confirmed print today |
+| LMT | WATCH (unchanged) | No Nov 10 print found; Nov 2 base ~$643.15 confirmed (single-sourced, carried) | Not found | Record $292.0B backlog; new sector political-risk overlay (Note 7) | HIGH — no confirmed print, chronic |
+| RTX | WATCH (unchanged) | No Nov 10 print found; Nov 2 base ~$202.79 confirmed (single-sourced, carried) | Not found | Record $340B backlog; new sector political-risk overlay (Note 7) | HIGH — no confirmed print today |
 
 | Ticker | Entry/Exit Zone | Risk Factor | Catalyst | Timeframe |
 |--------|-------------------|--------------|----------|-----------|
 | PLTR | Held at WATCH pending a fresh confirmed print | Valuation/"value trap" narrative | Already reported Q3 2026 (Nov 2, confirmed) | Hold for data clarity |
-| BAH | No entries; Sell-rated analyst action compounds the known Civil-segment revenue decline | Goldman Sachs Sell rating; federal contract-cancellation/budget-scrutiny risk | Already reported fiscal Q2 2027 (Oct 23) | Medium (1-3mo) |
-| LMT | Accumulate only on a confirmed reclaim/fresh print | Aeronautics/F-35 execution drag; post-election contract-scrutiny risk (unresolved) | Already reported Q3 2026 (Oct 22) | Medium (1-3mo) |
-| RTX | Held at WATCH pending a fresh confirmed print | Pratt & Whitney GTF supply-chain overhang | Already reported Q3 2026 (Oct 20) | Medium (1-3mo) |
+| BAH | No entries; Sell-rated analyst action compounds the known Civil-segment revenue decline | Goldman Sachs Sell rating; **Democrat-controlled-Congress defense-spending-scrutiny risk (new, Note 7)** | Already reported fiscal Q2 2027 (Oct 23) | Medium (1-3mo) |
+| LMT | Accumulate only on a confirmed reclaim/fresh print | Aeronautics/F-35 execution drag; **Democrat-controlled-Congress spending-scrutiny risk (Note 7, dated Nov 4)** | Already reported Q3 2026 (Oct 22) | Medium (1-3mo) |
+| RTX | Held at WATCH pending a fresh confirmed print | Pratt & Whitney GTF supply-chain overhang; **Democrat-controlled-Congress spending-scrutiny risk (Note 7)** | Already reported Q3 2026 (Oct 20) | Medium (1-3mo) |
 
-**Sector news:** No confirmed same-day data for any of the 4 Defense AI names. Aschenbrenner alignment: **STRONGEST ★★★★★ (held)**.
+**Sector news:** The new Nov 4 political-risk overlay (Note 7) is the session's one fresh, dated input for this sector — no signal change, all three names already price in federal-budget uncertainty at WATCH/AVOID. Aschenbrenner alignment: **STRONGEST ★★★★★ (held)**.
 
 ---
 
 ## Sector Relative Strength Ranking (format-003)
 
-No settled or confirmed-percentage same-day (Nov 9) price data for any of the 18 tickers — a precise ranking is not possible this session. **Overbought (RSI >70):** none confirmed today (no RSI data found). **Oversold (RSI <30):** none confirmed today.
+No settled or confirmed-percentage same-day (Nov 10) price data for any of the 18 tickers — a precise ranking is not possible this session. **Overbought (RSI >70):** none confirmed today (no RSI data found). **Oversold (RSI <30):** none confirmed today.
 
 ---
 
@@ -187,7 +188,7 @@ No reliably today-dated options-flow data was found for any of the 18 tickers th
 
 ## Correlation Breakdown Alerts (format-013 standing section)
 
-No quantified same-day price data exists for any of the 18 tickers today, so a formal (>2%-divergence) correlation-breakdown reading cannot be computed. The session's one notable candidate is qualitative only: **NVDA reportedly falling on a company-specific controversy (Note 3) while AMD reportedly gains (Note 4) within the same AI Compute sector**, against a backdrop of a broad-market/semis rally per the index-level and sector-level headlines. This reads as a genuine idiosyncratic-vs-sector split in direction, but cannot be scored as a formal format-013 alert without a quantified move for either name or the sector aggregate — flagged here as an informal, narrative-level observation only.
+No quantified same-day (Nov 10) price data exists for any of the 18 tickers today. However, today's research retroactively **confirms with multiple sources** the correlation-breakdown candidate this project flagged qualitatively on 2026-11-09: **NVDA -5% (company-specific, governance-driven) against AMD +13% and the broader chip sector's rally (Broadcom +9%) on Monday Nov 9** — a genuine, now-quantified idiosyncratic-vs-sector split within AI Compute. This is logged here as a confirming clarification of an already-elapsed session, not a new same-day Nov 10 alert.
 
 ---
 
@@ -199,7 +200,7 @@ No quantified same-day price data exists for any of the 18 tickers today, so a f
 
 ## HIGH-Dispute-Severity Signal Hold Protocol (format-022 standing section)
 
-**1 intervention today: VST (ACCUMULATE → WATCH).** VST is the only ticker entering today above the WATCH tier; its HIGH dispute flag (no confirmed Nov 9 print) triggers the mechanical hold per the standing rule. No other ticker was eligible (everything else was already at or below WATCH, or is AVOID/SPECULATIVE and exempt).
+**1 intervention today: VST (ACCUMULATE → WATCH), continuing from the prior session.** VST is the only ticker entering today above the WATCH tier; its HIGH dispute flag (no confirmed Nov 10 print) keeps the mechanical hold in force. No other ticker was eligible.
 
 ---
 
@@ -207,18 +208,18 @@ No quantified same-day price data exists for any of the 18 tickers today, so a f
 
 | Sector Pair | Trend | Rotation Signal |
 |-------------|-------|------------------|
-| AI Compute ↔ Semiconductors | No quantified same-day data for either sector; qualitative reports describe a broad rally with NVDA as the lone laggard | Not formally assessable |
-| Energy for AI ↔ Defense AI | OKLO's mixed Q3 print (Energy for AI); no data at all for Defense AI | Not assessable across sectors |
-| Broad market | Multi-source qualitative confirmation of a continued relief rally (Nasdaq-led per open-level reads) | Consistent with Friday's rebound extending into Monday; not yet attributable to any individual ticker beyond NVDA/AMD |
+| AI Compute ↔ Semiconductors | No quantified Nov 10 data for either sector; Monday's confirmed close showed broad chip-sector strength (AMD, Broadcom) with NVDA as the lone company-specific laggard | Not formally assessable today |
+| Energy for AI ↔ Defense AI | No fresh quantified data for either sector today; Defense AI carries a new political-risk overlay (Note 7) | Not assessable across sectors |
+| Broad market | Multi-sourced confirmation of a strong Monday rebound (S&P +2.35%, Nasdaq +2.7%); Tuesday itself unresolved | Consistent with a continuing recovery from the Nov 5 selloff; not yet attributable ticker-by-ticker for today |
 
 ---
 
 ## Aschenbrenner Thesis Alignment
 
-- **AI Compute: STRONG ★★★☆☆ (held).** No quantified company-specific data today; the NVDA-specific controversy is a reputational/regulatory risk to monitor, not yet a thesis-level signal.
-- **Semiconductors: STRONG ★★★★☆ (held).** No fresh data today.
-- **Energy for AI: STRONGEST ★★★★★ (held).** OKLO's mixed print is company-specific (binary/early-stage risk already priced into its SPECULATIVE classification); the structural power-demand thesis is unaffected.
-- **Defense AI: STRONGEST ★★★★★ (held).** No fresh data today.
+- **AI Compute: STRONG ★★★☆☆ (held).** NVDA's escalated governance risk (board investigation) is a company-specific overhang to monitor, not yet a thesis-level signal; the sector's broader AI-compute demand thesis (reflected in AMD's rally) is unaffected.
+- **Semiconductors: STRONG ★★★★☆ (held).** TSM's confirmed October revenue beat (+59.7% YoY) reinforces the underlying AI-buildout demand thesis.
+- **Energy for AI: STRONGEST ★★★★★ (held).** No fresh data today; structural power-demand thesis unaffected by CEG's unresolved earnings-date confusion.
+- **Defense AI: STRONGEST ★★★★★ (held).** The new political-spending-scrutiny risk (Note 7) is a near-term overhang on sentiment, not a reversal of the underlying record-backlog/demand thesis.
 
 ---
 
@@ -227,30 +228,32 @@ No quantified same-day price data exists for any of the 18 tickers today, so a f
 - **Actionability Score (AC): 100/100** — all 18 tickers carry a directional-bias signal, entry/exit guidance, a stated risk factor, a timeframe, and a catalyst.
 - **Coverage Score (CV): 100/100** — all 15 layers present (the price layer reports today's near-total blackout explicitly rather than omitting the layer).
 - **Accuracy Score (AS): 38.91%** (435/1118, 5-day lookback cumulative — unchanged; 0 decisive scores added today).
-- **Composite Score (CS): 75.56** (0.40×38.91 + 0.30×100 + 0.30×100 = 75.564, rounds to 75.56 — unchanged from Nov 6).
+- **Composite Score (CS): 75.56** (0.40×38.91 + 0.30×100 + 0.30×100 = 75.564, rounds to 75.56 — unchanged from Nov 9).
 
 ---
 
 ## Loop 2 — Auto-Research
 
 ### Approval Inbox
-GitHub MCP `list_issues` (`MalikJPalamar/autoresearch`) checked for `needs-approval` and `approved` labels at session start: both **empty**. No approvals opened or closed this session.
+GitHub `list_issues` (`MalikJPalamar/autoresearch`) checked for `needs-approval` and `approved` labels at session start: both **empty**. No approvals opened or closed this session.
 
-### format-037 Status — Weekly/Multi-Day Aggregate Return Fallback Protocol (report 2/3)
+### format-037 RESOLUTION — Weekly/Multi-Day Aggregate Return Fallback Protocol: DISCARD
 
-CS series so far: 75.56 (report 1/3, Nov 6) → 75.56 (report 2/3, today — unchanged). Baseline CS (cs_before) = 75.56. **0/2 fires so far** — see the dedicated format-037 check section above for why today's three candidate aggregate-window figures (MSFT/GOOGL/META Nov 3→6) don't qualify. Report 3/3 is expected on the next trading session (2026-11-10), at which point the experiment resolves KEEP/DISCARD per program.md's standard rule against the 75.56 baseline.
+CS series: 75.56 (report 1/3, Nov 6) → 75.56 (report 2/3, Nov 9) → 75.56 (report 3/3, today). **3-report average CS = 75.56 vs. baseline_cs 75.56 (delta 0.00) = DISCARD**, per this project's exact-zero-delta precedent (format-015, format-023, format-034, format-035). Reverted per the auto-evolve rule. The rule never found a single qualifying aggregate-window candidate across all 3 reports — the only candidates surfaced (MSFT/GOOGL/META Nov 3→6 cumulative returns, report 2/3) didn't fully contain either unresolved endpoint under the rule's own terms — so the decision reflects the rule's narrow applicability window given this project's specific mix of unresolved dates, not a demonstrated defect in the underlying logic (which remains a reasonable idea: a different pair of unresolved dates could still be fully bracketed by a future aggregate-window figure). This is the 11th consecutive DISCARD in this project's "data-reliability/confirmation protocol" and "confirmed-same-session-event override" experiment families (following format-012/017/018/020/021/023/025/026/027/028/029/030/031/032/033/034/035/036), underscoring that neither an origin-side fix (near-date substitution), a forward-side fix (extended lookback), an intraday-snapshot angle, nor now an aggregate-window angle has broken the chronic exact-date blackout's grip on AS. methodology.md's format-037 section is reverted to a DISCARDED write-up; the pre-2026-11-06 form (no aggregate-window fallback rule) is restored.
 
-### Queued Experiments
-None queued behind format-037 (consistent with `state.json.queued_experiment: null`).
+### format-038 STARTED — SEC-Filing Primary Confirmation Protocol (report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.56 (today's resolution CS), reverted on DISCARD. Data-source/presentation-depth experiment, auto-evolve (no approval needed). Motivated directly by today's TSM catch (Note 2): WebSearch news aggregation failed to produce *any* confirmed same-day data for 17 of 18 tickers today, while a single targeted SEC EDGAR query instantly surfaced a specifically-dated (filed 2026-11-10), authoritative Form 6-K with concrete revenue figures for TSM — a materially higher-confidence source than any WebSearch news snippet used elsewhere in this report. **Rule:** for each ticker, in addition to the standing WebSearch pass, run a targeted SEC EDGAR full-text/company-filings check (Form 6-K for foreign private issuers — TSM, ASML — and Form 8-K for US domestic issuers) for same-day-filed material events (earnings releases, monthly/quarterly sales reports, executive or governance disclosures, material agreements). A same-day SEC filing counts as a confirmed, specifically-dated **fundamentals/catalyst** data point for the Coverage and Actionability layers regardless of whether an exact closing stock price is available. This rule does **not** relax the strict exact-date price-anchor convention used for AS scoring (that remains governed by the standing rule tested and left unchanged by format-032/033/035/036) — it only widens same-day *event* confirmation, which is scored via AC/CV, not AS. Effective starting this report. Report 1/3: 1 genuine fire today (TSM's October 6-K, Note 2); the other 17 tickers had no same-day SEC filing found.
 
 ### Signal Changes Summary
-**0 discretionary signal changes today.** **1 mechanical format-022 hold:** VST ACCUMULATE → WATCH for today only (see Note 5 and the dedicated format-022 section above); underlying fundamentals view is unchanged and the hold auto-lifts once a LOW/MEDIUM-dispute price is confirmed for VST.
+**0 discretionary signal changes today.** **1 mechanical format-022 hold, continuing:** VST ACCUMULATE → WATCH (underlying fundamentals view unchanged; hold persists on the standing HIGH dispute flag).
 
-### Methodology Correction
-OKLO's earnings-date placeholder ("~Nov 10, 2026, not yet confirmed") carried in the 2026-11-06 report was stale — Oklo actually reported Q3 2026 on 2026-11-06 itself (see Note 6). This is a report-content correction, not a methodology.md change; the standing format-024 Stale-Data Mislabel Cross-Check Protocol's spirit (catching stale/outdated "current" information before it propagates) applies informally here even though the catch is a calendar fact rather than a price figure.
+### Data-Quality Corrections
+1. Note 4: retrospective multi-source clarification of Monday Nov 9's close (more precise than that report's own single-sourced reads) — not a rescoring, Nov 9's signals are not re-litigated.
+2. Note 8: a mislabeled prior-year (2025) CEG "Q3 miss" result excluded per the standing format-024 protocol.
 
 ### Supabase Mirror
 Best-effort sync attempted this session to project `tjaqenludemumniqhwva` (`reports`, `macro`, `signals`, `experiments` tables); outcome logged in the commit/session notes.
 
 ### state.json
-Updated: `active_experiment: format-037`, `active_experiment_name: "Weekly/Multi-Day Aggregate Return Fallback Protocol"`, `experiment_start_date: 2026-11-06`, `reports_scored: 2`, `baseline_cs: 75.56`, `awaiting_approval: false`, `queued_experiment: null`, `last_report_date: 2026-11-09`, `last_scored_date: 2026-11-09`, `last_cs: 75.56`, `last_as: 38.91`, `updated_by: "loop1+loop2"`.
+Updated: `active_experiment: format-038`, `active_experiment_name: "SEC-Filing Primary Confirmation Protocol"`, `experiment_start_date: 2026-11-10`, `reports_scored: 1`, `baseline_cs: 75.56`, `awaiting_approval: false`, `queued_experiment: null`, `last_report_date: 2026-11-10`, `last_scored_date: 2026-11-10`, `last_cs: 75.56`, `last_as: 38.91`, `updated_by: "loop1+loop2"`.
