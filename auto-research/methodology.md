@@ -624,7 +624,7 @@ chronic exact-date blackout's grip on AS. See the 2026-11-10 changelog
 entry for detail. This section is reverted to its pre-2026-11-06 form
 (no aggregate-window fallback rule).
 
-### SEC-Filing Primary Confirmation Protocol (format-038, ACTIVE since 2026-11-10, report 1/3)
+### SEC-Filing Primary Confirmation Protocol (format-038, ACTIVE since 2026-11-10, report 2/3)
 
 3-report KEEP/DISCARD against baseline CS 75.56 (the 2026-11-10 CS),
 reverted on DISCARD. Data-source/presentation-depth experiment,
@@ -646,9 +646,10 @@ regardless of whether an exact closing stock price is available. This
 rule does not relax the strict exact-date price-anchor convention used
 for AS scoring, which remains unchanged — it only widens same-day
 *event* confirmation, scored via AC/CV rather than AS. Effective
-starting the 2026-11-10 report. Report 1/3: 1 genuine fire (TSM's
-October Form 6-K); the other 17 tickers had no same-day SEC filing
-found.
+starting the 2026-11-10 report. Report 1/3 (Nov 10): 1 genuine fire
+(TSM's October Form 6-K); the other 17 tickers had no same-day SEC
+filing found. Report 2/3 (Nov 11): 0 fires (no same-day 8-K/6-K found
+for any of the 18 tickers).
 
 ---
 
