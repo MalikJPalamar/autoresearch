@@ -663,7 +663,14 @@ auto-evolve (no approval needed). Motivated by a concrete catch in the
 the only one carrying an unambiguous date-plus-volume provenance
 signature (a Yahoo Finance historical-data-table row, $408.08, volume
 8,590,418) differed materially from three undated-or-ambiguously-
-timestamped live-quote/snippet candidates. Rule: when multiple
+timestamped live-quote/snippet candidates. **That specific $408.08
+figure was itself retracted later the same day** — automated PR review
+(Codex) caught that it implied only a ~1.3% decline against the
+$413.35 candidate, inconsistent with a separately-confirmed ~2.2%
+decline (TradingView), so it failed its own format-024 cross-check;
+report 1/3 therefore has 0 confirmed applications, though the
+underlying rationale (date-plus-volume provenance beats an undated
+snippet, in principle) is unaffected. Rule: when multiple
 same-ticker price candidates conflict for the same date, prefer any
 candidate sourced from an explicit date-indexed historical-data-table
 page (e.g. a Yahoo Finance "Historical Data" tab row, a Stooq-style CSV
@@ -679,7 +686,8 @@ and explicitly ruled out before this experiment was framed: it is
 confirmed network-level non-functional (DNS `ENOTFOUND`) against every
 external host attempted in the 2026-11-12 research pass, an
 infrastructure block rather than a logic question. Effective starting
-the 2026-11-12 report. Report 1/3 (Nov 12): 1 application (TSM).
+the 2026-11-12 report. Report 1/3 (Nov 12): 0 confirmed applications
+(the TSM example was retracted, see above).
 
 ---
 
