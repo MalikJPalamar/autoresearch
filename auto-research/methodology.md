@@ -624,32 +624,62 @@ chronic exact-date blackout's grip on AS. See the 2026-11-10 changelog
 entry for detail. This section is reverted to its pre-2026-11-06 form
 (no aggregate-window fallback rule).
 
-### SEC-Filing Primary Confirmation Protocol (format-038, ACTIVE since 2026-11-10, report 2/3)
+### SEC-Filing Primary Confirmation Protocol (format-038) — DISCARDED 2026-11-12
 
-3-report KEEP/DISCARD against baseline CS 75.56 (the 2026-11-10 CS),
+format-038 ran its full 3-report evaluation (2026-11-10 → 2026-11-12)
+and was DISCARDED: 3-report average CS 75.56 vs. baseline 75.56 (delta
+0.00). Per this project's exact-zero-delta precedent (format-015,
+format-023, format-034, format-035), reverted per the auto-evolve rule.
+This was the best-firing experiment yet in the "confirmed-same-session-
+event" family: report 1/3 (Nov 10) fired once (TSM's October-revenue
+Form 6-K); report 2/3 (Nov 11) fired zero times; report 3/3 (Nov 12)
+fired twice — AMAT's confirmed fiscal Q4 FY2026 beat-and-raise (Form
+8-K: adjusted EPS $4.16 vs. $4.06 est., revenue $10.41B record +53%
+YoY, FY2027 Q1 guide above consensus) and TSM's Form 6-K disclosing an
+employee-data exposure traced to a third-party cloud vendor (a
+material-event disclosure, not a fundamentals catalyst). Despite 3
+genuine fires across 3 reports — the best record of any experiment in
+this family — CS could not move: AC and CV have been pinned at 100/100
+since format-005 (Jun 22), so CS tracks AS almost exclusively at the
+margin, and AS is gated by the chronic exact-date price-confirmation
+blackout (57 sessions deep on `scripts/prices.sh` as of Nov 12), which
+SEC filings were never designed to fix since they confirm fundamentals/
+catalysts, not prices. See the 2026-11-12 changelog entry for detail.
+This section is reverted to its pre-2026-11-10 form (no dedicated
+SEC-filing scored mechanism); the real fires already logged while it
+was active (TSM on Nov 10 and Nov 12, AMAT on Nov 12) are not
+retroactively undone, consistent with how prior real-but-insufficient
+fires (format-019/028/029/031/032/033) were treated on their own
+DISCARDs. Running a targeted SEC EDGAR search via WebSearch alongside
+the standing per-ticker news pass remains available as informal good
+practice going forward, without a dedicated template section.
+
+### Historical-Table-Priority Price Confirmation Protocol (format-039, ACTIVE since 2026-11-12, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.56 (the 2026-11-12 CS),
 reverted on DISCARD. Data-source/presentation-depth experiment,
 auto-evolve (no approval needed). Motivated by a concrete catch in the
-2026-11-10 report: WebSearch news aggregation failed to produce any
-confirmed same-day data for 17 of 18 tickers that session, while a
-single targeted SEC EDGAR query instantly surfaced a specifically-dated
-(filed 2026-11-10) Form 6-K with concrete October revenue figures for
-TSM — a materially higher-confidence source than any WebSearch news
-snippet used elsewhere in that report. Rule: for each ticker, in
-addition to the standing WebSearch pass, run a targeted SEC EDGAR
-full-text/company-filings check (Form 6-K for foreign private issuers
-such as TSM/ASML, Form 8-K for US domestic issuers) for same-day-filed
-material events (earnings releases, monthly/quarterly sales reports,
-executive or governance disclosures, material agreements). A same-day
-SEC filing counts as a confirmed, specifically-dated **fundamentals/
-catalyst** data point for the Coverage and Actionability layers
-regardless of whether an exact closing stock price is available. This
-rule does not relax the strict exact-date price-anchor convention used
-for AS scoring, which remains unchanged — it only widens same-day
-*event* confirmation, scored via AC/CV rather than AS. Effective
-starting the 2026-11-10 report. Report 1/3 (Nov 10): 1 genuine fire
-(TSM's October Form 6-K); the other 17 tickers had no same-day SEC
-filing found. Report 2/3 (Nov 11): 0 fires (no same-day 8-K/6-K found
-for any of the 18 tickers).
+2026-11-12 report: TSM had 4 conflicting same-day price candidates, and
+the only one carrying an unambiguous date-plus-volume provenance
+signature (a Yahoo Finance historical-data-table row, $408.08, volume
+8,590,418) differed materially from three undated-or-ambiguously-
+timestamped live-quote/snippet candidates. Rule: when multiple
+same-ticker price candidates conflict for the same date, prefer any
+candidate sourced from an explicit date-indexed historical-data-table
+page (e.g. a Yahoo Finance "Historical Data" tab row, a Stooq-style CSV
+row, a MarketWatch "Historical Quotes" row) — identifiable by a paired
+date and volume figure — over single live-quote, ticker-snippet, or
+AI-summarized candidates, even when the latter appear more "current."
+This does not relax the exact-date convention and does not override
+the standing format-016 dispute-severity flag if the preferred
+candidate still conflicts materially with other sources — it only
+changes which candidate is treated as primary when a tie-break is
+needed. A WebFetch-based direct-page-fetch alternative was considered
+and explicitly ruled out before this experiment was framed: it is
+confirmed network-level non-functional (DNS `ENOTFOUND`) against every
+external host attempted in the 2026-11-12 research pass, an
+infrastructure block rather than a logic question. Effective starting
+the 2026-11-12 report. Report 1/3 (Nov 12): 1 application (TSM).
 
 ---
 
