@@ -687,7 +687,14 @@ confirmed network-level non-functional (DNS `ENOTFOUND`) against every
 external host attempted in the 2026-11-12 research pass, an
 infrastructure block rather than a logic question. Effective starting
 the 2026-11-12 report. Report 1/3 (Nov 12): 0 confirmed applications
-(the TSM example was retracted, see above).
+(the TSM example was retracted, see above). Report 2/3 (Nov 13): **1
+confirmed, non-retracted application** — NVDA's $162.86 close was
+preferred from two converging date+volume-indexed historical-data-table
+rows (stockanalysis.com, Investing.com) over an after-hours quote whose
+implied previous close did not reconcile with any other source, and an
+undated-adjacent snippet. Running 2-report average CS 75.53 vs.
+baseline_cs 75.56 (running delta -0.03). Resolves after report 3/3,
+expected ~2026-11-16 (accounting for the weekend).
 
 ---
 
