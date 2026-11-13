@@ -3,7 +3,7 @@
   "active_experiment": "format-039",
   "active_experiment_name": "Historical-Table-Priority Price Confirmation Protocol",
   "experiment_start_date": "2026-11-12",
-  "reports_scored": 0,
+  "reports_scored": 2,
   "baseline_cs": 75.56,
   "awaiting_approval": false,
   "awaiting_approval_since": null,
@@ -11,10 +11,10 @@
   "queued_experiment": null,
   "queued_experiment_name": null,
   "queued_experiment_issue": null,
-  "last_report_date": "2026-11-12",
-  "last_scored_date": "2026-11-12",
-  "last_cs": 75.56,
-  "last_as": 38.91,
+  "last_report_date": "2026-11-13",
+  "last_scored_date": "2026-11-13",
+  "last_cs": 75.50,
+  "last_as": 38.74,
   "updated_by": "loop1+loop2",
-  "updated_at": "2026-11-12T21:55:00Z"
+  "updated_at": "2026-11-13T21:55:00Z"
 }
