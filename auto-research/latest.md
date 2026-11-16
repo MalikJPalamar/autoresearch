@@ -1,38 +1,28 @@
-# SA Portfolio Daily Report — 2026-11-12
+# SA Portfolio Daily Report — 2026-11-16
 
-**Methodology:** v1.4 | **Experiment:** format-038 SEC-Filing Primary Confirmation Protocol (report 3/3, resolves today) | **Market Status:** POST-CLOSE (Thursday, normal session) | **`scripts/prices.sh` BLOCKED 57th consecutive session** (all-18 null, `source: none`, `curl: 403`) | **AMAT reported fiscal Q4 FY2026 results today after close — a confirmed beat-and-raise** (adj. EPS $4.16 vs. $4.06 est., revenue $10.41B vs. ~$10.3B est., +53% YoY record; FY2027 Q1 guide of $11.1B±$500M revenue / $4.35±$0.20 adj. EPS, both above consensus), confirmed via an 8-K filed today — **after-hours reaction itself is HIGH-dispute (sources conflict: "+1.5%", "+3%", "fell ~1% despite the beat")** | **TSM also fires format-038 today via a 6-K filed today disclosing that current/former-employee data appeared on an external site without authorization**, traced to a third-party cloud vendor, explicitly not company systems or customer data — a material-event disclosure, not a fundamentals catalyst; separately, TSM is confirmed down ~2.2% today (TradingView) on "Nvidia shake-up" headlines overshadowing its already-scored record October revenue | **format-038 report 3/3: 2/18 fires (AMAT, TSM) — the most active report of the experiment's run** (report 1/3 Nov10: 1 fire/TSM; report 2/3 Nov11: 0 fires) | **format-038 RESOLVED: DISCARD** — 3-report average CS 75.56 vs. baseline 75.56 (delta 0.00), reverted per program.md's same-or-worse rule and this project's exact-zero-delta precedent (format-015/023/034/035), despite the rule's real and repeated fires | **format-039 Historical-Table-Priority Price Confirmation Protocol ACTIVATED same day** (data-source/presentation experiment, auto-evolve, report 1/3) — prefer date-indexed historical-table price sources over undated live-quote snippets when candidates conflict | **Correction (caught by automated PR review, Note 14): the TSM $408.08 figure originally cited as format-039's first application is retracted** — it implies only a ~1.3% decline from the $413.35 candidate, inconsistent with TradingView's confirmed ~2.2% decline, so it does not survive format-024's stale/inconsistent-figure check; TSM's Nov 12 price reverts to HIGH dispute/unconfirmed and format-039 has 0 confirmed applications in report 1/3 | **Discretionary signal change: AMAT WATCH → ACCUMULATE** on the confirmed beat-and-raise, immediately mechanically held back to **WATCH** by the standing format-022 protocol given the HIGH-dispute after-hours reaction — a 3rd simultaneous format-022 hold alongside VST and CEG's continuing holds | **No absolute, confirmed 2026-11-05 settled-close price ever surfaced for any of the 18 tickers across 5 dedicated research passes today** — the Nov 5 signal batch scores 0/18 decisive (1 NULL/OKLO, 17 PENDING), continuing the project's chronic PENDING pattern | **AS unchanged at 38.91% (435/1118); CS unchanged at 75.56** | **A data-integrity bug was found and fixed in `results.tsv`: the 2026-11-11 row had a corrupted/duplicated fragment concatenated into one field with no line break** (pre-existing file corruption, not new data) — the garbled partial duplicate was removed, the complete row preserved; no historical content changed | **No approval issues opened or closed** (`needs-approval`/`approved` both empty on `MalikJPalamar/autoresearch`)
+**Methodology:** v1.4 | **Experiment:** format-039 Historical-Table-Priority Price Confirmation Protocol (report 3/3, resolves today) | **Market Status:** POST-CLOSE (Monday, normal session) | **`scripts/prices.sh` BLOCKED 58th consecutive session** (all-18 null, `source: none`, `curl: 403`) | **Correction: 2026-11-13 did run** — this session initially found no git commit for that date and assumed a missed session, then discovered a Supabase mirror row for it, recovered the underlying data, and reconstructed `auto-research/2026-11-13-report.md` before continuing (see Note 2) | **That recovery surfaced a major story missed by the 2026-11-12 git report: Jensen Huang resigned as Nvidia's President, CEO, and a board member** (SEC 8-K dated 2026-11-12, effective immediately; CFO Colette Kress named interim CEO) — already 4 days old as of today, no new developments found | **format-039 RESOLVED: DISCARD** — 3-report average CS 75.52 vs. baseline 75.56 (delta -0.04); its one real fire (NVDA, Nov 13) not retroactively undone | **format-040 Governance/Leadership-Event Confirmation Override ACTIVATED same day** (signal-logic, pre-approved 2026-08-20, auto-evolve), motivated directly by the Huang precedent — 0 fires today | **NVDA reports fiscal Q3 FY2027 earnings tomorrow, Nov 17, after close** (confirmed) | **No absolute, confirmed 2026-11-16 settled-close price surfaced for any of the 18 tickers** | **Nov 9 signal batch: 0 correct / 0 incorrect / 1 NULL (OKLO) / 17 PENDING = 0/18 decisive** — the originating Nov 9 report never published a confirmed exact-date price for any ticker | **AS unchanged at 38.74% (435/1123); CS unchanged at 75.49** (both inherited from the reconstructed Nov 13 session — see Note 2) | **No approval issues opened or closed**
 
 ---
 
 ## ⚠️ Operational Notes
 
-**1. `scripts/prices.sh` blocked 57th consecutive session.** `bash scripts/prices.sh --json` returns `source: none` / all-null for all 18 tickers; `curl` fails with HTTP 403 against both `query1.finance.yahoo.com` and `stooq.com`, unchanged since Aug 21. This session's parallel research also confirmed `WebFetch` is categorically non-functional against every external host attempted today (`stockanalysis.com`, `investor.appliedmaterials.com`, `benzinga.com`, `sec.gov` direct) — every attempt failed with a DNS resolution error (`ENOTFOUND`), not a 403 or rate limit. This is an infrastructure-level block, not a site-specific one, and rules out a WebFetch-based data-source experiment this cycle (see format-039 below).
+**1. `scripts/prices.sh` blocked 58th consecutive session.** `bash scripts/prices.sh --json` returns `source: none` / all-null for all 18 tickers; `curl` fails with HTTP 403 against both `query1.finance.yahoo.com` and `stooq.com`.
 
-**2. AMAT: confirmed fiscal Q4 FY2026 beat-and-raise, filed via 8-K today.** Adjusted EPS $4.16 vs. $4.06 consensus (GAAP EPS $3.40); revenue $10.41B vs. ~$10.3B consensus, +53% YoY and a company record; Semiconductor Systems segment revenue +64% YoY to $8.00B. Full-year FY2026: revenue $34.45B (+21%), adjusted EPS $12.89 (+37%). Guidance for fiscal Q1 FY2027: revenue $11.1B ± $500M (above the $10.84B estimate) and adjusted EPS $4.35 ± $0.20 (above the $4.25 estimate) — a clean beat-and-raise on both the quarter just reported and forward guidance. **After-hours price reaction is itself HIGH-dispute**: one source reports "+1.5%", another "+3%", a third "fell ~1% despite the beat" — no consensus on direction-plus-magnitude. See Note 4 (format-022) for how this is handled.
+**2. The 2026-11-13 gap was real but not what it first looked like.** This session began by checking `git log` for `auto-research/`, found no commit between 2026-11-12 and today, and initially treated Friday Nov 13 as a missed run. A routine check of the Supabase mirror (project `tjaqenludemumniqhwva`) before writing today's data turned up a `reports` row dated 2026-11-13 (CS 75.5, AS 38.7, labeled "format-039 report 2/3") that has no corresponding git history at all — meaning that session's Loop 1+2 work actually ran and mirrored its results, but its git commit/push never happened, for an unknown reason. This session recovered the underlying `signals`/`daily_prices`/`macro` rows (the original markdown itself was never stored — Supabase's `markdown_content` column for that date is null) and reconstructed `auto-research/2026-11-13-report.md` as a best-effort summary before continuing today's work. **This means the project's "source of truth is the repo" assumption had a real gap for 4 days** (2026-11-12 evening through today), during which the only record of that session's findings lived in Supabase. See the new changelog entry for 2026-11-13 for full detail.
 
-**3. TSM fires format-038 on a material-event disclosure, not a fundamentals catalyst.** A 6-K filed today (2026-11-12) discloses that data belonging to current and former TSMC employees appeared on an external site without authorization. TSMC states it found no evidence its own systems were compromised and traces the exposure to a third-party cloud vendor, explicitly describing it as unrelated to company operations or customer data, and says affected staff are being notified. This counts as a confirmed, same-day SEC filing under format-038's rule (any same-day material-event 6-K/8-K, regardless of whether it's a price-moving fundamentals event) but is not treated as a catalyst for TSM's signal. Separately, TradingView confirms TSM/TSMC fell approximately 2.2% today on "Nvidia shake-up" headlines overshadowing TSM's own record October revenue (already scored in the Nov 10 report) — see the Semiconductors table for the price-candidate detail and the new format-039 trial.
+**3. The recovered session's biggest finding: Jensen Huang resigned as Nvidia's CEO.** Per an SEC Form 8-K dated 2026-11-12 (effective immediately), Huang resigned as President, CEO, and a board member. Multiple major outlets (CNBC, Axios, NBC News, Al Jazeera) tie this to press-reported extramarital-affair allegations, including the previously-tracked relationship with a woman U.S. officials suspect of China-linked intelligence activity — not a reason Nvidia itself gave. CFO Colette Kress is interim CEO (retaining the CFO title) while the board searches for a permanent successor. NVDA fell as much as 13% intraday on the news before a partial rebound (Nov 13 close confirmed $162.86, -2.01%). **This is now 4 days old and this session found no further developments today** (no news on a permanent-CEO search timeline, no fresh price print). The previously-tracked "Nov 18 Congressional closed-door briefing" storyline is effectively superseded by the resignation. NVDA remains WATCH — a governance shock, not a confirmed fundamentals deterioration.
 
-**4. format-022 fires three times today: VST (continuing), CEG (continuing), AMAT (new).** AMAT's discretionary upgrade to ACCUMULATE (Note 2) is immediately held back to WATCH by the standing HIGH-Dispute-Severity Signal Hold Protocol: no confirmed, single-direction Nov 12 price reaction has been established (HIGH dispute on the after-hours move), so format-022 mechanically holds the signal at WATCH pending a confirmed Nov 13 settled close. VST and CEG continue their holds from prior sessions on the same no-confirmed-print basis. All three tickers' underlying fundamentals view remains ACCUMULATE; the displayed signal is WATCH for all three pending confirmed prints.
+**4. format-039 (Historical-Table-Priority Price Confirmation Protocol) RESOLVED: DISCARD.** Firing record across the full run: report 1/3 (Nov 12) 0 confirmed applications (the TSM candidate was retracted same day); report 2/3 (Nov 13) 1 confirmed application (NVDA $162.86, preferred via a stockanalysis.com/Investing.com historical-data-table match, LOW dispute); report 3/3 (Nov 16, today) 0 applications — no genuinely Nov-16-dated price candidate set, let alone a conflicting one, was found for any ticker. 3-report average CS: (75.56 + 75.49 + 75.49) / 3 = 75.52, vs. baseline_cs 75.56, delta -0.04. Per program.md's "CS decreased → DISCARD" rule and this project's consistent practice of discarding on small negative deltas (format-029 -0.05, format-031/033 -0.01), this resolves **DISCARD**. methodology.md reverted to its pre-2026-11-12 form; the one real fire (NVDA, Nov 13) is not retroactively undone, consistent with this project's treatment of prior real-but-insufficient fires.
 
-**5. format-038 resolves DISCARD despite being its most active report.** See the dedicated section below for the full resolution detail. In short: 3 genuine fires across the run (TSM Oct-revenue 6-K on Nov 10, 0 on Nov 11, TSM data-exposure 6-K + AMAT earnings 8-K both on Nov 12) is the best firing record of any experiment in the "confirmed-same-session-event" family, but with AC/CV pinned at 100/100 since well before this experiment started, none of these fires were capable of moving CS, which tracks AS exclusively at the margin. The decision is a continuation of this project's now-familiar "logic worked, CS didn't move" pattern, not a defect finding.
+**5. format-040 Governance/Leadership-Event Confirmation Override ACTIVATED (report 1/3).** Signal-logic experiment, pre-approved 2026-08-20, auto-evolve (no approval needed) — motivated directly by Note 3. **Rule:** when a ticker has a confirmed, dated SEC filing (Item 5.02 of an 8-K, or the equivalent on a 6-K) disclosing a C-suite departure, resignation, or equivalent sudden leadership change, that ticker's signal for that session is flagged as a mandatory discretionary-review trigger — if the signal is currently above WATCH on an unconfirmed-impact basis, it is held at WATCH until the market's reaction to the leadership change is confirmed, similar in spirit to the standing format-022 price-dispute hold but triggered by a governance event rather than a price dispute. `baseline_cs` = 75.49 (today's CS). Report 1/3: 0 fires today — no new governance-event filing was found for any of the 18 tickers (NVDA's own triggering event is 4 days old and already reflected in its standing WATCH classification, so it does not count as a fresh fire today).
 
-**6. NRG's chronic "Q3 earnings not yet found" gap is resolved.** NRG reported Q3 2026 results on Nov 9, 2026: GAAP net income $561M, GAAP EPS $2.59, adjusted EPS $4.68, adjusted EBITDA $2,013M. The company reaffirmed (not raised) full-year 2026 guidance and initiated 2027 guidance. This is a genuine beat on the quarter but a flat (reaffirmed, not raised) forward guide — a mixed signal that does not change NRG's standing AVOID classification (exempt from format-022). 3 trading days stale relative to today, surfaced via a company release republished by finviz/Zacks.
+**6. NVDA: confirmed earnings tomorrow, Nov 17, 2026, after close.** 1 trading day out — the nearest dated catalyst on the board, and now unusually consequential given the leadership change 5 days prior.
 
-**7. VIX has two new, cleanly-chained confirmed closes, materially lower than the carried anchor.** Nov 9's close of 19.92 (-22.31% vs. Nov 5's 28.18 spike) and Nov 10's close of 20.17 (+1.26%) both supersede the Nov 6 anchor (25.64) carried in the last two reports. The VIX has now fully round-tripped from Nov 5's historic spike back into the "normal" 15–25 regime. No Nov 11 or Nov 12 print found.
+**7. LMT: a further, only partially-reconciled data point.** Today's research found a Marketchameleon figure dated Nov 13 ($596.04, -1.3%) that was not cross-checked against the reconstructed Nov 13 session's own finding until this report was being written: that session resolved LMT's long-running multi-way dispute to a clean ~$567 anchor with a confirmed +7.6% Nov 6→11 rally. A ~$567 base plus +7.6% points toward roughly $610 by Nov 11, which is in the same broad range as (but not a clean reconciliation with) today's $596.04 Nov 13 figure — directionally consistent, not independently verified. Logged as a further data point, not a new conflict from scratch and not a signal change.
 
-**8. LMT's price picture gets more confused, not less.** New candidates found today — Marketchameleon's $567.08 (Nov 6, -1.6%) and Benzinga's $588.19 (Nov 9) — appear at first to chain cleanly (+3.7%), but a separate same-outlet (Benzinga) AI-summarized snippet describes that same $588.19 print as "-6.9%, worst day of the year," which is self-contradictory and more consistent with bleed-over from Nov 5's broad-market crash day than an LMT-specific Nov 9 move. This is logged as a new unresolved self-contradiction, not used for scoring, layered on top of the already-unresolved 3-way dispute ($548.23 / $602.75 / $643.15) carried from the Nov 11 report.
+**8. No options-flow data found for any of the 18 tickers today.** Skipping per standing practice.
 
-**9. BAH: a possible historical misattribution in this project's own record, flagged not corrected.** This project has carried a "Goldman Sachs Sell rating, PT $80 (Oct 27, 2026)" data point on BAH for several weeks. Today's research could not corroborate any Oct 2026 Goldman Sachs Sell action on BAH — the only matching Goldman Sell downgrade found in search is dated May 2025 ($94 PT). Per standing practice this is logged as an unresolved sourcing concern on an already-elapsed, non-rescoreable data point rather than corrected retroactively; it is flagged here for awareness and for human review if Malik wants to verify the original Oct 27 citation. BAH's AVOID classification is unaffected (it does not rest solely on this data point). A new, single-sourced but specific BAH price candidate was found: Benzinga $88.125, "last updated Nov 10, 2026 2:40pm EST" (MEDIUM dispute).
-
-**10. GOOGL: a concerning but unconfirmed single-sourced figure, not used.** MarketChameleon shows $287.38 dated Nov 10 — a steep implied decline versus the standing -19.2% (Oct 5→Nov 3) cumulative-decline anchor already on file. This is single-sourced and could not be corroborated today; flagged as HIGH dispute per format-016, not used as a confirmed anchor or for any signal change. GOOGL's standing AVOID thesis (negative FCF trend, elevated capex guidance) is unaffected either way.
-
-**11. A `results.tsv` data-integrity bug was found and fixed.** The 2026-11-11 row contained a corrupted fragment: a truncated, incomplete copy of the row's description field was concatenated directly in front of the complete, well-formed row with no newline separator between them, producing one malformed line. This was corrected by removing the truncated duplicate fragment and keeping only the complete row intact — no historical scoring or description content was altered, this is a pure file-integrity fix (likely caused by an interrupted/retried append in a prior session).
-
-**12. NVDA's Congressional situation has a reporting gap.** The House committee chairs' response deadline (flagged in the Nov 11 report) was yesterday, Nov 11. No reporting was found today on whether Nvidia/Huang responded, what was said, or any escalation. No confirmed fundamentals or price impact; no signal change.
-
-**13. No options-flow data found for any of the 18 tickers today.** Skipping per standing practice.
-
-**14. Correction: the TSM $408.08 "format-039 preferred pick" is retracted.** Automated PR review (Codex) caught that the Yahoo historical-table candidate used in the first draft of this report ($408.08, vol 8.59M) implies only a ~1.3% decline from the $413.35 candidate also surfaced this session — inconsistent with TradingView's confirmed ~2.2% decline cited in the same paragraph (a confirmed -2.2% move from a $413.35 base implies a close near $404, not $408.08). This is exactly the kind of cross-figure inconsistency the standing format-024 Stale-Data Mislabel Cross-Check is meant to catch, and it was missed in the first pass. The $408.08 figure is retracted; TSM's Nov 12 settled close reverts to **unconfirmed, HIGH dispute** rather than a clean format-039 pick. Because this was format-039's sole report-1/3 example, the experiment now has **0 confirmed applications** in its first report — the rule itself is unaffected and remains active, awaiting a clean application in a future report. A follow-up verification pass today also could not independently confirm a clean Nov 12 (or even Nov 9-11) TSM close: available sources disagree sharply (one quote service shows TSM trading in the high $380s-low $390s as of Nov 9-10, materially below the $404-413 range the original candidates clustered around), underscoring that TSM's price is genuinely unresolved today rather than narrowly mis-picked.
+**9. No approval issues opened or closed.** `needs-approval`/`approved` labels both empty on `MalikJPalamar/autoresearch` at session start.
 
 ---
 
@@ -40,77 +30,57 @@
 
 | Metric | Level | Note |
 |--------|-------|------|
-| S&P 500 | **UNRESOLVED for today (Nov 12)**; last confirmed close Nov 9's +2.35% to 7,549.94 | A single uncorroborated "digest" source shows 7,520.93 (-0.38%), implied Nov 10 — HIGH dispute/unconfirmed, not used. |
-| Nasdaq Composite | **UNRESOLVED for today**; last confirmed close Nov 9's +2.74% to 25,253.14 | No Nov 10-12 print found. |
-| Dow Jones | **UNRESOLVED for today**; last confirmed close Nov 9's +2.15% to 52,389.75 | Same uncorroborated digest source shows 52,231.89 (-0.30%), same unconfirmed date — HIGH dispute, not used. |
-| VIX | **UNRESOLVED for today**; two new confirmed closes: **19.92 (Nov 9, -22.31%)** and **20.17 (Nov 10, +1.26%)** | See Note 7 — supersedes the Nov 6 25.64 anchor; regime now **normal (15-25)**. |
-| DXY | **UNRESOLVED for today**; no clean settled close pinned Nov 9-12 | Candidates conflict (Nov9 ~101.8, Nov6 close 102.30, an undatable 102.11 note) — carry forward Oct 19's ~101.84 if a single number is needed. |
-| US 10Y Yield | **UNRESOLVED for today**; last confirmed close Nov 6's 4.86% (Nov 5's 4.84%) | A separate ~4.98-5.0% candidate for Nov 10/11 could not be pinned to an exact date — HIGH dispute/unresolved, not reconciled this session. |
-| WTI / Brent Crude | **UNRESOLVED for today**; last confirmed anchor Nov 8's WTI $90.34 / Brent $97.75 (OilPriceAPI) | 4 trading days stale; Reuters cites oil softness as a Nov 9 rally driver, directionally consistent but not independently re-confirmed. |
-| AMAT Q4 FY2026 results | **CONFIRMED (8-K, filed 2026-11-12)**: beat-and-raise, adj. EPS $4.16 vs $4.06 est., revenue $10.41B record +53% YoY | See Note 2 — after-hours reaction HIGH dispute. |
-| TSM employee-data exposure disclosure | **CONFIRMED (6-K, filed 2026-11-12)**: third-party cloud vendor exposure, not company systems/customer data | See Note 3 — material-event disclosure, not a fundamentals catalyst. |
+| S&P 500 | **UNRESOLVED for today**; last confirmed close Nov 13's 7,561.67 (-0.40%, per the reconstructed session) | No Nov 14-16 print found. |
+| Nasdaq Composite | **UNRESOLVED for today**; last confirmed close Nov 13's 25,136.27 (-0.91%) | Same. |
+| VIX | **UNRESOLVED for today**; last confirmed anchor 19.92 (Nov 9); a disputed Nov 10 reading (19.45 vs. 20.17) was never reconciled | Regime carried as normal (15-25). |
+| DXY | **UNRESOLVED for today**; no fresher print than the standing ~101.8-102.3 cluster | Chronically stale. |
+| US 10Y Yield | **UNRESOLVED for today**; last confirmed anchor ~5.000% (crossed 5% on the Nov 10 hot CPI print, held through Nov 13 per headline confirmation) | No Nov 14-16 print found. |
+| WTI / Brent Crude | **UNRESOLVED for today**; last confirmed anchor Nov 8's WTI $90.34 / Brent $97.75 | 6 trading days stale. |
+| NVDA earnings | **CONFIRMED: Nov 17, 2026, after close** | See Note 6 — 1 trading day out. |
+| NVDA leadership | **CONFIRMED: Huang resigned (8-K, Nov 12); Colette Kress interim CEO** | See Note 3 — 4 days old, no new developments today. |
 
-**Macro summary:** The broad market's confirmed state remains Monday Nov 9's strong rebound (S&P/Nasdaq/Dow all +2%+) on falling oil prices and cooling inflation fears, with the VIX now confirmed to have fully round-tripped from Nov 5's historic spike back into a normal 15-25 regime by Nov 9-10 — the clearest "fear receding" signal logged in weeks. No Nov 10, 11, or 12 settled index/VIX/DXY/10Y/oil print was found. Today's genuine news is company-specific and fundamentals-level (AMAT's beat-and-raise, TSM's data-exposure disclosure and Nvidia-linked selloff) rather than macro-level.
+**Macro summary:** The last fully-confirmed broad-market read is Friday Nov 13's modest pullback (S&P -0.40%, Nasdaq -0.91%), itself dominated that session by the NVDA CEO-resignation shock. No Nov 14-16 settled index, VIX, DXY, yield, or oil print was found today. The next confirmed catalyst is NVDA's earnings tomorrow.
 
 ---
 
-## Nov 5 Signal Batch Scoring (5 Trading Days)
+## Nov 9 Signal Batch Scoring (5 Trading Days)
 
-5th trading day after 2026-11-05 (Thursday): Nov 6, 9, 10, 11, 12 (no holiday gap). Per the strict exact-date-only convention (format-032/033/035/036/037 all discarded; no near-date substitution, extended-lookback, intraday-snapshot, or aggregate-window rescue active), a signal's base price is usable only if the originating (Nov 5) report explicitly published a confirmed settled-close price for that exact day. The Nov 5 report's own per-ticker data was almost entirely qualitative (percentage moves without an absolute settled close) or directly disputed, and 5 dedicated research passes today (one per sector plus macro) confirmed **no absolute, confirmed Nov 5 settled-close price exists for any of the 18 tickers** — the sharpest-magnitude session of the run produced the least scoreable data of any origin day so far.
+5th trading day after 2026-11-09 (Monday): Nov 10, 11, 12, 13, 16 (no holiday gap). Per the strict exact-date-only convention, a signal's base price is usable only if the *originating* (Nov 9) report explicitly published a confirmed price for that exact day. Re-reading that report confirms it did not, for any of the 18 tickers.
 
-| # | Ticker | Signal (Nov 5, as published) | Base (Nov 5, exact-date only) | Nov 12 read | Verdict |
+| # | Ticker | Signal (Nov 9, as published) | Base (Nov 9, exact-date only) | Nov 16 read | Verdict |
 |---|--------|--------|----------------|-----------------|---------|
-| 1 | NVDA | WATCH | No settled close (only a disputed ~7-8% move) | No Nov 12 print found | ⬜ **PENDING** |
-| 2 | AMD | WATCH | No settled close (disputed 13-16% move) | No Nov 12 print found | ⬜ **PENDING** |
-| 3 | GOOGL | AVOID | No settled close (contradictory direction) | No Nov 12 print found (Nov10 $287.38 single-sourced, unconfirmed) | ⬜ **PENDING** |
-| 4 | MSFT | WATCH | No settled close (unquantified decline) | No Nov 12 print found | ⬜ **PENDING** |
-| 5 | META | WATCH | No settled close (contradictory direction) | No Nov 12 print found | ⬜ **PENDING** |
-| 6 | TSM | WATCH | No Nov 5 print found | No Nov 12 print survives cross-check (Note 14 — $408.08 retracted) | ⬜ **PENDING** |
-| 7 | ASML | WATCH | No settled close (single-sourced ~-8%) | No Nov 12 print found | ⬜ **PENDING** |
-| 8 | AMAT | WATCH | No settled close (disputed 4-12% move) | No Nov 12 print clean (confirmed earnings, price HIGH dispute) | ⬜ **PENDING** |
-| 9 | LRCX | WATCH | No settled close (disputed 4-14% move) | No Nov 12 print found | ⬜ **PENDING** |
-| 10 | VST | WATCH | No Nov 5 print found | No Nov 12 print found | ⬜ **PENDING** |
-| 11 | CEG | WATCH | No Nov 5 print found | No Nov 12 print found | ⬜ **PENDING** |
+| 1 | NVDA | WATCH | No Nov 9 print found (originating report) | No Nov 16 print found | ⬜ **PENDING** |
+| 2 | AMD | WATCH | No Nov 9 print found | No Nov 16 print found | ⬜ **PENDING** |
+| 3 | GOOGL | AVOID | No Nov 9 print found | No Nov 16 print found | ⬜ **PENDING** |
+| 4 | MSFT | WATCH | No Nov 9 print found | No Nov 16 print found | ⬜ **PENDING** |
+| 5 | META | WATCH | No Nov 9 print found | No Nov 16 print found | ⬜ **PENDING** |
+| 6 | TSM | WATCH | No Nov 9 print found | No Nov 16 print found | ⬜ **PENDING** |
+| 7 | ASML | WATCH | No Nov 9 print found | No Nov 16 print found | ⬜ **PENDING** |
+| 8 | AMAT | WATCH | No Nov 9 print found | No Nov 16 print found | ⬜ **PENDING** |
+| 9 | LRCX | WATCH | No Nov 9 print found | No Nov 16 print found | ⬜ **PENDING** |
+| 10 | VST | WATCH (format-022 hold; underlying ACCUMULATE) | No Nov 9 print found | No Nov 16 print found | ⬜ **PENDING** |
+| 11 | CEG | WATCH | No Nov 9 print found | No Nov 16 print found | ⬜ **PENDING** |
 | 12 | OKLO | SPECULATIVE | — | — | ⬜ **NULL** (risk classification, no directional call) |
-| 13 | NRG | AVOID | No Nov 5 data found | No Nov 12 print found | ⬜ **PENDING** |
-| 14 | SMR | AVOID | No Nov 5 print found | No Nov 12 print found | ⬜ **PENDING** |
-| 15 | PLTR | WATCH | No Nov 5 print found | No Nov 12 print found | ⬜ **PENDING** |
-| 16 | BAH | AVOID | No Nov 5 print found | No Nov 12 print found (new Nov10 $88.125 single-sourced) | ⬜ **PENDING** |
-| 17 | LMT | WATCH | No Nov 5 print found | No Nov 12 print found (new self-contradictory Nov9 data point, Note 8) | ⬜ **PENDING** |
-| 18 | RTX | WATCH | No Nov 5 print found | No Nov 12 print found | ⬜ **PENDING** |
+| 13 | NRG | AVOID | No Nov 9 data found | No Nov 16 print found | ⬜ **PENDING** |
+| 14 | SMR | AVOID | No Nov 9 print found | No Nov 16 print found | ⬜ **PENDING** |
+| 15 | PLTR | WATCH | No Nov 9 print found | No Nov 16 print found | ⬜ **PENDING** |
+| 16 | BAH | AVOID | No Nov 9 print found | No Nov 16 print found | ⬜ **PENDING** |
+| 17 | LMT | WATCH | No Nov 9 print found | No Nov 16 print found | ⬜ **PENDING** |
+| 18 | RTX | WATCH | No Nov 9 print found | No Nov 16 print found | ⬜ **PENDING** |
 
-**Result: 0 correct / 0 incorrect / 1 NULL (OKLO) / 17 PENDING = 0/18 decisive (0%).** Neither side of the window produced a usable exact-date settled-close price for any ticker.
+**Result: 0 correct / 0 incorrect / 1 NULL (OKLO) / 17 PENDING = 0/18 decisive (0%).** The origin side is the blocking constraint for all 17.
 
-**AS: 38.91% → 38.91%** (435/1118; unchanged — zero decisive scores added today).
-
----
-
-## format-038 — SEC-Filing Primary Confirmation Protocol — RESOLVED: DISCARD
-
-**Rule recap:** for each ticker, run a targeted SEC EDGAR filing check (Form 6-K for foreign private issuers, Form 8-K for US domestic issuers) for same-day-filed material events, in addition to the standing WebSearch pass. A same-day filing counts as a confirmed fundamentals/catalyst data point for AC/CV regardless of price confirmation; it does not relax the exact-date price-anchor convention used for AS.
-
-**Firing record across the full 3-report run:**
-- Report 1/3 (Nov 10): 1 fire — TSM's October-revenue Form 6-K.
-- Report 2/3 (Nov 11): 0 fires.
-- Report 3/3 (Nov 12, today): 2 fires — AMAT's Q4 FY2026 earnings 8-K (beat-and-raise, Note 2) and TSM's employee-data-exposure 6-K (Note 3).
-
-**CS series: 75.56 (Nov 10) → 75.56 (Nov 11) → 75.56 (Nov 12). 3-report average: 75.56 vs. baseline_cs 75.56 (delta 0.00).**
-
-**Resolution: DISCARD**, per program.md's Loop 2 rule ("CS same or worse → DISCARD") and this project's established exact-zero-delta precedent (format-015, format-023, format-034, format-035 were all discarded on an identical 0.00 delta). This is despite format-038 having the best firing record of any experiment in the "confirmed-same-session-event" family this project has run — 3 genuine fires across 3 reports, versus the many zero-fire discards (format-012/017/018/020/021/026/030/034) that preceded it. The reason the fires didn't move CS is structural, not a defect in the rule: AC and CV have been pinned at 100/100 since format-005 (Jun 22), and CS at the margin tracks AS almost exclusively; AS is gated by the chronic exact-date price-confirmation blackout (now 57 sessions deep on `scripts/prices.sh`), which SEC filings — fundamentals/catalyst data, not prices — were never designed to fix. This is the clearest instance yet of this project's recurring "logic worked, CS didn't move" pattern.
-
-**methodology.md reverted** to its pre-2026-11-10 form: the dedicated SEC-Filing Primary Confirmation Protocol section is removed as a scored report mechanism. The real fires already logged while it was active (TSM's October-revenue catch on Nov 10, and today's AMAT/TSM catches) are not retroactively undone, consistent with this project's treatment of prior real-but-insufficient fires (format-019/028/029/031/032/033). Running a targeted SEC EDGAR search via WebSearch (not WebFetch, which is confirmed network-blocked — Note 1) alongside the standing per-ticker news pass remains available as informal good practice going forward, without a dedicated template section.
+**AS: 38.74% → 38.74%** (435/1123; unchanged — zero decisive scores added today).
 
 ---
 
-## format-039 — Historical-Table-Priority Price Confirmation Protocol — ACTIVATED (report 1/3)
+## format-039 Historical-Table-Priority Price Confirmation Protocol — RESOLVED: DISCARD
 
-**Motivation.** Today's TSM price research surfaced 4 conflicting Nov 12 candidates: a Yahoo Finance historical-data-table entry ($408.08, with volume 8,590,418 attached — the signature of a genuine dated settled-close row) versus three undated-or-ambiguously-timestamped live-quote snippets (Public.com's $413.35 "regular close" vs. its own $405.13 "after-hours"; Finviz's $405.56 "3:57pm snapshot"). The historical-table entry carried the only unambiguous date-plus-volume provenance signature of the four — exactly the kind of signal the standing format-024 Stale-Data Mislabel Cross-Check already uses informally to distinguish genuine settled closes from AI-summarized or cached live-quote noise — **but it turned out to be wrong: see Note 14.** The $408.08 figure is internally inconsistent with TradingView's confirmed ~2.2% decline (implying a close near $404, not $408.08) and does not survive its own cross-check. This is retained here as the motivating rationale for the rule (historical-table provenance is still, in principle, a better signal than an undated snippet) but the specific example is retracted and does not count as a validated application.
+See Note 4 above for full detail. 3-report average CS 75.52 vs. baseline_cs 75.56 (delta -0.04) = DISCARD.
 
-**Rule:** when multiple same-ticker price candidates conflict for the same date, prefer any candidate sourced from an explicit date-indexed historical-data-table page (e.g. a Yahoo Finance "Historical Data" tab row, a Stooq-style CSV row, a MarketWatch "Historical Quotes" row) — identifiable by a paired date and volume figure — over single live-quote, ticker-snippet, or AI-summarized candidates, even when the latter appear more "current." This does not relax the exact-date convention (a historical-table row must still carry the exact date needed) and does not override the format-016 dispute-severity flag if the preferred candidate still conflicts materially with other sources — it only changes *which* candidate is treated as primary when a tie-break is needed.
+## format-040 Governance/Leadership-Event Confirmation Override — ACTIVATED (report 1/3)
 
-**Explicitly ruled out this cycle:** a WebFetch-based direct-page-fetch experiment (the original idea floated when this cycle's research began) was tested informally across all 4 sector research passes today — every attempt (stockanalysis.com, investor.appliedmaterials.com, benzinga.com, sec.gov direct) failed with a DNS resolution error (`ENOTFOUND`), not a 403/rate-limit/paywall. This is a session-level network-policy block, not a site-specific or logic defect, so a WebFetch-based protocol would be a guaranteed non-informative discard; it is not being proposed.
-
-**Classification:** data-source/presentation-depth experiment, auto-evolve (no approval needed) per program.md. `baseline_cs` = 75.56 (today's CS). **Report 1/3: 0 confirmed applications** — the TSM example originally logged as the first application is retracted (Note 14); TSM's Nov 12 price reverts to HIGH dispute/unconfirmed. The rule itself remains active and will be applied to the next qualifying conflicting-candidate set. Resolution expected after 2 further reports (~Nov 14-16, accounting for the weekend).
+See Note 5 above for full detail. 0 fires today. `baseline_cs` = 75.49.
 
 ---
 
@@ -118,85 +88,85 @@
 
 ### AI Compute
 
-| Ticker | Signal | Price (Nov 12) | RSI(14) | Technical Note | Dispute Severity |
-|--------|--------|------|---------|-----------------|-------------------|
-| NVDA | WATCH (unchanged) | No Nov 12 print found; last confirmed anchor Nov 9's ~-5% to $175.92 | Not found | Congressional response deadline passed yesterday, outcome unreported (Note 12) | HIGH — no confirmed print today |
-| AMD | WATCH (unchanged) | No Nov 12 print found; last confirmed anchor Nov 9's +13% | Not found | Stale | HIGH — no confirmed print today |
-| GOOGL | AVOID (unchanged) | No Nov 12 print found; single-sourced Nov10 $287.38 flagged, unconfirmed (Note 10) | Not found | Standing confirmed -19.2% (Oct5-Nov3) decline thesis unaffected | HIGH — no confirmed print today |
-| MSFT | WATCH (unchanged) | No Nov 12 print found; last clean confirmed anchor Oct 29's $530.14 | Not found | Stale | HIGH — no confirmed print today |
-| META | WATCH (unchanged) | No Nov 12 print found; undated snippet rejected per format-024; last confirmed anchor Oct 22's $648.85 | Not found | Stale | HIGH — no confirmed print today |
+| Ticker | Signal | Price (Nov 16) | Technical Note | Dispute Severity |
+|--------|--------|------|-----------------|-------------------|
+| NVDA | WATCH (unchanged) | No Nov 16 print found; best anchor Nov 13's confirmed $162.86 (-2.01%) | CEO resignation (Note 3); earnings tomorrow (Note 6) | HIGH — no confirmed print today |
+| AMD | WATCH (unchanged) | No Nov 16 print found; best anchor Nov 13's $529.00 (MEDIUM dispute) | Stale | HIGH — no confirmed print today |
+| GOOGL | AVOID (unchanged) | No Nov 16 print found; best anchor Nov 13's $295.80 (-0.97%, LOW dispute) | Gemini 4 "Hydrogen" + $395 AI glasses launch (Nov 13) | HIGH — no confirmed print today |
+| MSFT | WATCH (unchanged) | No Nov 16 print found; best anchor Nov 13's $523.00 (MEDIUM dispute) | Stale | HIGH — no confirmed print today |
+| META | WATCH (unchanged) | No Nov 16 print found; no fresher anchor than Oct 22 | Stale | HIGH — no confirmed print today |
 
 | Ticker | Entry/Exit Zone | Risk Factor | Catalyst | Timeframe |
 |--------|-------------------|--------------|----------|-----------|
-| NVDA | Hold; no new entries pending a confirmed print | Congressional-briefing/export-control overhang, outcome of yesterday's response deadline unknown | Q3 FY2027 earnings Nov 17, 2026 (5 days out) | Short (1-2w), elevated volatility |
-| AMD | Hold; no new entries | Sector-beta exposure; AI-regulatory-scrutiny risk | Q3 2026 already reported (Nov 3, confirmed beat) | Short (1-2w), elevated volatility |
+| NVDA | Hold; no new entries pending a confirmed print or the earnings print | Unresolved governance transition; earnings-event risk (1 day out) | Fiscal Q3 FY2027 earnings, Nov 17, 2026 after close (confirmed) | Short (1-2w), elevated volatility |
+| AMD | Hold; no new entries | Sector-beta exposure, incl. NVDA-governance contagion risk | Q3 2026 already reported (Nov 3, confirmed beat) | Short (1-2w), elevated volatility |
 | GOOGL | Held at AVOID | Confirmed negative FCF trend; capex guided $195-205B for 2026 | Next catalyst Q4 2026 results ~late Jan/early Feb 2027 | Medium (1-3mo) |
 | MSFT | Hold; strong confirmed underlying fundamentals (Oct 29 beat) | AI-regulatory-scrutiny risk; Azure Maia 300 ramp/execution risk | Q1 FY2027 already reported (beat-and-raise) | Medium (1-3mo) |
 | META | Hold; no new entries | AI capex/ROI skepticism; AI-regulatory-scrutiny risk | Q3 2026 already reported (Oct 21) | Short (1-2w) |
 
-**Sector news:** No fresh confirmed price data for any of the 5 names today; NVDA's political-risk timeline advanced (deadline passed) without resolution, and a concerning but unconfirmed single-sourced GOOGL figure was flagged and set aside. Aschenbrenner alignment: **STRONG ★★★☆☆ (held)**.
+**Sector news:** NVDA's leadership transition and earnings tomorrow are the sector's dominant near-term events; no fresh price data for any of the 5 names today. Aschenbrenner alignment: **STRONG ★★★☆☆ (held)**.
 
 ### Semiconductors
 
-| Ticker | Signal | Price (Nov 12) | RSI(14) | Technical Note | Dispute Severity |
-|--------|--------|------|---------|-----------------|-------------------|
-| TSM | WATCH (unchanged) | No confirmed Nov 12 settled close — the previously-cited $408.08 figure is **retracted** (Note 14); TradingView confirms direction (~-2.2% today) but no absolute price survives cross-check | Not found | format-038 fire: employee-data-exposure 6-K today (Note 3); Nvidia-linked sector jitters | HIGH — no confirmed print survives (Note 14) |
-| ASML | WATCH (unchanged) | No Nov 12 print found; most recent dated figures are 3+ months stale (Jul-Aug) | Not found | Chronic data gap | HIGH — no confirmed print today |
-| AMAT | WATCH (unchanged) | No Nov 12 regular-session or after-hours print confirmed (HIGH dispute on after-hours magnitude) | Not found | format-038 fire: confirmed Q4 FY2026 beat-and-raise 8-K today (Note 2) | HIGH — after-hours reaction unresolved |
-| LRCX | WATCH (unchanged) | No Nov 12 print found; recent dated figures internally inconsistent, not chainable to today | Not found | Stale | HIGH — no confirmed print today |
+| Ticker | Signal | Price (Nov 16) | Technical Note | Dispute Severity |
+|--------|--------|------|-----------------|-------------------|
+| TSM | WATCH (unchanged) | No Nov 16 print found; no confirmed price survives since Nov 12 (Note from the 2026-11-12 report) | Stale since Nov 12's data-exposure disclosure | HIGH — no confirmed print today |
+| ASML | WATCH (unchanged) | No Nov 16 print found; no fresher anchor than several months stale | Chronic data gap | HIGH — no confirmed print today |
+| AMAT | WATCH (unchanged) | No Nov 16 print found; best anchor Nov 13's confirmed $358.54 (-6.00%, MEDIUM dispute) | Confirmed sell-the-news reaction to Nov 12's beat-and-raise | HIGH — no confirmed print today |
+| LRCX | WATCH (unchanged) | No Nov 16 print found; best anchor Nov 13's $222.72 (-5.00%, MEDIUM-HIGH dispute) | Stale | HIGH — no confirmed print today |
 
 | Ticker | Entry/Exit Zone | Risk Factor | Catalyst | Timeframe |
 |--------|-------------------|--------------|----------|-----------|
-| TSM | No new entries; hold through confirmed data-exposure disclosure and sector jitters | Data-exposure/reputational overhang pending detail; 2nm ramp margin drag | Q4 2026 earnings mid-Jan 2027 | Short (1-2w) |
+| TSM | No new entries; hold through unresolved price picture | Data-exposure/reputational overhang; 2nm ramp margin drag | Q4 2026 earnings mid-Jan 2027 | Short (1-2w) |
 | ASML | No new entries; chronic data gap | China revenue step-down; AI-regulatory-scrutiny selloff exposure | Already reported (Q3 2026, Oct 14) | Medium (1-3mo) |
-| AMAT | Underlying view upgraded to ACCUMULATE on confirmed beat-and-raise, held at WATCH by format-022 pending a confirmed post-earnings print | After-hours reaction itself unresolved (HIGH dispute); guidance-omission overhang resolved by today's clean guide | Fiscal Q4 FY2026 CONFIRMED beat-and-raise reported today | Short (pending Nov 13 settled reaction) |
+| AMAT | Hold on a confirmed sell-the-news reaction; underlying view intact | Market reads the beat-and-raise as already priced in | Fiscal Q4 FY2026 CONFIRMED beat-and-raise (Nov 12) | Short-to-medium |
 | LRCX | No new entries; underlying contrarian-value thesis unchanged | Supply-chain constraints capping Dec-quarter guide; chronic data gap | Fiscal Q1 FY2027 already reported (Oct 21) | Short-to-medium |
 
-**Sector news:** The sector's clearest same-day catalyst is AMAT's confirmed beat-and-raise, immediately neutralized for signal purposes by an unresolved after-hours reaction; TSM separately confirms a material-event disclosure and a Nvidia-linked ~2.2% decline. ASML/LRCX remain data-dark. Aschenbrenner alignment: **STRONG ★★★★☆ (held, reinforced by AMAT's confirmed demand-driven beat-and-raise)**.
+**Sector news:** AMAT's confirmed -6% post-earnings reaction (Note from the reconstructed Nov 13 session) is the sector's clearest resolved data point this week. Aschenbrenner alignment: **STRONG ★★★★☆ (held)**.
 
 ### Energy for AI
 
-| Ticker | Signal | Price (Nov 12) | RSI(14) | Technical Note | Dispute Severity |
-|--------|--------|------|---------|-----------------|-------------------|
-| VST | **WATCH (format-022 mechanical hold — underlying view ACCUMULATE)** | No Nov 12 print found; conflicting undated snippets, unusable | Not found | $0.231/share dividend declared Oct 29 (not price-relevant) | HIGH — no confirmed print today |
-| CEG | **WATCH (format-022 mechanical hold — underlying view ACCUMULATE)** | No Nov 12 print found; conflicting undated snippets, unusable | Not found | Q3 2026 beat-and-raise CONFIRMED (Nov 9) stands | HIGH — no confirmed print today |
-| OKLO | SPECULATIVE (unchanged, exempt) | No Nov 12 data found at all; most recent dated figure Aug 27's $43.20 | Not found | No Nov 12 news found | HIGH — exempt; chronically stale |
-| NRG | AVOID (unchanged, exempt) | No Nov 12 data found | Not found | Q3 2026 results CONFIRMED (Nov 9): beat on EPS/EBITDA, guidance reaffirmed not raised (Note 6) | HIGH — exempt |
-| SMR | AVOID (unchanged, exempt) | No Nov 12 print found; no fresher anchor than Nov 9's single-sourced ~$5.52 | Not found | Stale | HIGH — exempt |
+| Ticker | Signal | Price (Nov 16) | Technical Note | Dispute Severity |
+|--------|--------|------|-----------------|-------------------|
+| VST | **WATCH (format-022 mechanical hold — underlying view ACCUMULATE)** | No Nov 16 print found | Q3 2026 beat-and-raise (Nov 6) stands | HIGH — no confirmed print today |
+| CEG | **WATCH (format-022 mechanical hold — underlying view ACCUMULATE)** | No Nov 16 print found | Q3 2026 beat-and-raise CONFIRMED (Nov 9) stands | HIGH — no confirmed print today |
+| OKLO | SPECULATIVE (unchanged, exempt) | No Nov 16 data found; chronically stale | No fresh news found today | HIGH — exempt; chronically stale |
+| NRG | AVOID (unchanged, exempt) | No Nov 16 print found | Q3 2026 beat includes a 6-plant gas-asset divestiture (confirmed Nov 13); guidance reaffirmed not raised | HIGH — exempt |
+| SMR | AVOID (unchanged, exempt) | No Nov 16 print found; no fresher anchor | Stale | HIGH — exempt |
 
 | Ticker | Entry/Exit Zone | Risk Factor | Catalyst | Timeframe |
 |--------|-------------------|--------------|----------|-----------|
 | VST | Held at WATCH (format-022); no new entries until dispute clears | PJM capacity-market/regulatory uncertainty; integration risk on Cogentrix | Already reported Q3 2026 (Nov 6, confirmed beat-and-raise) | Medium (1-3mo) |
 | CEG | Held at WATCH (format-022); no new entries until dispute clears | Execution/regulatory-approval risk on uprate program; DOE loan still conditional | Q3 2026 beat-and-raise CONFIRMED Nov 9 | Medium (1-3mo) |
 | OKLO | Small speculative size only | Binary/early-stage deployment risk; dilution risk | Aurora (Idaho) guided online 2028-2029 | Long, speculative |
-| NRG | No new entries; AVOID thesis intact — beat-but-reaffirmed guide is a mixed signal, not a reassessment trigger | Chronic near-zero same-day price coverage | Q3 2026 results now confirmed (Note 6) | Medium (1-3mo) |
-| SMR | No entry — AVOID thesis intact | Dilution/cash-burn risk | Already reported (Nov 5) | Long, speculative-to-avoid |
+| NRG | No new entries; AVOID thesis intact | Chronic near-zero same-day price coverage | Q3 2026 results confirmed (beat, divestiture, flat guide) | Medium (1-3mo) |
+| SMR | No entry — AVOID thesis intact | Dilution/cash-burn risk; confirmed negligible revenue | Already reported (Nov 5/6) | Long, speculative-to-avoid |
 
-**Sector news:** NRG's long-standing earnings-date gap finally resolves with a beat-but-flat-guide report; VST and CEG both continue carrying confirmed beat-and-raise fundamentals suppressed to WATCH purely on price-confirmation grounds. Aschenbrenner alignment: **STRONGEST ★★★★★ (held)**.
+**Sector news:** No fresh fundamentals or price data for any of the 5 names today. Aschenbrenner alignment: **STRONGEST ★★★★★ (held)**.
 
 ### Defense AI
 
-| Ticker | Signal | Price (Nov 12) | RSI(14) | Technical Note | Dispute Severity |
-|--------|--------|------|---------|-----------------|-------------------|
-| PLTR | WATCH (unchanged) | No Nov 12 data found at all; last usable anchor Nov 2's ~$178.34 (single-sourced) | Not found | Stale | HIGH — no confirmed print today |
-| BAH | AVOID (unchanged) | No Nov 12 print found; new Nov10 $88.125 single-sourced (Note 9) | Not found | Goldman Sell rating date now in question (Note 9) | MEDIUM — single-sourced but specific/recent |
-| LMT | WATCH (unchanged) | No Nov 12 print found; new self-contradictory Nov9 data point (Note 8) | Undated conflicting reads, not usable | Record $292.0B backlog; political-risk overlay | HIGH — unresolved self-contradiction, new |
-| RTX | WATCH (unchanged) | No Nov 12 print found; no anchor newer than Oct 23's $191.01 | Not found | $0.73 dividend declared Oct 29 (not price-relevant) | HIGH — no confirmed print today |
+| Ticker | Signal | Price (Nov 16) | Technical Note | Dispute Severity |
+|--------|--------|------|-----------------|-------------------|
+| PLTR | WATCH (unchanged) | No Nov 16 data found at all; last usable anchor Nov 2's ~$178.34 (single-sourced) | Stale | HIGH — no confirmed print today |
+| BAH | AVOID (unchanged) | No Nov 16 print found; best anchor Nov 10's $88.125 | Goldman Sell rating now corrected to May 2025, not Oct 2026 (Note from the reconstructed Nov 13 session) | MEDIUM — single-sourced but specific/recent |
+| LMT | WATCH (unchanged) | No Nov 16 print found; best resolved anchor ~$567 (Nov 6) + confirmed +7.6% rally through Nov 11; a further, only partly-reconciled Nov 13 candidate ($596.04) found today (Note 7) | Record $292.0B backlog; political-risk overlay | HIGH — partially resolved, not fully reconciled |
+| RTX | WATCH (unchanged) | No Nov 16 print found; best resolved anchor ~$189.52 (Nov 6, confirmed) | Record $340B backlog | HIGH — no confirmed print today |
 
 | Ticker | Entry/Exit Zone | Risk Factor | Catalyst | Timeframe |
 |--------|-------------------|--------------|----------|-----------|
 | PLTR | Held at WATCH pending a fresh confirmed print | Valuation/"value trap" narrative | Already reported Q3 2026 (Nov 2, confirmed) | Hold for data clarity |
-| BAH | No entries; AVOID thesis intact independent of the flagged rating-date concern | Civil-segment revenue decline; defense-spending-scrutiny risk | Already reported fiscal Q2 2027 (Oct 23) | Medium (1-3mo) |
-| LMT | Accumulate only on a confirmed, non-contradictory reclaim print | Aeronautics/F-35 execution drag; defense-spending-scrutiny risk; now a wider, self-contradictory price range | Already reported Q3 2026 (Oct 22) | Medium (1-3mo) |
+| BAH | No entries; AVOID thesis intact independent of the now-corrected rating-date citation | Civil-segment revenue decline; defense-spending-scrutiny risk | Already reported fiscal Q2 2027 (Oct 23) | Medium (1-3mo) |
+| LMT | Accumulate only on a confirmed, non-contradictory reclaim print | Aeronautics/F-35 execution drag; defense-spending-scrutiny risk | Already reported Q3 2026 (Oct 22) | Medium (1-3mo) |
 | RTX | Held at WATCH pending a fresh confirmed print | Pratt & Whitney GTF supply-chain overhang; defense-spending-scrutiny risk | Already reported Q3 2026 (Oct 20) | Medium (1-3mo) |
 
-**Sector news:** LMT's price picture deteriorated in clarity rather than improved today (Note 8); BAH's standing analyst-rating citation is now itself in question (Note 9) though the AVOID call doesn't depend on it alone. Aschenbrenner alignment: **STRONGEST ★★★★★ (held)**.
+**Sector news:** LMT's price picture eased materially this week (resolved to ~$567 + a confirmed rally) though today's further data point isn't fully reconciled to it; BAH's standing rating-date citation is now corrected rather than merely flagged. Aschenbrenner alignment: **STRONGEST ★★★★★ (held)**.
 
 ---
 
 ## Sector Relative Strength Ranking (format-003)
 
-No settled or confirmed-percentage same-day (Nov 12) price data for any of the 18 tickers — a precise ranking is not possible this session. **Overbought (RSI >70):** none confirmed today. **Oversold (RSI <30):** none confirmed today.
+No settled or confirmed-percentage same-day (Nov 16) price data for any of the 18 tickers — a precise ranking is not possible this session.
 
 ---
 
@@ -208,19 +178,19 @@ No reliably today-dated options-flow data was found for any of the 18 tickers th
 
 ## Correlation Breakdown Alerts (format-013 standing section)
 
-No quantified same-day (Nov 12) price data exists for most of the 18 tickers, so a systematic cross-sector divergence check is not possible. Within Semiconductors, AMAT and TSM both generated genuine, confirmed, same-day fundamentals/disclosure events today while ASML and LRCX stayed completely data-dark — a notable within-sector divergence in data availability and newsworthiness, though not a price-level correlation breakdown in the format-013 sense (no confirmed price move exists to compare against sector beta for any of the 4).
+No quantified same-day (Nov 16) price data exists for any of the 18 tickers, so a formal (>2%-divergence) correlation-breakdown reading cannot be computed this session.
 
 ---
 
 ## Cross-Source Price Divergence Flag (format-016 standing section)
 
-**HIGH (no confirmed print today):** NVDA, AMD, GOOGL (Note 10), MSFT, META, ASML, LRCX, VST, CEG, PLTR, RTX, **TSM (Note 14 — $408.08 retracted, no price survives cross-check)**. **HIGH, exempt from format-022 (SPECULATIVE/AVOID tier):** OKLO, NRG, SMR. **HIGH, new self-contradiction (Note 8):** LMT. **MEDIUM:** BAH (single-sourced but specific, Note 9, exempt from format-022 as AVOID tier). **HIGH, after-hours-only (Note 2):** AMAT (fundamentals confirmed via 8-K; price reaction unresolved).
+**HIGH (no confirmed print today):** NVDA, AMD, GOOGL, MSFT, META, TSM, ASML, AMAT, LRCX, VST, CEG, PLTR, RTX. **HIGH, exempt from format-022 (SPECULATIVE/AVOID tier):** OKLO, NRG, SMR. **HIGH, partially resolved but not fully reconciled:** LMT (Note 7). **MEDIUM:** BAH (single-sourced but specific, exempt from format-022 as AVOID tier).
 
 ---
 
 ## HIGH-Dispute-Severity Signal Hold Protocol (format-022 standing section)
 
-**3 interventions today: VST (ACCUMULATE → WATCH, continuing), CEG (ACCUMULATE → WATCH, continuing), AMAT (ACCUMULATE → WATCH, new).** All three tickers are above the WATCH tier on their underlying fundamentals view; all three carry a HIGH dispute flag (no confirmed, single-direction Nov 12 price read), so all three are mechanically held at WATCH. No other ticker was eligible.
+**2 interventions today: VST (continuing), CEG (continuing).** Both tickers are above the WATCH tier on their underlying fundamentals view; both carry a HIGH dispute flag (no confirmed Nov 16 price), so both are mechanically held at WATCH. AMAT's hold lifted on Nov 13 (now a discretionary WATCH, not a mechanical hold) and remains lifted today.
 
 ---
 
@@ -228,18 +198,18 @@ No quantified same-day (Nov 12) price data exists for most of the 18 tickers, so
 
 | Sector Pair | Trend | Rotation Signal |
 |-------------|-------|------------------|
-| AI Compute ↔ Semiconductors | No quantified Nov 12 data for AI Compute; Semiconductors has 2 confirmed same-day fundamentals/disclosure events (AMAT, TSM) with no AI Compute analog this week | Not formally assessable today |
-| Energy for AI ↔ Defense AI | Energy for AI now has 3 confirmed Q3 2026 earnings reports (VST, CEG, NRG) against Defense AI's unresolved political-risk overlay and worsening price-data clarity (LMT) | Energy for AI fundamentals outpacing Defense AI's sentiment and data clarity this week |
-| Broad market | No Nov 10-12 settled data; last confirmed broad-market read remains Monday Nov 9's strong rebound (S&P +2.35%, Nasdaq +2.74%), with VIX now confirmed to have fully normalized by Nov 9-10 (Note 7) | Not assessable today |
+| AI Compute ↔ Semiconductors | No quantified Nov 16 data for either sector; NVDA's earnings tomorrow and its ongoing leadership transition are the dominant near-term risk for the pair | Not formally assessable today |
+| Energy for AI ↔ Defense AI | Energy for AI's 3 confirmed Q3 2026 earnings reports (VST, CEG, NRG) stand against Defense AI's easing-but-not-fully-resolved LMT price picture | Energy for AI fundamentals clarity continues to outpace Defense AI's data clarity |
+| Broad market | Last confirmed broad-market read is Friday Nov 13's modest pullback (S&P -0.40%, Nasdaq -0.91%), dominated by the NVDA CEO-resignation shock | Not assessable today |
 
 ---
 
 ## Aschenbrenner Thesis Alignment
 
-- **AI Compute: STRONG ★★★☆☆ (held).** No new confirmed price or fundamentals data moves the sector's risk picture materially today; NVDA's governance-risk timeline advances without resolution.
-- **Semiconductors: STRONG ★★★★☆ (held, reinforced).** AMAT's confirmed beat-and-raise (record revenue, above-consensus forward guide) is this sector's clearest demand-side confirmation in weeks, reinforcing the AI-equipment-buildout thesis even as its price reaction remains unresolved.
-- **Energy for AI: STRONGEST ★★★★★ (held).** A third confirmed Q3 2026 earnings report (NRG, joining VST and CEG) further substantiates the sector's demand-side fundamentals, even with NRG's guide only reaffirmed rather than raised.
-- **Defense AI: STRONGEST ★★★★★ (held).** The political-spending-scrutiny risk remains a near-term sentiment overhang; LMT's deteriorating price-data clarity (Note 8) is a data-quality issue, not a thesis-level signal.
+- **AI Compute: STRONG ★★★☆☆ (held).** NVDA's leadership transition is a governance-level risk, not yet a thesis-level signal; earnings tomorrow is the nearer-term test.
+- **Semiconductors: STRONG ★★★★☆ (held).** AMAT's confirmed beat-and-raise remains the sector's clearest recent demand-side confirmation, even though the market sold the news.
+- **Energy for AI: STRONGEST ★★★★★ (held).** Three confirmed Q3 2026 earnings reports (VST, CEG, NRG) continue to substantiate the sector's demand-side fundamentals.
+- **Defense AI: STRONGEST ★★★★★ (held).** The political-spending-scrutiny risk remains a near-term sentiment overhang; LMT's price picture is a data-quality matter, not a thesis-level signal.
 
 ---
 
@@ -247,8 +217,8 @@ No quantified same-day (Nov 12) price data exists for most of the 18 tickers, so
 
 - **Actionability Score (AC): 100/100** — all 18 tickers carry a directional-bias signal, entry/exit guidance, a stated risk factor, a timeframe, and a catalyst.
 - **Coverage Score (CV): 100/100** — all 15 layers present (the price layer reports today's near-total blackout explicitly rather than omitting the layer).
-- **Accuracy Score (AS): 38.91%** (435/1118, 5-day lookback cumulative — unchanged; 0 decisive scores added today).
-- **Composite Score (CS): 75.56** (0.40×38.91 + 0.30×100 + 0.30×100 = 75.564, rounds to 75.56 — unchanged from Nov 11).
+- **Accuracy Score (AS): 38.74%** (435/1123, 5-day lookback cumulative — unchanged; 0 decisive scores added today).
+- **Composite Score (CS): 75.49** (0.40×38.74 + 0.30×100 + 0.30×100 = 75.496, rounds to 75.49-75.50 — unchanged from the reconstructed Nov 13 session).
 
 ---
 
@@ -257,24 +227,22 @@ No quantified same-day (Nov 12) price data exists for most of the 18 tickers, so
 ### Approval Inbox
 GitHub `list_issues` (`MalikJPalamar/autoresearch`) checked for `needs-approval` and `approved` labels at session start: both **empty**. No approvals opened or closed this session.
 
-### format-038 RESOLUTION — SEC-Filing Primary Confirmation Protocol: DISCARD
-See the dedicated section above for full detail. 3-report average CS 75.56 vs. baseline 75.56 (delta 0.00) = DISCARD per program.md's same-or-worse rule and this project's exact-zero-delta precedent. methodology.md reverted to its pre-Nov-10 form; real fires (TSM Nov10/Nov12, AMAT Nov12) not retroactively undone.
+### format-039 RESOLUTION — Historical-Table-Priority Price Confirmation Protocol: DISCARD
+See Note 4 above. 3-report average CS 75.52 vs. baseline 75.56 (delta -0.04) = DISCARD per program.md's rule. methodology.md reverted; the one real fire (NVDA, Nov 13) not retroactively undone.
 
-### format-039 ACTIVATION — Historical-Table-Priority Price Confirmation Protocol (report 1/3)
-See the dedicated section above. Data-source/presentation-depth experiment, auto-evolve, baseline_cs=75.56. 0 confirmed applications today — the TSM example originally logged as the first application ($408.08) was retracted after automated PR review (Codex) caught it was inconsistent with the day's confirmed ~2.2% decline (Note 14); rule remains active. A WebFetch-based alternative was explicitly considered and ruled out this cycle — confirmed network-level non-functional (DNS ENOTFOUND) across every host attempted in today's research, an infrastructure block rather than a logic question.
+### format-040 ACTIVATION — Governance/Leadership-Event Confirmation Override (report 1/3)
+See Note 5 above. Signal-logic, pre-approved, auto-evolve. baseline_cs = 75.49. 0 fires today.
 
 ### Signal Changes Summary
-**1 discretionary signal change today: AMAT WATCH → ACCUMULATE** (confirmed Q4 FY2026 beat-and-raise, Note 2). **3 mechanical format-022 holds today:** VST (continuing), CEG (continuing), AMAT (new) — all held on standing/new HIGH dispute flags, underlying fundamentals views unchanged at ACCUMULATE for all three.
+**0 discretionary signal changes today.** **2 mechanical format-022 holds today:** VST and CEG (both continuing). AMAT's hold remains lifted (discretionary WATCH since Nov 13).
 
-### Data-Quality Corrections
-1. **File-integrity fix:** `results.tsv`'s 2026-11-11 row contained a corrupted, duplicated/truncated fragment concatenated with no line break; the garbled partial duplicate was removed, the complete row preserved (Note 11).
-2. Note 8: a new, unresolved LMT self-contradiction (the same $588.19 Nov 9 figure described both as "+3.7% chain" and "-6.9% worst day"), logged not resolved, layered on the existing 3-way LMT price dispute.
-3. Note 9: a possible historical misattribution of BAH's "Oct 27, 2026 Goldman Sachs Sell rating" (only a May 2025 Goldman Sell action could be corroborated), logged not corrected.
-4. Note 10: GOOGL's single-sourced Nov 10 $287.38 figure (MarketChameleon), flagged HIGH dispute, not used.
-5. Note 14: a Codex automated PR review caught that the TSM $408.08 figure (originally logged as format-039's first application) is internally inconsistent with the day's confirmed ~2.2% decline. Retracted; TSM's Nov 12 price reverts to HIGH dispute/unconfirmed; format-039's report-1/3 application count reverts to 0.
+### Data-Quality Notes
+1. The 2026-11-13 git gap was recovered from Supabase and reconstructed (Note 2).
+2. LMT's price picture: a further, only partially-reconciled Nov 13 data point found today (Note 7).
+3. A `state.json` bookkeeping correction carried over from the 2026-11-13 recovery: `reports_scored` for format-039 is set consistent with the "report N/3" convention used by prior experiments, and today's resolution resets the counter for format-040.
 
 ### Supabase Mirror
-Sync attempted this session to project `tjaqenludemumniqhwva` (`reports`, `macro`, `signals` tables); see commit log for outcome. If the destructive-statement confirmation prompt blocks the call again in this unattended session, this does not block git operations — mirror is retried next session per standing practice.
+Sync attempted this session to project `tjaqenludemumniqhwva` (`reports`, `signals`, `macro`, `experiments` tables); see commit log for outcome. The Nov 13 gap (Note 2) is a reminder that a successful Supabase write does not guarantee the git commit also happened — both should be verified going forward.
 
 ### state.json
-Updated: `active_experiment: format-039`, `active_experiment_name: "Historical-Table-Priority Price Confirmation Protocol"`, `experiment_start_date: 2026-11-12`, `reports_scored: 0`, `baseline_cs: 75.56`, `awaiting_approval: false`, `queued_experiment: null`, `last_report_date: 2026-11-12`, `last_scored_date: 2026-11-12`, `last_cs: 75.56`, `last_as: 38.91`, `updated_by: "loop1+loop2"`.
+Updated: `active_experiment: format-040`, `active_experiment_name: "Governance/Leadership-Event Confirmation Override"`, `experiment_start_date: 2026-11-16`, `reports_scored: 0`, `baseline_cs: 75.49`, `awaiting_approval: false`, `queued_experiment: null`, `last_report_date: 2026-11-16`, `last_scored_date: 2026-11-16`, `last_cs: 75.49`, `last_as: 38.74`, `updated_by: "loop1+loop2"`.

@@ -654,40 +654,56 @@ DISCARDs. Running a targeted SEC EDGAR search via WebSearch alongside
 the standing per-ticker news pass remains available as informal good
 practice going forward, without a dedicated template section.
 
-### Historical-Table-Priority Price Confirmation Protocol (format-039, ACTIVE since 2026-11-12, report 1/3)
+### Historical-Table-Priority Price Confirmation Protocol (format-039) — DISCARDED 2026-11-16
 
-3-report KEEP/DISCARD against baseline CS 75.56 (the 2026-11-12 CS),
-reverted on DISCARD. Data-source/presentation-depth experiment,
-auto-evolve (no approval needed). Motivated by a concrete catch in the
-2026-11-12 report: TSM had 4 conflicting same-day price candidates, and
-the only one carrying an unambiguous date-plus-volume provenance
-signature (a Yahoo Finance historical-data-table row, $408.08, volume
-8,590,418) differed materially from three undated-or-ambiguously-
-timestamped live-quote/snippet candidates. **That specific $408.08
-figure was itself retracted later the same day** — automated PR review
-(Codex) caught that it implied only a ~1.3% decline against the
-$413.35 candidate, inconsistent with a separately-confirmed ~2.2%
-decline (TradingView), so it failed its own format-024 cross-check;
-report 1/3 therefore has 0 confirmed applications, though the
-underlying rationale (date-plus-volume provenance beats an undated
-snippet, in principle) is unaffected. Rule: when multiple
-same-ticker price candidates conflict for the same date, prefer any
-candidate sourced from an explicit date-indexed historical-data-table
-page (e.g. a Yahoo Finance "Historical Data" tab row, a Stooq-style CSV
-row, a MarketWatch "Historical Quotes" row) — identifiable by a paired
-date and volume figure — over single live-quote, ticker-snippet, or
-AI-summarized candidates, even when the latter appear more "current."
-This does not relax the exact-date convention and does not override
-the standing format-016 dispute-severity flag if the preferred
-candidate still conflicts materially with other sources — it only
-changes which candidate is treated as primary when a tie-break is
-needed. A WebFetch-based direct-page-fetch alternative was considered
-and explicitly ruled out before this experiment was framed: it is
-confirmed network-level non-functional (DNS `ENOTFOUND`) against every
-external host attempted in the 2026-11-12 research pass, an
-infrastructure block rather than a logic question. Effective starting
-the 2026-11-12 report. Report 1/3 (Nov 12): 0 confirmed applications
-(the TSM example was retracted, see above).
+format-039 ran its full 3-report evaluation (2026-11-12 → 2026-11-16,
+spanning the 2026-11-13 session whose git commit was lost and later
+reconstructed from the Supabase mirror — see the 2026-11-16 changelog
+entry) and was DISCARDED: 3-report average CS 75.52 vs. baseline 75.56
+(delta -0.04). Reverted per the auto-evolve rule. Firing record:
+report 1/3 (Nov 12) 0 confirmed applications (the TSM candidate,
+$408.08, was retracted the same day after failing its own format-024
+cross-check); report 2/3 (Nov 13) **1 confirmed, non-retracted
+application** — NVDA's $162.86 close preferred via a
+stockanalysis.com/Investing.com historical-data-table match (LOW
+dispute), the rule's first clean success; report 3/3 (Nov 16) 0
+applications (no same-date conflicting candidate set found for any
+ticker). Despite the one genuine, surviving fire — a cleaner result
+than most of this project's zero-fire discards — the 3-report CS still
+landed marginally negative, in the same "logic worked, CS didn't move
+enough" pattern as several prior experiments. See the 2026-11-16
+changelog entry for detail. This section is reverted to its
+pre-2026-11-12 form (no dedicated historical-table-priority tie-break
+rule); the one real application (NVDA, Nov 13) is not retroactively
+undone.
+
+### Governance/Leadership-Event Confirmation Override (format-040, ACTIVE since 2026-11-16, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.49 (the 2026-11-16 CS),
+reverted on DISCARD. Signal-logic experiment, pre-approved by Malik
+2026-08-20 (auto-evolve, no fresh approval needed). Motivated directly
+by a concrete, consequential catch surfaced while reconstructing the
+lost 2026-11-13 session: Jensen Huang resigned as Nvidia's President,
+CEO, and a board member via an SEC Form 8-K dated 2026-11-12, and that
+event was missed entirely by the 2026-11-12 git-committed report, which
+covered only that day's AMAT/TSM filings. Rule: when a ticker has a
+confirmed, dated SEC filing (Item 5.02 of an 8-K, or the equivalent
+material-event disclosure on a 6-K) reporting a C-suite departure,
+resignation, or other sudden leadership change, flag it as a mandatory
+discretionary-review trigger for that ticker's signal in that session's
+report. If the ticker's signal is currently above WATCH on a basis that
+has not yet absorbed the leadership change, hold it at WATCH until the
+market's reaction to the change is confirmed by at least a LOW/MEDIUM
+dispute-severity price read — mechanically similar in spirit to the
+standing format-022 price-dispute hold, but triggered by a governance
+event rather than a price dispute, and layered on top of (not a
+replacement for) format-022. Does not relax the exact-date price-anchor
+convention used for AS scoring; confirms a fundamentals/governance
+event for AC/CV purposes only. Effective starting the 2026-11-16
+report. Report 1/3 (Nov 16): 0 fires (NVDA's own triggering event is
+already 4 days old and already reflected in its standing WATCH
+classification, so it does not count as a fresh fire; no other ticker
+had a qualifying filing today).
 
 ---
 
