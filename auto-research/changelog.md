@@ -1,5 +1,21 @@
 # Methodology Changelog
 
+## v1.4 — 2026-11-17 (format-040 report 2/3, 0 fires; NVDA earnings tonight, results pending; two format-024 catches; PLTR/VST anchors refresh)
+
+**`scripts/prices.sh` blocked for the 59th consecutive session** (all 18 tickers null, `curl` 403 on Yahoo/Stooq). No genuinely Nov-17-dated price confirmed for any of the 18 tickers despite 4 sector-grouped WebSearch passes plus dedicated macro/NVDA-earnings passes.
+
+**NVDA reports fiscal Q3 FY2027 earnings today after close** (call scheduled 5:00pm ET; written commentary ~1:20pm PT). **Results NOT YET RELEASED as of this report** — S&P Global/Visible Alpha consensus ~$109.3B revenue. NVDA's governance situation (Huang resigned Nov 12, Kress interim CEO) is unchanged, no new developments today.
+
+**format-040 Governance/Leadership-Event Confirmation Override, report 2/3: 0 fires.** Three near-misses correctly declined: MSFT's Emma Walmsley board non-renewal (dated Nov 4/filed Nov 5) is a non-renewal, not a sudden departure, and is 12+ days old; META's reported Santosh Janardhan step-down (Bloomberg/Reuters, Nov 11-12) is a news report of a prospective early-2027 departure, not a confirmed 8-K Item 5.02 filing; LRCX's director-retirement 8-K is dated 2026-08-27, three months old. 0/2 reports fired so far; report 3/3 due the next weekday session.
+
+**Two format-024 catches, both excluded.** An undated "AMAT $332.71" figure conflicts with the already-confirmed Nov 13 $358.54 (-6.00%) anchor with no corroborating news; an undated MarketBeat "LMT $522.07" figure implies a ~-12.4% gap from the confirmed Nov 13 $596.04 anchor with no corroborating news. Both fail the implied-move check and are excluded.
+
+**Two price anchors refreshed (still not today-dated).** PLTR's stale Nov 2 ~$178.34 anchor is superseded by a Nov 13 $165.32 read (Benzinga, dated, -7.3% over the interval — not extreme enough to itself trigger exclusion). VST's anchor refreshes to Nov 11's $136.485 (Benzinga). LMT separately picked up two dated, constructive analyst actions (Guggenheim Buy/$735 PT, Nov 4; Morgan Stanley PT raise to $835, Nov 10) — logged for AC/catalyst purposes, no price implication.
+
+**Two new figures flagged but not adopted pending cross-check:** a Nov 13 MarketChameleon SMR figure ($4.66) with no comparable confirmed prior anchor to run an implied-move check against, and a single-sourced Nov 10 NRG figure (~$97.11).
+
+**Nov 10 signal batch scored 0/18 decisive (0 correct/0 incorrect/1 NULL OKLO/17 PENDING)** — the originating 2026-11-10 report explicitly found no confirmed price for any of the 18 tickers that day, so no origin base exists regardless of today's forward-side result. AS unchanged 38.74% (435/1123); CS unchanged 75.49. No approval issues opened or closed (`needs-approval`/`approved` both empty).
+
 ## v1.4 — 2026-11-16 (format-039 RESOLVED: DISCARD, report 3/3; format-040 Governance/Leadership-Event Confirmation Override ACTIVATED; NVDA earnings Nov17; LMT dispute layered further)
 
 **`scripts/prices.sh` blocked for the 58th consecutive session** (all 18 tickers null, `curl` 403 on Yahoo/Stooq). Correcting the prior entry below: 2026-11-13 **did** run (see that entry) — this session initially believed it was missing, then recovered it from the Supabase mirror and reconstructed `auto-research/2026-11-13-report.md` before continuing.

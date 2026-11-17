@@ -703,7 +703,14 @@ event for AC/CV purposes only. Effective starting the 2026-11-16
 report. Report 1/3 (Nov 16): 0 fires (NVDA's own triggering event is
 already 4 days old and already reflected in its standing WATCH
 classification, so it does not count as a fresh fire; no other ticker
-had a qualifying filing today).
+had a qualifying filing today). Report 2/3 (Nov 17): 0 fires — three
+near-misses correctly declined (MSFT's Emma Walmsley board
+non-renewal, dated Nov 4/filed Nov 5, is a non-renewal not a sudden
+departure; META's reported Santosh Janardhan step-down is a news
+report of a prospective early-2027 departure, not a confirmed 8-K
+Item 5.02 filing; LRCX's director-retirement 8-K is dated 2026-08-27,
+three months old). 0/2 reports fired so far; report 3/3 due the next
+weekday session.
 
 ---
 
