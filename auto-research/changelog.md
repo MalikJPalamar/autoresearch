@@ -1,6 +1,6 @@
 # Methodology Changelog
 
-## v1.4 — 2026-11-17 (format-040 report 2/3, 0 fires; NVDA earnings tonight, results pending; two format-024 catches; PLTR/VST anchors refresh)
+## v1.4 — 2026-11-17 (format-040 report 2/3, 0 fires; NVDA earnings tonight, results pending; two undated candidates remain unconfirmed, no format-024 catches credited; PLTR/VST anchors refresh)
 
 **`scripts/prices.sh` blocked for the 59th consecutive session** (all 18 tickers null, `curl` 403 on Yahoo/Stooq). No genuinely Nov-17-dated price confirmed for any of the 18 tickers despite 4 sector-grouped WebSearch passes plus dedicated macro/NVDA-earnings passes.
 
@@ -8,7 +8,7 @@
 
 **format-040 Governance/Leadership-Event Confirmation Override, report 2/3: 0 fires.** Three near-misses correctly declined: MSFT's Emma Walmsley board non-renewal (dated Nov 4/filed Nov 5) is a non-renewal, not a sudden departure, and is 12+ days old; META's reported Santosh Janardhan step-down (Bloomberg/Reuters, Nov 11-12) is a news report of a prospective early-2027 departure, not a confirmed 8-K Item 5.02 filing; LRCX's director-retirement 8-K is dated 2026-08-27, three months old. 0/2 reports fired so far; report 3/3 due the next weekday session.
 
-**Two format-024 catches, both excluded.** An undated "AMAT $332.71" figure conflicts with the already-confirmed Nov 13 $358.54 (-6.00%) anchor with no corroborating news; an undated MarketBeat "LMT $522.07" figure implies a ~-12.4% gap from the confirmed Nov 13 $596.04 anchor with no corroborating news. Both fail the implied-move check and are excluded.
+**Two undated candidates remain unconfirmed, not format-024 implied-move catches.** AMAT $332.71 is ~7.2% below the Nov 13 $358.54 anchor; LMT $522.07 is ~12.4% below the Nov 13 $596.04 anchor. Neither exceeds the standing ~15% threshold. Both remain excluded from confirmed prices because their dates are unverified; no protocol catch is credited and neither anchor is changed.
 
 **Two price anchors refreshed (still not today-dated).** PLTR's stale Nov 2 ~$178.34 anchor is superseded by a Nov 13 $165.32 read (Benzinga, dated, -7.3% over the interval — not extreme enough to itself trigger exclusion). VST's anchor refreshes to Nov 11's $136.485 (Benzinga). LMT separately picked up two dated, constructive analyst actions (Guggenheim Buy/$735 PT, Nov 4; Morgan Stanley PT raise to $835, Nov 10) — logged for AC/catalyst purposes, no price implication.
 

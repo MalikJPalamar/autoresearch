@@ -677,7 +677,7 @@ pre-2026-11-12 form (no dedicated historical-table-priority tie-break
 rule); the one real application (NVDA, Nov 13) is not retroactively
 undone.
 
-### Governance/Leadership-Event Confirmation Override (format-040, ACTIVE since 2026-11-16, report 1/3)
+### Governance/Leadership-Event Confirmation Override (format-040, ACTIVE since 2026-11-16, report 2/3)
 
 3-report KEEP/DISCARD against baseline CS 75.49 (the 2026-11-16 CS),
 reverted on DISCARD. Signal-logic experiment, pre-approved by Malik
