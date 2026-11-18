@@ -726,10 +726,14 @@ an otherwise-neutral read; a qualifying outsized non-scheduled sale can
 support a downgrade caveat on an otherwise-bullish read. Does not relax
 the exact-date price-anchor convention used for AS scoring; confirms a
 fundamentals/sentiment event for AC/CV purposes only. Effective
-starting the 2026-11-18 report. Report 1/3 (Nov 18): 0 fires (no
-dedicated per-ticker Form 4 search was run this session beyond the
-standing news/filing passes already performed for format-040; a
-targeted search begins next session).
+starting the 2026-11-18 report. Report 1/3 (Nov 18): 0 fires, following
+a dedicated Form 4 search across all 18 tickers (third-party
+aggregators; direct EDGAR access unreachable under this session's
+network policy, consistent with the format-038 precedent). No ticker
+had a qualifying filing dated Nov 17 or Nov 18; several near-misses
+(an AMD director sale dated too early, a CEO family-trust transfer, a
+stale VST insider buy, routine NRG RSU accruals) were all correctly
+declined as non-qualifying.
 
 ---
 
