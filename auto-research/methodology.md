@@ -733,7 +733,15 @@ network policy, consistent with the format-038 precedent). No ticker
 had a qualifying filing dated Nov 17 or Nov 18; several near-misses
 (an AMD director sale dated too early, a CEO family-trust transfer, a
 stale VST insider buy, routine NRG RSU accruals) were all correctly
-declined as non-qualifying.
+declined as non-qualifying. Report 2/3 (Nov 19): 0 fires, following
+another dedicated per-ticker Form 4/insider-transaction search across
+all 18 tickers (SecForm4, Bullfincher, StockTitan, QuantiSNow,
+OpenInsider, Fintel, Quiver Quantitative, Arkolith, and the AFM
+register for ASML's Dutch PDMR disclosures). No qualifying buy-cluster
+or outsized non-routine sale dated Nov 18/19 was found for any ticker;
+all insider activity located in the broader record reads as routine
+(10b5-1 sales, RSU-vesting withholding, award grants, ESPP purchases).
+Report 3/3 resolves next session.
 
 ---
 
