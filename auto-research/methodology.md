@@ -677,33 +677,63 @@ pre-2026-11-12 form (no dedicated historical-table-priority tie-break
 rule); the one real application (NVDA, Nov 13) is not retroactively
 undone.
 
-### Governance/Leadership-Event Confirmation Override (format-040, ACTIVE since 2026-11-16, report 1/3)
+### Governance/Leadership-Event Confirmation Override (format-040) — DISCARDED 2026-11-18
 
-3-report KEEP/DISCARD against baseline CS 75.49 (the 2026-11-16 CS),
+format-040 ran its full 3-report evaluation (2026-11-16 → 2026-11-18)
+and was DISCARDED: 3-report average CS 75.49 vs. baseline 75.49 (delta
+0.00). Per this project's exact-zero-delta precedent (format-015,
+format-023, format-034, format-035, format-038), reverted per the
+auto-evolve rule. The rule never fired a single override in any of its
+3 evaluation reports — the one real governance event motivating the
+experiment (Jensen Huang's Nov 12 resignation) predated format-040's
+own 2026-11-16 start date and so could never count toward its tally;
+NVDA's board non-reinstatement statement on 2026-11-17 (alongside its
+confirmed Q3 FY2027 earnings beat-and-raise) was correctly treated as a
+reaffirmation of the existing Nov 12 filing, not a fresh fire; META's
+reported Janardhan step-down remained an unconfirmed internal-memo
+report rather than a confirmed 8-K throughout the run — so the decision
+reflects the rarity of genuine, fresh C-suite-departure filings within
+a 3-report window, not a demonstrated defect in the override logic
+itself. This is the 9th consecutive zero-fire discard among this
+project's "confirmed-same-session-event override" family (RSI-threshold
+format-012, golden/death-cross format-017, MACD format-018, earnings
+format-020, extreme-volume format-021, momentum-tilt format-030,
+gap-reaction format-034, intraday-snapshot format-036, now governance
+format-040). See the 2026-11-18 changelog entry for detail. This
+section is reverted to its pre-2026-11-16 form (no governance/
+leadership-event override rule).
+
+### Confirmed Form-4 Insider Transaction Confirmation Overlay (format-041, ACTIVE since 2026-11-18, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.49 (the 2026-11-18 CS),
 reverted on DISCARD. Signal-logic experiment, pre-approved by Malik
-2026-08-20 (auto-evolve, no fresh approval needed). Motivated directly
-by a concrete, consequential catch surfaced while reconstructing the
-lost 2026-11-13 session: Jensen Huang resigned as Nvidia's President,
-CEO, and a board member via an SEC Form 8-K dated 2026-11-12, and that
-event was missed entirely by the 2026-11-12 git-committed report, which
-covered only that day's AMAT/TSM filings. Rule: when a ticker has a
-confirmed, dated SEC filing (Item 5.02 of an 8-K, or the equivalent
-material-event disclosure on a 6-K) reporting a C-suite departure,
-resignation, or other sudden leadership change, flag it as a mandatory
-discretionary-review trigger for that ticker's signal in that session's
-report. If the ticker's signal is currently above WATCH on a basis that
-has not yet absorbed the leadership change, hold it at WATCH until the
-market's reaction to the change is confirmed by at least a LOW/MEDIUM
-dispute-severity price read — mechanically similar in spirit to the
-standing format-022 price-dispute hold, but triggered by a governance
-event rather than a price dispute, and layered on top of (not a
-replacement for) format-022. Does not relax the exact-date price-anchor
-convention used for AS scoring; confirms a fundamentals/governance
-event for AC/CV purposes only. Effective starting the 2026-11-16
-report. Report 1/3 (Nov 16): 0 fires (NVDA's own triggering event is
-already 4 days old and already reflected in its standing WATCH
-classification, so it does not count as a fresh fire; no other ticker
-had a qualifying filing today).
+2026-08-20 (auto-evolve, no fresh approval needed). Motivated by
+format-040's zero-fire discard and this project's broader finding that
+single, discrete-event-triggered overrides (earnings, technical
+crossovers, governance) fire too rarely to exercise within a 3-report
+window; insider Form 4 filings are both SEC-dated (sourceable the same
+way format-038's SEC-filing checks worked) and occur far more routinely
+across an 18-ticker universe than C-suite departures or confirmed
+same-session technical crossovers. Rule: when a ticker has a confirmed,
+SEC-dated Form 4 filed same-session showing either (a) a cluster of
+open-market insider *buying* by 2+ distinct insiders, or a single
+director/officer purchase exceeding ~$1M, or (b) a single insider's
+open-market *sale* that is unusually large relative to their holdings
+and is *not* a routine, pre-scheduled Rule 10b5-1 disposal — flag it as
+a discretionary-review trigger for that ticker's signal that session. A
+qualifying buy-side cluster can support a WATCH→ACCUMULATE upgrade on
+an otherwise-neutral read; a qualifying outsized non-scheduled sale can
+support a downgrade caveat on an otherwise-bullish read. Does not relax
+the exact-date price-anchor convention used for AS scoring; confirms a
+fundamentals/sentiment event for AC/CV purposes only. Effective
+starting the 2026-11-18 report. Report 1/3 (Nov 18): 0 fires, following
+a dedicated Form 4 search across all 18 tickers (third-party
+aggregators; direct EDGAR access unreachable under this session's
+network policy, consistent with the format-038 precedent). No ticker
+had a qualifying filing dated Nov 17 or Nov 18; several near-misses
+(an AMD director sale dated too early, a CEO family-trust transfer, a
+stale VST insider buy, routine NRG RSU accruals) were all correctly
+declined as non-qualifying.
 
 ---
 

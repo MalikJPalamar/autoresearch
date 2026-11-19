@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "active_experiment": "format-040",
-  "active_experiment_name": "Governance/Leadership-Event Confirmation Override",
-  "experiment_start_date": "2026-11-16",
+  "active_experiment": "format-041",
+  "active_experiment_name": "Confirmed Form-4 Insider Transaction Confirmation Overlay",
+  "experiment_start_date": "2026-11-18",
   "reports_scored": 0,
   "baseline_cs": 75.49,
   "awaiting_approval": false,
@@ -11,10 +11,10 @@
   "queued_experiment": null,
   "queued_experiment_name": null,
   "queued_experiment_issue": null,
-  "last_report_date": "2026-11-16",
-  "last_scored_date": "2026-11-16",
+  "last_report_date": "2026-11-18",
+  "last_scored_date": "2026-11-18",
   "last_cs": 75.49,
   "last_as": 38.74,
   "updated_by": "loop1+loop2",
-  "updated_at": "2026-11-16T22:10:00Z"
+  "updated_at": "2026-11-18T21:40:00Z"
 }

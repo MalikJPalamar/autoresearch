@@ -1,5 +1,37 @@
 # Methodology Changelog
 
+## v1.4 — 2026-11-18 (format-040 RESOLVED: DISCARD, zero fires across its full 3-report run; format-041 Confirmed Form-4 Insider Transaction Confirmation Overlay ACTIVATED; NVDA Q3 FY2027 earnings CONFIRMED beat-and-raise)
+
+**`scripts/prices.sh` blocked for the 60th consecutive session** (all 18 tickers null, `curl` 403 on Yahoo/Stooq). No genuinely Nov-17/18-dated price confirmed for any of the 18 tickers despite 5 sector-grouped research passes (AI Compute, Semiconductors, Energy for AI, Defense AI, Macro).
+
+**NVDA's fiscal Q3 FY2027 earnings are CONFIRMED (Nov 17, after close): a clean beat-and-raise** — revenue $115.8B vs. ~$109.1-109.3B consensus (+~103% YoY), data-center revenue $107.6B vs. ~$101.9B est., adjusted EPS $2.68, Q4 FY2027 guidance $130B ±3% vs. $125.1B consensus; shares reportedly rose >4% after-hours (unconfirmed into the regular session). Nvidia's board separately stated it will not reinstate Jensen Huang as CEO — a reaffirmation of the existing Nov 12 8-K, not a new departure.
+
+**format-040 Governance/Leadership-Event Confirmation Override — RESOLVED: DISCARD.** Full 3-report run (2026-11-16 → 2026-11-18): 0 fires on every report. 3-report average CS 75.49 vs. baseline 75.49 (delta 0.00) = DISCARD per the exact-zero-delta precedent (format-015, format-023, format-034, format-035, format-038). The rule's one real motivating event (Huang's Nov 12 resignation) predated its own start date; NVDA's Nov 17 board reaffirmation and META's unconfirmed Janardhan step-down report were both correctly declined as non-qualifying. This is the 9th consecutive zero-fire discard in this project's "confirmed-same-session-event override" family. methodology.md reverted to its pre-2026-11-16 form.
+
+**format-041 Confirmed Form-4 Insider Transaction Confirmation Overlay ACTIVATED same day** (signal-logic, pre-approved 2026-08-20, auto-evolve). Rule: a confirmed, SEC-dated Form 4 filed same-session showing either a qualifying open-market insider-buying cluster/large single purchase, or an outsized non-scheduled insider sale, triggers a discretionary-review flag on that ticker's signal. Motivated by the observation that insider Form 4 filings should fire more routinely across 18 tickers than the single discrete events (earnings dates, technical crossovers, governance changes) this project's prior override experiments have repeatedly found too rare to exercise within a 3-report window. Report 1/3 (Nov 18): 0 fires — dedicated per-ticker Form 4 searches begin next session. baseline_cs = 75.49.
+
+**Nov 11 signal batch: 0 correct / 0 incorrect / 1 NULL (OKLO) / 17 PENDING = 0/18 decisive** — the originating Nov 11 report explicitly found no confirmed price for any ticker that day. AS unchanged 38.74% (435/1123); CS unchanged 75.49.
+
+**Macro:** last confirmed broad-market print is Nov 16's Nasdaq -2.5% (24,509.76) tech-led drawdown; DXY at a 19-month high (~103.17, Nov 12); 10Y back above 5% (~5.12%, Nov 12). Undated Finviz/Barchart headlines hint at a further NVDA-earnings-linked market decline into Nov 17/18 but are not exact-date-confirmed, so not adopted as a scored data point.
+
+**Data-quality notes:** two new aggregator domains (journalarta.com, altindex.com) flagged as unreliable for AMD pricing, informally extending the standing format-024 known-bad-source practice; SMR's previously-flagged Nov 13 $4.66 anchor is now cross-checked and adopted; RTX's anchor refreshed to a consistent, LOW-dispute Nov 13 $198.58; LMT's chronic multi-way price dispute (HIGH, ~5.1% spread, unresolved since Nov 6) continues. No approval issues opened or closed.
+
+## v1.4 — 2026-11-17 (format-040 report 2/3, 0 fires; NVDA earnings tonight, results pending; two undated candidates remain unconfirmed, no format-024 catches credited; PLTR/VST anchors refresh)
+
+**`scripts/prices.sh` blocked for the 59th consecutive session** (all 18 tickers null, `curl` 403 on Yahoo/Stooq). No genuinely Nov-17-dated price confirmed for any of the 18 tickers despite 4 sector-grouped WebSearch passes plus dedicated macro/NVDA-earnings passes.
+
+**NVDA reports fiscal Q3 FY2027 earnings today after close** (call scheduled 5:00pm ET; written commentary ~1:20pm PT). **Results NOT YET RELEASED as of this report** — S&P Global/Visible Alpha consensus ~$109.3B revenue. NVDA's governance situation (Huang resigned Nov 12, Kress interim CEO) is unchanged, no new developments today.
+
+**format-040 Governance/Leadership-Event Confirmation Override, report 2/3: 0 fires.** Three near-misses correctly declined: MSFT's Emma Walmsley board non-renewal (dated Nov 4/filed Nov 5) is a non-renewal, not a sudden departure, and is 12+ days old; META's reported Santosh Janardhan step-down (Bloomberg/Reuters, Nov 11-12) is a news report of a prospective early-2027 departure, not a confirmed 8-K Item 5.02 filing; LRCX's director-retirement 8-K is dated 2026-08-27, three months old. 0/2 reports fired so far; report 3/3 due the next weekday session.
+
+**Two undated candidates remain unconfirmed, not format-024 implied-move catches.** AMAT $332.71 is ~7.2% below the Nov 13 $358.54 anchor; LMT $522.07 is ~12.4% below the Nov 13 $596.04 anchor. Neither exceeds the standing ~15% threshold. Both remain excluded from confirmed prices because their dates are unverified; no protocol catch is credited and neither anchor is changed.
+
+**Two price anchors refreshed (still not today-dated).** PLTR's stale Nov 2 ~$178.34 anchor is superseded by a Nov 13 $165.32 read (Benzinga, dated, -7.3% over the interval — not extreme enough to itself trigger exclusion). VST's anchor refreshes to Nov 11's $136.485 (Benzinga). LMT separately picked up two dated, constructive analyst actions (Guggenheim Buy/$735 PT, Nov 4; Morgan Stanley PT raise to $835, Nov 10) — logged for AC/catalyst purposes, no price implication.
+
+**Two new figures flagged but not adopted pending cross-check:** a Nov 13 MarketChameleon SMR figure ($4.66) with no comparable confirmed prior anchor to run an implied-move check against, and a single-sourced Nov 10 NRG figure (~$97.11).
+
+**Nov 10 signal batch scored 0/18 decisive (0 correct/0 incorrect/1 NULL OKLO/17 PENDING)** — the originating 2026-11-10 report explicitly found no confirmed price for any of the 18 tickers that day, so no origin base exists regardless of today's forward-side result. AS unchanged 38.74% (435/1123); CS unchanged 75.49. No approval issues opened or closed (`needs-approval`/`approved` both empty).
+
 ## v1.4 — 2026-11-16 (format-039 RESOLVED: DISCARD, report 3/3; format-040 Governance/Leadership-Event Confirmation Override ACTIVATED; NVDA earnings Nov17; LMT dispute layered further)
 
 **`scripts/prices.sh` blocked for the 58th consecutive session** (all 18 tickers null, `curl` 403 on Yahoo/Stooq). Correcting the prior entry below: 2026-11-13 **did** run (see that entry) — this session initially believed it was missing, then recovered it from the Supabase mirror and reconstructed `auto-research/2026-11-13-report.md` before continuing.
