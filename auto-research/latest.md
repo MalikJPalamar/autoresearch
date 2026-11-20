@@ -207,7 +207,7 @@ No quantified same-day (Nov 20) price data exists for enough tickers to compute 
 
 ## HIGH-Dispute-Severity Signal Hold Protocol (format-022 standing section)
 
-**2 interventions today: VST (continuing), CEG (continuing).** LMT's underlying view remains ACCUMULATE but no fresh discretionary upgrade was made today (unlike Nov 19), so LMT's hold from yesterday simply continues rather than being newly triggered. Both VST and CEG are above the WATCH tier on their underlying fundamentals view and carry a HIGH dispute flag (no confirmed Nov 19/20 price), so both remain mechanically held at WATCH.
+**3 interventions today: VST (continuing), CEG (continuing), LMT (continuing).** *(Correction, post-publication: an automated PR review (Codex) correctly caught that this count had omitted LMT — the standing protocol applies on every report while a ticker's dispute severity stays HIGH and its underlying view is above WATCH, not only on the session a fresh discretionary upgrade triggers the hold; LMT meets both conditions unchanged from Nov 19, so it continues as a 3rd concurrent hold.)* All three are above the WATCH tier on their underlying fundamentals view and carry a HIGH dispute flag (no confirmed Nov 19/20 price), so all three remain mechanically held at WATCH.
 
 ---
 
@@ -251,7 +251,7 @@ GitHub `list_issues` (`MalikJPalamar/autoresearch`) checked for `needs-approval`
 See Note 3 and Note 9 above. Signal-logic experiment, pre-approved 2026-08-20 (auto-evolve). `baseline_cs` = 75.49. Report 1/3: 0 verdicts available to adjust today (the Nov 13 batch scored 0 decisive regardless of any ex-div netting), logged as a 0-opportunity report. MSFT (ex-div Nov 19) and RTX (ex-div Nov 20) are both live test candidates for report 2/3 or 3/3 once a confirmed forward price lands on or after those dates.
 
 ### Signal Changes Summary
-**0 discretionary signal changes today.** **2 format-022 mechanical holds continuing: VST, CEG.** (LMT's hold from Nov 19 continues by inertia — no fresh trigger today, no fresh lift either.)
+**0 discretionary signal changes today.** **3 format-022 mechanical holds continuing: VST, CEG, LMT** (corrected — see the HIGH-Dispute-Severity Signal Hold Protocol section above).
 
 ### Data-Quality Notes
 1. NVDA's Nov 17/Nov 18 price chain cross-checks exactly, resolving what first looked like a conflict into a confirmation (Note 4).
@@ -259,6 +259,7 @@ See Note 3 and Note 9 above. Signal-logic experiment, pre-approved 2026-08-20 (a
 3. An unconfirmed, single-sourced AMD Nov 17 decline candidate (~14% implied move) was investigated and explicitly not adopted pending corroboration (Note 12).
 4. META's Italy fine was clarified as an ePrivacy/consent action (Garante), not an antitrust fine, correcting an earlier report's looser characterization.
 5. SMR's long-running >15% price dispute shows signs of resolving toward its lower-end figures via a new 3-point chain, but is not yet promoted to confirmed (Note 10).
+6. *(Addendum, post-publication)* An automated PR review (Codex) on this report's own PR caught two errors in the format-022 section, both corrected in place: the "2 interventions" tally had omitted LMT, which meets the standing protocol's conditions (HIGH dispute, underlying view above WATCH) unchanged from Nov 19 and should count as a 3rd continuing hold (VST, CEG, LMT). Codex separately flagged that format-042's dividend-netting window, as first drafted in methodology.md, should exclude the origin date itself from dividend eligibility — if a ticker goes ex-dividend on the origin date, that day's close already reflects the mechanical drop, so including it would double-count the adjustment; methodology.md corrected to run the window from the day after the origin date through the scoring date.
 
 ### Supabase Mirror
 Sync attempted this session to project `tjaqenludemumniqhwva` (`reports`, `daily_prices`, `macro`, `experiments` tables); see commit log for outcome.

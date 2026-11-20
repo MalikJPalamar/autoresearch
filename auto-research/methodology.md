@@ -740,14 +740,20 @@ session independently surfaced two more live ex-dividend dates (MSFT,
 $0.98/share, ex-date Nov 19; RTX, ex-date Nov 20) with no standing
 mechanism to net them out before classifying a signal's forward move.
 Rule: when a ticker has a confirmed ex-dividend date falling within
-the 5-trading-day signal-scoring window (origin date to scoring date,
-inclusive), net the per-share dividend amount out of the raw price
-change before (a) classifying a 5-day-lookback signal as
-correct/incorrect/neutral for AS purposes, and (b) describing a
-same-session price move as "real" selling/buying pressure in the
-report narrative. Does not relax the exact-date price-anchor
-convention; targets AS-scoring precision and report-narrative accuracy
-only. Effective starting the 2026-11-20 report. Report 1/3 (Nov 20):
+the 5-trading-day signal-scoring window, net the per-share dividend
+amount out of the raw price change before (a) classifying a
+5-day-lookback signal as correct/incorrect/neutral for AS purposes,
+and (b) describing a same-session price move as "real" selling/buying
+pressure in the report narrative. The window runs from the day *after*
+the origin date through the scoring date, inclusive — not from the
+origin date itself: if the origin date is itself an ex-dividend date,
+that day's settled close already reflects the mechanical drop, so
+including it in the netting window would double-count the adjustment
+and could flip an otherwise-correct verdict (caught by an automated PR
+review (Codex) before this report merged). Does not relax the
+exact-date price-anchor convention; targets AS-scoring precision and
+report-narrative accuracy only. Effective starting the 2026-11-20
+report. Report 1/3 (Nov 20):
 0 verdicts available to adjust (the Nov 13 signal batch scored 0
 decisive regardless of any ex-div netting, since no Nov 20 forward
 price was confirmed for any ticker) — logged as a 0-opportunity report,
