@@ -703,45 +703,63 @@ format-040). See the 2026-11-18 changelog entry for detail. This
 section is reverted to its pre-2026-11-16 form (no governance/
 leadership-event override rule).
 
-### Confirmed Form-4 Insider Transaction Confirmation Overlay (format-041, ACTIVE since 2026-11-18, report 1/3)
+### Confirmed Form-4 Insider Transaction Confirmation Overlay (format-041) — DISCARDED 2026-11-20
 
-3-report KEEP/DISCARD against baseline CS 75.49 (the 2026-11-18 CS),
+format-041 ran its full 3-report evaluation (2026-11-18 → 2026-11-20)
+and was DISCARDED: 3-report average CS 75.49 vs. baseline 75.49 (delta
+0.00). Per this project's exact-zero-delta precedent (format-015,
+format-023, format-034, format-035, format-038, format-040), reverted
+per the auto-evolve rule. The rule never fired a single override in
+any of its 3 evaluation reports — a dedicated per-ticker Form
+4/insider-transaction search across all 18 tickers each session
+(SecForm4, Bullfincher, StockTitan, QuantiSNow, OpenInsider, Fintel,
+Quiver Quantitative, Arkolith, and the AFM register for ASML) found no
+qualifying buy-cluster or outsized non-routine sale dated to any of the
+3 evaluation sessions (Nov 17/18, Nov 18/19, Nov 19/20) — so the
+decision reflects the rarity of a fully-qualifying same-session Form 4
+setup within this 18-ticker universe, not a demonstrated defect in the
+override logic itself. This is the 10th consecutive zero-fire discard
+among this project's "confirmed-same-session-event override" family
+(RSI-threshold format-012, golden/death-cross format-017, MACD
+format-018, earnings format-020, extreme-volume format-021,
+momentum-tilt format-030, gap-reaction format-034, intraday-snapshot
+format-036, governance format-040, now Form-4 format-041). See the
+2026-11-20 changelog entry for detail. This section is reverted to its
+pre-2026-11-18 form (no Form-4 insider-transaction override rule).
+
+### Ex-Dividend-Adjusted Move Confirmation Protocol (format-042, ACTIVE since 2026-11-20, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.49 (the 2026-11-20 CS),
 reverted on DISCARD. Signal-logic experiment, pre-approved by Malik
-2026-08-20 (auto-evolve, no fresh approval needed). Motivated by
-format-040's zero-fire discard and this project's broader finding that
-single, discrete-event-triggered overrides (earnings, technical
-crossovers, governance) fire too rarely to exercise within a 3-report
-window; insider Form 4 filings are both SEC-dated (sourceable the same
-way format-038's SEC-filing checks worked) and occur far more routinely
-across an 18-ticker universe than C-suite departures or confirmed
-same-session technical crossovers. Rule: when a ticker has a confirmed,
-SEC-dated Form 4 filed same-session showing either (a) a cluster of
-open-market insider *buying* by 2+ distinct insiders, or a single
-director/officer purchase exceeding ~$1M, or (b) a single insider's
-open-market *sale* that is unusually large relative to their holdings
-and is *not* a routine, pre-scheduled Rule 10b5-1 disposal — flag it as
-a discretionary-review trigger for that ticker's signal that session. A
-qualifying buy-side cluster can support a WATCH→ACCUMULATE upgrade on
-an otherwise-neutral read; a qualifying outsized non-scheduled sale can
-support a downgrade caveat on an otherwise-bullish read. Does not relax
-the exact-date price-anchor convention used for AS scoring; confirms a
-fundamentals/sentiment event for AC/CV purposes only. Effective
-starting the 2026-11-18 report. Report 1/3 (Nov 18): 0 fires, following
-a dedicated Form 4 search across all 18 tickers (third-party
-aggregators; direct EDGAR access unreachable under this session's
-network policy, consistent with the format-038 precedent). No ticker
-had a qualifying filing dated Nov 17 or Nov 18; several near-misses
-(an AMD director sale dated too early, a CEO family-trust transfer, a
-stale VST insider buy, routine NRG RSU accruals) were all correctly
-declined as non-qualifying. Report 2/3 (Nov 19): 0 fires, following
-another dedicated per-ticker Form 4/insider-transaction search across
-all 18 tickers (SecForm4, Bullfincher, StockTitan, QuantiSNow,
-OpenInsider, Fintel, Quiver Quantitative, Arkolith, and the AFM
-register for ASML's Dutch PDMR disclosures). No qualifying buy-cluster
-or outsized non-routine sale dated Nov 18/19 was found for any ticker;
-all insider activity located in the broader record reads as routine
-(10b5-1 sales, RSU-vesting withholding, award grants, ESPP purchases).
-Report 3/3 resolves next session.
+2026-08-20 (auto-evolve, no fresh approval needed). Motivated by a
+recurring, concrete error source already caught twice in this
+project's own history: BAH's Nov 12 ex-dividend date was originally
+mis-costed at the annualized $2.36/share rate instead of the confirmed
+quarterly $0.59/share rate (corrected 2026-11-19), and the 2026-11-20
+session independently surfaced two more live ex-dividend dates (MSFT,
+$0.98/share, ex-date Nov 19; RTX, ex-date Nov 20) with no standing
+mechanism to net them out before classifying a signal's forward move.
+Rule: when a ticker has a confirmed ex-dividend date falling within
+the 5-trading-day signal-scoring window, net the per-share dividend
+amount out of the raw price change before (a) classifying a
+5-day-lookback signal as correct/incorrect/neutral for AS purposes,
+and (b) describing a same-session price move as "real" selling/buying
+pressure in the report narrative. The window runs from the day *after*
+the origin date through the scoring date, inclusive — not from the
+origin date itself: if the origin date is itself an ex-dividend date,
+that day's settled close already reflects the mechanical drop, so
+including it in the netting window would double-count the adjustment
+and could flip an otherwise-correct verdict (caught by an automated PR
+review (Codex) before this report merged). Does not relax the
+exact-date price-anchor convention; targets AS-scoring precision and
+report-narrative accuracy only. Effective starting the 2026-11-20
+report. Report 1/3 (Nov 20):
+0 verdicts available to adjust (the Nov 13 signal batch scored 0
+decisive regardless of any ex-div netting, since no Nov 20 forward
+price was confirmed for any ticker) — logged as a 0-opportunity report,
+not a 0-fire report. MSFT (ex-div Nov 19) and RTX (ex-div Nov 20) are
+both live test candidates for report 2/3 or 3/3 once a confirmed
+forward price lands on or after those dates.
 
 ---
 
