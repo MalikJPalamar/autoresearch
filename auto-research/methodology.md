@@ -703,45 +703,61 @@ format-040). See the 2026-11-18 changelog entry for detail. This
 section is reverted to its pre-2026-11-16 form (no governance/
 leadership-event override rule).
 
-### Confirmed Form-4 Insider Transaction Confirmation Overlay (format-041, ACTIVE since 2026-11-18, report 1/3)
+### Confirmed Form-4 Insider Transaction Confirmation Overlay (format-041) — DISCARDED 2026-11-23
 
-3-report KEEP/DISCARD against baseline CS 75.49 (the 2026-11-18 CS),
+format-041 ran its full 3-report evaluation (2026-11-18 → 2026-11-23,
+with no report on the intervening Friday Nov 20) and was DISCARDED:
+3-report average CS 75.49 vs. baseline 75.49 (delta 0.00). Per this
+project's exact-zero-delta precedent (format-015, format-023,
+format-034, format-038, format-040), reverted per the auto-evolve rule.
+The rule never fired a single signal-changing override in any of its
+3 evaluation reports — report 1/3 (Nov 18) and report 2/3 (Nov 19)
+found zero qualifying filings dated to their respective windows at
+all; report 3/3 (Nov 23) found no qualifying filing dated Nov 20-23
+either, with the closest candidate (a PLTR director's routine $265K
+Nov 13 open-market sale) both too early for the window and too small
+to qualify as "outsized non-routine" — so the decision reflects the
+rarity of a qualifying Form 4 within any single 3-report window, not
+a demonstrated defect in the override logic itself. This is the 10th
+consecutive zero/near-zero-fire or too-small-effect discard in the
+"confirmed-same-session-event override" family (RSI-threshold
+format-012, golden/death-cross format-017, MACD format-018, earnings
+format-020, extreme-volume format-021, momentum-tilt format-030,
+gap-reaction format-034, intraday-snapshot format-036, governance
+format-040, now Form-4 format-041). See the 2026-11-23 changelog
+entry for detail. This section is reverted to its pre-2026-11-18 form
+(no Form-4/insider-transaction scored mechanism); informal awareness
+of insider Form-4 activity as a sentiment input remains available
+without a dedicated template section, consistent with how format-038's
+SEC-filing checks were treated on their own discard.
+
+### Confirmed Activist Short-Seller Report Confirmation Override (format-042, ACTIVE since 2026-11-23, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.49 (the 2026-11-23 CS),
 reverted on DISCARD. Signal-logic experiment, pre-approved by Malik
-2026-08-20 (auto-evolve, no fresh approval needed). Motivated by
-format-040's zero-fire discard and this project's broader finding that
-single, discrete-event-triggered overrides (earnings, technical
-crossovers, governance) fire too rarely to exercise within a 3-report
-window; insider Form 4 filings are both SEC-dated (sourceable the same
-way format-038's SEC-filing checks worked) and occur far more routinely
-across an 18-ticker universe than C-suite departures or confirmed
-same-session technical crossovers. Rule: when a ticker has a confirmed,
-SEC-dated Form 4 filed same-session showing either (a) a cluster of
-open-market insider *buying* by 2+ distinct insiders, or a single
-director/officer purchase exceeding ~$1M, or (b) a single insider's
-open-market *sale* that is unusually large relative to their holdings
-and is *not* a routine, pre-scheduled Rule 10b5-1 disposal — flag it as
-a discretionary-review trigger for that ticker's signal that session. A
-qualifying buy-side cluster can support a WATCH→ACCUMULATE upgrade on
-an otherwise-neutral read; a qualifying outsized non-scheduled sale can
-support a downgrade caveat on an otherwise-bullish read. Does not relax
-the exact-date price-anchor convention used for AS scoring; confirms a
-fundamentals/sentiment event for AC/CV purposes only. Effective
-starting the 2026-11-18 report. Report 1/3 (Nov 18): 0 fires, following
-a dedicated Form 4 search across all 18 tickers (third-party
-aggregators; direct EDGAR access unreachable under this session's
-network policy, consistent with the format-038 precedent). No ticker
-had a qualifying filing dated Nov 17 or Nov 18; several near-misses
-(an AMD director sale dated too early, a CEO family-trust transfer, a
-stale VST insider buy, routine NRG RSU accruals) were all correctly
-declined as non-qualifying. Report 2/3 (Nov 19): 0 fires, following
-another dedicated per-ticker Form 4/insider-transaction search across
-all 18 tickers (SecForm4, Bullfincher, StockTitan, QuantiSNow,
-OpenInsider, Fintel, Quiver Quantitative, Arkolith, and the AFM
-register for ASML's Dutch PDMR disclosures). No qualifying buy-cluster
-or outsized non-routine sale dated Nov 18/19 was found for any ticker;
-all insider activity located in the broader record reads as routine
-(10b5-1 sales, RSU-vesting withholding, award grants, ESPP purchases).
-Report 3/3 resolves next session.
+2026-08-20 (auto-evolve, no fresh approval needed). Motivated directly
+by this session's confirmed Hunterbrook Capital short-seller disclosure
+and report on AMD (dated 2026-11-19), which drove a confirmed -7.72%
+same-week decline — a different, and potentially more routinely
+occurring, class of catalyst than this project's prior
+technical-crossover, earnings, governance, and Form-4 experiments.
+Rule: when a ticker has a confirmed, dated disclosed short position
+*and* a published report from a named research/investment firm (not an
+anonymous or unverifiable source), and the stock has a confirmed move
+of >=5% tied to it, flag it as a discretionary-review trigger for that
+ticker's signal that session. A qualifying report can support holding
+or downgrading an otherwise-bullish/accumulate-tier read to WATCH or
+lower pending confirmation, but does **not** by itself justify a
+bearish call if the firm's own report does not claim a confirmed
+violation or wrongdoing (mirrors Hunterbrook's own stated caveat on its
+AMD report). Does not relax the exact-date price-anchor convention
+used for AS scoring; confirms a fundamentals/sentiment event for AC/CV
+purposes only. Effective starting the 2026-11-23 report. Report 1/3
+(Nov 23): the AMD/Hunterbrook event is a confirmed qualifying report
+under the rule, but AMD's published signal was already WATCH (the
+rule's floor) with no higher tier to downgrade from, so it did not
+fire a signal change — logged as the rule's first genuine qualifying
+candidate. Reports 2/3 and 3/3 resolve at subsequent sessions.
 
 ---
 
