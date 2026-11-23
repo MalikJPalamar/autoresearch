@@ -753,11 +753,15 @@ violation or wrongdoing (mirrors Hunterbrook's own stated caveat on its
 AMD report). Does not relax the exact-date price-anchor convention
 used for AS scoring; confirms a fundamentals/sentiment event for AC/CV
 purposes only. Effective starting the 2026-11-23 report. Report 1/3
-(Nov 23): the AMD/Hunterbrook event is a confirmed qualifying report
-under the rule, but AMD's published signal was already WATCH (the
-rule's floor) with no higher tier to downgrade from, so it did not
-fire a signal change — logged as the rule's first genuine qualifying
-candidate. Reports 2/3 and 3/3 resolve at subsequent sessions.
+(Nov 23): **correction, caught by an automated PR review (Codex)
+before merge** — the Hunterbrook/AMD report is dated Nov 19, but
+Nov 23's prior-1-trading-day is Nov 20, so the motivating event falls
+two trading days outside the rule's own same-session/prior-1-trading-day
+eligibility window and does not count as an in-window candidate. A
+dedicated check for a qualifying disclosed-short-position report dated
+Nov 20 or Nov 23 found none for any of the 18 tickers; report 1/3 is a
+clean 0-candidate, 0-fire baseline. Reports 2/3 and 3/3 resolve at
+subsequent sessions.
 
 ---
 
