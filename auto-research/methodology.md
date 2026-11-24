@@ -759,7 +759,14 @@ decisive regardless of any ex-div netting, since no Nov 20 forward
 price was confirmed for any ticker) — logged as a 0-opportunity report,
 not a 0-fire report. MSFT (ex-div Nov 19) and RTX (ex-div Nov 20) are
 both live test candidates for report 2/3 or 3/3 once a confirmed
-forward price lands on or after those dates.
+forward price lands on or after those dates. Report 2/3 (Nov 24,
+following a weekday gap with no 2026-11-23 report in the merged
+history — see that report's Note 2): RTX's Nov 20 ex-dividend is now
+confirmed at $0.73/share (company press release plus 2 independent
+trackers), a clean live test candidate, but the Nov 17 origin batch
+scored zero decisive verdicts for any ticker this cycle, so there was
+again no verdict for the rule to adjust — a 2nd consecutive
+0-opportunity report. Report 3/3 resolves next session.
 
 ---
 
