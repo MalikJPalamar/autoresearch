@@ -727,46 +727,55 @@ format-036, governance format-040, now Form-4 format-041). See the
 2026-11-20 changelog entry for detail. This section is reverted to its
 pre-2026-11-18 form (no Form-4 insider-transaction override rule).
 
-### Ex-Dividend-Adjusted Move Confirmation Protocol (format-042, ACTIVE since 2026-11-20, report 1/3)
+### Ex-Dividend-Adjusted Move Confirmation Protocol (format-042) — DISCARDED 2026-11-25
 
-3-report KEEP/DISCARD against baseline CS 75.49 (the 2026-11-20 CS),
-reverted on DISCARD. Signal-logic experiment, pre-approved by Malik
-2026-08-20 (auto-evolve, no fresh approval needed). Motivated by a
-recurring, concrete error source already caught twice in this
-project's own history: BAH's Nov 12 ex-dividend date was originally
-mis-costed at the annualized $2.36/share rate instead of the confirmed
-quarterly $0.59/share rate (corrected 2026-11-19), and the 2026-11-20
-session independently surfaced two more live ex-dividend dates (MSFT,
-$0.98/share, ex-date Nov 19; RTX, ex-date Nov 20) with no standing
-mechanism to net them out before classifying a signal's forward move.
-Rule: when a ticker has a confirmed ex-dividend date falling within
-the 5-trading-day signal-scoring window, net the per-share dividend
-amount out of the raw price change before (a) classifying a
-5-day-lookback signal as correct/incorrect/neutral for AS purposes,
-and (b) describing a same-session price move as "real" selling/buying
-pressure in the report narrative. The window runs from the day *after*
-the origin date through the scoring date, inclusive — not from the
-origin date itself: if the origin date is itself an ex-dividend date,
-that day's settled close already reflects the mechanical drop, so
-including it in the netting window would double-count the adjustment
-and could flip an otherwise-correct verdict (caught by an automated PR
-review (Codex) before this report merged). Does not relax the
-exact-date price-anchor convention; targets AS-scoring precision and
-report-narrative accuracy only. Effective starting the 2026-11-20
-report. Report 1/3 (Nov 20):
-0 verdicts available to adjust (the Nov 13 signal batch scored 0
-decisive regardless of any ex-div netting, since no Nov 20 forward
-price was confirmed for any ticker) — logged as a 0-opportunity report,
-not a 0-fire report. MSFT (ex-div Nov 19) and RTX (ex-div Nov 20) are
-both live test candidates for report 2/3 or 3/3 once a confirmed
-forward price lands on or after those dates. Report 2/3 (Nov 24,
-following a weekday gap with no 2026-11-23 report in the merged
-history — see that report's Note 2): RTX's Nov 20 ex-dividend is now
-confirmed at $0.73/share (company press release plus 2 independent
-trackers), a clean live test candidate, but the Nov 17 origin batch
-scored zero decisive verdicts for any ticker this cycle, so there was
-again no verdict for the rule to adjust — a 2nd consecutive
-0-opportunity report. Report 3/3 resolves next session.
+format-042 ran its full 3-report evaluation (2026-11-20 → 2026-11-25,
+spanning the weekday gap left by the Nov 23 report never making it
+into the merged git history — see the 2026-11-24 report's Note 2) and
+was DISCARDED: 3-report average CS 75.49 vs. baseline 75.49 (delta
+0.00). Per this project's exact-zero-delta precedent (format-015,
+format-023, format-034, format-035, format-038, format-040,
+format-041), reverted per the auto-evolve rule. Unlike most of this
+project's "confirmed-same-session-event override" discards, this was
+not a zero-*fire* result but a zero-*opportunity* one: the rule's live
+test candidates were genuine and well-documented throughout its run —
+RTX's Nov 20 ex-dividend ($0.73/share, company press release plus 2
+trackers) and MSFT's Nov 19 ex-dividend ($0.98/share) — but in all 3
+evaluation reports (Nov 20 scoring the Nov 13 batch, Nov 24 scoring
+the Nov 17 batch, Nov 25 scoring the Nov 18 batch) the underlying
+5-day-lookback batch itself scored zero decisive verdicts for any of
+the 18 tickers, so the rule never once had an actual verdict to
+adjust. The chronic exact-date origin-price blackout didn't just
+limit this rule's effect size, as with most prior discards — it
+prevented the rule from being exercised at all. See the 2026-11-25
+changelog entry for detail. This section is reverted to its
+pre-2026-11-20 form (no ex-div netting rule); informally, netting a
+confirmed ex-dividend amount out of a raw price change before
+describing a move as "real" buying/selling pressure remains good
+practice without a dedicated template section.
+
+### Confirmed 52-Week-Extreme Anchor Protocol (format-043, ACTIVE since 2026-11-25, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.49 (the 2026-11-25 CS),
+reverted on DISCARD. Signal-logic/data-source experiment, pre-approved
+by Malik 2026-08-20 (auto-evolve, no fresh approval needed). Motivated
+by a pattern observed repeatedly in this project's research: financial
+press frequently reports a new 52-week high or low as an explicitly-
+dated, exact-price fact — a simple historical-data lookup rather than
+a same-day settlement figure, and so potentially easier for WebSearch
+to surface and corroborate than an ordinary daily close. Rule: when a
+dated news item explicitly states that a ticker closed at (or clearly-
+labeled intraday touched) a new 52-week high or low on a specific
+date, treat that dated price as a candidate confirmed exact-date
+anchor for AS-scoring purposes — subject to the same format-016
+cross-source dispute-severity framework and format-024 stale-data
+cross-check as any other candidate. Does not relax the exact-date
+convention; it only adds 52-week-extreme framing as a recognized
+confirmation channel alongside ordinary closes. Effective starting
+the 2026-11-25 report. Report 1/3 (Nov 25): 0 applications — this
+session's research surfaced only off-date 52-week-extreme mentions
+(Nov 10, Mar 30), none dated within the current 5-day-lookback scoring
+window — logged as a 0-opportunity report, not a 0-fire report.
 
 ---
 
