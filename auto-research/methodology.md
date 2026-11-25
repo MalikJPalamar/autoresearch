@@ -764,18 +764,27 @@ press frequently reports a new 52-week high or low as an explicitly-
 dated, exact-price fact — a simple historical-data lookup rather than
 a same-day settlement figure, and so potentially easier for WebSearch
 to surface and corroborate than an ordinary daily close. Rule: when a
-dated news item explicitly states that a ticker closed at (or clearly-
-labeled intraday touched) a new 52-week high or low on a specific
-date, treat that dated price as a candidate confirmed exact-date
-anchor for AS-scoring purposes — subject to the same format-016
-cross-source dispute-severity framework and format-024 stale-data
-cross-check as any other candidate. Does not relax the exact-date
-convention; it only adds 52-week-extreme framing as a recognized
-confirmation channel alongside ordinary closes. Effective starting
-the 2026-11-25 report. Report 1/3 (Nov 25): 0 applications — this
-session's research surfaced only off-date 52-week-extreme mentions
-(Nov 10, Mar 30), none dated within the current 5-day-lookback scoring
-window — logged as a 0-opportunity report, not a 0-fire report.
+dated news item explicitly states that a ticker **closed** at a new
+52-week high or low on a specific date, treat that dated closing price
+as a candidate confirmed exact-date anchor for AS-scoring purposes —
+subject to the same format-016 cross-source dispute-severity framework
+and format-024 stale-data cross-check as any other candidate. A
+clearly-labeled **intraday** touch of a 52-week extreme is explicitly
+**excluded** as an AS-scoring anchor (added 2026-11-25, pre-first-fire,
+per an automated PR review (Codex) on PR #67): an intraday high/low can
+reverse before settlement, so comparing it against the close-based
+prices used for the rest of the 5-day-lookback move would mix
+intraday and closing bases in a way format-016/format-024's
+source-agreement and stale-data checks cannot catch or correct. An
+intraday extreme may still be cited as narrative/catalyst color in the
+per-ticker write-up, just not adopted as a scoring anchor. Does not
+relax the exact-date convention; it only adds 52-week-extreme *closes*
+as a recognized confirmation channel alongside ordinary closes.
+Effective starting the 2026-11-25 report. Report 1/3 (Nov 25): 0
+applications — this session's research surfaced only off-date
+52-week-extreme mentions (Nov 10, Mar 30), none dated within the
+current 5-day-lookback scoring window — logged as a 0-opportunity
+report, not a 0-fire report.
 
 ---
 
