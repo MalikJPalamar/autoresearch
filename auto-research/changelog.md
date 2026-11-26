@@ -1,5 +1,21 @@
 # Methodology Changelog
 
+## v1.4 — 2026-11-26 (format-043 report 2/3, 2nd consecutive 0-opportunity; market closed all day for Thanksgiving, no Nov 26 settlement for any ticker or index; Nov 19 batch scores 0/18 decisive on both origin and forward sides; stale conflicting PR #64 closed as superseded; Supabase mirror failure escalates to 4th consecutive session)
+
+**`scripts/prices.sh` blocked for the 65th consecutive session** (all 18 tickers null, `curl` 403 on Yahoo/Stooq).
+
+**Today (2026-11-26) is a full U.S. market holiday (Thanksgiving Day), confirmed via multiple independent sources.** NYSE and Nasdaq are closed and reopen Friday 2026-11-27 for an abbreviated 9:30am–1:00pm ET session. No trading session occurred, so there is no Nov 26 settlement to confirm for any of the 18 tickers or the 4 major indices. Eight WebSearch passes (macro; VIX/DXY/10Y/oil; AI Compute; AMD/GOOGL/MSFT/META; Semiconductors; Energy for AI; Defense AI; and a dedicated 52-week-extreme check) also found no genuinely Nov 24- or Nov 25-dated price for any ticker or index, extending the Nov 25 report's own 2-session individual-ticker gap. All per-ticker and macro anchors are carried forward unchanged from the Nov 25 report (mostly Nov 23 closes, now 3 sessions stale given the intervening holiday).
+
+**format-043 Confirmed 52-Week-Extreme Anchor Protocol — report 2/3: 0 applications (2nd consecutive 0-opportunity report).** A dedicated search for dated 52-week-high/low *close* mentions within the current lookback window found only off-window screener roundups (Trefis 52-week-low lists dated Nov 17–19) with no specific, dated close for any of the 18 tickers inside the window. `baseline_cs` remains 75.49; resolution (report 3/3) is due next session.
+
+**Nov 19 signal batch scored 0/18 decisive** (1 NULL/OKLO, 17 PENDING) — the originating Nov 19 report confirmed zero exact-date prices for any ticker, and no confirmed Nov 20–26 forward price was found for any ticker either, so neither side of the 5-day-lookback pair had a usable base, compounded today by the absence of any trading session. This continues the unbroken pattern from the three preceding batches (Nov 11, Nov 17, Nov 18). AS unchanged 38.74% (435/1123); CS unchanged 75.49. No discretionary signal changes; 3 format-022 holds continue (VST, CEG, LMT).
+
+**Approval inbox: issue #68 (Coverage Score sub-layer credit during data blackouts) remains open and unresolved**, left untouched per Loop 2 protocol pending Malik's decision; CV scoring continues on the existing "layer attempted" convention unchanged. No `approved` issues. No approvals opened or closed.
+
+**Housekeeping: closed stale, conflicting PR #64 (the 2026-11-23 report)** as superseded, with an explanatory comment — its format-041 DISCARD and proposed format-042 experiment were already independently superseded by the merged Nov 20→25 lineage now on `sa-main`.
+
+**Supabase mirror sync failed again** (`password authentication failed for user "supabase_read_only_user"`) — the 4th consecutive session with this identical error on what GitHub/Supabase otherwise reports as a healthy project (tjaqenludemumniqhwva). This is now a persistent, multi-week credential issue rather than a transient blip; strongly recommend a human rotate or re-check the `supabase_read_only_user` credential as soon as possible. Git remains the authoritative record.
+
 ## v1.4 — 2026-11-25 (format-042 RESOLVED: DISCARD, 0-opportunity in all 3 reports; format-043 Confirmed 52-Week-Extreme Anchor Protocol ACTIVATED; Tuesday Nov 24 AI/chip pullback confirmed via converging macro sources; Supabase mirror failure escalates to 3rd consecutive session)
 
 **`scripts/prices.sh` blocked for the 64th consecutive session** (all 18 tickers null, `curl` 403 on Yahoo/Stooq). `WebFetch` against three individual market-wrap domains (cappnotes.substack.com, stl.news, finance.yahoo.com) also failed this session with DNS resolution errors — those hosts are outside this session's allowed network egress, a distinct failure mode from `prices.sh`'s 403s but with the same practical effect. WebSearch's own synthesis remained the only working data channel.
