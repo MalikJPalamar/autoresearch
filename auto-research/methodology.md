@@ -727,39 +727,79 @@ format-036, governance format-040, now Form-4 format-041). See the
 2026-11-20 changelog entry for detail. This section is reverted to its
 pre-2026-11-18 form (no Form-4 insider-transaction override rule).
 
-### Ex-Dividend-Adjusted Move Confirmation Protocol (format-042, ACTIVE since 2026-11-20, report 1/3)
+### Ex-Dividend-Adjusted Move Confirmation Protocol (format-042) — DISCARDED 2026-11-25
 
-3-report KEEP/DISCARD against baseline CS 75.49 (the 2026-11-20 CS),
+format-042 ran its full 3-report evaluation (2026-11-20 → 2026-11-25,
+spanning the weekday gap left by the Nov 23 report never making it
+into the merged git history — see the 2026-11-24 report's Note 2) and
+was DISCARDED: 3-report average CS 75.49 vs. baseline 75.49 (delta
+0.00). Per this project's exact-zero-delta precedent (format-015,
+format-023, format-034, format-035, format-038, format-040,
+format-041), reverted per the auto-evolve rule. Unlike most of this
+project's "confirmed-same-session-event override" discards, this was
+not a zero-*fire* result but a zero-*opportunity* one: the rule's live
+test candidates were genuine and well-documented throughout its run —
+RTX's Nov 20 ex-dividend ($0.73/share, company press release plus 2
+trackers) and MSFT's Nov 19 ex-dividend ($0.98/share) — but in all 3
+evaluation reports (Nov 20 scoring the Nov 13 batch, Nov 24 scoring
+the Nov 17 batch, Nov 25 scoring the Nov 18 batch) the underlying
+5-day-lookback batch itself scored zero decisive verdicts for any of
+the 18 tickers, so the rule never once had an actual verdict to
+adjust. The chronic exact-date origin-price blackout didn't just
+limit this rule's effect size, as with most prior discards — it
+prevented the rule from being exercised at all. See the 2026-11-25
+changelog entry for detail. This section is reverted to its
+pre-2026-11-20 form (no ex-div netting rule); informally, netting a
+confirmed ex-dividend amount out of a raw price change before
+describing a move as "real" buying/selling pressure remains good
+practice without a dedicated template section.
+
+### Confirmed 52-Week-Extreme Anchor Protocol (format-043) — DISCARDED 2026-11-27
+
+format-043 ran its full 3-report evaluation (2026-11-25 → 2026-11-27)
+and was DISCARDED: 3-report average CS 75.49 vs. baseline 75.49 (delta
+0.00). Per this project's exact-zero-delta precedent (format-015,
+format-023, format-034, format-035, format-038, format-040, format-041,
+format-042), reverted per the auto-evolve rule. The rule never found a
+single qualifying application in any of its 3 evaluation reports — no
+dated news item explicitly stating a ticker **closed** (as opposed to
+touched intraday) at a new 52-week high or low within the active
+5-day-lookback window was ever found, a clean 3-for-3 zero-opportunity
+result (not a zero-fire one) despite a dedicated search each session.
+This is the 4th consecutive exact-zero-delta DISCARD in a row
+(format-040, format-041, format-042, now format-043). See the
+2026-11-27 changelog entry for detail. This section is reverted to its
+pre-2026-11-25 form (52-week-extreme closes are no longer a recognized
+AS-scoring anchor channel; still usable as narrative/catalyst color
+without a dedicated scoring mechanism).
+
+### Credit-Rating Action Confirmation Override (format-044, ACTIVE since 2026-11-27, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.49 (the 2026-11-27 CS),
 reverted on DISCARD. Signal-logic experiment, pre-approved by Malik
-2026-08-20 (auto-evolve, no fresh approval needed). Motivated by a
-recurring, concrete error source already caught twice in this
-project's own history: BAH's Nov 12 ex-dividend date was originally
-mis-costed at the annualized $2.36/share rate instead of the confirmed
-quarterly $0.59/share rate (corrected 2026-11-19), and the 2026-11-20
-session independently surfaced two more live ex-dividend dates (MSFT,
-$0.98/share, ex-date Nov 19; RTX, ex-date Nov 20) with no standing
-mechanism to net them out before classifying a signal's forward move.
-Rule: when a ticker has a confirmed ex-dividend date falling within
-the 5-trading-day signal-scoring window, net the per-share dividend
-amount out of the raw price change before (a) classifying a
-5-day-lookback signal as correct/incorrect/neutral for AS purposes,
-and (b) describing a same-session price move as "real" selling/buying
-pressure in the report narrative. The window runs from the day *after*
-the origin date through the scoring date, inclusive — not from the
-origin date itself: if the origin date is itself an ex-dividend date,
-that day's settled close already reflects the mechanical drop, so
-including it in the netting window would double-count the adjustment
-and could flip an otherwise-correct verdict (caught by an automated PR
-review (Codex) before this report merged). Does not relax the
-exact-date price-anchor convention; targets AS-scoring precision and
-report-narrative accuracy only. Effective starting the 2026-11-20
-report. Report 1/3 (Nov 20):
-0 verdicts available to adjust (the Nov 13 signal batch scored 0
-decisive regardless of any ex-div netting, since no Nov 20 forward
-price was confirmed for any ticker) — logged as a 0-opportunity report,
-not a 0-fire report. MSFT (ex-div Nov 19) and RTX (ex-div Nov 20) are
-both live test candidates for report 2/3 or 3/3 once a confirmed
-forward price lands on or after those dates.
+2026-08-20 (auto-evolve, no fresh approval needed). Motivated by a gap
+in this project's "confirmed-same-session-event override" family:
+earnings (format-020), analyst-rating-actions (format-019), insider
+Form-4s (format-041), SEC filings (format-038), and governance events
+(format-040) have all been tried, but credit-rating-agency actions
+(S&P Global Ratings, Moody's, Fitch upgrades/downgrades/outlook
+changes) — equally dated and well-corroborated, and particularly
+relevant to this portfolio's capital-intensive names (TSM/ASML/AMAT/
+LRCX capex cycles, VST/CEG/NRG utility-grade debt, LMT/RTX/BAH
+government-contract-backed credit profiles) — have never been tried.
+Rule: when a ticker receives a confirmed, dated rating action from
+S&P/Moody's/Fitch within the 5-trading-day signal-scoring window,
+treat it as a same-session catalyst justifying a directional nudge (an
+upgrade/positive-outlook action supports relaxing a WATCH toward
+ACCUMULATE if other fundamentals concur; a downgrade/negative-outlook
+action supports tilting toward AVOID), logged and reverted on DISCARD
+exactly as the other override-family experiments have been. Does not
+relax the exact-date price-anchor convention; targets signal-
+classification responsiveness only. Effective starting the 2026-11-27
+report. Report 1/3 (Nov 27): 0 applications — a dedicated per-ticker
+ratings-action search found no qualifying S&P/Moody's/Fitch action
+dated within the current window for any of the 18 tickers — logged as
+a 0-opportunity report, not a 0-fire report.
 
 ---
 
