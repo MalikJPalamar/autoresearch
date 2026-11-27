@@ -754,37 +754,52 @@ confirmed ex-dividend amount out of a raw price change before
 describing a move as "real" buying/selling pressure remains good
 practice without a dedicated template section.
 
-### Confirmed 52-Week-Extreme Anchor Protocol (format-043, ACTIVE since 2026-11-25, report 1/3)
+### Confirmed 52-Week-Extreme Anchor Protocol (format-043) — DISCARDED 2026-11-27
 
-3-report KEEP/DISCARD against baseline CS 75.49 (the 2026-11-25 CS),
-reverted on DISCARD. Signal-logic/data-source experiment, pre-approved
-by Malik 2026-08-20 (auto-evolve, no fresh approval needed). Motivated
-by a pattern observed repeatedly in this project's research: financial
-press frequently reports a new 52-week high or low as an explicitly-
-dated, exact-price fact — a simple historical-data lookup rather than
-a same-day settlement figure, and so potentially easier for WebSearch
-to surface and corroborate than an ordinary daily close. Rule: when a
-dated news item explicitly states that a ticker **closed** at a new
-52-week high or low on a specific date, treat that dated closing price
-as a candidate confirmed exact-date anchor for AS-scoring purposes —
-subject to the same format-016 cross-source dispute-severity framework
-and format-024 stale-data cross-check as any other candidate. A
-clearly-labeled **intraday** touch of a 52-week extreme is explicitly
-**excluded** as an AS-scoring anchor (added 2026-11-25, pre-first-fire,
-per an automated PR review (Codex) on PR #67): an intraday high/low can
-reverse before settlement, so comparing it against the close-based
-prices used for the rest of the 5-day-lookback move would mix
-intraday and closing bases in a way format-016/format-024's
-source-agreement and stale-data checks cannot catch or correct. An
-intraday extreme may still be cited as narrative/catalyst color in the
-per-ticker write-up, just not adopted as a scoring anchor. Does not
-relax the exact-date convention; it only adds 52-week-extreme *closes*
-as a recognized confirmation channel alongside ordinary closes.
-Effective starting the 2026-11-25 report. Report 1/3 (Nov 25): 0
-applications — this session's research surfaced only off-date
-52-week-extreme mentions (Nov 10, Mar 30), none dated within the
-current 5-day-lookback scoring window — logged as a 0-opportunity
-report, not a 0-fire report.
+format-043 ran its full 3-report evaluation (2026-11-25 → 2026-11-27)
+and was DISCARDED: 3-report average CS 75.49 vs. baseline 75.49 (delta
+0.00). Per this project's exact-zero-delta precedent (format-015,
+format-023, format-034, format-035, format-038, format-040, format-041,
+format-042), reverted per the auto-evolve rule. The rule never found a
+single qualifying application in any of its 3 evaluation reports — no
+dated news item explicitly stating a ticker **closed** (as opposed to
+touched intraday) at a new 52-week high or low within the active
+5-day-lookback window was ever found, a clean 3-for-3 zero-opportunity
+result (not a zero-fire one) despite a dedicated search each session.
+This is the 4th consecutive exact-zero-delta DISCARD in a row
+(format-040, format-041, format-042, now format-043). See the
+2026-11-27 changelog entry for detail. This section is reverted to its
+pre-2026-11-25 form (52-week-extreme closes are no longer a recognized
+AS-scoring anchor channel; still usable as narrative/catalyst color
+without a dedicated scoring mechanism).
+
+### Credit-Rating Action Confirmation Override (format-044, ACTIVE since 2026-11-27, report 1/3)
+
+3-report KEEP/DISCARD against baseline CS 75.49 (the 2026-11-27 CS),
+reverted on DISCARD. Signal-logic experiment, pre-approved by Malik
+2026-08-20 (auto-evolve, no fresh approval needed). Motivated by a gap
+in this project's "confirmed-same-session-event override" family:
+earnings (format-020), analyst-rating-actions (format-019), insider
+Form-4s (format-041), SEC filings (format-038), and governance events
+(format-040) have all been tried, but credit-rating-agency actions
+(S&P Global Ratings, Moody's, Fitch upgrades/downgrades/outlook
+changes) — equally dated and well-corroborated, and particularly
+relevant to this portfolio's capital-intensive names (TSM/ASML/AMAT/
+LRCX capex cycles, VST/CEG/NRG utility-grade debt, LMT/RTX/BAH
+government-contract-backed credit profiles) — have never been tried.
+Rule: when a ticker receives a confirmed, dated rating action from
+S&P/Moody's/Fitch within the 5-trading-day signal-scoring window,
+treat it as a same-session catalyst justifying a directional nudge (an
+upgrade/positive-outlook action supports relaxing a WATCH toward
+ACCUMULATE if other fundamentals concur; a downgrade/negative-outlook
+action supports tilting toward AVOID), logged and reverted on DISCARD
+exactly as the other override-family experiments have been. Does not
+relax the exact-date price-anchor convention; targets signal-
+classification responsiveness only. Effective starting the 2026-11-27
+report. Report 1/3 (Nov 27): 0 applications — a dedicated per-ticker
+ratings-action search found no qualifying S&P/Moody's/Fitch action
+dated within the current window for any of the 18 tickers — logged as
+a 0-opportunity report, not a 0-fire report.
 
 ---
 
