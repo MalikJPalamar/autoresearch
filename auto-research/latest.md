@@ -1,6 +1,6 @@
 # SA Portfolio Daily Report — 2026-11-27
 
-**Methodology:** v1.4 | **Experiment:** format-043 Confirmed 52-Week-Extreme Anchor Protocol (report 3/3, RESOLVING) | **Market Status:** POST-CLOSE (Black Friday, abbreviated session, 9:30am–1:00pm ET) | **`scripts/prices.sh` BLOCKED, 66th consecutive session** (all-18 null, `source: none`, `curl: 403`) | **format-043 report 3/3: 0 applications — RESOLVED: DISCARD** (3-report avg CS 75.49 vs. baseline 75.49, delta 0.00) | **format-044 Credit-Rating Action Confirmation Override ACTIVATED same day** (report 1/3) | **Broad-market indices confirmed fresh for the first time in days**: S&P 500 7,297.49 (+1.60%), Nasdaq Composite 24,129.50 (+2.31%), Dow 50,774.94 (+1.18%), Philadelphia Semiconductor Index (SOX) +4.69% — but despite today's strong tape, no individual-ticker exact-date Nov 24–27 close was confirmed for any of the 18 tickers across 13 WebSearch passes | **Nov 20 signal batch: 0 correct / 0 incorrect / 1 NULL (OKLO) / 17 PENDING = 0/18 decisive** — the Nov 20 report itself confirmed zero exact-date origin prices for any ticker, so the origin side blocks the entire batch regardless of today's data | **AS unchanged at 38.74% (435/1123); CS unchanged at 75.49** | **No approval issues opened or closed** (issue #68 remains open/unresolved, left untouched per Loop 2 protocol) | **Supabase mirror sync failed for the 5th consecutive session**
+**Methodology:** v1.4 | **Experiment:** format-043 Confirmed 52-Week-Extreme Anchor Protocol (report 3/3, RESOLVING) | **Market Status:** POST-CLOSE (Black Friday, abbreviated session, 9:30am–1:00pm ET) | **`scripts/prices.sh` BLOCKED, 66th consecutive session** (all-18 null, `source: none`, `curl: 403`) | **format-043 report 3/3: 0 applications — RESOLVED: DISCARD** (3-report avg CS 75.49 vs. baseline 75.49, delta 0.00) | **format-044 Credit-Rating Action Confirmation Override ACTIVATED same day** (report 1/3) | **Broad-market indices confirmed fresh for the first time in days**: S&P 500 7,297.49 (+1.60%), Nasdaq Composite 24,129.50 (+2.31%), Dow 50,774.94 (+1.18%), Philadelphia Semiconductor Index (SOX) +4.69% — but despite today's strong tape, no individual-ticker exact-date Nov 24–27 close was confirmed for any of the 18 tickers across 13 WebSearch passes | **Nov 19 signal batch: 0 correct / 0 incorrect / 1 NULL (OKLO) / 17 PENDING = 0/18 decisive** (corrected pre-merge per a Codex catch — Nov 26's holiday doesn't count as a trading day, so today, not Nov 26, is this batch's true 5th-trading-day maturation) — the Nov 19 report itself confirmed zero exact-date origin prices for any ticker, so the origin side blocks the entire batch regardless of today's data | **AS unchanged at 38.74% (435/1123); CS unchanged at 75.49** | **No approval issues opened or closed** (issue #68 remains open/unresolved, left untouched per Loop 2 protocol) | **Supabase mirror sync failed for the 5th consecutive session**
 
 ---
 
@@ -39,34 +39,36 @@
 
 ---
 
-## Nov 20 Signal Batch Scoring (5 Trading Days)
+## Nov 19 Signal Batch Scoring (5 Trading Days)
 
-5 report-sessions back from today (Nov 27, Fri): Nov 26 (holiday, still counts as a session), Nov 25, Nov 24, Nov 23, **Nov 20** — matching the lookback cadence used by the Nov 24/25/26 reports (which scored the Nov 17/18/19 batches respectively, each exactly 5 sessions back from their own date). Per the strict exact-date-only convention, the *origin* report (Nov 20) must itself have published a confirmed exact-date price for a ticker for that ticker's score to be decisive.
+*Correction, pre-merge: an automated PR review (Codex) correctly caught that this section originally advanced to the Nov 20 batch, incorrectly counting Nov 26 (Thanksgiving, a market holiday, no trading session) as a trading day. This project's own Sep 7, 2026 Labor Day precedent (see changelog) establishes that a holiday is skipped entirely when counting "5 trading days," not treated as a session that lets the lookback advance. Trading sessions after Nov 19 (Thu) are Nov 20, 23, 24, 25 (4) and then Nov 27 (today) — Nov 26 does not count — so today is exactly the Nov 19 batch's 5th-trading-day maturation, not Nov 20's. Nov 26's report correctly left the Nov 19 batch as still-pending/unscored-to-maturity rather than advancing past it; today is the first time it has actually reached its 5-trading-day horizon. Corrected below.*
 
-**Origin side:** re-reading the 2026-11-20 report's own per-sector tables confirms every row explicitly states "No Nov 19/20 print found" for all 18 tickers (OKLO excepted as a non-directional NULL) — the Nov 20 report's best anchors were all 1+ sessions stale even on the day it was published (e.g., NVDA's Nov 18 $150.96, AMD's Nov 12 $585.30). This means the origin side is unusable for the entire batch, continuing the Nov 13/17/18/19 batches' pattern of chronic blockage — the 4th consecutive batch where neither side (or, as here, the origin side specifically) could support a decisive score.
+5 trading sessions after 2026-11-19 (Thu), skipping the Nov 26 Thanksgiving holiday entirely (it is not a trading day and does not count toward the lookback, per the Sep 7, 2026 Labor Day precedent): Nov 20, 23, 24, 25, **27 (today)** — the Nov 19 batch's true 5th-trading-day maturation. Per the strict exact-date-only convention, the *origin* report (Nov 19) must itself have published a confirmed exact-date price for a ticker for that ticker's score to be decisive.
 
-| # | Ticker | Signal (Nov 20, as published) | Base (Nov 20, exact-date only) | Nov 27 read | Verdict |
+**Origin side:** re-reading the 2026-11-19 report's own per-sector tables confirms every row explicitly states "No genuinely Nov-19-dated settled-close price confirmed for any of the 18 tickers" (OKLO excepted as a non-directional NULL; a single-sourced OKLO Nov 19 candidate was found but rejected that session as internally inconsistent) — the Nov 19 report's best anchors were all 1+ sessions stale even on the day it was published (e.g., NVDA's Nov 18 $150.96, LMT's Nov 13 $596.04). This means the origin side is unusable for the entire batch, continuing the Nov 12/13/17/18 batches' pattern of chronic blockage.
+
+| # | Ticker | Signal (Nov 19, as published) | Base (Nov 19, exact-date only) | Nov 27 read | Verdict |
 |---|--------|--------|----------------|-----------------|---------|
-| 1 | NVDA | WATCH | No Nov 20 print found (originating report) | No confirmed Nov 24-27 print; best anchor still Nov 23 $165.05 | ⬜ **PENDING** |
-| 2 | AMD | WATCH | No Nov 20 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 ~$450-453 | ⬜ **PENDING** |
-| 3 | GOOGL | AVOID | No Nov 20 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 $282.10 | ⬜ **PENDING** |
-| 4 | MSFT | WATCH | No Nov 20 print found | No confirmed Nov 24-27 print; still Nov 16 $517.99 | ⬜ **PENDING** |
-| 5 | META | WATCH | No Nov 20 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 ~$589-598 | ⬜ **PENDING** |
-| 6 | TSM | WATCH | No Nov 20 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 ~$363.60 | ⬜ **PENDING** |
-| 7 | ASML | WATCH | No Nov 20 print found | No confirmed Nov 24-27 print; still Nov 12 $1,497.12 | ⬜ **PENDING** |
-| 8 | AMAT | WATCH | No Nov 20 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 $346.87 | ⬜ **PENDING** |
-| 9 | LRCX | WATCH | No Nov 20 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 $209.76 | ⬜ **PENDING** |
-| 10 | VST | WATCH (format-022 hold; underlying ACCUMULATE) | No Nov 20 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 $123.87 | ⬜ **PENDING** |
-| 11 | CEG | WATCH (format-022 hold; underlying ACCUMULATE) | No Nov 20 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 $251.72 | ⬜ **PENDING** |
+| 1 | NVDA | WATCH | No Nov 19 print found (originating report) | No confirmed Nov 24-27 print; best anchor still Nov 23 $165.05 | ⬜ **PENDING** |
+| 2 | AMD | WATCH | No Nov 19 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 ~$450-453 | ⬜ **PENDING** |
+| 3 | GOOGL | AVOID | No Nov 19 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 $282.10 | ⬜ **PENDING** |
+| 4 | MSFT | WATCH | No Nov 19 print found | No confirmed Nov 24-27 print; still Nov 16 $517.99 | ⬜ **PENDING** |
+| 5 | META | WATCH | No Nov 19 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 ~$589-598 | ⬜ **PENDING** |
+| 6 | TSM | WATCH | No Nov 19 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 ~$363.60 | ⬜ **PENDING** |
+| 7 | ASML | WATCH | No Nov 19 print found | No confirmed Nov 24-27 print; still Nov 12 $1,497.12 | ⬜ **PENDING** |
+| 8 | AMAT | WATCH | No Nov 19 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 $346.87 | ⬜ **PENDING** |
+| 9 | LRCX | WATCH | No Nov 19 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 $209.76 | ⬜ **PENDING** |
+| 10 | VST | WATCH (format-022 hold; underlying ACCUMULATE) | No Nov 19 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 $123.87 | ⬜ **PENDING** |
+| 11 | CEG | WATCH (format-022 hold; underlying ACCUMULATE) | No Nov 19 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 $251.72 | ⬜ **PENDING** |
 | 12 | OKLO | SPECULATIVE | — | — | ⬜ **NULL** (risk classification, no directional call) |
-| 13 | NRG | AVOID | No Nov 20 print found | No confirmed Nov 24-27 print; still Nov 18 ~$93.66 | ⬜ **PENDING** |
-| 14 | SMR | AVOID | No Nov 20 print found | No confirmed Nov 24-27 print (chronic dispute) | ⬜ **PENDING** |
-| 15 | PLTR | WATCH | No Nov 20 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 $159.36 | ⬜ **PENDING** |
-| 16 | BAH | AVOID | No Nov 20 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 $82.35 | ⬜ **PENDING** |
-| 17 | LMT | WATCH (format-022 hold; underlying ACCUMULATE) | No Nov 20 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 $571.67 | ⬜ **PENDING** |
-| 18 | RTX | WATCH | No Nov 20 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 ~$194.77 | ⬜ **PENDING** |
+| 13 | NRG | AVOID | No Nov 19 print found | No confirmed Nov 24-27 print; still Nov 18 ~$93.66 | ⬜ **PENDING** |
+| 14 | SMR | AVOID | No Nov 19 print found | No confirmed Nov 24-27 print (chronic dispute) | ⬜ **PENDING** |
+| 15 | PLTR | WATCH | No Nov 19 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 $159.36 | ⬜ **PENDING** |
+| 16 | BAH | AVOID | No Nov 19 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 $82.35 | ⬜ **PENDING** |
+| 17 | LMT | WATCH (format-022 hold; underlying ACCUMULATE) | No Nov 19 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 $571.67 | ⬜ **PENDING** |
+| 18 | RTX | WATCH | No Nov 19 print found | No confirmed Nov 24-27 print; best anchor still Nov 23 ~$194.77 | ⬜ **PENDING** |
 
-**Result: 0 correct / 0 incorrect / 1 NULL (OKLO) / 17 PENDING = 0/18 decisive (0%).** The origin side is the blocking constraint for all 17 this time, exactly as it was for the Nov 20 report's own scoring of the Nov 13 batch's remaining tickers.
+**Result: 0 correct / 0 incorrect / 1 NULL (OKLO) / 17 PENDING = 0/18 decisive (0%).** The origin side is the blocking constraint for all 17 this time, unchanged from the Nov 26 report's own (correct) scoring of this same Nov 19 batch, which had not yet reached its 5-trading-day maturation as of that holiday session.
 
 **AS: 38.74% → 38.74%** (435/1123; unchanged — zero decisive scores added today).
 
